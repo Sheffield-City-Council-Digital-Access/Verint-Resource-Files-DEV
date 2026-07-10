@@ -554,7 +554,7 @@ const fullPlansBuildingApplication = new ContentPaD(
           <li>Drainage details or plans showing any changes or building over drains</li>
         </ul>
       <p>
-        Incomplete submissions may delay the validation process.
+        <em>Please note: Incomplete submissions may delay the validation process.</em>
       </p>
     </div>
   </details>
@@ -603,12 +603,12 @@ const fullPlansBuildingApplication = new ContentPaD(
 
   <h3>Key Points for Call Centre Staff</h3>
     <ul>
-      <li>A Full Plans Application is the most thorough building control route</li>
-      <li>It involves submitting detailed plans for approval before starting work</li>
+      <li>A Full Plans Application is the <strong>most thorough building control route<strong></li>
+      <li>It involves submitting <strong>detailed plans</strong> for approval <strong>before starting work</strong></li>
       <li>It is recommended where customers want certainty and compliance upfront</li>
       <li>This type of application is commonly submitted by an architect or principal designer on behalf of the customer.</li>
       <li>Customers can apply online via the Planning Portal or directly with the council</li>
-      <li>Missing information is a common cause of delays — encourage complete submissions</li>
+      <li>Missing information is a common cause of delays — <em>encourage complete submissions</em></li>
     </ul>
     
     `,
