@@ -654,7 +654,180 @@ const fullPlansBuildingApplication = new ContentPaD(
   { date: "10/07/2026", name: "Liz Taster" }
 );
 
+const applyForARegularisationCertificate = new ContentPaD(
+  "applyForARegularisationCertificate",
+  "Apply for a Regularisation Certificate",
+  "Information about how to apply for retrospective approval for building work completed without Building Regulations approval.",
+  `
+<h3>Overview</h3>
+  <p>
+    A <strong>Regularisation Certificate</strong> is used to gain <strong>retrospective approval</strong> for building work that was completed <strong>without Building Regulations approval at the time</strong>.
+  </p>
+  <p> 
+    This applies to <strong>unauthorised building work</strong> carried out on or after <strong>11 November 1985</strong>.
+  </p>
+  <p> 
+    It is not an alternative to applying for approval before starting work, but a way to assess and potentially certify work that has already been completed.
+  </p>
+  <p>
+    Further information, including starting an application, can be found here:  
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control/regularisation" target="_blank">
+    Regularisation Application | Sheffield City Council</a>
+  </p>
 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When is Regularisation Needed?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Residents may need to apply for a Regularisation Certificate if:</p>
+        <ul>
+          <li>Building work has already been carried out without Building Control approval</li>
+          <li>There is no completion certificate for work on a property</li>
+          <li>They need to demonstrate that past work complies with Building Regulations</li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility Criteria</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The work must have been completed <strong>on or after 11 November 1985</strong>
+      </p>
+      <p>
+        The work must be capable of meeting the Building Regulations that applied <strong>at the time it was carried out</strong>.
+      </p>
+      <p>
+        The applicant must be willing to carry out <strong>additional or remedial work</strong> if required to achieve compliance.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the Customer Needs to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To submit an application, the customer must provide sufficient information to demonstrate compliance. 
+        This may include:
+      </p>
+        <ul>
+          <li>A completed regularisation application form</li>
+          <li>Plans showing the layout before the work started</li>
+          <li>Plans showing the layout as the building currently stands</li>
+          <li>Details of any further work required to achieve compliance (if needed)</li>
+          <li>Construction details and supporting evidence showing compliance</li>
+          <li>Additional supporting information</li>
+        </ul>
+      <p>
+        <em>Please note: Incomplete information may delay the application.</em>
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Residents can apply using one of the following methods:</p>
+        <ul>
+          <li><strong>Online via the Planning Portal</strong> - The council encourages use of the Planning Portal as it is quick and fully digital.</li>
+          <li><strong>Directly to Sheffield City Council</strong> - Available for customers unable to use the Planning Portal</li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees and Payment</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Fees depend on the type and scale of the work.
+      </p>
+      <p>
+        After submitting an application, the resident will be sent a <strong>payment link</strong> to complete payment online
+      </p>
+    </div>
+  </details>
+
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Applying?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li><strong>Assessment of Information - </strong>Building Control will review the information submitted with the application. 
+          <strong><em>More detailed applications are processed more easily.</em></strong></li>
+        <li><strong>Inspection and Investigation - </strong>A site visit may be required. 
+          In some circumstances the resident may need to expose parts of the work for inspection, testing, or sampling.</li>
+        <li><strong>Remedial Work (if required) - </strong>Any work that does not meet regulations must be corrected.</li>
+        <li><strong>Decision - </strong>A Regularisation Certificate will only be issued if the work complies with the relevant regulations.</li>
+      </ul>
+    </div>
+  </details>
+
+
+
+<h3>Key Points for Call Centre Staff</h3>
+  <ul>
+    <li>Building Control <strong>cannot advise how to make the work compliant</strong> – this responsibility lies with the applicant</li>
+    <li>Residents may need to appoint a professional (such as an architect or surveyor) to support their application</li>
+    <li>Regularisation may involve <strong>additional work, inspections, or opening up completed structures</strong></li>
+    <li>Work completed before <strong>11 November 1985 cannot be regularised</strong></li>
+    <li><strong>If work has not yet started, or is ongoing, this is not the correct process. Customers should instead be directed to information about a Building Notice Application or Full Plans Application depending on the scale of the work.</strong></li>
+  </ul>
+
+`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Application",
+    keywords: [
+      "regularisation",
+      "certificate",
+      "regularization",
+      "application",
+      "retrospective",
+      "approval",
+      "building",
+      "regulations",
+      "control",
+      "unauthorised",
+      "work",
+      "unauthorized",
+      "planning portal",
+      "cert",
+      "regulatisation",
+      "regularsation",
+      "regulrisation",
+      "certificat",
+      "certifcate",
+      "certficate",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
 
 const buildingControl = new MenuPaD(
   "buildingControl",
@@ -666,6 +839,7 @@ const buildingControl = new MenuPaD(
     reportingAPlanningEnforcementIssue,
     applyForABuildingNotice,
     fullPlansBuildingApplication,
+    applyForARegularisationCertificate,
   ]
 );
 
