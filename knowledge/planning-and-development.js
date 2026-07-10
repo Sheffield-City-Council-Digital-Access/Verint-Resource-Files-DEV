@@ -608,7 +608,7 @@ const fullPlansBuildingApplication = new ContentPaD(
       <li>It is recommended where customers want certainty and compliance upfront</li>
       <li>This type of application is commonly submitted by an architect or principal designer on behalf of the customer.</li>
       <li>Customers can apply online via the Planning Portal or directly with the council</li>
-      <li>Missing information is a common cause of delays — <em>encourage complete submissions</em></li>
+      <li>Missing information is a common cause of delays — <em>encourage customers to include all required information when submitting applications</em></li>
     </ul>
     
     `,
