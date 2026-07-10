@@ -383,10 +383,11 @@ const applyForABuildingNotice = new ContentPaD(
           <li>Buildings subject to fire safety legislation (Regulatory Reform Order)</li>
         </ul>
       <p>
-        If the applicant cannot ensure compliance with building regulations, they should use a <strong>Full Plans application instead</strong>.
+        If the applicant <strong>cannot ensure compliance</strong> with building regulations, they should use a <strong>Full Plans</strong> application instead.
       </p>
+      <br>
 
-      <p>Examples of work that may be suitable include:</p>
+      <p><strong>Examples</strong> of work that may be suitable include:</p>
         <ul>
           <li>Removing a load-bearing wall (with appropriate support)</li>
           <li>Installing or altering heating appliances and flues</li>
@@ -406,14 +407,14 @@ const applyForABuildingNotice = new ContentPaD(
     <div class="accordion-content">
       <p>Customers can apply in two ways:</p>
         <ul>
-          <li><strong>Online via Planning Portal</strong> The council encourages use of the Planning Portal as it is quick and fully digital.</li>
-          <li><strong>Directly to Sheffield City Council</strong> Available for customers unable to use the Planning Portal.</li>
+          <li><strong>Online via Planning Portal</strong> - The council encourages use of the Planning Portal as it is quick and fully digital.</li>
+          <li><strong>Directly to Sheffield City Council</strong> - Available for customers unable to use the Planning Portal.</li>
         </ul>
       <p>
         Once the application is submitted the council will send a <strong>payment link</strong> for fees.
       </p>
       <p>
-        The completion inspection is <strong>usually included in the application fee</strong>, unless additional inspections are needed.
+        The <strong>completion inspection</strong> is usually included in the application fee, unless additional inspections are needed.
       </p>
     </div>
   </details>
@@ -432,7 +433,7 @@ const applyForABuildingNotice = new ContentPaD(
         Building Control will carry out <strong>site inspections at key stages</strong> during construction.
       </p>
       <p>
-        Unlike Full Plans applications, <strong>plans are not formally approved in advance and compliance is checked during the build through inspections.</strong>
+        Unlike Full Plans applications, plans are not formally approved in advance and <strong>compliance is checked during the build through inspections.</strong>
       </p>
       <p>
         A <strong>completion certificate</strong> is issued once the council is satisfied that the work complies with building regulations.
@@ -455,7 +456,7 @@ const applyForABuildingNotice = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "l" },
+  { typeKey: "" },
   {
     type: "Application",
     keywords: [
