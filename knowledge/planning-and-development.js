@@ -794,7 +794,7 @@ const applyForARegularisationCertificate = new ContentPaD(
     <li>Building Control <strong>cannot advise how to make the work compliant</strong> – this responsibility lies with the applicant</li>
     <li>Residents may need to appoint a professional (such as an architect or surveyor) to support their application</li>
     <li>Regularisation may involve <strong>additional work, inspections, or opening up completed structures</strong></li>
-    <li>Work completed <strong>before</strong> 11 November 1985 <strong>cannot be regularised<,strong></li>
+    <li>Work completed <strong>before</strong> 11 November 1985 <strong>cannot be regularised</strong></li>
     <li>If work has <strong>not yet started, or is ongoing</strong>, this is not the correct process. Customers should instead be directed 
       to information about a <strong>Building Notice Application</strong> or <strong>Full Plans Application</strong>, depending on the scale of the work.</li>
   </ul>
