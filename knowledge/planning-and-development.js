@@ -832,6 +832,109 @@ const applyForARegularisationCertificate = new ContentPaD(
   { date: "10/07/2026", name: "Liz Taster" }
 );
 
+const requestACompletionCertificate = new ContentPaD(
+  "requestACompletionCertificate",
+  "Request a Completion Certificate",
+  "Guidance on how to request a completion certificate for building work.",
+  `
+  <h3>Overview</h3>
+    <p>
+      A <strong>completion certificate</strong> is issued at the end of a building project to confirm that the work <strong>complies with Building Regulations</strong>. 
+      It is provided by Building Control after all required checks and inspections are successfully completed.
+    </p>
+    <p>
+      This document is important and should be kept safe, as it may be required when selling a property or requested by mortgage lenders or insurers.
+    </p>
+    <p>
+      Further information and the application form can be found here: 
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/completion"target="_blank">
+      Completion certificates | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To request a completion certificate, <strong>Regulation 16 (4) Notice of Completion form</strong> must be completed and submitted to Building Control.
+      </p>
+      <p>
+        This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.
+      </p>
+      <p>The form must be completed by all relevant duty holders:</p>
+        <ul>
+          <li>The client</li>
+          <li>The principal designer</li>
+          <li>The principal contractor</li>
+        </ul>
+      <p>
+        The Notice of Completion form is usually issued as part of the original application acknowledgement but can also be downloaded.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How the Request is Processed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>The completed Notice of Completion form is submitted to Building Control.</li>
+        <li>The council reviews the form to ensure all required information is provided.</li>
+        <li>A <strong>completion inspection</strong> is arranged.</li>
+        <li>If the inspection is satisfactory, or any outstanding issues are resolved, a completion certificate is issued.</li>
+      </ul>
+      <p>
+        This marks the formal completion of the Building Control process.
+      </p>
+    </div>
+  </details>
+
+  
+  <h3>Key points for Call Handlers</h3>
+  <ul>
+    <li>The <strong>Notice of Completion form</strong> must be completed by all relevant parties and submitted to Building Control</li>
+    <li>This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.</li>
+    <li>A <strong>completion inspection</strong> must take place before a certificate can be issued.</li>
+    <li>The certificate confirms the work <strong>meets legal Building Regulation standards</strong>.</li>
+    <li>Once received, the Completion Certificate document should be kept safe.</li>
+  </ul>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Transactional",
+    keywords: [
+      "completion",
+      "certificate",
+      "certificates",
+      "cert",
+      "inspection",
+      "building",
+      "control",
+      "regulations",
+      "notice of completion",
+      "request",
+      "apply",
+      "construction",
+      "building project",
+      "complition",
+      "comletion",
+      "completion cert",
+      "completetion"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
 const buildingControl = new MenuPaD(
   "buildingControl",
   "Building Control",
@@ -843,6 +946,7 @@ const buildingControl = new MenuPaD(
     applyForABuildingNotice,
     fullPlansBuildingApplication,
     applyForARegularisationCertificate,
+    requestACompletionCertificate,
   ]
 );
 
