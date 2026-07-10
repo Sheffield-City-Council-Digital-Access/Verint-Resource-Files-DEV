@@ -664,7 +664,7 @@ const applyForARegularisationCertificate = new ContentPaD(
     A <strong>Regularisation Certificate</strong> is used to gain <strong>retrospective approval</strong> for building work that was completed <strong>without Building Regulations approval at the time</strong>.
   </p>
   <p> 
-    This applies to <strong>unauthorised building work</strong> carried out on or after <strong>11 November 1985</strong>.
+    This applies to <strong>unauthorised building work</strong> carried out on, or after, <strong>11 November 1985</strong>.
   </p>
   <p> 
     It is not an alternative to applying for approval before starting work, but a way to assess and potentially certify work that has already been completed.
@@ -701,7 +701,7 @@ const applyForARegularisationCertificate = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        The work must have been completed <strong>on or after 11 November 1985</strong>
+        The work must have been completed <strong>on, or after, 11 November 1985</strong>
       </p>
       <p>
         The work must be capable of meeting the Building Regulations that applied <strong>at the time it was carried out</strong>.
@@ -794,9 +794,9 @@ const applyForARegularisationCertificate = new ContentPaD(
     <li>Building Control <strong>cannot advise how to make the work compliant</strong> – this responsibility lies with the applicant</li>
     <li>Residents may need to appoint a professional (such as an architect or surveyor) to support their application</li>
     <li>Regularisation may involve <strong>additional work, inspections, or opening up completed structures</strong></li>
-    <li>Work completed before 11 November 1985 cannot be regularised</li>
+    <li>Work completed <strong>before</strong> 11 November 1985 <strong>cannot be regularised<,strong></li>
     <li>If work has <strong>not yet started, or is ongoing</strong>, this is not the correct process. Customers should instead be directed 
-      to information about a <strong>Building Notice Application</strong> or <strong>Full Plans Application</strong> depending on the scale of the work.</li>
+      to information about a <strong>Building Notice Application</strong> or <strong>Full Plans Application</strong>, depending on the scale of the work.</li>
   </ul>
 
 `,
