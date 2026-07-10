@@ -1066,6 +1066,144 @@ const reportingDangerousStructures = new ContentPaD(
 );
 
 
+const bookingBuildingSiteInspections = new ContentPaD(
+  "bookingBuildingSiteInspections",
+  "Booking Building Site Inspections",
+  "Information about how residents (or their builders) can book a building site inspections as part of an existing building control application.",
+  `
+<h3>Overview</h3>
+  <p>
+    Residents (or their builders) can book a building site inspection as part of an existing building control application with Sheffield City Council. 
+    The inspection service is included within the application and ensures work complies with building regulations.
+  </p>
+  <p>
+    Inspections are carried out by a qualified Registered Building Inspector (RBI) and are independent of the builder.
+  </p>
+  <p>
+    Further information can be found here: <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
+    Book a building site inspection | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+<h3>When a Site Inspection is Needed</h3>
+  <p>
+    Inspections take place at key stages of a building project.
+  </p>
+  <p>
+    The required stages will be outlined at the start of the project.
+  </p>
+  <p>
+    Additional inspections may be requested depending on the project.
+  </p>
+
+  <h4>Typical stages that may be inspected</h4>
+    <ul>
+      <li>Foundations</li>
+      <li>Ground and floors</li>
+      <li>Damp proofing</li>
+      <li>Roof structure</li>
+      <li>Drainage</li>
+      <li>Structural beams and openings</li>
+      <li>Fireproofing</li>
+      <li>Thermal insulation</li>
+      <li>Compliance declarations</li>
+      <li>Completion of the project</li>
+    </ul>
+
+<h3>Before Booking</h3>
+  <p>
+    Work must not start until the council has been notified.
+  </p>
+  <p>
+    <strong>Notice of Commencement form</strong> is provided as part of the building control application and must be submitted <strong>before work begins.</strong>
+  </p>
+
+<h3>How to Book a Site Inspection</h3>
+  <p>
+    Residents or builders can request a site inspection using the LABC Inspection Request app.
+  </p>
+  <p>
+    The app is the quickest and easiest way to book. It is available to download for mobile devices.
+  </p>
+  <p>
+    Links to download the LABC app can be found here: 
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
+    Book a building site inspection | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    If the app cannot be used, customers can contact the Building Control team directly.
+  </p>
+  <p>
+    <em>Please note: The same information required for the app will still be needed.</em>
+  </p>
+
+<h3>Information Required to Book</h3>
+  <p>Customers must provide the following details when making a booking:</p>
+    <ul>
+      <li>Address and postcode of the works</li>
+      <li>Building control application reference number</li>
+      <li>Name and contact details of the person on site during the visit</li>
+      <li>Type of inspection required</li>
+      <li>Preferred inspection date</li>
+    </ul>
+
+<h3>Appointment Availability</h3>
+  <p>
+    Customers can request a morning or afternoon visit.
+  </p>
+  <p>
+    Requested dates or times cannot always be guaranteed.
+  </p>
+  <p>
+    If the requested date is not available, the team will contact the customer to rearrange.
+  </p>
+
+<h3>Completion Inspections</h3>
+  <p>
+    A completion inspection is required at the end of a project. 
+    Please see the knowledge tile <strong>Request a Completion Certificate for further information</strong>.
+  </p>
+
+<h3>Key Points for Call Centre Staff</h3>
+  <ul>
+    <li>Site inspections are part of a building control application process.</li>
+    <li><strong>Booking is mainly done via the LABC app.</strong></li>
+    <li>Ensure customers have all required details before booking.</li>
+    <li>Dates and times are not guaranteed and may be rescheduled.</li>
+  </ul>`
+
+,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [
+      "building",
+      "site",
+      "inspection",
+      "booking",
+      "book",
+      "building control",
+      "LABC app",
+      "request",
+      "construction",
+      "completion",
+      "building regs",
+      "appointment",
+      "site visit",
+      "inspecion",
+      "bulding",
+      "inspetion",
+      "bookng"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
+
 const buildingControl = new MenuPaD(
   "buildingControl",
   "Building Control",
@@ -1079,6 +1217,7 @@ const buildingControl = new MenuPaD(
     applyForARegularisationCertificate,
     requestACompletionCertificate,
     reportingDangerousStructures,
+    bookingBuildingSiteInspections,
   ]
 );
 
