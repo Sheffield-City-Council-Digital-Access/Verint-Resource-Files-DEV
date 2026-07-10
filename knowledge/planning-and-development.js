@@ -941,12 +941,12 @@ const requestACompletionCertificate = new ContentPaD(
 const reportingDangerousStructures = new ContentPaD(
   "reportingDangerousStructures",
   "Reporting Dangerous Structures",
-  "Information on how residents can report a dangerous structure if a building or structure appears to pose a risk to people, property, or the surrounding area.",
+  "Information on how residents can report a dangerous structure if a building or structure appears to pose a <strong>risk to people, property, or the surrounding area</strong>.",
   `
   <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
     <h3>Emergency Situations</h3>
       <p>
-        If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to call <strong>999</strong> immediately.
+        If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to <strong>call 999 immediately</strong>.
       </p>
   </section>
   
@@ -970,15 +970,13 @@ const reportingDangerousStructures = new ContentPaD(
     Reports are submitted online via the council’s website.
   </p>
   <p>
-    The enquiry will be directed to the appropriate team for investigation.
+    The enquiry will then be directed to the appropriate team for investigation.
   </p>
 
-<h3>What Happens Next</h3>
-  <ul>
-    <li>The council will assess the report</li>
-    <li>An inspection may be carried out</li>
-    <li>Appropriate action will be taken to remove or reduce the danger</li>
-  </ul>
+  <p>
+    Once the report is received, the council will assess the report and an inspection may be carried out.
+    <br>Appropriate action will be taken to remove or reduce the danger
+  </p>
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -986,7 +984,10 @@ const reportingDangerousStructures = new ContentPaD(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>A report should be made when a structure could present a hazard to the public or nearby property. Examples include:</p>
+      <p>
+        A report should be made when a structure could present a hazard to the public or nearby property. 
+        <br>Examples include:
+      </p>
         <ul>
           <li>Damaged or leaning walls, particularly where the public can access them</li>
           <li>Walls over 1.5 metres high or retaining walls above 1.5 metres</li>
@@ -997,7 +998,7 @@ const reportingDangerousStructures = new ContentPaD(
           <li>Buildings showing signs of possible collapse</li>
           <li>Fire-damaged buildings</li>
           <li>Vacant or accessible buildings posing a danger</li>
-          <li>Structures weakened or undermined</li>
+          <li>Weakened or undermined structures</li>
           <li>Trees posing a specific or imminent danger</li>
         </ul>
     </div>
