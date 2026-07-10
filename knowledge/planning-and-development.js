@@ -487,6 +487,175 @@ const applyForABuildingNotice = new ContentPaD(
 );
 
 
+const fullPlansBuildingApplication = new ContentPaD(
+  "fullPlansBuildingApplication",
+  "Full Plans Building Application",
+  "Information about Full Plans Building Applications - including when they are needed and how to apply.",
+  `
+
+  <h3>Overview</h3>
+    <p>
+      A Full Plans Building Application is used to have detailed building proposals checked and approved before construction work begins. 
+      It ensures that plans comply with relevant Building Regulations and helps reduce the risk of issues, delays, or costly changes during construction.
+    </p>
+    <p>
+      This type of application is commonly submitted by an architect or principal designer on behalf of the customer.
+    </p>
+    <p>
+      For more information, staff can refer to the official page: 
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/full-plans" target="_blank">
+      Full Plans Application – Sheffield City Council</a>
+    </p>
+
+    <p>[Insert Send Link]</p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When to Use a Full Plans Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers should choose a Full Plans Application when they want their building plans formally checked by a Registered Building Inspector (RBI) before starting work.
+      </p>
+      <p>It can be used for a wide range of building work, including:</p>
+        <ul>
+          <li>Erecting a new building</li>
+          <li>Extending an existing building</li>
+          <li>Structural alterations</li>
+          <li>Loft conversions</li>
+          <li>Changing the use of a building</li>
+          <li>Installing services or fittings (e.g. central heating)</li>
+          <li>Building larger conservatories</li>
+        </ul>
+      <p>
+        This route is particularly useful where certainty and compliance are important before work starts.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the Customer Needs to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To submit a Full Plans Application, customers must provide detailed information about the proposed work. 
+        This includes:
+      </p>
+        <ul>
+          <li>Completed Full Plans application form</li>
+          <li>Block plan (typically at 1:1250 scale) showing the site and boundaries</li>
+          <li>Existing plans</li>
+          <li>Proposed plans</li>
+          <li>Construction specifications (may be included within plans)</li>
+          <li>Drainage details or plans showing any changes or building over drains</li>
+        </ul>
+      <p>
+        Incomplete submissions may delay the validation process.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers can submit a Full Plans Application in two ways:</p>
+        <ul>
+          <li><strong>Online via the Planning Portal - The council encourages use of the Planning Portal as it is quick and fully digital.</strong></li>
+          <li><strong>Directly to Sheffield City Council - </strong>Available for customers unable to use the Planning Portal</li>
+        </ul>
+      <p>
+        <strong>Please note: Any service charge added by the Planning Portal is deducted so the total cost remains the same</strong>
+      </p>
+    </div>
+  </details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Submission</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application is reviewed by a Registered Building Inspector (RBI).
+      </p>
+      <p>The RBI will either:</p>
+        <ul>
+          <li>Approve the plans, or</li>
+          <li>Request amendments if needed to meet regulations</li>
+        </ul>
+      <p>
+        If information is missing, the customer will be contacted before the application can be validated.
+      </p>
+      <p>
+        Once validated, an acknowledgement is sent to confirm the application has been accepted.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Points for Call Centre Staff</h3>
+    <ul>
+      <li>A Full Plans Application is the most thorough building control route</li>
+      <li>It involves submitting detailed plans for approval before starting work</li>
+      <li>It is recommended where customers want certainty and compliance upfront</li>
+      <li>This type of application is commonly submitted by an architect or principal designer on behalf of the customer.</li>
+      <li>Customers can apply online via the Planning Portal or directly with the council</li>
+      <li>Missing information is a common cause of delays — encourage complete submissions</li>
+    </ul>
+    
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Application",
+    keywords: [
+      "full plans building application",
+      "building control application",
+      "full plans application",
+      "full plans",
+      "building regulations",
+      "building",
+      "build",
+      "construction approval",
+      "apply building plans",
+      "construction",
+      "planning portal",
+      "home improvements",
+      "loft conversions",
+      "structural alterations",
+      "block plan",
+      "drainage plans",
+      "extensions",
+      "compliance",
+      "regulations",
+      "completion",
+      "certificate",
+      "application",
+      "bulding",
+      "buildng",
+      "bilding",
+      "notise",
+      "bild",
+      "fullplans",
+      "full plan",
+      "planing portal",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
+
+
 const buildingControl = new MenuPaD(
   "buildingControl",
   "Building Control",
@@ -496,6 +665,7 @@ const buildingControl = new MenuPaD(
     guideForDemolitionNoticeQueries,
     reportingAPlanningEnforcementIssue,
     applyForABuildingNotice,
+    fullPlansBuildingApplication,
   ]
 );
 
