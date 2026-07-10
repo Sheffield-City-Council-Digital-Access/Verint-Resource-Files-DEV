@@ -65,6 +65,16 @@ const templateTile = new ContentPaD(
     <h3>Header</h3>
     <p>Content</p>
 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+
   `,
 
   { buttonLabel: "", formName: "" },
@@ -288,7 +298,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
 
 
 
-  <h3>Key information for Call Centre Staff</h3>
+  <h3>Key Information for Call Centre Staff</h3>
     <p>When handling enquiries:</p>
       <ul>
         <li>Confirm whether the issue relates to a potential breach of planning control.</li>
@@ -331,6 +341,151 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
 );
 
 
+const applyForABuildingNotice = new ContentPaD(
+  "applyForABuildingNotice",
+  "Apply for a Building Notice",
+  "Details of how to Apply for a Building Notice for minor domestic building works, including eligibility and process details",
+  `
+  <h3>Overview</h3>
+    <p>
+      A Building Notice is a type of building control application used for <strong>minor works to domestic properties (homes)</strong>. 
+      It allows customers to notify the council of planned building work <strong>without submitting detailed plans for formal approval before work starts</strong>.
+    </p>
+    <p>
+      The <strong>property owner and person carrying out the work are responsible</strong> for ensuring the work meets building regulations.
+    </p>
+    <p>
+      Customers can apply or find more information here: 
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/building-notice" target="_blank">
+      Building Notice Application | Sheffield City Council</a>
+    </p>
+
+    <p>[Insert Send Link]</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility and Suitability</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>A Building Notice is suitable for:</p>
+        <ul>
+          <li><strong>Small or straightforward domestic projects</strong></li>
+          <li>Work where <strong>plans do not need to be formally approved before starting</strong></li>
+        </ul>
+      <p>It is <strong>not suitable</strong> for:</p>
+        <ul>
+          <li>Work on commercial buildings</li>
+          <li>Properties that are not single-family dwellings</li>
+          <li>Work within 3 metres of a public sewer</li>
+          <li>Buildings fronting onto a private road</li>
+          <li>Buildings subject to fire safety legislation (Regulatory Reform Order)</li>
+        </ul>
+      <p>
+        If the applicant cannot ensure compliance with building regulations, they should use a <strong>Full Plans application instead</strong>.
+      </p>
+
+      <p>Examples of work that may be suitable include:</p>
+        <ul>
+          <li>Removing a load-bearing wall (with appropriate support)</li>
+          <li>Installing or altering heating appliances and flues</li>
+          <li>Extensions to an existing dwelling</li>
+          <li>Bathroom or shower installations</li>
+          <li>Replacement windows (if not using a FENSA-registered installer)</li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers can apply in two ways:</p>
+        <ul>
+          <li><strong>Online via Planning Portal</strong> The council encourages use of the Planning Portal as it is quick and fully digital.</li>
+          <li><strong>Directly to Sheffield City Council</strong> Available for customers unable to use the Planning Portal.</li>
+        </ul>
+      <p>
+        Once the application is submitted the council will send a <strong>payment link</strong> for fees.
+      </p>
+      <p>
+        The completion inspection is <strong>usually included in the application fee</strong>, unless additional inspections are needed.
+      </p>
+    </div>
+  </details>
+
+  
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Process Details</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers must give <strong>at least 2 working days’ notice</strong> before starting work.
+      </p>
+      <p>
+        Building Control will carry out <strong>site inspections at key stages</strong> during construction.
+      </p>
+      <p>
+        Unlike Full Plans applications, <strong>plans are not formally approved in advance and compliance is checked during the build through inspections.</strong>
+      </p>
+      <p>
+        A <strong>completion certificate</strong> is issued once the council is satisfied that the work complies with building regulations.
+      </p>
+      <p>
+        This certificate is an important legal record of compliance.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Points for Call Handling</h3>
+    <ul>
+      <li>Building Notices are for <strong>minor domestic work only</strong></li>
+      <li><strong>No upfront plan approval</strong> — inspections happen during construction</li>
+      <li>Customers must <strong>notify before starting work and at key stages</strong></li>
+      <li>Customers are <strong>responsible for compliance</strong></li>
+      <li>Not suitable for <strong>complex, commercial, or higher-risk work</strong></li>
+    </ul>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "l" },
+  {
+    type: "Application",
+    keywords: [
+      "building",
+      "notice",
+      "notices",
+      "build",
+      "construction",
+      "building",
+      "planning portal",
+      "minor works",
+      "home improvements",
+      "extensions",
+      "load bearing wall",
+      "regulations",
+      "completion",
+      "certificate",
+      "application",
+      "bulding",
+      "buildng",
+      "bilding",
+      "notise",
+      "bild",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
+
 const buildingControl = new MenuPaD(
   "buildingControl",
   "Building Control",
@@ -339,6 +494,7 @@ const buildingControl = new MenuPaD(
     templateTile,
     guideForDemolitionNoticeQueries,
     reportingAPlanningEnforcementIssue,
+    applyForABuildingNotice,
   ]
 );
 
