@@ -988,8 +988,8 @@ const communalAreas = new ContentH(
   <p>
       Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.<br>
       Check the 
-      <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">Blocked bin chutes list</a>
-    </p>
+      <a href="https://sccextranet.sharepoint.com/:x:/r/sites/CustomerService/_layouts/15/Doc.aspx?sourcedoc=%7B25D2DDFF-7699-425C-AC50-8398BCCA6EDB%7D&file=Blocked%20Chute%20Responsibility%20-%20Adresses.xlsx&action=default&mobileredirect=true" target="_blank">Blocked bin chutes list</a>
+    </p> 
 
   <h3>Bin Skimming</h3>
   <p>
