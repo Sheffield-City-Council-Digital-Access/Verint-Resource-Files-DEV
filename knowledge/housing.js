@@ -11775,7 +11775,7 @@ const temporaryAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "29/07/2025", name: "Sha" }
+  { date: "14/07/2026", name: "Shaz Athar" }
 );
 
 const shelteredAndSupported = new MenuH(
