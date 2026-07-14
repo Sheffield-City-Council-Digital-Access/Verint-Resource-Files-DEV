@@ -1034,7 +1034,7 @@ const communalAreas = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "27/02/2025", name: "Nathan Smith" }
+  { date: "14/07/2026", name: "Shaz Athar" }
 );
 
 // Communal fire safety is in the cross region section at the top of the area
@@ -11763,11 +11763,11 @@ const temporaryAccommodation = new ContentH(
       <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
   `,
-  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { buttonLabel: "", formName: "hou_rehousing_enquiry" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
-    type: "",
+    type: "Raise Enquiry",
     keywords: [
       "temp",
       "temporary",
@@ -11775,7 +11775,7 @@ const temporaryAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "29/07/2025", name: "Nathan Smith" }
+  { date: "29/07/2025", name: "Sha" }
 );
 
 const shelteredAndSupported = new MenuH(
