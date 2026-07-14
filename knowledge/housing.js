@@ -11763,7 +11763,7 @@ const temporaryAccommodation = new ContentH(
       <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
