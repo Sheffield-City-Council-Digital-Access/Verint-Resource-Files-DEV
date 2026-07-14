@@ -1085,85 +1085,134 @@ const bookingBuildingSiteInspections = new ContentPaD(
   </p>
   <p>[Insert Send Link]</p>
 
-<h3>When a Site Inspection is Needed</h3>
-  <p>
-    Inspections take place at key stages of a building project.
-  </p>
-  <p>
-    The required stages will be outlined at the start of the project.
-  </p>
-  <p>
-    Additional inspections may be requested depending on the project.
-  </p>
+  
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When a Site Inspection is Needed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Inspections take place at key stages of a building project.
+      </p>
+      <p>
+        The required stages will be outlined at the start of the project.
+      </p>
+      <p>
+        Additional inspections may be requested depending on the project.
+      </p>
 
-  <h4>Typical stages that may be inspected</h4>
-    <ul>
-      <li>Foundations</li>
-      <li>Ground and floors</li>
-      <li>Damp proofing</li>
-      <li>Roof structure</li>
-      <li>Drainage</li>
-      <li>Structural beams and openings</li>
-      <li>Fireproofing</li>
-      <li>Thermal insulation</li>
-      <li>Compliance declarations</li>
-      <li>Completion of the project</li>
-    </ul>
+      <h4>Typical stages that may be inspected</h4>
+        <ul>
+          <li>Foundations</li>
+          <li>Ground and floors</li>
+          <li>Damp proofing</li>
+          <li>Roof structure</li>
+          <li>Drainage</li>
+          <li>Structural beams and openings</li>
+          <li>Fireproofing</li>
+          <li>Thermal insulation</li>
+          <li>Compliance declarations</li>
+          <li>Completion of the project</li>
+        </ul>
+    </div>
+  </details>
 
-<h3>Before Booking</h3>
-  <p>
-    Work must not start until the council has been notified.
-  </p>
-  <p>
-    <strong>Notice of Commencement form</strong> is provided as part of the building control application and must be submitted <strong>before work begins.</strong>
-  </p>
 
-<h3>How to Book a Site Inspection</h3>
-  <p>
-    Residents or builders can request a site inspection using the LABC Inspection Request app.
-  </p>
-  <p>
-    The app is the quickest and easiest way to book. It is available to download for mobile devices.
-  </p>
-  <p>
-    Links to download the LABC app can be found here: 
-    <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
-    Book a building site inspection | Sheffield City Council</a>
-  </p>
-  <p>[Insert Send Link]</p>
-  <p>
-    If the app cannot be used, customers can contact the Building Control team directly.
-  </p>
-  <p>
-    <em>Please note: The same information required for the app will still be needed.</em>
-  </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Booking</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Work must not start until the council has been notified.
+      </p>
+      <p>
+        <strong>Notice of Commencement form</strong> is provided as part of the building control application and must be submitted <strong>before work begins.</strong>
+      </p>
+    </div>
+  </details>
 
-<h3>Information Required to Book</h3>
-  <p>Customers must provide the following details when making a booking:</p>
-    <ul>
-      <li>Address and postcode of the works</li>
-      <li>Building control application reference number</li>
-      <li>Name and contact details of the person on site during the visit</li>
-      <li>Type of inspection required</li>
-      <li>Preferred inspection date</li>
-    </ul>
 
-<h3>Appointment Availability</h3>
-  <p>
-    Customers can request a morning or afternoon visit.
-  </p>
-  <p>
-    Requested dates or times cannot always be guaranteed.
-  </p>
-  <p>
-    If the requested date is not available, the team will contact the customer to rearrange.
-  </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Book a Site Inspection</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Residents or builders can request a site inspection using the LABC Inspection Request app.
+      </p>
+      <p>
+        The app is the quickest and easiest way to book. It is available to download for mobile devices.
+      </p>
+      <p>
+        Links to download the LABC app can be found here: 
+        <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
+        Book a building site inspection | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+      <p>
+        If the app cannot be used, customers can contact the Building Control team directly.
+      </p>
+      <p>
+        <em>Please note: The same information required for the app will still be needed.</em>
+      </p>
+    </div>
+  </details>
+  
 
-<h3>Completion Inspections</h3>
-  <p>
-    A completion inspection is required at the end of a project. 
-    Please see the knowledge tile <strong>Request a Completion Certificate for further information</strong>.
-  </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Information Required to Book</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers must provide the following details when making a booking:</p>
+        <ul>
+          <li>Address and postcode of the works</li>
+          <li>Building control application reference number</li>
+          <li>Name and contact details of the person on site during the visit</li>
+          <li>Type of inspection required</li>
+          <li>Preferred inspection date</li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Appointment Availability</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers can request a morning or afternoon visit.
+      </p>
+      <p>
+        Requested dates or times cannot always be guaranteed.
+      </p>
+      <p>
+        If the requested date is not available, the team will contact the customer to rearrange.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Completion Inspections</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A completion inspection is required at the end of a project. 
+        Please see the knowledge tile <strong>Request a Completion Certificate for further information</strong>.
+      </p>
+    </div>
+  </details>
+
 
 <h3>Key Points for Call Centre Staff</h3>
   <ul>
