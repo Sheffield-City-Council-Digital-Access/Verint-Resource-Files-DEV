@@ -1260,7 +1260,7 @@ const localLandCharges = new ContentPaD(
   `
   <h3>Overview</h3>
     <p>
-      Local Land Charges are restrictions or legal obligations placed on land or property. These are recorded by 
+      Local Land Charges are <strong>restrictions</strong> or <strong>legal obligations</strong> placed on <strong>land or property</strong>. These are recorded by 
       the council and can affect how a property is used or whether there are financial liabilities attached to it.
     </p>
     <p>
@@ -1299,7 +1299,7 @@ const localLandCharges = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        A Local Authority Search is a compulsory part of the conveyancing process. It provides important information 
+        A Local Authority Search is a <strong>compulsory part of the conveyancing process</strong>. It provides important information 
         about a property before a sale is completed.
       </p>
       <p>The search can include:</p>
@@ -1325,14 +1325,14 @@ const localLandCharges = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        Searches can be requested by email (<a href="mailto:landcharges@sheffield.gov.uk">landcharges@sheffield.gov.uk</a>) or by post.
+        Searches can be requested by email at<a href="mailto:landcharges@sheffield.gov.uk">landcharges@sheffield.gov.uk</a>, or by post.
       </p>
       <p>
         Searches can also be requested through third parties – for example a conveyancing solicitor.
       </p>
       <p>
-        Customers can also carry out their own enquiries using the CON29 questions, by contacting the council at 
-        <a href="mailto:foi@sheffield.gov.uk">foi@sheffield.gov.uk</a> for guidance.
+        Customers can also carry out their own enquiries using the CON29 questions. For guidance about how to do this, customers should contact the council at 
+        <a href="mailto:foi@sheffield.gov.uk">foi@sheffield.gov.uk</a>.
       </p>
       <p>
         Fees vary depending on the type of search and any additional information requested.
