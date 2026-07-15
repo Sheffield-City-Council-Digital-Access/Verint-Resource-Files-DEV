@@ -1085,7 +1085,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
   </p>
   <p>[Insert Send Link]</p>
 
-  
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>When a Site Inspection is Needed</h3>
@@ -1154,7 +1154,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
       </p>
       <p>[Insert Send Link]</p>
       <p>
-        If the app cannot be used, customers can contact the Building Control team directly.
+        If the app cannot be used, customers can contact the Building Control team directly on 0114 273 4168.
       </p>
       <p>
         <em>Please note: The same information required for the app will still be needed.</em>
@@ -1208,7 +1208,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
     <div class="accordion-content">
       <p>
         A completion inspection is required at the end of a project. 
-        Please see the knowledge tile <strong>Request a Completion Certificate for further information</strong>.
+        Please see the knowledge tile <strong>Request a Completion Certificate</strong> for further information.
       </p>
     </div>
   </details>
