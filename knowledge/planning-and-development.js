@@ -1396,7 +1396,7 @@ const buildingControl = new MenuPaD(
     requestACompletionCertificate,
     reportingDangerousStructures,
     bookingBuildingSiteInspections,
-    localLandCharge,
+    localLandCharges,
   ]
 );
 
