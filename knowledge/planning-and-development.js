@@ -1352,8 +1352,8 @@ const localLandCharges = new ContentPaD(
 
   `,
   { buttonLabel: , formName:  },
-  { typeKey:  },
-  { typeKey:  },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
