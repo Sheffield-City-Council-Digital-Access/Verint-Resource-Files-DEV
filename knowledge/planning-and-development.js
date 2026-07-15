@@ -1253,6 +1253,135 @@ const bookingBuildingSiteInspections = new ContentPaD(
 );
 
 
+const localLandCharges = new ContentPaD(
+  "localLandCharges",
+  "Local Land Charges",
+  "Information and guidance for requesting Local Land Charges and Local Authority Searches.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Local Land Charges are restrictions or legal obligations placed on land or property. These are recorded by 
+      the council and can affect how a property is used or whether there are financial liabilities attached to it.
+    </p>
+    <p>
+      The Local Land Charges service provides official information to support property transactions such as 
+      buying or selling land. The service has a statutory duty to supply accurate information when requested.
+    </p>
+    <p>
+      More detailed information can be found here: 
+      <a href="https://www.sheffield.gov.uk/your-city-council/legal-services/local-land-charges" target="_blank">
+      Land and property searches | Sheffield City Council</a>
+    </p>
+
+    <p>[Insert Send Link]</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When are Searches Needed?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers typically get in touch when they:</p>
+        <ul>
+          <li>Are buying or selling a property</li>
+          <li>Need information for a conveyancing (legal property transfer) search</li>
+          <li>Want to check if any restrictions or obligations apply to a property</li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What a Local Authority Search Includes</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A Local Authority Search is a compulsory part of the conveyancing process. It provides important information 
+        about a property before a sale is completed.
+      </p>
+      <p>The search can include:</p>
+        <ul>
+          <li>Charges for services such as roads</li>
+          <li>Restrictions such as Tree Preservation Orders</li>
+          <li>Planning conditions or permissions</li>
+          <li>Conservation area designations</li>
+          <li>Listed building status</li>
+          <li>Legal agreements affecting the land</li>
+        </ul>
+      <p>
+        This information helps solicitors and buyers understand any risks, limitations, or obligations linked to the property.
+      </p>
+    </div>
+  </details>
+
+    
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Request a Search</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Searches can be requested by email (<a href="mailto:landcharges@sheffield.gov.uk">landcharges@sheffield.gov.uk</a>) or by post.
+      </p>
+      <p>
+        Searches can also be requested through third parties – for example a conveyancing solicitor.
+      </p>
+      <p>
+        Customers can also carry out their own enquiries using the CON29 questions, by contacting the council at 
+        <a href="mailto:foi@sheffield.gov.uk">foi@sheffield.gov.uk</a> for guidance.
+      </p>
+      <p>
+        Fees vary depending on the type of search and any additional information requested.
+      </p>
+    </div>
+  </details>
+
+
+    <h3>Key Points for Call Centre Staff</h3>
+    <ul>
+      <li>Local Land Charges relate to <strong>legal restrictions or financial obligations on land or property</strong></li>
+      <li>A <strong>Local Authority Search is required during property transactions</strong></li>
+      <li>The search helps identify <strong>issues that could affect ownership or use of the property</strong></li>
+      <li>Requests can be made through multiple channels, including the council and third parties</li>
+      <li>Charges apply depending on the search type and level of detail required</li>
+    </ul>
+
+  `,
+  { buttonLabel: , formName:  },
+  { typeKey:  },
+  { typeKey:  },
+  {
+    type: "Information",
+    keywords: [
+      "local",
+      "land",
+      "charges",
+      "charge",
+      "local authority",
+      "search",
+      "property",
+      "conveyancing",
+      "property",
+      "restrictions",
+      "legal obligations",
+      "land restrictions",
+      "planning conditions",
+      "liabilities",
+      "landcharges",
+      "chargs",
+      "charjes",
+      "conveyncing",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "15/07/2026", name: "Liz Taster" }
+);
+
+
 const buildingControl = new MenuPaD(
   "buildingControl",
   "Building Control",
