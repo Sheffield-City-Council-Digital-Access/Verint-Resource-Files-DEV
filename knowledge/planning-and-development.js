@@ -1664,12 +1664,12 @@ const partnerAuthoritySchemeApplications = new ContentPaD(
   "Details of the LABC Partner Authority scheme.",
   `
   <p>
-    The Local Authority Building Control (LABC) partner authority scheme is shared by all local authority building control 
+    The Local Authority Building Control (LABC) <strong>partner authority scheme</strong> is shared by all local authority building control 
     teams in England and Wales. 
   </p>
 
   <p>
-    A company can choose to work with any local authority building control surveyor to undertake all pre-application and desig 
+    A company can choose to work with any local authority building control surveyor to undertake all pre-application and design 
     work, regardless of the project's geographical location.
   </p>
 
