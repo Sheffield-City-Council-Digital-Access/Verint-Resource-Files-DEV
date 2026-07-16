@@ -2009,6 +2009,7 @@ const buildingControl = new MenuPaD(
     workingWithAnRBCA,
     historicalPlanningRequests,
     partnerAuthoritySchemeApplications,
+    dangerousStructuresTwo
   ]
 );
 
