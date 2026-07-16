@@ -1526,7 +1526,7 @@ const historicalPlanningRequests = new ContentPaD(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Service Details</h3>
+      <h3>Planning History Requests</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -1593,7 +1593,7 @@ const historicalPlanningRequests = new ContentPaD(
           <ul>
             <li>Complete a request form</li>
             <li>Provide application numbers</li>
-            <li>Email it to the planning service</li>
+            <li>Email it to the planning service at <a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a></li>
             <li>Files can only be viewed after <strong>authorisation by senior managers</strong>.</li>
           </ul>
 
@@ -1615,6 +1615,8 @@ const historicalPlanningRequests = new ContentPaD(
       <p>
         Customers purchasing a property may require a <strong>comprehensive search or an expedited search</strong>. 
         These enquiries should be referred to the <strong>Local Land Charges team</strong>. 
+      </p>
+      <p>
         Please refer to the Local Land Charges knowledge article.
       </p>
     </div>
