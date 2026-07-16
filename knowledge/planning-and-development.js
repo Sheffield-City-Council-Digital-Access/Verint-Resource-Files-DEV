@@ -1694,7 +1694,7 @@ const partnerAuthoritySchemeApplications = new ContentPaD(
     type: "Information",
     keywords: [
       "LABC",
-      "PAS"
+      "PAS",
       "partner",
       "scheme",
       "local",
