@@ -1658,6 +1658,61 @@ const historicalPlanningRequests = new ContentPaD(
 );
 
 
+const partnerAuthoritySchemeApplications = new ContentPaD(
+  "partnerAuthoritySchemeApplicationss",
+  "Partner Authority Scheme Applications",
+  "Details of the LABC Partner Authority scheme.",
+  `
+  <p>
+    The Local Authority Building Control (LABC) partner authority scheme is shared by all local authority building control 
+    teams in England and Wales. 
+  </p>
+
+  <p>
+    A company can choose to work with any local authority building control surveyor to undertake all pre-application and desig 
+    work, regardless of the project's geographical location.
+  </p>
+
+  <p>
+    Architect companies interested in joining this scheme should review the details and complete the application to become a partner on the LABC website.
+  <p/>
+
+  <p>
+    Full details can be found here: 
+    <a href="https://www.labc.co.uk/about/how-labc-supports-your-authority/partner-authority-scheme-pas" target="_blank">
+    Partner Authority Scheme | LABC</a>
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "LABC",
+      "PAS"
+      "partner",
+      "scheme",
+      "local",
+      "authority",
+      "parner",
+      "partnr",
+      "prtner",
+      "skeem",
+      "sceme",
+      "skeme",
+      "authorty",
+      "authrity",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "16/07/2026", name: "Liz Taster" }
+);
+
 
 const buildingControl = new MenuPaD(
   "buildingControl",
@@ -1676,6 +1731,7 @@ const buildingControl = new MenuPaD(
     localLandCharges,
     workingWithAnRBCA,
     historicalPlanningRequests,
+    partnerAuthoritySchemeApplications,
   ]
 );
 
