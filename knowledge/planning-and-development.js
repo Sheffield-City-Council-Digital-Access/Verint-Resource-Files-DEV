@@ -310,7 +310,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
             onclick="
                 window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                     KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Label%20Used%20In%20Form%20List\`
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Local%20Enforcement%20Plan\`
             "
         >
             Send link to review further information
@@ -1117,7 +1117,7 @@ const reportingDangerousStructures = new ContentPaD(
 `,
   { buttonLabel: "Report a Dangerous Structure", formName: "dangerous_structures" },
   { typeKey: "" },
-  { typeKey: "dangerous_structures_information_provided" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Report",
     keywords: [
