@@ -1432,7 +1432,7 @@ const workingWithAnRBCA = new ContentPaD(
       </p>
         <ul>
           <li>It <strong>notifies the council</strong> that building control for a project will be managed by a 
-            Building Control Approver rather than the Local Authority itself.</li>
+            Registered Building Control Approver rather than the Local Authority itself.</li>
           <li>It <strong>officially registers the project</strong> on the Local Authority’s system. 
             This ensures that future legal searches, such as those carried out by conveyancing solicitors during property transactions, 
             can access accurate and up-to-date information.</li>
@@ -1463,13 +1463,13 @@ const workingWithAnRBCA = new ContentPaD(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Apply for a Reversion<</h3>
+      <h3>Apply for a Reversion</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        A <strong>reversion notice</strong> is used when an RBCA can no longer manage your project. 
-        This notice legally transferrs responsibility for building control back over to the council.
+        A <strong>reversion notice</strong> is used when an RBCA can no longer manage a project. 
+        This notice legally transfers responsibility for building control back over to the council.
       </p>
       <p>
         A reversion notice can be submitted by the RBCA, by the person carrying out the work, or by the Building Safety Regulator.
