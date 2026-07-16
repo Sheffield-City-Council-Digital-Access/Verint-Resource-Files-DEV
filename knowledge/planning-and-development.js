@@ -1506,6 +1506,157 @@ const workingWithAnRBCA = new ContentPaD(
 );
 
 
+const historicalPlanningRequests = new ContentPaD(
+  "historicalPlanningRequests",
+  "Historical Planning Application Requests",
+  "Guidance on how customers can request and access planning history information, including service details, charges, requirements, and processes.",
+  `
+<h3>Overview</h3>
+  <p>
+    Customers may request information about the planning history of a property or site. 
+    Multiple options are available depending on the type of search, the time period required, and the level of detail needed.
+  </p>
+  <p>
+    For full details, refer customers to: 
+    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank">
+    Find a property's planning history | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Service Details</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <h4>Planning History Requests</h4>
+        <ul>
+          <li>The service provides planning histories and enforcement case information.</li>
+          <li>Standard coverage is from <strong>2001 to the present date</strong>.</li>
+          <li>Requests can be extended back to <strong>1975</strong> for an additional charge.</li>
+        </ul>
+
+      <h4>Charges</h4>
+        <ul>
+          <li>£25 for a <strong>domestic, straightforward postal address search</strong> (including VAT).</li>
+          <li>£50 for a <strong>commercial search</strong> (including VAT).</li>
+          <li>More complex searches may incur <strong>higher charges by arrangement</strong>.</li>
+        </ul>
+
+      <h4>Requirements to Submit a Request</h4>
+        <ul>
+          <li>A covering letter</li>
+          <li>A <strong>1:1250 location plan</strong></li>
+          <li>Payment for the relevant fee</li>
+        </ul>
+
+      <h4>Processing Time</h4>
+        <p>
+          Searches are typically completed within <strong>5 working days after payment is received</strong>.
+        </p>
+    </div>
+  </details>  
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Complex or Specialist Searches</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Complex searches attract additional charges and are handled by the <strong>Records and Enquiries Team</strong>.
+      </p>
+      <p>
+        Customers should be directed to this team for detailed or unusual requests.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Viewing Historical Planning Files</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Historical applications from <strong>1998 to 2003</strong> are available on a public computer at First Point, Howden House.
+      </p>
+
+      <h4>In-Person Viewing</h4>
+        <p>
+          In-person viewing is available for <strong>straightforward numbered properties (1975–2005)</strong>.
+        </p>
+        <p>Customers must:</p>
+          <ul>
+            <li>Complete a request form</li>
+            <li>Provide application numbers</li>
+            <li>Email it to the planning service</li>
+            <li>Files can only be viewed after <strong>authorisation by senior managers</strong>.</li>
+          </ul>
+
+      <h4>Assistance and Support</h4>
+        <ul>
+          <li>Up to <strong>10 minutes of help is provided free of charge</strong>.</li>
+          <li>Additional assistance must be <strong>paid for in advance</strong>.</li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Property Purchases</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers purchasing a property may require a <strong>comprehensive search or an expedited search</strong>. 
+        These enquiries should be referred to the <strong>Local Land Charges team</strong>. 
+        Please refer to the Local Land Charges knowledge article.
+      </p>
+    </div>
+  </details>
+
+
+  <h3>Key Points for Call Centre Staff</h3>
+    <ul>
+      <li>Confirm what time period the customer needs before advising on the correct route.</li>
+      <li>Check whether the customer requires a <strong>simple search, complex search, or in-person file viewing</strong>.</li>
+      <li>Inform customers about <strong>required documents and fees</strong> before submitting a request.</li>
+      <li>Direct complex queries and specialist requests to the <strong>Records and Enquiries Team</strong>.</li>
+      <li>Refer property purchase-related enquiries to the <strong>Local Land Charges team</strong>.</li>
+    </ul>
+    
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "planning",
+      "history",
+      "requests",
+      "historical",
+      "application",
+      "property",
+      "complex planning search",
+      "planning files",
+      "in person viewing",
+      "planing",
+      "historial",
+      "plannng"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "16/07/2026", name: "Liz Taster" }
+);
+
+
+
 const buildingControl = new MenuPaD(
   "buildingControl",
   "Building Control",
@@ -1522,6 +1673,7 @@ const buildingControl = new MenuPaD(
     bookingBuildingSiteInspections,
     localLandCharges,
     workingWithAnRBCA,
+    historicalPlanningRequests,
   ]
 );
 
