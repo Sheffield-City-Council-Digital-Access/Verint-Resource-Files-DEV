@@ -1530,7 +1530,7 @@ const historicalPlanningRequests = new ContentPaD(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <h4>Planning History Requests</h4>
+      <h4>Service Details</h4>
         <ul>
           <li>The service provides planning histories and enforcement case information.</li>
           <li>Standard coverage is from <strong>2001 to the present date</strong>.</li>
