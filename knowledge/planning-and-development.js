@@ -1325,10 +1325,10 @@ const localLandCharges = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        Searches can be requested by email at<a href="mailto:landcharges@sheffield.gov.uk">landcharges@sheffield.gov.uk</a>, or by post.
+        Searches can be requested by email at <a href="mailto:landcharges@sheffield.gov.uk">landcharges@sheffield.gov.uk</a>, or by post.
       </p>
       <p>
-        Searches can also be requested through third parties – for example a conveyancing solicitor.
+        Searches can also be requested through third parties – for example, a conveyancing solicitor.
       </p>
       <p>
         Customers can also carry out their own enquiries using the CON29 questions. For guidance about how to do this, customers should contact the council at 
@@ -1381,6 +1381,98 @@ const localLandCharges = new ContentPaD(
   { date: "15/07/2026", name: "Liz Taster" }
 );
 
+const workingWithAnRBCA = new ContentPaD(
+  "workingWithAnRBCA",
+  "Working with a Registered Building Control Approver",
+  "Guidance on working with a Registered Building Control Approver (RBCA), including roles, responsibilities, initial notices, amendments, and reversion procedures.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Customers can choose to work with a Registered Building Control Approver. 
+      They will act to ensure building projects comply with building regulations. 
+      This is instead of the council ensuring compliance.
+    </p>
+    <p>
+      Where a customer hires an RBCA, there is still information that needs to be provided to the council. 
+      This is normally done by the RBCA, not by the customer.
+    </p>
+
+  <h3>What is a Registered Building Control Approver?</h3>
+    <p>
+      A <strong>Registered Building Control Approver (RBCA)</strong> is an individual or company that can act as an 
+      alternative to Local Authority Building Control. They were previously known as an ‘Approved Inspector’.
+    </p>
+    <p>
+      RBCAs are authorised to ensure building projects comply with building regulations. 
+      They are responsible for all the things normally done by Building Control at the council - reviewing plans, 
+      inspecting work on-site, and issuing final certificates upon completion.
+    </p>
+    <p>
+      All RBCAs must be licensed and registered by the <strong>Building Safety Regulator (BSR)</strong>. 
+      Customers should check their registration when hiring them.
+    </p>
+
+  <h3>Initial Notice</h3>
+    <p>
+      The Initial Notice is an essential document in the building control process if working with an RBCA. 
+      It serves two important functions:
+    </p>
+      <ul>
+        <li>It <strong>notifies the council</strong> that building control for a project will be managed by a 
+          Building Control Approver rather than the Local Authority itself.</li>
+        <li>It <strong>officially registers the project</strong> on the Local Authority’s system. 
+          This ensures that future legal searches, such as those carried out by conveyancing solicitors during property transactions, 
+          can access accurate and up-to-date information.</li>
+      </ul>
+    <p>
+      The Initial Notice has a set format determined by current UK building control legislation and is normally submitted 
+      by a customer's RBCA.
+    </p>
+
+  <h3>Cancellation or Amendment of Initial Notice</h3>
+    <p>
+      If there are <strong>changes</strong> after an Initial Notice has been submitted, or the work is <strong>cancelled</strong>, 
+      these need to be reported to the council in an <em>Amendment Notification.</em> 
+      There is a set format for submitting this information that is determined by current UK building control legislation. 
+      This is normally submitted by a customer's RBCA.
+    </p>
+
+  <h3>Apply for a Reversion</h3>
+    <p>
+      A <strong>reversion notice</strong> is used when an RBCA can no longer manage your project. 
+      This notice legally transferrs responsibility for building control back over to the council.
+    </p>
+    <p>
+      A reversion notice can be submitted by the RBCA, by the person carrying out the work, or by the Building Safety Regulator.
+    </p>`
+    
+    ,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "Registered Building Control Approver",
+      "RBCA",
+      "initial",
+      "notice",
+      "notification",
+      "amendment ",
+      "reversion",
+      "project registration",
+      "initail",
+      "intial",
+      "reverion",
+      "rversion",
+      "revrsion",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "16/07/2026", name: "Liz Taster" }
+);
+
 
 const buildingControl = new MenuPaD(
   "buildingControl",
@@ -1397,6 +1489,7 @@ const buildingControl = new MenuPaD(
     reportingDangerousStructures,
     bookingBuildingSiteInspections,
     localLandCharges,
+    workingWithAnRBCA,
   ]
 );
 
