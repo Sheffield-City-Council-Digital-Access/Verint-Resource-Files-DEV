@@ -57,42 +57,7 @@ class FormPaD extends CorePaD {
 //#region Building Control
 
 
-const templateTile = new ContentPaD(
-  "templateTile",
-  "Template Tile",
-  "Description to go on main tile.",
-  `
-    <h3>Header</h3>
-    <p>Content</p>
-
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>[Accordion content]</p>
-    </div>
-  </details>
-
-  `,
-
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Information",
-    keywords: [
-      "template",
-      "templte"
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "01/07/2026", name: "Liz Taster" }
-);
-
-
-const guideForDemolitionNoticeQueries = new ContentPaD(
+const giveNoticeToDemolishABuilding = new ContentPaD(
   "giveNoticeToDemolishABuilding",
   "Give Notice to Demolish a Building",
   "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
@@ -120,7 +85,18 @@ const guideForDemolitionNoticeQueries = new ContentPaD(
       <a href="https://www.sheffield.gov.uk/planning-development/building-control/demolish-building" target="_blank">Apply to demolish a building | Sheffield City Council</a>
     </p>
 
-    <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20to%20demolish%20a%20building\`
+            "
+        >
+            Send link to review further information
+        </button>
  
 
   <details class="accordion">
@@ -173,7 +149,7 @@ const guideForDemolitionNoticeQueries = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -216,7 +192,18 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
     Reporting a planning enforcement issue | Sheffield City Council</a>
   </p>
 
-  <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
 <details class="accordion">
@@ -234,7 +221,18 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
         Reporting a planning enforcement issue | Sheffield City Council</a>
       </p>
 
-      <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
+            "
+        >
+            Send link to review further information
+        </button>
 
       <p>Residents should report if they believe:</p>
         <ul>
@@ -248,7 +246,19 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
         Search, view and comment on planning applications | Sheffield City Council</a>
       </p>
 
-      <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Search%20view%20and%20comment%20on%20planning%20applications\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -292,7 +302,20 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
         <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank">
         Sheffield Local Enforcement Plan</a>
       </p>
-      <p>[Insert Send Link]</p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Label%20Used%20In%20Form%20List\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -309,9 +332,9 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
       </ul>
     
     `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report a Planning Issue", formName: "report_planning_issue" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -360,7 +383,18 @@ const applyForABuildingNotice = new ContentPaD(
       Building Notice Application | Sheffield City Council</a>
     </p>
 
-    <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Notice%20Application\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
   <details class="accordion">
@@ -456,7 +490,7 @@ const applyForABuildingNotice = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -507,7 +541,18 @@ const fullPlansBuildingApplication = new ContentPaD(
       Full Plans Application – Sheffield City Council</a>
     </p>
 
-    <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Full%20Plans%20Application\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -614,7 +659,7 @@ const fullPlansBuildingApplication = new ContentPaD(
     `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -675,7 +720,18 @@ const applyForARegularisationCertificate = new ContentPaD(
     Regularisation Application | Sheffield City Council</a>
   </p>
 
-  <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Regularisation%20Application\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
   <details class="accordion">
@@ -802,7 +858,7 @@ const applyForARegularisationCertificate = new ContentPaD(
 `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -852,7 +908,19 @@ const requestACompletionCertificate = new ContentPaD(
       <a href="https://www.sheffield.gov.uk/planning-development/building-control/completion"target="_blank">
       Completion certificates | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Completion%20certificates\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -910,7 +978,7 @@ const requestACompletionCertificate = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -962,7 +1030,19 @@ const reportingDangerousStructures = new ContentPaD(
     <a href="https://www.sheffield.gov.uk/planning-development/building-regulations/report-dangerous-structure" target="_blank">
     Report a dangerous structure | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link]</p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20dangerous%20structure\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
 <details class="accordion">
@@ -1035,9 +1115,9 @@ const reportingDangerousStructures = new ContentPaD(
   </details>
 
 `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report a Dangerous Structure", formName: "dangerous_structures" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "dangerous_structures_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -1083,7 +1163,19 @@ const bookingBuildingSiteInspections = new ContentPaD(
     Further information can be found here: <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
     Book a building site inspection | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link]</p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20building%20site%20inspection\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
   <details class="accordion">
@@ -1152,7 +1244,20 @@ const bookingBuildingSiteInspections = new ContentPaD(
         <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
         Book a building site inspection | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20building%20site%20inspection\`
+            "
+        >
+            Send link to review further information
+        </button>
+
       <p>
         If the app cannot be used, customers can contact the Building Control team directly on 0114 273 4168.
       </p>
@@ -1225,7 +1330,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
 ,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -1273,7 +1378,18 @@ const localLandCharges = new ContentPaD(
       Land and property searches | Sheffield City Council</a>
     </p>
 
-    <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Land%20and%20property%20searches\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
   <details class="accordion">
@@ -1353,7 +1469,7 @@ const localLandCharges = new ContentPaD(
   `,
   { buttonLabel:"" , formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1482,7 +1598,7 @@ const workingWithAnRBCA = new ContentPaD(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1521,7 +1637,19 @@ const historicalPlanningRequests = new ContentPaD(
     <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank">
     Find a property's planning history | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link]</p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20property%20planning%20history\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
   <details class="accordion">
@@ -1635,7 +1763,7 @@ const historicalPlanningRequests = new ContentPaD(
     `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1683,13 +1811,24 @@ const partnerAuthoritySchemeApplications = new ContentPaD(
     Partner Authority Scheme | LABC</a>
   </p>
 
-  <p>[Insert Send Link]</p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=LABC%20Partner%20Authority%20Scheme\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 
     `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1719,8 +1858,7 @@ const buildingControl = new MenuPaD(
   "Building Control",
   "Information regarding building control",
   [
-    templateTile,
-    guideForDemolitionNoticeQueries,
+    giveNoticeToDemolishABuilding,
     reportingAPlanningEnforcementIssue,
     applyForABuildingNotice,
     fullPlansBuildingApplication,
