@@ -62,7 +62,6 @@ const giveNoticeToDemolishABuilding = new ContentPaD(
   "Give Notice to Demolish a Building",
   "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
   `  
-  <h3>Overview</h3>
     <p>
       Customers planning to demolish a building in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
     </p>
@@ -178,7 +177,6 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
   "Reporting a Planning Enforcement Issue",
   "Information about reporting a planning enforcement issue, including what can and cannot be reported.",
   `
-<h3>Overview</h3>
   <p>
     Residents can report a planning enforcement issue to the council if they believe development has taken place without planning permission 
     or is not in line with the permission granted.
@@ -369,7 +367,6 @@ const applyForABuildingNotice = new ContentPaD(
   "Apply for a Building Notice",
   "Details of how to Apply for a Building Notice for minor domestic building works, including eligibility and process details",
   `
-  <h3>Overview</h3>
     <p>
       A Building Notice is a type of building control application used for <strong>minor works to domestic properties (homes)</strong>. 
       It allows customers to notify the council of planned building work <strong>without submitting detailed plans for formal approval before work starts</strong>.
@@ -526,8 +523,6 @@ const fullPlansBuildingApplication = new ContentPaD(
   "Full Plans Building Application",
   "Information about Full Plans Building Applications - including when they are needed and how to apply.",
   `
-
-  <h3>Overview</h3>
     <p>
       A Full Plans Building Application is used to have detailed building proposals checked and approved before construction work begins. 
       It ensures that plans comply with relevant Building Regulations and helps reduce the risk of issues, delays, or costly changes during construction.
@@ -704,7 +699,6 @@ const applyForARegularisationCertificate = new ContentPaD(
   "Apply for a Regularisation Certificate",
   "Information about how to apply for retrospective approval for building work completed without Building Regulations approval.",
   `
-<h3>Overview</h3>
   <p>
     A <strong>Regularisation Certificate</strong> is used to gain <strong>retrospective approval</strong> for building work that was completed <strong>without Building Regulations approval at the time</strong>.
   </p>
@@ -893,7 +887,6 @@ const requestACompletionCertificate = new ContentPaD(
   "Request a Completion Certificate",
   "Guidance on how to request a completion certificate for building work.",
   `
-  <h3>Overview</h3>
     <p>
       A <strong>completion certificate</strong> is issued at the end of a building project to confirm that the <strong>work complies with Building Regulations</strong>. 
     </p>
@@ -1018,7 +1011,6 @@ const reportingDangerousStructures = new ContentPaD(
       </p>
   </section>
   
-<h3>Overview</h3>
   <p>
     Residents can report a dangerous structure to Sheffield City Council if a building or structure appears to pose a <strong>risk to people, property, or the surrounding area</strong>.
   </p>
@@ -1151,7 +1143,6 @@ const bookingBuildingSiteInspections = new ContentPaD(
   "Booking Building Site Inspections",
   "Information about how residents (or their builders) can book a building site inspections as part of an existing building control application.",
   `
-<h3>Overview</h3>
   <p>
     Residents (or their builders) can book a building site inspection as part of an existing building control application with Sheffield City Council. 
     The inspection service is included within the application and ensures work complies with building regulations.
@@ -1363,7 +1354,6 @@ const localLandCharges = new ContentPaD(
   "Local Land Charges",
   "Information and guidance for requesting Local Land Charges and Local Authority Searches.",
   `
-  <h3>Overview</h3>
     <p>
       Local Land Charges are <strong>restrictions</strong> or <strong>legal obligations</strong> placed on <strong>land or property</strong>. These are recorded by 
       the council and can affect how a property is used or whether there are financial liabilities attached to it.
@@ -1502,7 +1492,6 @@ const workingWithAnRBCA = new ContentPaD(
   "Working with a Registered Building Control Approver",
   "Guidance on working with a Registered Building Control Approver (RBCA), including roles, responsibilities, initial notices, amendments, and reversion procedures.",
   `
-  <h3>Overview</h3>
     <p>
       Customers can choose to work with a Registered Building Control Approver. 
       They will act to ensure building projects comply with building regulations. 
@@ -1627,7 +1616,6 @@ const historicalPlanningRequests = new ContentPaD(
   "Historical Planning Application Requests",
   "Guidance on how customers can request and access planning history information, including service details, charges, requirements, and processes.",
   `
-<h3>Overview</h3>
   <p>
     Customers may request information about the planning history of a property or site. 
     Multiple options are available depending on the type of search, the time period required, and the level of detail needed.
@@ -1823,7 +1811,6 @@ const partnerAuthoritySchemeApplications = new ContentPaD(
         >
             Send link to review further information
         </button>
-
 
     `,
   { buttonLabel: "", formName: "" },
