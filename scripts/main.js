@@ -3269,7 +3269,7 @@ function validDate(
           !checkDateRelationship(inputDate, new Date(dateBValue), pair.rule)
         ) {
           validationMsg
-            .text(`${baseMessage} ${pair.validationMessages[0]}`)
+            .text(`${pair.validationMessages[0]}`)
             .show();
           return false;
         }
@@ -3280,7 +3280,7 @@ function validDate(
           !checkDateRelationship(new Date(dateAValue), inputDate, pair.rule)
         ) {
           validationMsg
-            .text(`${baseMessage} ${pair.validationMessages[1]}`)
+            .text(`${pair.validationMessages[1]}`)
             .show();
           return false;
         }
