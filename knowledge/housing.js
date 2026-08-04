@@ -5482,6 +5482,144 @@ const domesticAbuseAssessment = new ContentH(
 );
 
 
+const earlyHelpAndPrevention = new ContentH(
+  "earlyHelpAndPrevention",
+  "Early Help and Prevention",
+  "Homelessness Early Help and Prevention",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Eviction Prevention – Job Loss</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Customers should be advised that landlords must follow the legal eviction process and cannot normally evict immediately.
+        </p>
+
+        <ul>
+            <li>Encourage early communication with the landlord.</li>
+            <li>Explore temporary payment arrangements where possible.</li>
+            <li>Apply for Universal Credit, including the housing element.</li>
+            <li>Request a Universal Credit advance if experiencing financial hardship.</li>
+            <li>Apply for a Discretionary Housing Payment.</li>
+            <li>Contact the local Housing Options service.</li>
+            <li>Signpost to Shelter, Citizens Advice, or HLPAS.</li>
+        </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Early Help Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Early Help aims to support families at the earliest opportunity to prevent problems escalating.
+            </p>
+
+            <ul>
+                <li>Family Intervention Service (FIS) offers one-to-one support with issues such as debt, mental health, and parenting.</li>
+                <li>Family Hubs provide access to groups, health services, and parenting support.</li>
+                <li>An Early Help Assessment (EHA) is required before a referral can be made.</li>
+                <li>
+                    Email:
+                    <a href="mailto:EarlyHelpAssessment@sheffield.gov.uk">
+                        EarlyHelpAssessment@sheffield.gov.uk
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Financial Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Household Support Fund assistance may be available through the local authority.</li>
+                <li>Access to low-cost community meals may be available.</li>
+                <li>Budgeting support and debt advice can be accessed through support services.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Health &amp; Family Support Contacts</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>
+                    Community Midwives:
+                    <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2268301')">0114 2268301</a>
+                </li>
+
+                <li>
+                    Health Visitors:
+                    <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 3053224')">0114 3053224</a>
+                </li>
+
+                <li>
+                    Health Improvement Team:
+                    <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2262534')">0114 2262534</a>
+                </li>
+
+                <li>
+                    Infant Feeding Support:
+                    <a href="mailto:InfantFeedingSupport@sheffield.gov.uk">
+                        InfantFeedingSupport@sheffield.gov.uk
+                    </a>
+                </li>
+
+                <li>
+                    Doula support may be available through an Early Help Assessment referral.
+                </li>
+            </ul>
+
+        </div>
+    </details>
+
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "health",
+      "adaptations",
+      "adaptation",
+      "medical",
+      "grants",
+      "mobility",
+      "needs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
 
 
 const eligibility = new ContentH(
@@ -6912,7 +7050,25 @@ JCHERESENDLINKS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 JCHERESENDLINKS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       </ul>
     </p>
-
+        <h3>Actions Advised</h3>
+        <ul>
+            <li>Contact the landlord and explain the impact of job loss on household income.</li>
+            <li>Offer a temporary affordable payment arrangement where possible.</li>
+            <li>
+                Apply for Universal Credit, including the housing element:
+                <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank" rel="noopener noreferrer">
+                    Universal Credit: How to Claim - GOV.UK
+                </a>
+            </li>
+            <li>Request an advance payment if financial hardship is being experienced.</li>
+            <li>
+                Apply for a Discretionary Housing Payment or relevant local assistance:
+                <a href="https://www.sheffield.gov.uk/benefits/apply-benefits-support/discretionary-CRFHP" target="_blank" rel="noopener noreferrer">
+                    Crisis and Resilience Fund: Housing Payment and Council Tax Hardship Scheme
+                </a>
+            </li>
+            <li>Seek independent advice from HLPAS, Shelter, or Citizens Advice.</li>
+        </ul>
     `,
   {
     buttonLabel: "",
@@ -10706,7 +10862,251 @@ const threatenedWithEvictionOrPossession = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
+const worriedAboutEviction = new ContentH(
+  "worriedAboutEviction",
+  "Worried About Eviction",
+  "Steps for assessing eviction concerns, providing reassurance, preventing homelessness, exploring housing options, and recording prevention activity.",
+  `
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>1. Understand the Situation First</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
 
+        <p><strong>Establish key facts:</strong></p>
+
+        <ul>
+            <li>What type of tenancy does the customer have (for example, assured shorthold tenancy, licence, or social tenancy)?</li>
+            <li>What specifically are they worried about?</li>
+            <li>Have they received a notice, such as a Section 8 notice or Notice to Quit?</li>
+            <li>When does the notice expire?</li>
+            <li>Are there rent arrears or other tenancy issues?</li>
+        </ul>
+
+        <p>
+            <strong>Key Principle:</strong> Concern about eviction does not automatically mean homelessness.
+            This is an opportunity for early prevention work.
+        </p>
+
+        <p><strong>Core Approach</strong></p>
+
+        <ul>
+            <li>Advice first.</li>
+            <li>Prevention second.</li>
+            <li>Keep interventions proportionate, early, and realistic.</li>
+            <li>Always be prepared to escalate support if circumstances worsen.</li>
+        </ul>
+
+        <p><strong>Key Practice Points</strong></p>
+
+        <ul>
+            <li>Do not move straight to a homelessness application without exploring prevention options.</li>
+            <li>Do not assume the tenancy arrangement is secure.</li>
+            <li>Do not require a formal eviction before taking action.</li>
+            <li>Do not delay escalation if risk increases.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>2. Provide Immediate Advice and Reassurance</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Explain that the customer does not normally have to leave immediately because a notice has been served.</li>
+            <li>Check whether the notice appears valid, including dates, documentation, and legal requirements.</li>
+            <li>Advise the customer to remain in the property until due legal process has been followed, unless remaining is unsafe.</li>
+            <li>Encourage the customer to seek legal advice if they are unsure about their rights.</li>
+        </ul>
+
+        <p>
+            Providing reassurance can reduce panic and help prevent avoidable homelessness.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>3. Consider Legal Position &amp; Duty</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>If eviction is likely within 56 days, the customer may be threatened with homelessness and Prevention Duty considerations may apply.</li>
+            <li>If court proceedings or bailiffs are involved, risk levels increase and support should be escalated.</li>
+        </ul>
+
+        <p><strong>Actions:</strong></p>
+
+        <ul>
+            <li>Check that any Section 8 notice is correctly issued and served on Form 3A.</li>
+            <li>Begin homelessness prevention activity immediately.</li>
+            <li>Refer to a Grade 5 officer and open Form 3C where required.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>4. Focus on Preventing Eviction</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Rent Arrears Support</strong></p>
+
+        <ul>
+            <li>Complete an income and expenditure assessment.</li>
+            <li>Maximise household income wherever possible.</li>
+            <li>Support claims for Universal Credit and Housing Costs.</li>
+            <li>Consider Discretionary Housing Payments (DHP).</li>
+            <li>Explore repayment plans with the landlord.</li>
+        </ul>
+
+        <p><strong>Landlord Negotiation</strong></p>
+
+        <ul>
+            <li>Contact the landlord or managing agent where customer consent is provided.</li>
+            <li>Explore payment arrangements.</li>
+            <li>Consider withdrawal of the notice.</li>
+            <li>Discuss extensions of time where appropriate.</li>
+        </ul>
+
+        <p><strong>Sustainment Support</strong></p>
+
+        <ul>
+            <li>Provide budgeting advice.</li>
+            <li>Refer to relevant support services.</li>
+            <li>Address underlying issues such as debt, health concerns, or financial hardship.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>5. Explore Alternative Housing Early</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            If prevention activity may not be successful, begin alternative housing planning early.
+        </p>
+
+        <ul>
+            <li>Private Rented Sector accommodation.</li>
+            <li>Deposit or bond schemes.</li>
+            <li>Supported accommodation where appropriate.</li>
+            <li>Family or friends accommodation as a short-term option if safe and suitable.</li>
+        </ul>
+
+        <p>
+            The aim is to support a planned move rather than a housing crisis.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>6. Assess Risk &amp; Priority Need</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>Check for indicators of increased vulnerability or priority need:</p>
+
+        <ul>
+            <li>Children within the household.</li>
+            <li>Pregnancy.</li>
+            <li>Physical or mental health conditions.</li>
+            <li>General vulnerability.</li>
+            <li>Risk of harm or safeguarding concerns.</li>
+        </ul>
+
+        <p>
+            Record findings and ensure appropriate escalation where required.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>7. Example CRM Case Note</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Customer is concerned about potential eviction. Notice status discussed and
+            initial housing advice provided, including rights to remain pending legal process.
+            Prevention options explored, including income maximisation and landlord engagement.
+            Customer assessed as threatened with homelessness and prevention work ongoing.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Key Pitfalls to Avoid</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Do not advise the customer to leave immediately following receipt of a notice.</li>
+            <li>Do not delay prevention activity.</li>
+            <li>Do not overlook financial solutions, which are often critical to sustaining accommodation.</li>
+            <li>Do not wait for bailiff action before taking preventative steps.</li>
+        </ul>
+
+        <p>
+            ✅ Act early<br>
+            ✅ Prevent eviction wherever possible<br>
+            ✅ Balance housing advice with legal duties<br>
+            ✅ Plan ahead if eviction cannot be avoided
+        </p>
+    </div>
+</details>
+    `,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing",
+      "rehausing",
+      "rehousingg",
+      "rehosuing",
+      "rehouzing",
+      "three",
+      "offers",
+      "demoted",
+      "disqualified",
+      "disqualify",
+      "disqualification",
+      "demotion",
+      "refused",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
 
 
 const demotedOrDisqualified = new ContentH(
@@ -10842,6 +11242,7 @@ const rehousing = new MenuH(
     bidding,
     demotedOrDisqualified,
     domesticAbuseAssessment,
+    earlyHelpAndPrevention,
     eligibility,
     endofHomeOffice,
     fosteringAndAdoption,
@@ -10852,6 +11253,7 @@ const rehousing = new MenuH(
     housingAssociations,
     idReferences,
     idFaq,
+    lostJob,
     movingIn,
     mutualExchanges,
     overcrowding,
