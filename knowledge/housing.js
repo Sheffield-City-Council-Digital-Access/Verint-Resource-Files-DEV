@@ -4139,75 +4139,6 @@ const applyForRehousing = new ContentH(
   { date: "12/05/2026", name: "Liz Taster" }
 );
 
-
-const asbHomeless = new ContentH(
-  "asbHomeless",
-  "Anti-Social Behaviour (Homelessness)xxxxxxxxxxxxxxx",
-  "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
-  `
-    <h3>When to use</h3>
-    <p>
-        A customer has presented and is experiencing anti-social behaviour.
-        Follow each step on the form and record answers on Form1B.
-    </p>
-
-    <h3>Section 1: Risk Assessment and Circumstances</h3>
-    <ol>
-        <li>Ask the customer to explain in detail about the anti-social behaviour they are experiencing.</li>
-        <li>Does it involve threats, violence, harassment or a hate crime?</li>
-        <li>Have they fled the property?</li>
-        <li>Do they want to return to the property?</li>
-        <li>What safety measures can we support them with to ensure they feel safe returning to their property?</li>
-    </ol>
-
-    <h3>Section 2: Who Is Your Housing Provider?</h3>
-
-    <p>
-        If the customer is a council tenant, refer to the relevant CRM page,
-        follow the procedures, and record actions on CRM and HSP.
-    </p>
-
-    <h3>Housing Association Tenant, Private Landlord or Supported Accommodation</h3>
-
-    <p>
-      <ol>
-          <li>Has the customer reported the incident to their Housing Association, Private Landlord, Supported Accommodation Provider and South Yorkshire Police?</li>
-      </ol> If yes, record incident numbers on the system.
-
-      <ol start="2">
-          <li>What was the outcome of the report?</li>
-          <li>Has any support been offered by the Housing Association or Landlord?</li>
-          <li>Confirm reports have been made and contact the Housing Association or Landlord where appropriate.</li>
-          <li>Gather all available evidence and upload it to HSP or NEC.</li>
-      </ol>
-    </p>
-    `,
-  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "rehousing_services_transferred_to_service" },
-  { typeKey: "rehousing_services_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "rehosing", 
-      "rehausing", 
-      "rehousingg", 
-      "rehosuing", 
-      "rehouzing",
-      "bidding",
-      "biding",
-      "bid",
-      "bids",
-      "housing",
-      "houzing",
-      "houssing",
-      "housin",
-      "housingg",
-    ],
-    categories: ["Housing", "Rehousing"],
-  },
-  { date: "31/07/2026", name: "Joseph Coupland" }
-);
-
 const asbCuckooing = new ContentH(
   "asbCuckooing",
   "Anti-Social Behaviour Cuckooing (Homelessness)xxxxxxxxxxxxxx",
@@ -4477,6 +4408,75 @@ const asbCuckooing = new ContentH(
   },
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
+
+const asbHomeless = new ContentH(
+  "asbHomeless",
+  "Anti-Social Behaviour (Homelessness)xxxxxxxxxxxxxxx",
+  "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
+  `
+    <h3>When to use</h3>
+    <p>
+        A customer has presented and is experiencing anti-social behaviour.
+        Follow each step on the form and record answers on Form1B.
+    </p>
+
+    <h3>Section 1: Risk Assessment and Circumstances</h3>
+    <ol>
+        <li>Ask the customer to explain in detail about the anti-social behaviour they are experiencing.</li>
+        <li>Does it involve threats, violence, harassment or a hate crime?</li>
+        <li>Have they fled the property?</li>
+        <li>Do they want to return to the property?</li>
+        <li>What safety measures can we support them with to ensure they feel safe returning to their property?</li>
+    </ol>
+
+    <h3>Section 2: Who Is Your Housing Provider?</h3>
+
+    <p>
+        If the customer is a council tenant, refer to the relevant CRM page,
+        follow the procedures, and record actions on CRM and HSP.
+    </p>
+
+    <h3>Housing Association Tenant, Private Landlord or Supported Accommodation</h3>
+
+    <p>
+      <ol>
+          <li>Has the customer reported the incident to their Housing Association, Private Landlord, Supported Accommodation Provider and South Yorkshire Police?</li>
+      </ol> If yes, record incident numbers on the system.
+
+      <ol start="2">
+          <li>What was the outcome of the report?</li>
+          <li>Has any support been offered by the Housing Association or Landlord?</li>
+          <li>Confirm reports have been made and contact the Housing Association or Landlord where appropriate.</li>
+          <li>Gather all available evidence and upload it to HSP or NEC.</li>
+      </ol>
+    </p>
+    `,
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "bidding",
+      "biding",
+      "bid",
+      "bids",
+      "housing",
+      "houzing",
+      "houssing",
+      "housin",
+      "housingg",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 
 
 const askedToLeave = new ContentH(
@@ -5113,6 +5113,125 @@ const bidding = new ContentH(
   { date: "07/05/2026", name: "Liz Taster" }
 );
 
+const demotedOrDisqualified = new ContentH(
+  "demotedOrDisqualified",
+  "Demoted or Disqualified",
+  "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
+  `
+  <h3>Eligibility</h3>
+    <p>
+      Sheffield City Council operates an open register and therefore any person over the age of 16 can apply to join the Housing Register. 
+      However, generally you will not be made an offer of a property until you are at least 18 years old.
+    </p>
+    <p>
+      The Housing Act 1996 prevents Local Authorities from offering a property to some people because of their immigration status. 
+      We will let you know if this applies to you after you register and request the appropriate documents.   
+    </p>
+    <p>
+      There are some people who are not eligible to be included on the Housing Register. These are:  
+    </p>
+      <ul>
+        <li>Certain people who are subject to Immigration Control under the 1996 Asylum and Immigration Act.</li>
+        <li>Certain people from abroad who are not subject to immigration control but who are not habitually resident in the UK, 
+        the Channel Islands, the Isle of Man or the Republic of Ireland.</li>
+      </ul>
+      
+  <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
+  <p> 
+    If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
+    <ul>
+      <li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
+      <li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.</li>
+      <li>If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
+    </ul>
+    If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
+  </p>
+  
+  <h3>Disqualification following refusal of 3 reasonable offers</h3>
+    <p>
+      If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
+      The customer will be notified in writing and they have 21 days to appeal the decision. <br>
+      If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
+      After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
+    </p>
+
+  <h3>Disqualified for Unacceptable Behaviour</h3>
+    <p>
+      Applications that are rejected for unacceptable behaviour will receive a letter explaining the 12 month restriction and what action to take. 
+      The customer can request a review of the decision from a senior officer they must do this within 21 days or the disqualification letter, 
+      giving information that was not considered in the original decision.
+    </p>
+
+    <h4>Unacceptable behaviour</h4>
+    <p>
+      Some people may not be allowed to join the housing register because of past behaviour either their own or someone in their household.
+    </p>
+    <p>
+      This includes situations where:
+    </p>
+    <ul>
+      <li>you’ve had persistent rent arrears and not made efforts to repay them</li>
+      <li>you or a joint applicant caused serious damage to a property</li>
+      <li>there was antisocial behaviour that led to the loss of a previous home</li>
+      <li>you’ve been convicted of domestic abuse or certain other criminal behaviour</li>
+      <li>you previously sublet a council home without permission</li>
+      <li>you gave false information in a housing application</li>
+    </ul>
+    <p>
+      We also look at behaviour from people in your household if they lived with you at the time the behaviour took place.
+    </p>
+
+    <h4>If this applies to you</h4>
+    <p>
+      You won’t be able to join the register now, but if your behaviour has changed, you can apply again in the future. 
+      We may ask for evidence that things have improved such as references, repayment history or changes in your circumstances. 
+    </p>
+
+  <h3>Exception Requests</h3>
+    <p>
+      The Allocations Policy advises various circumstances in which we will reduce the preference given to applicants on the Housing 
+      Register or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.
+    </p>
+    <p>
+      An Exception Request allows us to make decisions on whether it is appropriate to waive these restrictions in exceptional circumstances, such 
+      as awarding a priority or when an applicant wishes to move to more suitable accommodation using their waiting time due to a change in circumstances.
+    </p>
+    <p>
+      Applicants must demonstrate exceptional circumstances and prove that they have taken action to rectify issues that led to reduced preference or disqualification.
+    </p>
+    <p>
+      Contact Neighbourhood Officer to help fill in the form and submit evidence. 
+    </p>
+    `,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing",
+      "rehausing",
+      "rehousingg",
+      "rehosuing",
+      "rehouzing",
+      "three",
+      "offers",
+      "demoted",
+      "disqualified",
+      "disqualify",
+      "disqualification",
+      "demotion",
+      "refused",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "07/05/2026", name: "Liz Taster" }
+);
+
+
 const disrepairHomeless = new ContentH(
   "disrepair",
   "Disrepair (Homelessness)",
@@ -5724,6 +5843,316 @@ const eligibility = new ContentH(
   },
   { date: "28/10/2025", name: "Motolani Akinola" }
 );
+
+const endofHomeOffice = new ContentH(
+  "endofHomeOffice",
+  "End of Home Office Accommodation",
+  "Process for helping customers at risk of homelessness after Home Office accommodation ends, with a focus on early prevention, resettlement, and wellbeing support",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Purpose</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            This guidance is for staff supporting customers who are at risk of homelessness
+            or approaching the end of temporary or interim accommodation.
+        </p>
+
+        <p>
+            It sets out key actions, advice to give, and referral pathways to support
+            prevention, resettlement, and wellbeing.
+        </p>
+
+        <p>
+            This guidance is intended to inform professional practice and CRM recording,
+            rather than be used as a form.
+        </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>End of Accommodation and Prevention Planning</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should identify and clearly record the end date of the customer’s current
+                accommodation at the earliest opportunity.
+            </p>
+
+            <ul>
+                <li>Obtain any notice to end accommodation where available.</li>
+                <li>Save any notice or relevant evidence to the case record.</li>
+                <li>Use the accommodation end date to support early homelessness prevention planning.</li>
+            </ul>
+
+            <p>
+                Where the household has significant vulnerabilities, staff should contact the
+                accommodation provider to explore whether an extension can be negotiated.
+            </p>
+
+            <p>
+                Any discussions with the provider and the outcomes of those discussions should be
+                clearly recorded in CRM.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Involvement of Other Organisations</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should identify and contact any relevant organisations involved with the
+                household.
+            </p>
+
+            <p>Examples may include:</p>
+
+            <ul>
+                <li>City of Sanctuary.</li>
+                <li>Other voluntary or commissioned support services.</li>
+            </ul>
+
+            <p>
+                Multi-agency working can support earlier intervention, coordinated planning,
+                and improved outcomes for the customer.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Vulnerabilities and Supporting Evidence</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Customers should be advised to provide documentation relating to any vulnerabilities
+                or support needs.
+            </p>
+
+            <p>Supporting evidence may include:</p>
+
+            <ul>
+                <li>Medical evidence.</li>
+                <li>Mental health information.</li>
+                <li>Details of care, support, or wellbeing needs.</li>
+                <li>Information from professionals or support organisations.</li>
+            </ul>
+
+            <p>
+                This information can help inform housing advice, prevention activity, referrals,
+                and any consideration of extensions or alternative accommodation.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Options Advice</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should provide clear information about the housing options available to the
+                customer.
+            </p>
+
+            <ul>
+                <li>Focus on Private Rented sector options where appropriate.</li>
+                <li>Prioritise prevention and resettlement options wherever possible.</li>
+                <li>Provide realistic advice about availability, affordability, and likely timescales.</li>
+                <li>Support the customer to understand practical routes away from homelessness.</li>
+            </ul>
+
+            <p>
+                Prevention and resettlement should be explored early to reduce reliance on temporary
+                accommodation.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Key Information for Customers</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should ensure customers understand the drawbacks and limitations of temporary
+                accommodation.
+            </p>
+
+            <ul>
+                <li>There is no choice over location and placement may be outside the city.</li>
+                <li>There may be frequent moves between different hotels or placements.</li>
+                <li>Hotel-based accommodation can provide limited privacy.</li>
+                <li>Cooking facilities may not be available.</li>
+                <li>Laundry facilities may not be available.</li>
+                <li>Storage space may be very limited.</li>
+                <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+            </ul>
+
+            <p><strong>Potential financial impacts include:</strong></p>
+
+            <ul>
+                <li>Increased costs due to reliance on takeaways and reduced nutrition.</li>
+                <li>Additional transport costs for travelling to school or work.</li>
+                <li>Financial disadvantages for customers who are in employment.</li>
+            </ul>
+
+            <p>
+                Customers should be advised that temporary accommodation should be avoided wherever
+                possible through prevention, early resettlement, or safe temporary arrangements with
+                family or friends.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Homelessness Prevention and Resettlement Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where appropriate, staff should refer customers to Shelter’s Homelessness Prevention
+                and Resettlement Service under the Homeless Support Pathway (HSP).
+            </p>
+
+            <p>
+                This referral can provide specialist housing advice and support with prevention,
+                resettlement, and practical options to reduce the risk of homelessness.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Support for Young People</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                For customers aged 25 years or under, staff should provide information about
+                Roundabout and make appropriate referrals where relevant.
+            </p>
+
+            <ul>
+                <li>Provide general housing advice under the Homeless Support Pathway (HSP).</li>
+                <li>Offer referral to Roundabout where appropriate.</li>
+                <li>Record whether the referral was offered, accepted, or declined.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Families with Children</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where there are children in the household, staff should discuss whether the customer
+                would like a referral to the Early Help Family Intervention Service.
+            </p>
+
+            <p>
+                This can provide additional family-focused support where appropriate.
+            </p>
+
+            <p>
+                The customer’s decision and any referral outcome should be clearly recorded in CRM.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Employment and Financial Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should check whether the customer would like referral or signposting to support
+                with employment or financial difficulties.
+            </p>
+
+            <p><strong>Employment Needs</strong></p>
+
+            <ul>
+                <li>Offer referral to employment support services.</li>
+                <li>Record whether the referral was accepted or declined.</li>
+            </ul>
+
+            <p><strong>Financial Difficulties</strong></p>
+
+            <ul>
+                <li>Signpost or refer to the Cost of Living Support Hub.</li>
+                <li>Provide advice or referral routes for practical financial support where appropriate.</li>
+            </ul>
+
+        </div>
+    </details>
+  
+  `,
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [
+      "external",
+      "contractrs",
+      "extenal",
+      "contractors",
+      "external",
+      "contarctors",
+      "external",
+      "contrctors",
+      "external",
+      "conttractors",
+      "extarnal",
+      "contractors",
+      "extternal",
+      "contractors",
+      "external",
+      "contracors",
+      "external",
+      "conractors",
+      "external",
+      "contrators",
+    ],
+    categories: ["Repairs"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 
 const fosteringAndAdoption = new ContentH(
   "fosteringAndAdoption",
@@ -6347,7 +6776,7 @@ const homelessPrevention = new ContentH(
 
 const homelessTest = new ContentH(
   "homelessTest",
-  "Homeless Test",
+  "Homeless Test PowerPoint",
   "Link to the Homeless Test PowerPoint.",
   `
     <p>
@@ -6380,13 +6809,6 @@ const homelessTest = new ContentH(
   },
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
-
-
-
-
-
-
-
 
 const housingAssociations = new ContentH(
   "housingAssociations",
@@ -6851,6 +7273,64 @@ const housingAssociations = new ContentH(
   }
 );
 
+const idFaq = new ContentH(
+  "idFaq",
+  "ID FAQs",
+  "Review frequently asked questions about ID requirements for rehousing applications, including document submission and validation processes.",
+  `
+      <p>
+        Customers who have submitted an online application for rehousing, 
+        or have made a change to an existing Application, need to provide ID, 
+        references and proof of Child Benefit (if appropriate) in order for their application to be accepted 
+        and validated.<br><br>
+  
+        ID is required for all Household Members and should be submitted within 28 days of filling-in 
+        the Application.<br><br>
+  
+        Applicants should upload all the required documents for themselves and household members via the My Housing Portal<br><br>
+      </p>
+      <h4>Customer advising ID/proofs have been posted to us</h4>
+      <p> 
+        Customers should not post original documents to us, but when a customer has posted their documents to us,
+        they should call to advise us of this. Advisor Note: The Registrations Team need to be advised so they
+        can check DMS in the next couple of days and subsequently validate the application. <br>
+        Remember to take a note of the names and dates of birth of all household members and include them 
+        in any email or case that you send to the Registration Team.<br><br>
+  
+        Advise the customer that it can take up to a month for their documents to be returned.
+      </p>
+      <h4>Customer submitted application but did not provide ID within 28 days</h4>
+      <p> 
+        We will not re-instate your Application and you should 
+        submit a new Application and provide the relevant ID.
+      </p>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "ID",
+      "identification",
+      "requirements",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "01/05/2026", name: "Liz Taster" }
+);
+
 const idReferences = new ContentH(
   "idReferences",
   "ID / References",
@@ -6938,63 +7418,6 @@ const idReferences = new ContentH(
   { date: "01/05/2026", name: "Liz Taster" }
 );
 
-const idFaq = new ContentH(
-  "idFaq",
-  "ID FAQs",
-  "Review frequently asked questions about ID requirements for rehousing applications, including document submission and validation processes.",
-  `
-      <p>
-        Customers who have submitted an online application for rehousing, 
-        or have made a change to an existing Application, need to provide ID, 
-        references and proof of Child Benefit (if appropriate) in order for their application to be accepted 
-        and validated.<br><br>
-  
-        ID is required for all Household Members and should be submitted within 28 days of filling-in 
-        the Application.<br><br>
-  
-        Applicants should upload all the required documents for themselves and household members via the My Housing Portal<br><br>
-      </p>
-      <h4>Customer advising ID/proofs have been posted to us</h4>
-      <p> 
-        Customers should not post original documents to us, but when a customer has posted their documents to us,
-        they should call to advise us of this. Advisor Note: The Registrations Team need to be advised so they
-        can check DMS in the next couple of days and subsequently validate the application. <br>
-        Remember to take a note of the names and dates of birth of all household members and include them 
-        in any email or case that you send to the Registration Team.<br><br>
-  
-        Advise the customer that it can take up to a month for their documents to be returned.
-      </p>
-      <h4>Customer submitted application but did not provide ID within 28 days</h4>
-      <p> 
-        We will not re-instate your Application and you should 
-        submit a new Application and provide the relevant ID.
-      </p>
-    `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: [
-      "rehosing", 
-      "rehausing", 
-      "rehousingg", 
-      "rehosuing", 
-      "rehouzing",
-      "housing",
-      "ID",
-      "identification",
-      "requirements",
-      "FAQ",
-      "FAQs",
-    ],
-    categories: ["Housing", "Rehousing"],
-  },
-  { date: "01/05/2026", name: "Liz Taster" }
-);
 
 const lostJob = new ContentH(
   "lostJob",
@@ -7914,6 +8337,92 @@ const preventionEndOfSupportedAccommodation = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
+const priorities = new ContentH(
+  "priorities",
+  "Priorities",
+  "Learn about priority for rehousing, including how priority is assessed, what it means for your housing options, and how to request a review.",
+  `
+    <h3>Customers who have a priority</h3>  
+    <p>
+      After completing security checks with the applicant, check NEC for priority banding and ‘Actions’ for who is managing the case. 
+      The Priorities Team have a public phone number <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736970')">0114 2736970</a>  and email address for enquiries 
+      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a> 
+      or if in person at Howden House the customer can be seen without an appointment.
+    </p>
+
+
+    <h3>General information about housing priorities</h3>  
+    <p>
+      Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
+  
+      In some cases we will make you an offer of a property that we feel meets your needs. If we are unable to contact you due to changes not notified to us, your registration may be suspended or cancelled.<br><br>
+  
+      If you may be eligible for a priority you will be asked to provide us with further information. Once you have been assessed, we will write to you and explain whether you have been given priority. If you are given priority the letter will explain what sort of properties you can bid for with the priority and when the priority will be reviewed.<br><br>
+  
+      We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.<br><br>
+  
+      A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.<br>
+     </p> 
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "priority",
+      "priorities",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "12/02/2025", name: "Nathan Smith" }
+);
+
+
+
+const priorityBandingTable = new ContentH(
+  "priorityBandingTable",
+  "Priority Banding Table",
+  "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
+  `
+      
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "priority banding table",
+      "priority",
+      "priorities",
+      "band",
+      "banding",
+      "banding table",
+      "table",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "07/22/2024", name: "George Whitehouse" }
+);
 
 const prisonLeaver = new ContentH(
   "priorities",
@@ -8193,44 +8702,6 @@ const prisonLeaver = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
-
-const priorityBandingTable = new ContentH(
-  "priorityBandingTable",
-  "Priority Banding Table",
-  "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
-  `
-      
-    `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: [
-      "rehosing", 
-      "rehausing", 
-      "rehousingg", 
-      "rehosuing", 
-      "rehouzing",
-      "housing",
-      "priority banding table",
-      "priority",
-      "priorities",
-      "band",
-      "banding",
-      "banding table",
-      "table",
-    ],
-    categories: ["Housing", "Rehousing"],
-  },
-  { date: "07/22/2024", name: "George Whitehouse" }
-);
-
-
-
 const PropertyOffersAndViewings = new ContentH(
   "PropertyOffersAndViewings",
   "Property Offers and Viewings",
@@ -8346,6 +8817,188 @@ const PropertyOffersAndViewings = new ContentH(
     categories: ["Housing", "Rehousing"],
   },
   { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const referencesFAQs = new ContentH(
+  "referencesFAQs",
+  "References FAQs",
+  "Guidelines for providing references when applying for housing or making changes to applications, including who can provide them, how to obtain them, and the timeline for submission.",
+  `
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Why do I need to provide a reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Current SCC tenants are not required to submit a reference as the Council is already aware of 
+          their circumstances and tenancy history.<br>
+          References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
+          understand the people who are currently on its Housing Register. <br>
+          SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
+        </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Who can provide a reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
+          The following customers also need to provide a reference when creating a new application:
+      </p>
+      <ul>
+          <li>Housing Association tenants (Landlord needs to provide the reference)</li>
+          <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
+          <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
+          <li>Owner occupiers - no need for a reference as bidding is restricted</li>
+          <li>Living with family/parents (18+ only, character reference is needed)</li>
+          <li>NFA/Living with friends (Character reference is needed)</li>
+      </ul>
+      <p>
+          For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
+          Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
+          Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
+          If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
+          this charge. SCC will not pay landlords to provide a reference.
+      </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How to get a Landlords reference form?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Landlord references should be submitted using the SCC reference form. This can be found online on the 
+          Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>. Customer should select:
+
+ <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
+>
+    Send link to review further information
+  </button>
+   
+      </p>
+      <ul>
+          <li>Information header, select Identification and References</li>
+          <li>Scroll down to SCC Reference Template</li>
+          <li>Landlord reference forms are also available at local housing offices.</li>
+      </ul>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How long do I have to provide the reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        You will have the same 28 days to provide the reference as they have for providing ID currently. This 
+        period starts from the day that the online application was submitted. Do not submit the application until 
+        you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
+        application will be cancelled and you will need to resubmit this online.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>What will the reference be used for?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        The reference will be used along with the information supplied by the customer when completing their 
+        application online to determine which band they should be placed in. The criteria for being placed in 
+        band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
+        band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
+        special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
+        requests are assessed on their merits and the customer will be advised of the decision in writing.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required for a change of circumstances?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          A reference will only be required if the change being submitted is a change of address, or the Application 
+          is being changed to a Joint Application. If the customer is changing their address, a new reference would 
+          be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
+          we would still not require a reference.
+        </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required as part of a renewal process?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Customers are not required to submit a reference as part of the renewals process, 
+          <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
+        </p>
+      </div>
+    </details>
+  
+   <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required as part of a renewal process?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <h3>What if the customer can't visit an Area Office?</h3>
+        <p>
+          There are alternatives to visiting the area office yourself, such as asking your friends or family 
+          to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
+          <strong>Documents can be uploaded via the housing online website.</strong>
+        </p>
+      </div>
+    </details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "15/05/2025", name: "Dinah Williams" }
 );
 
 const relationshipv2 = new ContentH(
@@ -9292,9 +9945,177 @@ const rentAndAffordability = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
+const repairsHomelessness = new ContentH(
+  "repairsHomelessness",
+  "Repairs or Property Condition Unsafe to Returnxxxx",
+  "Process for supporting customers affected by poor housing conditions, covering repairs, suitability assessments, tenancy-specific actions, safeguarding, and housing options advice.",
+  `
+    <p>
+        Please record all actions and information provided on Form1B.
+    </p>
+
+    <h3>When to Use</h3>
+    <ul>
+        <li>Disrepair or damage within the property.</li>
+        <li>Poor housing conditions such as damp, mould, or hazards.</li>
+        <li>Health or safety concerns linked to the home.</li>
+        <li>Unsuitable living conditions due to property issues.</li>
+    </ul>
+
+    <h3>Initial Considerations</h3>
+    <ul>
+        <li>Establish the nature and severity of the issue.</li>
+        <li>Confirm whether the customer has reported the problem to the landlord.</li>
+        <li>Identify any immediate health or safety risks.</li>
+        <li>Confirm the tenure type (social or private rented sector).</li>
+        <li>Record any actions already taken on Form1B.</li>
+        <li>Confirm whether the issue has been reported.</li>
+    </ul>
+
+    <h3>Social Housing Tenants</h3>
+    <ul>
+        <li>
+            Manage under Prevention, Pre-prevention activity, or Housing Need depending on the
+            category of hazard and status of the issue.
+            <a href="https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property" target="_blank" rel="noopener noreferrer">
+                Request a Repair to a Council Property
+            </a>
+        </li>
+        <li>Liaise with repairs services or housing provider.</li>
+        <li>Encourage customers to log and track repairs.</li>
+        <li>Monitor progress and record updates in CRM.</li>
+    </ul>
+
+    <h3>Private Rented Sector Tenants</h3>
+    <ul>
+        <li>Advise the customer to report issues to the landlord in writing.</li>
+        <li>
+            If unresolved, refer to Environmental Health or Private Housing Standards.
+            <a href="https://www.sheffield.gov.uk/housing/private-housing-issues/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">
+                Report Disrepair in Private Rented Properties
+            </a>
+        </li>
+        <li>Consider the risk of retaliatory eviction and provide appropriate advice.</li>
+    </ul>
+
+    <h3>Risk &amp; Suitability Assessment</h3>
+    <p>Assess whether it is reasonable for the customer to remain in the property.</p>
+
+    <ul>
+        <li>Severity and duration of the disrepair.</li>
+        <li>Risks to health and safety.</li>
+        <li>Impact on children or vulnerable adults.</li>
+        <li>Effect on daily living or wellbeing.</li>
+    </ul>
+
+    <p>Clearly record your assessment and reasoning.</p>
+
+    <h3>Advice and Support</h3>
+    <ul>
+        <li>Explain landlord responsibilities for repairs.</li>
+        <li>Provide guidance on reporting and escalation processes.</li>
+        <li>Signpost to Shelter or housing advice services if needed.</li>
+        <li>Support customers to understand their rights safely.</li>
+    </ul>
+
+    <h3>Prevention Actions</h3>
+    <ul>
+        <li>Support resolution with the landlord where possible.</li>
+        <li>Monitor ongoing cases of disrepair.</li>
+        <li>Provide advice to avoid escalation to homelessness.</li>
+    </ul>
+
+    <h3>Housing Options Advice</h3>
+    <ul>
+        <li>Offer housing options advice alongside repair support.</li>
+        <li>Consider remaining in the property if safe and repairable.</li>
+        <li>Consider alternative accommodation if conditions are unsuitable.</li>
+        <li>Continue prevention activity where appropriate.</li>
+    </ul>
+
+    <h3>Safeguarding and Vulnerability</h3>
+    <p>Be alert to:</p>
+
+    <ul>
+        <li>Mental health concerns.</li>
+        <li>Disabilities or long-term illness.</li>
+        <li>Households with children.</li>
+        <li>Any indicators of risk or harm.</li>
+    </ul>
+
+    <p>Follow safeguarding procedures where required.</p>
+
+    <h3>Additional Support Options</h3>
+    <ul>
+        <li>Environmental Health / Private Housing Standards.</li>
+        <li>Shelter housing advice.</li>
+        <li>Early Help and family support where children are involved.</li>
+        <li>Cost of living or financial support services.</li>
+    </ul>
+
+    <h3>CRM Recording Reminder</h3>
+    <p>All interactions must be clearly recorded, including:</p>
+
+    <ul>
+        <li>Nature of the repair issue.</li>
+        <li>Whether it has been reported.</li>
+        <li>Advice provided.</li>
+        <li>Referrals made.</li>
+        <li>Risk and suitability assessment.</li>
+        <li>Agreed actions and follow-up.</li>
+    </ul>
+
+    <h3>Temporary Accommodation – Key Information to Explain</h3>
+
+    <p>Ensure customers understand that temporary accommodation:</p>
+
+    <ul>
+        <li>Is a last resort.</li>
+        <li>Offers limited choice of location.</li>
+        <li>May involve multiple moves.</li>
+        <li>Often includes limited facilities such as cooking or laundry.</li>
+        <li>Can impact health, wellbeing, and finances.</li>
+    </ul>
+
+    <p>Emphasise the importance of early prevention and resolution.</p>
+
+    <h3>Key Principle</h3>
+
+    <p>
+        Early action and clear advice can prevent deterioration of living conditions
+        and reduce the risk of homelessness.
+    </p>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
 const rooflessNoAccommodation = new ContentH(
-  "referencesFAQs",
-  "References FAQs",
+  "rooflessNoAccommodation",
+  "Roofless No Accommodation",
   "Process for handling roofless presentations, covering the homelessness test, eligibility checks, habitual residence, immigration status, safeguarding, and case escalation",
   `
     <h3>1B Part 7 Staff Guidance: Roofless No Accommodation</h3>
@@ -9664,354 +10485,8 @@ const rooflessNoAccommodation = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
-const referencesFAQs = new ContentH(
-  "referencesFAQs",
-  "References FAQs",
-  "Guidelines for providing references when applying for housing or making changes to applications, including who can provide them, how to obtain them, and the timeline for submission.",
-  `
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Why do I need to provide a reference?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          Current SCC tenants are not required to submit a reference as the Council is already aware of 
-          their circumstances and tenancy history.<br>
-          References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
-          understand the people who are currently on its Housing Register. <br>
-          SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
-        </p>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Who can provide a reference?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
-          The following customers also need to provide a reference when creating a new application:
-      </p>
-      <ul>
-          <li>Housing Association tenants (Landlord needs to provide the reference)</li>
-          <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
-          <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
-          <li>Owner occupiers - no need for a reference as bidding is restricted</li>
-          <li>Living with family/parents (18+ only, character reference is needed)</li>
-          <li>NFA/Living with friends (Character reference is needed)</li>
-      </ul>
-      <p>
-          For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
-          Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
-          Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
-          If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
-          this charge. SCC will not pay landlords to provide a reference.
-      </p>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>How to get a Landlords reference form?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          Landlord references should be submitted using the SCC reference form. This can be found online on the 
-          Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>. Customer should select:
 
- <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-    
->
-    Send link to review further information
-  </button>
-   
-      </p>
-      <ul>
-          <li>Information header, select Identification and References</li>
-          <li>Scroll down to SCC Reference Template</li>
-          <li>Landlord reference forms are also available at local housing offices.</li>
-      </ul>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>How long do I have to provide the reference?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-    <div class="accordion-content">
-      <p>
-        You will have the same 28 days to provide the reference as they have for providing ID currently. This 
-        period starts from the day that the online application was submitted. Do not submit the application until 
-        you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
-        application will be cancelled and you will need to resubmit this online.
-      </p>
-    </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>What will the reference be used for?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-    <div class="accordion-content">
-      <p>
-        The reference will be used along with the information supplied by the customer when completing their 
-        application online to determine which band they should be placed in. The criteria for being placed in 
-        band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
-        band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
-        special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
-        requests are assessed on their merits and the customer will be advised of the decision in writing.
-      </p>
-    </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Is a reference required for a change of circumstances?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          A reference will only be required if the change being submitted is a change of address, or the Application 
-          is being changed to a Joint Application. If the customer is changing their address, a new reference would 
-          be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
-          we would still not require a reference.
-        </p>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Is a reference required as part of a renewal process?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          Customers are not required to submit a reference as part of the renewals process, 
-          <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
-        </p>
-      </div>
-    </details>
-  
-   <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Is a reference required as part of a renewal process?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <h3>What if the customer can't visit an Area Office?</h3>
-        <p>
-          There are alternatives to visiting the area office yourself, such as asking your friends or family 
-          to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-          <strong>Documents can be uploaded via the housing online website.</strong>
-        </p>
-      </div>
-    </details>
-    `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: [
-      "rehosing", 
-      "rehausing", 
-      "rehousingg", 
-      "rehosuing", 
-      "rehouzing",
-      "housing",
-      "reference",
-      "references",
-      "referee",
-      "FAQ",
-      "FAQs",
-    ],
-    categories: ["Housing", "Rehousing"],
-  },
-  { date: "15/05/2025", name: "Dinah Williams" }
-);
 
-const repairsHomelessness = new ContentH(
-  "repairsHomelessness",
-  "Repairs or Property Condition Unsafe to Returnxxxx",
-  "Process for supporting customers affected by poor housing conditions, covering repairs, suitability assessments, tenancy-specific actions, safeguarding, and housing options advice.",
-  `
-    <p>
-        Please record all actions and information provided on Form1B.
-    </p>
-
-    <h3>When to Use</h3>
-    <ul>
-        <li>Disrepair or damage within the property.</li>
-        <li>Poor housing conditions such as damp, mould, or hazards.</li>
-        <li>Health or safety concerns linked to the home.</li>
-        <li>Unsuitable living conditions due to property issues.</li>
-    </ul>
-
-    <h3>Initial Considerations</h3>
-    <ul>
-        <li>Establish the nature and severity of the issue.</li>
-        <li>Confirm whether the customer has reported the problem to the landlord.</li>
-        <li>Identify any immediate health or safety risks.</li>
-        <li>Confirm the tenure type (social or private rented sector).</li>
-        <li>Record any actions already taken on Form1B.</li>
-        <li>Confirm whether the issue has been reported.</li>
-    </ul>
-
-    <h3>Social Housing Tenants</h3>
-    <ul>
-        <li>
-            Manage under Prevention, Pre-prevention activity, or Housing Need depending on the
-            category of hazard and status of the issue.
-            <a href="https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property" target="_blank" rel="noopener noreferrer">
-                Request a Repair to a Council Property
-            </a>
-        </li>
-        <li>Liaise with repairs services or housing provider.</li>
-        <li>Encourage customers to log and track repairs.</li>
-        <li>Monitor progress and record updates in CRM.</li>
-    </ul>
-
-    <h3>Private Rented Sector Tenants</h3>
-    <ul>
-        <li>Advise the customer to report issues to the landlord in writing.</li>
-        <li>
-            If unresolved, refer to Environmental Health or Private Housing Standards.
-            <a href="https://www.sheffield.gov.uk/housing/private-housing-issues/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">
-                Report Disrepair in Private Rented Properties
-            </a>
-        </li>
-        <li>Consider the risk of retaliatory eviction and provide appropriate advice.</li>
-    </ul>
-
-    <h3>Risk &amp; Suitability Assessment</h3>
-    <p>Assess whether it is reasonable for the customer to remain in the property.</p>
-
-    <ul>
-        <li>Severity and duration of the disrepair.</li>
-        <li>Risks to health and safety.</li>
-        <li>Impact on children or vulnerable adults.</li>
-        <li>Effect on daily living or wellbeing.</li>
-    </ul>
-
-    <p>Clearly record your assessment and reasoning.</p>
-
-    <h3>Advice and Support</h3>
-    <ul>
-        <li>Explain landlord responsibilities for repairs.</li>
-        <li>Provide guidance on reporting and escalation processes.</li>
-        <li>Signpost to Shelter or housing advice services if needed.</li>
-        <li>Support customers to understand their rights safely.</li>
-    </ul>
-
-    <h3>Prevention Actions</h3>
-    <ul>
-        <li>Support resolution with the landlord where possible.</li>
-        <li>Monitor ongoing cases of disrepair.</li>
-        <li>Provide advice to avoid escalation to homelessness.</li>
-    </ul>
-
-    <h3>Housing Options Advice</h3>
-    <ul>
-        <li>Offer housing options advice alongside repair support.</li>
-        <li>Consider remaining in the property if safe and repairable.</li>
-        <li>Consider alternative accommodation if conditions are unsuitable.</li>
-        <li>Continue prevention activity where appropriate.</li>
-    </ul>
-
-    <h3>Safeguarding and Vulnerability</h3>
-    <p>Be alert to:</p>
-
-    <ul>
-        <li>Mental health concerns.</li>
-        <li>Disabilities or long-term illness.</li>
-        <li>Households with children.</li>
-        <li>Any indicators of risk or harm.</li>
-    </ul>
-
-    <p>Follow safeguarding procedures where required.</p>
-
-    <h3>Additional Support Options</h3>
-    <ul>
-        <li>Environmental Health / Private Housing Standards.</li>
-        <li>Shelter housing advice.</li>
-        <li>Early Help and family support where children are involved.</li>
-        <li>Cost of living or financial support services.</li>
-    </ul>
-
-    <h3>CRM Recording Reminder</h3>
-    <p>All interactions must be clearly recorded, including:</p>
-
-    <ul>
-        <li>Nature of the repair issue.</li>
-        <li>Whether it has been reported.</li>
-        <li>Advice provided.</li>
-        <li>Referrals made.</li>
-        <li>Risk and suitability assessment.</li>
-        <li>Agreed actions and follow-up.</li>
-    </ul>
-
-    <h3>Temporary Accommodation – Key Information to Explain</h3>
-
-    <p>Ensure customers understand that temporary accommodation:</p>
-
-    <ul>
-        <li>Is a last resort.</li>
-        <li>Offers limited choice of location.</li>
-        <li>May involve multiple moves.</li>
-        <li>Often includes limited facilities such as cooking or laundry.</li>
-        <li>Can impact health, wellbeing, and finances.</li>
-    </ul>
-
-    <p>Emphasise the importance of early prevention and resolution.</p>
-
-    <h3>Key Principle</h3>
-
-    <p>
-        Early action and clear advice can prevent deterioration of living conditions
-        and reduce the risk of homelessness.
-    </p>
-    `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: [
-      "rehosing", 
-      "rehausing", 
-      "rehousingg", 
-      "rehosuing", 
-      "rehouzing",
-      "housing",
-      "reference",
-      "references",
-      "referee",
-      "FAQ",
-      "FAQs",
-    ],
-    categories: ["Housing", "Rehousing"],
-  },
-  { date: "31/07/2026", name: "Joseph Coupland" }
-);
 
 const section8 = new ContentH(
   "section8",
@@ -10907,178 +11382,178 @@ const worriedAboutEviction = new ContentH(
             <li>Do not delay escalation if risk increases.</li>
         </ul>
 
-    </div>
-</details>
+        </div>
+    </details>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>2. Provide Immediate Advice and Reassurance</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>2. Provide Immediate Advice and Reassurance</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
 
-        <ul>
-            <li>Explain that the customer does not normally have to leave immediately because a notice has been served.</li>
-            <li>Check whether the notice appears valid, including dates, documentation, and legal requirements.</li>
-            <li>Advise the customer to remain in the property until due legal process has been followed, unless remaining is unsafe.</li>
-            <li>Encourage the customer to seek legal advice if they are unsure about their rights.</li>
-        </ul>
+            <ul>
+                <li>Explain that the customer does not normally have to leave immediately because a notice has been served.</li>
+                <li>Check whether the notice appears valid, including dates, documentation, and legal requirements.</li>
+                <li>Advise the customer to remain in the property until due legal process has been followed, unless remaining is unsafe.</li>
+                <li>Encourage the customer to seek legal advice if they are unsure about their rights.</li>
+            </ul>
 
-        <p>
-            Providing reassurance can reduce panic and help prevent avoidable homelessness.
-        </p>
+            <p>
+                Providing reassurance can reduce panic and help prevent avoidable homelessness.
+            </p>
 
-    </div>
-</details>
+        </div>
+    </details>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>3. Consider Legal Position &amp; Duty</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>3. Consider Legal Position &amp; Duty</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
 
-        <ul>
-            <li>If eviction is likely within 56 days, the customer may be threatened with homelessness and Prevention Duty considerations may apply.</li>
-            <li>If court proceedings or bailiffs are involved, risk levels increase and support should be escalated.</li>
-        </ul>
+            <ul>
+                <li>If eviction is likely within 56 days, the customer may be threatened with homelessness and Prevention Duty considerations may apply.</li>
+                <li>If court proceedings or bailiffs are involved, risk levels increase and support should be escalated.</li>
+            </ul>
 
-        <p><strong>Actions:</strong></p>
+            <p><strong>Actions:</strong></p>
 
-        <ul>
-            <li>Check that any Section 8 notice is correctly issued and served on Form 3A.</li>
-            <li>Begin homelessness prevention activity immediately.</li>
-            <li>Refer to a Grade 5 officer and open Form 3C where required.</li>
-        </ul>
+            <ul>
+                <li>Check that any Section 8 notice is correctly issued and served on Form 3A.</li>
+                <li>Begin homelessness prevention activity immediately.</li>
+                <li>Refer to a Grade 5 officer and open Form 3C where required.</li>
+            </ul>
 
-    </div>
-</details>
+        </div>
+    </details>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>4. Focus on Preventing Eviction</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>4. Focus on Preventing Eviction</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
 
-        <p><strong>Rent Arrears Support</strong></p>
+            <p><strong>Rent Arrears Support</strong></p>
 
-        <ul>
-            <li>Complete an income and expenditure assessment.</li>
-            <li>Maximise household income wherever possible.</li>
-            <li>Support claims for Universal Credit and Housing Costs.</li>
-            <li>Consider Discretionary Housing Payments (DHP).</li>
-            <li>Explore repayment plans with the landlord.</li>
-        </ul>
+            <ul>
+                <li>Complete an income and expenditure assessment.</li>
+                <li>Maximise household income wherever possible.</li>
+                <li>Support claims for Universal Credit and Housing Costs.</li>
+                <li>Consider Discretionary Housing Payments (DHP).</li>
+                <li>Explore repayment plans with the landlord.</li>
+            </ul>
 
-        <p><strong>Landlord Negotiation</strong></p>
+            <p><strong>Landlord Negotiation</strong></p>
 
-        <ul>
-            <li>Contact the landlord or managing agent where customer consent is provided.</li>
-            <li>Explore payment arrangements.</li>
-            <li>Consider withdrawal of the notice.</li>
-            <li>Discuss extensions of time where appropriate.</li>
-        </ul>
+            <ul>
+                <li>Contact the landlord or managing agent where customer consent is provided.</li>
+                <li>Explore payment arrangements.</li>
+                <li>Consider withdrawal of the notice.</li>
+                <li>Discuss extensions of time where appropriate.</li>
+            </ul>
 
-        <p><strong>Sustainment Support</strong></p>
+            <p><strong>Sustainment Support</strong></p>
 
-        <ul>
-            <li>Provide budgeting advice.</li>
-            <li>Refer to relevant support services.</li>
-            <li>Address underlying issues such as debt, health concerns, or financial hardship.</li>
-        </ul>
+            <ul>
+                <li>Provide budgeting advice.</li>
+                <li>Refer to relevant support services.</li>
+                <li>Address underlying issues such as debt, health concerns, or financial hardship.</li>
+            </ul>
 
-    </div>
-</details>
+        </div>
+    </details>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>5. Explore Alternative Housing Early</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>5. Explore Alternative Housing Early</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
 
-        <p>
-            If prevention activity may not be successful, begin alternative housing planning early.
-        </p>
+            <p>
+                If prevention activity may not be successful, begin alternative housing planning early.
+            </p>
 
-        <ul>
-            <li>Private Rented Sector accommodation.</li>
-            <li>Deposit or bond schemes.</li>
-            <li>Supported accommodation where appropriate.</li>
-            <li>Family or friends accommodation as a short-term option if safe and suitable.</li>
-        </ul>
+            <ul>
+                <li>Private Rented Sector accommodation.</li>
+                <li>Deposit or bond schemes.</li>
+                <li>Supported accommodation where appropriate.</li>
+                <li>Family or friends accommodation as a short-term option if safe and suitable.</li>
+            </ul>
 
-        <p>
-            The aim is to support a planned move rather than a housing crisis.
-        </p>
+            <p>
+                The aim is to support a planned move rather than a housing crisis.
+            </p>
 
-    </div>
-</details>
+        </div>
+    </details>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>6. Assess Risk &amp; Priority Need</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>6. Assess Risk &amp; Priority Need</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
 
-        <p>Check for indicators of increased vulnerability or priority need:</p>
+            <p>Check for indicators of increased vulnerability or priority need:</p>
 
-        <ul>
-            <li>Children within the household.</li>
-            <li>Pregnancy.</li>
-            <li>Physical or mental health conditions.</li>
-            <li>General vulnerability.</li>
-            <li>Risk of harm or safeguarding concerns.</li>
-        </ul>
+            <ul>
+                <li>Children within the household.</li>
+                <li>Pregnancy.</li>
+                <li>Physical or mental health conditions.</li>
+                <li>General vulnerability.</li>
+                <li>Risk of harm or safeguarding concerns.</li>
+            </ul>
 
-        <p>
-            Record findings and ensure appropriate escalation where required.
-        </p>
+            <p>
+                Record findings and ensure appropriate escalation where required.
+            </p>
 
-    </div>
-</details>
+        </div>
+    </details>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>7. Example CRM Case Note</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>7. Example CRM Case Note</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
 
-        <p>
-            Customer is concerned about potential eviction. Notice status discussed and
-            initial housing advice provided, including rights to remain pending legal process.
-            Prevention options explored, including income maximisation and landlord engagement.
-            Customer assessed as threatened with homelessness and prevention work ongoing.
-        </p>
+            <p>
+                Customer is concerned about potential eviction. Notice status discussed and
+                initial housing advice provided, including rights to remain pending legal process.
+                Prevention options explored, including income maximisation and landlord engagement.
+                Customer assessed as threatened with homelessness and prevention work ongoing.
+            </p>
 
-    </div>
-</details>
+        </div>
+    </details>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Key Pitfalls to Avoid</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Key Pitfalls to Avoid</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
 
-        <ul>
-            <li>Do not advise the customer to leave immediately following receipt of a notice.</li>
-            <li>Do not delay prevention activity.</li>
-            <li>Do not overlook financial solutions, which are often critical to sustaining accommodation.</li>
-            <li>Do not wait for bailiff action before taking preventative steps.</li>
-        </ul>
+            <ul>
+                <li>Do not advise the customer to leave immediately following receipt of a notice.</li>
+                <li>Do not delay prevention activity.</li>
+                <li>Do not overlook financial solutions, which are often critical to sustaining accommodation.</li>
+                <li>Do not wait for bailiff action before taking preventative steps.</li>
+            </ul>
 
-        <p>
-            ✅ Act early<br>
-            ✅ Prevent eviction wherever possible<br>
-            ✅ Balance housing advice with legal duties<br>
-            ✅ Plan ahead if eviction cannot be avoided
-        </p>
-    </div>
-</details>
+            <p>
+                ✅ Act early<br>
+                ✅ Prevent eviction wherever possible<br>
+                ✅ Balance housing advice with legal duties<br>
+                ✅ Plan ahead if eviction cannot be avoided
+            </p>
+        </div>
+    </details>
     `,
   {
     buttonLabel: "",
@@ -11108,125 +11583,6 @@ const worriedAboutEviction = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
-
-const demotedOrDisqualified = new ContentH(
-  "demotedOrDisqualified",
-  "Demoted or Disqualified",
-  "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
-  `
-  <h3>Eligibility</h3>
-    <p>
-      Sheffield City Council operates an open register and therefore any person over the age of 16 can apply to join the Housing Register. 
-      However, generally you will not be made an offer of a property until you are at least 18 years old.
-    </p>
-    <p>
-      The Housing Act 1996 prevents Local Authorities from offering a property to some people because of their immigration status. 
-      We will let you know if this applies to you after you register and request the appropriate documents.   
-    </p>
-    <p>
-      There are some people who are not eligible to be included on the Housing Register. These are:  
-    </p>
-      <ul>
-        <li>Certain people who are subject to Immigration Control under the 1996 Asylum and Immigration Act.</li>
-        <li>Certain people from abroad who are not subject to immigration control but who are not habitually resident in the UK, 
-        the Channel Islands, the Isle of Man or the Republic of Ireland.</li>
-      </ul>
-      
-  <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
-  <p> 
-    If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
-    <ul>
-      <li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
-      <li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.</li>
-      <li>If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
-    </ul>
-    If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
-  </p>
-  
-  <h3>Disqualification following refusal of 3 reasonable offers</h3>
-    <p>
-      If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
-      The customer will be notified in writing and they have 21 days to appeal the decision. <br>
-      If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
-      After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
-    </p>
-
-  <h3>Disqualified for Unacceptable Behaviour</h3>
-    <p>
-      Applications that are rejected for unacceptable behaviour will receive a letter explaining the 12 month restriction and what action to take. 
-      The customer can request a review of the decision from a senior officer they must do this within 21 days or the disqualification letter, 
-      giving information that was not considered in the original decision.
-    </p>
-
-    <h4>Unacceptable behaviour</h4>
-    <p>
-      Some people may not be allowed to join the housing register because of past behaviour either their own or someone in their household.
-    </p>
-    <p>
-      This includes situations where:
-    </p>
-    <ul>
-      <li>you’ve had persistent rent arrears and not made efforts to repay them</li>
-      <li>you or a joint applicant caused serious damage to a property</li>
-      <li>there was antisocial behaviour that led to the loss of a previous home</li>
-      <li>you’ve been convicted of domestic abuse or certain other criminal behaviour</li>
-      <li>you previously sublet a council home without permission</li>
-      <li>you gave false information in a housing application</li>
-    </ul>
-    <p>
-      We also look at behaviour from people in your household if they lived with you at the time the behaviour took place.
-    </p>
-
-    <h4>If this applies to you</h4>
-    <p>
-      You won’t be able to join the register now, but if your behaviour has changed, you can apply again in the future. 
-      We may ask for evidence that things have improved such as references, repayment history or changes in your circumstances. 
-    </p>
-
-  <h3>Exception Requests</h3>
-    <p>
-      The Allocations Policy advises various circumstances in which we will reduce the preference given to applicants on the Housing 
-      Register or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.
-    </p>
-    <p>
-      An Exception Request allows us to make decisions on whether it is appropriate to waive these restrictions in exceptional circumstances, such 
-      as awarding a priority or when an applicant wishes to move to more suitable accommodation using their waiting time due to a change in circumstances.
-    </p>
-    <p>
-      Applicants must demonstrate exceptional circumstances and prove that they have taken action to rectify issues that led to reduced preference or disqualification.
-    </p>
-    <p>
-      Contact Neighbourhood Officer to help fill in the form and submit evidence. 
-    </p>
-    `,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: [
-      "rehosing",
-      "rehausing",
-      "rehousingg",
-      "rehosuing",
-      "rehouzing",
-      "three",
-      "offers",
-      "demoted",
-      "disqualified",
-      "disqualify",
-      "disqualification",
-      "demotion",
-      "refused",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "07/05/2026", name: "Liz Taster" }
-);
-
 const rehousing = new MenuH(
   "rehousing",
   "Rehousing",
@@ -11241,6 +11597,7 @@ const rehousing = new MenuH(
     askedToLeave,
     bidding,
     demotedOrDisqualified,
+    disrepairHomeless,
     domesticAbuseAssessment,
     earlyHelpAndPrevention,
     eligibility,
@@ -13236,315 +13593,6 @@ const externalContractors = new ContentH(
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
-);
-
-const endofHomeOffice = new ContentH(
-  "endofHomeOffice",
-  "End of Home Office Accommodation",
-  "Process for helping customers at risk of homelessness after Home Office accommodation ends, with a focus on early prevention, resettlement, and wellbeing support",
-  `
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Purpose</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-
-        <p>
-            This guidance is for staff supporting customers who are at risk of homelessness
-            or approaching the end of temporary or interim accommodation.
-        </p>
-
-        <p>
-            It sets out key actions, advice to give, and referral pathways to support
-            prevention, resettlement, and wellbeing.
-        </p>
-
-        <p>
-            This guidance is intended to inform professional practice and CRM recording,
-            rather than be used as a form.
-        </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>End of Accommodation and Prevention Planning</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Staff should identify and clearly record the end date of the customer’s current
-                accommodation at the earliest opportunity.
-            </p>
-
-            <ul>
-                <li>Obtain any notice to end accommodation where available.</li>
-                <li>Save any notice or relevant evidence to the case record.</li>
-                <li>Use the accommodation end date to support early homelessness prevention planning.</li>
-            </ul>
-
-            <p>
-                Where the household has significant vulnerabilities, staff should contact the
-                accommodation provider to explore whether an extension can be negotiated.
-            </p>
-
-            <p>
-                Any discussions with the provider and the outcomes of those discussions should be
-                clearly recorded in CRM.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Involvement of Other Organisations</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Staff should identify and contact any relevant organisations involved with the
-                household.
-            </p>
-
-            <p>Examples may include:</p>
-
-            <ul>
-                <li>City of Sanctuary.</li>
-                <li>Other voluntary or commissioned support services.</li>
-            </ul>
-
-            <p>
-                Multi-agency working can support earlier intervention, coordinated planning,
-                and improved outcomes for the customer.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Vulnerabilities and Supporting Evidence</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Customers should be advised to provide documentation relating to any vulnerabilities
-                or support needs.
-            </p>
-
-            <p>Supporting evidence may include:</p>
-
-            <ul>
-                <li>Medical evidence.</li>
-                <li>Mental health information.</li>
-                <li>Details of care, support, or wellbeing needs.</li>
-                <li>Information from professionals or support organisations.</li>
-            </ul>
-
-            <p>
-                This information can help inform housing advice, prevention activity, referrals,
-                and any consideration of extensions or alternative accommodation.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Housing Options Advice</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Staff should provide clear information about the housing options available to the
-                customer.
-            </p>
-
-            <ul>
-                <li>Focus on Private Rented sector options where appropriate.</li>
-                <li>Prioritise prevention and resettlement options wherever possible.</li>
-                <li>Provide realistic advice about availability, affordability, and likely timescales.</li>
-                <li>Support the customer to understand practical routes away from homelessness.</li>
-            </ul>
-
-            <p>
-                Prevention and resettlement should be explored early to reduce reliance on temporary
-                accommodation.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Temporary Accommodation – Key Information for Customers</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Staff should ensure customers understand the drawbacks and limitations of temporary
-                accommodation.
-            </p>
-
-            <ul>
-                <li>There is no choice over location and placement may be outside the city.</li>
-                <li>There may be frequent moves between different hotels or placements.</li>
-                <li>Hotel-based accommodation can provide limited privacy.</li>
-                <li>Cooking facilities may not be available.</li>
-                <li>Laundry facilities may not be available.</li>
-                <li>Storage space may be very limited.</li>
-                <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
-            </ul>
-
-            <p><strong>Potential financial impacts include:</strong></p>
-
-            <ul>
-                <li>Increased costs due to reliance on takeaways and reduced nutrition.</li>
-                <li>Additional transport costs for travelling to school or work.</li>
-                <li>Financial disadvantages for customers who are in employment.</li>
-            </ul>
-
-            <p>
-                Customers should be advised that temporary accommodation should be avoided wherever
-                possible through prevention, early resettlement, or safe temporary arrangements with
-                family or friends.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Homelessness Prevention and Resettlement Support</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Where appropriate, staff should refer customers to Shelter’s Homelessness Prevention
-                and Resettlement Service under the Homeless Support Pathway (HSP).
-            </p>
-
-            <p>
-                This referral can provide specialist housing advice and support with prevention,
-                resettlement, and practical options to reduce the risk of homelessness.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Support for Young People</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                For customers aged 25 years or under, staff should provide information about
-                Roundabout and make appropriate referrals where relevant.
-            </p>
-
-            <ul>
-                <li>Provide general housing advice under the Homeless Support Pathway (HSP).</li>
-                <li>Offer referral to Roundabout where appropriate.</li>
-                <li>Record whether the referral was offered, accepted, or declined.</li>
-            </ul>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Families with Children</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Where there are children in the household, staff should discuss whether the customer
-                would like a referral to the Early Help Family Intervention Service.
-            </p>
-
-            <p>
-                This can provide additional family-focused support where appropriate.
-            </p>
-
-            <p>
-                The customer’s decision and any referral outcome should be clearly recorded in CRM.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Employment and Financial Support</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Staff should check whether the customer would like referral or signposting to support
-                with employment or financial difficulties.
-            </p>
-
-            <p><strong>Employment Needs</strong></p>
-
-            <ul>
-                <li>Offer referral to employment support services.</li>
-                <li>Record whether the referral was accepted or declined.</li>
-            </ul>
-
-            <p><strong>Financial Difficulties</strong></p>
-
-            <ul>
-                <li>Signpost or refer to the Cost of Living Support Hub.</li>
-                <li>Provide advice or referral routes for practical financial support where appropriate.</li>
-            </ul>
-
-        </div>
-    </details>
-  
-  `,
-  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Request",
-    keywords: [
-      "external",
-      "contractrs",
-      "extenal",
-      "contractors",
-      "external",
-      "contarctors",
-      "external",
-      "contrctors",
-      "external",
-      "conttractors",
-      "extarnal",
-      "contractors",
-      "extternal",
-      "contractors",
-      "external",
-      "contracors",
-      "external",
-      "conractors",
-      "external",
-      "contrators",
-    ],
-    categories: ["Repairs"],
-  },
-  { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
 
