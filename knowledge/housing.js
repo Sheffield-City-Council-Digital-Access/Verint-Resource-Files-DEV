@@ -9772,6 +9772,309 @@ const rentAndAffordability = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
+const rooflessNoAccommodation = new ContentH(
+  "rooflessNoAccommodation",
+  "Roofless No Accommodation",
+  "Process for handling roofless presentations, covering the homelessness test, eligibility checks, habitual residence, immigration status, safeguarding, and case escalation.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Record Actions on Form1B</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Please record all actions taken, advice given, referrals made, and information provided on Form1B.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Disrepair or damage within the property.</li>
+            <li>Poor housing conditions such as damp, mould, or hazards.</li>
+            <li>Health or safety concerns linked to the home.</li>
+            <li>Unsuitable living conditions due to property issues.</li>
+        </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Initial Considerations</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Establish the nature and severity of the issue.</li>
+                <li>Confirm whether the customer has reported the problem to the landlord.</li>
+                <li>Identify any immediate health or safety risks.</li>
+                <li>Confirm the tenure type (social housing or private rented sector).</li>
+                <li>Record any actions already taken on Form1B.</li>
+                <li>Confirm whether the issue has already been reported.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Social Housing Tenants</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>
+                    Manage under Prevention, Pre-Prevention Activity, or Housing Need depending on the hazard category and current status of the issue.
+                    <a href="https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property" target="_blank" rel="noopener noreferrer">
+                        Request a Repair to a Council Property
+                    </a>
+                </li>
+                <li>Liaise with repairs services or the housing provider.</li>
+                <li>Encourage customers to log and monitor repair requests.</li>
+                <li>Monitor progress and record updates in CRM.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Private Rented Sector Tenants</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Advise the customer to report issues to the landlord in writing.</li>
+                <li>
+                    If unresolved, refer to Environmental Health or Private Housing Standards.
+                    <a href="https://www.sheffield.gov.uk/housing/private-housing-issues/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">
+                        Report Disrepair in Private Rented Properties
+                    </a>
+                </li>
+                <li>Consider the risk of retaliatory eviction and provide appropriate advice.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Risk &amp; Suitability Assessment</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Assess whether it remains reasonable for the customer to continue occupying the property.
+            </p>
+
+            <ul>
+                <li>Severity and duration of the disrepair.</li>
+                <li>Risks to health and safety.</li>
+                <li>Impact on children or vulnerable adults.</li>
+                <li>Effect on daily living or wellbeing.</li>
+            </ul>
+
+            <p>
+                Clearly record the assessment and reasons for any decisions made.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Advice and Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Explain landlord responsibilities for repairs and maintenance.</li>
+                <li>Provide guidance on reporting and escalation processes.</li>
+                <li>Signpost to Shelter or housing advice services if required.</li>
+                <li>Support customers to understand and exercise their housing rights safely.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Prevention Actions</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Support attempts to resolve issues with the landlord.</li>
+                <li>Monitor ongoing cases of disrepair.</li>
+                <li>Provide prevention-focused advice to avoid escalation into homelessness.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Options Advice</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Offer housing options advice alongside repair and disrepair support.</li>
+                <li>Consider remaining in the property if it is safe and repairs are achievable.</li>
+                <li>Consider alternative accommodation where living conditions are unsuitable.</li>
+                <li>Continue prevention activity wherever appropriate.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Safeguarding and Vulnerability</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>Be alert to:</p>
+
+            <ul>
+                <li>Mental health concerns.</li>
+                <li>Disabilities or long-term health conditions.</li>
+                <li>Households with children.</li>
+                <li>Any indicators of risk, neglect, or harm.</li>
+            </ul>
+
+            <p>
+                Follow safeguarding procedures where required.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Additional Support Options</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Environmental Health or Private Housing Standards.</li>
+                <li>Shelter housing advice services.</li>
+                <li>Early Help and family support where children are involved.</li>
+                <li>Cost of Living and financial support services.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>CRM Recording Reminder</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                All interactions must be clearly recorded, including:
+            </p>
+
+            <ul>
+                <li>The nature of the repair or disrepair issue.</li>
+                <li>Whether the issue has been reported.</li>
+                <li>Advice provided.</li>
+                <li>Referrals made.</li>
+                <li>Risk and suitability assessments.</li>
+                <li>Agreed actions and follow-up arrangements.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Key Information to Explain</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Ensure customers understand that temporary accommodation:
+            </p>
+
+            <ul>
+                <li>Is a last resort.</li>
+                <li>Offers limited choice of location.</li>
+                <li>May involve multiple moves.</li>
+                <li>Often includes limited facilities such as cooking or laundry provision.</li>
+                <li>Can affect health, wellbeing, and finances.</li>
+            </ul>
+
+            <p>
+                Emphasise the importance of resolving housing issues early and preventing homelessness wherever possible.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Key Principle</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Early action, clear advice, and effective intervention can prevent housing conditions from deteriorating further and reduce the risk of homelessness.
+            </p>
+
+        </div>
+    </details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
 const repairsHomelessness = new ContentH(
   "repairsHomelessness",
   "Repairs or Property Condition Unsafe to Return",
