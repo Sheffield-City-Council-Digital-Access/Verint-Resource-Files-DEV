@@ -5136,7 +5136,7 @@ const bidding = new ContentH(
 
 const demotedOrDisqualified = new ContentH(
   "demotedOrDisqualified",
-  "Demoted or Disqualifiedxxxxxxxxxxxchildaccordion",
+  "Demoted or Disqualified",
   "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
   `
   <details class="accordion">
@@ -5225,33 +5225,25 @@ const demotedOrDisqualified = new ContentH(
     </details>
 
     <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Disqualified for Unacceptable Behaviour</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
+    <summary class="accordion-header">
+        <h3>Disqualified for Unacceptable Behaviour</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <p>
+        Applications rejected because of unacceptable behaviour will receive a letter
+        explaining the decision, the 12-month restriction period, and available review rights.
+    </p>
 
-            <p>
-                Applications rejected because of unacceptable behaviour will receive a letter
-                explaining the decision, the 12-month restriction period, and available review rights.
-            </p>
+    <p>
+        The customer may request a review by a senior officer within 21 days of the decision letter.
+        Any request should include new information that was not considered during the original assessment.
+    </p>
 
-            <p>
-                The customer may request a review by a senior officer within 21 days of the decision letter.
-                Any request should include new information that was not considered during the original assessment.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>What Counts as Unacceptable Behaviour?</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>What Counts as Unacceptable Behaviour?</summary>
+            <div class="details-accordion-content">
+                <p>
                 Some applicants may not be allowed to join the Housing Register because of past behaviour
                 by themselves or members of their household.
             </p>
@@ -5271,18 +5263,12 @@ const demotedOrDisqualified = new ContentH(
                 Behaviour by household members who lived with the applicant at the time of the incident
                 may also be considered.
             </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>If This Applies to You</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>If This Applies to You</summary>
+            <div class="details-accordion-content">
+                <p>
                 Customers may be unable to join the register immediately where unacceptable behaviour applies.
             </p>
 
@@ -5299,10 +5285,11 @@ const demotedOrDisqualified = new ContentH(
                 <li>Changes in personal circumstances.</li>
                 <li>Evidence demonstrating improved behaviour.</li>
             </ul>
-
-        </div>
-    </details>
-
+            </div>
+        </details>
+    </div>
+</details>
+   
     <details class="accordion">
         <summary class="accordion-header">
             <h3>Exception Requests</h3>
@@ -9777,19 +9764,9 @@ const rooflessNoAccommodation = new ContentH(
   "Roofless No Accommodation",
   "Process for handling roofless presentations, covering the homelessness test, eligibility checks, habitual residence, immigration status, safeguarding, and case escalation.",
   `
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Record Actions on Form1B</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-
-        <p>
-            Please record all actions taken, advice given, referrals made, and information provided on Form1B.
-        </p>
-
-    </div>
-</details>
+    <p>
+        Please record all actions taken, advice given, referrals made, and information provided on Form1B.
+    </p>
 
 <details class="accordion">
     <summary class="accordion-header">
