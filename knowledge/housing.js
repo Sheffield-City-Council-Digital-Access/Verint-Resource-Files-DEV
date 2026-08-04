@@ -3135,6 +3135,257 @@ const leaseholderInformation = new ContentH(
 
 //#region Rehousing
 
+const accommodationNotSuitable = new ContentH(
+  "accommodationNotSuitable",
+  "Accommodation No Longer Suitable Health Disabilityxxxxxx",
+  "Steps to evaluate housing suitability where health or disability impacts daily living, with support planning, safeguarding, and prevention-focused housing advice.",
+  `
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>1. Consider Continued Occupation</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Assess whether it is reasonable for the customer to continue occupying their current accommodation.
+        </p>
+
+        <p>Consider:</p>
+
+        <ul>
+            <li>Physical or mental health conditions.</li>
+            <li>Disability, mobility, or accessibility needs.</li>
+            <li>The impact of the accommodation on daily living, care needs, or independence.</li>
+        </ul>
+
+        <p>
+            Record how the customer's health or disability affects the suitability of their accommodation now and in the foreseeable future.
+        </p>
+
+        </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>2. Explore Retention of the Accommodation</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Before considering a move, explore whether the accommodation can be retained safely with additional support.
+              </p>
+
+              <ul>
+                  <li>Adaptations, whether temporary or permanent.</li>
+                  <li>Support services, care packages, or practical assistance.</li>
+              </ul>
+
+              <p><strong>Consider referrals to:</strong></p>
+
+              <ul>
+                  <li>Occupational Therapy (OT) for functional assessments and adaptation recommendations.</li>
+                  <li>Adult Social Care or Children's Social Care where care or safeguarding needs are identified.</li>
+              </ul>
+
+              <p>
+                  Record all referrals made and any anticipated outcomes.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>3. Risk of Harm Assessment</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Consider whether remaining in the accommodation places the customer or household members at risk of harm.
+              </p>
+
+              <ul>
+                  <li>Falls, trips, or accidents.</li>
+                  <li>Neglect or inability to self-care safely.</li>
+                  <li>Deterioration in physical health.</li>
+                  <li>Deterioration in mental health.</li>
+                  <li>Safeguarding risks involving children or vulnerable adults.</li>
+              </ul>
+
+              <p>
+                  Escalate concerns in line with safeguarding procedures where appropriate.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>4. Health and Housing Referral</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Where health issues significantly affect housing suitability:
+              </p>
+
+              <ul>
+                  <li>Consider referral to Health and Housing services.</li>
+                  <li>Use specialist advice to support prevention activity and accommodation decisions.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>5. Housing Options Advice</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Provide clear and realistic housing options advice.
+              </p>
+
+              <ul>
+                  <li>Consider Private Rented Sector (PRS) opportunities where appropriate.</li>
+                  <li>Discuss realistic availability, affordability, and waiting times.</li>
+                  <li>Explore alternative housing solutions that meet identified health or disability needs.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>6. Temporary Accommodation – Key Messages to Explain</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Ensure customers understand the realities of temporary accommodation.
+              </p>
+
+              <ul>
+                  <li>There is no choice of location and accommodation may be outside the city.</li>
+                  <li>Frequent moves between hotels or accommodation units may occur.</li>
+                  <li>Hotel accommodation often has limited privacy.</li>
+                  <li>Cooking facilities may not be available.</li>
+                  <li>Laundry facilities may not be available.</li>
+                  <li>Storage space is often limited.</li>
+                  <li>Temporary accommodation can negatively affect wellbeing, particularly for children and people with health conditions.</li>
+              </ul>
+
+              <p><strong>Potential Financial Impacts</strong></p>
+
+              <ul>
+                  <li>Reliance on takeaways and poorer nutrition.</li>
+                  <li>Higher travel costs to school, childcare, or work.</li>
+                  <li>Additional expenses for working households.</li>
+              </ul>
+
+              <p>
+                  Emphasise that preventing homelessness or remaining safely with family or friends is usually preferable where appropriate.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>7. Support and Referrals Checklist</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p><strong>Aged 25 or Under</strong></p>
+
+              <ul>
+                  <li>Refer to Roundabout – Talk It Out mediation service.</li>
+                  <li>Provide information and advice via the Homeless Support Pathway (HSP).</li>
+              </ul>
+
+              <p><strong>Children in the Household</strong></p>
+
+              <ul>
+                  <li>Offer referral to the Early Help Family Intervention Service.</li>
+              </ul>
+
+              <p><strong>Employment Needs</strong></p>
+
+              <ul>
+                  <li>Offer referral to employment support services.</li>
+              </ul>
+
+              <p><strong>Financial Difficulties</strong></p>
+
+              <ul>
+                  <li>Refer or signpost to the Cost of Living Support Hub.</li>
+              </ul>
+
+              <p>
+                  Customers can choose whether to accept or decline referrals. Ensure the customer's decision is recorded.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>8. Recording and Next Steps</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <ul>
+                  <li>Record assessments completed and the rationale for decisions made.</li>
+                  <li>Record advice provided and referrals offered or completed.</li>
+                  <li>Agree clear next steps with the customer.</li>
+                  <li>Set review points where health conditions, support needs, or circumstances may change.</li>
+              </ul>
+
+              <p>
+                  Accurate recording supports effective prevention activity, safeguarding, continuity of support, and audit compliance.
+              </p>
+
+          </div>
+      </details>
+  `,
+
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "allocation",
+      "allocations",
+      "alocation",
+      "alocations",
+      "allocations policy",
+      "priority",
+      "banding",
+      "priority band",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 const allocationsPolicy = new ContentH(
   "applicantPlacedInAPriorityBand",
   "Allocations Policy - Applicant placed in a priority band",
@@ -3888,6 +4139,624 @@ const applyForRehousing = new ContentH(
   { date: "12/05/2026", name: "Liz Taster" }
 );
 
+
+const asbHomeless = new ContentH(
+  "asbHomeless",
+  "Anti-Social Behaviour (Homelessness)xxxxxxxxxxxxxxx",
+  "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
+  `
+    <h3>When to use</h3>
+    <p>
+        A customer has presented and is experiencing anti-social behaviour.
+        Follow each step on the form and record answers on Form1B.
+    </p>
+
+    <h3>Section 1: Risk Assessment and Circumstances</h3>
+    <ol>
+        <li>Ask the customer to explain in detail about the anti-social behaviour they are experiencing.</li>
+        <li>Does it involve threats, violence, harassment or a hate crime?</li>
+        <li>Have they fled the property?</li>
+        <li>Do they want to return to the property?</li>
+        <li>What safety measures can we support them with to ensure they feel safe returning to their property?</li>
+    </ol>
+
+    <h3>Section 2: Who Is Your Housing Provider?</h3>
+
+    <p>
+        If the customer is a council tenant, refer to the relevant CRM page,
+        follow the procedures, and record actions on CRM and HSP.
+    </p>
+
+    <h3>Housing Association Tenant, Private Landlord or Supported Accommodation</h3>
+
+    <p>
+      <ol>
+          <li>Has the customer reported the incident to their Housing Association, Private Landlord, Supported Accommodation Provider and South Yorkshire Police?</li>
+      </ol> If yes, record incident numbers on the system.
+
+      <ol start="2">
+          <li>What was the outcome of the report?</li>
+          <li>Has any support been offered by the Housing Association or Landlord?</li>
+          <li>Confirm reports have been made and contact the Housing Association or Landlord where appropriate.</li>
+          <li>Gather all available evidence and upload it to HSP or NEC.</li>
+      </ol>
+    </p>
+    `,
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "bidding",
+      "biding",
+      "bid",
+      "bids",
+      "housing",
+      "houzing",
+      "houssing",
+      "housin",
+      "housingg",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const asbCuckooing = new ContentH(
+  "asbCuckooing",
+  "Anti-Social Behaviour Cuckooing (Homelessness)xxxxxxxxxxxxxx",
+  "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <ul>
+            <li>A customer reports harassment, threats, intimidation, or anti-social behaviour.</li>
+            <li>There are concerns about personal safety.</li>
+            <li>The behaviour may affect the suitability of the accommodation.</li>
+        </ul>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Immediate Safety and Risk Check</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>At first contact:</p>
+
+        <ul>
+            <li>Ask what is happening, who is responsible, and where incidents are occurring.</li>
+            <li>Ask how unsafe the customer feels, including whether there is any immediate risk.</li>
+            <li>Consider whether urgent safeguarding, emergency reporting, or crisis accommodation information is required.</li>
+        </ul>
+
+        <p>
+            Record the customer's account clearly, objectively and factually.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Reasonableness of Remaining in the Accommodation</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Assess whether the reported harassment, threats, or ASB make the accommodation unsafe or unreasonable to continue occupying.
+        </p>
+
+        <p>Consider:</p>
+
+        <ul>
+            <li>Frequency and severity of incidents.</li>
+            <li>Whether incidents are escalating over time.</li>
+            <li>The impact on wellbeing.</li>
+            <li>The impact on children or vulnerable household members.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Incident Information Gathering</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>Gather details of specific incidents, including:</p>
+
+        <ul>
+            <li>Dates and times.</li>
+            <li>Description of behaviour.</li>
+            <li>Who was involved.</li>
+            <li>Impact on the customer and household.</li>
+        </ul>
+
+        <p>
+            Keep all records objective, factual and evidence-based.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Reporting to Other Agencies</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>Establish whether incidents have been reported to:</p>
+
+        <ul>
+            <li>Police.</li>
+            <li>Social Care.</li>
+            <li>Landlord or housing provider.</li>
+            <li>ASB teams or tenancy enforcement teams.</li>
+        </ul>
+
+        <ul>
+            <li>Encourage reporting where it has not yet occurred, unless doing so would be unsafe.</li>
+            <li>Record agencies contacted, dates, outcomes, and any reference numbers.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Tenure-Specific Actions</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Council Tenants</strong></p>
+
+        <ul>
+            <li>Check relevant internal systems.</li>
+            <li>Liaise with the Neighbourhood Team.</li>
+        </ul>
+
+        <p><strong>Housing Association Tenants</strong></p>
+
+        <ul>
+            <li>Contact the housing association.</li>
+            <li>Determine whether alternative options or interventions are available.</li>
+            <li>Contact the Multi-Tenure ASB Team where appropriate.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Options and Prevention Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Provide housing options advice alongside ASB intervention work.</li>
+            <li>Focus on prevention wherever possible.</li>
+            <li>Consider Private Rented Sector (PRS) opportunities where appropriate.</li>
+            <li>Be clear about availability, affordability, and realistic timescales.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Temporary Accommodation – Key Information to Explain</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Ensure customers understand that temporary accommodation should only be used as a last resort.
+        </p>
+
+        <ul>
+            <li>There is no choice of location and accommodation may be outside the city.</li>
+            <li>Customers may experience multiple moves, often between hotels.</li>
+            <li>Privacy can be limited.</li>
+            <li>Cooking and laundry facilities may not be available.</li>
+            <li>Storage space is often restricted.</li>
+            <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+        </ul>
+
+        <p><strong>Financial Impacts</strong></p>
+
+        <ul>
+            <li>Reliance on takeaways and poorer nutrition.</li>
+            <li>Increased travel costs for school, childcare or work.</li>
+            <li>Additional costs for working households.</li>
+        </ul>
+
+        <p>
+            Emphasise that preventing homelessness or remaining safely with family or friends is generally preferable where appropriate.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Additional Support Considerations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Customers Aged 25 or Under</strong></p>
+
+        <ul>
+            <li>Refer to Roundabout – Talk It Out mediation service.</li>
+            <li>Provide advice through the Homeless Support Pathway (HSP).</li>
+        </ul>
+
+        <p><strong>Households with Children</strong></p>
+
+        <ul>
+            <li>Offer referral to the Early Help Family Intervention Service.</li>
+        </ul>
+
+        <p><strong>Employment Needs</strong></p>
+
+        <ul>
+            <li>Offer referral to employment support services.</li>
+        </ul>
+
+        <p><strong>Financial Difficulties</strong></p>
+
+        <ul>
+            <li>Refer or signpost to the Cost of Living Support Hub.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>CRM Recording Reminder</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            All safety checks, incident details, assessments, partner contacts,
+            referrals offered or made, customer decisions, and outcomes must be
+            clearly recorded in CRM and the relevant workflow fields.
+        </p>
+
+        <p>
+            Accurate recording supports safeguarding, homelessness prevention,
+            partnership working, performance monitoring, and audit compliance.
+        </p>
+
+    </div>
+</details>
+    `,
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "bidding",
+      "biding",
+      "bid",
+      "bids",
+      "housing",
+      "houzing",
+      "houssing",
+      "housin",
+      "housingg",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+const askedToLeave = new ContentH(
+  "askedToLeave",
+  "Asked to Leave",
+  "Guidance for supporting customers who are at risk of being asked to leave family or friend accommodation, including prevention measures, housing options, and homelessness risk assessment.",
+  `
+    <h3>Establish the Situation </h3>
+    <p>
+      <ul>
+        <li>When do you haved to leave?</li>
+        <li>Who asked you to leave and why?</li>
+        <li>Can you remain for a short agreed period?</li>
+        <li>Is there any way the arrangement can continue safely for a short time?</li>
+        <li>Would the host agree to a planned move-out date</li>
+      </ul>
+    </p>
+    <p>
+        <em>Principle: Sofa surfing is not secure, but short-term solutions may help prevent homelessness.</em>
+    </p>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>A customer is staying with friends or family on an informal basis.</li>
+            <li>There is a threatened or impending exclusion from the accommodation.</li>
+            <li>The customer has no formal tenancy or legal right to remain.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Nature of the Accommodation Arrangement</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Establish how long the customer has been living at the address.</li>
+            <li>Clarify whether the arrangement was intended to be short-term.</li>
+            <li>Clarify whether the arrangement was intended to be long-term or open-ended.</li>
+            <li>Record the nature of the arrangement clearly within CRM.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Household Composition and Use of Space</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Record everyone who currently lives in the property.</li>
+            <li>Note the number of bedrooms and living rooms available.</li>
+            <li>Record sleeping arrangements for all household members.</li>
+            <li>Use this information to assess suitability and potential overcrowding.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Reason for Threatened Exclusion</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Ask what has led to the threat of exclusion.</li>
+            <li>Record the customer's account objectively and factually.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Expected Date of Exclusion</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>Clarify whether exclusion is:</p>
+
+        <ul>
+            <li>Immediate.</li>
+            <li>Imminent.</li>
+            <li>Potential or conditional.</li>
+        </ul>
+
+        <p>
+            Record any proposed or expected date and whether the situation appears to be escalating.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Negotiation and Prevention</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Where safe and reasonable, explore negotiation with the host household.</li>
+            <li>Support the customer to remain on a longer-term basis where possible.</li>
+            <li>Where remaining is not possible, seek sufficient time to secure alternative accommodation.</li>
+            <li>Do not pursue negotiation where it may increase risk or harm.</li>
+            <li>Record actions taken and outcomes achieved.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Options and Prevention Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Provide housing options advice tailored to the customer's circumstances.</li>
+            <li>Explore Private Rented Sector (PRS) options where appropriate.</li>
+            <li>Consider other prevention routes that may prevent homelessness.</li>
+            <li>Discuss realistic availability, affordability, and likely timescales.</li>
+            <li>Record all advice provided.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Temporary Accommodation – Key Information to Explain</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Ensure customers understand the realities of temporary accommodation.
+        </p>
+
+        <ul>
+            <li>Temporary accommodation is only used as a last resort.</li>
+            <li>There is no choice of location and accommodation may be outside the city.</li>
+            <li>Customers may experience frequent moves between placements.</li>
+        </ul>
+
+        <p><strong>Temporary accommodation often involves:</strong></p>
+
+        <ul>
+            <li>Limited privacy.</li>
+            <li>No cooking facilities.</li>
+            <li>No laundry facilities.</li>
+            <li>Very limited storage space.</li>
+        </ul>
+
+        <p><strong>Potential impacts include:</strong></p>
+
+        <ul>
+            <li>Negative impacts on wellbeing, particularly for children.</li>
+            <li>Reliance on takeaway food and reduced nutritional choices.</li>
+            <li>Increased transport and travel costs.</li>
+            <li>Additional financial pressures on working households.</li>
+        </ul>
+
+        <p>
+            Emphasise that preventing homelessness or remaining safely with family or friends is usually preferable where possible.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Additional Support Considerations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Aged 25 or Under</strong></p>
+
+        <ul>
+            <li>Refer to Roundabout – Talk It Out mediation service.</li>
+            <li>Provide housing advice through the Homeless Support Pathway (HSP).</li>
+        </ul>
+
+        <p><strong>Households with Children</strong></p>
+
+        <ul>
+            <li>Offer referral to the Early Help Family Intervention Service.</li>
+            <li>Record whether the referral was accepted or declined.</li>
+        </ul>
+
+        <p><strong>Financial Difficulties</strong></p>
+
+        <ul>
+            <li>Refer or signpost to the Cost of Living Support Hub.</li>
+        </ul>
+
+        <p><strong>Employment Needs</strong></p>
+
+        <ul>
+            <li>Offer referral to employment and employability support services.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Collusion Awareness</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Be alert to signs of potential collusion or manufactured homelessness.</li>
+            <li>Record concerns clearly, objectively, and factually.</li>
+            <li>Avoid assumptions and ensure records are evidence-based.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>CRM Recording Reminder</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            All assessments, advice provided, prevention work undertaken,
+            referrals offered or completed, customer decisions, and outcomes
+            must be clearly recorded within CRM and relevant workflow fields.
+        </p>
+
+        <p>
+            Accurate recording supports homelessness prevention, safeguarding,
+            partnership working, service continuity, and audit compliance.
+        </p>
+
+    </div>
+</details>
+  `,
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "apply",
+      "applying",
+      "apply for rehousing",
+      "options",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 const bidding = new ContentH(
   "bidding",
   "Bidding",
@@ -4244,6 +5113,377 @@ const bidding = new ContentH(
   { date: "07/05/2026", name: "Liz Taster" }
 );
 
+const disrepairHomeless = new ContentH(
+  "disrepair",
+  "Disrepair (Homelessness)",
+  "Steps for supporting customers affected by poor housing conditions, covering landlord responsibilities, Environmental Health referrals, housing options, and homelessness prevention.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>Use this guidance where a customer reports:</p>
+
+        <ul>
+            <li>Disrepair or poor housing conditions.</li>
+            <li>Health or safety risks linked to the property.</li>
+            <li>Concern that the condition of the home may make it unreasonable to remain.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Initial Considerations</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Establish whether the customer has reported the disrepair to the landlord.</li>
+                <li>Confirm the tenure type, such as social housing or private rented sector.</li>
+                <li>Record what action has already been taken and by whom.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Social Housing Tenants</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where the customer is a council or housing association tenant:
+            </p>
+
+            <ul>
+                <li>Manage the issue under pre-prevention activity.</li>
+                <li>Liaise with internal repairs services or the relevant housing provider.</li>
+                <li>Monitor progress and record updates on agreed actions.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Private Rented Sector Tenants</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where the accommodation is privately rented:
+            </p>
+
+            <ul>
+                <li>Check whether the customer has contacted Private Housing Standards or Environmental Health.</li>
+                <li>If not, explain the process clearly and support referral where appropriate.</li>
+                <li>Be mindful of the risk of retaliatory eviction and consider prevention measures.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Reasonableness of Continued Occupation</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Assess whether it remains reasonable for the customer to continue occupying the accommodation.
+            </p>
+
+            <p>Take account of:</p>
+
+            <ul>
+                <li>The severity and duration of the disrepair.</li>
+                <li>Health and safety risks.</li>
+                <li>Household composition, including children or vulnerable adults.</li>
+                <li>Impact on wellbeing or daily living.</li>
+            </ul>
+
+            <p>
+                Record the reasoning behind the assessment.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Referrals and Enforcement</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Refer to Environmental Health or Private Housing Standards where appropriate.</li>
+                <li>Support the customer to understand and assert their housing rights while avoiding actions that could unintentionally increase homelessness risk.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Advice and Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Provide Shelter guidance on housing disrepair.</li>
+                <li>Where appropriate, refer to the Shelter Homeless Prevention and Resettlement Service via the Homeless Support Pathway (HSP).</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Options Advice</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Provide housing options advice alongside disrepair work.</li>
+                <li>Where appropriate, focus on private rented sector options while continuing prevention activity in the current accommodation.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Key Information to Explain</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Ensure customers understand that temporary accommodation is only used as a last resort.
+            </p>
+
+            <ul>
+                <li>Temporary accommodation offers no choice of location and may be outside the city.</li>
+                <li>Temporary accommodation can involve frequent moves between hotels.</li>
+            </ul>
+
+            <p><strong>Temporary accommodation often involves hotel stays with:</strong></p>
+
+            <ul>
+                <li>Limited privacy.</li>
+                <li>No cooking facilities.</li>
+                <li>No laundry facilities.</li>
+                <li>Very limited storage.</li>
+            </ul>
+
+            <p><strong>Temporary accommodation can be detrimental to wellbeing, particularly for children, and can be financially costly due to:</strong></p>
+
+            <ul>
+                <li>Reliance on takeaways and reduced nutrition.</li>
+                <li>Increased transport costs to school or work.</li>
+                <li>Financial impact for working households.</li>
+            </ul>
+
+            <p>
+                Emphasise that it is usually better to prevent homelessness early or remain safely with family or friends, where appropriate.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Additional Support Options</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p><strong>Households with Children</strong></p>
+
+            <ul>
+                <li>Offer referral to the Early Help Family Intervention Service.</li>
+            </ul>
+
+            <p><strong>Aged 25 or Under</strong></p>
+
+            <ul>
+                <li>Refer to Roundabout – Talk It Out mediation service.</li>
+                <li>Provide general housing advice via the Homeless Support Pathway (HSP).</li>
+            </ul>
+
+            <p><strong>Employment Needs</strong></p>
+
+            <ul>
+                <li>Offer referral to employment support services.</li>
+            </ul>
+
+            <p><strong>Financial Difficulties</strong></p>
+
+            <ul>
+                <li>Refer or signpost to the Cost of Living Support Hub.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>CRM Recording Reminder</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                All assessments, advice given, referrals offered or made, customer decisions,
+                and outcomes must be clearly recorded in CRM and the relevant workflow fields.
+            </p>
+
+            <p>
+                Accurate recording supports prevention activity, safeguarding, case continuity,
+                service monitoring, and audit requirements.
+            </p>
+
+        </div>
+    </details>
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "health",
+      "adaptations",
+      "adaptation",
+      "medical",
+      "grants",
+      "mobility",
+      "needs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+
+const domesticAbuseAssessment = new ContentH(
+  "domesticAbuseAssessment",
+  "Domestic Abuse Assessmentxxx",
+  "Guidance for supporting customers experiencing domestic abuse, including safety checks, DASH risk assessments, safeguarding actions, housing duties, MARAC referrals",
+  `
+    <h3>Use this sheet where:</h3>
+<ul>
+    <li>A customer discloses domestic abuse or fleeing violence.</li>
+    <li>There are concerns about immediate safety or risk.</li>
+    <li>A customer has left their accommodation or is considering leaving due to abuse.</li>
+    <li>The case requires homelessness prevention or relief duties.</li>
+</ul>
+
+<h3>Accommodation and Tenure Requirements</h3>
+<ul>
+    <li>Confirm if customer has fled property.</li>
+    <li>Record accommodation type and tenancy status on Form1.</li>
+</ul>
+
+<h3>Immediate Safety and Risk Identification</h3>
+<ul>
+    <li>Ask the customer if they’re safe.</li>
+    <li>If not safe:
+        <ul>
+            <li>Prioritise safeguarding.</li>
+            <li>Identify perpetrator location.</li>
+            <li>Move customer to a private room or the Domestic Abuse Safe Space.</li>
+        </ul>
+    </li>
+    <li>Record all actions in CRM and HSP.</li>
+</ul>
+
+<h3>Complete a DASH Form (Domestic Abuse, Stalking, Harassment, and Honour-based Violence Assessment)</h3>
+
+<p>
+    Guidance on how to complete the form is available via this link:
+    <a href="https://safelives.org.uk/resources-library/dash-risk-checklist/" target="_blank" rel="noopener noreferrer">
+        DASH Risk Checklist and FAQs - SafeLives
+    </a>
+</p>
+
+<p>
+    Develop housing style questions related to DASH questions (Oliver to speak with IDAS).
+</p>
+
+<p>
+    Once the form is complete, please upload it to files on HSP:
+    <a href="https://sheffieldsap.cdpsoft.com/supportshf/Logon.do?method=unspecified" target="_blank" rel="noopener noreferrer">
+        Logon
+    </a>
+</p>
+
+<p>
+    If the score on the form is <strong>HIGH</strong>, this must be reported to MARAC via
+    <a href="mailto:housingsafeguarding@sheffield.gov.uk">
+        housingsafeguarding@sheffield.gov.uk
+    </a>.
+</p>
+
+<h3>CRM Recording Reminder</h3>
+<ul>
+    <li>Record all risk, safeguarding, housing and support details.</li>
+    <li>Ensure compliance and audit readiness.</li>
+</ul>
+
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "health",
+      "adaptations",
+      "adaptation",
+      "medical",
+      "grants",
+      "mobility",
+      "needs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+
+
 const eligibility = new ContentH(
   "eligibility",
   "Eligibility",
@@ -4392,6 +5632,264 @@ const fosteringAndAdoption = new ContentH(
   },
   { date: "07/22/2024", name: "George Whitehouse" }
 );
+
+const friendsOrFamily = new ContentH(
+  "friendsOrFamily",
+  "Staying with Friends of Familyxxxx",
+  "Guidance for supporting customers who are staying with friends or family and have been asked to leave, focusing on prevention, housing options, and homelessness duties.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>1. Establish the Situation (Early Advice Focus)</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Clarify:</strong></p>
+
+        <ul>
+            <li>When do they have to leave?</li>
+            <li>Who asked them to leave and why?</li>
+            <li>Can they remain for a short, agreed period?</li>
+        </ul>
+
+        <p><strong>Focus on early intervention:</strong></p>
+
+        <ul>
+            <li>Is there any way the arrangement can continue safely for a short time?</li>
+            <li>Would the host agree to a planned move-out date?</li>
+        </ul>
+
+        <p>
+            <strong>Principle:</strong> Sofa surfing is not secure, but short-term solutions
+            may help prevent homelessness.
+        </p>
+
+        <p><strong>Core Approach</strong></p>
+
+        <ul>
+            <li>Advice first → Prevention → Then application if needed.</li>
+            <li>Keep intervention proportionate, early, and realistic.</li>
+            <li>Always be ready to escalate quickly.</li>
+        </ul>
+
+        <p><strong>Key Practice Points</strong></p>
+
+        <ul>
+            <li>Do not default straight to a full application without exploring prevention.</li>
+            <li>Do not treat the arrangement as secure.</li>
+            <li>Do not require formal eviction.</li>
+            <li>Do not delay an application if risk escalates.</li>
+        </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>2. Provide Immediate Housing Advice and Options</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Before progressing to a full application, explore all realistic options.
+              </p>
+
+              <p><strong>Family / Friends Options</strong></p>
+
+              <ul>
+                  <li>Can they stay with another household member or friend?</li>
+                  <li>Can the current host arrangement be extended through mediation, where appropriate?</li>
+              </ul>
+
+              <p><strong>Private Rented Sector</strong></p>
+
+              <ul>
+                  <li>Encourage property searches using sources such as Rightmove, Zoopla and local landlords.</li>
+                  <li>Explore deposit and bond schemes.</li>
+                  <li>Check affordability and benefit entitlement.</li>
+              </ul>
+
+              <p><strong>Supported Housing</strong></p>
+
+              <ul>
+                  <li>Consider supported housing where support needs or vulnerabilities exist.</li>
+              </ul>
+
+              <p><strong>Financial and Practical Support</strong></p>
+
+              <ul>
+                  <li>Discretionary Housing Payments (DHP).</li>
+                  <li>Rent in advance and deposit schemes.</li>
+                  <li>Welfare benefits and Universal Credit housing costs.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>3. Consider Housing Duty (Do Not Delay if Needed)</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  While providing advice, assess whether homelessness duties apply.
+              </p>
+
+              <ul>
+                  <li>If leaving accommodation within 56 days, the Prevention Duty may apply.</li>
+                  <li>If no accommodation is available, the Relief Duty may apply.</li>
+              </ul>
+
+              <p>If the customer is clearly homeless or at risk:</p>
+
+              <ul>
+                  <li>Proceed with a homelessness application without delay.</li>
+              </ul>
+
+              <p>
+                  Advice and statutory duties should run alongside each other and not sequentially.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>4. Light-Touch Initial Assessment</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Capture key information early, even at the advice stage.
+              </p>
+
+              <ul>
+                  <li>Household composition.</li>
+                  <li>Risks or safeguarding concerns.</li>
+                  <li>Health conditions, vulnerabilities or support needs.</li>
+                  <li>Financial circumstances.</li>
+              </ul>
+
+              <p>This information supports:</p>
+
+              <ul>
+                  <li>Tailored housing advice.</li>
+                  <li>Faster escalation where required.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>5. Priority Need &amp; Risk Check</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  At all stages consider whether there is a priority need or safeguarding concern.
+              </p>
+
+              <ul>
+                  <li>Children or pregnancy.</li>
+                  <li>Health issues or vulnerability.</li>
+                  <li>Risk of harm.</li>
+              </ul>
+
+              <p>
+                  If there is reason to believe a priority need exists, move quickly to:
+              </p>
+
+              <ul>
+                  <li>Full homelessness application.</li>
+                  <li>Interim accommodation assessment.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>6. Prevention Actions (Core Focus)</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Where there is time and scope to prevent homelessness:
+              </p>
+
+              <ul>
+                  <li>Mediate with the host where safe and appropriate.</li>
+                  <li>Agree a realistic move-out plan.</li>
+                  <li>Actively support access to private rented sector accommodation.</li>
+                  <li>Consider supported housing options.</li>
+                  <li>Explore alternative family arrangements.</li>
+              </ul>
+
+              <p>
+                  Record all prevention activity attempted and the outcomes achieved.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>7. Escalate to Full Homelessness Application (If Required)</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Move to a full homelessness application where:
+              </p>
+
+              <ul>
+                  <li>No accommodation is available.</li>
+                  <li>The arrangement is ending imminently.</li>
+                  <li>Prevention options have been exhausted or are unreasonable.</li>
+              </ul>
+
+              <p>
+                  Escalate promptly where circumstances deteriorate or homelessness becomes unavoidable.
+              </p>
+
+          </div>
+      </details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 
 const healthAndHousing = new ContentH(
   "healthAndHousing",
@@ -4550,6 +6048,206 @@ const healthAndHousing = new ContentH(
   },
   { date: "07/05/2026", name: "Liz Taster" }
 );
+
+const homelessPrevention = new ContentH(
+  "healthAndHousing",
+  "Homeless Prevention Support Advice",
+  "Learn about options when health conditions impact the suitability of current housing.",
+  `
+    <h3>Adaptations</h3>
+    
+    <p>
+      If you're disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
+    </p> 
+
+    <p>
+      Before you consider adapting your home, we recommend checking whether equipment or technology could meet your needs. 
+      These can often be quicker and more affordable solutions. For example:
+    </p>
+
+    <ul>
+      <li>using a commode during the day may help you avoid using the stairs</li>
+      <li>grab rails or a shower seat can help in the bathroom</li>
+    </ul>
+
+    <p>
+      Details of different potential equipment and adaptations can be found at the following link:<br>
+      <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank">Equipment House | Sheffield</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Equipment%20House\`"
+    >
+            Send link to review further information
+    </button>
+
+    <p>
+      Further information and the online form to request a home adaptation can be found at the following link:
+      <a href="https://www.sheffield.gov.uk/social-care/adults/how-we-can-help/daily-tasks/request-home-adaptation" target="_blank">Request a home adaptation | Sheffield City Council</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20home%20adaptation%20assessment\`"
+    >
+            Send link to review further information
+    </button>
+
+    <h3>Financial help for major adaptations</h3>
+
+    <p>
+    If your assessment recommends a major adaptation such as a stair lift or ramp you may be eligible for a Disabled Facilities Grant. 
+    Information can be found at <a href="https://www.gov.uk/disabled-facilities-grants" target="_blank">https://www.gov.uk/disabled-facilities-grants</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Disabled%20Facilities%20Grants\`"
+    >
+            Send link to review further information
+    </button>
+
+    <h3>Rehousing due to medical or mobility needs</h3>
+
+    <p>
+      If your primary reason for requesting rehousing is identified as any of the following your referral will not be accepted. 
+      Please contact the relevant team on the details below.
+    </p>
+
+    <ul>
+      <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
+      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
+      <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
+      <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
+      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at 
+      <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
+    </ul>
+
+    <p>
+      You will not be awarded medical priority if your current property can be adapted to meet your needs. 
+      If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. 
+      <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
+    </p>
+
+    <p>
+      If following assessment, it is determined that your property cannot be adapted the assessing officer will advise you to complete the 
+      medical priority rehousing application
+    </p>
+
+    <p>
+      If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
+      The quickest way to send your application is to scan and return to <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a>  
+      This will minimise delays in considering your application.
+    </p>
+
+    <p>
+      Further details of support available for a variety of issues causing Housing Problems (including overcrowding, family problens, 
+      domestic abuse and relationship breakdown) can be found at <a href="https://www.sheffield.gov.uk/housing/housing-options/housing-problems" target="_blank">Housing problems | Sheffield City Council</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Problems\`"
+    >
+            Send link to review further information
+    </button>
+
+    <p>
+      For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenenacy Enforcement (ASB)</strong>. 
+      This is the top result if you enter <strong>ASB</strong> in the Knowledge search above. The page provides general information about ASB, and will also allow you 
+      to send a link to the customer to correctly report ASB as either a council or non-council tenant.
+    </p>
+
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "health",
+      "adaptations",
+      "adaptation",
+      "medical",
+      "grants",
+      "mobility",
+      "needs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "07/05/2026", name: "Liz Taster" }
+);
+
+const homelessTest = new ContentH(
+  "homelessTest",
+  "Homeless Test",
+  "Link to the Homeless Test PowerPoint.",
+  `
+    <p>
+      <a href="https://sccextranet.sharepoint.com/:p:/r/sites/HousingandNeighbourhoodsDigitalRingbinder/Shared%20Documents/Homelessness%20and%20Supported%20Housing%20Service/Staff%20Procedures%20and%20guidance/CRM%20Forms/Form%201B%20Housing%20Need/Homelessness%20Test.pptx?d=wf780fad2fb0241349567ce0f61916ed5&csf=1&web=1&e=h9b9l0" target="_blank">Homeless Test</a>
+    </p>
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "health",
+      "adaptations",
+      "adaptation",
+      "medical",
+      "grants",
+      "mobility",
+      "needs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+
+
+
+
 
 
 const housingAssociations = new ContentH(
@@ -5160,6 +6858,91 @@ const idFaq = new ContentH(
   { date: "01/05/2026", name: "Liz Taster" }
 );
 
+const lostJob = new ContentH(
+  "lostJob",
+  "Job Lost (Homeless Prevention)",
+  "Options and suggestions to help customers who have just lost their job.",
+  `
+  <h3>Eviction Prevention</h3>
+    <p>
+    Landlords must follow legal eviction process and cannot evict immediately.
+      <ul>
+        <li>Encourage early communication with landlord</li>
+        <li>Agree temporary payment arrangement where possible</li>
+        <li>Apply for Universal Credit (including housing element) - <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a></li>
+        <li>Request UC advance if in financial hardship</li>
+        <li>Apply for Discretionary Housing Payment - <a href="https://www.sheffield.gov.uk/benefits/apply-benefits-support/discretionary-CRFHP" target="_blank">https://www.sheffield.gov.uk/benefits/apply-benefits-support/discretionary-CRFHP</a></li>
+        <li>Contact local Housing Options team</li>
+        <li>Signpost to Shelter, Citizens Advice, HLPAS</li>
+JCHERESENDLINKS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </ul>
+    </p>
+
+    <h3>Early Help Support</h3>
+    <p>
+    Early Help provides support for families at earliest stage to prevent escalation.
+      <ul>
+        <li>Family Intervention Service (FIS): 1:1 family support (debt, mental health, parenting)</li>
+        <li>Family Hubs: groups, health services, parenting support</li>
+        <li>Early Help Assessment (EHA) required for referrals</li>
+        <li><a href="mailto:EarlyHelpAssessment@sheffield.gov.uk</a></li>
+JCHERESENDLINKS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </ul>
+    </p>
+
+
+    <h3>Financial Support</h3>
+    <p>
+      <ul>
+        <li>Household Support Fund via local authority</li>
+        <liAccess to low-cost community meals</li>
+        <li>Budgeting and debt advice via support services</li>
+JCHERESENDLINKS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </ul>
+    </p>
+
+    <h3>Health & Family Support Contacts</h3>
+    <p>
+      <ul>
+        <li> Community Midwives:<a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2268301')">0114 2268301</a></li>
+        <li> Health Visitors: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 3053224')">0114 3053224</a></li>
+        <li> Health Improvement Team: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2262534')">0114 2262534</a></li>
+        <li> Infant Feeding Support: <a href="mailto:InfantFeedingSupport@sheffield.gov.uk</a></li>
+        <li> Doula support available via EHA referral </li>
+JCHERESENDLINKS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </ul>
+    </p>
+
+    `,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing",
+      "rehausing",
+      "rehousingg",
+      "rehosuing",
+      "rehouzing",
+      "three",
+      "offers",
+      "demoted",
+      "disqualified",
+      "disqualify",
+      "disqualification",
+      "demotion",
+      "refused",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
 const movingIn = new ContentH(
   "movingIn",
   "Moving In",
@@ -5514,32 +7297,443 @@ const mutualExchanges = new ContentH(
   { date: "27/03/2026", name: "Shaz Athar" }
 );
 
-const priorities = new ContentH(
-  "priorities",
-  "Priorities",
+const overcrowding = new ContentH(
+  "overcrowding",
+  "Overcrowding Creating a Risk of Homelessness",
+  "Steps for managing overcrowding concerns, including suitability assessments, risk factors, housing advice, and support referrals.",
+  `
+      <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Checking Your Current Accommodation</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            We will discuss whether your current accommodation remains reasonable for you to continue occupying.
+        </p>
+
+        <p>This includes considering:</p>
+
+        <ul>
+            <li>The size of the property and who currently lives there.</li>
+            <li>Whether overcrowding is affecting health, safety, or wellbeing.</li>
+            <li>Whether the situation could realistically lead to eviction or exclusion.</li>
+        </ul>
+
+        <p>
+            If you are a council or housing association tenant, your case will usually be considered under early (pre-prevention) homelessness work.
+        </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Risks Linked to Overcrowding</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                We will assess whether overcrowding could create a serious housing risk.
+            </p>
+
+            <ul>
+                <li>Conflict within the household.</li>
+                <li>Risk of being asked to leave.</li>
+                <li>Action from a landlord or managing agent.</li>
+                <li>Impact on children or vulnerable household members.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Options to Reduce Pressure</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where possible, we will explore options to improve your housing situation and reduce overcrowding.
+            </p>
+
+            <ul>
+                <li>Speak with the landlord to see if flexibility or additional time can be provided.</li>
+                <li>Plan a move to more suitable accommodation, such as a larger property.</li>
+                <li>Consider whether overcrowding affects housing priority or banding under the housing allocations policy, where applicable.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Options Advice</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                We will provide advice on all realistic housing options available.
+            </p>
+
+            <ul>
+                <li>The Private Rented Sector (PRS), including realistic expectations and likely timescales.</li>
+                <li>Alternative housing routes based on your individual circumstances.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Important Information</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Temporary accommodation is only used where other options are not available.
+            </p>
+
+            <p><strong>It is important to understand that:</strong></p>
+
+            <ul>
+                <li>You are unlikely to have a choice of location and accommodation may be outside the city.</li>
+                <li>You may be required to move between different temporary accommodation placements.</li>
+                <li>Many placements are within hotel accommodation.</li>
+            </ul>
+
+            <p><strong>Hotel accommodation often involves:</strong></p>
+
+            <ul>
+                <li>Limited privacy.</li>
+                <li>No cooking facilities.</li>
+                <li>No laundry facilities.</li>
+                <li>Very limited storage space.</li>
+            </ul>
+
+            <p><strong>Possible impacts include:</strong></p>
+
+            <ul>
+                <li>Negative effects on wellbeing, particularly for children.</li>
+                <li>Reliance on takeaway food and poorer nutrition.</li>
+                <li>Increased travel costs to school, childcare, or work.</li>
+                <li>Additional costs associated with employment.</li>
+            </ul>
+
+            <p>
+                For these reasons, preventing homelessness or remaining safely with family or friends is often a preferable temporary solution where appropriate.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Extra Help and Referrals</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Depending on your circumstances, additional support may be available.
+            </p>
+
+            <p><strong>Under 25s</strong></p>
+
+            <ul>
+                <li>Referral to Roundabout – Talk It Out mediation service.</li>
+                <li>Advice through the Homeless Support Pathway.</li>
+            </ul>
+
+            <p><strong>Households with Children</strong></p>
+
+            <ul>
+                <li>Referral to the Early Help Family Intervention Service.</li>
+            </ul>
+
+            <p><strong>Employment Support</strong></p>
+
+            <ul>
+                <li>Help with employment, training, education, or job searching.</li>
+            </ul>
+
+            <p><strong>Financial Support</strong></p>
+
+            <ul>
+                <li>Referral to the Cost of Living Support Hub.</li>
+            </ul>
+
+            <p>
+                You can choose whether or not you wish to be referred to any of these services.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Next Steps</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>An officer will:</p>
+
+            <ul>
+                <li>Explain which housing options are most suitable for your circumstances.</li>
+                <li>Agree clear next steps with you.</li>
+                <li>Record all advice given, support offered, and actions taken.</li>
+            </ul>
+
+            <p>
+                The aim is to identify practical solutions early and prevent homelessness wherever possible.
+            </p>
+
+        </div>
+    </details>
+    `,
+  {
+    buttonLabel: "Raise Enquiry",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehousing", 
+      "rehousing", 
+      "rehousign", 
+      "rehozing",
+      "housing",
+      "mutual",
+      "exchange",
+      "exchanges",
+      "swap",
+      "swop",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+const preventionEndOfSupportedAccommodation = new ContentH(
+  "preventionEndOfSupportedAccommodation",
+  "Prevention at End of Supported Accommodation",
   "Learn about priority for rehousing, including how priority is assessed, what it means for your housing options, and how to request a review.",
   `
-    <h3>Customers who have a priority</h3>  
-    <p>
-      After completing security checks with the applicant, check NEC for priority banding and ‘Actions’ for who is managing the case. 
-      The Priorities Team have a public phone number 0114 0114 2736970  and email address for enquiries 
-      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a> 
-      or if in person at Howden House the customer can be seen without an appointment.
-    </p>
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Purpose</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
 
+        <p>
+            This guidance supports staff working with customers who are approaching
+            the end of supported accommodation or are at risk of homelessness.
+        </p>
 
-    <h3>General information about housing priorities</h3>  
-    <p>
-      Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
-  
-      In some cases we will make you an offer of a property that we feel meets your needs. If we are unable to contact you due to changes not notified to us, your registration may be suspended or cancelled.<br><br>
-  
-      If you may be eligible for a priority you will be asked to provide us with further information. Once you have been assessed, we will write to you and explain whether you have been given priority. If you are given priority the letter will explain what sort of properties you can bid for with the priority and when the priority will be reviewed.<br><br>
-  
-      We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.<br><br>
-  
-      A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.<br>
-     </p> 
+        <p>
+            It outlines preventative actions, key messages for customers, and
+            referral pathways to support homelessness prevention and resettlement.
+        </p>
+
+        <p>
+            This guidance is intended to guide practice and support consistent
+            CRM recording rather than operate as a form.
+        </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Identifying End Dates and Notices</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Identify and record the end date of the current accommodation at the earliest opportunity.</li>
+                <li>Obtain and retain any notice provided by the accommodation provider where available.</li>
+                <li>Ensure notices and supporting evidence are saved to the case record.</li>
+                <li>Use accommodation end dates to support early homelessness prevention planning.</li>
+            </ul>
+
+            <p>
+                Early identification of accommodation end dates is critical to effective prevention work.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Contacting the Accommodation Provider</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Contact the accommodation provider to understand the reasons for the notice
+                and explore preventative options.
+            </p>
+
+            <ul>
+                <li>Determine whether eviction or accommodation loss can be prevented.</li>
+                <li>Explore whether an extension can be negotiated.</li>
+                <li>Give particular consideration to households with identified vulnerabilities.</li>
+                <li>Record all discussions, actions, and outcomes in CRM.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Working with Other Organisations</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Identify and engage with other organisations involved with the customer or household.
+            </p>
+
+            <ul>
+                <li>Liaise with support providers and partner agencies.</li>
+                <li>Coordinate housing and support planning where appropriate.</li>
+                <li>Use partnership working to support earlier intervention and improved outcomes.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Options Advice</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Provide clear and realistic housing options advice.</li>
+                <li>Focus on Private Rented Sector (PRS) opportunities where appropriate.</li>
+                <li>Prioritise prevention and resettlement options.</li>
+                <li>Discuss realistic availability, affordability, and timescales.</li>
+                <li>Support customers to identify sustainable accommodation solutions.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Key Messages</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should ensure customers understand the realities and potential challenges of temporary accommodation.
+            </p>
+
+            <ul>
+                <li>No choice over location and accommodation may be outside the city.</li>
+                <li>Frequent moves between hotels or placements may occur.</li>
+                <li>Hotel-based accommodation often provides limited privacy.</li>
+                <li>Cooking facilities may not be available.</li>
+                <li>Laundry facilities may not be available.</li>
+                <li>Storage space is often very limited.</li>
+                <li>Temporary accommodation can have a negative impact on wellbeing, particularly for children.</li>
+            </ul>
+
+            <p><strong>Potential Financial Impacts</strong></p>
+
+            <ul>
+                <li>Reliance on takeaways and reduced nutritional options.</li>
+                <li>Increased travel costs to work, education, or childcare.</li>
+                <li>Additional financial pressures for customers who are employed.</li>
+            </ul>
+
+            <p>
+                Customers should be advised that temporary accommodation is a last resort and should be avoided where possible through prevention, private renting, or safe arrangements with family or friends.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Support for Young People</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                For customers aged 25 years or under:
+            </p>
+
+            <ul>
+                <li>Refer to Roundabout where appropriate.</li>
+                <li>Provide housing advice through the Homeless Support Pathway (HSP).</li>
+                <li>Record whether support was offered, accepted, or declined.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Families with Children</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where children are part of the household:
+            </p>
+
+            <ul>
+                <li>Discuss referral to the Early Help Family Intervention Service.</li>
+                <li>Explain the support available to families.</li>
+                <li>Record the customer's decision and any referral outcome.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Employment and Financial Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p><strong>Employment Support</strong></p>
+
+            <ul>
+                <li>Check whether the customer would like a referral to employment support services.</li>
+                <li>Record whether referrals are accepted or declined.</li>
+            </ul>
+
+            <p><strong>Financial Support</strong></p>
+
+            <ul>
+                <li>Identify any financial difficulties affecting housing stability.</li>
+                <li>Refer or signpost customers to the Cost of Living Support Hub.</li>
+                <li>Provide information about available practical and financial assistance.</li>
+            </ul>
+
+        </div>
+    </details> 
     `,
   {
     buttonLabel: "Raise Enquiry ",
@@ -5561,195 +7755,295 @@ const priorities = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "31/07/2026", name: "Joseph Coupland" }
 );
+
+
+const prisonLeaver = new ContentH(
+  "priorities",
+  "Priorities",
+  "Process for helping customers leaving custody secure accommodation, access support services, and avoid homelessness through early planning and prevention.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Purpose</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            This guidance supports staff working with customers who are leaving custody
+            or are at risk of homelessness.
+        </p>
+
+        <p>
+            It outlines key actions, advice to provide, and support pathways available
+            to help customers access accommodation and resettle successfully.
+        </p>
+
+        <p>
+            This information is designed to support professional judgement and CRM
+            recording rather than operate as a form.
+        </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Release and Initial Accommodation</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Establish the customer's confirmed release date as early as possible.</li>
+                <li>Identify whether the customer will be moving into CAS (Commissioned Accommodation Service) accommodation on release.</li>
+                <li>Where CAS accommodation is not available, begin alternative housing planning immediately.</li>
+                <li>Record accommodation plans and relevant dates within CRM.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Involvement of Other Organisations</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Identify and make contact with organisations involved in the customer's resettlement.
+            </p>
+
+            <ul>
+                <li>Probation services.</li>
+                <li>Prison resettlement teams.</li>
+                <li>Support workers.</li>
+                <li>Commissioned accommodation or support providers.</li>
+            </ul>
+
+            <p>
+                Effective communication helps avoid duplication, supports joined-up planning,
+                and ensures housing options remain realistic and licence compliant.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Vulnerabilities and Supporting Evidence</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Customers should be encouraged to provide evidence relating to any vulnerabilities or support needs.
+            </p>
+
+            <p>Examples include:</p>
+
+            <ul>
+                <li>Physical health conditions.</li>
+                <li>Mental health conditions.</li>
+                <li>Learning difficulties or additional support needs.</li>
+                <li>Domestic abuse history.</li>
+            </ul>
+
+            <p>
+                This information can help inform housing options, prioritisation decisions,
+                support arrangements, and referrals to supported accommodation.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Supported Accommodation Options</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where appropriate, consider referrals to supported accommodation providers.
+            </p>
+
+            <ul>
+                <li>Target.</li>
+                <li>Salvation Army.</li>
+                <li>St Anne’s.</li>
+            </ul>
+
+            <p>
+                These services may be particularly suitable where customers have identified vulnerabilities
+                or require additional support to sustain accommodation successfully.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Alternative Housing Options</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Explore whether alternative accommodation arrangements may be available.
+            </p>
+
+            <ul>
+                <li>Returning to previous accommodation.</li>
+                <li>Staying with family members.</li>
+                <li>Staying with friends.</li>
+            </ul>
+
+            <p>
+                Any arrangement must be safe, suitable, and compliant with licence,
+                probation, or safeguarding requirements.
+            </p>
+
+            <p>
+                Where appropriate, these arrangements may help prevent homelessness and
+                reduce reliance on temporary accommodation.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Advice and Pathways</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Provide clear information about available housing options.</li>
+                <li>Focus on Private Rented (PR) accommodation where appropriate.</li>
+                <li>Promote early planning and prevention activity.</li>
+                <li>Support access to sustainable accommodation wherever possible.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Key Messages</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Ensure customers understand the limitations and challenges associated with temporary accommodation.
+            </p>
+
+            <ul>
+                <li>No choice over location and accommodation may be outside the city.</li>
+                <li>Frequent moves between hotels or short-term placements may occur.</li>
+                <li>Privacy can be limited.</li>
+                <li>Cooking facilities may not be available.</li>
+                <li>Laundry facilities may not be available.</li>
+                <li>Storage space is often very limited.</li>
+                <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+            </ul>
+
+            <p><strong>Potential financial impacts include:</strong></p>
+
+            <ul>
+                <li>Reliance on takeaways and poorer nutrition.</li>
+                <li>Higher transport costs for school, work, or appointments.</li>
+                <li>Additional financial pressures for customers who are employed.</li>
+            </ul>
+
+            <p>
+                Temporary accommodation should generally be considered a last resort.
+                Prevention activity and safe family or friends arrangements should be explored where appropriate.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Support for Young People</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                For customers aged 25 or under:
+            </p>
+
+            <ul>
+                <li>Provide information about Roundabout’s General Advice service.</li>
+                <li>Offer Housing Support and Prevention (HSP) advice where appropriate.</li>
+                <li>Direct or refer the customer to relevant support services.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Employment and Financial Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p><strong>Employment Support</strong></p>
+
+            <ul>
+                <li>Ask whether the customer would like a referral to employment support services.</li>
+                <li>Record any referrals offered, accepted, or declined.</li>
+            </ul>
+
+            <p><strong>Financial Support</strong></p>
+
+            <ul>
+                <li>Identify any financial difficulties affecting housing stability.</li>
+                <li>Refer or signpost to the Cost of Living Support Hub.</li>
+                <li>Provide information about available financial and practical support.</li>
+            </ul>
+
+        </div>
+    </details>
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "priority",
+      "priorities",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 
 const priorityBandingTable = new ContentH(
   "priorityBandingTable",
   "Priority Banding Table",
   "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
   `
-      <h3>Priority Banding Table</h3>
-  
-      <p>The table below shows the list of priorities and the bands they fall in. </p>
-  
-      <p>Some of the priorities span multiple bands and we cannot give a definitive answer for which band they will be in e.g. demolition and health. 
-      As such, these are marked in the table below as ‘None’. </p>
-  
-      <p>Also marked as ‘None’ are the priorities which no longer exist. These are: </p>
-  
-      <ul>
-        <li>Council Service tenant retiring or leaving employment</li>
-        <li>Council service tenant who is dismissed</li>
-        <li>Special Case</li>
-        <li>If a priority spans the bands, the awarding officer will have already spoken with the customer.</li>
-      </ul>
-  
-      <h3>Effective Dates</h3>
-  
-      <p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
-      three different priorities within the same band would be ordered based on the earliest effective date first.</p>
-  
-      <p>The only exception is band E which has the following hierarchy: </p>
-  
-      <ul>
-        <li>No Local Connection</li>
-        <li>Refused Offers</li>
-        <li>Unacceptable Behaviour </li>
-      </ul>
-  
-      <p>Inside each of the above rungs, applicants are ordered based on effective date.  
-      Therefore, an applicant with unacceptable behaviour in band E will always come below an applicant in band E due to refused offers 
-      regardless of their effective date.</p>
-  
-      <details class="accordion">
-        <summary class="accordion-header">
-          <h3>Priorities Banding Table</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-          <p>
-            <table border="1" cellpadding="0" cellspacing="0" style="width:100%">
-              <tbody>
-                <tr>
-                  <td style="width:300px; height:10px" bgcolor="#002040"><strong><font color="black">Current Approval Reasons</font></strong></td>
-                  <td style="width:300px" bgcolor="#002040">
-                    <p><strong><font color="black">New Banding Criteria</font></strong></p>
-                  </td>
-                  <td style="width:300px" bgcolor="#002040">
-                    <p><strong><font color="black">Bands In Which They Appear</font></strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Council Service Tenant Retiring or Leaving Employment</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Council Service Tenant Who is Dismissed</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Demolition/Clearance of Council Owned Properties</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Development Work in Council Owned Property</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Domestic Abuse</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Downsizing for Under Occupiers</p></td>
-                  <td style="width:189px"><p>Under occupation and/or release of an adapted property</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Homeless - Immediate Priority</p></td>
-                  <td style="width:189px"><p>Full Homelessness Duty</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Homeless or Threatened with Homelessness - Planned Priority</p></td>
-                  <td style="width:189px"><p>Other Homelessness Duties</p></td>
-                  <td style="width:217px"><p>3rd Priority band C</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Insanitary or Unsatisfactory Housing Conditions</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Mobility Needs and Service Personnel</p></td>
-                  <td style="width:189px"><p>Health</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Racial and Other Harassment of Council Tenants</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Re-Designation of Older Persons Property</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>3rd Priority band C</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Release of Disabled Persons Property</p></td>
-                  <td style="width:189px"><p>Under Occupation and/or Release of an Adapted Property</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Sheffield Overcrowding</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Special Case</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Statutory Overcrowding</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Support and Hardship needs</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Supportive Hostels</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Vulnerable Young Person Aged 16 or 17</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Young People and Children’s Act 1989</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-              </tbody>
-            </table>
-          </p>
-        </div>
-      </details>
+      
     `,
   {
     buttonLabel: "Report Housing Enquiry ",
@@ -5778,6 +8072,8 @@ const priorityBandingTable = new ContentH(
   },
   { date: "07/22/2024", name: "George Whitehouse" }
 );
+
+
 
 const PropertyOffersAndViewings = new ContentH(
   "PropertyOffersAndViewings",
@@ -5893,7 +8189,1323 @@ const PropertyOffersAndViewings = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/05/2026", name: "Liz Taster" }
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const relationshipv2 = new ContentH(
+  "relationship",
+  "Relationship Breakdown and Loss of Accommodation",
+  "Guidance for supporting customers who have lost accommodation following relationship breakdown, including legal occupancy checks, safeguarding, prevention work, and housing options advice",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>A relationship breakdown has resulted in loss of accommodation.</li>
+            <li>The customer has been excluded from a property by a partner or ex-partner.</li>
+            <li>The customer has no legal tenancy or ownership interest in the accommodation.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Establish Legal Right to Occupy</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Establish the customer's legal right to occupy the accommodation.
+        </p>
+
+        <p>Clarify whether the arrangement was:</p>
+
+        <ul>
+            <li>A joint tenancy.</li>
+            <li>A licence agreement.</li>
+            <li>An informal arrangement, such as staying with a partner, family member, or friend.</li>
+        </ul>
+
+        <ul>
+            <li>Determine whether any legal protections may apply.</li>
+            <li>Record findings clearly within CRM.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Domestic Abuse Screening and Safeguarding</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Explore whether domestic abuse is present, suspected, or disclosed.</li>
+            <li>Where domestic abuse is identified or suspected, complete a DASH risk assessment.</li>
+            <li>Follow safeguarding procedures where appropriate.</li>
+            <li>Do not pursue negotiation or mediation where doing so would place the customer at risk.</li>
+            <li>Record safeguarding actions, decisions, and outcomes clearly.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Negotiation Where Safe and Appropriate</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Where there is no domestic abuse risk, explore whether safe negotiation with the ex-partner is possible.</li>
+            <li>Consider whether the customer could remain temporarily while alternative accommodation is secured.</li>
+            <li>Negotiation must never be pursued where it compromises safety.</li>
+            <li>Record actions taken and outcomes achieved.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Options and Prevention Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Provide housing options advice tailored to the customer's circumstances.
+        </p>
+
+        <ul>
+            <li>Explore Private Rented Sector (PRS) options where appropriate.</li>
+            <li>Consider other homelessness prevention opportunities.</li>
+            <li>Discuss realistic availability, affordability, and timescales.</li>
+            <li>Record key advice and actions provided.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Temporary Accommodation – Key Information to Explain</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Ensure customers understand that temporary accommodation is generally a last resort.
+        </p>
+
+        <ul>
+            <li>There is usually no choice of location and accommodation may be outside the city.</li>
+            <li>Customers may experience frequent moves between hotels or placements.</li>
+            <li>Temporary accommodation often provides limited privacy.</li>
+            <li>Cooking facilities may not be available.</li>
+            <li>Laundry facilities may not be available.</li>
+            <li>Storage space is often very limited.</li>
+            <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+        </ul>
+
+        <p><strong>Financial Impacts</strong></p>
+
+        <ul>
+            <li>Reliance on takeaways and reduced nutritional choices.</li>
+            <li>Increased transport costs to school or work.</li>
+            <li>Additional financial pressures where the customer is employed.</li>
+        </ul>
+
+        <p>
+            Emphasise that preventing homelessness or remaining safely with family or friends is usually preferable where appropriate.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Additional Support Considerations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Households with Children</strong></p>
+
+        <ul>
+            <li>Offer referral to the Early Help Family Intervention Service.</li>
+            <li>Record whether the referral was accepted or declined.</li>
+        </ul>
+
+        <p><strong>Aged 25 or Under</strong></p>
+
+        <ul>
+            <li>Refer to Roundabout – Talk It Out mediation service.</li>
+            <li>Provide housing advice through the Homeless Support Pathway (HSP).</li>
+        </ul>
+
+        <p><strong>Employment Needs</strong></p>
+
+        <ul>
+            <li>Offer referral to employment support services.</li>
+        </ul>
+
+        <p><strong>Financial Difficulties</strong></p>
+
+        <ul>
+            <li>Refer or signpost to the Cost of Living Support Hub.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>CRM Recording Reminder</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            All assessments, safeguarding activity, advice provided,
+            referrals offered or made, customer decisions, and outcomes
+            must be clearly recorded within CRM and relevant workflow fields.
+        </p>
+
+        <p>
+            Accurate recording supports safeguarding, prevention activity,
+            case continuity, legal robustness, and audit compliance.
+        </p>
+
+    </div>
+</details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const relationship = new ContentH(
+  "relationship",
+  "Relationship Breakdown and Loss of Accommodation",
+  "Guidance for supporting customers who have lost accommodation following relationship breakdown, including legal occupancy checks, safeguarding, prevention work, and housing options advice",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>A relationship breakdown has resulted in loss of accommodation.</li>
+            <li>The customer has been excluded from a property by a partner or ex-partner.</li>
+            <li>The customer has no legal tenancy or ownership interest in the accommodation.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Establish Legal Right to Occupy</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Establish the customer's legal right to occupy the accommodation.
+        </p>
+
+        <p>Clarify whether the arrangement was:</p>
+
+        <ul>
+            <li>A joint tenancy.</li>
+            <li>A licence agreement.</li>
+            <li>An informal arrangement, such as staying with a partner, family member, or friend.</li>
+        </ul>
+
+        <ul>
+            <li>Determine whether any legal protections may apply.</li>
+            <li>Record findings clearly within CRM.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Domestic Abuse Screening and Safeguarding</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Explore whether domestic abuse is present, suspected, or disclosed.</li>
+            <li>Where domestic abuse is identified or suspected, complete a DASH risk assessment.</li>
+            <li>Follow safeguarding procedures where appropriate.</li>
+            <li>Do not pursue negotiation or mediation where doing so would place the customer at risk.</li>
+            <li>Record safeguarding actions, decisions, and outcomes clearly.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Negotiation Where Safe and Appropriate</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Where there is no domestic abuse risk, explore whether safe negotiation with the ex-partner is possible.</li>
+            <li>Consider whether the customer could remain temporarily while alternative accommodation is secured.</li>
+            <li>Negotiation must never be pursued where it compromises safety.</li>
+            <li>Record actions taken and outcomes achieved.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Options and Prevention Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Provide housing options advice tailored to the customer's circumstances.
+        </p>
+
+        <ul>
+            <li>Explore Private Rented Sector (PRS) options where appropriate.</li>
+            <li>Consider other homelessness prevention opportunities.</li>
+            <li>Discuss realistic availability, affordability, and timescales.</li>
+            <li>Record key advice and actions provided.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Temporary Accommodation – Key Information to Explain</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Ensure customers understand that temporary accommodation is generally a last resort.
+        </p>
+
+        <ul>
+            <li>There is usually no choice of location and accommodation may be outside the city.</li>
+            <li>Customers may experience frequent moves between hotels or placements.</li>
+            <li>Temporary accommodation often provides limited privacy.</li>
+            <li>Cooking facilities may not be available.</li>
+            <li>Laundry facilities may not be available.</li>
+            <li>Storage space is often very limited.</li>
+            <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+        </ul>
+
+        <p><strong>Financial Impacts</strong></p>
+
+        <ul>
+            <li>Reliance on takeaways and reduced nutritional choices.</li>
+            <li>Increased transport costs to school or work.</li>
+            <li>Additional financial pressures where the customer is employed.</li>
+        </ul>
+
+        <p>
+            Emphasise that preventing homelessness or remaining safely with family or friends is usually preferable where appropriate.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Additional Support Considerations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Households with Children</strong></p>
+
+        <ul>
+            <li>Offer referral to the Early Help Family Intervention Service.</li>
+            <li>Record whether the referral was accepted or declined.</li>
+        </ul>
+
+        <p><strong>Aged 25 or Under</strong></p>
+
+        <ul>
+            <li>Refer to Roundabout – Talk It Out mediation service.</li>
+            <li>Provide housing advice through the Homeless Support Pathway (HSP).</li>
+        </ul>
+
+        <p><strong>Employment Needs</strong></p>
+
+        <ul>
+            <li>Offer referral to employment support services.</li>
+        </ul>
+
+        <p><strong>Financial Difficulties</strong></p>
+
+        <ul>
+            <li>Refer or signpost to the Cost of Living Support Hub.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>CRM Recording Reminder</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            All assessments, safeguarding activity, advice provided,
+            referrals offered or made, customer decisions, and outcomes
+            must be clearly recorded within CRM and relevant workflow fields.
+        </p>
+
+        <p>
+            Accurate recording supports safeguarding, prevention activity,
+            case continuity, legal robustness, and audit compliance.
+        </p>
+
+    </div>
+</details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const relationshipBreakdown = new ContentH(
+  "relationship",
+  "Relationship Breakdown and Loss of Accommodation",
+  "Guidance for supporting customers who have lost accommodation following relationship breakdown, including legal occupancy checks, safeguarding, prevention work, and housing options advice",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>A relationship breakdown has resulted in loss of accommodation.</li>
+            <li>The customer has been excluded from a property by a partner or ex-partner.</li>
+            <li>The customer has no legal tenancy or ownership interest in the accommodation.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Establish Legal Right to Occupy</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Establish the customer's legal right to occupy the accommodation.
+        </p>
+
+        <p>Clarify whether the arrangement was:</p>
+
+        <ul>
+            <li>A joint tenancy.</li>
+            <li>A licence agreement.</li>
+            <li>An informal arrangement, such as staying with a partner, family member, or friend.</li>
+        </ul>
+
+        <ul>
+            <li>Determine whether any legal protections may apply.</li>
+            <li>Record findings clearly within CRM.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Domestic Abuse Screening and Safeguarding</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Explore whether domestic abuse is present, suspected, or disclosed.</li>
+            <li>Where domestic abuse is identified or suspected, complete a DASH risk assessment.</li>
+            <li>Follow safeguarding procedures where appropriate.</li>
+            <li>Do not pursue negotiation or mediation where doing so would place the customer at risk.</li>
+            <li>Record safeguarding actions, decisions, and outcomes clearly.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Negotiation Where Safe and Appropriate</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Where there is no domestic abuse risk, explore whether safe negotiation with the ex-partner is possible.</li>
+            <li>Consider whether the customer could remain temporarily while alternative accommodation is secured.</li>
+            <li>Negotiation must never be pursued where it compromises safety.</li>
+            <li>Record actions taken and outcomes achieved.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Options and Prevention Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Provide housing options advice tailored to the customer's circumstances.
+        </p>
+
+        <ul>
+            <li>Explore Private Rented Sector (PRS) options where appropriate.</li>
+            <li>Consider other homelessness prevention opportunities.</li>
+            <li>Discuss realistic availability, affordability, and timescales.</li>
+            <li>Record key advice and actions provided.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Temporary Accommodation – Key Information to Explain</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Ensure customers understand that temporary accommodation is generally a last resort.
+        </p>
+
+        <ul>
+            <li>There is usually no choice of location and accommodation may be outside the city.</li>
+            <li>Customers may experience frequent moves between hotels or placements.</li>
+            <li>Temporary accommodation often provides limited privacy.</li>
+            <li>Cooking facilities may not be available.</li>
+            <li>Laundry facilities may not be available.</li>
+            <li>Storage space is often very limited.</li>
+            <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+        </ul>
+
+        <p><strong>Financial Impacts</strong></p>
+
+        <ul>
+            <li>Reliance on takeaways and reduced nutritional choices.</li>
+            <li>Increased transport costs to school or work.</li>
+            <li>Additional financial pressures where the customer is employed.</li>
+        </ul>
+
+        <p>
+            Emphasise that preventing homelessness or remaining safely with family or friends is usually preferable where appropriate.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Additional Support Considerations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Households with Children</strong></p>
+
+        <ul>
+            <li>Offer referral to the Early Help Family Intervention Service.</li>
+            <li>Record whether the referral was accepted or declined.</li>
+        </ul>
+
+        <p><strong>Aged 25 or Under</strong></p>
+
+        <ul>
+            <li>Refer to Roundabout – Talk It Out mediation service.</li>
+            <li>Provide housing advice through the Homeless Support Pathway (HSP).</li>
+        </ul>
+
+        <p><strong>Employment Needs</strong></p>
+
+        <ul>
+            <li>Offer referral to employment support services.</li>
+        </ul>
+
+        <p><strong>Financial Difficulties</strong></p>
+
+        <ul>
+            <li>Refer or signpost to the Cost of Living Support Hub.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>CRM Recording Reminder</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            All assessments, safeguarding activity, advice provided,
+            referrals offered or made, customer decisions, and outcomes
+            must be clearly recorded within CRM and relevant workflow fields.
+        </p>
+
+        <p>
+            Accurate recording supports safeguarding, prevention activity,
+            case continuity, legal robustness, and audit compliance.
+        </p>
+
+    </div>
+</details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const rentAndAffordability = new ContentH(
+  "rentAndAffordability",
+  "Rent Increase and Affordability Issues (Homelessness)",
+  "Guidance for supporting customers affected by rent increases or affordability issues, including tenancy sustainment, financial support, landlord negotiation, and homelessness prevention.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>A customer reports a rent increase.</li>
+            <li>A customer is struggling to afford their rent or maintain their tenancy.</li>
+            <li>There is a risk that affordability issues could lead to eviction or homelessness.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rent Increase Checks</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Establish the tenure type, with particular attention to private rented sector tenancies.</li>
+            <li>Check whether the rent increase follows the correct statutory process and notice period.</li>
+            <li>Record findings clearly in CRM case notes.</li>
+            <li>Where applicable, check whether the increase has been issued using the Section 13 process and Form 4A with the required two months written notice.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Customer Rights – Private Rented Sector</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Explain the customer's right to challenge excessive or unreasonable rent increases where applicable.</li>
+            <li>Outline the relevant timescales and challenge processes.</li>
+            <li>Signpost to specialist housing advice services where required.</li>
+            <li>
+                Provide information about:
+                <a href="https://www.gov.uk/guidance/renters-rights-act-overview-for-tenants" target="_blank" rel="noopener noreferrer">
+                    Renters’ Rights Act Overview for Tenants
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Affordability Assessment</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Carry out or initiate an affordability assessment to understand the impact of housing costs.
+        </p>
+
+        <p>Consider:</p>
+
+        <ul>
+            <li>Income and earnings.</li>
+            <li>Benefits received.</li>
+            <li>Rent and service charges.</li>
+            <li>Utilities and essential household expenditure.</li>
+        </ul>
+
+        <p>
+            Record the affordability assessment outcome and any implications for homelessness prevention work.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Budgeting and Cost of Living Support</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Discuss budgeting and financial planning with the customer.</li>
+            <li>Identify opportunities to reduce expenditure where appropriate.</li>
+            <li>Refer or signpost to the Cost of Living Support Hub.</li>
+            <li>Record advice provided and any referrals made.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Financial Assistance and Benefits</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Consider eligibility for Crisis and Resilience Fund Housing Payments or other local assistance schemes.</li>
+            <li>Complete or arrange benefit maximisation checks.</li>
+            <li>Review entitlement to housing-related benefits and support.</li>
+            <li>Where appropriate, refer to Shelter’s Homeless Prevention and Resettlement Service via the Homeless Support Pathway (HSP).</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Landlord Negotiation (Private Rented Sector)</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Where appropriate, explore possible negotiations with the landlord to sustain the tenancy.
+        </p>
+
+        <ul>
+            <li>Request a reduction in the proposed increase.</li>
+            <li>Seek a delayed implementation date.</li>
+            <li>Explore other arrangements that could help maintain the tenancy.</li>
+        </ul>
+
+        <p>
+            Record discussions, actions taken, and outcomes achieved.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Options and Prevention Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Provide housing options advice alongside affordability and tenancy sustainment work.</li>
+            <li>Focus on Private Rented Sector opportunities where appropriate.</li>
+            <li>Continue prevention activity aimed at maintaining the existing accommodation wherever possible.</li>
+            <li>Explore alternative prevention solutions and record advice given.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Additional Support Considerations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Employment Needs</strong></p>
+
+        <ul>
+            <li>Check whether the customer would like a referral to employment support services, such as Pathways to Work.</li>
+        </ul>
+
+        <p><strong>Aged 25 or Under</strong></p>
+
+        <ul>
+            <li>Refer to Roundabout – Talk It Out mediation service where appropriate.</li>
+            <li>Provide housing advice through the Homeless Support Pathway (HSP).</li>
+        </ul>
+
+        <p><strong>Households with Children</strong></p>
+
+        <ul>
+            <li>Offer referral to the Early Help Family Intervention Service.</li>
+            <li>Record whether the referral was accepted or declined.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Temporary Accommodation – Key Information to Explain</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Ensure customers understand that temporary accommodation should only be used as a last resort.
+        </p>
+
+        <ul>
+            <li>There is usually no choice of location and accommodation may be outside the city.</li>
+            <li>Customers may experience frequent moves, often within hotel accommodation.</li>
+            <li>Privacy can be limited.</li>
+            <li>Cooking facilities may not be available.</li>
+            <li>Laundry facilities may not be available.</li>
+            <li>Storage space is often limited.</li>
+            <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+        </ul>
+
+        <p><strong>Potential Financial Impacts</strong></p>
+
+        <ul>
+            <li>Increased food costs and reduced nutritional options.</li>
+            <li>Higher transport costs to school, childcare, or work.</li>
+            <li>Additional financial pressures caused by temporary accommodation arrangements.</li>
+        </ul>
+
+        <p>
+            Emphasise that tenancy sustainment, early prevention activity, or staying temporarily with family or friends where safe is generally preferable.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>CRM Recording Reminder</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            All checks completed, affordability assessments, advice provided,
+            referrals offered or made, customer decisions, prevention activity,
+            and outcomes must be clearly recorded within CRM and relevant workflow fields.
+        </p>
+
+        <p>
+            Accurate recording supports homelessness prevention, safeguarding,
+            tenancy sustainment, service continuity, and audit requirements.
+        </p>
+
+    </div>
+</details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const rooflessNoAccommodation = new ContentH(
+  "referencesFAQs",
+  "References FAQs",
+  "Process for handling roofless presentations, covering the homelessness test, eligibility checks, habitual residence, immigration status, safeguarding, and case escalation",
+  `
+    <h3>1B Part 7 Staff Guidance: Roofless No Accommodation</h3>
+
+      <p>
+          This guidance supports staff when a customer presents as roofless or with no accommodation.
+          Follow the homelessness test and eligibility questions, record answers on Form1B, and upload all ID and share codes to HSP.
+      </p>
+
+      <h3>Section 1: Roofless No Accommodation</h3>
+
+      <p>
+          Please follow the steps of the homelessness test and eligibility questions.
+          Record answers on Form1B and upload all ID and share codes to HSP.
+      </p>
+
+      <p>
+          Think of these 5 tests as fences and apply them in the order they are listed:
+      </p>
+
+      <ol>
+          <li>Does the person have something that can be described in law as accommodation?</li>
+          <li>If so, do they have that accommodation in the UK or accommodation elsewhere in the world?</li>
+          <li>Is it available to the applicant and anyone who resides or might reasonably be expected to reside with them?</li>
+          <li>Do they have a right or permission to occupy?</li>
+          <li>If all 4 above are passed, is the accommodation reasonable to occupy?</li>
+      </ol>
+
+      <p>
+          More guidance to complete the homelessness test is available here:
+          <a href="https://sccextranet.sharepoint.com/:p:/r/sites/HousingTransformationProgramme/Shared%20Documents/Homelessness%20strand/2.3%20Day%201%20Packs/Scripts,%20information%20and%20procedures/Revised%20forms%20for%20CRM/Form%201B%20Housing%20Need/Homelessness%20Test.pptx?d=wb6b33e615c7d4b94a23606b4a7ae2317&csf=1&web=1&e=PGoCAs" target="_blank" rel="noopener noreferrer">
+              Homelessness Test Guidance
+          </a>
+      </p>
+
+      <p>
+          If the customer answers no to all questions, there is reason to believe they are homeless and eligibility checks must now take place.
+      </p>
+
+      <h3>Section 2: Eligibility Checks</h3>
+
+      <p>
+          Where someone has indicated they are homeless, or likely to become homeless within the next 56 days, eligibility checks must be completed.
+      </p>
+
+      <h3>Question 1: British Citizenship</h3>
+
+      <ol>
+          <li>Are you a British citizen?</li>
+      </ol>
+
+      <ul>
+          <li>Yes - go to Q2. Copy ID and proof of income to HSP.</li>
+          <li>No - go to Q3.</li>
+      </ul>
+
+      <h3>Question 2: Arrival or Return from Abroad</h3>
+
+      <ol start="2">
+          <li>
+              Have you arrived or returned from abroad to the UK or common travel area in the last two years?
+              The common travel area includes the UK, Ireland, Isle of Man, and Channel Islands.
+          </li>
+      </ol>
+
+      <ul>
+          <li>No - eligible. Move on to the next section on reason for homelessness or threatened homelessness.</li>
+          <li>
+              Yes - complete diagnostic questions and habitual residence test:
+              <a href="https://sccextranet.sharepoint.com/:w:/r/sites/HousingTransformationProgramme/Shared%20Documents/Homelessness%20strand/2.3%20Day%201%20Packs/Scripts,%20information%20and%20procedures/Scripting/Part%202.%20Eligibility%20Scripting/Habitual%20Residence%20Test%20-%20Diagnostic%20questions.docx?d=w91bf93c2f9334f0eb6b274abea4ce910&csf=1&web=1&e=HcGsbt" target="_blank" rel="noopener noreferrer">
+                  Habitual Residence Test - Diagnostic Questions
+              </a>
+          </li>
+          <li>
+              Complete the habitual residence test:
+              <a href="https://sccextranet.sharepoint.com/:w:/r/sites/HousingTransformationProgramme/Shared%20Documents/Homelessness%20strand/2.3%20Day%201%20Packs/Scripts,%20information%20and%20procedures/Scripting/Part%202.%20Eligibility%20Scripting/Habitual%20Residence%20Test.docx?d=w859f8acd7dc1410bba5e44a198987553&csf=1&web=1&e=pFWeU2" target="_blank" rel="noopener noreferrer">
+                  Habitual Residence Test
+              </a>
+          </li>
+      </ul>
+
+      <p>Please record all answers on Form1A Housing Need.</p>
+
+      <ul>
+          <li>Habitually resident - move on to the next section on reason for homelessness or threatened homelessness.</li>
+          <li>Not habitually resident - complete safeguarding actions where needed and refer to G5 for decision.</li>
+      </ul>
+
+      <h3>Question 3: EEA Nationality</h3>
+
+      <ol start="3">
+          <li>Are you an EEA national?</li>
+      </ol>
+
+      <ul>
+          <li>Yes - go to Q4.</li>
+          <li>No - go to Q4.</li>
+      </ul>
+
+      <h3>Question 4: Share Code</h3>
+
+      <ol start="4">
+          <li>Please provide a share code for all members of the household.</li>
+      </ol>
+
+      <ul>
+          <li>
+              G4 to upload share code into HSP for all household members:
+              <a href="https://www.gov.uk/check-immigration-status" target="_blank" rel="noopener noreferrer">
+                  Check Someone's Immigration Status: Use Their Share Code - GOV.UK
+              </a>
+          </li>
+          <li>EEA customers continue to Q5. Non-EEA customers continue to Q10.</li>
+      </ul>
+
+      <h3>Question 5: EEA Only - Length of Residence</h3>
+
+      <ol start="5">
+          <li>Have you lived in the UK for 5 years or more?</li>
+      </ol>
+
+      <ul>
+          <li>Yes - may be resident due to permanent residence, but continue this form.</li>
+          <li>No - continue this form.</li>
+      </ul>
+
+      <h3>Question 6: EEA Only - Settlement Status</h3>
+
+      <ol start="6">
+          <li>What settlement status do you have in the UK? The result will be shown on the code check.</li>
+      </ol>
+
+      <ul>
+          <li>Settled - eligible. Move to the next section.</li>
+          <li>Pre-settled - may be eligible. Move to Q7.</li>
+      </ul>
+
+      <h3>Question 7: EEA Only - Work History</h3>
+
+      <ol start="7">
+          <li>Have you ever worked in the UK?</li>
+      </ol>
+
+      <ul>
+          <li>Yes.</li>
+          <li>No.</li>
+      </ul>
+
+      <h3>Question 8: EEA Only - Employment Status</h3>
+
+      <ol start="8">
+          <li>What is your employment status?</li>
+      </ol>
+
+      <ul>
+          <li>Benefits.</li>
+          <li>Part-time work.</li>
+          <li>Full-time work.</li>
+          <li>Self-employed.</li>
+          <li>Nil income.</li>
+      </ul>
+
+      <h3>Question 9: EEA Only - Children in School</h3>
+
+      <ol start="9">
+          <li>Do you have children in school?</li>
+      </ol>
+
+      <ul>
+          <li>Yes.</li>
+          <li>No.</li>
+          <li>At this point, move to the next section as G5 would need to unpick this. G4 to copy any documents evidencing employment status and education.</li>
+      </ul>
+
+      <h3>Question 10: Habitual Residence Test</h3>
+
+      <ol start="10">
+          <li>Complete diagnostic questions and habitual residence test.</li>
+      </ol>
+
+      <ul>
+          <li>Habitually resident - move on to the next section on reason for homelessness or threatened homelessness.</li>
+          <li>Not habitually resident - complete safeguarding actions where needed and refer to G5 for decision.</li>
+      </ul>
+
+      <h3>Question 11: Non-EEA Only - Recourse to Public Funds</h3>
+
+      <ol start="11">
+          <li>
+              Do you have recourse to public funds?
+              The share code check will reveal this and any no recourse condition will be clear.
+          </li>
+      </ol>
+
+      <ul>
+          <li>Yes - move to the next section of the form.</li>
+          <li>No - move to Q12.</li>
+      </ul>
+
+      <h3>Question 12: Non-EEA Only - Adult Household Member with Recourse</h3>
+
+      <ol start="12">
+          <li>Does any adult household member have recourse to public funds?</li>
+      </ol>
+
+      <ul>
+          <li>
+              Yes - likely to be eligible. Move to the next section of the form, but the applicant on any homeless case must be the person with recourse.
+          </li>
+          <li>
+              No - customer is not eligible for assistance. If there are children in the household, refer to Safeguarding Hub.
+              If they have immigration issues, signpost to Victoria Hall, offer to contact friends or family to see if they can stay,
+              and provide details for the Home Office if they are an asylum seeker. If single, go to Q13.
+          </li>
+      </ul>
+
+      <h3>Question 13: Non-EEA Only - Disability or Health Issues</h3>
+
+      <ol start="13">
+          <li>Does anyone in the household have any disability or health issues?</li>
+      </ol>
+
+      <ul>
+          <li>Yes - take details in free text for G5 to consider safeguarding referral.</li>
+          <li>
+              No - if they have immigration issues, signpost to Victoria Hall, offer to contact friends or family to see if they can stay,
+              and provide details for the Home Office if they are an asylum seeker. Refer negative decisions for Q12 and Q13 to G5 to issue a decision.
+          </li>
+      </ul>
+
+      <p>
+          Record answers on Form1B and upload all ID and share codes to HSP.
+      </p>
+
+      <h3>EEA Countries and Country Codes</h3>
+
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+          <thead>
+              <tr>
+                  <th>Country</th>
+                  <th>Code</th>
+                  <th>Country</th>
+                  <th>Code</th>
+                  <th>Country</th>
+                  <th>Code</th>
+                  <th>Country</th>
+                  <th>Code</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Belgium</td>
+                  <td>BE</td>
+                  <td>Spain</td>
+                  <td>ES</td>
+                  <td>Hungary</td>
+                  <td>HU</td>
+                  <td>Slovakia</td>
+                  <td>SK</td>
+              </tr>
+              <tr>
+                  <td>Bulgaria</td>
+                  <td>BG</td>
+                  <td>France</td>
+                  <td>FR</td>
+                  <td>Malta</td>
+                  <td>MT</td>
+                  <td>Finland</td>
+                  <td>FI</td>
+              </tr>
+              <tr>
+                  <td>Czechia</td>
+                  <td>CZ</td>
+                  <td>Croatia</td>
+                  <td>HR</td>
+                  <td>Netherlands</td>
+                  <td>NL</td>
+                  <td>Sweden</td>
+                  <td>SE</td>
+              </tr>
+              <tr>
+                  <td>Denmark</td>
+                  <td>DK</td>
+                  <td>Italy</td>
+                  <td>IT</td>
+                  <td>Austria</td>
+                  <td>AT</td>
+                  <td>Germany</td>
+                  <td>DE</td>
+              </tr>
+              <tr>
+                  <td>Cyprus</td>
+                  <td>CY</td>
+                  <td>Poland</td>
+                  <td>PL</td>
+                  <td>Iceland</td>
+                  <td>IS</td>
+                  <td>Estonia</td>
+                  <td>EE</td>
+              </tr>
+              <tr>
+                  <td>Latvia</td>
+                  <td>LV</td>
+                  <td>Portugal</td>
+                  <td>PT</td>
+                  <td>Liechtenstein</td>
+                  <td>LI</td>
+                  <td>Ireland</td>
+                  <td>IE</td>
+              </tr>
+              <tr>
+                  <td>Lithuania</td>
+                  <td>LT</td>
+                  <td>Romania</td>
+                  <td>RO</td>
+                  <td>Norway</td>
+                  <td>NO</td>
+                  <td>Greece</td>
+                  <td>EL</td>
+              </tr>
+              <tr>
+                  <td>Luxembourg</td>
+                  <td>LU</td>
+                  <td>Slovenia</td>
+                  <td>SI</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h3>Eligibility Outcome</h3>
+
+      <ul>
+          <li>If no - not likely eligible.</li>
+          <li>G5 decision - not eligible for support.</li>
+          <li>G4 to open Form1A and provide as much information, support, signposting or referral to relevant services as possible.</li>
+          <li>If yes - likely eligible.</li>
+          <li>Refer to Casework Officer in your team via CRM. The Team Leader will then allocate the case to a Grade 5 Casework Officer.</li>
+      </ul>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
 const referencesFAQs = new ContentH(
@@ -6078,6 +9690,1025 @@ const referencesFAQs = new ContentH(
   { date: "15/05/2025", name: "Dinah Williams" }
 );
 
+const repairsHomelessness = new ContentH(
+  "repairsHomelessness",
+  "Repairs or Property Condition Unsafe to Returnxxxx",
+  "Process for supporting customers affected by poor housing conditions, covering repairs, suitability assessments, tenancy-specific actions, safeguarding, and housing options advice.",
+  `
+    <p>
+        Please record all actions and information provided on Form1B.
+    </p>
+
+    <h3>When to Use</h3>
+    <ul>
+        <li>Disrepair or damage within the property.</li>
+        <li>Poor housing conditions such as damp, mould, or hazards.</li>
+        <li>Health or safety concerns linked to the home.</li>
+        <li>Unsuitable living conditions due to property issues.</li>
+    </ul>
+
+    <h3>Initial Considerations</h3>
+    <ul>
+        <li>Establish the nature and severity of the issue.</li>
+        <li>Confirm whether the customer has reported the problem to the landlord.</li>
+        <li>Identify any immediate health or safety risks.</li>
+        <li>Confirm the tenure type (social or private rented sector).</li>
+        <li>Record any actions already taken on Form1B.</li>
+        <li>Confirm whether the issue has been reported.</li>
+    </ul>
+
+    <h3>Social Housing Tenants</h3>
+    <ul>
+        <li>
+            Manage under Prevention, Pre-prevention activity, or Housing Need depending on the
+            category of hazard and status of the issue.
+            <a href="https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property" target="_blank" rel="noopener noreferrer">
+                Request a Repair to a Council Property
+            </a>
+        </li>
+        <li>Liaise with repairs services or housing provider.</li>
+        <li>Encourage customers to log and track repairs.</li>
+        <li>Monitor progress and record updates in CRM.</li>
+    </ul>
+
+    <h3>Private Rented Sector Tenants</h3>
+    <ul>
+        <li>Advise the customer to report issues to the landlord in writing.</li>
+        <li>
+            If unresolved, refer to Environmental Health or Private Housing Standards.
+            <a href="https://www.sheffield.gov.uk/housing/private-housing-issues/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">
+                Report Disrepair in Private Rented Properties
+            </a>
+        </li>
+        <li>Consider the risk of retaliatory eviction and provide appropriate advice.</li>
+    </ul>
+
+    <h3>Risk &amp; Suitability Assessment</h3>
+    <p>Assess whether it is reasonable for the customer to remain in the property.</p>
+
+    <ul>
+        <li>Severity and duration of the disrepair.</li>
+        <li>Risks to health and safety.</li>
+        <li>Impact on children or vulnerable adults.</li>
+        <li>Effect on daily living or wellbeing.</li>
+    </ul>
+
+    <p>Clearly record your assessment and reasoning.</p>
+
+    <h3>Advice and Support</h3>
+    <ul>
+        <li>Explain landlord responsibilities for repairs.</li>
+        <li>Provide guidance on reporting and escalation processes.</li>
+        <li>Signpost to Shelter or housing advice services if needed.</li>
+        <li>Support customers to understand their rights safely.</li>
+    </ul>
+
+    <h3>Prevention Actions</h3>
+    <ul>
+        <li>Support resolution with the landlord where possible.</li>
+        <li>Monitor ongoing cases of disrepair.</li>
+        <li>Provide advice to avoid escalation to homelessness.</li>
+    </ul>
+
+    <h3>Housing Options Advice</h3>
+    <ul>
+        <li>Offer housing options advice alongside repair support.</li>
+        <li>Consider remaining in the property if safe and repairable.</li>
+        <li>Consider alternative accommodation if conditions are unsuitable.</li>
+        <li>Continue prevention activity where appropriate.</li>
+    </ul>
+
+    <h3>Safeguarding and Vulnerability</h3>
+    <p>Be alert to:</p>
+
+    <ul>
+        <li>Mental health concerns.</li>
+        <li>Disabilities or long-term illness.</li>
+        <li>Households with children.</li>
+        <li>Any indicators of risk or harm.</li>
+    </ul>
+
+    <p>Follow safeguarding procedures where required.</p>
+
+    <h3>Additional Support Options</h3>
+    <ul>
+        <li>Environmental Health / Private Housing Standards.</li>
+        <li>Shelter housing advice.</li>
+        <li>Early Help and family support where children are involved.</li>
+        <li>Cost of living or financial support services.</li>
+    </ul>
+
+    <h3>CRM Recording Reminder</h3>
+    <p>All interactions must be clearly recorded, including:</p>
+
+    <ul>
+        <li>Nature of the repair issue.</li>
+        <li>Whether it has been reported.</li>
+        <li>Advice provided.</li>
+        <li>Referrals made.</li>
+        <li>Risk and suitability assessment.</li>
+        <li>Agreed actions and follow-up.</li>
+    </ul>
+
+    <h3>Temporary Accommodation – Key Information to Explain</h3>
+
+    <p>Ensure customers understand that temporary accommodation:</p>
+
+    <ul>
+        <li>Is a last resort.</li>
+        <li>Offers limited choice of location.</li>
+        <li>May involve multiple moves.</li>
+        <li>Often includes limited facilities such as cooking or laundry.</li>
+        <li>Can impact health, wellbeing, and finances.</li>
+    </ul>
+
+    <p>Emphasise the importance of early prevention and resolution.</p>
+
+    <h3>Key Principle</h3>
+
+    <p>
+        Early action and clear advice can prevent deterioration of living conditions
+        and reduce the risk of homelessness.
+    </p>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+const section8 = new ContentH(
+  "section8",
+  "Section 8 Grounds for Possessionxxxx",
+  "Overview of Section 8 possession grounds, notice periods, validity checks, prevention duties, and housing advice for customers at risk of eviction.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Staff Information Sheet – Section 8 Grounds for Possession</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+      <div class="accordion-content">
+          <p>
+              This information sheet provides an overview of Section 8 grounds for possession
+              under the Housing Act 1988. It supports staff when advising customers who have
+              received, or may receive, a Section 8 notice and when considering prevention
+              activity and next steps.
+          </p>
+
+          <p>
+              Section 8 notices must be served on Form 3A.
+          </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>When to Use This Sheet</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>A customer has received a Section 8 notice.</li>
+                <li>A landlord has indicated an intention to serve a Section 8 notice.</li>
+                <li>Possession action is being threatened based on specific statutory grounds.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Understanding Section 8</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                Section 8 allows landlords to seek possession using one or more specific
+                statutory grounds.
+            </p>
+
+            <ul>
+                <li>Mandatory grounds – the court must grant possession if the ground is proven.</li>
+                <li>Discretionary grounds – the court decides whether it is reasonable to grant possession.</li>
+            </ul>
+
+            <p>
+                Always check which grounds are cited, the notice period, and whether the notice appears valid.
+            </p>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Mandatory Grounds</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                Mandatory grounds are grounds where the court must grant possession if the ground is proven.
+            </p>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Grounds 1 and 1A – Occupation or Sale</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                These grounds relate to a landlord or family member intending to occupy the property,
+                or a landlord intending to sell the property.
+            </p>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 1 – Landlord or Family Occupation</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Landlord or close family member intends to occupy the property as their only or main home.</li>
+                <li>Notice period: 4 months.</li>
+                <li>Notice cannot expire within the first 12 months of the tenancy.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 1A – Landlord Intends to Sell</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Applies to private landlords intending to sell the property.</li>
+                <li>Notice period: 4 months.</li>
+                <li>Notice cannot expire within the first 12 months of the tenancy.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Restrictions Following Ground 1A</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Once notice is served, the landlord must not re-let or market the property.</li>
+                <li>The restriction lasts until 12 months after notice expiry or possession proceedings end.</li>
+                <li>Breach is an offence and can result in a civil penalty of up to £40,000.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 2 – Sale by Mortgage Lender</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Property is being sold by a mortgage lender following repossession.</li>
+                <li>Notice period: 4 months.</li>
+                <li>Applies regardless of when the mortgage was granted.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Student Accommodation Grounds</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                These grounds relate to former student accommodation or properties required for new student occupation.
+            </p>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 4 – Former Student Accommodation</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Notice period: 2 weeks.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 4A – Student HMO Required</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Property is required for new student occupation.</li>
+                <li>Notice period: 4 months.</li>
+                <li>Prior notice must have been given at the start of the tenancy.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 5G – Temporary Accommodation</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Property is used as temporary accommodation under Section 193 Housing Act 1996.</li>
+                <li>The local authority has confirmed the accommodation is no longer required.</li>
+                <li>The ground must be relied upon within 12 months of the local authority notice.</li>
+                <li>Notice period: 4 weeks.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 6B – Landlord at Fault</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                Mandatory ground linked to serious landlord failings.
+            </p>
+
+            <ul>
+                <li>Banning orders.</li>
+                <li>Licensing failures.</li>
+                <li>Overcrowding hazards.</li>
+                <li>Planning enforcement breaches.</li>
+                <li>Notice period: 4 months.</li>
+                <li>The court may award compensation to the tenant.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 7A – Serious Anti-Social Behaviour</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Serious anti-social behaviour or criminal behaviour.</li>
+                <li>No minimum notice period.</li>
+                <li>Court proceedings can begin immediately.</li>
+                <li>Possession order cannot take effect before 14 days.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Ground 8 – Mandatory Rent Arrears</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>At least 3 months rent arrears for monthly tenancies or 13 weeks for weekly tenancies.</li>
+                <li>Arrears must exist when notice is served and at the court hearing.</li>
+                <li>Universal Credit housing-cost arrears are disregarded.</li>
+                <li>Notice period: 4 weeks.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Discretionary Grounds</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                The court will consider whether it is reasonable to grant possession.
+            </p>
+
+            <ul>
+                <li>Ground 9 – Suitable alternative accommodation (2 months).</li>
+                <li>Ground 10 – Some rent arrears (4 weeks).</li>
+                <li>Ground 11 – Persistent delay in paying rent (4 weeks).</li>
+                <li>Ground 12 – Breach of tenancy (2 weeks).</li>
+                <li>Ground 13 – Deterioration of property (2 weeks).</li>
+                <li>Ground 14 – Anti-social behaviour (no minimum notice period).</li>
+                <li>Ground 14A / 14ZA – Domestic abuse or rioting (2 weeks).</li>
+                <li>Ground 15 – Deterioration of furniture (2 weeks).</li>
+                <li>Ground 17 – False statement (2 weeks).</li>
+                <li>Ground 18 – Supported accommodation (4 weeks).</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Amended Ground 18 – Supported Accommodation</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Applies where the tenant unreasonably refuses to engage with support services.</li>
+                <li>Notice period: 4 weeks.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Practice Points for Staff</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <ul>
+                <li>Confirm which grounds apply and whether they are mandatory or discretionary.</li>
+                <li>Check notice length, timing, and validity.</li>
+                <li>Explore homelessness prevention options at an early stage.</li>
+                <li>Consider risks of retaliatory or unlawful eviction.</li>
+                <li>Provide housing options advice, focusing on prevention and private rented sector solutions where appropriate.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>CRM Recording Reminder</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                All details must be clearly recorded within CRM, including:
+            </p>
+
+            <ul>
+                <li>Grounds cited and notice expiry date.</li>
+                <li>Validity checks undertaken.</li>
+                <li>Advice and prevention actions provided.</li>
+                <li>Customer decisions and outcomes.</li>
+            </ul>
+
+            <p>
+                Accurate recording is essential for legal robustness, prevention work, and audit compliance.
+            </p>
+        </div>
+    </details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+const section8V2 = new ContentH(
+  "section8V2",
+  "Section 8V2 Grounds for Possessionxxxx",
+  "Overview of Section 8 possession grounds, notice requirements, validity checks, prevention activity, and support available to customers at risk of losing a private rented tenancy.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>A customer has received a Section 8 notice on Form 1C.</li>
+            <li>A landlord has indicated an intention to serve a Section 8 notice.</li>
+            <li>Possession action is being threatened based on specific statutory grounds.</li>
+            <li>A Possession Order has been served.</li>
+            <li>A Notice of Eviction has been served.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Understanding Section 8</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            Section 8 allows landlords to seek possession using one or more statutory grounds.
+        </p>
+
+        <ul>
+            <li>Mandatory grounds require the court to grant possession if the ground is proven.</li>
+            <li>Discretionary grounds allow the court to decide whether granting possession is reasonable.</li>
+        </ul>
+
+        <p>
+            Always check which grounds have been cited, the notice period provided,
+            and whether the notice appears valid.
+        </p>
+
+        <p>
+            Validation of a Section 8 notice must be confirmed by a Tenancy Relations Officer
+            in Private Housing Standards via TRO@sheffield.gov.uk.
+        </p>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Ground 1 – Landlord or Family Occupation</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>The landlord or a close family member intends to occupy the property as their only or main home.</li>
+            <li>Notice period: 4 months.</li>
+            <li>The notice cannot expire within the first 12 months of the tenancy.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Ground 1A – Landlord Intends to Sell</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Applies to private landlords intending to sell the property.</li>
+            <li>Notice period: 4 months.</li>
+            <li>The notice cannot expire within the first 12 months of the tenancy.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Restrictions Following Ground 1A</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Once notice is served, the landlord must not re-let or market the property.</li>
+            <li>The restriction remains until 12 months after the notice expiry date or possession proceedings conclude.</li>
+            <li>Breach may result in a civil penalty of up to £40,000.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Ground 2 – Sale by Mortgage Lender</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>The property is being sold by a mortgage lender following repossession.</li>
+            <li>Notice period: 4 months.</li>
+            <li>Applies regardless of when the mortgage was granted.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Student Accommodation Grounds</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Ground 4 – Former Student Accommodation</strong></p>
+
+        <ul>
+            <li>Notice period: 2 weeks.</li>
+        </ul>
+
+        <p><strong>Ground 4A – Student HMO Required</strong></p>
+
+        <ul>
+            <li>The property is required for new student occupation.</li>
+            <li>Notice period: 4 months.</li>
+            <li>Prior notice must have been given at the start of the tenancy.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Ground 5G – Temporary Accommodation</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>The property is used as temporary accommodation under Section 193 Housing Act 1996.</li>
+            <li>The local authority confirms the accommodation is no longer required.</li>
+            <li>The ground must be relied upon within 12 months of local authority notice.</li>
+            <li>Notice period: 4 weeks.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Ground 6B – Landlord at Fault</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>Mandatory ground linked to serious landlord failings.</p>
+
+        <ul>
+            <li>Banning orders.</li>
+            <li>Licensing failures.</li>
+            <li>Overcrowding hazards.</li>
+            <li>Planning enforcement breaches.</li>
+            <li>Notice period: 4 months.</li>
+            <li>The court may award compensation to the tenant.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Ground 7A – Serious Anti-Social Behaviour</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Serious anti-social behaviour or criminal behaviour.</li>
+            <li>No minimum notice period.</li>
+            <li>Court proceedings can begin immediately.</li>
+            <li>A possession order cannot take effect before 14 days.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Ground 8 – Mandatory Rent Arrears</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>At least 3 months of rent arrears for monthly tenancies or 13 weeks for weekly tenancies.</li>
+            <li>Arrears must exist both when the notice is served and at the court hearing.</li>
+            <li>Universal Credit housing-cost arrears are disregarded.</li>
+            <li>Notice period: 4 weeks.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Discretionary Grounds</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Ground 9 – Suitable alternative accommodation (2 months).</li>
+            <li>Ground 10 – Some rent arrears (4 weeks).</li>
+            <li>Ground 11 – Persistent delay in paying rent (4 weeks).</li>
+            <li>Ground 12 – Breach of tenancy (2 weeks).</li>
+            <li>Ground 13 – Deterioration of property (2 weeks).</li>
+            <li>Ground 14 – Anti-social behaviour (no minimum notice period).</li>
+            <li>Ground 14A / 14ZA – Domestic abuse or rioting (2 weeks).</li>
+            <li>Ground 15 – Deterioration of furniture (2 weeks).</li>
+            <li>Ground 17 – False statement (2 weeks).</li>
+            <li>Ground 18 – Supported accommodation (4 weeks).</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Amended Ground 18 – Supported Accommodation</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Applies where the tenant unreasonably refuses to engage with support services.</li>
+            <li>Notice period: 4 weeks.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Practice Points for Staff</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Confirm which grounds apply and whether they are mandatory or discretionary.</li>
+            <li>Check notice length, timing, and validity.</li>
+            <li>Refer all notice validation queries to the Tenancy Relations Officer.</li>
+            <li>Explore homelessness prevention options as early as possible.</li>
+            <li>Consider risks of retaliatory or unlawful eviction.</li>
+            <li>Provide housing options advice, focusing on prevention and private rented sector opportunities.</li>
+        </ul>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>CRM Recording Reminder</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            All details must be clearly recorded within CRM, including:
+        </p>
+
+        <ul>
+            <li>Grounds cited within the notice.</li>
+            <li>Notice expiry date.</li>
+            <li>Validity checks undertaken.</li>
+            <li>Advice provided.</li>
+            <li>Homelessness prevention actions.</li>
+            <li>Customer decisions and outcomes.</li>
+        </ul>
+
+        <p>
+            Accurate recording is essential for legal robustness, prevention activity,
+            case management, and audit compliance.
+        </p>
+
+    </div>
+</details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+const threatenedWithEvictionOrPossession = new ContentH(
+  "threatenedWithEvictionOrPossession",
+  "Threatened with Eviction or Possession",
+  "Information explaining eviction and possession processes, customer rights, prevention options, and the support available to help avoid homelessness.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Understanding Your Housing Situation</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            If your landlord has given you a notice, possession order, or eviction warning,
+            it is important to understand what it means and what your rights are.
+        </p>
+
+        <p><strong>Key points to know:</strong></p>
+
+        <ul>
+            <li>The type of tenancy you have affects what your landlord can do.</li>
+            <li>A notice does not mean you have to leave immediately.</li>
+            <li>In most cases, you have the right to remain in the property until a court bailiff carries out an eviction.</li>
+        </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Your Right to Stay</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                You normally have a legal right to remain in your home until the landlord has completed the legal possession process.
+            </p>
+
+            <p>This usually means the landlord must:</p>
+
+            <ul>
+                <li>Obtain a possession order from the court.</li>
+                <li>Arrange for court-appointed bailiffs to carry out the eviction.</li>
+            </ul>
+
+            <p>
+                You should not leave the property unless it is unsafe to stay or you already have suitable alternative accommodation available.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>How the Council Can Help</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                The Council can provide support as soon as there is a risk of homelessness.
+            </p>
+
+            <p><strong>Our focus is on prevention:</strong></p>
+
+            <ul>
+                <li>Helping you remain in your current home where possible.</li>
+                <li>Working with landlords to resolve issues or extend timescales.</li>
+                <li>Supporting a planned and sustainable move where remaining is not possible.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Talking to Your Landlord</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                In many cases it may be possible to prevent homelessness through discussion and negotiation with your landlord.
+            </p>
+
+            <p>Options may include:</p>
+
+            <ul>
+                <li>Requesting additional time to remain in the property.</li>
+                <li>Agreeing repayment plans for rent arrears.</li>
+                <li>Allowing time to secure alternative accommodation.</li>
+            </ul>
+
+            <p>
+                With your agreement, Council staff may be able to contact the landlord on your behalf.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Important Information</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Temporary accommodation is usually provided only in emergency situations.
+            </p>
+
+            <p>It is important to understand that temporary accommodation can:</p>
+
+            <ul>
+                <li>Be located outside your local area.</li>
+                <li>Involve frequent moves between hotels or properties.</li>
+                <li>Offer limited facilities such as cooking or laundry spaces.</li>
+                <li>Have a negative impact on wellbeing, particularly for children.</li>
+                <li>Increase household and transport costs.</li>
+            </ul>
+
+            <p>
+                For these reasons, it is often preferable to prevent homelessness where possible or stay temporarily with family or friends if it is safe and suitable to do so.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>What You Should Do Next</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Do not leave your home without first seeking advice.</li>
+                <li>Keep copies of any notices, possession orders, or court papers.</li>
+                <li>Speak to the Council as early as possible.</li>
+                <li>Tell us if your circumstances change or become unsafe.</li>
+            </ul>
+
+            <p>
+                Early advice and prevention work can significantly improve housing outcomes and help avoid homelessness.
+            </p>
+
+        </div>
+    </details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
+
+
+
 const demotedOrDisqualified = new ContentH(
   "demotedOrDisqualified",
   "Demoted or Disqualified",
@@ -6201,23 +10832,43 @@ const rehousing = new MenuH(
   "Rehousing",
   "Guidelines on applying for rehousing, understanding the process, and checking eligibility for alternative housing.",
   [
+    accommodationNotSuitable,
     allocationsPolicy,
     applicationChanges,
     applyForRehousing,
+    asbHomeless,
+    asbCuckooing,
+    askedToLeave,
     bidding,
     demotedOrDisqualified,
+    domesticAbuseAssessment,
     eligibility,
+    endofHomeOffice,
     fosteringAndAdoption,
+    friendsOrFamily,
     healthAndHousing,
+    homelessPrevention,
+    homelessTest,
     housingAssociations,
     idReferences,
     idFaq,
     movingIn,
     mutualExchanges,
+    overcrowding,
+    preventionEndOfSupportedAccommodation,
     priorities,
+    prisonLeaver,
     priorityBandingTable,
     PropertyOffersAndViewings,
+    relationshipBreakdown,
+    relationship,
+    relationshipv2,
+    rooflessNoAccommodation,
     referencesFAQs,
+    repairsHomelessness,
+    section8,
+    section8V2,
+    threatenedWithEvictionOrPossession
   ]
 );
 
@@ -6248,6 +10899,11 @@ const balanceEnquiry = new ContentH(
 </button>
 
   </p> 
+
+  <p>
+  Balances can change when payments are still processing, when rent is charged, or when benefit payments/adjustments are applied.<br>
+  Card/bank payments can take a short time to appear on the account (often up to 3 working days)
+  </p>
 `,
   {
     buttonLabel: "Check balance",
@@ -6491,12 +11147,15 @@ const contactRentsTeam = new ContentH(
 
 const arrearsorDebt = new ContentH(
   "arrearsorDebt",
-  "Court Order Removal of",
+  "Court Order or Eviction",
   "Learn how to request the removal of a court order from your rent account, including the necessary steps and contact with the Court Team",
   `
+  <h3>What to do</h3>
+  If you have recieved a letter regarding arrears/court/eviction you will need to speak to the Court Team on: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052910')">0114 2052910</a> who can explain the next steps.<br>
+  <h3>Removal of Court Order </h3>
     <p>
       If you would like the removal of a Court Order from your rent account, or to pay for the removal 
-      of the Court Order, then you can either apply direct to the court, or speak to our Court Team on: 0114 2052910.<br>br>
+      of the Court Order, then you can either apply direct to the court, or speak to our Court Team on: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052910')">0114 2052910</a>.<br><br>
       You will require your court reference number. <br><br>
 
       If the Court Team are happy for the Order to be removed, they will send a letter to the court 
@@ -6606,7 +11265,8 @@ const rentVariation = new ContentH(
     <div class="accordion-content">
         <p>
             The annual changes to the rent charged are agreed by the Council Cabinet every January. 
-            The general rent increase agreed from 6th April 2026 is <strong>4.8%</strong>.
+            The general rent increase agreed from 6th April 2026 is <strong>4.8%</strong>. <br>
+            The start date and your new weekly/monthly rent will be shown on your rent increase letter/notification and is always in April.
         </p>
         <p>
             You can check an outline of the changes to rents and charges at Sheffield city council website
@@ -6808,6 +11468,21 @@ const rentVariation = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
+        <h3>Universal Credit/Housing Benefit Shortfall</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            A shortfall can happen if your benefit doesn’t cover the full rent (for example, water rates, tenants levy, deductions, non-dependant charges, bedroom tax, benefit cap, or a change in your circumstances).<br> 
+Sometimes there are delays while a claim is processed or verified.
+Early Support Team JCHERE <a href="mailto:imfitearlysupport@sheffield.gov.uk</a>
+Benefits/welfare Support and Budegeting xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Total Indebtedness</h3>
         <div class="accordion-icon"></div>
     </summary>
@@ -6827,6 +11502,23 @@ const rentVariation = new ContentH(
   { typeKey: "rents_information_provided" },
   { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
   { date: "26/03/2026", name: "Shahzad Athar" }
+);
+
+const serviceCharges = new ContentH(
+  "serviceCharges",
+  "Service Changes",
+  "Find out what your rent pays for.",
+  `
+  <p>
+      Service charges are costs for services to your tenancy (for example, furniture, alarms etc) where applicable.<br>
+      A full breakdown can be requested to IMFIT
+  </p> 
+  `,
+  { buttonLabel: "Raise rents enquiry", formName: "hou_rents_enquiry" },
+  { typeKey: "" },
+  { typeKey: "rents_information_provided" },
+  { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "28/07/2026", name: "Joseph Coupland" }
 );
 
 const statements = new ContentH(
@@ -6947,6 +11639,7 @@ const rents = new MenuH(
     rentArrangements,
     rentRefunds,
     rentVariation,
+    serviceCharges,
     statements,
     universalCredit,
     yorkshireWater,
@@ -7685,9 +12378,9 @@ const drainage = new ContentH(
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const disrepair = new ContentH(
+const disrepairTeam = new ContentH(
   "disrepair",
-  "Disrepair",
+  "Disrepair Team",
   "Property damage needing repair",
   `
 <p>The team's main responsibilities are:</p>
@@ -7728,6 +12421,214 @@ const disrepair = new ContentH(
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
+
+const domesticAbuseMove = new ContentH(
+  "domesticAbuseMove",
+  "Domestic Abuse (Planned Move)",
+  "Process for helping customers affected by domestic abuse remain safe while exploring housing options and planning a move at their own pace",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>When to Use This Sheet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <ul>
+            <li>Domestic abuse is disclosed or identified.</li>
+            <li>The customer does not want an immediate move into homelessness accommodation.</li>
+            <li>The customer wishes to plan a move in a safe and controlled way.</li>
+        </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Reasonableness and Approach</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Remaining in the accommodation should generally be treated as potentially unreasonable due to risk.</li>
+                <li>Decisions must be survivor-led and recognise that the customer may prefer a planned move.</li>
+                <li>Balance housing duties alongside individual safety considerations.</li>
+                <li>Record the rationale for decisions and the customer's wishes clearly.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Safety Planning and Emergency Information</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Discuss appropriate safety planning based on the customer's circumstances.</li>
+                <li>Provide out-of-hours emergency homelessness accommodation contact details.</li>
+                <li>Record that emergency information and advice has been provided.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Specialist Domestic Abuse Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Offer referral to IDAS specialist domestic abuse services.</li>
+                <li>Ensure explicit consent is obtained where required.</li>
+                <li>Record whether referrals were offered, accepted, or declined.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Police Safety Measures</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where appropriate, explain potential police safety measures that may be available.
+            </p>
+
+            <ul>
+                <li>Target hardening measures.</li>
+                <li>Property tagging.</li>
+                <li>Other safety measures identified by police services.</li>
+            </ul>
+
+            <ul>
+                <li>Do not pressure the customer to involve the police.</li>
+                <li>Record information provided and the customer's response.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Trauma-Informed, Survivor-Led Practice</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Use a trauma-informed approach throughout all interactions.</li>
+                <li>Do not pressure the customer to remain, leave, or pursue actions they do not feel safe taking.</li>
+                <li>Recognise that risk assessments and personal circumstances can change over time.</li>
+                <li>Record the customer's wishes clearly and update records as circumstances change.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Options and Planned Move</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <ul>
+                <li>Provide housing options advice that supports a safe and planned move.</li>
+                <li>Consider Private Rented Sector (PRS) options where appropriate.</li>
+                <li>Discuss realistic availability, affordability, and likely timescales.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Additional Support Considerations</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p><strong>Households with Children</strong></p>
+
+            <ul>
+                <li>Offer referral to the Early Help Family Intervention Service.</li>
+                <li>Record whether the referral was accepted or declined.</li>
+            </ul>
+
+            <p><strong>Aged 25 or Under</strong></p>
+
+            <ul>
+                <li>Refer to Roundabout for housing advice and support.</li>
+                <li>Provide information through the Homeless Support Pathway (HSP).</li>
+            </ul>
+
+            <p><strong>Employment Needs</strong></p>
+
+            <ul>
+                <li>Offer referral to employment support services.</li>
+            </ul>
+
+            <p><strong>Financial Difficulties</strong></p>
+
+            <ul>
+                <li>Refer or signpost to the Cost of Living Support Hub.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>CRM Recording Reminder</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                All safeguarding actions, safety planning discussions, referrals offered,
+                referrals completed, customer decisions, and outcomes must be fully recorded
+                within CRM and relevant workflow fields.
+            </p>
+
+            <p>
+                Accurate recording is essential for safeguarding, continuity of support,
+                prevention activity, decision making, and audit compliance.
+            </p>
+
+        </div>
+    </details>
+  `,
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [
+      "disrepar",
+      "disrepir",
+      "disrepair",
+      "disrepier",
+      "disprepair",
+      "disrepaire",
+      "desrepair",
+      "disrpair",
+      "disrpare",
+      "disrrepaiir",
+    ],
+    categories: ["Repairs"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 
 const electricalandHeating = new ContentH(
   "electricalandheating",
@@ -7934,6 +12835,316 @@ const externalContractors = new ContentH(
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
+
+const endofHomeOffice = new ContentH(
+  "endofHomeOffice",
+  "End of Home Office Accommodation",
+  "Process for helping customers at risk of homelessness after Home Office accommodation ends, with a focus on early prevention, resettlement, and wellbeing support",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Purpose</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p>
+            This guidance is for staff supporting customers who are at risk of homelessness
+            or approaching the end of temporary or interim accommodation.
+        </p>
+
+        <p>
+            It sets out key actions, advice to give, and referral pathways to support
+            prevention, resettlement, and wellbeing.
+        </p>
+
+        <p>
+            This guidance is intended to inform professional practice and CRM recording,
+            rather than be used as a form.
+        </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>End of Accommodation and Prevention Planning</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should identify and clearly record the end date of the customer’s current
+                accommodation at the earliest opportunity.
+            </p>
+
+            <ul>
+                <li>Obtain any notice to end accommodation where available.</li>
+                <li>Save any notice or relevant evidence to the case record.</li>
+                <li>Use the accommodation end date to support early homelessness prevention planning.</li>
+            </ul>
+
+            <p>
+                Where the household has significant vulnerabilities, staff should contact the
+                accommodation provider to explore whether an extension can be negotiated.
+            </p>
+
+            <p>
+                Any discussions with the provider and the outcomes of those discussions should be
+                clearly recorded in CRM.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Involvement of Other Organisations</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should identify and contact any relevant organisations involved with the
+                household.
+            </p>
+
+            <p>Examples may include:</p>
+
+            <ul>
+                <li>City of Sanctuary.</li>
+                <li>Other voluntary or commissioned support services.</li>
+            </ul>
+
+            <p>
+                Multi-agency working can support earlier intervention, coordinated planning,
+                and improved outcomes for the customer.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Vulnerabilities and Supporting Evidence</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Customers should be advised to provide documentation relating to any vulnerabilities
+                or support needs.
+            </p>
+
+            <p>Supporting evidence may include:</p>
+
+            <ul>
+                <li>Medical evidence.</li>
+                <li>Mental health information.</li>
+                <li>Details of care, support, or wellbeing needs.</li>
+                <li>Information from professionals or support organisations.</li>
+            </ul>
+
+            <p>
+                This information can help inform housing advice, prevention activity, referrals,
+                and any consideration of extensions or alternative accommodation.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Housing Options Advice</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should provide clear information about the housing options available to the
+                customer.
+            </p>
+
+            <ul>
+                <li>Focus on Private Rented sector options where appropriate.</li>
+                <li>Prioritise prevention and resettlement options wherever possible.</li>
+                <li>Provide realistic advice about availability, affordability, and likely timescales.</li>
+                <li>Support the customer to understand practical routes away from homelessness.</li>
+            </ul>
+
+            <p>
+                Prevention and resettlement should be explored early to reduce reliance on temporary
+                accommodation.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Temporary Accommodation – Key Information for Customers</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should ensure customers understand the drawbacks and limitations of temporary
+                accommodation.
+            </p>
+
+            <ul>
+                <li>There is no choice over location and placement may be outside the city.</li>
+                <li>There may be frequent moves between different hotels or placements.</li>
+                <li>Hotel-based accommodation can provide limited privacy.</li>
+                <li>Cooking facilities may not be available.</li>
+                <li>Laundry facilities may not be available.</li>
+                <li>Storage space may be very limited.</li>
+                <li>Temporary accommodation can negatively affect wellbeing, particularly for children.</li>
+            </ul>
+
+            <p><strong>Potential financial impacts include:</strong></p>
+
+            <ul>
+                <li>Increased costs due to reliance on takeaways and reduced nutrition.</li>
+                <li>Additional transport costs for travelling to school or work.</li>
+                <li>Financial disadvantages for customers who are in employment.</li>
+            </ul>
+
+            <p>
+                Customers should be advised that temporary accommodation should be avoided wherever
+                possible through prevention, early resettlement, or safe temporary arrangements with
+                family or friends.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Homelessness Prevention and Resettlement Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where appropriate, staff should refer customers to Shelter’s Homelessness Prevention
+                and Resettlement Service under the Homeless Support Pathway (HSP).
+            </p>
+
+            <p>
+                This referral can provide specialist housing advice and support with prevention,
+                resettlement, and practical options to reduce the risk of homelessness.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Support for Young People</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                For customers aged 25 years or under, staff should provide information about
+                Roundabout and make appropriate referrals where relevant.
+            </p>
+
+            <ul>
+                <li>Provide general housing advice under the Homeless Support Pathway (HSP).</li>
+                <li>Offer referral to Roundabout where appropriate.</li>
+                <li>Record whether the referral was offered, accepted, or declined.</li>
+            </ul>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Families with Children</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Where there are children in the household, staff should discuss whether the customer
+                would like a referral to the Early Help Family Intervention Service.
+            </p>
+
+            <p>
+                This can provide additional family-focused support where appropriate.
+            </p>
+
+            <p>
+                The customer’s decision and any referral outcome should be clearly recorded in CRM.
+            </p>
+
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Employment and Financial Support</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+
+            <p>
+                Staff should check whether the customer would like referral or signposting to support
+                with employment or financial difficulties.
+            </p>
+
+            <p><strong>Employment Needs</strong></p>
+
+            <ul>
+                <li>Offer referral to employment support services.</li>
+                <li>Record whether the referral was accepted or declined.</li>
+            </ul>
+
+            <p><strong>Financial Difficulties</strong></p>
+
+            <ul>
+                <li>Signpost or refer to the Cost of Living Support Hub.</li>
+                <li>Provide advice or referral routes for practical financial support where appropriate.</li>
+            </ul>
+
+        </div>
+    </details>
+  
+  `,
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [
+      "external",
+      "contractrs",
+      "extenal",
+      "contractors",
+      "external",
+      "contarctors",
+      "external",
+      "contrctors",
+      "external",
+      "conttractors",
+      "extarnal",
+      "contractors",
+      "extternal",
+      "contractors",
+      "external",
+      "contracors",
+      "external",
+      "conractors",
+      "external",
+      "contrators",
+    ],
+    categories: ["Repairs"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 
 const externalDoorLock = new ContentH(
   "externalDoorLock",
@@ -10635,7 +15846,9 @@ const repairs = new MenuH(
     districtHeatingSwitch2Setup,
     doorFurniture,
     drainage,
-    disrepair,
+    disrepairHomeless,
+    disrepairTeam,
+    domesticAbuseMove,
     electricalandHeating,
     electricalTesting,
     externalContractors,
@@ -11755,8 +16968,11 @@ const shelteredWardens = new ContentH(
 const temporaryAccommodation = new ContentH(
   "temporaryAccommodation",
   "Temporary Accommodation",
-  "The number/s for the temporary accommodation team is available on this page",
+  "Why temporary accomodation is a last resort and the teams contact number.",
   `
+  <p>
+      Temporary accommodation is a last resort which offers limited choices of locations and facilities (e.g. cooking, laundry) and may require multiple moves, and can impact health, wellbeing, and finances.
+  </p>
     <p>
       Contact the temporary accommodation team on: 
       <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2053171')">0114 2053171</a> or 
@@ -11775,7 +16991,7 @@ const temporaryAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "29/07/2025", name: "Nathan Smith" }
+  { date: "29/07/2026", name: "Joseph Coupland" }
 );
 
 const shelteredAndSupported = new MenuH(
