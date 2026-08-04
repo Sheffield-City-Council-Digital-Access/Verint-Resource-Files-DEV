@@ -54,47 +54,3563 @@ class CoreBusiness {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
-  const taxiLicensingExample = new ContentBusiness(
-    "taxiLicensingExample",
-    "Taxi Licensing Example",
-    "Information regarding taxi licensing",
-    `
-    <p>
-      Information example
-    </p>
-    `,
+//#region Taxi Licensing
+
   
-    { buttonLabel: "", formName: ""},
-    { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: "switchboard_information_provided"},
+const drivingStandardsTestGuide = new ContentBusiness(
+  "drivingStandardsTestGuide",
+  "Driving Standards Test Guide",
+  "Details of the Driving Standards Test - part of a taxi driver licence application.",
+  `
+  <h3>Overview</h3>
+    <p>
+      The <strong>Driving Standards Test</strong> is part of the process for applying for a <strong>new taxi driver licence</strong>. 
+      It is designed to assess whether an applicant   can drive safely, competently, and to a standard above that expected of an average driver.
+    </p>
+    <p>
+      Applicants must pass this test as part of Stage 2 of the “fit and proper” assessment required before submitting a taxi driver licence application.
+    </p>
+    <p>
+      Once the Driving Standards Test is passed, applicants can proceed with the remaining requirements in Stage 2 of the taxi licensing process before 
+      applying for their taxi driver licence.
+    </p>
+
+    <p>
+      Further information and a link to apply can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/driving" target="_blank">
+      Driving standards test | Sheffield City Council</a> 
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Driving%20Standards%20Test\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+
+    <h3>How to Apply</h3>
+    <p>
+      Applications for the Driving Standards Test must be <strong>completed online</strong>.
+    </p>
+  
+    <p>
+      Applicants are required to provide a full DVLA driving licence number (held for at least 12 months)
+    </p>
+  
+    <p>
+      A <strong>fee of £75</strong> is payable at the point of application.
+    </p>
+
+    <p>
+      Fees are not refunded if the applicant fails the test or if the applicant arrives late and the test cannot be carried out.
+    </p>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility Criteria</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+         <p>Applicants must:</p> 
+      <ul>
+        <li>Be at least 21 years old</li>
+        <li>Have held a DVLA driving licence for at least 12 months</li>
+        <li>Have already completed a Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver <em>and</em> 
+            Safeguarding training</li>
+      </ul>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Test Details</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The test is carried out by a driving standards examiner at the Council’s Transport Department.
+      </p>
+
+      <p>
+        During the assessment <strong>applicants will be tested on practical driving ability and knowledge of road safety</strong>. 
+        The test will include any three of the following manoeuvres:
+      </p>
+        <ul>
+          <li>Emergency stop</li>
+          <li>Left-hand reverse</li>
+          <li>Right-hand reverse</li>
+          <li>Turn in the road</li>
+          <li>Reverse parking</li>
+        </ul>
+   
+      <p>
+        Applicants are also assessed on their knowledge of the Highway Code.
+      </p>
+  
+      <p>
+        To prepare, the Council recommends studying the Driving and Vehicle Standards Agency (DVSA) Official Guide to Driving.
+      </p>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Assessment Outcome</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To pass the test, applicants must demonstrate a high standard of driving and road safety awareness.
+      </p>
+
+      <p>
+        A <strong>passed Driving Standards Test is valid for one year</strong> from the date of passing.
+      </p>
+
+      <p>If an applicant fails:</p>
+        <ul>
+          <li>They will need to take additional lessons with a qualified instructor</li>
+          <li>They must complete this before booking another test</li>
+          <li>The test fee is not refundable and must be paid again for a re-test</li>
+        </ul>
+    </div>
+  </details>
+
+  
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Vehicle Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants may use one of the following vehicles for the test:</p>
+        <ul>
+          <li>Driving instructor’s vehicle</li>
+          <li>Rental vehicle</li>
+          <li>Personal vehicle</li>
+          <li>Licensed vehicle registered in their name (with licence markings removed before attending)</li>
+        </ul>
+
+      <p>
+        Applicants must ensure the vehicle used is appropriately <strong>insured</strong>.
+      </p>
+    </div>
+  </details>
+ 
+  `,
+
+  { buttonLabel: "Apply Driving Standards", formName: "apply_driving_standards" },
+  { typeKey: "" },
+  { typeKey: "driving_standards_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "driving standards test",
+      "driving",
+      "driver",
+      "standards",
+      "test",
+      "licence",
+      "driver test",
+      "taxi",
+      "licensing",
+      "private hire",
+      "application",
+      "apply driving test",
+      "driving assessment",
+      "road safety test",
+      "drivers licence test",
+      "taxi test",
+      "drving",
+      "standrds",
+      "driving tests",
+      "taxi driver tests",
+      "standards test"
+    ],
+    categories: ["Business", "Taxi Licensing"],
+  },
+  { date: "03/06/2026", name: "Liz Taster" }
+);
+
+
+const surrenderLicence = new ContentBusiness(
+  "surrenderLicence",
+  "Surrender a Vehicle Licence",
+  "What to do if you decide to stop using your vehicle as a licenced vehicle.",
+  `
+  <p>
+    To surrender a vehicle licence customers need to complete an online form.        
+  </p>
+
+  <p>
+    For <strong>private hire</strong> vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/surrender"target="_blank">
+    Surrender a private hire vehicle licence | Sheffield City Council</a></p>
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Surrender%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <p>
+    For <strong>hackney carriage</strong> vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/Surrender-vehicle-licence"target="_blank">
+    Surrender a hackney carriage vehicle licence | Sheffield City Council</a></p>
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Surrender%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
+    
+  <p>
+    Where possible, the customer needs to return their plate to us.
+  </p>
+
+  <h3>Re-licencing a vehicle</h3>
+    <p>
+      If the customer wants to licence their vehicle again, they need to apply for a new licence.<br>
+      This means the customer must go through the new application process again.
+    </p>
+
+    `,
+
+    { buttonLabel: "Surrender Licence Plate", formName: "surrender_license_plate"},
+    { typeKey: "" },
+    { typeKey: "surrender_license_plate_information_provided"},
+    {
+      type: "Report",
+      keywords: [
+        "taxi",
+        "licence",
+        "license",
+        "surrender",
+        "surender",
+        "surrendar",
+        "de-licence",
+        "delicence",
+        "de-license",
+        "delicense",
+        "vehicle",
+        "vehcle",
+        "private hire",
+        "hackney",
+        "carriage",
+        "hckney",
+        "hackny",
+      ],
+      categories: ["Business", "Taxi Licensing"],
+    },
+    { date: "11/06/2026", name: "Liz Taster"} 
+  );
+
+const transferLicence = new ContentBusiness(
+  "transferLicence",
+  "Transfer a Vehicle Licence",
+  "Guidance on the process to transfer a vehicle licence",
+  `
+    <h3>Overview</h3>
+      <p>
+        If you transfer your vehicle licence to another person or company, <strong>you must contact us within 14 days</strong>.<br> 
+        It is an offence if you to fail to notify us that your vehicle licence has been transferred to another person or company.<br>
+      </p>
+      <p>
+        Only the previous vehicle owner can request to transfer a vehicle licence.<br>
+        The customer must complete the online form to request to transfer a vehicle licence.<br> 
+        The same form can be used for both private hire and hackney carriage vehicles.<br>
+      </p>
+
+    <h3>How to Transfer a Vehicle Licence</h3>
+      <p>
+        The previous licence holder must complete the online form to request to transfer a vehicle licence. The form can be found here:
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/transfer"target="_blank">
+        Transfer a vehicle licence | Sheffield City Council</a>
+      </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Transfer%20Vehicle%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+      <p>
+        The customer will need to tell us the following things:
+      </p>
+        <ul>
+          <li>details of the vehicle licence</li>
+          <li>details of the person, business or partnership </li>
+          <li>details of the person, business or partnership the licence is being transferred to</li>
+          <li>where this is a parnership, details of all partners need to be submitted</li>
+        </ul>
+      <p>
+        The information provided will be used to contact the new licence holder(s) to complete a declaration form.
+      </p>
+
+    <h3>Cost</h3>
+      <p>
+        The fee to transfer a taxi licence is <strong>£33</strong>. The fee is payable by the previous licence holder.
+      </p>
+
+    `,
+
+    { buttonLabel: "Transfer Licence", formName: "request_vehicle_transfer"},
+    { typeKey: "" },
+    { typeKey: "transfer_vehicle_license_information_provided"},
     {
       type: "Request",
       keywords: [
-        "Switchboard",
-        "Switch board",
-        "Switch",
         "transfer",
-        "redirect",
-        "transfer call",
-        "call"
+        "vehicle",
+        "licence",
+        "tranfer",
+        "trasnfer",
+        "vehcle",
+        "license",
+        "taxi",        
       ],
-      categories: ["Your City Council"],
+      categories: ["Business", "Taxi Licensing"],
     },
-    { date: "18/11/2025", name: "Joseph Coupland"} 
+    { date: "11/06/2026", name: "Liz Taster"} 
   );
+
+
+const applyPrivateHireVehicleLicence = new ContentBusiness(
+  "applyPrivateHireVehicleLicence",
+  "Apply - Private Hire Vehicle Licence",
+  "Guidance on applying for a private hire vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Customers must apply for a private hire vehicle licence if they want to use a vehicle for private hire services in Sheffield. 
+      Once granted, the licence is valid for a maximum of <strong>12 months</strong>. 
+      The application is completed online via the Sheffield City Council website.
+    </p>
+    
+    <p>
+      Detailed information about all stages of applying for a Private Hire Vehicle Licence can be found at:
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private" target="_blank">
+      Private hire vehicle licence | Sheffield City Council</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Vehicle%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
+    
+    <p>
+      A link to the online form to be completed can be found here:
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-private-hire/apply-new-licence" target="_blank">
+      Apply for a private hire vehicle licence | Sheffield City Council</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <h3>Key Points for Agents</h3>
+    <p>
+      The licence is for the <strong>vehicle only</strong> - separate licences are required for <strong>drivers</strong> and <strong>operators</strong>.
+    </p>
+    
+    <p>
+      As part of the process, the vehicle <strong>must pass a compliance test</strong> before a licence can be issued.
+    </p>
+    
+    <p>Applications follow a <strong>3-stage process</strong>:<p>
+      <ul>
+        <li><strong>Apply</strong> - online form submitted</li>
+        <li><strong>Process</strong> - council checks application, vehicle undergoes compliance test</li>
+        <li><strong>Determine</strong> - decision made after test, after which a licence may be issued</li>
+      </ul>
+
+  <h3>Cost</h3>
+    <p>
+      The fee is <strong>£212</strong>. Payment is made online when submitting the application.
+    </p>
+    <br>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          Vehicles must meet specific standards (for example, safety and design requirements).
+        </p>
+        <p>
+          Customers are advised to check vehicle suitability before applying. Full details can be found here:
+          <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire" target="_blank">
+          Choosing a private hire vehicle | Sheffield City Council</a>
+        </p>
+            <button
+                type="button"
+                class="dform_widget email-btn dform_widget_type_button"
+                aria-label="For further information send link"
+                onclick="
+                  window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                    }interactionid=\${KDF.getParams().interactionid}&sel_service=Choosing%20Private%20Hire\`
+                  "
+                >
+                      Send link to review further information
+            </button>
+    </div>
+    </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Customers Need to Apply</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Customers must provide:</p>
+          <ul>
+            <li><strong>V5C registration certificate (log book)</strong>, or keeper’s supplement if the vehicle is recently purchased </li>
+            <li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
+          </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The council will contact the customer <strong>within 5 working days</strong> with a <strong>vehicle compliance test appointment</strong>.
+      </p>
+      <p>
+        Vehicles must attend and <strong>pass the compliance test</strong>.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Issuing the Licence</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Once the vehicle passes the compliance test, the customer must provide:</p>
+        <ul>
+          <li><strong>Insurance certificate or insurance cover note</strong></li>
+          <li><strong>Compliance certificate</strong></li>
+        </ul>
+      
+      <p>
+        The compliance test certificate is valid for <strong>14 days</strong>.
+      </p>
+      <p>
+        The council will then issue the vehicle licence.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Collecting the Licence</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers will be contacted by email to <strong>arrange collection</strong>.
+      </p>
+      <p>
+        The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>must be collected in person</strong>, it cannot be posted.
+      </p>
+      <p>
+        Someone else can collect it on their behalf if arranged in advance.
+      </p>
+    </div>
+  </details>
+
+  <h3>Related Information</h3>
+    <p>Customers should ensure they also have: </p>
+      <ul>
+        <li>A <strong>valid taxi driver licence</strong></li>
+        <li>A <strong>licensed operator</strong> (if working through a company)</li>
+      </ul>
+      
+      `,
+
+  { buttonLabel: "Apply Private Hire Vehicle Licence", formName: "apply_private_hire" },
+  { typeKey: "" },
+  { typeKey: "private_hire_vehicle_licence_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "private hire",
+      "PHV licence",
+      "taxi vehicle licence",
+      "taxi licensing",
+      "private hire application",
+      "vehicle compliance test",
+      "licence",
+      "taxi",
+      "taxi licence",
+      "apply PHV",
+      "vehicle licensing process",
+      "taxi vehicle permit",
+      "PHV application",
+      "vehcle",
+      "licnce",
+      "license",
+      "prvate hire",
+      "licens",
+      "vehicle compliance",
+    ],
+    categories: ["Business", "Taxi Licensing"],
+  },
+  { date: "04/06/2026", name: "Liz Taster" }
+);
+
+
+const applyHackneyCarriageVehicleLicence = new ContentBusiness(
+  "applyHackneyCarriageVehicleLicence",
+  "Apply - Hackney Carriage Vehicle Licence",
+  "Guidance on applying for a hackney Carriage vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Customers must apply for a vehicle licence if they want to use a vehicle as a hackney carriage (taxi) in Sheffield. 
+      Once granted, the licence is valid for a maximum of <strong>12 months</strong>. 
+      The application is completed online via the Sheffield City Council website.
+    </p>
+    
+    <p>
+      Detailed information about all stages of applying for a hackney carriage Vehicle Licence can be found at:
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney" target="_blank">
+      Hackney carriage vehicle licence | Sheffield City Council</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Hackney%20Carriage%20Vehicle%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
+    
+    <p>
+      A link to the online form to be completed can be found here:
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-hackney-carriage/apply-new-licence" target="_blank">
+      Apply for a new hackney carriage vehicle licence | Sheffield City Council</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <h3>Key Points for Agents</h3>
+    <p>
+      The licence is for the <strong>vehicle only</strong> - separate licences are required for <strong>drivers</strong> and <strong>operators</strong>.
+    </p>
+    
+    <p>
+      As part of the process, the vehicle <strong>must pass a compliance test</strong> before a licence can be issued.
+    </p>
+    
+    <p>Applications follow a <strong>3-stage process</strong>:<p>
+      <ul>
+        <li><strong>Apply</strong> - online form submitted</li>
+        <li><strong>Process</strong> - council checks application, vehicle undergoes compliance test</li>
+        <li><strong>Determine</strong> - decision made after test, after which a licence may be issued</li>
+      </ul>
+
+  <h3>Cost</h3>
+    <p>
+      The fee is <strong>£212</strong>. Payment is made online when submitting the application.
+    </p>
+    <br>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          Vehicles must meet specific standards (for example, safety and design requirements).
+        </p>
+        <p>
+          Customers are advised to check vehicle suitability before applying. Full details can be found here:
+          <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-hackney-carriage"target="_blank">
+          Choosing a hackney carriage | Sheffield City Council</a>
+        </p>
+        
+          <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Choosing%20Hackney%20Carriage\`
+              "
+            >
+              Send link to review further information
+        </button>
+    </div>
+    </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Customers Need to Apply</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Customers must provide: </p>
+          <ul>
+            <li><strong>V5C registration certificate (log book)</strong>, or keeper’s supplement if the vehicle is recently purchased </li>
+            <li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
+          </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The council will contact the customer <strong>within 5 working days</strong> with a <strong>vehicle compliance test appointment</strong>.
+      </p>
+      <p>
+        Vehicles must attend and <strong>pass the compliance test</strong>.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Issuing the Licence</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Once the vehicle passes the compliance test, the customer must provide:</p>
+        <ul>
+          <li><strong>Insurance certificate or insurance cover note</strong></li>
+          <li><strong>Compliance certificate</strong></li>
+        </ul>
+      
+      <p>
+        The compliance test certificate is valid for <strong>14 days</strong>.
+      </p>
+      <p>
+        The council will then issue the vehicle licence.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Collecting the Licence</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers will be contacted by email to <strong>arrange collection</strong>.
+      </p>
+      <p>
+        The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>must be collected in person</strong>, it cannot be posted.
+      </p>
+      <p>
+        Someone else can collect it on their behalf if arranged in advance.
+      </p>
+    </div>
+  </details>
+
+  <h3>Related Information</h3>
+    <p>
+      Customers should ensure they also have a <strong>valid taxi driver licence</strong>.
+    </p>
+    
+  `,
+
+  { buttonLabel: "Apply Hackney Carriage Vehicle Licence", formName: "apply_hackney_carriage" },
+  { typeKey: "" },
+  { typeKey: "hackney_carriage_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "hackney carriage",
+      "hackney",
+      "taxi vehicle licence",
+      "taxi licensing",
+      "hackney carriage application",
+      "vehicle compliance test",
+      "licence",
+      "taxi licence",
+      "apply HC",
+      "vehicle licensing process",
+      "taxi vehicle permit",
+      "HC application",
+      "taxi",
+      "vehcle",
+      "licnce",
+      "license",
+      "hckney",
+      "hackny",
+      "licens",
+      "vehicle compliance",
+    ],
+    categories: ["Business", "Taxi Licensing"],
+  },
+  { date: "05/06/2026", name: "Liz Taster" }
+);
+
+
+const applyTaxiDriverLicence = new ContentBusiness(
+  "applyTaxiDriverLicence",
+  "Apply - Taxi Driver Licence",
+  "Guidance for applying for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Customers must apply for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield. 
+      A licence will only be granted once the applicant has passed all stages of the “fit and proper test”. 
+      <strong>Applicants cannot drive a taxi while their application is being processed.</strong>
+    </p>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility and Pre‑Application Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applicants must be <strong>over 21 years old</strong> and have held a DVLA driving licence for <strong>more than 12 months</strong>.
+      </p>
+    
+      <p>Before applying, customers must complete stages 1 and 2 of the process, which include the following checks, tests, and qualifications:</p>
+        <ul>
+          <li>Taxi driver qualification:</li>
+            <ul>
+              <li>Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver (includes safeguarding and disability awareness)</li>
+            </ul>
+          <li>Proof of right to work in the UK</li>
+          <li>Knowledge Test (local area knowledge, licensing conditions, highway code, safeguarding)</li>
+          <li>Driving standards test</li>
+          <li>Disclosure and Barring Service (DBS) check</li>
+          <li>Criminal and motoring convictions check</li>
+          <li>DVLA check</li>
+          <li>Medical assessment confirming fitness to drive</li>
+          <li>Provide a passport-sized photograph.</li>
+        </ul>
+    
+      <p>
+        Applicants must complete all required stages before they are eligible to submit an application.
+      </p>
+
+    </div>
+  </details>
+ 
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once all pre‑application requirements are completed, customers can submit an <strong>online application form</strong> for a new taxi driver licence.
+      </p>
+    
+      <p>As part of the application, customers ust provide all required documents, including:</p>
+        <ul>
+          <li>Proof of right to work (if not already verified)</li>
+          <li>Current DVLA driving licence</li>
+        </ul>
+    
+      <p>
+        After submitting the application, an email link will be sent to pay the licence fee.
+      </p>
+
+    </div>
+  </details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Costs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The <strong>fee depends on the licence duration</strong> chosen. Licences can be granted for 1, 2 or 3 years:</p>
+        <ul>
+          <li>1 year: £223</li>
+          <li>2 years: £245</li>
+          <li>3 years: £268</li>
+        </ul>
+    
+      <p>
+        Once an online application is completed, the customer will receive a separate email with a link to pay the relevant fee.
+      </p>
+    </div>
+  </details>
+    
+
+  <h3>Key Information for Call Handling</h3>
+    <ul>
+      <li>Customers must complete all tests and checks before applying - the application cannot proceed without these.</li>
+      <li>The process is structured in three stages, with the application only submitted their application at the final stage.</li>
+      <li>Customers are not permitted to work as taxi drivers until their licence is approved.</li>
+      <li>Payment is made after submitting the online form via a separate email link.</li>
+    </ul>
+
+  <h3>Useful Links</h3>
+    <p>
+      Detailed information about all stages of applying for a taxi driver licence can be found at:
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence" target="_blank">
+      Applying for a new taxi driver licence | Sheffield City Council</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Applying%20New%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <p>
+      A link to the licensing policy and the online form that needs to be completed can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/apply" target="_blank">
+      Apply for a new taxi driver licence | Sheffield City Council</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    `,
+
+  { buttonLabel: "Apply Taxi Driver Licence", formName: "apply_taxi_driver_lice" },
+  { typeKey: "" },
+  { typeKey: "taxi_driver_new_license_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "taxi driver",
+      "driver",
+      "taxi",
+      "license",
+      "licence",
+      "private hire",
+      "hackney carriage",
+      "Sheffield taxi",
+      "DVLA",
+      "fit and proper test",
+      "taxi application",
+      "driver application",
+      "knowledge test",
+      "driving standards",
+      "medical assessment",
+      "right to work",
+      "licensing policy",
+      "apply taxi licence",
+      "apply taxi license",
+      "liscence",
+      "lisence",
+      "licnese",
+      "taksi",
+      "DBS",
+    ],
+    categories: ["Business", "Taxi Licensing"],
+  },
+  { date: "05/06/2026", name: "Liz Taster" }
+);
+
+
+const applyPrivateHireOperatorLicence = new ContentBusiness(
+  "applyPrivateHireOperatorLicence",
+  "Apply - Private Hire Operator Licence",
+  "Details of how to apply to Sheffield City Council for a private hire operator licence.",
+  `
+  
+  <h3>Overview</h3>
+  
+  <p>
+    Customers must apply to Sheffield City Council for a private hire operator licence if they want to <strong>take bookings or supply drivers 
+    for private hire vehicles</strong>. The council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring 
+    they are suitable and do not pose a risk to public safety.
+  </p>
+  
+  <p>
+    Full details about the process and requirements can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator" target="_blank">
+    Applying for a new private hire operator licence | Sheffield City Council</a> 
+  </p>
+  
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Applying%20New%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers need to:</p>
+        <ol>
+          <li>Complete the <strong>private hire operator licence application form</strong> online.</li>
+          <li>Once they submit an application, they will receive a questionnaire by email.</li>
+          <li>Complete and submit the questionnaire and any additional supporting documents.</li>
+          <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
+        </ol>
+    
+      <p>
+        The application is completed online via the council’s website - this can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
+        Apply for a new private hire operator licence | Sheffield City Council</a>
+      </p>
+    
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Private%20Hire%20Operator\`
+          "
+        >
+            Send link to review further information
+      </button>
+
+      <br>
+      <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
+        <ul>
+          <li>Company and contact information </li>
+          <li>Details of directors/partners</li>
+          <li>Operating address and trading name</li>
+          <li>Number of vehicles to be operated </li>
+        </ul>
+    </div>
+  </details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility Criteria</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
+        <ul>
+          <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
+          <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+          <li>Having the <strong>legal right to work in the UK</strong></li>
+          <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+          <li>Using a <strong>business name</strong> that is not the same as, or too similar to, one already used in Sheffield</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Supporting Documents Required</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants must provide the following (where applicable):</p>
+        <ul>
+          <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
+          <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
+          <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
+          <li><strong>Public liability insurance certificate</strong></li>
+          <li><strong>Employers’ liability insurance</strong></li>
+          <li><strong>Planning permission</strong> for operator premises, or confirmation it is not needed</li>
+          <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
+        </ul>
+    
+      <p>
+        Additional documents may be requested during the process.
+      </p>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The cost of the licence depends on:</p>
+        <ul>
+          <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
+          <li>The <strong>number of vehicles operated</strong></li>
+        </ul>
+    
+      <p>
+        The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.
+      </p>
+    
+      <p> 
+        A full breakdown of fees can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
+        Apply for a new private hire operator licence | Sheffield City Council</a>
+      </p>
+    
+      <p>Examples:</p>
+        <ul>
+          <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
+          <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Processing the Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p> 
+        The council will <strong>not process the application until all required documents are received</strong>. 
+        Further information or documents may be requested during the assessment.
+      </p>
+    
+      <p>
+        The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.
+      </p>
+    </div>
+  </details>
+ 
+
+  <h3>Key Information for Call Handling</h3>
+    <ul>
+      <li>Customers must apply <strong>before operating</strong> - it is illegal to accept bookings without a licence.</li>
+      <li>Direct customers to the <strong>online application form</strong> for submission.</li>
+      <li>Emphasise the importance of <strong>submitting all documents correctly</strong> to avoid delays.</li>
+      <li>Remind customers that <strong>additional checks and documents may be required</strong>.</li>
+      <li>Where applying as a company or partnership, <strong>all relevant individuals must meet the requirements</strong> (e.g. DBS and tax checks) </li>
+      <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
+    </ul>
+
+
+  <h3>Related Guidance</h3>
+    <p>
+      Customers can read the council’s <strong>Private Hire Operator and Vehicle Licence Policy</strong> for full details of requirements and standards. 
+    </p>
+    
+    <p>
+      This can be found here: 
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-02/private_hire_operator_and_private_hire_vehicle_licence_policy_0_2.pdf" target="_blank">
+      Private Hire Operator and Vehicle Licence Policy</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Operator%20Policy\`
+        "
+      >
+            Send link to review further information
+    </button>
+    
+    `,
+
+  { buttonLabel: "Apply Private Hire Operator Licence", formName: "apply_taxi_operator_lice" },
+  { typeKey: "" },
+  { typeKey: "taxi_operator_new_license_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "private hire operator licence",
+      "apply private hire operator",
+      "taxi licence",
+      "PHO licence",
+      "taxi",
+      "operator",
+      "licence",
+      "private hire",
+      "operator licence",
+      "fleet size",
+      "licence fees",
+      "private hire operator",
+      "ph operator",
+      "taxi licensing",
+      "apply taxi operator",
+      "licence application form taxi",
+      "operater",
+      "privte",
+      "liscence",
+      "license",
+    ],
+    categories: ["Business", "Taxi Licensing"],
+  },
+  { date: "10/06/2026", name: "Liz Taster" }
+);
+
+const renewPrivateHireOperatorLicence = new ContentBusiness(
+  "renewPrivateHireOperatorLicence",
+  "Renew - Private Hire Operator Licence",
+  "Details of how to renew a private hire operator licence.",
+  `
+  
+  <h3>Overview</h3>
+    <p>
+      Customers must renew <strong>before their current licence expires</strong> to continue operating legally. 
+      A renewal application should be made <strong>within a month of the current licence expiry date</strong>. 
+      A company cannot continue to operate if their operator licence has expired.
+    </p>
+
+    <p>
+      The renewal process is similar to the original application process and requires the same or similar documentation.
+      The operator does not need to complete the long questionnaire needed for a new application.
+      As part of the renewal application, the council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring 
+      they are suitable and do not pose a risk to public safety.
+    </p>
+
+    <p>
+      Full details about the process and requirements can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator" target="_blank">
+      Renewing a private hire operator licence | Sheffield City Council</a> 
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <p>
+      Customers can renew a Private Hire Operator Licence through Sheffield City Council using an online form available here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+      Renew a private hire operator licence | Sheffield City Council</a> 
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers need to:</p>
+        <ol>
+          <li>Complete the <strong>renew private hire operator licence form</strong> online.</li>
+          <li>Submit any supporting documents.</li>
+          <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
+        </ol>
+    
+      <p>
+        The application is completed online via the council’s website - this can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+        Renew a private hire operator licence | Sheffield City Council</a>
+      </p>
+    
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+          "
+        >
+            Send link to review further information
+      </button>
+
+      <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
+        <ul>
+          <li>Company and contact information </li>
+          <li>Details of directors/partners</li>
+          <li>Operating address and trading name</li>
+          <li>Number of vehicles to be operated </li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility Criteria</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Only existing operator's can use the renewal process. If a customer does not have an existing private hire operator licence 
+        they should be directed to the information to apply for a <strong>new</strong> private hire operator licence.
+      <p>  
+    
+      <p>When applying, customers must demonstrate that they continue to be suitable to operate a private hire business. This includes:</p>
+        <ul>
+          <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
+          <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+          <li>Having the <strong>legal right to work in the UK</strong></li>
+          <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+          <li>Having appropriate insurance in place</li>
+          <li>Having appropriate premises in place</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Supporting Documents Required</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants must provide the following (where applicable):</p>
+        <ul>
+          <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
+          <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
+          <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
+          <li><strong>Public liability insurance certificate</strong></li>
+          <li><strong>Employers’ liability insurance</strong></li>
+          <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
+        </ul>
+    
+      <p>
+        Additional documents may be requested during the process.
+      </p>
+    </div>
+  </details>
+ 
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The cost of the licence depends on:</p>
+        <ul>
+          <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
+          <li>The <strong>number of vehicles operated</strong></li>
+        </ul>
+    
+      <p>
+        The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.
+      </p>
+    
+      <p> 
+        A full breakdown of fees can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+        Renew a private hire operator licence | Sheffield City Council</a> 
+      </p>
+    
+      <p>Examples:</p>
+        <ul>
+          <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
+          <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
+        </ul>
+
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+          "
+        >
+              Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Processing the Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p> 
+        The council will <strong>not process the application until all required documents are received</strong>. 
+        Further information or documents may be requested during the assessment.
+      </p>
+    
+      <p>
+        The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.
+      </p>
+    </div>
+  </details>
+ 
+
+  <h3>Key Information for Call Handling</h3>
+    <ul>
+      <li>Customers must renew <strong>before their current licence expires</strong> - it is illegal to accept bookings without a licence.</li>
+      <li>Emphasise the importance of <strong>submitting all documents correctly</strong> to avoid delays.</li>
+      <li>Where applying as a company or partnership, <strong>all relevant individuals must meet the requirements</strong> (e.g. DBS and tax checks) </li>
+      <li>Remind customers that <strong>additional checks and documents may be required</strong>.</li>
+      <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
+    </ul>
+
+
+  <h3>Related Guidance</h3>
+    <p>
+      Customers can read the council’s <strong>Private Hire Operator and Vehicle Licence Policy</strong> for full details of requirements and standards. 
+    </p>
+    <p>
+      This can be found here: 
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-02/private_hire_operator_and_private_hire_vehicle_licence_policy_0_2.pdf" target="_blank">
+      Private Hire Operator and Vehicle Licence Policy</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Operator%20Policy\`
+        "
+      >
+            Send link to review further information
+    </button>
+    
+    `,
+
+  { buttonLabel: "Renew Private Hire Operator Licence", formName: "renew_taxi_operator_lice" },
+  { typeKey: "" },
+  { typeKey: "taxi_operator_renew_licence_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "private hire operator licence",
+      "renew private hire operator",
+      "renew",
+      "taxi licence",
+      "PHO licence",
+      "taxi",
+      "operator",
+      "licence",
+      "private hire",
+      "operator licence",
+      "fleet size",
+      "licence fees",
+      "private hire operator",
+      "ph operator",
+      "taxi licensing",
+      "renew taxi operator",
+      "licence application form taxi",
+      "operater",
+      "privte",
+      "liscence",
+      "license",
+      "renw",
+      "rnew",
+    ],
+    categories: ["Business", "Taxi Licensing"],
+  },
+  { date: "10/06/2026", name: "Liz Taster" }
+);
+
+
+
+const changeOfNameOrAddress = new ContentBusiness(
+  "changeOfNameOrAddress",
+  "Change of Name or Address",
+  "Details of how taxi drivers inform the council if they change their name or address so that their licensing records can be updated.",
+  
+  `
+  <h3>Overview</h3>
+    <p>
+      Customers (taxi drivers) must inform the council <strong>using an online form</strong> if they change their name or address so that their licensing records can be updated.
+    </p>
+    <p>
+      The customer must contact the council straight away after changing their name or address.
+    </p>
+    <p>
+      There is <strong>no charge</strong> unless licence documents need to be reissued.
+    </p>
+
+  <h3>How to Notify the Council</h3>
+    <p>To update their name or address, the customer must:</p>
+        <ul>
+            <li>Complete the <strong>online form</strong>.</li>
+            <li>Provide their <strong>DVLA driving licence</strong> showing the new name or address.</li>
+        </ul>
+    
+    <p>
+      The update form can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/change-name-or-address" target="_blank">
+      Change of name or address | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20Taxi%20Name%20or%20Address\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <h3>Impact on DBS certificates</h3>
+    <p>
+      If the customer has changed their <strong>name</strong> they must apply for a <strong>new Enhanced Disclosure and Barring Service (DBS) 
+      certificate</strong> in their new name.
+      <br>This must be completed in time for badge renewal applications and routine DBS checks (every 6 months).
+    </p>
+    <p>
+      If the customer has changed their <strong>address</strong>, the existing DBS certificate remains valid. 
+      The customer can update their address in their DBS account. The DBS certificate itself will still show the old address.
+    </p>
+
+  <h3>Fees</h3>
+    <ul>
+        <li>Updating licence <strong>records</strong> is free.</li>
+        <li>If updated paper or digital licence documents are required, the cost is <strong>£15</strong>.</li>
+    </ul>
+
+  <h3>Additional Notes</h3>
+    <ul>
+        <li>The same process and fee apply if changes are needed for a taxi vehicle licence.</li>
+        <li>Customers should ensure all supporting documents (such as DVLA licence details) are up to date before submitting their request.</li>
+        <li>The customer may also need to notify their taxi operator.</li>
+    </ul>
+    
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "taxi_change_name_address_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "change of name",
+      "change of address",
+      "taxi drivers",
+      "taxi licensing",
+      "taxi",
+      "change",
+      "name",
+      "address",
+      "licence records",
+      "update details",
+      "driver details",
+      "address change",
+      "name change",
+      "licence reissue",
+      "taxi vehicle licence",
+      "adress",
+      "addres",
+      "chagne",
+      "chage",
+      "updat",
+      "licesnce",
+      "licence",
+      "license",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "11/06/2026", name: "Liz Taster" }
+);
+
+
+
+const convictionsAndDrivingOffences = new ContentBusiness(
+  "convictionsAndDrivingOffences",
+  "Driver Convictions and Driving Offences",
+  "Information for Sheffield taxi drivers on reporting arrests, charges, or convictions.",
+  `
+  <h3>Key message</h3>
+    <p>
+      If you’re a licensed taxi driver in Sheffield, you must tell the council about certain arrests, charges or convictions <strong>within 48 hours</strong>.
+    </p>
+  
+  <h3>How to report</h3>
+    <p>
+      To report a conviction or offence, you should use the online form available here:.
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/convictions-and-driving-offences" target="_blank">
+      Convictions and driving offences | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Convictions%20and%20Driving%20Offences\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <h3>What must be reported</h3>
+    <p>This includes serious matters such as:</p>
+      <ul>
+        <li>sexual offences</li>
+        <li>offences involving violence</li>
+        <li>offenses involving dishonesty</li>
+        <li>using a hand-held mobile phone while driving</li>
+        <li>crimes resulting in death</li>
+        <li>drug-related offences</li>
+        <li>possession of a weapon</li>
+        <li>discrimination</li>
+        <li>exploitation</li>
+      </ul>
+
+  <h3>Why must these be reported?</h3>
+    <p>
+      The council will review your licence to decide if you are still considered a ‘fit and proper’ person to hold a taxi licence.
+    </p>
+
+  <h3>Failure to report</h3>
+    <p>
+      If you don’t report an arrest or offence, it may be treated as dishonest behaviour and could affect your licence, even if no conviction is made.
+    </p>
+
+    `,
+
+  { buttonLabel: "Report Offence", formName: "report_vehicle_offence" },
+  { typeKey: "" },
+  { typeKey: "vehicle_offence_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "taxi driver",
+      "driving",
+      "convictions",
+      "driving offences",
+      "taxi",
+      "report conviction",
+      "report arrest",
+      "taxi licence rules",
+      "mobile phone driving offence",
+      "convictions reporting",
+      "offence notification taxi",
+      "convctions",
+      "onvitions",
+      "drving",
+      "offences",
+      "offence",
+      "ofence",
+      "arrest",
+      "liscence",
+      "licence",
+      "license",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "11/06/2026", name: "Liz Taster" }
+);
+
+
+const renewTaxiDriverLicence = new ContentBusiness(
+  "renewTaxiDriverLicence",
+  "Renew - Taxi Driver Licence",
+  "Guidance on how to renew a taxi driver licence, including requirements, costs, and process details.",
+  `
+<h3>Overview</h3>
+  <p>
+    Customers should renew their taxi driver licence online. Applications are assessed to confirm the driver is still a “fit and proper” person to hold a licence.
+  </p>
+  <p>
+    Drivers can renew their licence <strong>up to 2 months before the expiry date</strong>.
+  </p>
+  <p>
+    If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.
+  </p>
+
+  <p>
+    Detailed information about all stages of renewing a taxi driver licence can be found here:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence" target="_blank">
+    Renewing a taxi driver licence | Sheffield City Council</a>
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <p>
+    A link to the licensing policy and the online form that needs to be completed can be found here:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence/renew-taxi" target="_blank">
+    Renew a taxi driver licence | Sheffield City Council</a>
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
+  
+<h3>How to Apply</h3>
+  <p>
+    Applications are completed using the council’s <strong>online renewal form</strong>. Customers have to submit all relevant documents as part of 
+    the application (details below).
+  </p>
+  <p>
+    Payment is made during the application process.
+  </p>
+  
+  <p>After submission, the council will review the application either:</p>
+    <ul>
+      <li>Confirm the licence has been renewed, or</li>
+      <li>Ask for further information, if required.</li>
+    </ul>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Information and Documents Required</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>Applicants must provide:</p>
+      <ul>
+        <li>Current taxi licence number</li>
+        <li>Licence expiry date (must be within 2 months of renewal)</li>
+        <li>DVLA driving licence number</li>
+        <li>HMRC tax check code (9 digits)</li>
+        <li>DBS certificate number or DBS online service details (dated within the same month as licence expiry)</li>
+        <li>Medical assessment certificate (if required based on age or medical condition)</li>
+        <li>Right to work documentation (if applicable)</li>
+      </ul>
+  </div>
+</details>
+ 
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Costs</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>The fee depends on the duration of the chosen. Licences can be granted for 1, 2 or 3 years:</p>
+      <ul>
+        <li>1 year: £223</li>
+        <li>2 years: £245</li>
+        <li>3 years: £268</li>
+      </ul>
+  
+    <p>
+      Once an online application is completed, the customer will receive a separate email with a link to pay.
+    </p>
+  </div>
+</details>
+
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Late Renewals</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still use the renewal process.</li>
+        <li>After this period, the driver must <strong>apply for a new licence instead of renewing.</strong></li>
+        <li>If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.</li>
+      </ul>
+    </div>
+</details>
+ 
+
+<h3>Important Notes for Call Handling</h3>
+  <ul>
+    <li>Drivers must <strong>stop working immediately if their licence expires</strong> until renewal is confirmed.</li>
+    <li>Payment <strong>does not guarantee automatic renewal</strong> — applications must be approved first.</li>
+    <li>If the renewal window is missed by more than 1 month, direct the customer to <strong>apply for a new licence</strong> instead.</li>
+    <li>Customers should ensure all required information is ready before starting the online application to avoid delays.</li>
+    <li>It is the driver’s responsibility to renew on time, although reminder emails are usually sent.</li>
+  </ul>
+
+  `,
+
+  { buttonLabel: "Renew Taxi Driver Licence", formName: "taxi_driver_renewal" },
+  { typeKey: "" },
+  { typeKey: "taxi_driver_renewal_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "taxi driver licence",
+      "taxi licence renewal",
+      "renew taxi licence",
+      "driver licence renewal",
+      "renew",
+      "taxi",
+      "driver",
+      "licence",
+      "renewal",
+      "permit renewal",
+      "cab",
+      "hackney carriage",
+      "private hire",
+      "driver licence",
+      "liscence",
+      "license",
+      "renwal",
+      "licsense",
+      "hckney",
+      "hackny",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "12/06/2026", name: "Liz Taster" }
+);
+
+
+const renewPrivateHireVehicleLicence = new ContentBusiness(
+  "renewPrivateHireVehicleLicence",
+  "Renew - Private Hire Vehicle Licence",
+  "Guidance on renewing a private hire vehicle licence - including requirements, costs, and process details.",
+
+  `<h3>Overview</h3>
+    <p>
+      Customers should renew their private hire vehicle licence <strong>online</strong>. The licence allows a vehicle to 
+      continue operating for private hire purposes and is valid for a maximum of 12 months.
+    </p>
+    
+    <p>
+      Renewal should be completed <strong>within the same month the licence is due to expire</strong>. 
+      Customers are responsible for checking their licence expiry date and renewing on time.
+    </p>
+    
+    <p> If the licence <strong>expires</strong>, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+      until renewal is confirmed.
+    </p>
+
+  <h3>Useful Links</h3>
+    <p>
+      Detailed information about all stages of renewing a private hire vehicle licence can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/renewing-private-hire" target="_blank">
+      Renewing a private hire vehicle licence | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <p>
+      A link to the online renewal form can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/renewing-private-hire/renew-licence" target="_blank">
+      Renew a private hire vehicle licence | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The vehicle must pass a <strong>compliance test no more than 4 weeks before renewal</strong>.
+      </p>
+    
+      <p>
+        The council usually sends an email <strong>around 6 weeks before expiry</strong> with compliance test details.
+      </p>
+    
+      <p>If the customer has not received a test appointment, they should contact Taxi Licensing:</p>
+        <ul>
+          <li>Email: <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
+          <li>Telephone: 0114 273 4264</li>
+        </ul>
+    </div>
+  </details>
+      
+    
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The renewal fee is <strong>£212</strong>, payable online at the time of application.
+      </p>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers must apply <strong>online</strong>.
+      </p>
+    
+      <p>
+        Payment is made during the application process.
+      </p>
+    
+      <p>Applicants must provide:</p>
+        <ul>
+          <li>Private hire vehicle registration number</li>
+          <li>Private hire vehicle licence number</li>
+          <li>Licence expiry date</li>
+          <li>Valid vehicle insurance certificate (document upload)</li>
+          <li>Vehicle compliance/test certificate (document upload)</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are processed within <strong>5 working days</strong> after submission and payment.
+      </p>
+    
+      <p>The customer will receive:</p>
+        <ul>
+          <li>A <strong>PDF licence by email</strong></li>
+          <li>A <strong>paper licence and plate by post</strong></li>
+        </ul>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Late Renewals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
+        use the renewal process.
+      </p>
+    
+      <p>
+        After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
+      </p>
+    
+      <p>
+        If the licence has expired, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+        until renewal is confirmed.
+      </p>
+    </div>
+  </details>
+ 
+
+  <h3>Important Notes for Call Handling</h3>
+    <ul>
+      <li>The renewal application should be made as soon as possible after the vehicle passes its compliance test.</li>
+      <li>If a vehicle compliance test is in the last week of the final month the licence is valid, 
+          the customer will be given the option to collect the licence.</li>
+      <li>A valid insurance policy covering use as a taxi must be in place.</li>
+      <li>If the licence expires, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+          until renewal is confirmed.</li>
+    </ul>
+    
+    `,
+
+  { buttonLabel: "Renew Private Hire Licence", formName: "renew_private_hire" },
+  { typeKey: "" },
+  { typeKey: "renew_private_hire_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "private hire vehicle licence",
+      "private hire",
+      "taxi",
+      "licence",
+      "renew",
+      "private",
+      "hire",
+      "compliance test",
+      "renewal",
+      "vehicle",
+      "license",
+      "licensing",
+      "licencing",
+      "privte",
+      "vehcle",
+      "renwal",
+      "licsense",
+      "renw",
+      "rnew",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "17/06/2026", name: "Liz Taster" }
+);
+
+
+const renewHackneyCarriageVehicleLicence = new ContentBusiness(
+  "renewHackneyCarriageVehicleLicence",
+  "Renew - Hackney Carriage Vehicle Licence",
+  "Guidance on renewing a hackney carriage vehicle licence - including requirements, costs, and process details.",
+
+  `
+  <h3>Overview</h3>
+    <p>
+      Customers should renew their hackney carriage vehicle licence <strong>online</strong>. The licence allows a vehicle to 
+      continue operating legally as a hackney carriage and is valid for a maximum of 12 months.
+    </p>
+    <p>
+      Renewal should be completed <strong>within the same month the licence is due to expire</strong>. 
+      Customers are responsible for checking their licence expiry date and renewing on time.
+    </p>
+    <p>
+      If the licence <strong>expires</strong>, the vehicle <strong>cannot legally be used as a taxi</strong> 
+      until renewal is confirmed.
+    </p>
+
+  <h3>Useful Links</h3>
+    <p>
+      Detailed information about all stages of renewing a hackney carriage vehicle licence can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/renewing-hackney-carriage" target="_blank">
+      Renewing a hackney carriage vehicle licence | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <p>
+      The Hackney Carriage Vehicle Licence Policy, and a link to the online renewal form can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/renewing-hackney-carriage/renew-licence" target="_blank">
+      Renew your hackney carriage vehicle licence | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The vehicle must pass a <strong>compliance test no more than 4 weeks before renewal</strong>.
+      </p>
+      <p>
+        The council usually sends an email <strong>around 6 weeks before expiry</strong> with compliance test details.
+      </p>
+    
+      <p>If the customer has not received a test appointment, they should contact Taxi Licensing:</p>
+        <ul>
+          <li>Email: <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
+          <li>Telephone: 0114 273 4264</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The renewal fee is <strong>£212</strong>, payable online at the time of application.
+      </p>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers must apply <strong>online</strong>.
+      </p>
+      <p>
+        Payment is made during the application process.
+      </p>
+    
+      <p>Applicants must provide:</p>
+        <ul>
+          <li>Hackney carriage vehicle registration number</li>
+          <li>Hackney carriage vehicle licence number</li>
+          <li>Licence expiry date</li>
+          <li>Valid vehicle insurance certificate (document upload)</li>
+          <li>Vehicle compliance/test certificate (document upload)</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are processed within <strong>5 working days</strong> after submission and payment.
+      </p>
+    
+      <p>The customer will receive:</p>
+        <ul>
+          <li>A <strong>PDF licence by email</strong></li>
+          <li>A <strong>paper licence and plate by post</strong></li>
+        </ul>
+    </div>
+  </details>
+       
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Late Renewals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
+        use the renewal process.
+      </p>
+      <p>
+        After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
+      </p>
+      <p>
+        If the licence has expired, the vehicle <strong>cannot legally be used as a hackney carriage</strong> 
+        until renewal is confirmed.
+      </p>
+    </div>
+  </details>
+       
+
+  <h3>Important Notes for Call Handling</h3>
+    <ul>
+      <li>The renewal application should be made as soon as possible after the vehicle passes its compliance test.</li>
+      <li>If a vehicle compliance test is in the last week of the final month the licence is valid, 
+          the customer will be given the option to collect the licence.</li>
+      <li>A valid insurance policy covering use as a taxi must be in place.</li>
+      <li>If the licence expires, the vehicle <strong>cannot legally be used as a taxi</strong> 
+          until renewal is confirmed.</li>
+    </ul>
+    
+    `,
+
+  { buttonLabel: "Renew Hackney Carriage Licence", formName: "renew_hackney_carriage" },
+  { typeKey: "" },
+  { typeKey: "renew_hackney_carriage_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "hackney carriage vehicle licence",
+      "hackney",
+      "carriage",
+      "taxi",
+      "licence",
+      "renew",
+      "compliance test",
+      "renewal",
+      "vehicle",
+      "license",
+      "licensing",
+      "licencing",
+      "hckney",
+      "hackny",
+      "carrage",
+      "carrige",
+      "carridge",
+      "carraige",
+      "vehcle",
+      "renwal",
+      "licsense",
+      "renw",
+      "rnew",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "17/06/2026", name: "Liz Taster" }
+);
+
+
+const applyKnowledgeTest = new ContentBusiness(
+  "applyKnowledgeTest",
+  "Apply - Knowledge Test",
+  "Information on applying for the taxi driver Knowledge Test, including requirements, cost, and process.",
+  
+  `<h3>Overview</h3>
+    <p>
+      The Knowledge Test is part of the process for applying for a new taxi driver licence. It is designed 
+      to assess whether applicants have a good understanding of the local area and key responsibilities required 
+      to work as a taxi or private hire driver.
+    </p>
+    <p>
+      Applicants must pass the Knowledge Test as part of Stage Two of the taxi driver licensing process, 
+      and forms part of assessing whether an applicant is “fit and proper” to hold a taxi driver licence.
+    </p>
+    <p>
+      Additional information and a link to apply can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test" target="_blank">
+      Knowledge Test | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Knowledge%20Test\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <h3>How to Apply</h3>
+    <p>
+      The Knowledge Test must be booked <strong>online</strong>.
+    </p>
+    <p>
+      Applicants need to <strong>make an appointment</strong> to take the test.
+    </p>
+    <p>
+      Payment is made as part of the online application.
+    </p>
+    <p>
+      If an applicant arrives late for their appointment, the test will not take place and the fee will not be refunded.
+    </p>
+
+  <h3>Cost</h3>
+    <p>
+      The fee to take the Knowledge Test is <strong>£87</strong>.
+    </p>
+    <p>
+      If the applicant fails, the fee is <strong>non-refundable</strong> and must be paid again to retake the test.
+    </p>
+    
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the Knowledge Test Covers</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants are expected to demonstrate knowledge of:</p>
+        <ul>
+          <li>Routes within Sheffield</li>
+          <li>Places of interest</li>
+          <li>Highway Code</li>
+          <li>Road safety</li>
+          <li>Safeguarding responsibilities</li>
+        </ul>
+    
+      <p>
+        Drivers should be able to navigate the city without relying on satnav or other electronic navigation devices.
+      </p>
+    </div>
+  </details>  
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Test Format and Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The test is computer-based and taken at a council office.
+      </p>
+      <p>
+        Applicants must score at least <strong>80% in each section</strong> to pass.
+      </p>
+      <p>
+        The test result is valid for <strong>one year</strong> from the pass date.
+      </p>
+    </div>
+  </details>
+ 
+ 
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility and Requirements to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Before applying for the Knowledge Test, applicants must:</p>
+      <ul>
+        <li>Be <strong>over 21 years of age</strong></li>
+        <li>Have completed and passed:</li>
+        <ul>
+          <li>Level 2 Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
+          <li>Safeguarding training</li>
+          <li>Disability Awareness training</li>
+        </ul>
+      </ul>
+
+      <p>Applicants must also provide:</p>
+        <ul>
+          <li>DVLA driving licence number (held for at least 12 months)</li>
+          <li>A photo of their DVLA driving licence</li>
+          <li>A passport-style photograph</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Outcome</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Applicants who pass can continue with the taxi driver licence process.</li>
+        <li>Applicants who fail must pay again to retake the test.</li>
+      </ul>
+    </div>
+  </details>
+
+    
+    `,
+
+  { buttonLabel: "Apply for Knowledge Test", formName: "apply_knowledge_test" },
+  { typeKey: "" },
+  { typeKey: "knowledge_test_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "Knowledge Test",
+      "Knowledge",
+      "Test",
+      "Taxi driver licence",
+      "taxi",
+      "driver",
+      "licence",
+      "Private hire",
+      "hackney carriage",
+      "licensing",
+      "Taxi test",
+      "application",
+      "Book knowledge test",
+      "Taxi exam",
+      "Driver assessment",
+      "Taxi licence test",
+      "KnowledgeTest",
+      "knowlege",
+      "tst",
+      "knowlegeTest",
+      "knwledge",
+      "liscence",
+      "lisence",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "17/06/2026", name: "Liz Taster" }
+);
+
+
+const orderReplacementTaxiItems = new ContentBusiness(
+  "orderReplacementTaxiItems",
+  "Order Replacement Taxi Items",
+  "Details of how to request replacement taxi licensing items if lost or stolen.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Taxi drivers or vehicle licence holders can request replacement taxi licensing items if items have been lost or stolen. 
+      The service allows users to order replacements online for a small fee per item.
+    </p>
+    <p>
+      Full details, including a document showing pictures of the different items and a link to the form to order replacements 
+      can be found here:<a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/order-replacement-taxi-items"target="_blank">
+      Order replacement taxi items | Sheffield City Council</a>
+    </p>
+
+        <button
+          type="button"
+          class="dform_widget email-btn dform_widget_type_button"
+          aria-label="For further information send link"
+          onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Order%20Replacement%20Taxi%20Items\`
+           "
+         >
+             Send link to review further information
+        </button>
+
+  <h3>Items Available</h3>
+
+  <h4>Taxi Driver Items</h4>
+    <p>The following replacement items can be ordered:</p>
+      <ul>
+        <li>Internal driver ID – £6</li>
+        <li>Internal badge for windscreen – £6</li>
+        <li>ID badge (card) – £20</li>
+        <li>Paper licence (paper and digital copy issued) – £15</li>
+        <li>Lanyard – £2</li>
+      </ul>
+      <br>
+
+  <h4>Taxi Vehicle Items</h4>
+    <p>The following replacement vehicle items are available:</p>
+      <ul>
+        <li>Licence plate (private hire or hackney carriage) – £25</li>
+        <li>Internal blue private hire sticker – £6</li>
+        <li>Internal hackney carriage sticker – £6</li>
+        <li>External advance booking door sign – £6</li>
+        <li>Bracket – £15</li>
+        <li>Wallet for private hire sticker – £6</li>
+        <li>Paper licence (paper and digital copy issued) – £15</li>
+        <li>Private hire advance booking door stickers - £6 for one sticker/£12 for two stickers</li>
+      </ul>
+
+  <h3>How to Request</h3>
+    <p>
+      Orders are made <strong>online</strong> using a form and payment links.
+    </p>
+    <p>
+      Items can either be posted to the applicant, or collected in person. Some larger items are collection only.
+    </p>
+    <p>
+      The council will confirm when items are ready for collection.
+    </p>
+
+  `,
+
+  { buttonLabel: "Order Replacement Items", formName: "request_replacement_taxi" },
+  { typeKey: "" },
+  { typeKey: "order_taxi_replacements_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "taxi",
+      "replacement",
+      "items",
+      "order",
+      "licence",
+      "licensing",
+      "badge replacement",
+      "ID replacement",
+      "plate replacement",
+      "hackney carriage",
+      "private hire",
+      "taxi stickers",
+      "lost taxi",
+      "stolen taxi",
+      "replcement",
+      "replacment",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "18/06/2026", name: "Liz Taster" }
+);
+
+
+
+const taxiAdvertisingConsent = new ContentBusiness(
+  "taxiAdvertisingConsent",
+  "Taxi Advertising Consent",
+  "Details of how to apply for consent to display advertising on private hire and hackney carriage vehicles.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Advertising consent is required <strong>before</strong> any advert is added to a licensed taxi vehicle, and customers must apply 
+      to the licensing service with full details of their proposal.
+    </p>
+    <p>
+      All content must meet strict standards, and approval must be granted before any advertising is displayed on a 
+      licensed vehicle.
+    </p>
+    <p>
+      This applies to both private hire vehicles and hackney carriage (taxi) vehicles.
+    </p>
+    
+    <p>Full details and a link to apply online can be found here:</p>
+      <ul>
+        <li>For <strong>private hire</strong> vehicles: 
+            <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-0" target="_blank">
+            Private hire advertising consent | Sheffield City Council</a></li>
+      </ul>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Advertising%20Consent\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+      <ul>
+        <li>For <strong>hackney carriage</strong> vehicles: 
+            <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-0" target="_blank">
+            Hackney carriage advertising consent | Sheffield City Council</a></li>
+      </ul>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Hackney%20Carriage%20Advertising%20Consent\`
+        "
+      >
+            Send link to review further information
+    </button>    
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Restrictions on Advertising Content</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>All advertisements are checked for suitability. The council <strong>will not approve adverts</strong> that:</p>
+        <ul>
+          <li>Promote smoking, tobacco, or vaping</li>
+          <li>Promote alcohol or gambling</li>
+          <li>Are sexual, religious, or political in nature</li>
+          <li>Are likely to cause offence to members of the public</li>
+        </ul>
+    </div>
+  </details>
+    
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Where Advertising Can Be Displayed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Advertising may be placed:</p>
+        <ul>
+          <li>On the rear window - using contra vision or similar material</li>
+          <li>As half or full vehicle livery* – this must not distract from required signage</li>
+          <li>On a digital screen</li>
+          <li>As illuminated exterior media</li>
+          <li>As a door sign (<em>hackney carriage only</em>)</li>
+          <li>On tip seats (<em>hackney carriage only</em>)</li>
+        </ul>
+    
+      <p>
+        <em>* If a vehicle is fully wrapped (full livery) the DVLA V5C logbook must be updated, and vehicle colour must be recorded as “full livery”.</em>
+      </p>
+      <p>
+      Advertisements <strong>must not</strong> cover any required notices, signs, or licence plates and must not negatively affect the safety or appearance of the vehicle.
+      </p>
+      <p>
+        If the council determines that advertising is unsafe or in poor condition, the vehicle licence may be suspended until the issue is resolved.
+      </p>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Advertising consent application - £15</li>
+        <li>Full livery advertising application - £55</li>
+      </ul>
+    </div>
+  </details>
+    
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Key Requirements and How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are <strong>submitted online</strong>.
+      </p>
+      <p>
+        The application must be submitted by the <strong>vehicle owner</strong>.
+      </p>
+      <p>
+        <strong>Full details</strong> of the proposed advertisement must be provided as part of the application.
+      </p>
+    
+      <p>A <strong>contract for the advertisement</strong> must be included with the application. The contract must:</p>
+        <ul>
+          <li>State the vehicle details</li>
+          <li>Include the end date of the contract</li>
+          <li>Confirm the advertisement will be removed at the end of the contract period</li>
+        </ul>
+    
+      <p>
+        The customer <strong>must wait for approval</strong> before adding the advertisement to the vehicle.
+      </p>
+    </div>
+  </details>
+ 
+
+  <h3>Key Advice for Call Handling</h3>
+    <ul>
+      <li>Customers must not apply or display advertising before receiving approval.</li>
+      <li>Remind customers that not all advert types are allowed.</li>
+      <li>Check whether the enquiry relates to a <strong>private hire vehicle</strong> or a <strong>hackney carriage</strong>, 
+          as permitted advertising locations differ.</li>
+      <li>If customers ask about costs, confirm the standard fee of £15, or £55 if full livery.</li>
+    </ul>
+
+  `,
+
+  { buttonLabel: "Request Advertising Consent", formName: "request_vehicle_advert" },
+  { typeKey: "" },
+  { typeKey: "vehicle_advert_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "taxi advertising consent",
+      "advert",
+      "advertising",
+      "taxi",
+      "consent",
+      "approval",
+      "vehicle",
+      "hackney carriage",
+      "private hire",
+      "taxi livery",
+      "livery",
+      "adverts",
+      "application",
+      "apply",
+      "contra vision",
+      "taxi ad",
+      "vehcle",
+      "advertisng",
+      "advertisin",
+      "addvertising",
+      "hackney cab",
+      "ads",
+      "taxi marketing"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "18/06/2026", name: "Liz Taster" }
+);
+
+
+
+const reportTaxiAccident = new ContentBusiness(
+  "reportTaxiAccident",
+  "Reporting Taxi Accidents",
+  "Guidance on reporting taxi accidents, required actions, and compliance with licensing requirements.",
+  `
+  <h3>Overview</h3>
+    <p>
+      If a taxi has been involved in an accident, this <strong>must be reported within 72 hours</strong>.
+    </p>
+    <p>
+      This applies to both <strong>private hire vehicles</strong> and <strong>hackney carriage vehicles</strong> 
+      licensed by Sheffield City Council.
+    </p>
+    <p>
+      Drivers must complete the <strong>Accident Damage Report form online</strong>, then await vehicle inspection and Licensing 
+      instructions before returning to work. This ensures compliance with taxi licensing requirements and maintains passenger safety.
+    </p>
+    
+    <p>
+      Further details and a link to the form can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/road"target="_blank">
+      Road traffic accident or damage | Sheffield City Council</a>
+    </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Traffic%20Accident\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How and What to Report</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Drivers (or vehicle proprietors) must complete an <strong>Accident Damage Report form online</strong>.
+      </p>
+    
+      <p>They must provide full details of the accident and damage to the vehicle, including any damage that affects:</p>
+        <ul>
+          <li>Safety</li>
+          <li>Performance</li>
+          <li>Appearance</li>
+        </ul>
+    
+      <p>
+        This information allows the Licensing Service to understand what happened and assess the condition of the vehicle.
+      </p>
+    </div>
+  </details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>After the Report is Submitted</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council will <strong>inspect the vehicle in person</strong> to decide whether the vehicle is still suitable to carry passengers.
+      </p>
+      <p>
+        If the vehicle is <strong>not fit for use</strong>, the vehicle licence will be <strong>suspended</strong>. 
+        This means the vehicle cannot be used until repairs are completed, and the vehicle <strong>passes a compliance test</strong> 
+        at the Council’s testing station.
+      </p>
+      <p>
+        Where a vehicle is badly damaged and cannot be driven, the driver will be asked to return the vehicle 
+        licence plate rather than being issued with a suspension.
+      </p>
+    </div>
+  </details>
+
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After the Repairs are Completed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once the vehicle has been repaired, the driver is responsible for <strong>contacting the Licensing Service</strong>, 
+        who will arrange a <strong>compliance test</strong> before the vehicle can return to service.
+      </p>
+    </div>
+  </details>
+
+
+  <h3>Key Messages for Call Handling</h3>
+    <ul>
+      <li>Report the accident <strong>within 72 hours</strong></li>
+      <li>Complete the <strong>Accident Damage Report form</strong> online</li>
+      <li>Do not use the vehicle if it may be unsafe</li>
+      <li>Await inspection and follow Licensing instructions before returning to work</li>
+    </ul>
+    
+    `,
+
+  { buttonLabel: "Report Accident", formName: "report_vehicle_accident" },
+  { typeKey: "" },
+  { typeKey: "vehicle_accident_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "report",
+      "reporting",
+      "taxi accident",
+      "taxi",
+      "accident",
+      "damage",
+      "private hire",
+      "hackney carriage",
+      "vehicle",
+      "road traffic",
+      "traffic",
+      "crash",
+      "collision",
+      "colision",
+      "collission",
+      "incident",
+      "incidents",
+      "incedent",
+      "accidnet",
+      "acident",
+      "vehcle",
+      "hackny",
+      "hakney",
+      "carrage",
+      "carridge",
+      "carrige",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "18/06/2026", name: "Liz Taster" }
+);
+
+
+const taxiComplaints = new ContentBusiness(
+  "taxiComplaints",
+  "Taxi Complaint Process",
+  "Details of how to report issues with taxi drivers, vehicles, or operators licensed in Sheffield.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Customers can report <strong>complaints about taxi drivers</strong>, vehicles, or operators licensed in Sheffield. 
+      The council is responsible for investigating these complaints and may take enforcement action where necessary.
+    </p>
+    <p>
+      Complaints are currently submitted by email using a form available here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/passenger-information/complain-about-taxi-or-driver" target="_blank">
+      Complain about a taxi or driver | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Complaint\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <p>
+      <strong>In emergencies, residents should call 999.</strong>
+    </p>
+
+  <h3>What Can Be Reported</h3>
+    <p>Complaints may include issues such as:</p>
+      <ul>
+        <li>Poor customer service</li>
+        <li>Poor or unsafe driving standards</li>
+        <li>Overcharging</li>
+        <li>Refusal to take a passenger</li>
+        <li>Vehicle defects</li>
+        <li>Failure to display driver or vehicle identification</li>
+        <li>Unnecessarily long routes</li>
+        <li>Illegal plying for hire</li>
+        <li>Issues with operators</li>
+        <li>Equality concerns (e.g. refusal of wheelchair users or guide dogs)</li>
+        <li>Breaches of licence conditions</li>
+      </ul>
+
+  <h3>How to Report</h3>
+    <p>
+      Customers should complete a <strong>taxi incident/complaint form</strong>, providing as much detail as possible to support the investigation.
+    </p>
+    <p>
+      Submit the form and any supporting information (such as evidence) to the taxi licensing service via email at 
+      <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a>.
+    </p>
+
+  <h3>Investigation and Outcomes</h3>
+    <p>The council investigates complaints relating to taxi drivers, vehicles, and operators. They may:</p>
+      <ul>
+        <li>Offer advice</li>
+        <li>Issue warnings</li>
+        <li>Suspend or revoke licences</li>
+        <li>Prosecute where appropriate</li>
+      </ul>
+
+  <h3>Important Considerations</h3>
+    <ul>
+      <li>If prosecution is pursued, the complainant may need to attend a council committee or magistrates’ court as a witness.</li>
+      <li>Criminal matters (such as assault, theft, or dangerous driving) must be reported to the police first, then to the licensing service.</li>
+      <li>In emergencies, residents should call 999.</li>
+    </ul>
+    
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "taxi_driver_licensing_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "taxi",
+      "complaint",
+      "report",
+      "issue",
+      "driver",
+      "vehicle",
+      "taxi operator",
+      "overcharging",
+      "unsafe driving",
+      "refusal passenger",
+      "complaints",
+      "cab",
+      "hackney carriage",
+      "private hire",
+      "complant",
+      "compaint",
+      "lisencing"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "18/06/2026", name: "Liz Taster" }
+);
+
+
+const medicalExemptionsTaxi = new ContentBusiness(
+  "medicalExemptionsTaxi",
+  "Medical Exemptions for Taxi Drivers",
+  "Information on medical exemptions for taxi drivers under the Equality Act 2010, including how to apply.",
+
+  `
+
+    <p>
+      Taxi drivers are legally required to assist passengers with disabilities, including carrying <strong>assistance dogs</strong> and helping passengers using 
+      <strong>wheelchairs</strong>. This duty is set out under the Equality Act 2010.
+    </p>
+    <p>
+      A <strong>medical exemption</strong> may be granted if a driver has a medical condition that <strong>prevents them from carrying out these duties</strong>.
+    </p>
+    <p>
+      Further information and a link to the online form can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/medical-exemptions" target="_blank">
+      Medical exemptions | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Medical%20Exemptions\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <h3>Types of Medical Exemption</h3>
+    <p>There are two types of exemption certificates available:</p>
+      <ul>
+        <li><strong>Section 166 Exemption Certificate (Wheelchairs)</strong> - applies where a driver’s <strong>physical health makes it impossible or very difficult</strong> to assist passengers in wheelchairs.</li>
+        <li><strong>Section 169 Exemption Certificate (Assistance Dogs)</strong> - applies where a driver has a <strong>medical condition caused by being near dogs</strong>.</li>
+      </ul>
+    
+    <p>
+      Evidence must confirm that the condition makes it <strong>impossible or very difficult</strong> to carry out these duties.
+    </p>
+
+  <h3>What the Exemption Means</h3>
+    <p>
+      Drivers who are granted an exemption will receive a <strong>certificate</strong>.
+    </p>
+    <p>
+      The certificate must be <strong>displayed in the taxi</strong>, or be <strong>produced on request</strong>.
+    </p>
+    <p>
+      Without a valid exemption certificate, drivers are still required by law to provide assistance.
+    </p>
+
+  <h3>How to Apply</h3>
+    <ol>
+      <li>Complete the <strong>online form</strong> to request a medical exemption</li>
+      <li>Obtain <strong>medical evidence</strong> from your GP, or a doctor approved by the council – ensure this confirms that you cannot carry passengers with wheelchairs, and/or assistance dogs</li>
+      <li>Submit the evidence to support your application</li>
+    </ol>
+
+    <p>
+      The application will then be reviewed by the Licensing team and a certificate issued if an exemption is granted.
+    </p>
+
+  <h3>Key Information for Call Handlers</h3>
+    <ul>
+      <li>Medical exemptions are <strong>not automatic</strong> and must be approved by the council.</li>
+      <li>A <strong>valid certificate must be displayed, or shown</strong> if requested.</li>
+      <li>Without an exemption, drivers <strong>must assist wheelchair users and carry assistance dogs</strong> and <strong>must not charge extra</strong> for doing so.</li>
+    </ul>
+    
+    `,
+
+  { buttonLabel: "Apply Medical Exemption", formName: "request_driver_med_exemp" },
+  { typeKey: "" },
+  { typeKey: "driver_exemption_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "medical",
+      "exemption",
+      "taxi",
+      "drivers",
+      "wheelchair",
+      "assistance dog",
+      "guide dog",
+      "dog",
+      "section 166",
+      "section 169",
+      "taxi licensing",
+      "apply",
+      "disability",
+      "wheelchair",
+      "assistance",
+      "certificate",
+      "exemptions",
+      "medcial",
+      "excemption",
+      "exemtion"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "19/06/2026", name: "Liz Taster" }
+);
+
+
+const dbsChecksTaxiDrivers = new ContentBusiness(
+  "dbsChecksTaxiDrivers",
+  "DBS Checks for Taxi Drivers",
+  "Information and application guidance for taxi drivers requiring DBS checks.",
+  `
+    <h3>Key Information</h3>
+    <p>
+      Taxi drivers must have an <strong>Enhanced DBS check with barred list checks</strong>.
+    </p>
+    <p>
+      This is part of the process for applying for a <strong>new taxi driver licence</strong>, 
+      and is used to assess if they are a <strong>fit and proper person</strong> to hold a licence.
+    </p>
+    <p>
+      Further details, including how to apply can be found here:
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/taxi-0" target="_blank">
+      Taxi driver disclosure and barring checks | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Driver%20DBS\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <h3>What Drivers Need to Do</h3>
+    <ul>
+      <li>Request a DBS application pack from the taxi licensing team</li>
+      <li>Complete the form and attend <strong>Howden House</strong> for document checks</li>
+      <li>Pay the <strong>£49.50 fee</strong></li>
+    </ul>
+
+    <p>
+      After receiving the DBS Certificate, drivers must <strong>send a copy</strong> of the certificate to the Licensing team and sign up to the 
+      <strong>DBS Update Service within 30 days</strong>.
+    </p>
+
+    <h3>Ongoing Requirements</h3>
+      <p>
+        DBS checks are reviewed <strong>every 6 months</strong>.
+      </p>
+      <p>
+        Drivers must stay subscribed to the <strong>Update Service</strong> or provide a recent certificate.
+      </p>
+      <p>
+        Failure to do this may result in <strong>licence suspension</strong>.
+      </p>
+
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "taxi_driver_new_license_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "DBS",
+      "Disclosure",
+      "Barring",
+      "Service",
+      "taxi",
+      "driver",
+      "drivers",
+      "licence",
+      "license",
+      "licensing",
+      "Enhanced DBS",
+      "barred list",
+      "check",
+      "checks",
+      "Update Service",
+      "CRB",
+      "criminal record",
+      "dbs chek",
+      "drviver",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "19/06/2026", name: "Liz Taster" }
+);
+
+
+
+const taxiDriverMedical = new ContentBusiness(
+  "taxiDriverMedical",
+  "Driver Medical Assessments",
+  "Requirements and process for taxi driver medical assessments.",
+  `
+  <h3>Overview</h3>
+    <p>
+      Taxi drivers must meet specific medical standards to ensure they are safe to carry passengers and operate a licensed vehicle. 
+      As part of applying for a new taxi driver licence in Sheffield, applicants are required to complete a <strong>DVLA Group 2 medical</strong>. 
+      This is a higher medical standard to ensure taxi drivers can meet the demands of the role.
+    </p>
+    <p>
+      Further information, including a copy of the documentation needed can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/taxi-2"target="_blank">
+      Taxi driver medical assessments | Sheffield City Council</a>
+    </p>
+
+  <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Driver%20Medical%20Assessments\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the Medical Checks</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The assessment looks at key health areas, including:</p>
+        <ul>
+          <li>Neurological health</li>
+          <li>Eyesight</li>
+          <li>Heart health</li>
+          <li>Mental health</li>
+          <li>Diabetes</li>
+          <li>Drug or alcohol issues</li>
+          <li>Other relevant conditions</li>
+      </ul>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ongoing Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Drivers must continue to meet medical standards after they are licensed.
+      </p>
+    
+      <ul>
+        <li>Drivers <strong>age 45+</strong> require a medical <strong>every 5 years</strong></li>
+        <li>Drivers <strong>age 65+</strong> require a medical <strong>every year</strong></li>
+        <li>Extra checks may be required if recommended by a GP</li>
+        <li>Drivers must report any health changes</li>
+      </ul>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Complete the Medical Assessment</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applicants must obtain a <strong>medical assessment form (medical pack)</strong> from the council.
+      </p>
+      <p>
+        The form must be completed by <strong>the applicant’s own GP</strong>, or a doctor recommended by the licensing authority.
+      </p>
+
+      <p>
+        Once completed, both the <strong>medical pack</strong> and a <strong>certificate of fitness</strong> must be returned to the 
+        licensing service in one of the following ways:
+      </p>
+        <ul>
+          <li>Email (photos of all pages)</li>
+          <li>Post</li>
+          <li>In person</li>
+        </ul>
+    </div>
+  </details>
+    
+
+  <h3>Key information for call centre staff</h3>
+    <ul>
+      <li>A medical assessment is <strong> mandatory for all new taxi driver licence applications</strong>.</li>
+      <li>The assessment must meet <strong>DVLA Group 2 standards</strong>.</li>
+      <li>Forms must be completed by an appropriate doctor.</li>
+      <li>Completed documents must be returned before the application can proceed.</li>
+      <li>Ongoing medical checks are required depending on the driver’s age.</li>
+    </ul>
+
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "taxi_driver_new_license_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "taxi",
+      "driver",
+      "drivers",
+      "licence",
+      "licensing",
+      "DVLA Group 2",
+      "medical",
+      "assessment",
+      "assessments",
+      "check",
+      "checks",
+      "GP",
+      "doctor",
+      "medical pack",
+      "certificate of fitness",
+      "medcial",
+      "assesment",
+      "lisence",
+      "drvier"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "19/06/2026", name: "Liz Taster" }
+);
+
+
+const taxiVehicleInspections = new ContentBusiness(
+  "taxiVehicleInspections",
+  "Vehicle Inspections and Testing",
+  "Details of vehicle inspections and testing are required to ensure that all private hire and hackney carriage vehicles are safe to operate.",
+  
+  `
+  <h3>Overview</h3>
+    <p>
+      Vehicle inspections and testing are required to ensure that all private hire and hackney carriage vehicles are safe to operate. 
+      Vehicles are checked regularly because of the high mileage and workload associated with taxi use. The frequency of testing depends on the age of the vehicle.
+    </p>
+    <p>
+      All vehicles must pass a <strong>compliance test at the council’s testing station</strong> before a licence can be issued.
+    </p>
+    <p>
+      Further details about vehicle testing can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/vehicle" target="_blank">
+        Vehicle inspections and testing | Sheffield City Council</a>
+    </p>
+  
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Vehicle%20Inspections%20and%20Testing\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    <p>
+      A copy of the Vehicle Testing Customer Charter can be found here: 
+      <a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-hire-vehicle-licence/inspections-and-testing/vehicle-testing-customer-charter" target="_blank">
+      Vehicle testing customer charter | Sheffield City Council</a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Vehicle%20Testing%20Customer%20Charter\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>New Vehicle Applications</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    
+    <div class="accordion-content">
+
+      <p>
+        For new vehicle applications the vehicle must pass a <strong>compliance test before a licence can be issued</strong>.
+      </p>
+      <p>
+        This applies even if the vehicle would not normally require an MOT (for example, if it is less than 3 years old).
+      </p>
+      
+      <p><strong>Before receiving a test appointment</strong>, the applicant must submit either:</p>
+        <ul>
+          <li>A new private hire vehicle licence application, or</li>
+          <li>A new hackney carriage vehicle licence application</li>
+        </ul>
+     
+      <p><strong>After passing the test</strong> the vehicle must be licensed within:</p>
+        <ul>
+          <li><strong>10 days</strong> for private hire vehicles</li>
+          <li><strong>14 days</strong> for hackney carriage vehicles</li>
+        </ul>
+
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Vehicles That Are Already Licensed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    
+    <div class="accordion-content">
+
+      <p>
+        For existing licensed vehicles a <strong>compliance test is required before renewal</strong>, and no more than <strong>4 weeks before the licence expiry date</strong>.
+      </p>
+      <p>
+        The council will usually contact the licence holder <strong>around 6 weeks in advance</strong> with a test date and time.
+      </p>
+      <p>
+        It is the vehicle proprietor’s responsibility to ensure the vehicle is licensed on time and to contact Taxi Licensing if they do not receive a test appointment.
+      </p>
+
+    <h4>Test frequency</h4>
+      <p>
+        The number of required tests depends on the <strong>age and type of vehicle</strong>. Vehicle age is based on <strong>the V5C registration document.</strong>
+      </p>
+      
+      <p><em><strong>Private hire vehicles</strong></em></p>
+        <ul>
+          <li>Under 5 years old: <strong>every 12 months</strong></li>
+          <li>Over 6 years old: <strong>every 6 months</strong></li>
+        </ul>
+
+      <p><em><strong>Hackney carriage vehicles</strong></em></p>
+        <ul>
+        <li>Under 9 years old: <strong>every 12 months</strong></li>
+        <li>Over 9 years old: <strong>every 6 months</strong></li>
+        </ul>
+
+    </div>
+  </details>
+
+
+  <details class="accordion">
+
+    <summary class="accordion-header">
+      <h3>Test Appointments</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    
+    <div class="accordion-content">
+  
+      <h4>Receiving a test date</h4>
+        <ul>
+          <li>Test appointments are usually issued automatically in advance.</li>
+          <li>If no appointment is received, drivers must contact Taxi Licensing to arrange one.</li>
+        </ul>
+
+      <h4>Changing a test date</h4>
+        <ul>
+          <li>Drivers must give <strong>at least 24 hours’ notice</strong> to change an appointment.</li>
+          <li>If insufficient notice is given a <strong>missed test fee</strong> must be paid before rebooking</li>
+        </ul>
+
+      <h4>Attending the test</h4>
+        <ul>
+          <li>The vehicle must be presented for testing at the scheduled time.</li>
+          <li>If the driver cannot attend the appointment, they may be required to return their vehicle licence plate for safekeeping</li>
+        </ul>
+
+    </div>
+
+  </details>
+
+  <h3>Key points for call handling</h3>
+  <ul>
+    <li>All licensed vehicles must pass a <strong>compliance test</strong> before being licensed or renewed.</li>
+    <li>Testing frequency depends on the <strong>age and type of vehicle</strong>.</li>
+    <li>Drivers are responsible for:</li>
+      <ul>
+        <li>Attending test appointments</li>
+        <li>Meeting licensing deadlines</li>
+        <li>Rearranging appointments with sufficient notice</li>
+      </ul>
+    <li>Failure to attend or rebook correctly may result in <strong>fees or delays to licensing</strong>.</li>
+  </ul>
+  
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "vehicle_compliance_checks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "vehicle",
+      "inspections",
+      "statutory",
+      "compliance",
+      "checks",
+      "test",
+      "inspection",
+      "taxi",
+      "drivers",
+      "private hire",
+      "hackney carriage",
+      "testing",
+      "appointments",
+      "licence",
+      "license",
+      "licensing",
+      "inspectiontest",
+      "vehcle",
+      "inspecion",
+      "compliance tes",
+      "complience",
+      "statuatory",
+      "statutry",
+      "inspction",
+      "inspecton",
+      "tsting",
+      "testin",
+      "testig",
+    
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "19/06/2026", name: "Liz Taster" }
+);
+
+
 
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
   "Information regarding taxi licensing",
   [
-    taxiLicensingExample,
+    drivingStandardsTestGuide,
+    surrenderLicence,
+    transferLicence,
+    applyPrivateHireVehicleLicence,
+    applyHackneyCarriageVehicleLicence,
+    applyTaxiDriverLicence,
+    applyPrivateHireOperatorLicence,
+    renewPrivateHireOperatorLicence,
+    changeOfNameOrAddress,
+    convictionsAndDrivingOffences,
+    renewTaxiDriverLicence,
+    renewPrivateHireVehicleLicence,
+    renewHackneyCarriageVehicleLicence,
+    applyKnowledgeTest,
+    orderReplacementTaxiItems,
+    taxiAdvertisingConsent,
+    reportTaxiAccident,
+    taxiComplaints,
+    medicalExemptionsTaxi,
+    dbsChecksTaxiDrivers,
+    taxiDriverMedical,
+    taxiVehicleInspections
   ]
 );
-  
+
+
+
+//#endregion Taxi Licensing
+
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
-  
+
   const business = new ServiceBusiness(
     "business",
     "Business",

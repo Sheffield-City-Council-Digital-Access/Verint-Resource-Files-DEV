@@ -988,8 +988,8 @@ const communalAreas = new ContentH(
   <p>
       Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.<br>
       Check the 
-      <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">Blocked bin chutes list</a>
-    </p>
+      <a href="https://sccextranet.sharepoint.com/:x:/r/sites/CustomerService/_layouts/15/Doc.aspx?sourcedoc=%7B25D2DDFF-7699-425C-AC50-8398BCCA6EDB%7D&file=Blocked%20Chute%20Responsibility%20-%20Adresses.xlsx&action=default&mobileredirect=true" target="_blank">Blocked bin chutes list</a>
+    </p> 
 
   <h3>Bin Skimming</h3>
   <p>
@@ -1034,7 +1034,7 @@ const communalAreas = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "27/02/2025", name: "Nathan Smith" }
+  { date: "14/07/2026", name: "Shaz Athar" }
 );
 
 // Communal fire safety is in the cross region section at the top of the area
@@ -17429,7 +17429,7 @@ const temporaryAccommodation = new ContentH(
       <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
@@ -17441,7 +17441,7 @@ const temporaryAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "29/07/2026", name: "Joseph Coupland" }
+  { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
 const shelteredAndSupported = new MenuH(
@@ -18079,6 +18079,20 @@ const permissions = new ContentH(
   { date: "07/03/2025", name: "Nathan Smith" }
 );
 
+const subletting = new FormH(
+  "subletting",
+  "Subletting",
+  "Use this form to report suspected council subletting",
+  "hou_subletting",
+
+  {
+    type: "Report",
+    keywords: ["Housing", "Subletting"],
+    categories: ["Housing"],
+  },
+  { date: "02/07/2026", name: "Shaz Athar" }
+);
+
 const tenancyAgreementRequest = new ContentH(
   "tenancyAgreementRequest",
   "Tenancy Agreement Request",
@@ -18330,6 +18344,8 @@ const vulnerability = new FormH(
   { date: "17/06/2025", name: "Joseph Coupland" }
 );
 
+
+
 const tenancySustainment = new MenuH(
   "tenancySustainment",
   "Tenancy Sustainment",
@@ -18346,6 +18362,7 @@ const tenancySustainment = new MenuH(
     housingServiceParkingPermits,
     nameChanges,
     permissions,
+    subletting,
     tenancyAgreementRequest,
     tenancyConditions,
     tenancyVisits,

@@ -3269,7 +3269,7 @@ function validDate(
           !checkDateRelationship(inputDate, new Date(dateBValue), pair.rule)
         ) {
           validationMsg
-            .text(`${baseMessage} ${pair.validationMessages[0]}`)
+            .text(`${pair.validationMessages[0]}`)
             .show();
           return false;
         }
@@ -3280,7 +3280,7 @@ function validDate(
           !checkDateRelationship(new Date(dateAValue), inputDate, pair.rule)
         ) {
           validationMsg
-            .text(`${baseMessage} ${pair.validationMessages[1]}`)
+            .text(`${pair.validationMessages[1]}`)
             .show();
           return false;
         }
@@ -7050,7 +7050,7 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
         <p class="detail-value">${payment?.method || ''}${payment?.method !== 'Cash Receipting' ? `<br/><span>${payment?.scheduledDate}</span>` : ''}</p>
       </div>
       <div><p class="detail-label">Current Stage</p><p class="detail-value">${stage?.route || 'No Action'}</p></div>
-      <div><p class="detail-label">Address</p><p class="detail-value">${summary?.propertyAddress || ''}</p></div>
+      <div><p class="detail-label">Address</p><p id="rent-address" class="detail-value">${summary?.propertyAddress || ''}</p></div>
     </div>
 
     <div class="tab-nav">
