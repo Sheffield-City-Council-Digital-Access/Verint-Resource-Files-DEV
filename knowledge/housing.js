@@ -9509,7 +9509,7 @@ const relationship = new ContentH(
 
 const repairsHomelessness = new ContentH(
   "repairsHomelessness",
-  "Repairs or Property Condition Unsafe to Return / roofless",
+  "Repairs or Property Condition Unsafe to Return / Roofless",
   "Process for supporting customers affected by poor housing conditions, covering repairs, suitability assessments, tenancy-specific actions, safeguarding, and housing options advice.",
   `
       <p>
