@@ -4621,7 +4621,7 @@ const applicationChanges = new ContentH(
 
 const applyForRehousing = new ContentH(
   "applyForRehousing",
-  "Apply for rehousing",
+  "Apply for Rehousing",
   "Learn how to apply for rehousing in Sheffield by registering online and submitting required documents like ID and landlord references.",
   `
     <p>
@@ -11784,8 +11784,7 @@ const rentVariation = new ContentH(
         <p>
             A shortfall can happen if your benefit doesn’t cover the full rent (for example, water rates, tenants levy, deductions, non-dependant charges, bedroom tax, benefit cap, or a change in your circumstances).<br> 
 Sometimes there are delays while a claim is processed or verified.
-Early Support Team <a href="mailto:imfitearlysupport@sheffield.gov.uk"</a>
-Benefits/welfare Support and Budegeting
+Early Support Team <a href="mailto:imfitearlysupport@sheffield.gov.uk">imfitearlysupport@sheffield.gov.uk</a>
         </p>
     </div>
 </details>
