@@ -5057,262 +5057,6 @@ const askedToLeave = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
-const friendsOrFamily = new ContentH(
-  "friendsOrFamily",
-  "Staying with Friends or Family",
-  "Guidance for supporting customers who are staying with friends or family and have been asked to leave, focusing on prevention, housing options, and homelessness duties.",
-  `
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>1. Establish the Situation (Early Advice Focus)</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-
-        <p><strong>Clarify:</strong></p>
-
-        <ul>
-            <li>When do they have to leave?</li>
-            <li>Who asked them to leave and why?</li>
-            <li>Can they remain for a short, agreed period?</li>
-        </ul>
-
-        <p><strong>Focus on early intervention:</strong></p>
-
-        <ul>
-            <li>Is there any way the arrangement can continue safely for a short time?</li>
-            <li>Would the host agree to a planned move-out date?</li>
-        </ul>
-
-        <p>
-            <strong>Principle:</strong> Sofa surfing is not secure, but short-term solutions
-            may help prevent homelessness.
-        </p>
-
-        <p><strong>Core Approach</strong></p>
-
-        <ul>
-            <li>Advice first → Prevention → Then application if needed.</li>
-            <li>Keep intervention proportionate, early, and realistic.</li>
-            <li>Always be ready to escalate quickly.</li>
-        </ul>
-
-        <p><strong>Key Practice Points</strong></p>
-
-        <ul>
-            <li>Do not default straight to a full application without exploring prevention.</li>
-            <li>Do not treat the arrangement as secure.</li>
-            <li>Do not require formal eviction.</li>
-            <li>Do not delay an application if risk escalates.</li>
-        </ul>
-
-          </div>
-      </details>
-
-      <details class="accordion">
-          <summary class="accordion-header">
-              <h3>2. Provide Immediate Housing Advice and Options</h3>
-              <div class="accordion-icon"></div>
-          </summary>
-          <div class="accordion-content">
-
-              <p>
-                  Before progressing to a full application, explore all realistic options.
-              </p>
-
-              <p><strong>Family / Friends Options</strong></p>
-
-              <ul>
-                  <li>Can they stay with another household member or friend?</li>
-                  <li>Can the current host arrangement be extended through mediation, where appropriate?</li>
-              </ul>
-
-              <p><strong>Private Rented Sector</strong></p>
-
-              <ul>
-                  <li>Encourage property searches using sources such as Rightmove, Zoopla and local landlords.</li>
-                  <li>Explore deposit and bond schemes.</li>
-                  <li>Check affordability and benefit entitlement.</li>
-              </ul>
-
-              <p><strong>Supported Housing</strong></p>
-
-              <ul>
-                  <li>Consider supported housing where support needs or vulnerabilities exist.</li>
-              </ul>
-
-              <p><strong>Financial and Practical Support</strong></p>
-
-              <ul>
-                  <li>Discretionary Housing Payments (DHP).</li>
-                  <li>Rent in advance and deposit schemes.</li>
-                  <li>Welfare benefits and Universal Credit housing costs.</li>
-              </ul>
-
-          </div>
-      </details>
-
-      <details class="accordion">
-          <summary class="accordion-header">
-              <h3>3. Consider Housing Duty (Do Not Delay if Needed)</h3>
-              <div class="accordion-icon"></div>
-          </summary>
-          <div class="accordion-content">
-
-              <p>
-                  While providing advice, assess whether homelessness duties apply.
-              </p>
-
-              <ul>
-                  <li>If leaving accommodation within 56 days, the Prevention Duty may apply.</li>
-                  <li>If no accommodation is available, the Relief Duty may apply.</li>
-              </ul>
-
-              <p>If the customer is clearly homeless or at risk:</p>
-
-              <ul>
-                  <li>Proceed with a homelessness application without delay.</li>
-              </ul>
-
-              <p>
-                  Advice and statutory duties should run alongside each other and not sequentially.
-              </p>
-
-          </div>
-      </details>
-
-      <details class="accordion">
-          <summary class="accordion-header">
-              <h3>4. Light-Touch Initial Assessment</h3>
-              <div class="accordion-icon"></div>
-          </summary>
-          <div class="accordion-content">
-
-              <p>
-                  Capture key information early, even at the advice stage.
-              </p>
-
-              <ul>
-                  <li>Household composition.</li>
-                  <li>Risks or safeguarding concerns.</li>
-                  <li>Health conditions, vulnerabilities or support needs.</li>
-                  <li>Financial circumstances.</li>
-              </ul>
-
-              <p>This information supports:</p>
-
-              <ul>
-                  <li>Tailored housing advice.</li>
-                  <li>Faster escalation where required.</li>
-              </ul>
-
-          </div>
-      </details>
-
-      <details class="accordion">
-          <summary class="accordion-header">
-              <h3>5. Priority Need &amp; Risk Check</h3>
-              <div class="accordion-icon"></div>
-          </summary>
-          <div class="accordion-content">
-
-              <p>
-                  At all stages consider whether there is a priority need or safeguarding concern.
-              </p>
-
-              <ul>
-                  <li>Children or pregnancy.</li>
-                  <li>Health issues or vulnerability.</li>
-                  <li>Risk of harm.</li>
-              </ul>
-
-              <p>
-                  If there is reason to believe a priority need exists, move quickly to:
-              </p>
-
-              <ul>
-                  <li>Full homelessness application.</li>
-                  <li>Interim accommodation assessment.</li>
-              </ul>
-
-          </div>
-      </details>
-
-      <details class="accordion">
-          <summary class="accordion-header">
-              <h3>6. Prevention Actions (Core Focus)</h3>
-              <div class="accordion-icon"></div>
-          </summary>
-          <div class="accordion-content">
-
-              <p>
-                  Where there is time and scope to prevent homelessness:
-              </p>
-
-              <ul>
-                  <li>Mediate with the host where safe and appropriate.</li>
-                  <li>Agree a realistic move-out plan.</li>
-                  <li>Actively support access to private rented sector accommodation.</li>
-                  <li>Consider supported housing options.</li>
-                  <li>Explore alternative family arrangements.</li>
-              </ul>
-
-              <p>
-                  Record all prevention activity attempted and the outcomes achieved.
-              </p>
-
-          </div>
-      </details>
-
-      <details class="accordion">
-          <summary class="accordion-header">
-              <h3>7. Escalate to Full Homelessness Application (If Required)</h3>
-              <div class="accordion-icon"></div>
-          </summary>
-          <div class="accordion-content">
-
-              <p>
-                  Move to a full homelessness application where:
-              </p>
-
-              <ul>
-                  <li>No accommodation is available.</li>
-                  <li>The arrangement is ending imminently.</li>
-                  <li>Prevention options have been exhausted or are unreasonable.</li>
-              </ul>
-
-              <p>
-                  Escalate promptly where circumstances deteriorate or homelessness becomes unavoidable.
-              </p>
-
-          </div>
-      </details>
-    `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: [
-      "rehosing", 
-      "rehausing", 
-      "rehousingg", 
-      "rehosuing", 
-      "rehouzing",
-      "housing",
-      "reference",
-      "references",
-      "referee",
-      "FAQ",
-      "FAQs",
-    ],
-    categories: ["Housing", "Rehousing"],
-  },
-  { date: "31/07/2026", name: "Joseph Coupland" }
-);
 
 
 const bidding = new ContentH(
@@ -7866,7 +7610,6 @@ const lostJob = new ContentH(
         <li>Apply for Discretionary Housing Payment - <a href="https://www.sheffield.gov.uk/benefits/apply-benefits-support/discretionary-CRFHP" target="_blank">https://www.sheffield.gov.uk/benefits/apply-benefits-support/discretionary-CRFHP</a></li>
         <li>Contact local Housing Options team</li>
         <li>Signpost to Shelter, Citizens Advice, HLPAS</li>
-JCHERESENDLINKS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       </ul>
     </p>
     `,
@@ -9762,7 +9505,7 @@ const relationship = new ContentH(
 
 
 
-//Rent Increase in cross region
+//rentAndAffordability in cross region 
 
 const repairsHomelessness = new ContentH(
   "repairsHomelessness",
@@ -10719,6 +10462,263 @@ const section8V2 = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
+const stayingWithFriendsOrFamily = new ContentH(
+  "friendsOrFamily",
+  "Staying with Friends or Family",
+  "Guidance for supporting customers who are staying with friends or family and have been asked to leave, focusing on prevention, housing options, and homelessness duties.",
+  `
+    <details class="accordion">
+    <summary class="accordion-header">
+        <h3>1. Establish the Situation (Early Advice Focus)</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <p><strong>Clarify:</strong></p>
+
+        <ul>
+            <li>When do they have to leave?</li>
+            <li>Who asked them to leave and why?</li>
+            <li>Can they remain for a short, agreed period?</li>
+        </ul>
+
+        <p><strong>Focus on early intervention:</strong></p>
+
+        <ul>
+            <li>Is there any way the arrangement can continue safely for a short time?</li>
+            <li>Would the host agree to a planned move-out date?</li>
+        </ul>
+
+        <p>
+            <strong>Principle:</strong> Sofa surfing is not secure, but short-term solutions
+            may help prevent homelessness.
+        </p>
+
+        <p><strong>Core Approach</strong></p>
+
+        <ul>
+            <li>Advice first → Prevention → Then application if needed.</li>
+            <li>Keep intervention proportionate, early, and realistic.</li>
+            <li>Always be ready to escalate quickly.</li>
+        </ul>
+
+        <p><strong>Key Practice Points</strong></p>
+
+        <ul>
+            <li>Do not default straight to a full application without exploring prevention.</li>
+            <li>Do not treat the arrangement as secure.</li>
+            <li>Do not require formal eviction.</li>
+            <li>Do not delay an application if risk escalates.</li>
+        </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>2. Provide Immediate Housing Advice and Options</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Before progressing to a full application, explore all realistic options.
+              </p>
+
+              <p><strong>Family / Friends Options</strong></p>
+
+              <ul>
+                  <li>Can they stay with another household member or friend?</li>
+                  <li>Can the current host arrangement be extended through mediation, where appropriate?</li>
+              </ul>
+
+              <p><strong>Private Rented Sector</strong></p>
+
+              <ul>
+                  <li>Encourage property searches using sources such as Rightmove, Zoopla and local landlords.</li>
+                  <li>Explore deposit and bond schemes.</li>
+                  <li>Check affordability and benefit entitlement.</li>
+              </ul>
+
+              <p><strong>Supported Housing</strong></p>
+
+              <ul>
+                  <li>Consider supported housing where support needs or vulnerabilities exist.</li>
+              </ul>
+
+              <p><strong>Financial and Practical Support</strong></p>
+
+              <ul>
+                  <li>Discretionary Housing Payments (DHP).</li>
+                  <li>Rent in advance and deposit schemes.</li>
+                  <li>Welfare benefits and Universal Credit housing costs.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>3. Consider Housing Duty (Do Not Delay if Needed)</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  While providing advice, assess whether homelessness duties apply.
+              </p>
+
+              <ul>
+                  <li>If leaving accommodation within 56 days, the Prevention Duty may apply.</li>
+                  <li>If no accommodation is available, the Relief Duty may apply.</li>
+              </ul>
+
+              <p>If the customer is clearly homeless or at risk:</p>
+
+              <ul>
+                  <li>Proceed with a homelessness application without delay.</li>
+              </ul>
+
+              <p>
+                  Advice and statutory duties should run alongside each other and not sequentially.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>4. Light-Touch Initial Assessment</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Capture key information early, even at the advice stage.
+              </p>
+
+              <ul>
+                  <li>Household composition.</li>
+                  <li>Risks or safeguarding concerns.</li>
+                  <li>Health conditions, vulnerabilities or support needs.</li>
+                  <li>Financial circumstances.</li>
+              </ul>
+
+              <p>This information supports:</p>
+
+              <ul>
+                  <li>Tailored housing advice.</li>
+                  <li>Faster escalation where required.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>5. Priority Need &amp; Risk Check</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  At all stages consider whether there is a priority need or safeguarding concern.
+              </p>
+
+              <ul>
+                  <li>Children or pregnancy.</li>
+                  <li>Health issues or vulnerability.</li>
+                  <li>Risk of harm.</li>
+              </ul>
+
+              <p>
+                  If there is reason to believe a priority need exists, move quickly to:
+              </p>
+
+              <ul>
+                  <li>Full homelessness application.</li>
+                  <li>Interim accommodation assessment.</li>
+              </ul>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>6. Prevention Actions (Core Focus)</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Where there is time and scope to prevent homelessness:
+              </p>
+
+              <ul>
+                  <li>Mediate with the host where safe and appropriate.</li>
+                  <li>Agree a realistic move-out plan.</li>
+                  <li>Actively support access to private rented sector accommodation.</li>
+                  <li>Consider supported housing options.</li>
+                  <li>Explore alternative family arrangements.</li>
+              </ul>
+
+              <p>
+                  Record all prevention activity attempted and the outcomes achieved.
+              </p>
+
+          </div>
+      </details>
+
+      <details class="accordion">
+          <summary class="accordion-header">
+              <h3>7. Escalate to Full Homelessness Application (If Required)</h3>
+              <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+
+              <p>
+                  Move to a full homelessness application where:
+              </p>
+
+              <ul>
+                  <li>No accommodation is available.</li>
+                  <li>The arrangement is ending imminently.</li>
+                  <li>Prevention options have been exhausted or are unreasonable.</li>
+              </ul>
+
+              <p>
+                  Escalate promptly where circumstances deteriorate or homelessness becomes unavoidable.
+              </p>
+
+          </div>
+      </details>
+    `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "31/07/2026", name: "Joseph Coupland" }
+);
+
 
 const threatenedWithEvictionOrPossession = new ContentH(
   "threatenedWithEvictionOrPossession",
@@ -11141,10 +11141,10 @@ const rehousing = new MenuH(
   [
     accommodationNotSuitable,
     allocationsPolicy,
-    applicationChanges,
-    applyForRehousing,
     asbHomeless,
     asbCuckooing,
+    applicationChanges,
+    applyForRehousing,
     askedToLeave,
     bidding,
     demotedOrDisqualified,
@@ -11154,28 +11154,28 @@ const rehousing = new MenuH(
     eligibility,
     endofHomeOffice,
     fosteringAndAdoption,
-    friendsOrFamily,
     healthAndHousing,
     homelessPrevention,
     homelessTest,
     housingAssociations,
-    idReferences,
     idFaq,
+    idReferences,
     lostJob,
     movingIn,
     mutualExchanges,
     overcrowding,
     preventionEndOfSupportedAccommodation,
     priorities,
-    prisonLeaver,
     priorityBandingTable,
+    prisonLeaver,
     PropertyOffersAndViewings,
+    referencesFAQs,
     relationship,
     rentAndAffordability,
-    referencesFAQs,
     repairsHomelessness,
     section8,
     section8V2,
+    stayingWithFriendsOrFamily,
     threatenedWithEvictionOrPossession,
     worriedAboutEviction
   ]
@@ -11784,8 +11784,8 @@ const rentVariation = new ContentH(
         <p>
             A shortfall can happen if your benefit doesn’t cover the full rent (for example, water rates, tenants levy, deductions, non-dependant charges, bedroom tax, benefit cap, or a change in your circumstances).<br> 
 Sometimes there are delays while a claim is processed or verified.
-Early Support Team JCHERE <a href="mailto:imfitearlysupport@sheffield.gov.uk</a>
-Benefits/welfare Support and Budegeting xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Early Support Team <a href="mailto:imfitearlysupport@sheffield.gov.uk"</a>
+Benefits/welfare Support and Budegeting
         </p>
     </div>
 </details>
