@@ -112,7 +112,7 @@ const allotmentsEligibility = new ContentPSaR(
   "Plots",
   "Plot"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -210,7 +210,7 @@ const allotmentsContact = new ContentPSaR(
       "Waiting List Map",
       "Vacancies"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "25/11/2025", name: "Andy Walker" }
 );
@@ -258,7 +258,7 @@ const allotmentsApplying = new ContentPSaR(
   "Plots",
   "Plot"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -367,7 +367,7 @@ const allotmentsPlotOffers = new ContentPSaR(
   "Apeals",
   "Apeal"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -436,7 +436,7 @@ const allotmentsPayingFees = new ContentPSaR(
   "Watar Charges",
   "Watter Charges"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -505,7 +505,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
   "Appeel",
   "Apeal"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -593,7 +593,7 @@ const allotmentsFires = new ContentPSaR(
       "Nuisance",
       "Statutory nuisance"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -651,7 +651,7 @@ const allotmentsDogs = new ContentPSaR(
       "Ruels",
       "Ruless"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "25/11/2025", name: "Andy Walker" }
 );
@@ -714,7 +714,7 @@ const allotmentsWater = new ContentPSaR(
       "Ruels",
       "Ruless"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "25/11/2025", name: "Andy Walker" }
 );
@@ -773,7 +773,7 @@ const allotmentsKeys = new ContentPSaR(
   "Gate Acess",
   "Gat Access"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
 );
@@ -833,7 +833,7 @@ const allotmentsDrones = new ContentPSaR(
       "Ruels",
       "Ruless"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "25/11/2025", name: "Andy Walker" }
 );
@@ -872,7 +872,7 @@ const allotmentsTrees = new ContentPSaR(
   "Tree Hazards",
   "Tree Hazard"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -918,7 +918,7 @@ const allotmentsAsbestos = new ContentPSaR(
   "Hazardous Materials",
   "Hazardous Matrial"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -952,7 +952,7 @@ const allotmentsVermin = new ContentPSaR(
   "Pests",
   "Pest"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -1011,7 +1011,7 @@ const allotmentsKeyDeposit = new ContentPSaR(
   "Security Deposit",
   "Key Deposit"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -1291,7 +1291,7 @@ const allotmentsEnquiries = new ContentPSaR(
   "Plot",
   "Plottes"
 ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "12/05/2026", name: "Liz Taster" }
 );
@@ -1382,7 +1382,7 @@ const allotmentsReportIssue = new ContentPSaR(
   {
     type: "Information",
     keywords: ["Allotments", "Report Issue", "Maintenance", "Water Leak", "Pests", "Asbestos"],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -1461,7 +1461,7 @@ const allotmentsTreeManagement = new ContentPSaR(
       "Report tree",
       "Tree issue"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "17/11/2025", name: "Andy Walker" }
 );
@@ -1527,7 +1527,7 @@ const allotmentsEmergencies = new ContentPSaR(
       "Allotment water leak",
       "Allotment danger"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Allotments"]
   },
   { date: "26/11/2025", name: "Andy Walker" }
 );
@@ -1561,7 +1561,108 @@ const allotmentsParks = new MenuPSaR(
 
 //#endregion Allotments
 
-//#region Report tree in park
+//#region Bookings
+
+const templateTile1 = new ContentPSaR(
+  "templateTile1",
+  "Template Tile 1",
+  "Description to go on main tile.",
+  `
+    <h3>Header</h3>
+    <p>Content</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "01/07/2026", name: "Liz Taster" }
+);
+ 
+
+const bookingsParks = new MenuPSaR(
+  "bookings",
+  "Bookings",
+   `[Sumamry of bookings menu]`,
+  [
+    templateTile1,
+    
+  ]
+);
+
+//#endregion Bookings
+
+
+//#region Events and Activities
+
+const templateTile2 = new ContentPSaR(
+  "templateTile2",
+  "Template Tile 2",
+  "Description to go on main tile.",
+  `
+    <h3>Header</h3>
+    <p>Content</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "01/07/2026", name: "Liz Taster" }
+);
+ 
+
+const eventsAndActivities = new MenuPSaR(
+  "eventsAndActivities",
+  "Events And Activities",
+   `[Sumamry of Events and Activities menu]`,
+  [
+    templateTile2,
+    
+  ]
+);
+
+//#endregion Events and Activities
+
+
+//#region Maintenance and Issues
+
 
 const reportTreePark = new ContentPSaR(
   "reportTreePark",
@@ -1723,7 +1824,69 @@ const reportTreePark = new ContentPSaR(
   { date: "18/11/2025", name: "Andy Walker" }
 );
 
-//#endregion Report tree in park
+const maintenanceAndIssues = new MenuPSaR(
+  "maintenanceAndIssues",
+  "Maintenance And Issues",
+   `[Sumamry of Maintenance and Issues menu]`,
+  [
+    reportTreePark,
+    
+  ]
+);
+
+//#endregion Maintenance and Issues
+
+//#region Planning and Purchase
+
+const templateTile3 = new ContentPSaR(
+  "templateTile3",
+  "Template Tile 3",
+  "Description to go on main tile.",
+  `
+    <h3>Header</h3>
+    <p>Content</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "01/07/2026", name: "Liz Taster" }
+);
+ 
+
+const parksPlanningAndPurchase = new MenuPSaR(
+  "parksPlanningAndPurchase",
+  "Parks Planning And Purchase",
+   `[Sumamry of Parks Planning And Purchase menu]`,
+  [
+    templateTile3,
+    
+  ]
+);
+
+//#endregion Planning and Purchase
+
+//#region Top level tiles - must be listed in ServicePSAR
+//#endregion Top level tiles
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -1733,6 +1896,9 @@ const parksSportAndRecreation = new ServicePSaR(
   "Parks, Sport and Recreation",
   `Parks, gardens, trees and woodlands, allotments, leisure and sports facilities, what's on, tourist information…`,
   [allotmentsParks,
-   reportTreePark
+   bookingsParks,
+   eventsAndActivities,
+   maintenanceAndIssues,
+   parksPlanningAndPurchase
   ]
 );
