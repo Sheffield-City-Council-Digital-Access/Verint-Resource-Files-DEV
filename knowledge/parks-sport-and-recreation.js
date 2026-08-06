@@ -1585,7 +1585,7 @@ const templateTile1 = new ContentPSaR(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
@@ -1635,7 +1635,7 @@ const templateTile2 = new ContentPSaR(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
@@ -1860,7 +1860,7 @@ const templateTile3 = new ContentPSaR(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
