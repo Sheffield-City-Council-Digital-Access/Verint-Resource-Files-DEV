@@ -2397,7 +2397,7 @@ const insurancePersonalInjuryCompensation = new ContentPSaR(
   </p>
     
     `,
- { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
@@ -2421,6 +2421,72 @@ const insurancePersonalInjuryCompensation = new ContentPSaR(
   { date: "07/08/2026", name: "Liz Taster" }
 );
 
+const flyTipping = new ContentPSaR(
+  "flyTipping",
+  "Fly Tipping",
+  "Information about reporting fly-tipping and how waste is removed from parks and woodland areas.",
+  `
+  <p>
+    Reports of fly tipping are referred to the parks/woodland management team who will assess the scale of the issue and the response required.
+  </p>
+  <p>
+    Some materials require a specialist response and will take longer to remove.
+  </p>
+  <p>
+    Waste will be removed no later than 10 working days after being reported.
+  </p>
+  <p>
+    Further information about how the council deals with fly-tipping can be found here: 
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter" target="_blank">Fly-tipping and litter | Sheffield City Council</a>
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+  <p>
+    Fly-tipping can be reported using the button at the bottom or with the link available here: 
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/report-fly-tipping-public-land" target="_blank">
+    Reporting fly-tipping | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+  `,
+ 
+  { buttonLabel: "Report Fly-tipping", formName: "report_fly_tipping"},
+  { typeKey: ""},
+  { typeKey: ""},
+  {
+    type: "Information",
+    keywords: [
+      "fly",
+      "tipping",
+      "fly-tipping",
+      "illegal",
+      "dumped",
+      "waste",
+      "rubbish",
+      "litter",
+      "parks",
+      "woodland",
+      "waste removal",
+      "fly tip",
+      "fly tips",
+      "dumping",
+      "refuse",
+      "trash",
+      "flytipping",
+      "fly tiping",
+      "flytippng",
+      "tpping",
+      "tippng",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "07/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance And Issues",
@@ -2430,6 +2496,7 @@ const maintenanceAndIssues = new MenuPSaR(
     antiSocialBehaviourParks,
     cctvParks,
     insurancePersonalInjuryCompensation,
+    flyTipping,
     
   ]
 );
