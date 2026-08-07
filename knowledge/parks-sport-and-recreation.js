@@ -1646,6 +1646,225 @@ const templateTile2 = new ContentPSaR(
   },
   { date: "01/07/2026", name: "Liz Taster" }
 );
+
+
+const activitiesInParks = new ContentPSaR(
+"activitiesInParks",
+"Activities in Parks",
+"Details of guidance and restrictions around activities in parks - BBQs, drones, fishing, metal detecting and wood collection.",
+
+`
+<p>
+  Visitors can enjoy a range of activities in Sheffield’s parks, but some are subject to specific rules and restrictions. 
+  The sections below give details and provide relevant links to send to customers.
+</p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>BBQs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        BBQs are allowed in parks, but customers are asked to following these rules:
+      </p>
+        <ul>
+          <li>Choose a location carefully and consider the safety of other park users</li>
+          <li>Make sure the barbecue is safe and cannot fall over</li>
+          <li>Do not place the barbecue directly onto the grass or on park furniture, where it can damage the surface and leave a burn mark. 
+            If possible, use a barbecue designed with legs or place on a non-combustible surface like a brick to prevent damage</li>
+          <li>Take care with the disposal of the hot ashes, do not dispose of these in a bin or throw them onto adjacent land - 
+            take some water to extinguish the burning charcoals</li>
+          <li>Do not allow the smoke to disturb other park users</li>
+          <li>Keep children and pets safe at all times</li>
+          <li>Ensure food is thoroughly cooked and stored in good, hygienic containers</li>
+          <li>Do not put leftover food scraps in litter bins as this encourages foraging by dogs or foxes, etc</li>
+          <li>Ensure all litter is taken home with you</li>
+        </ul>
+
+      <p>
+        These guidelines are also available on the website at:
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/barbecues-parks" target="_blank">
+        Barbecues in parks | Sheffield City Council</a>
+      </p>
+
+      <p>[Insert Send Link]</p>
+
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Drones</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Drones may <strong>not</strong> be flown from Council land without our permission.
+      </p>
+
+      <p>Permission will only be granted where:</p>
+        <ul>
+          <li>use of a drone device helps reduce risk in the workplace, such as working at height</li>
+          <li>land and building survey work</li>
+          <li>to undertake professional services such as festivals and events media</li>
+        </ul>
+
+      <p>
+        Parks byelaws already restrict the use of powered model aircraft.
+      </p>
+
+      <p>
+        Byelaws associated with park usage can be found at 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-green-spaces" target="_blank">
+        Parks and green spaces | Sheffield City Council</a>
+      </p>
+
+      <p>[Insert Send Link]</p>
+
+      <p>
+        For the use of drones in filming or photoshoots please search for the knowledge article <strong>Filming and photoshoots</strong>
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fishing</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We have several sites across Sheffield where people can fish for free, as long as they have a current Environmental Agency Rod Licence.
+      </p>
+
+      <p>
+        The list of sites can be found at: 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/fishing-parks" target="_blank">
+        Fishing in parks | Sheffield City Council</a>.
+      </p>
+
+      <p>[Insert Send Link]</p>
+
+      <p>
+        This website also has a list of places which are available to fish for a charge, and where day tickets can be purchased from.
+      </p>
+
+      <p>
+        Fishing is not permitted at any other ponds and lakes managed by Sheffield City Council, including the Local Nature Reserve in Shire Brook Valley 
+        and the Porter Valley Nature Reserves (except Wire Mill Dam).
+      </p>
+
+      <p>
+        Do not add fish to any public pond - many ponds are for wildlife which do not co-exist well with fish.
+        Releasing non-native or controlled species into the wild without a specific licence from Defra or Natural England is a criminal offense.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Metal Detecting</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        As part of our byelaws for green spaces, metal detecting is not permitted on land managed by Parks and Countryside. 
+        This is to prevent damage to green spaces and reduce risk of injury to park users.
+      </p>
+
+      <p>
+        Anyone found metal detecting will be asked to leave the site. 
+        Digging is classed as criminal damage and the removal of any artefacts found will be treated as theft.
+      </p>
+
+      <p>
+        Byelaws associated with park usage can be found at: 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-green-spaces" target="_blank">
+        Parks and green spaces | Sheffield City Council</a>
+      </p>
+
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Wood Collecting</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Collecting wood for wood burners or private fires from parks and woodland is strictly prohibited. 
+        Woodlands are delicate ecosystems and we intentionally leave both standing and fallen dead wood to improve the ecology on sites.
+      </p>
+
+      <p>
+        If you notice a dead or fallen tree in a dangerous state, please notify us using the <strong>‘Report an Issue with a tree’</strong> form
+        <a href="https://forms.sheffield.gov.uk/site/portal/form/report_tree" target="_blank">
+        Report a problem with a tree | Sheffield City Council</a>
+      </p>
+  
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+  `,
+
+{},
+{ typeKey: "" },
+{ typeKey: "" },
+{
+type: "Information",
+keywords: [
+"bbq",
+"bbqs",
+"barbecue",
+"barbecues",
+"barbeque",
+"barbeques",
+"drones",
+"drone",
+"model aircraft",
+"fishing",
+"fish",
+"rod",
+"licence",
+"license",
+"ponds",
+"lakes",
+"metal",
+"detecting",
+"detector",
+"wood collecting",
+"dead wood",
+"fallen tree",
+"activites",
+"metel",
+"colecting",
+"barbacue",
+"barbaque",
+"barbiecue",
+"barbieque",
+"droon",
+"dron",
+"drne",
+"fsh",
+"fshing",
+"fishng",
+
+],
+categories: ["Parks and Countryside", "Events and Activities"]
+},
+{
+date: "06/08/2026",
+name: "Liz Taster"
+}
+);
  
 
 const eventsAndActivities = new MenuPSaR(
@@ -1654,6 +1873,7 @@ const eventsAndActivities = new MenuPSaR(
    `[Sumamry of Events and Activities menu]`,
   [
     templateTile2,
+    activitiesInParks,
     
   ]
 );
@@ -1886,7 +2106,7 @@ const parksPlanningAndPurchase = new MenuPSaR(
 //#endregion Planning and Purchase
 
 //#region Top level tiles - must be listed in ServicePSAR
-//#endregion Top level tiles
+//#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
