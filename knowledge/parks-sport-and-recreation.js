@@ -2261,6 +2261,41 @@ const cctvParks = new ContentPSaR(
   { date: "07/08/2026", name: "Liz Taster" }
 );
 
+const insurancePersonalInjuryCompensation = new ContentPSaR(
+  "insurancePersonalInjuryCompensation",
+  "Insurance, personal injury or compensation",
+  "Information on reporting an injury or making a compensation claim.",
+  `
+  <p>
+    If someone wishes to report an injury or claim compensation they should contact 
+    <a href="mailto:insurance@sheffield.gov.uk">insurance@sheffield.gov.uk</a> with details of their claim.
+  </p>
+    
+    `,
+ { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "insurance",
+      "insurances",
+      "personal",
+      "injury",
+      "injuries",
+      "compensation",
+      "claim",
+      "claims",
+      "accident",
+      "indurance",
+      "compansation",
+      "injruy"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "07/08/2026", name: "Liz Taster" }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance And Issues",
@@ -2269,6 +2304,7 @@ const maintenanceAndIssues = new MenuPSaR(
     reportTreePark,
     antiSocialBehaviourParks,
     cctvParks,
+    insurancePersonalInjuryCompensation,
     
   ]
 );
