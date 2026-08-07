@@ -1656,7 +1656,9 @@ const activitiesInParks = new ContentPSaR(
 `
 <p>
   Visitors can enjoy a range of activities in Sheffield’s parks, but some are subject to specific rules and restrictions. 
-  The sections below give details and provide relevant links to send to customers.
+</p>
+<p>
+  The sections below give details of any restrictions and provide relevant links to send to customers.
 </p>
 
   <details class="accordion">
@@ -1767,7 +1769,7 @@ const activitiesInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Metal Detecting</h3>
+      <h3>Metal detecting</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -1794,7 +1796,7 @@ const activitiesInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Wood Collecting</h3>
+      <h3>Wood collecting</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
