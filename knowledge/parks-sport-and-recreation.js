@@ -1753,12 +1753,12 @@ const activitiesInParks = new ContentPSaR(
       </p>
 
       <p>
-        Fishing is not permitted at any other ponds and lakes managed by Sheffield City Council, including the Local Nature Reserve in Shire Brook Valley 
+        <strong>Fishing is not permitted at any other ponds and lakes</strong> managed by Sheffield City Council, including the Local Nature Reserve in Shire Brook Valley 
         and the Porter Valley Nature Reserves (except Wire Mill Dam).
       </p>
 
       <p>
-        Do not add fish to any public pond - many ponds are for wildlife which do not co-exist well with fish.
+        <strong>Do not add fish to any public pond</strong> - many ponds are for wildlife which do not co-exist well with fish.
         Releasing non-native or controlled species into the wild without a specific licence from Defra or Natural England is a criminal offense.
       </p>
     </div>
@@ -1772,7 +1772,7 @@ const activitiesInParks = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        As part of our byelaws for green spaces, metal detecting is not permitted on land managed by Parks and Countryside. 
+        As part of our byelaws for green spaces, <strong>metal detecting is not permitted</strong> on land managed by Parks and Countryside. 
         This is to prevent damage to green spaces and reduce risk of injury to park users.
       </p>
 
