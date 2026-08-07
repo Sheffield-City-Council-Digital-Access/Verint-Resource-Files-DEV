@@ -1644,8 +1644,11 @@ const bookAnEvent = new ContentPSaR(
   "Information about holding private events in parks and how to make an enquiry using the booking form.",
   `
   <p>
-    Private events for friends/families are welcome; our green spaces are for all to use. Please be mindful of other park users. 
-    Please do not erect structures such as gazebos.
+    Private events for friends/families are welcome - our green spaces are for all to use. 
+  </p>
+  
+  <p>
+    Remind customers to be mindful of other park users, and to not erect structures such as gazebos.
   </p>
   
   <p>
@@ -1657,12 +1660,11 @@ const bookAnEvent = new ContentPSaR(
   <p>[Insert Send Link]</p>
 
   <p>
-    Enquiries about holding an event in a park are welcome and can be done by completing the <strong>Book a Room/Event/Film/Photoshoot form</strong>. 
-    The form is available on the link above.
+    Enquiries about holding a private event in a park are welcome and can be done by completing the <strong>Book a Room/Event/Film/Photoshoot form</strong> - this is available on the link above.
   </p>
 
   <p>
-    Please also see other relevant articles in the Bookings section of the 'Parks, sport and recreation' knowledge menu.
+    Please also refer to other relevant articles in the <strong>'Bookings'</strong> section of the <strong>'Parks, sport and recreation'</strong> knowledge menu.
   </p>
   
   `,
