@@ -4785,7 +4785,7 @@ const askedToLeave = new ContentH(
     <h3>Establish the Situation </h3>
     <p>
       <ul>
-        <li>When do you haved to leave?</li>
+        <li>When do you have to leave?</li>
         <li>Who asked you to leave and why?</li>
         <li>Can you remain for a short agreed period?</li>
         <li>Is there any way the arrangement can continue safely for a short time?</li>
