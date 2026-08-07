@@ -145,7 +145,7 @@ const rentAndAffordability = new ContentH(
             <li>Establish the tenure type, with particular attention to private rented sector tenancies.</li>
             <li>Check whether the rent increase follows the correct statutory process and notice period.</li>
             <li>Record findings clearly in CRM case notes.</li>
-            <li>Where applicable, check whether the increase has been issued using the Section 13 process and Form 4A with the required two months written notice.</li>
+            <li>Where applicable, check whether the increase has been issued using the Section 13 process and Form 4A with the required two months' written notice.</li>
         </ul>
 
     </div>
@@ -362,12 +362,9 @@ const rentAndAffordability = new ContentH(
     </div>
 </details>
     `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { typeKey: "homeless_information_provided"},
+  { typeKey: "homeless_transferred_to_service"},
   {
     type: "Request",
     keywords: [
@@ -3412,7 +3409,7 @@ const leaseholderInformation = new ContentH(
 
 const accommodationNotSuitable = new ContentH(
   "accommodationNotSuitable",
-  "Accommodation No Longer Suitable Health Disability",
+  "Accommodation No Longer Suitable Due to Health Disability",
   "Steps to evaluate housing suitability where health or disability impacts daily living, with support planning, safeguarding, and prevention-focused housing advice.",
   `
   <details class="accordion">
@@ -3634,7 +3631,7 @@ const accommodationNotSuitable = new ContentH(
   `,
 
   {
-    buttonLabel: "Raise Homelessness Enquiry ",
+    buttonLabel: "Raise Homelessness Enquiry",
     formName: "hou_homelessness",
   },
   { typeKey: "homeless_information_provided" },
@@ -3710,7 +3707,7 @@ const allocationsPolicy = new ContentH(
             for your needs, based on the information you have provided.
         </p>
         <p>
-            <strong>If you do not agree</strong> with your banding or circumstances have changed we can review your application or we re-assess your housing need.
+            <strong>If you do not agree</strong> with your banding, or circumstances have changed, we can review your application or we re-assess your housing need.
         </p>
         <p>
             Current council tenants need to contact their Neighbourhood Officer for assessment. Either at their local housing office or on the freephone in Howden House.
@@ -3866,7 +3863,7 @@ const allocationsPolicy = new ContentH(
   `,
 
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -3975,7 +3972,7 @@ const asbHomeless = new ContentH(
     </details>
     `,
   {
-    buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",
+    buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",
   },
   { typeKey: "homeless_information_provided" },
   { typeKey: "homeless_transferred_to_service" },
@@ -4238,7 +4235,7 @@ const asbCuckooing = new ContentH(
     </div>
 </details>
     `,
-  {buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  {buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -5037,7 +5034,7 @@ const askedToLeave = new ContentH(
     </div>
 </details>
   `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -5903,7 +5900,7 @@ const disrepairHomeless = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6049,7 +6046,7 @@ const domesticAbuseAssessment = new ContentH(
     </details>
 
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6181,7 +6178,7 @@ const earlyHelpAndPrevention = new ContentH(
     </details>
 
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6279,7 +6276,7 @@ const eligibility = new ContentH(
       </div>
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -6578,7 +6575,7 @@ const endofHomeOffice = new ContentH(
     </details>
   
   `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6620,7 +6617,7 @@ const fosteringAndAdoption = new ContentH(
   
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -6968,7 +6965,7 @@ const homelessTest = new ContentH(
       <a href="https://sccextranet.sharepoint.com/:p:/r/sites/HousingandNeighbourhoodsDigitalRingbinder/Shared%20Documents/Homelessness%20and%20Supported%20Housing%20Service/Staff%20Procedures%20and%20guidance/CRM%20Forms/Form%201B%20Housing%20Need/Homelessness%20Test.pptx?d=wf780fad2fb0241349567ce0f61916ed5&csf=1&web=1&e=h9b9l0" target="_blank">Homeless Test</a>
     </p>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -7417,7 +7414,7 @@ const housingAssociations = new ContentH(
       </details>
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   {
@@ -7481,7 +7478,7 @@ const idFaq = new ContentH(
       </p>
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -7568,7 +7565,7 @@ const idReferences = new ContentH(
         </ul>
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -7613,7 +7610,7 @@ const lostJob = new ContentH(
       </ul>
     </p>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -7694,7 +7691,7 @@ const movingIn = new ContentH(
       </p>
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -8188,7 +8185,7 @@ const overcrowding = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -8420,7 +8417,7 @@ const preventionEndOfSupportedAccommodation = new ContentH(
         </div>
     </details> 
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -8679,7 +8676,7 @@ const priorityBandingTable = new ContentH(
       </details>   
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -9248,7 +9245,7 @@ const referencesFAQs = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <h3>What if the Customer Can not Visit an Area Office?</h3>
+        <h3>What if the Customer Cannot Visit an Area Office?</h3>
         <p>
           There are alternatives to visiting the area office yourself, such as asking your friends or family 
           to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
@@ -9258,7 +9255,7 @@ const referencesFAQs = new ContentH(
     </details>
     `,
   {
-    buttonLabel: "Report Housing Enquiry ",
+    buttonLabel: "Report Housing Enquiry",
     formName: "hou_rehousing_enquiry",
   },
   { typeKey: "rehousing_services_information_provided" },
@@ -9482,7 +9479,7 @@ const relationship = new ContentH(
     </div>
 </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -9773,7 +9770,7 @@ const repairsHomelessness = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -9792,7 +9789,7 @@ const repairsHomelessness = new ContentH(
 
 const section8 = new ContentH(
   "section8",
-  "Section 8 Grounds for Possessionxxxx",
+  "Section 8 Grounds for Possession",
   "Overview of Section 8 possession grounds, notice periods, validity checks, prevention duties, and housing advice for customers at risk of eviction.",
   `
     <details class="accordion">
@@ -10112,12 +10109,9 @@ const section8 = new ContentH(
         </div>
     </details>
     `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { typeKey: "homeless_information_provided"},
+  { typeKey: "homeless_transferred_to_service"},
   {
     type: "Request",
     keywords: [
@@ -10140,8 +10134,8 @@ const section8 = new ContentH(
 
 
 const section8V2 = new ContentH(
-  "section8 V2",
-  "Section 8V2 Grounds for Possessionxxxx",
+  "section8V2",
+  "Section 8 Grounds for Possession Version 2",
   "Overview of Section 8 possession grounds, notice requirements, validity checks, prevention activity, and support available to customers at risk of losing a private rented tenancy.",
   `
     <details class="accordion">
@@ -10436,12 +10430,9 @@ const section8V2 = new ContentH(
     </div>
 </details>
     `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { typeKey: "homeless_information_provided"},
+  { typeKey: "homeless_transferred_to_service"},
   {
     type: "Request",
     keywords: [
@@ -10693,12 +10684,9 @@ const stayingWithFriendsOrFamily = new ContentH(
           </div>
       </details>
     `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { typeKey: "homeless_information_provided"},
+  { typeKey: "homeless_transferred_to_service"},
   {
     type: "Request",
     keywords: [
@@ -10870,7 +10858,7 @@ const threatenedWithEvictionOrPossession = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry ", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
