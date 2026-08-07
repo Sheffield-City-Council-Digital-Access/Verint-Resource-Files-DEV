@@ -1596,6 +1596,52 @@ const templateTile1 = new ContentPSaR(
   },
   { date: "01/07/2026", name: "Liz Taster" }
 );
+
+
+const bannersInParks = new ContentPSaR(
+  "bannersInParks",
+  "Banners In Parks",
+  "Information about banner applications on park property or fencing.",
+  `
+  <h3>Banners</h3>
+
+  <p>
+    Due to limited resources, we are not currently accepting applications for banners on park property or fencing.
+  </p>
+  
+  `,
+
+  {},
+  {},
+  {},
+  {
+    type: "Information",
+    keywords: [
+      "banner",
+      "banners",
+      "sign",
+      "signs",
+      "advertising",
+      "advertisement",
+      "park property",
+      "parks",
+      "fencing",
+      "fence",
+      "applications",
+      "application",
+      "banner application",
+      "banner permit",
+      "bannners",
+      "baners",
+      "aplication"
+    ],
+    categories: ["Parks and Countryside", "Bookings"]
+  },
+  {
+    date: "07/08/2026",
+    name: "Liz Taster"
+  }
+);
  
 
 const bookingsParks = new MenuPSaR(
@@ -1604,6 +1650,7 @@ const bookingsParks = new MenuPSaR(
    `[Sumamry of bookings menu]`,
   [
     templateTile1,
+    bannersInParks,
     
   ]
 );
