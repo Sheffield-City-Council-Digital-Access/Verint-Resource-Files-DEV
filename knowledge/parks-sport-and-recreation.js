@@ -1600,20 +1600,19 @@ const templateTile1 = new ContentPSaR(
 
 const bannersInParks = new ContentPSaR(
   "bannersInParks",
-  "Banners In Parks",
+  "Banners in parks",
   "Information about banner applications on park property or fencing.",
   `
-  <h3>Banners</h3>
-
+  
   <p>
     Due to limited resources, we are not currently accepting applications for banners on park property or fencing.
   </p>
   
   `,
 
-  {},
-  {},
-  {},
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
@@ -1638,6 +1637,62 @@ const bannersInParks = new ContentPSaR(
     name: "Liz Taster"
   }
 );
+
+const bookAnEvent = new ContentPSaR(
+  "bookAnEvent",
+  "Book an Event",
+  "Information about holding private events in parks and how to make an enquiry using the booking form.",
+  `
+  <p>
+    Private events for friends/families are welcome; our green spaces are for all to use. Please be mindful of other park users. 
+    Please do not erect structures such as gazebos.
+  </p>
+  
+  <p>
+    More information about holding an event in a park can be found on the 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/events-parks" target="_blank">
+    Events in parks | Sheffield City Council</a> webpage, including the terms and conditions.
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+  <p>
+    Enquiries about holding an event in a park are welcome and can be done by completing the <strong>Book a Room/Event/Film/Photoshoot form</strong>. 
+    The form is available on the link above.
+  </p>
+
+  <p>
+    Please also see other relevant articles in the Bookings section of the 'Parks, sport and recreation' knowledge menu.
+  </p>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "event",
+      "events",
+      "park",
+      "parks",
+      "private event",
+      "private events",
+      "gazebo",
+      "gazebos",
+      "book a room",
+      "enquiry",
+      "application",
+      "booking",
+      "bokking",
+      "booknig",
+      "evnt",
+      "evnts",
+    ],
+    categories: ["Parks and Countryside", "Booking"]
+  },
+  { date: "07/08/2026", name: "Liz Taster" }
+);
  
 
 const bookingsParks = new MenuPSaR(
@@ -1647,6 +1702,7 @@ const bookingsParks = new MenuPSaR(
   [
     templateTile1,
     bannersInParks,
+    bookAnEvent
     
   ]
 );
