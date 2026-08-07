@@ -1697,14 +1697,139 @@ const bookAnEvent = new ContentPSaR(
 );
  
 
+const bookASportsFacility = new ContentPSaR(
+  "bookASportsFacility",
+  "Book a Sports Facility (Football, Cricket, Tennis)",
+  "Information on booking tennis courts, football pitches, cricket pitches and Graves Park pitch and putt.",
+  `
+  <p>
+    A variety of sports facilities can be booked in Sheffield's parks. The sections below give details for each type of facility, including links to book where relevant. 
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Tennis Courts</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Tennis Courts are available at the following parks:</p>
+        <ul>
+          <li>Bingham Park</li>
+          <li>Concord Park</li>
+          <li>Ecclesfield Park</li>
+          <li>Graves Park</li>
+          <li>High Hazels Park</li>
+          <li>Hillsborough Park</li>
+          <li>Millhouses Park</li>
+          <li>Weston Park</li>
+        </ul>
+
+      <p>
+        Tennis courts can be booked online at <a href="https://tennissheffield.com/" target="_blank">Book courts and pitches in Sheffield with Courtside</a>.
+      </p>
+
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Football Pitches</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We have outdoor pitches available for seasonal or occasional bookings.
+      </p>
+      <p>
+        Pitches must be booked at least 5 working days in advance.
+      </p>
+      <p>
+        Costs vary depending on the quality of the pitch and the facilities available.
+      </p>
+      <p>
+        More details and the booking process can be found at 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/physical-activity-outdoor-sport/book-sports-pitch" target="_blank">
+        Book a sports pitch | Sheffield City Council</a>.
+      </p>
+
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cricket Pitches</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Missing info]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Pitch & Putt (Graves Park)</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Cost</strong> - The pitch and putt is free to play and open throughout the year.
+      </p>
+      <p>
+        <strong>Equipment</strong> - You will need to bring your own equipment as we no longer provide these.
+      </p>
+      <p>
+        <strong>Parking</strong> - Free parking is available via the Charles Ashmore Road entrance - S8 8GJ
+      </p>
+    </div>
+  </details>
+    
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Transactional",
+    keywords: [
+      "sports",
+      "facility",
+      "facilities",
+      "sport",
+      "booking",
+      "book",
+      "football",
+      "pitch",
+      "pitches",
+      "soccer",
+      "tennis",
+      "court",
+      "courts",
+      "cricket",
+      "putt",
+      "facillity",
+      "tenis",
+      "footbal",
+      "criket"
+    ],
+    categories: ["Parks and Countryside", "Booking"]
+  },
+  { date: "07/08/2026", name: "Liz Taster" }
+);
+
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
-   `[Sumamry of bookings menu]`,
+   `Details of how to book various different parks services and facilities.`,
   [
     templateTile1,
     bannersInParks,
-    bookAnEvent
+    bookAnEvent,
+    bookASportsFacility,
     
   ]
 );
