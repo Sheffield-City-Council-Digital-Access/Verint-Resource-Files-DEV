@@ -1652,7 +1652,6 @@ const activitiesInParks = new ContentPSaR(
 "activitiesInParks",
 "Activities in Parks",
 "Details of guidance and restrictions around activities in parks - BBQs, drones, fishing, metal detecting and wood collection.",
-
 `
 <p>
   Visitors can enjoy a range of activities in Sheffield’s parks, but some are subject to specific rules and restrictions. 
@@ -2041,7 +2040,7 @@ const reportTreePark = new ContentPSaR(
       "Report issue with a park tree",
       "Report isue with a park tree"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
 );
@@ -2054,6 +2053,84 @@ const maintenanceAndIssues = new MenuPSaR(
     reportTreePark,
     
   ]
+);
+
+const antiSocialBehaviourParks = new ContentPSaR(
+  "antiSocialBehaviourParks",
+  "Anti-social behaviour in parks",
+  "Information about reporting anti-social behaviour and how reports are managed in parks.",
+  `
+    <p>
+      <strong>In the first instance, antisocial behaviour should be reported to the Police via 101, or using 999 if it is an emergency.</strong>
+    </p>
+
+    <p>
+      Sheffield City Council take reports of anti-social behaviour (ASB) seriously and assess each report based on the circumstances, 
+      including the frequency of incidents, the impact on others, and any associated risks.
+    </p>
+    <p>
+      Examples of ASB may include vandalism, threatening behaviour, drug or alcohol-related nuisance, damage to property, noise nuisance, 
+      illegal use of vehicles, and harassment.
+    </p>
+
+    <p>
+      Further information about the councils approach to antisocial behaviour and a link to contact the ASB team can be found here: 
+      <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/crime-anti-social-behaviour/anti-social-behaviour" target="_blank">
+      Anti-social behaviour and community safety | Sheffield City Council</a>
+    </p>
+
+    <p>[Insert Send Link]</p>
+
+  <h3>ASB in Parks</h3>
+    <p>
+      Reports of ASB are passed to the Area Manager responsible for the park to review.
+    </p>
+    <p>
+      Records are maintained to help identify patterns, hot-spots and repeat incidents.
+    </p>
+    <p>
+      Depending on the nature and severity of the issue, we may work with other Council services, the Police, Community Safety teams, 
+      or other partner organisations to address the problem collectively.
+    </p>
+    <p>
+      Where an incident has been reported to Police, providing the crime reference number or incident number assists us when liaising with other organisations.
+    </p>
+    
+  `,
+
+  {},
+  {},
+  {},
+  {
+    type: "Information",
+    keywords: [
+      "anti-social behaviour",
+      "antisocial",
+      "behaviour",
+      "ASB",
+      "anti social",
+      "report ASB",
+      "parks",
+      "park",
+      "vandalism",
+      "threatening behaviour",
+      "drug",
+      "alcohol",
+      "noise",
+      "nuisance",
+      "property damage",
+      "illegal vehicles",
+      "harassment",
+      "behavour",
+      "antisocail",
+      "behviour"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "07/08/2026",
+    name: "Liz Taster"
+  }
 );
 
 //#endregion Maintenance and Issues
