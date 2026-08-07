@@ -2191,9 +2191,9 @@ const antiSocialBehaviourParks = new ContentPSaR(
     
   `,
 
-  {},
-  {},
-  {},
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
@@ -2227,6 +2227,40 @@ const antiSocialBehaviourParks = new ContentPSaR(
 );
 
 
+const cctvParks = new ContentPSaR(
+  "cctvParks",
+  "CCTV in parks",
+  "Information about CCTV enquiries in park spaces.",
+  `
+  <p>
+    All enquiries related to CCTV in park spaces should be directed to <a href="mailto:cctv@sheffield.gov.uk">cctv@sheffield.gov.uk</a>
+  </p>
+  
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "CCTV",
+      "camera",
+      "cameras",
+      "security",
+      "surveillance",
+      "CCTVs",
+      "cttv",
+      "cvtv",
+      "survellance",
+      "camra",
+      "camras"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "07/08/2026", name: "Liz Taster" }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance And Issues",
@@ -2234,6 +2268,7 @@ const maintenanceAndIssues = new MenuPSaR(
   [
     reportTreePark,
     antiSocialBehaviourParks,
+    cctvParks,
     
   ]
 );
