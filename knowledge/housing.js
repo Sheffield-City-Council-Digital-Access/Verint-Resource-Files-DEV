@@ -4262,7 +4262,7 @@ const applicationChanges = new ContentH(
   "Understand the process for updating your housing application, including submitting changes, providing ID, and renewing your application annually.",
   `
     <p>
-      Change of circumstances are now online. When you are making changes, remember
+      Change of circumstances is now online. When you are making changes, remember
       to click 'Submit'. ID/References may also need to be submitted before any
       changes are accepted.
     </p>
@@ -4783,15 +4783,13 @@ const askedToLeave = new ContentH(
   "Guidance for supporting customers who are at risk of being asked to leave family or friend accommodation, including prevention measures, housing options, and homelessness risk assessment.",
   `
     <h3>Establish the Situation </h3>
-    <p>
       <ul>
         <li>When do you have to leave?</li>
         <li>Who asked you to leave and why?</li>
         <li>Can you remain for a short agreed period?</li>
         <li>Is there any way the arrangement can continue safely for a short time?</li>
-        <li>Would the host agree to a planned move-out date</li>
+        <li>Would the host agree to a planned move-out date?</li>
       </ul>
-    </p>
     <p>
         <em>Principle: Sofa surfing is not secure, but short-term solutions may help prevent homelessness.</em>
     </p>
@@ -7598,7 +7596,7 @@ const lostJob = new ContentH(
   `
   <h3>Eviction Prevention</h3>
     <p>
-    Landlords must follow legal eviction process and cannot evict immediately.
+    Landlords must follow the legal eviction process and cannot evict immediately.
       <ul>
         <li>Encourage early communication with landlord</li>
         <li>Agree temporary payment arrangement where possible</li>
@@ -7678,7 +7676,7 @@ const movingIn = new ContentH(
         They will tell you the supplier and give you your Meter Point Reference Number (MPRN).<br><br>
   
         <strong>Electricity</strong> - Call your local electricity distribution company and ask for their Meter 
-        Point Administration Service (MPAS). Alternatively, contact <a href="tel:00845 0707172">0845 0707172</a>.
+        Point Administration Service (MPAS). Alternatively, contact <a href="tel:0845 0707172">0845 0707172</a>.
       </p>
   
       <h4>Meter Readings</h4>
@@ -8208,7 +8206,7 @@ const overcrowding = new ContentH(
 const preventionEndOfSupportedAccommodation = new ContentH(
   "preventionEndOfSupportedAccommodation",
   "Prevention at End of Supported Accommodation",
-  "Learn about priority for rehousing, including how priority is assessed, what it means for their housing options, and how to request a review.",
+  "Information regarding advice once supported accommodation comes to and end.",
   `
     <details class="accordion">
     <summary class="accordion-header">
@@ -9020,7 +9018,7 @@ const PropertyOffersAndViewings = new ContentH(
 
     <p>
       The following link provides details of each step regarding bidding/offers/viewings: 
-      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank">Bidding for a Council home | Sheffield City Council[</a>
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank">Bidding for a Council home | Sheffield City Council</a>
     </p>
 
     <button type="button"
