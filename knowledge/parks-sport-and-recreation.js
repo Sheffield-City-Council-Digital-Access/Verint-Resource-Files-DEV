@@ -2052,7 +2052,7 @@ const antiSocialBehaviourParks = new ContentPSaR(
   "Information about reporting anti-social behaviour and how reports are managed in parks.",
   `
     <p>
-      <strong>In the first instance, antisocial behaviour should be reported to the Police via 101, or using 999 if it is an emergency.</strong>
+      <strong>In the first instance antisocial behaviour should be reported to the Police via 101, or using 999 if it is an emergency.</strong>
     </p>
 
     <p>
@@ -2084,7 +2084,8 @@ const antiSocialBehaviourParks = new ContentPSaR(
       or other partner organisations to address the problem collectively.
     </p>
     <p>
-      Where an incident has been reported to Police, providing the crime reference number or incident number assists us when liaising with other organisations.
+      Where an incident has been reported to Police, ask customers to <strong>provide the crime reference number or incident number</strong> - 
+      this assists council officers when liaising with other organisations.
     </p>
     
   `,
