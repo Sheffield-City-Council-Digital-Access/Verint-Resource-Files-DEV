@@ -2366,6 +2366,50 @@ const rivelinValleyWaterPlay = new ContentPSaR(
   }
 );
 
+const sheffieldRoundWalk = new ContentPSaR(
+  "sheffieldRoundWalk",
+  "Sheffield Round Walk",
+  "Information about the Sheffield Round Walk and access to an online PDF guide.",
+  `
+  <p>
+    We have previously offered booklets about the Sheffield Round Walk for sale however these are no longer available.
+  </p>
+  <p>
+    A PDF with information about the walk is available online at 
+    <a href="https://www.welcometosheffield.co.uk/content/articles/sheffield-round-walk/" target="_blank" >Sheffield Round Walk</a>
+  </p>
+  
+  <p>[Insert Send Link]</p>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "Sheffield",
+      "Round",
+      "Walk",
+      "walking",
+      "walk",
+      "walks",
+      "trail",
+      "trails",
+      "route",
+      "routes",
+      "hiking",
+      "Shefield ",
+      "Wak"
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 const eventsAndActivities = new MenuPSaR(
   "eventsAndActivities",
   "Events And Activities",
@@ -2375,6 +2419,7 @@ const eventsAndActivities = new MenuPSaR(
     activitiesInParks,
     eventsInParks,
     rivelinValleyWaterPlay,
+    sheffieldRoundWalk,
     
   ]
 );
