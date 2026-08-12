@@ -2289,6 +2289,83 @@ const eventsInParks = new ContentPSaR(
 );
  
 
+const rivelinValleyWaterPlay = new ContentPSaR(
+  "rivelinValleyWaterPlay",
+  "Rivelin Valley Water Play",
+  "Information about opening dates, opening hours, admission fees, accessibility facilities, etc. for Rivelin Valley Water Play.",
+  `
+  <p>
+    Rivelin Valley Water Play is open from Spring Bank Holiday until the first weekend in September.
+  </p>
+
+<h3>Opening Hours</h3>
+  <p><strong>Out of school holidays</strong> – Open weekends only, 10am to 4.30pm</p>
+  <p><strong>During school holidays</strong> – Open every day, 10am to 4.30pm</p>
+
+<h3>Admission Fee</h3>
+  <p>Free</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Accessibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Disabled access and facilities:</p>
+        <ul>
+          <li>Ramped access with handrails into the paddling pool</li>
+          <li>The water play area is accessible to people of all abilities, and special aqua wheelchairs are available for loan to disabled children and their carers</li>
+          <li>Changing Places toilet facility. Access is controlled by a Radar key which can be obtained from the nearby cafe</li>
+          <li>3 large splash pads with colourful anti-slip surfacing</li>
+        </ul>
+    </div>
+  </details>
+
+
+<h3>More Information</h3>
+  <p>
+    Further information can be found at: 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/rivelin-valley-water-play" target="_blank">
+    Rivelin Valley Water Play | Sheffield City Council</a>
+  </p>
+  
+  <p>[Insert Send Link]</p>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "Rivelin",
+      "Valley",
+      "Water",
+      "Play",
+      "park",
+      "splash",
+      "pad",
+      "pads",
+      "paddling",
+      "pool",
+      "aqua wheelchair",
+      "aqua wheelchairs",
+      "Changing Places",
+      "waterplay",
+      "Rivelen",
+      "Rivlin",
+      "vally",
+      "splas"
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 const eventsAndActivities = new MenuPSaR(
   "eventsAndActivities",
   "Events And Activities",
@@ -2297,6 +2374,7 @@ const eventsAndActivities = new MenuPSaR(
     templateTile2,
     activitiesInParks,
     eventsInParks,
+    rivelinValleyWaterPlay,
     
   ]
 );
