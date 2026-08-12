@@ -2872,6 +2872,107 @@ const parksPlanningAndPurchase = new MenuPSaR(
 //#endregion Planning and Purchase
 
 //#region Top level tiles - must be listed in ServicePSAR
+
+const ecology = new ContentPSaR(
+  "ecology",
+  "Ecology",
+  "Information about crayfish trapping restrictions and ecology data requests.",
+  `
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Crayfish</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The council does not allow crayfish trapping on its land anywhere in Sheffield unless it is for approved scientific research with an Environment Agency 
+        licence and landowner permission.
+      </p>
+      <p>
+        It is a criminal offence which can lead to prosecution, fines, and other penalties.
+      </p>
+      <p>
+        Crayfish trapping controls are in place, including for invasive crayfish, due to the potential to make environmental problems worse. 
+        Potential risks are:
+      </p>
+        <ul>
+          <li>Spreading invasive species and disease</li>
+          <li>Accidentally harming protected native crayfish</li>
+          <li>Catching other wildlife such as fish, water voles or otters</li>
+          <li>Damaging riverbanks and habitats</li>
+        </ul>
+
+        <p>
+          The UK’s native, white-clawed crayfish is endangered and legally protected due to major long-term declines caused by invasive species and disease. 
+          There are only two populations of white-clawed crayfish in Sheffield and they must be protected.
+        </p>
+
+        <p>
+          Further enquiries are to be directed to ecology@sheffield.gov.uk
+        </p>
+    </div>
+  </details>
+  
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ecology Data Requests</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Enquiries may be received regarding Sheffield and Barnsley Record Centre data requests.
+      </p>
+      <p>
+        If the person has already completed a data request form, it should be sent to ecology@sheffield.gov.uk
+      </p>
+      <p>
+        If the person wants to make a new data request, they can find the form and further information on the process and requirements at 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/sheffield-biological-records-centre" target="_blank">
+        Sheffield Biological Records Centre | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+         
+        `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "Information" },
+  {
+    type: "Information",
+    keywords: [
+      "ecology",
+      "crayfish",
+      "crayfishes",
+      "cray fish",
+      "white-clawed",
+      "white clawed",
+      "native",
+      "invasive",
+      "Environment Agency",
+      "scientific research",
+      "wildlife",
+      "riverbanks",
+      "habitats",
+      "protected species",
+      "Biological Records Centre",
+      "data requests",
+      "biological records",
+      "data request",
+      "trapping",
+      "traping",
+      "crayfsh",
+      "ecolgy",
+      "biolgical"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 //#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -2885,6 +2986,7 @@ const parksSportAndRecreation = new ServicePSaR(
    bookingsParks,
    eventsAndActivities,
    maintenanceAndIssues,
-   parksPlanningAndPurchase
+   parksPlanningAndPurchase,
+   ecology
   ]
 );
