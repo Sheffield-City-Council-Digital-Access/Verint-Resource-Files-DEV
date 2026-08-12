@@ -1821,6 +1821,142 @@ const bookASportsFacility = new ContentPSaR(
   { date: "07/08/2026", name: "Liz Taster" }
 );
 
+const commercialActivitiesParks = new ContentPSaR(
+  "commercialActivitiesParks",
+  "Commercial Activities/Vendors",
+  "Information about commercial activities, vendors, and fitness-related activities in parks.",
+  `
+  <p>
+    If we receive enquiries about using park spaces for business purposes, including food vendors, ice cream vans, non-fitness activities etc. they should be directed 
+    to email <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> with details.
+  </p>
+
+  <p>
+    Fitness related activities should be directed to 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/fitness-parks" target="_blank">
+    Organise a fitness class | Sheffield City Council </a> 
+    where there are further details and links to provisionally book activities.
+  </p>
+
+  <p>[Insert Send Link]</p>
+  
+  `,
+  
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "commercial",
+      "activities",
+      "activity",
+      "vendors",
+      "vendor",
+      "fitness",
+      "classes",
+      "class",
+      "venders",
+      "venodrs",
+      "buisness",
+      "fitnes",
+      "activites"
+    ],
+    categories: ["Parks and Countryside", "Booking"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const filmingPhotoshoots = new ContentPSaR(
+  "filmingPhotoshoots",
+  "Filming/Photoshoots in Parks",
+  "Information for customers wanting to hold a photo shoot on Parks & Countryside land.",
+  `
+  <p>
+    Customers wanting to hold a photo shoot on Parks & Countryside land must apply for permission.
+  </p>
+  <p>
+    The form is available on the website and must be completed by the interested party due to liability issues. 
+    <strong>The form should not be completed by customer service staff on their behalf.</strong>
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+  <p>Fees apply as follows:</p>
+    <table>
+      <tr>
+        <th>Shoot type</th>
+        <th>Fees</th>
+      </tr>
+      <tr>
+        <td>Commercial shoots</td>
+        <td>£600 per day,<br>minimum £300 for half day or less.</td>
+      </tr>
+      <tr>
+        <td>Private/personal shoots e.g. weddings or family portraits (including Botanical Gardens)</td>
+        <td>£96 per hour</td>
+      </tr>
+      <tr>
+        <td>Student projects</td>
+        <td>considered on request</td>
+      </tr>
+      <tr>
+        <td>news bulletins &amp; the promotion of Sheffield</td>
+        <td>considered on request</td>
+      </tr>
+    </table>
+
+  <p>
+    Once a request for permission has been received it will be reviewed and you will be contacted within 5 working days.
+  </p>
+  <p>
+    Upon agreement of permission, payment is required via an online link, after which confirmation of permission will be provided by email.
+  </p>
+  
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "Permission" },
+  { typeKey: "Filming" },
+  {
+    type: "Information",
+    keywords: [
+      "filming",
+      "film",
+      "films",
+      "photoshoot",
+      "photoshoots",
+      "photo shoot",
+      "photo shoots",
+      "photography",
+      "photograph",
+      "photographs",
+      "commercial",
+      "private",
+      "student",
+      "news",
+      "promotion",
+      "wedding",
+      "weddings",
+      "portrait",
+      "portraits",
+      "Botanical Gardens",
+      "photoshot",
+      "photshoot",
+      "filiming"
+    ],
+    categories: ["Parks and Countryside", "Booking"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
@@ -1830,6 +1966,8 @@ const bookingsParks = new MenuPSaR(
     bannersInParks,
     bookAnEvent,
     bookASportsFacility,
+    commercialActivitiesParks,
+    filmingPhotoshoots,
     
   ]
 );
