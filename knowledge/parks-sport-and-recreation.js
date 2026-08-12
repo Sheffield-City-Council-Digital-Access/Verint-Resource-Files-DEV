@@ -1828,7 +1828,7 @@ const commercialActivitiesParks = new ContentPSaR(
   `
   <p>
     If we receive enquiries about using park spaces for business purposes, including food vendors, ice cream vans, non-fitness activities etc. they should be directed 
-    to email <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> with details.
+    to email the details to: <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
   </p>
 
   <p>
@@ -1873,7 +1873,7 @@ const commercialActivitiesParks = new ContentPSaR(
 
 const filmingPhotoshoots = new ContentPSaR(
   "filmingPhotoshoots",
-  "Filming/Photoshoots in parks",
+  "Filming/photoshoots in parks",
   "Information for customers wanting to hold a photo shoot on Parks & Countryside land.",
   `
   <p>
@@ -1884,7 +1884,7 @@ const filmingPhotoshoots = new ContentPSaR(
     <strong>The form should not be completed by customer service staff on their behalf.</strong>
   </p>
 
-  <p>[Insert Send Link]</p>
+  <p>[Insert Send Link] - this will be to wherever the new form is hosted.</p>
 
   <p>Fees apply as follows:</p>
     <table>
