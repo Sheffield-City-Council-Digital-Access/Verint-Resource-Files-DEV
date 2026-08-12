@@ -1884,7 +1884,7 @@ const filmingPhotoshoots = new ContentPSaR(
     <strong>The form should not be completed by customer service staff on their behalf.</strong>
   </p>
 
-  <p>[Insert Send Link] - this will be to wherever the new form is hosted.</p>
+  <p>[Insert Send Link] - <em>this will be to wherever the new form is hosted</em>.</p>
 
   <p>Fees apply as follows:</p>
     <table>
@@ -1920,8 +1920,8 @@ const filmingPhotoshoots = new ContentPSaR(
   `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "Permission" },
-  { typeKey: "Filming" },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
@@ -2180,9 +2180,9 @@ const activitiesInParks = new ContentPSaR(
 
   `,
 
-{},
-{ typeKey: "" },
-{ typeKey: "" },
+{ buttonLabel: "", formName: "" },
+{ typeKey: "Permission" },
+{ typeKey: "Filming" },
 {
 type: "Information",
 keywords: [
@@ -2230,6 +2230,62 @@ date: "06/08/2026",
 name: "Liz Taster"
 }
 );
+
+
+const eventsInParks = new ContentPSaR(
+  "eventsInParks",
+  "Events in Parks",
+  "Information about upcoming events in Sheffield parks, including Tramlines contact details and resident enquiries.",
+  `
+  <p>
+    Upcoming events taking place in Sheffield can be found at <a href="https://www.welcometosheffield.co.uk/visit/whats-on/all-events/" target="_blank" >
+    All Events in Sheffield</a>.
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Tramlines</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        General queries about the event to be directed to <a href="mailto:info@tramlines.org.uk">info@tramlines.org.uk</a>
+      </p>
+      <p>
+        Concerns regarding Hillsborough Park to be directed to <a href="mailto:Events@sheffield.gov.uk">Events@sheffield.gov.uk</a>
+      </p>
+      <p>
+        Tramlines have a dedicated line for residents during the event: 0114 3213662, open on all festival days and in the days prior/following the event, 8am to 11pm. 
+        Enquiries can also be submitted to <a href="mailto:residents@tramlines.org.uk">residents@tramlines.org.uk</a>
+      </p>
+    </div>
+  </details>
+    
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "event",
+      "events",
+      "what's on",
+      "whats on",
+      "Tramlines",
+      "festival",
+      "tramlimes",
+      "tramlins",
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
  
 
 const eventsAndActivities = new MenuPSaR(
@@ -2239,6 +2295,7 @@ const eventsAndActivities = new MenuPSaR(
   [
     templateTile2,
     activitiesInParks,
+    eventsInParks,
     
   ]
 );
