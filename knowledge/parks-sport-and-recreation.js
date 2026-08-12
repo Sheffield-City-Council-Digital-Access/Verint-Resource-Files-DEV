@@ -2985,7 +2985,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Donating my Tree</h3>
+      <h3>Donating my tree</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3033,7 +3033,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Maintenance of Young Trees</h3>
+      <h3>Maintenance of young trees</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3048,7 +3048,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Community Forestry Events</h3>
+      <h3>Community Forestry events</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3063,7 +3063,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Community Forestry Volunteering</h3>
+      <h3>Community Forestry volunteering</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
