@@ -1823,7 +1823,7 @@ const bookASportsFacility = new ContentPSaR(
 
 const commercialActivitiesParks = new ContentPSaR(
   "commercialActivitiesParks",
-  "Commercial Activities/Vendors",
+  "Commercial activities/vendors",
   "Information about commercial activities, vendors, and fitness-related activities in parks.",
   `
   <p>
@@ -1832,9 +1832,9 @@ const commercialActivitiesParks = new ContentPSaR(
   </p>
 
   <p>
-    Fitness related activities should be directed to 
+    Enquiries about fitness related activities should be directed to 
     <a href="https://www.sheffield.gov.uk/parks-sport-recreation/fitness-parks" target="_blank">
-    Organise a fitness class | Sheffield City Council </a> 
+    Organise a fitness class | Sheffield City Council </a>, 
     where there are further details and links to provisionally book activities.
   </p>
 
@@ -1873,7 +1873,7 @@ const commercialActivitiesParks = new ContentPSaR(
 
 const filmingPhotoshoots = new ContentPSaR(
   "filmingPhotoshoots",
-  "Filming/Photoshoots in Parks",
+  "Filming/Photoshoots in parks",
   "Information for customers wanting to hold a photo shoot on Parks & Countryside land.",
   `
   <p>
@@ -1894,7 +1894,7 @@ const filmingPhotoshoots = new ContentPSaR(
       </tr>
       <tr>
         <td>Commercial shoots</td>
-        <td>£600 per day,<br>minimum £300 for half day or less.</td>
+        <td>£600 per day, <br>minimum £300 for half day or less.</td>
       </tr>
       <tr>
         <td>Private/personal shoots e.g. weddings or family portraits (including Botanical Gardens)</td>
@@ -1905,16 +1905,16 @@ const filmingPhotoshoots = new ContentPSaR(
         <td>considered on request</td>
       </tr>
       <tr>
-        <td>news bulletins &amp; the promotion of Sheffield</td>
+        <td>News bulletins &amp; the promotion of Sheffield</td>
         <td>considered on request</td>
       </tr>
     </table>
 
   <p>
-    Once a request for permission has been received it will be reviewed and you will be contacted within 5 working days.
+    Once a request for permission has been received it will be reviewed and the requestor will be contacted within 5 working days.
   </p>
   <p>
-    Upon agreement of permission, payment is required via an online link, after which confirmation of permission will be provided by email.
+    Once permission is agreed, payment is required via an online link. Onc payment is received, confirmation of permission will be provided by email.
   </p>
   
   `,
