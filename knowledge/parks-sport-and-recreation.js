@@ -2297,13 +2297,13 @@ const rivelinValleyWaterPlay = new ContentPSaR(
   <p>
     Rivelin Valley Water Play is open from Spring Bank Holiday until the first weekend in September.
   </p>
+  <p>
+    Admission is <strong>free</strong>.
+  </p>
 
 <h3>Opening Hours</h3>
   <p><strong>Out of school holidays</strong> – Open weekends only, 10am to 4.30pm</p>
   <p><strong>During school holidays</strong> – Open every day, 10am to 4.30pm</p>
-
-<h3>Admission Fee</h3>
-  <p>Free</p>
 
 
   <details class="accordion">
@@ -2316,7 +2316,7 @@ const rivelinValleyWaterPlay = new ContentPSaR(
         <ul>
           <li>Ramped access with handrails into the paddling pool</li>
           <li>The water play area is accessible to people of all abilities, and special aqua wheelchairs are available for loan to disabled children and their carers</li>
-          <li>Changing Places toilet facility. Access is controlled by a Radar key which can be obtained from the nearby cafe</li>
+          <li>Changing Places toilet facility - access is controlled by a Radar key which can be obtained from the nearby cafe</li>
           <li>3 large splash pads with colourful anti-slip surfacing</li>
         </ul>
     </div>
