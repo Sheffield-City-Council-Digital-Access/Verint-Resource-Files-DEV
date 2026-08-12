@@ -2908,7 +2908,7 @@ const ecology = new ContentPSaR(
         </p>
 
         <p>
-          Further enquiries are to be directed to ecology@sheffield.gov.uk
+          Further enquiries are to be directed to <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>
         </p>
     </div>
   </details>
@@ -2923,7 +2923,7 @@ const ecology = new ContentPSaR(
         Enquiries may be received regarding Sheffield and Barnsley Record Centre data requests.
       </p>
       <p>
-        If the person has already completed a data request form, it should be sent to ecology@sheffield.gov.uk
+        If the person has already completed a data request form, it should be sent to <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>
       </p>
       <p>
         If the person wants to make a new data request, they can find the form and further information on the process and requirements at 
