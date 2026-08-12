@@ -2915,7 +2915,7 @@ const ecology = new ContentPSaR(
   
       <details class="accordion">
     <summary class="accordion-header">
-      <h3>Ecology Data Requests</h3>
+      <h3>Ecology data requests</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2973,6 +2973,98 @@ const ecology = new ContentPSaR(
   }
 );
 
+const treePlantingCommunityForestry = new ContentPSaR(
+  "treePlantingCommunityForestry",
+  "Tree planting & Community Forestry",
+  "Information about tree donations, tree planting, maintenance of young trees, Community Forestry events, and volunteering opportunities.",
+  `
+<h3>Donating my Tree</h3>
+  <p>
+    We are unable to accept donations of living trees or allow trees to be planted on Parks and Countryside property that are not sourced 
+    through our partner organisation; Trees for Streets.
+  </p>
+  <p>
+    Pests and disease are a constant threat to Sheffield’s tree stock and planting trees without knowledge of the provenance raises the risk of 
+    introducing more into our green spaces. All trees planted on Parks and Countryside land must be sourced by the Community Forestry Team who will 
+    ensure it comes from a Plant Healthy, or similar certified, nursery.
+  </p>
+
+<h3>Donating to Plant a Tree</h3>
+  <p>
+    Sheffield City Council work with Trees for Streets who manage the administration of tree donations to the city. 
+    Donations can be made through their website <a href="https://www.treesforstreets.org/" target="_blank">Trees for Streets - Let's fill our streets with trees</a>.
+  </p>
+  <p>
+    Not all parks have space for additional trees and the location within a park is decided by Tree Officers.
+  </p>
+  <p>
+    The cost of the tree includes supply, planting, and 2 years of maintenance until it reaches maturity. 
+    We will replace the tree once in its first 2 years of life if it fails.
+  </p>
+  <p>
+    We will inform you of the planting time and date and will allow you to come along to watch if you wish. 
+    We don’t allow plaques, flowers, or other objects to be attached to the tree; however, we do have an online 
+    dedication page where you will be able to leave a short statement and a picture if you wish.
+  </p>
+
+<h3>Maintenance of Young Trees</h3>
+  <p>
+    All young trees are maintained for 2 years after planting. 
+    If you see a tree with stakes around it which is leaning, or the stakes/straps need attention, please send details of the issue and 
+    the tree's location to <a href="mailto:communityforestry@sheffield.gov.uk">communityforestry@sheffield.gov.uk</a>.
+  </p>
+
+<h3>Community Forestry Events</h3>
+  <p>
+    Details of upcoming Community Forestry events, and ticket booking, can be found at 
+    <a href="https://www.eventbrite.co.uk/o/scc-community-forestry-20138037357" target="_blank">
+    Community Forestry Eventbrite Page</a>.
+  </p>
+
+<h3>Community Forestry Volunteering</h3>
+  <p>
+    Community Forestry work is seasonal but assistance with tasks is appreciated all year round. 
+    If you would like to do regular volunteering, please email the team directly at 
+    <a href="mailto:communityforestry@sheffield.gov.uk">communityforestry@sheffield.gov.uk</a>.
+  </p>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "Tree",
+      "Planting",
+      "Community",
+      "Forestry",
+      "Trees for Streets",
+      "donation",
+      "donate",
+      "donations",
+      "plant",
+      "planting",
+      "tree maintenance",
+      "volunteering",
+      "volunteer",
+      "trees",
+      "sapling",
+      "saplings",
+      "urban forestry",
+      "donaton",
+      "plantng",
+      "forrestry",
+      "commmunity"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 //#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -2987,6 +3079,7 @@ const parksSportAndRecreation = new ServicePSaR(
    eventsAndActivities,
    maintenanceAndIssues,
    parksPlanningAndPurchase,
-   ecology
+   ecology,
+   treePlantingCommunityForestry,
   ]
 );
