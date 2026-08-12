@@ -2234,7 +2234,7 @@ name: "Liz Taster"
 
 const eventsInParks = new ContentPSaR(
   "eventsInParks",
-  "Events in Parks",
+  "Events in parks",
   "Information about upcoming events in Sheffield parks, including Tramlines contact details and resident enquiries.",
   `
   <p>
@@ -2257,8 +2257,9 @@ const eventsInParks = new ContentPSaR(
         Concerns regarding Hillsborough Park to be directed to <a href="mailto:Events@sheffield.gov.uk">Events@sheffield.gov.uk</a>
       </p>
       <p>
-        Tramlines have a dedicated line for residents during the event: 0114 3213662, open on all festival days and in the days prior/following the event, 8am to 11pm. 
-        Enquiries can also be submitted to <a href="mailto:residents@tramlines.org.uk">residents@tramlines.org.uk</a>
+        Tramlines have a dedicated line for residents during the event: 0114 3213662. 
+        <br> The phoneline is open on all festival days and in the days prior/following the event, 8am to 11pm. 
+        <br>Enquiries can also be submitted to <a href="mailto:residents@tramlines.org.uk">residents@tramlines.org.uk</a>
       </p>
     </div>
   </details>
