@@ -3212,8 +3212,6 @@ const dogCatWasteCommercial = new ContentPSaR(
           <tr>
             <th>Number of Bags</th>
             <th>Cost of collection</th>
-            <th>Number of Bags</th>
-            <th>Cost of collection</th>
           </tr>
         </thead>
         <tbody>
