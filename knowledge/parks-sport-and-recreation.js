@@ -3164,6 +3164,114 @@ const dogBins = new ContentPSaR(
   { date: "13/08/2026", name: "Liz Taster" }
 );
 
+const dogCatWasteCommercial = new ContentPSaR(
+  "dogCatWasteCommercial",
+  "Dog & Cat Waste (Commercial)",
+  "We provide dog and cat waste removal services to private companies e.g. kennels or vets located within the Sheffield City boundaries.",
+  `
+  <p>
+    We provide dog and cat waste removal services to private companies e.g. kennels or vets located within the Sheffield City boundaries.
+  </p>
+
+  <p>The following criteria must be met:</p>
+    <ul>
+      <li>Collection must be from an accessible location ideally enabling a vehicle to park next to the waste point or within a reasonable distance</li>
+      <li>The waste must be bagged and meet the agreed standard of BK090A9, BK090A8 or equivalent (SCC does not supply these bags).</li>
+      <li>All waste bags must be securely tied by cable ties to prevent spillage</li>
+      <li>Individual bags must weigh no more than 20kg</li>
+      <li>Waste transfer notes can be supplied at the customer’s request</li>
+    </ul>
+
+  <p>
+    The charge varies depending on the number of bags in a single collection.
+  </p>
+
+  <p>
+    Collection of a single bag is £40.95, with additional bags charged at £5 each.
+  </p>
+
+  <p>
+    Customers should fill out the request form here: [insert council website link].
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    The request form includes a link for immediate payment. If there has been an issue with payment, it can be made using the following link
+    <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank">
+    https://ip.e-paycapita.com/Grit/Salt Requests</a>
+  </p>
+
+  <p>
+    Once an enquiry has been submitted, the customer will be contacted by a member of the Parks &amp; Countryside service to discuss the request.
+  </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost tables</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Number of Bags</th>
+            <th>Cost of collection</th>
+            <th></th>
+            <th>Number of Bags</th>
+            <th>Cost of collection</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>£40.95</td><td></td><td>6</td><td>£65.95</td></tr>
+          <tr><td>2</td><td>£45.95</td><td></td><td>7</td><td>£70.95</td></tr>
+          <tr><td>3</td><td>£50.95</td><td></td><td>8</td><td>£75.95</td></tr>
+          <tr><td>4</td><td>£55.95</td><td></td><td>9</td><td>£80.95</td></tr>
+          <tr><td>5</td><td>£60.95</td><td></td><td>10</td><td>£85.95</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+`,
+  { buttonLabel: "Request waste collection", formName: "request_waste_collection" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [
+      "dog",
+      "cat",
+      "waste",
+      "Commercial",
+      "commercial",
+      "animal",
+      "pet",
+      "removal",
+      "collection",
+      "collections",
+      "private",
+      "company",
+      "companies",
+      "kennels",
+      "kennel",
+      "vets",
+      "vet",
+      "veterinary",
+      "bags",
+      "bagged",
+      "wast",
+      "comercial",
+      "kenels",
+      "payement"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance and Issues",
@@ -3180,7 +3288,8 @@ const maintenanceAndIssues = new MenuPSaR(
     lostFoundProperty,
     grassHedgeCutting,
     dogFouling,
-    dogBins
+    dogBins,
+    dogCatWasteCommercial,
     
   ]
 );
