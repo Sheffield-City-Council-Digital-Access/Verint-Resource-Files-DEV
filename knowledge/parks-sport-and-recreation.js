@@ -3078,7 +3078,7 @@ const grassHedgeCutting = new ContentPSaR(
   "Grass & hedge cutting",
   "Information about grass cutting schedules, hedge cutting periods, and reporting issues with grassed areas and hedges.",
   `
-<h3>Grass Cutting</h3>
+<h3>Grass cutting</h3>
   <p>
     Grass is cut every 3-4 weeks following a schedule, starting in April and running to the end of October. 
     Frequency depends on the weather conditions, grass growth rates, and site conditions.
@@ -3088,7 +3088,7 @@ const grassHedgeCutting = new ContentPSaR(
     If this is the case, litter will be collected shortly after the grass has been cut, but not necessarily on the same day.
   </p>
 
-<h3>Hedge Cutting</h3>
+<h3>Hedge cutting</h3>
   <p>
     Hedge cutting takes place during specific periods:
   </p>
@@ -3099,16 +3099,17 @@ const grassHedgeCutting = new ContentPSaR(
   <p>
     Timing may vary depending on the type and location of the hedge, nesting bird considerations, and weather conditions.
   </p>
+<h3>Reporting issues</h3>
   <p>
     If someone wishes to report an area that appears to have been missed, requires attention, or an issue with grass or hedges 
-    ask them to use the form at: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_hedge_plant_grass" target="_blank">
-    Hedges, plants or grassed areas</a>
-    the park manager will inspect the area and act where required.
+    ask them to use the form at <a href="https://forms.sheffield.gov.uk/site/portal/form/report_hedge_plant_grass" target="_blank">
+    Hedges, plants or grassed areas</a>.
+    Once the report has been reviewed, the park manager will inspect the area and act where required.
   </p>
   <p>[Insert Send Link]</p>
 
   <p>
-    Further information about grass and hedge cutting, and related topics, can be found here:
+    Further information about grass cutting, hedge cutting, and other related topics can be found here:
     <a href="https://www.sheffield.gov.uk/roads-pavements/problems-plants-trees-weeds-grass" target="_blank">
     Problems with plants, trees, weeds and grass | Sheffield City Council</a>
   </p>
