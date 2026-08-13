@@ -3612,7 +3612,7 @@ const memorialsInParks = new ContentPSaR(
   </p>
   <p>
     Details of how to donate can be found in the <strong>Tree Planting & Community Forestry</strong> knowledge article. 
-    Search for 'donate a tree' using the search function above.
+    Search for '<em>donate a tree</em>' using the search function above.
   </p>
 
   `,
