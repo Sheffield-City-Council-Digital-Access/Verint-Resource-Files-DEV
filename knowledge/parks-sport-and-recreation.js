@@ -2412,8 +2412,8 @@ const sheffieldRoundWalk = new ContentPSaR(
 
 const eventsAndActivities = new MenuPSaR(
   "eventsAndActivities",
-  "Events And Activities",
-   `[Sumamry of Events and Activities menu]`,
+  "Events and activities",
+   `[Sumamry of events and activities menu]`,
   [
     templateTile2,
     activitiesInParks,
@@ -2862,7 +2862,7 @@ const damageToPavementsAndSurfaces = new ContentPSaR(
 
 const damageToFencing = new ContentPSaR(
   "damageToFencing",
-  "Damage to Fencing",
+  "Damage to fencing",
   "Information on reporting damage to fencing in parks and countryside areas.",
   `
   <p>
@@ -2910,7 +2910,7 @@ const damageToFencing = new ContentPSaR(
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance And Issues",
-   `[Sumamry of Maintenance and Issues menu]`,
+   `[Sumamry of maintenance and issues menu]`,
   [
     reportTreePark,
     antiSocialBehaviourParks,
@@ -2964,8 +2964,8 @@ const templateTile3 = new ContentPSaR(
 
 const parksPlanningAndPurchase = new MenuPSaR(
   "parksPlanningAndPurchase",
-  "Parks Planning And Purchase",
-   `[Sumamry of Parks Planning And Purchase menu]`,
+  "Parks planning and purchase",
+   `[Sumamry of parks planning and purchase menu]`,
   [
     templateTile3,
     
@@ -3292,7 +3292,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
 
 const wildlifeInParks = new ContentPSaR(
   "wildlifeInParks",
-  "Wildlife in Parks",
+  "Wildlife in parks",
   "Information about nesting birds, wildlife crime, unusual wildlife, loose animals, and wildlife welfare concerns in parks.",
   `
   <p>
