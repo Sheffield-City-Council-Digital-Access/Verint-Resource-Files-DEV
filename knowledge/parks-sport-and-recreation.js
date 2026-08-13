@@ -1563,44 +1563,9 @@ const allotmentsParks = new MenuPSaR(
 
 //#region Bookings
 
-const templateTile1 = new ContentPSaR(
-  "templateTile1",
-  "Template Tile 1",
-  "Description to go on main tile.",
-  `
-    <h3>Header</h3>
-    <p>Content</p>
- 
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>[Accordion content]</p>
-    </div>
-  </details>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Information",
-    keywords: [
-      "template",
-      "templte"
-    ],
-    categories: ["Parks and Countryside"]
-  },
-  { date: "01/07/2026", name: "Liz Taster" }
-);
-
-
 const bannersInParks = new ContentPSaR(
   "bannersInParks",
-  "Banners in parks",
+  "Banners in Parks",
   "Information about banner applications on park property or fencing.",
   `
   
@@ -1823,7 +1788,7 @@ const bookASportsFacility = new ContentPSaR(
 
 const commercialActivitiesParks = new ContentPSaR(
   "commercialActivitiesParks",
-  "Commercial activities/vendors",
+  "Commercial Activities/Vendors",
   "Information about commercial activities, vendors, and fitness-related activities in parks.",
   `
   <p>
@@ -1873,7 +1838,7 @@ const commercialActivitiesParks = new ContentPSaR(
 
 const filmingPhotoshoots = new ContentPSaR(
   "filmingPhotoshoots",
-  "Filming/photoshoots in parks",
+  "Filming/Photoshoots in Parks",
   "Information for customers wanting to hold a photo shoot on Parks & Countryside land.",
   `
   <p>
@@ -1962,7 +1927,6 @@ const bookingsParks = new MenuPSaR(
   "Bookings",
    `Details of how to book various different parks services and facilities.`,
   [
-    templateTile1,
     bannersInParks,
     bookAnEvent,
     bookASportsFacility,
@@ -1976,41 +1940,6 @@ const bookingsParks = new MenuPSaR(
 
 
 //#region Events and Activities
-
-const templateTile2 = new ContentPSaR(
-  "templateTile2",
-  "Template Tile 2",
-  "Description to go on main tile.",
-  `
-    <h3>Header</h3>
-    <p>Content</p>
- 
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>[Accordion content]</p>
-    </div>
-  </details>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Information",
-    keywords: [
-      "template",
-      "templte"
-    ],
-    categories: ["Parks and Countryside"]
-  },
-  { date: "01/07/2026", name: "Liz Taster" }
-);
-
 
 const activitiesInParks = new ContentPSaR(
 "activitiesInParks",
@@ -2181,8 +2110,8 @@ const activitiesInParks = new ContentPSaR(
   `,
 
 { buttonLabel: "", formName: "" },
-{ typeKey: "Permission" },
-{ typeKey: "Filming" },
+{ typeKey: "" },
+{ typeKey: "" },
 {
 type: "Information",
 keywords: [
@@ -2234,7 +2163,7 @@ name: "Liz Taster"
 
 const eventsInParks = new ContentPSaR(
   "eventsInParks",
-  "Events in parks",
+  "Events in Parks",
   "Information about upcoming events in Sheffield parks, including Tramlines contact details and resident enquiries.",
   `
   <p>
@@ -2467,10 +2396,9 @@ const playgrounds = new ContentPSaR(
 
 const eventsAndActivities = new MenuPSaR(
   "eventsAndActivities",
-  "Events and activities",
-   `[Sumamry of events and activities menu]`,
+  "Events and Activities",
+   `Information about a variety of events and activities in Sheffield parks.`,
   [
-    templateTile2,
     activitiesInParks,
     eventsInParks,
     rivelinValleyWaterPlay,
@@ -2488,7 +2416,7 @@ const eventsAndActivities = new MenuPSaR(
 
 const reportTreePark = new ContentPSaR(
   "reportTreePark",
-  "Report an issue with a tree",
+  "Report an Issue with a Tree",
   "Information on how the Council manages trees, what issues we can respond to, and when you may take action yourself.",
   `
   <p>
@@ -2649,7 +2577,7 @@ const reportTreePark = new ContentPSaR(
 
 const antiSocialBehaviourParks = new ContentPSaR(
   "antiSocialBehaviourParks",
-  "Anti-social behaviour in parks",
+  "Anti-social Behaviour in Parks",
   "Information about reporting anti-social behaviour and how reports are managed in parks.",
   `
     <p>
@@ -2729,7 +2657,7 @@ const antiSocialBehaviourParks = new ContentPSaR(
 
 const cctvParks = new ContentPSaR(
   "cctvParks",
-  "CCTV in parks",
+  "CCTV in Parks",
   "Information about CCTV enquiries in park spaces.",
   `
   <p>
@@ -2763,7 +2691,7 @@ const cctvParks = new ContentPSaR(
 
 const insurancePersonalInjuryCompensation = new ContentPSaR(
   "insurancePersonalInjuryCompensation",
-  "Insurance, personal injury or compensation",
+  "Insurance, Personal Injury or Compensation",
   "Information on reporting an injury or making a compensation claim.",
   `
   <p>
@@ -2798,7 +2726,7 @@ const insurancePersonalInjuryCompensation = new ContentPSaR(
 
 const flyTipping = new ContentPSaR(
   "flyTipping",
-  "Fly tipping",
+  "Fly Tipping",
   "Information about reporting fly-tipping and how waste is removed from parks and woodland areas.",
   `
   <p>
@@ -2864,7 +2792,7 @@ const flyTipping = new ContentPSaR(
 
 const damageToPavementsAndSurfaces = new ContentPSaR(
   "damageToPavementsAndSurfaces",
-  "Damage to pavements & surfaces",
+  "Damage to Pavements and Surfaces",
   "Information on reporting damage to footpaths, pavements and surfaces in parks and countryside areas.",
   `
   <p>
@@ -2918,7 +2846,7 @@ const damageToPavementsAndSurfaces = new ContentPSaR(
 
 const damageToFencing = new ContentPSaR(
   "damageToFencing",
-  "Damage to fencing",
+  "Damage to Fencing",
   "Information on reporting damage to fencing in parks and countryside areas.",
   `
   <p>
@@ -2965,7 +2893,7 @@ const damageToFencing = new ContentPSaR(
 
 const litterAndLitterBins = new ContentPSaR(
   "litterAndLitterBins",
-  "Litter & litter bins",
+  "Litter and Litter Bins",
   "Information about litter bin responsibilities, emptying schedules, maintenance, reporting issues, and community litter picking support.",
   `
   <p>
@@ -3030,7 +2958,7 @@ const litterAndLitterBins = new ContentPSaR(
 
 const lostFoundProperty = new ContentPSaR(
   "lostFoundProperty",
-  "Lost/found property",
+  "Lost/Found Property",
   "Information about reporting lost or found property in parks.",
   `
   <p>
@@ -3075,7 +3003,7 @@ const lostFoundProperty = new ContentPSaR(
 
 const grassHedgeCutting = new ContentPSaR(
   "grassHedgeCutting",
-  "Grass & hedge cutting",
+  "Grass and Hedge Cutting",
   "Information about grass cutting schedules, hedge cutting periods, and reporting issues with grassed areas and hedges.",
   `
 <h3>Grass cutting</h3>
@@ -3102,7 +3030,7 @@ const grassHedgeCutting = new ContentPSaR(
 <h3>Reporting issues</h3>
   <p>
     If someone wishes to report an area that appears to have been missed, requires attention, or an issue with grass or hedges 
-    ask them to use the form at <a href="https://forms.sheffield.gov.uk/site/portal/form/report_hedge_plant_grass" target="_blank">
+    ask them to use the form here: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_hedge_plant_grass" target="_blank">
     Hedges, plants or grassed areas</a>.
     Once the report has been reviewed, the park manager will inspect the area and act where required.
   </p>
@@ -3149,8 +3077,8 @@ const grassHedgeCutting = new ContentPSaR(
 
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
-  "Maintenance and issues",
-   `[Sumamry of maintenance and issues menu]`,
+  "Maintenance and Issues",
+   `Information about how to report maintenance requirements and a variety of other issues in Sheffield parks.`,
   [
     reportTreePark,
     antiSocialBehaviourParks,
@@ -3207,7 +3135,7 @@ const templateTile3 = new ContentPSaR(
 
 const parksPlanningAndPurchase = new MenuPSaR(
   "parksPlanningAndPurchase",
-  "Parks planning and purchase",
+  "Parks Planning and Purchase",
    `[Sumamry of parks planning and purchase menu]`,
   [
     templateTile3,
@@ -3321,7 +3249,7 @@ const ecology = new ContentPSaR(
 
 const treePlantingCommunityForestry = new ContentPSaR(
   "treePlantingCommunityForestry",
-  "Tree planting & Community Forestry",
+  "Tree Planting and Community Forestry",
   "Information about tree donations, tree planting, maintenance of young trees, Community Forestry events, and volunteering opportunities.",
   `
   <p>
@@ -3460,7 +3388,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
 const volunteeringWorkExperienceInParks = new ContentPSaR(
   "volunteeringWorkExperienceInParks",
-  "Volunteering & work experience in parks",
+  "Volunteering and Work Experience in Parks",
   "Information about volunteering opportunities, work experience, Friends of groups, litter picking, and group volunteering enquiries in Sheffield parks and countryside.",
   `
   <p>
@@ -3535,7 +3463,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
 
 const wildlifeInParks = new ContentPSaR(
   "wildlifeInParks",
-  "Wildlife in parks",
+  "Wildlife in Parks",
   "Information about nesting birds, wildlife crime, unusual wildlife, loose animals, and wildlife welfare concerns in parks.",
   `
   <p>
@@ -3658,7 +3586,7 @@ const wildlifeInParks = new ContentPSaR(
 
 const memorialsInParks = new ContentPSaR(
   "memorialsInParks",
-  "Memorials in parks",
+  "Memorials in Parks",
   "Information about ashes, memorial benches, and memorial trees in parks and green spaces.",
   `
 <h3>Ashes</h3>
