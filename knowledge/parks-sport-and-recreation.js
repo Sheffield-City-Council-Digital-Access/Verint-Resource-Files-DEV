@@ -3073,6 +3073,79 @@ const lostFoundProperty = new ContentPSaR(
   }
 );
 
+const grassHedgeCutting = new ContentPSaR(
+  "grassHedgeCutting",
+  "Grass & hedge cutting",
+  "Information about grass cutting schedules, hedge cutting periods, and reporting issues with grassed areas and hedges.",
+  `
+<h3>Grass Cutting</h3>
+  <p>
+    Grass is cut every 3-4 weeks following a schedule, starting in April and running to the end of October. 
+    Frequency depends on the weather conditions, grass growth rates, and site conditions.
+  </p>
+  <p>
+    Where visible, litter is collected prior to cutting. If the grass is too long some litter cannot be seen by our operatives. 
+    If this is the case, litter will be collected shortly after the grass has been cut, but not necessarily on the same day.
+  </p>
+
+<h3>Hedge Cutting</h3>
+  <p>
+    Hedge cutting takes place during specific periods:
+  </p>
+    <ul>
+      <li>June to August</li>
+      <li>October to December</li>
+    </ul>
+  <p>
+    Timing may vary depending on the type and location of the hedge, nesting bird considerations, and weather conditions.
+  </p>
+  <p>
+    If someone wishes to report an area that appears to have been missed, requires attention, or an issue with grass or hedges 
+    ask them to use the form at: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_hedge_plant_grass" target="_blank">
+    Hedges, plants or grassed areas</a>
+    the park manager will inspect the area and act where required.
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    Further information about grass and hedge cutting, and related topics, can be found here:
+    <a href="https://www.sheffield.gov.uk/roads-pavements/problems-plants-trees-weeds-grass" target="_blank">
+    Problems with plants, trees, weeds and grass | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+  `,
+  { buttonLabel: "Report an issue", formName: "report_hedge_plant_grass" },
+  { typeKey: "Information" },
+  { typeKey: "Report" },
+  {
+    type: "Information",
+    keywords: [
+      "grass",
+      "cutting",
+      "cut",
+      "mow",
+      "mowing",
+      "lawn",
+      "hedge",
+      "trim",
+      "trimming",
+      "hedges",
+      "grassed",
+      "weeds",
+      "grasscutting",
+      "hedgecutting",
+      "gras",
+      "cuting",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance and issues",
@@ -3086,7 +3159,8 @@ const maintenanceAndIssues = new MenuPSaR(
     damageToPavementsAndSurfaces,
     damageToFencing,
     litterAndLitterBins,
-    lostFoundProperty
+    lostFoundProperty,
+    grassHedgeCutting
     
   ]
 );
