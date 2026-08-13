@@ -3536,9 +3536,14 @@ const memorialsInParks = new ContentPSaR(
   </p>
 
 <h3>Memorial Benches</h3>
-<p>
-Details can be found in the sections below about applications for memrial benches in different locations.
-</p>
+  <p>
+    Details can be found in the sections below about applications for memrial benches in different locations.
+  </p>
+
+  <p>
+    The current <strong>cost</strong> for installation of a bench is <strong>£1000+</strong>. The bench would be a standard cast iron bench with recycled plastic slats to 
+    ensure consistency with other benches across park land.
+  </p>
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -3588,12 +3593,7 @@ Details can be found in the sections below about applications for memrial benche
   </details>
 
   <p>
-    The current cost for installation of a bench is £1000+. The bench would be a standard cast iron bench with recycled plastic slats to 
-    ensure consistency with other benches across park land.
-  </p>
-
-  <p>
-    Applications for a bench can be made by completing the online form here: [not yet published]).
+    Applications for a bench can be made by completing the online form here: [not yet published].
   </p>
   <p>[Insert Send Link]</p>
   <p>
@@ -3609,7 +3609,8 @@ Details can be found in the sections below about applications for memrial benche
 <h3>Memorial Trees</h3>
   <p>
     Donations of memorial or commemorative trees are welcome. 
-    Details of how to donate can be found in the Tree Planting & Community Forestry knowledge article.
+    Details of how to donate can be found in the <strong>Tree Planting & Community Forestry</strong> knowledge article. 
+    Search for 'donate a tree' using the search function above.
   </p>
 
   `,
