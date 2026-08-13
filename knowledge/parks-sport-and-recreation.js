@@ -3075,6 +3075,95 @@ const grassHedgeCutting = new ContentPSaR(
   }
 );
 
+const dogFouling = new ContentPSaR(
+  "dogFouling",
+  "Dog Fouling",
+  "Information about reporting dog fouling and related penalties.",
+  `
+  <p>
+    Dog fouling is illegal in the UK and can result in a fixed penalty notice ranging from £50 to £100, or prosecution in a magistrate’s court. 
+    Exemptions may be made for registered blind owners or people with certain disabilities affecting mobility or sight.
+  </p>
+  <p>
+    To report an issue with dog fouling, please use the online <a href="https://forms.sheffield.gov.uk/site/portal/form/report_dog_fouling" target="_blank">
+    Dog fouling</a> form.
+  </p>
+  <p>[Insert Send Link]</p>
+  `,
+  { buttonLabel: "Report Dog Fouling", formName: "report_dog_fouling" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "dog",
+      "fouling",
+      "foul",
+      "mess",
+      "waste",
+      "dogs",
+      "pets",
+      "pet",
+      "canine",
+      "poop",
+      "poo",
+      "fauling",
+      "foulling",
+      "fowling"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+const dogBins = new ContentPSaR(
+  "dogBins",
+  "Dog Bins",
+  "Information about dog waste bin emptying schedules, maintenance, and reporting issues.",
+  `
+  <p>
+    Dog waste bins in parks are emptied weekly or twice a week depending on volume - this is based on varying demand, location and usage.
+  </p>
+  <p>
+    We do not conduct planned maintenance on dog waste bins. Damaged, vandalised, or defective bins are assessed when reported and 
+    repairs or replacements are considered based on the condition of the bin.
+  </p>
+  <p>
+    To report an issue with a dog waste bin, use the online form available here: [link required once live]
+  </p>
+  <p>[Insert Send Link]</p>
+
+`,
+  { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "dog",
+      "bin",
+      "bins",
+      "waste",
+      "dogs",
+      "fouling",
+      "litter",
+      "damaged",
+      "damage",
+      "poo",
+      "poop",
+      "vandalised",
+      "defective",
+      "dogbn",
+      "wast",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance and Issues",
@@ -3089,7 +3178,9 @@ const maintenanceAndIssues = new MenuPSaR(
     damageToFencing,
     litterAndLitterBins,
     lostFoundProperty,
-    grassHedgeCutting
+    grassHedgeCutting,
+    dogFouling,
+    dogBins
     
   ]
 );
