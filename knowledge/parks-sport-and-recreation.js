@@ -2410,6 +2410,61 @@ const sheffieldRoundWalk = new ContentPSaR(
   }
 );
 
+const playgrounds = new ContentPSaR(
+  "playgrounds",
+  "Playgrounds",
+  "Information about children's playgrounds in Sheffield parks and open spaces, inspections, maintenance, and reporting damage.",
+  `
+  <p>
+    There are over 100 children's playgrounds in Sheffield’s parks and open spaces.
+  </p>
+  <p>
+    All the playgrounds in Sheffield's parks and open spaces are inspected on a daily, quarterly and annual basis.
+  </p>
+  <p>
+    Sheffield City Council are responsible for the maintenance of all the equipment and facilities provided. 
+    All new playground equipment complies with European Standard EN1176/7.
+  </p>
+  <p>
+    A map of all playgrounds in Sheffield can be found here: 
+    <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5dbfc04cd9564cb3a10a2af4d4c81796" target="_blank">Parks Playgrounds</a>.
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
+    form which can also be found here: [insert link once form live].
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
+    Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
+    Delays may occur over the weekend due to staffing limitations.
+  </p>
+  
+  `,
+  { buttonLabel: "Report playground issue", formName: "report_playground" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "playground",
+      "playgrounds",
+      "play",
+      "area",
+      "areas",
+      "children's",
+      "childrens",
+      "equipment",
+      "playgroud",
+      "playgrond",
+      "playgraound"
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
 const eventsAndActivities = new MenuPSaR(
   "eventsAndActivities",
   "Events and activities",
@@ -2420,6 +2475,7 @@ const eventsAndActivities = new MenuPSaR(
     eventsInParks,
     rivelinValleyWaterPlay,
     sheffieldRoundWalk,
+    playgrounds
     
   ]
 );
