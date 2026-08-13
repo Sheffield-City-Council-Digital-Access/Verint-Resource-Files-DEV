@@ -3187,6 +3187,128 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
   }
 );
 
+const wildlifeInParks = new ContentPSaR(
+  "wildlifeInParks",
+  "Wildlife in Parks",
+  "Information about nesting birds, wildlife crime, unusual wildlife, loose animals, and wildlife welfare concerns in parks.",
+  `
+  <p>
+    Please see below for details of a variety of different types of wildlife query.
+  </p>
+  
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Nesting Birds & Wildlife Crime</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Disturbing nesting birds, or abuse of wildlife are potentially criminal matters and should be reported to the police by 
+        phoning 101 and asking for a Wildlife Crime Officer.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Snakes & Unusual Wildlife</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you encounter a snake or unusual wildlife in a park, ask the customer to contact the Ecology team with details and a photo, 
+        if possible, at <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>.
+      </p>
+      <p>
+        Staff can help identify the species and advise on safety and conservation.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Loose Wildlife</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If an animal is loose and poses a risk to people or property or is near active vehicles call 999. 
+        This is considered a public welfare issue and may require an emergency response.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Wildlife Welfare Concerns</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        SCC are not responsible for wild animals. Concerns for the welfare of wildlife e.g. injured or unwell animals, should be directed to:
+      </p>
+
+      <p>
+        Royal Society for the Prevention of Cruelty to Animals (RSPCA) - 0114 2898050
+      </p>
+
+      <p>
+        Sheffield & Rotherham Wildlife Trust – 0114 2634335
+      </p>
+
+      <p>
+        Additional information about injured or distressed wildlife, wildlife crimes, and rescue centres can be found on the Sheffield & Rotherham Wildlife Trust website: 
+        <a href="https://www.wildsheffield.com/wildlife/local-rescue-centres/" target="_blank">
+        Local Wildlife Rescue Centres - Sheffield & Rotherham Wildlife Trust</a>
+      </p>
+    </div>
+  </details>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "wildlife",
+      "wild life",
+      "parks",
+      "park",
+      "nesting",
+      "birds",
+      "bird",
+      "crime",
+      "Wildlife Crime Officer",
+      "WCO",
+      "snake",
+      "snakes",
+      "ecology",
+      "loose",
+      "animal",
+      "welfare",
+      "injured",
+      "unwell",
+      "rescue",
+      "centre",
+      "centres",
+      "wildsheffield",
+      "rescue",
+      "wildilfe",
+      "wilflife",
+      "ecolgy",
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 //#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -3204,5 +3326,6 @@ const parksSportAndRecreation = new ServicePSaR(
    ecology,
    treePlantingCommunityForestry,
    volunteeringWorkExperienceInParks,
+   wildlifeInParks,
   ]
 );
