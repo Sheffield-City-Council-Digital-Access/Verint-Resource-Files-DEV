@@ -3215,16 +3215,16 @@ const dogCatWasteCommercial = new ContentPSaR(
           </tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>£40.95</td></tr>
-          <tr><td>2</td><td>£45.95</td></tr>
-          <tr><td>3</td><td>£50.95</td></tr>
-          <tr><td>4</td><td>£55.95</td></tr>
-          <tr><td>5</td><td>£60.95</td></tr>
-          <tr><td>6</td><td>£65.95</td></tr>
-          <tr><td>7</td><td>£70.95</td></tr>
-          <tr><td>8</td><td>£75.95</td></tr>
-          <tr><td>9</td><td>£80.95</td></tr>
-          <tr><td>10</td><td>£85.95</td></tr>
+          <tr><td>|</td><td>1</td><td>|</td><td>£40.95</td><td>|</td></tr>
+          <tr><td>|</td><td>2</td><td>|</td><td>£45.95</td><td>|</td></tr>
+          <tr><td>|</td><td>3</td><td>|</td><td>£50.95</td><td>|</td></tr>
+          <tr><td>|</td><td>4</td><td>|</td><td>£55.95</td><td>|</td></tr>
+          <tr><td>|</td><td>5</td><td>|</td><td>£60.95</td><td>|</td></tr>
+          <tr><td>|</td><td>6</td><td>|</td><td>£65.95</td><td>|</td></tr>
+          <tr><td>|</td><td>7</td><td>|</td><td>£70.95</td><td>|</td></tr>
+          <tr><td>|</td><td>8</td><td>|</td><td>£75.95</td><td>|</td></tr>
+          <tr><td>|</td><td>9</td><td>|</td><td>£80.95</td><td>|</td></tr>
+          <tr><td>|</td><td>10</td><td>|</td><td>£85.95</td><td>|</td></tr>
         </tbody>
       </table>
     </div>
