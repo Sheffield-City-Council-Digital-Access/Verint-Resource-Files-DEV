@@ -3198,7 +3198,7 @@ const wildlifeInParks = new ContentPSaR(
   
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Nesting Birds & Wildlife Crime</h3>
+      <h3>Nesting birds & wildlife crime</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3212,12 +3212,12 @@ const wildlifeInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Snakes & Unusual Wildlife</h3>
+      <h3>Snakes & unusual wildlife</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        If you encounter a snake or unusual wildlife in a park, ask the customer to contact the Ecology team with details and a photo, 
+        For an encounter with a snake or unusual wildlife in a park, ask the customer to contact the Ecology team with details and a photo, 
         if possible, at <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>.
       </p>
       <p>
@@ -3229,12 +3229,12 @@ const wildlifeInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Loose Wildlife</h3>
+      <h3>Loose wildlife</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        If an animal is loose and poses a risk to people or property or is near active vehicles call 999. 
+        If an animal is loose and poses a risk to people or property or is near active vehicles, ask customers to call 999. 
         This is considered a public welfare issue and may require an emergency response.
       </p>
     </div>
@@ -3243,7 +3243,7 @@ const wildlifeInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-        <h3>Wildlife Welfare Concerns</h3>
+        <h3>Wildlife welfare concerns</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3264,6 +3264,7 @@ const wildlifeInParks = new ContentPSaR(
         <a href="https://www.wildsheffield.com/wildlife/local-rescue-centres/" target="_blank">
         Local Wildlife Rescue Centres - Sheffield & Rotherham Wildlife Trust</a>
       </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
