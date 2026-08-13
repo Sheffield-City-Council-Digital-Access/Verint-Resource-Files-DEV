@@ -2432,7 +2432,7 @@ const eventsAndActivities = new MenuPSaR(
 
 const reportTreePark = new ContentPSaR(
   "reportTreePark",
-  "Report an Issue with a Tree",
+  "Report an issue with a tree",
   "Information on how the Council manages trees, what issues we can respond to, and when you may take action yourself.",
   `
   <p>
@@ -2742,7 +2742,7 @@ const insurancePersonalInjuryCompensation = new ContentPSaR(
 
 const flyTipping = new ContentPSaR(
   "flyTipping",
-  "Fly Tipping",
+  "Fly tipping",
   "Information about reporting fly-tipping and how waste is removed from parks and woodland areas.",
   `
   <p>
@@ -2909,7 +2909,7 @@ const damageToFencing = new ContentPSaR(
 
 const litterAndLitterBins = new ContentPSaR(
   "litterAndLitterBins",
-  "Litter & Litter Bins",
+  "Litter & litter bins",
   "Information about litter bin responsibilities, emptying schedules, maintenance, reporting issues, and community litter picking support.",
   `
   <p>
@@ -3019,7 +3019,7 @@ const lostFoundProperty = new ContentPSaR(
 
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
-  "Maintenance And Issues",
+  "Maintenance and issues",
    `[Sumamry of maintenance and issues menu]`,
   [
     reportTreePark,
@@ -3525,6 +3525,126 @@ const wildlifeInParks = new ContentPSaR(
   }
 );
 
+const memorialsInParks = new ContentPSaR(
+  "memorialsInParks",
+  "Memorials in parks",
+  "Information about ashes, memorial benches, and memorial trees in parks and green spaces.",
+  `
+<h3>Ashes</h3>
+  <p>
+    We do not allow the scattering of ashes on park land.
+  </p>
+
+<h3>Memorial Benches</h3>
+<p>
+Details can be found in the sections below about applications for memrial benches in different locations.
+</p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Parks</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Memorial benches are available in some parks and green spaces; however, availability varies by location. 
+        The suitability of installing additional benches depends on factors such as available space, existing bench provision, landscape considerations, 
+        maintenance requirements, accessibility, and the character of the site.
+      </p>
+
+      <p>
+        There is currently very limited space for additional benches in park spaces. A list of parks accepting applications to install a memorial bench is below:
+      </p>
+
+      <ul>
+        <li>Charlton Brook</li>
+        <li>Concord Park (limited and specific locations)</li>
+        <li>Crookes Valley</li>
+        <li>Don Fields</li>
+        <li>Greenhill Park</li>
+        <li>Grenoside Park</li>
+        <li>Hillsborough Park</li>
+        <li>Longley Park</li>
+        <li>Lowfields</li>
+        <li>Mount Pleasant</li>
+        <li>Oxley Park</li>
+        <li>Ponderosa</li>
+        <li>Ruskin Park</li>
+        <li>Weston Park</li>
+      </ul>
+    </div>
+  </details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Woodland</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We no longer accept requests to place memorial benches in woodland spaces.
+      </p>
+    </div>
+  </details>
+
+  <p>
+    The current cost for installation of a bench is £1000+. The bench would be a standard cast iron bench with recycled plastic slats to 
+    ensure consistency with other benches across park land.
+  </p>
+
+  <p>
+    Applications for a bench can be made by completing the online form here: [not yet published]).
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    Once an application is received it will be reviewed by the Park Area Manager and a site assessment may be undertaken.
+  </p>
+  <p>
+    Approval will depend on the suitability of the location and existing provision.
+  </p>
+  <p>
+    Customers will then be advised of costs, conditions, and ongoing arrangements associated with the memorial bench scheme.
+  </p>
+
+<h3>Memorial Trees</h3>
+  <p>
+    Donations of memorial or commemorative trees are welcome. 
+    Details of how to donate can be found in the Tree Planting & Community Forestry knowledge article.
+  </p>
+
+  `,
+  { buttonLabel: "Apply for a Memorial Bench", formName: "request_memorial_bench" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "memorial",
+      "memorials",
+      "ashes",
+      "scattering",
+      "scatter",
+      "bench",
+      "benches",
+      "commemorative",
+      "tree",
+      "trees",
+      "donation",
+      "donate",
+      "benchs",
+      "benche",
+      "benh",
+      "memoral",
+      "memmorial"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 //#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -3543,5 +3663,6 @@ const parksSportAndRecreation = new ServicePSaR(
    treePlantingCommunityForestry,
    volunteeringWorkExperienceInParks,
    wildlifeInParks,
+   memorialsInParks,
   ]
 );
