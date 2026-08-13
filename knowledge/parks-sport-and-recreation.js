@@ -3101,7 +3101,7 @@ const maintenanceAndIssues = new MenuPSaR(
 const purchaseLeaseLicenceParks = new ContentPSaR(
   "purchaseLeaseLicenceParks",
   "Purchase, Lease, or Licence of Park Property",
-  "Information purchase, lease or license of park property and spaces.",
+  "Information about the purchase, lease or license of park property and spaces.",
   `
   <p>
     Enquiries related to the purchase, lease, or licence of park land should be asked to email 
@@ -3136,7 +3136,7 @@ const purchaseLeaseLicenceParks = new ContentPSaR(
 const parksPlanningAndPurchase = new MenuPSaR(
   "parksPlanningAndPurchase",
   "Parks Planning and Purchase",
-   `[Sumamry of parks planning and purchase menu]`,
+   `Information about planning applications (including ecology support), and the purchase, lease or license of parks property and land.`,
   [
     purchaseLeaseLicenceParks,
     
