@@ -1925,7 +1925,7 @@ const filmingPhotoshoots = new ContentPSaR(
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
-   `Details of how to book various different parks services and facilities.`,
+   `Details of how to book different parks services and facilities, including rooms, events, spors facilities and photoshoots.`,
   [
     bannersInParks,
     bookAnEvent,
@@ -3078,7 +3078,7 @@ const grassHedgeCutting = new ContentPSaR(
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance and Issues",
-   `Information about how to report maintenance requirements and a variety of other issues in Sheffield parks.`,
+   `Information about how to report maintenance and other issues in Sheffield parks.`,
   [
     reportTreePark,
     antiSocialBehaviourParks,
@@ -3098,38 +3098,38 @@ const maintenanceAndIssues = new MenuPSaR(
 
 //#region Planning and Purchase
 
-const templateTile3 = new ContentPSaR(
-  "templateTile3",
-  "Template Tile 3",
-  "Description to go on main tile.",
+const purchaseLeaseLicenceParks = new ContentPSaR(
+  "purchaseLeaseLicenceParks",
+  "Purchase, Lease, or Licence of Park Property",
+  "Information purchase, lease or license of park property and spaces.",
   `
-    <h3>Header</h3>
-    <p>Content</p>
- 
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>[Accordion content]</p>
-    </div>
-  </details>
- 
+  <p>
+    Enquiries related to the purchase, lease, or licence of park land should be asked to email 
+    <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> directly with details.
+  </p>
+  
   `,
- 
+
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Information",
     keywords: [
-      "template",
-      "templte"
+      "purchase",
+      "lease",
+      "licence",
+      "purchse",
+      "purchise",
+      "lees",
+      "leese",
+      "leace",
+      "license",
+      "lisense",
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Planning and Purchase"]
   },
-  { date: "01/07/2026", name: "Liz Taster" }
+  { date: "13/08/2026", name: "Liz Taster" }
 );
  
 
@@ -3138,7 +3138,7 @@ const parksPlanningAndPurchase = new MenuPSaR(
   "Parks Planning and Purchase",
    `[Sumamry of parks planning and purchase menu]`,
   [
-    templateTile3,
+    purchaseLeaseLicenceParks,
     
   ]
 );
