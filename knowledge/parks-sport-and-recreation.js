@@ -3183,11 +3183,7 @@ const dogCatWasteCommercial = new ContentPSaR(
     </ul>
 
   <p>
-    The charge varies depending on the number of bags in a single collection.
-  </p>
-
-  <p>
-    Collection of a single bag is £40.95, with additional bags charged at £5 each.
+    The charge varies depending on the number of bags in a single collection. The charges start at £40.95 for one bag, with additional bags charged at £5 each.
   </p>
 
   <p>
@@ -3207,26 +3203,28 @@ const dogCatWasteCommercial = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Cost tables</h3>
+      <h3>Cost details</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <table>
         <thead>
           <tr>
+            <th></th>
             <th>Number of Bags</th>
             <th>Cost of collection</th>
             <th></th>
             <th>Number of Bags</th>
             <th>Cost of collection</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>£40.95</td><td></td><td>6</td><td>£65.95</td></tr>
-          <tr><td>2</td><td>£45.95</td><td></td><td>7</td><td>£70.95</td></tr>
-          <tr><td>3</td><td>£50.95</td><td></td><td>8</td><td>£75.95</td></tr>
-          <tr><td>4</td><td>£55.95</td><td></td><td>9</td><td>£80.95</td></tr>
-          <tr><td>5</td><td>£60.95</td><td></td><td>10</td><td>£85.95</td></tr>
+          <tr><td></td><td>1</td><td>£40.95</td><td></td><td>6</td><td>£65.95</td><td></td></tr>
+          <tr><td></td><td>2</td><td>£45.95</td><td></td><td>7</td><td>£70.95</td><td></td></tr>
+          <tr><td></td><td>3</td><td>£50.95</td><td></td><td>8</td><td>£75.95</td><td></td></tr>
+          <tr><td></td><td>4</td><td>£55.95</td><td></td><td>9</td><td>£80.95</td><td></td></tr>
+          <tr><td></td><td>5</td><td>£60.95</td><td></td><td>10</td><td>£85.95</td><td></td></tr>
         </tbody>
       </table>
     </div>
