@@ -2806,6 +2806,107 @@ const flyTipping = new ContentPSaR(
   }
 );
 
+const damageToPavementsAndSurfaces = new ContentPSaR(
+  "damageToPavementsAndSurfaces",
+  "Damage to pavements & surfaces",
+  "Information on reporting damage to footpaths, pavements and surfaces in parks and countryside areas.",
+  `
+  <p>
+    Damage to footpaths or pavements should be reported using the online form found here: 
+    <a href="https://forms.sheffield.gov.uk/site/portal/form/road_pavement_surface" target="_blank">
+    Report a problem with a road or pavement surface</a>.
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
+  </p>
+  <p>
+    Repairs are prioritised based on public safety, accessibility, and severity of damage.
+  </p>
+  <p>
+    Parks &amp; Countryside will only contact the reporter if additional information is required.
+  </p>
+  
+  `,
+  { buttonLabel: "Report damage", formName: "road_pavement_surface" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "damage",
+      "damaged",
+      "footpath",
+      "footpaths",
+      "path",
+      "paths",
+      "pavement",
+      "pavements",
+      "surface",
+      "surfaces",
+      "repair",
+      "repairs",
+      "maintenance",
+      "report",
+      "reporting",
+      "walkway",
+      "walkways",
+      "pavment",
+      "footpth"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
+
+const damageToFencing = new ContentPSaR(
+  "damageToFencing",
+  "Damage to Fencing",
+  "Information on reporting damage to fencing in parks and countryside areas.",
+  `
+  <p>
+    Damage to fencing should be reported using the online form found here: 
+    <a href="https://forms.sheffield.gov.uk/site/portal/form/report_fence_barrier" target="_blank">
+    Report a problem with a fence or barrier</a>.
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
+  </p>
+  <p>
+    Repairs are prioritised based on public safety, accessibility, and severity of damage.
+  </p>
+  <p>
+    Parks &amp; Countryside will only contact the reporter if additional information is required.
+  </p>
+  
+  `,
+  { buttonLabel: "Report damage", formName: "report_fence_barrier" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Transactional",
+    keywords: [
+      "damage",
+      "damaged",
+      "fence",
+      "fencing",
+      "fences",
+      "repair",
+      "repairs",
+      "maintenance",
+      "report",
+      "reporting",
+      "reported",
+      "broken",
+      "fense",
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance And Issues",
@@ -2816,6 +2917,8 @@ const maintenanceAndIssues = new MenuPSaR(
     cctvParks,
     insurancePersonalInjuryCompensation,
     flyTipping,
+    damageToPavementsAndSurfaces,
+    damageToFencing
     
   ]
 );
