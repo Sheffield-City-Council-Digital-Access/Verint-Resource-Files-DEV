@@ -3112,6 +3112,81 @@ const treePlantingCommunityForestry = new ContentPSaR(
   }
 );
 
+const volunteeringWorkExperienceInParks = new ContentPSaR(
+  "volunteeringWorkExperienceInParks",
+  "Volunteering & work experience in parks",
+  "Information about volunteering opportunities, work experience, Friends of groups, litter picking, and group volunteering enquiries in Sheffield parks and countryside.",
+  `
+  <p>
+    The Parks and Countryside team are always looking for volunteers to help us look after our City's fantastic green spaces. There are a variety of opportunities 
+    available to support, further information which can be found through the below links.
+  </p>
+
+  <p>
+    Customers can find local ‘Friends of’ groups who are active throughout the city and welcome volunteers and support here: 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/friends-of-groups" target="_blank">'Friends of' groups | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    Further volunteer opportunities with Parks &amp; Countryside can be found here: 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/volunteer-with-parks-countryside" target="_blank">
+    Volunteer with Parks and Countryside | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    More information about litter picking is available here: 
+    <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/fly-tipping-litter/organise-litter-picks" target="_blank">
+    Organise a community litter pick | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    Group, educational, or corporate volunteering enquiries should be directed to <a href="mailto:Michaella.Hulley@sheffield.gov.uk">Michaella.Hulley@sheffield.gov.uk</a> 
+    and include the following information:
+  </p>
+    <ul>
+      <li>Organisation name</li>
+      <li>Contact name</li>
+      <li>Contact details</li>
+      <li>Type of group (corporate, school, university, community group, etc.)</li>
+      <li>Approximate number of participants</li>
+      <li>Preferred dates or timescales</li>
+      <li>Any objectives or specific requirements for the volunteering activity</li>
+    </ul>
+  `,
+  
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "volunteering",
+      "volunteer",
+      "volunteers",
+      "work experience",
+      "Friends of",
+      "groups",
+      "community",
+      "litte",
+      "pick",
+      "picking",
+      "picks",
+      "corporate",
+      "volenteering",
+      "voluntering",
+      "litterpicking"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 //#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -3128,5 +3203,6 @@ const parksSportAndRecreation = new ServicePSaR(
    parksPlanningAndPurchase,
    ecology,
    treePlantingCommunityForestry,
+   volunteeringWorkExperienceInParks,
   ]
 );
