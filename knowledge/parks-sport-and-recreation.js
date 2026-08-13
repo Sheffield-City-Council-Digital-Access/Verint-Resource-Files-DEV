@@ -3210,8 +3210,11 @@ const dogCatWasteCommercial = new ContentPSaR(
       <table>
         <thead>
           <tr>
+            <th>|</th>
             <th>Number of Bags</th>
+            <th>|</th>
             <th>Cost of collection</th>
+            <th>|</th>
           </tr>
         </thead>
         <tbody>
