@@ -2902,7 +2902,72 @@ const damageToFencing = new ContentPSaR(
       "broken",
       "fense",
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
+const litterAndLitterBins = new ContentPSaR(
+  "litterAndLitterBins",
+  "Litter & Litter Bins",
+  "Information about litter bin responsibilities, emptying schedules, maintenance, reporting issues, and community litter picking support.",
+  `
+  <p>
+    Responsibility for litter bins varies depending on their location. Some bins are managed by the Parks and Countryside Service, 
+    while others may be the responsibility of Highways, Housing Services, or other Council services.
+  </p>
+  <p>
+    Litter bins in parks are generally emptied daily although this varies depending on demand, location and usage. 
+    Special events and adverse weather can occasionally impact scheduled emptying.
+  </p>
+  <p>
+    Throughout the warmer periods an increase in park visitor numbers can lead to higher-than-expected volumes of waste, and bin overflows; 
+    we attempt to address these instances as a priority.
+  </p>
+  <p>
+    We do not conduct planned maintenance on bins. Damaged, vandalised, or defective bins are assessed when reported and repairs or replacements 
+    are considered based on the condition of the bin.
+  </p>
+  <p>
+    To report an issue with a litter bin, direct customers to use the online form here: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_litter_bin" target="_blank">Report litter bin</a>.
+  </p>
+  <p>[Insert Send Link]</p>
+
+<h3>Litter Picking Resources and Support</h3>
+  <p>
+    For information about litter picking, please refer customers to: 
+    <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/fly-tipping-litter/organise-litter-picks" target="_blank">
+    Organise a community litter pick | Sheffield City Council</a>.
+  </p>
+  <p>[Insert Send Link]</p>
+
+`,
+  { buttonLabel: "Report a litter bin", formName: "report_litter_bin" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "litter",
+      "bin",
+      "bins",
+      "waste",
+      "rubbish",
+      "trash",
+      "overflow",
+      "overflows",
+      "emptying",
+      "damaged",
+      "vandalised",
+      "defective",
+      "pick",
+      "picking",
+      "litterbin",
+      "binn",
+      "bns",
+      "rubbis",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
   },
   { date: "13/08/2026", name: "Liz Taster" }
 );
@@ -2918,7 +2983,8 @@ const maintenanceAndIssues = new MenuPSaR(
     insurancePersonalInjuryCompensation,
     flyTipping,
     damageToPavementsAndSurfaces,
-    damageToFencing
+    damageToFencing,
+    litterAndLitterBins
     
   ]
 );
