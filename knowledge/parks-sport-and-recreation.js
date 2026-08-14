@@ -2397,7 +2397,7 @@ const playgrounds = new ContentPSaR(
 const gravesPark = new ContentPSaR(
   "gravesPark",
   "Graves Park",
-  "Information about events, activities and facilities at Graves Park, including the animal farm",
+  "Information about events, activities and facilities at Graves Park, including the animal farm.",
   `
 <h3>Animal farm</h3>
   <p>
@@ -2464,7 +2464,8 @@ const gravesPark = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        Events held at the Animal Farm are advertised on <a href="http://www.trybooking.co.uk/">www.trybooking.co.uk</a> and can be booked through the site.
+        Events held at the Animal Farm are advertised on <a href="http://www.trybooking.co.uk/" target="_blank">www.trybooking.co.uk</a> and can be booked through the site. 
+        Search for <em>Graves Park Animal Farm</em>.
       </p>
       <p>[Insert Send Link]</p>
 
@@ -2497,7 +2498,7 @@ const gravesPark = new ContentPSaR(
         Information and updates on available opportunities can be found on the Graves Park Animal Farm Facebook page.
       </p>
       <p>
-        Opportunities are also advertised on www.trybooking.co.uk – Search for Graves Park Animal Farm and follow the organisation 
+        Opportunities are also advertised on <a href="http://www.trybooking.co.uk/" target="_blank">www.trybooking.co.uk</a> – Search for Graves Park Animal Farm and follow the organisation 
         to receive a notification when a volunteering event is planned.
       </p>
       <p>[Insert Send Link]</p>
@@ -2518,12 +2519,12 @@ const gravesPark = new ContentPSaR(
     Phone number - 0114 2582705
   </p>
   <p>
-    Updates regarding the café restoration can be found on the SCC website here <a href="https://www.sheffield.gov.uk/rose-garden-cafe-updates" target="_blank">Rose Garden Cafe Updates | Sheffield City Council</a>
+    Updates regarding the café restoration can be found on the Council website here <a href="https://www.sheffield.gov.uk/rose-garden-cafe-updates" target="_blank">Rose Garden Cafe Updates | Sheffield City Council</a>
   </p>
   <p>[Insert Send Link]</p>
 
 `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Donate to animal farm", formName: "request_donation_parks" },
   { typeKey: "" },
   { typeKey: "" },
   {
