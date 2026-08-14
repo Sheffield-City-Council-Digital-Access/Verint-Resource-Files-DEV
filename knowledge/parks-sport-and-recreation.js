@@ -3270,6 +3270,98 @@ const dogCatWasteCommercial = new ContentPSaR(
   }
 );
 
+const gritSaltCommercial = new ContentPSaR(
+  "gritSaltCommercial",
+  "Grit/Salt (Commercial)",
+  "We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.",
+  `
+  <p>
+    <strong>The following does not apply to public grit bins which are maintained and refilled regularly as required.</strong> 
+    More information about public grit bins can be found at 
+    <a href="https://www.sheffield.gov.uk/roads-pavements/winter-road-maintenance-and-gritting/grit-bins-sheffield" target="_blank">
+    Grit bins in Sheffield | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.
+  </p>
+  <p>
+    The minimum order is 0.5 tonnes, requests for more than10 tonnes require 28 days’ notice.
+  </p>
+  <p>
+    The material is supplied in 1 tonne builders’ bags using a grab lorry. <strong>The delivery location must be suitable to accommodate the lorry.</strong>
+  </p>
+  <p>
+    The price varies by volume required.
+  </p>
+  <p>
+    For amounts of 2 tonne or greater, the cost is £180 per tonne. The cost per tonne is higher for 0.5/1tonne due to the delivery.
+  </p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Quantity</strong></th>
+      <th><strong>Cost</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>0.5 tonne</td><td>£150</td></tr>
+    <tr><td>1 tonne</td><td>£240</td></tr>
+    <tr><td>2 tonnes</td><td>£360</td></tr>
+    <tr><td>3 tonnes</td><td>£540</td></tr>
+    <tr><td>4 tonnes</td><td>£720</td></tr>
+    <tr><td>5 tonnes</td><td>£900</td></tr>
+    <tr><td>6 tonnes</td><td>£1,080</td></tr>
+    <tr><td>7 tonnes</td><td>£1,260</td></tr>
+    <tr><td>8 tonnes</td><td>£1,440</td></tr>
+    <tr><td>9 tonnes</td><td>£1,620</td></tr>
+    <tr><td>10 tonnes</td><td>£1,800</td></tr>
+  </tbody>
+</table>
+  
+  <p>
+    Customers can fill out the request form which can be found on the website and includes a link for immediate payment.</p>
+
+  <p>
+    If there has been an issue with payment, it can be made using the following link 
+    <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank">
+    https://ip.e-paycapita.com/Grit/Salt Requests</a>
+  </p>
+
+  <p>
+    Once an enquiry is made through the online form the customer will be contacted by a member of the Parks &amp; Countryside service to discuss the request.
+  </p>
+  
+  `,
+  { buttonLabel: "Order Grit (commercial)", formName: "request_order_grit_salt" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "Grit",
+      "Salt",
+      "Commercial",
+      "bins",
+      "bins",
+      "winter",
+      "gritting",
+      "salting",
+      "road",
+      "rock",
+      "de-icing",
+      "deicing",
+      "gritt",
+      "grittt",
+      "sault",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "14/08/2026", name: "Liz Taster" }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance and Issues",
@@ -3288,6 +3380,7 @@ const maintenanceAndIssues = new MenuPSaR(
     dogFouling,
     dogBins,
     dogCatWasteCommercial,
+    gritSaltCommercial,
     
   ]
 );
@@ -3917,25 +4010,25 @@ const donatingToParks = new ContentPSaR(
 
   <p>[Insert Send Link]</p>
 
-  <h3>Donating Money</h3>
+  <h3>Donating money</h3>
   <p>
-    Financial donations to support the maintenance, enhancement, and improvement of parks and green spaces are welcome.
+    The Council welcomes financial donations to support the maintenance, enhancement, and improvement of parks and green spaces.
   </p>
   <p>
     Donations will be used to support improvements such as planting schemes, park facilities, biodiversity projects, community initiatives, 
     or other agreed improvements within parks and green spaces.
   </p>
   <p>
-    Donations can be made using the link and can be allocated to a specific park on request. 
+    Donations can be made using the online form and can be allocated to a specific park on request. 
     Any park-specific donation arrangements will be subject to Council financial procedures and operational requirements.
   </p>
   <p>
     If a specific park is not selected, donations may be used for parks and green spaces across the city where they are most needed.
   </p>
 
-  <h3>Donating Items</h3>
+  <h3>Donating items</h3>
   <p>
-    We are unable to accept donations of items or equipment, for example furniture, plants, memorial items, or play equipment.
+    We are unable to accept donations of items or equipment - for example furniture, plants, memorial items, or play equipment.
   </p>
   <p>
     Graves Park Animal Farm will consider donations which support the care of animals, such as food, hay, sawdust, blankets and similar items. 
