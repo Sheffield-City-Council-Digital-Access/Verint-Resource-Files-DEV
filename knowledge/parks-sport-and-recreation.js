@@ -2394,6 +2394,169 @@ const playgrounds = new ContentPSaR(
   { date: "13/08/2026", name: "Liz Taster" }
 );
 
+const gravesPark = new ContentPSaR(
+  "gravesPark",
+  "Graves Park",
+  "Graves Park",
+  `
+<h3>Animal Farm</h3>
+  <p>
+    <strong>Opening hours</strong> - 10am -3.30pm, 7 days a week
+  </p>
+  <p>
+    <strong>Admission fee</strong> - Admission is free, but donations are welcome on arrival.
+  </p>
+  <p>
+    <strong>Animal feed</strong> - Available for a small fee.
+  </p>
+  <p>
+    <strong>Facilities</strong> – Refreshments, toilets, and baby change facilities available on site.
+  </p>
+  <p>
+    Animal handling is generally not done on the weekend due to staffing limitations.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Animal Farm FAQs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Where can I park?</strong> Limited payable parking is available via the entrance on the corner of Hemsworth Rd and Bunting Nook - S8 8LJ. 
+        Overflow parking is available in seasonal peaks (weather dependant)
+      </p>
+      <p>
+        <strong>Are the animals for sale?</strong> No
+      </p>
+      <p>
+        <strong>Can I sponsor an animal?</strong> No
+      </p>
+      <p>
+        <strong>Can I hire an animal?</strong> No, this causes a lot of stress to the animals.
+      </p>
+      <p>
+        <strong>Can I donate supplies &amp; equipment?</strong> The farm will consider donations which support the care of animals e.g. food, hay, sawdust, blankets etc. 
+        Donations must be agreed by the park manager and delivered to the park; we do not collect donations. Customers should complete the online donation form.
+      </p>
+      <p>
+        Information about this topic will be available on the Council Website
+      </p>
+      <p>
+        <strong>Can I donate an animal?</strong> No, we don’t take animals as donations and are unable to rescue animals.
+      </p>
+      <p>The enquirer can contact:</p>
+        <ul>
+          <li>Heeley City Farm who may be able to take the animal or offer further guidance - 0114 2580482</li>
+          <li>Royal Society for the Prevention of Cruelty to Animals (RSPCA) - 0114 2898050</li>
+        </ul>
+      <p>
+        <strong>Sick/Injured/Loose farm animals</strong> - If an animal living in an enclosure/field within the Animal Farm appears to be sick, 
+        injured, or is loose please report to park staff immediately.
+      </p>
+    </div>
+  </details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Animal Farm Events and Barn Hire</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Events held at the Animal Farm are advertised on <a href="http://www.trybooking.co.uk/">www.trybooking.co.uk</a> and can be booked through the site.
+      </p>
+      <p>[Insert Send Link]</p>
+
+      <p> 
+        The barn is available to hire for a flat fee of £50 for the day - 10am to 3.30pm. Bookings can be made using the online form.
+      </p>
+      <p>
+        Information about this topic will be available on the Council Website
+      </p>
+    </div>
+  </details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Animal Farm Work Experience and Volunteering</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Volunteering and work experience opportunities are very limited and organised annually in August/September.
+      </p>
+      <p>
+        We get many applications each year but can only take a small number due to the training and supervision required.
+      </p>
+      <p>
+        Each September a trial morning is held where volunteers can experience the work involved and staff can assess suitability.
+      </p>
+      <p>
+        Information and updates on available opportunities can be found on the Graves Park Animal Farm Facebook page.
+      </p>
+      <p>
+        Opportunities are also advertised on www.trybooking.co.uk – Search for Graves Park Animal Farm and follow the organisation 
+        to receive a notification when a volunteering event is planned.
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+<h3>Park Train</h3>
+  <p>
+    The park train runs through the summer holidays and on sunny weekends.
+  </p>
+
+<h3>Rose Garden Cafe</h3>
+  <p>
+    Opening Hours - 9am -5pm, 7 days a week
+  </p>
+  <p>
+    Phone number - 0114 2582705
+  </p>
+  <p>
+    Updates regarding the café restoration can be found on the SCC website here <a href="https://www.sheffield.gov.uk/rose-garden-cafe-updates" target="_blank">Rose Garden Cafe Updates | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "Graves",
+      "Park", 
+      "Animal",
+      "Farm", 
+      "farms", 
+      "animals", 
+      "feed", 
+      "feeding", 
+      "donations", 
+      "donation",  
+      "sick", 
+      "injured", 
+      "loose", 
+      "work experience", 
+      "volunteering", 
+      "volunteer", 
+      "volunteers", 
+      "train", 
+      "Grave", 
+      "Gravs", 
+      "Grvaes", 
+      "fram",
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  { date: "14/08/2026", name: "Liz Taster" }
+);
+
 const eventsAndActivities = new MenuPSaR(
   "eventsAndActivities",
   "Events and Activities",
@@ -2403,7 +2566,8 @@ const eventsAndActivities = new MenuPSaR(
     eventsInParks,
     rivelinValleyWaterPlay,
     sheffieldRoundWalk,
-    playgrounds
+    playgrounds,
+    gravesPark
     
   ]
 );
@@ -3340,7 +3504,7 @@ const gritSaltCommercial = new ContentPSaR(
   </p>
   
   `,
-  { buttonLabel: "Order Grit (commercial)", formName: "request_order_grit_salt" },
+  { buttonLabel: "Order grit (commercial)", formName: "request_order_grit_salt" },
   { typeKey: "" },
   { typeKey: "" },
   {
