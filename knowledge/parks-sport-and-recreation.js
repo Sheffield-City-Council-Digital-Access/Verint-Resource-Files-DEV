@@ -2397,9 +2397,9 @@ const playgrounds = new ContentPSaR(
 const gravesPark = new ContentPSaR(
   "gravesPark",
   "Graves Park",
-  "Graves Park",
+  "Information about events, activities and facilities at Graves Park, including the animal farm",
   `
-<h3>Animal Farm</h3>
+<h3>Animal farm</h3>
   <p>
     <strong>Opening hours</strong> - 10am -3.30pm, 7 days a week
   </p>
@@ -2418,7 +2418,7 @@ const gravesPark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Animal Farm FAQs</h3>
+      <h3>Animal farm FAQs</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2459,7 +2459,7 @@ const gravesPark = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Animal Farm Events and Barn Hire</h3>
+      <h3>Animal farm events and barn hire</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2480,7 +2480,7 @@ const gravesPark = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Animal Farm Work Experience and Volunteering</h3>
+      <h3>Animal farm work experience and volunteering</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2505,7 +2505,7 @@ const gravesPark = new ContentPSaR(
   </details>
 
 
-<h3>Park Train</h3>
+<h3>Park train</h3>
   <p>
     The park train runs through the summer holidays and on sunny weekends.
   </p>
