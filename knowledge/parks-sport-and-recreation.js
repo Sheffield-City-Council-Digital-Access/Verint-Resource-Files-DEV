@@ -3905,6 +3905,71 @@ const memorialsInParks = new ContentPSaR(
   }
 );
 
+const donatingToParks = new ContentPSaR(
+  "donatingToParks",
+  "Donating to Parks and Green Spaces",
+  "Information about financial donations and item donations for parks and green spaces.",
+  `
+  <p>
+    Customers wishing to make donations to Sheffield's Parks and Green Spaces should be directed to complete the online form available on the website.
+    Further details can be found below about donation types and how they are used.
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+  <h3>Donating Money</h3>
+  <p>
+    Financial donations to support the maintenance, enhancement, and improvement of parks and green spaces are welcome.
+  </p>
+  <p>
+    Donations will be used to support improvements such as planting schemes, park facilities, biodiversity projects, community initiatives, 
+    or other agreed improvements within parks and green spaces.
+  </p>
+  <p>
+    Donations can be made using the link and can be allocated to a specific park on request. 
+    Any park-specific donation arrangements will be subject to Council financial procedures and operational requirements.
+  </p>
+  <p>
+    If a specific park is not selected, donations may be used for parks and green spaces across the city where they are most needed.
+  </p>
+
+  <h3>Donating Items</h3>
+  <p>
+    We are unable to accept donations of items or equipment, for example furniture, plants, memorial items, or play equipment.
+  </p>
+  <p>
+    Graves Park Animal Farm will consider donations which support the care of animals, such as food, hay, sawdust, blankets and similar items. 
+    Donations must be agreed by the park manager and delivered to the park. We do not collect donations.
+  </p>
+  
+  `,
+  { buttonLabel: "Donate to parks", formName: "request_donation_parks" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "donation",
+      "donations",
+      "donate",
+      "donating",
+      "financial",
+      "money",
+      "supportparks",
+      "charitable",
+      "giving",
+      "contribution",
+      "contributions",
+      "dontation",
+      "donatoin",
+      "donatons"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "14/08/2026", name: "Liz Taster" }
+);
+    
+
 //#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -3924,5 +3989,6 @@ const parksSportAndRecreation = new ServicePSaR(
    volunteeringWorkExperienceInParks,
    wildlifeInParks,
    memorialsInParks,
+   donatingToParks,
   ]
 );
