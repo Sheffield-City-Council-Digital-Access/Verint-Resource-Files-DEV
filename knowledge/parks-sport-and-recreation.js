@@ -2465,7 +2465,7 @@ const gravesPark = new ContentPSaR(
     <div class="accordion-content">
       <p>
         Events held at the Animal Farm are advertised on <a href="http://www.trybooking.co.uk/" target="_blank">www.trybooking.co.uk</a> and can be booked through the site. 
-        Search for <em>Graves Park Animal Farm</em>.
+        Click on <em>Find Event</em> and search for <em>Graves Park Animal Farm</em>.
       </p>
       <p>[Insert Send Link]</p>
 
@@ -2498,7 +2498,7 @@ const gravesPark = new ContentPSaR(
         Information and updates on available opportunities can be found on the Graves Park Animal Farm Facebook page.
       </p>
       <p>
-        Opportunities are also advertised on <a href="http://www.trybooking.co.uk/" target="_blank">www.trybooking.co.uk</a> – Search for Graves Park Animal Farm and follow the organisation 
+        Opportunities are also advertised on <a href="http://www.trybooking.co.uk/" target="_blank">www.trybooking.co.uk</a> – Click on <em>Find Event</em> and search for <em>Graves Park Animal Farm</em> and follow the organisation 
         to receive a notification when a volunteering event is planned.
       </p>
       <p>[Insert Send Link]</p>
