@@ -3286,6 +3286,11 @@ const gritSaltCommercial = new ContentPSaR(
   <p>
     We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.
   </p>
+
+  <p>
+    Information about this topic will be available on the Council Website
+  </p>
+
   <p>
     The minimum order is 0.5 tonnes, requests for more than10 tonnes require 28 days’ notice.
   </p>
