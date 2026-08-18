@@ -724,8 +724,8 @@ function handleInitialisingKnowledge() {
     const footerHTML = `
     <footer class="footer" role="contentinfo">
       <div class="footer-links">
-        <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new" target="_blank">Request a change</a>
-        <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681" target="_blank">Report a problem</a>
+        <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?from=search&requested_for_id=&search_id=&template_id=5442&position=4" target="_blank">Request a change</a>
+        <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?from=search&requested_for_id=&search_id=&template_id=5440&position=1" target="_blank">Report a problem</a>
       </div>
     </footer>
   `;
