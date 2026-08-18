@@ -119,7 +119,7 @@ function handleInitialisingEvent() {
         const cookiePolicyLi = document.createElement("li");
         const cookieAnchor = document.createElement("a");
         cookieAnchor.href =
-          "https://sheffieldcc-it.uk.4me.com/self-service/requests/new";
+          "https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?from=search&requested_for_id=&search_id=&template_id=5442&position=4";
         cookieAnchor.classList.add("footer-link");
         cookieAnchor.textContent = "Request change";
         cookiePolicyLi.appendChild(cookieAnchor);
@@ -128,7 +128,7 @@ function handleInitialisingEvent() {
         const privacyStatementLi = document.createElement("li");
         const privacyAnchor = document.createElement("a");
         privacyAnchor.href =
-          "https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681";
+          "https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?from=search&requested_for_id=&search_id=&template_id=5440&position=1";
         privacyAnchor.classList.add("footer-link");
         privacyAnchor.textContent = "Report fault";
         privacyStatementLi.appendChild(privacyAnchor);
