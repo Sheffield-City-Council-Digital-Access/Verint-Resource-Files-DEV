@@ -1625,12 +1625,12 @@ const bookAnEvent = new ContentPSaR(
   <p>[Insert Send Link]</p>
 
   <p>
-    Enquiries about holding an event in a park are welcome and can be done by completing the <strong>Book a Room/Event/Film/Photoshoot form</strong> - this is available on the link above.
+    Enquiries about holding an event in a park are welcome and can be done by completing the <strong><em>Book a Room/Event/Film/Photoshoot</em></strong> form - 
+    this is available at the link above.
   </p>
 
   <p>
-    The form must be completed by the interested party due to liability issues. 
-    <br><strong>The form Must not be completed by customer service staff on their behalf.</strong>
+    The form must be completed by the interested party due to liability issues - <strong>the form must not be completed by customer service staff on their behalf.</strong>
   </p>
 
   <p>
@@ -1851,7 +1851,7 @@ const filmingPhotoshoots = new ContentPSaR(
   "Information for customers wanting to hold a photo shoot on Parks & Countryside land.",
   `
   <p>
-    Customers that would like to hold a photo shoot on Parks & Countryside land must apply for permission.
+    If a customer would like to hold a photo shoot on Parks & Countryside land they must apply for permission.
   </p>
   <p>
     Full terms and conditions are available on our website <a href="https://www.sheffield.gov.uk/business/permission-film-hold-photo-shoot-city-centre" target="_blank">
@@ -2483,13 +2483,13 @@ const gravesPark = new ContentPSaR(
       <p>[Insert Send Link]</p>
 
       <p> 
-        The barn is available to hire for a flat fee of £50 for the day - 10am to 3.00pm. Bookings can be made using the online form.
+        The barn is available to hire for a flat fee of £50 for the day - 10am to 3.00pm. 
       </p>
       <p>
         Hire does not include interactive sessions with our animals, and we are unable to offer this. 
       </p>
       <p>
-        You are welcome to bring your own entertainment and decorations. 
+        Customers who hire the barn are welcome to bring their own entertainment and decorations. 
       </p>
       <p>
         To request a booking, the customer should complete the online form <strong>Book a Room/Event/Film/Photoshoot form</strong> available here:{link}. 
@@ -3169,7 +3169,7 @@ const lostFoundProperty = new ContentPSaR(
     Sheffield City Council is not responsible for property lost or damaged in parks.
   </p>
   <p>
-    When property is reported <strong>lost</strong>, we will attempt to reunite the item with the owner based on the information provided if found.
+    When property is reported <strong>lost</strong>, we will attempt to reunite the item with the owner based on the information provided, if the item is found.
   </p>
   <p>
     If property is reported as <strong>found</strong>, we will attempt to reunite it with the owner if we receive a matching report of a lost item.
@@ -4238,7 +4238,7 @@ const donatingToParks = new ContentPSaR(
       If a specific park is not selected, donations may be used for parks and green spaces across the city where they are most needed.
     </p>
     <p>
-      Once you have completed the donation request form you will find a link to make payment of your donation in the request confirmation screen.
+      Once a customer has completed the donation request form they will find a link to make payment of their donation in the request confirmation screen.
     </p>
 
   <h3>Donating items</h3>
