@@ -1625,7 +1625,16 @@ const bookAnEvent = new ContentPSaR(
   <p>[Insert Send Link]</p>
 
   <p>
-    Enquiries about holding a private event in a park are welcome and can be done by completing the <strong>Book a Room/Event/Film/Photoshoot form</strong> - this is available on the link above.
+    Enquiries about holding an event in a park are welcome and can be done by completing the <strong>Book a Room/Event/Film/Photoshoot form</strong> - this is available on the link above.
+  </p>
+
+  <p>
+    The form must be completed by the interested party due to liability issues. 
+    <br><strong>The form Must not be completed by customer service staff on their behalf.</strong>
+  </p>
+
+  <p>
+    Once the form has been submitted, the customer will be contacted to discuss the booking further.
   </p>
 
   <p>
@@ -1633,7 +1642,7 @@ const bookAnEvent = new ContentPSaR(
   </p>
   
   `,
-  { buttonLabel: "Book an event", formName: "request_booking_parks" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
@@ -1842,10 +1851,16 @@ const filmingPhotoshoots = new ContentPSaR(
   "Information for customers wanting to hold a photo shoot on Parks & Countryside land.",
   `
   <p>
-    Customers wanting to hold a photo shoot on Parks & Countryside land must apply for permission.
+    Customers that would like to hold a photo shoot on Parks & Countryside land must apply for permission.
   </p>
   <p>
-    The form is available on the website and must be completed by the interested party due to liability issues. 
+    Full terms and conditions are available on our website <a href="https://www.sheffield.gov.uk/business/permission-film-hold-photo-shoot-city-centre" target="_blank">
+    Permission to film or hold a photo shoot in the city centre | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    The booking form is available on the website and must be completed by the interested party due to liability issues. 
     <strong>The form should not be completed by customer service staff on their behalf.</strong>
   </p>
 
@@ -1884,7 +1899,7 @@ const filmingPhotoshoots = new ContentPSaR(
   
   `,
 
-  { buttonLabel: "Book a photoshoot", formName: "request_booking_parks" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
@@ -1995,7 +2010,7 @@ const activitiesInParks = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        Drones may <strong>not</strong> be flown from Council land without our permission.
+        Drones may <strong>not</strong> be flown from, or over, Council land without our permission.
       </p>
 
       <p>Permission will only be granted where:</p>
@@ -2412,9 +2427,7 @@ const gravesPark = new ContentPSaR(
   <p>
     <strong>Facilities</strong> – Refreshments, toilets, and baby change facilities available on site.
   </p>
-  <p>
-    Animal handling is generally not done on the weekend due to staffing limitations.
-  </p>
+
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -2470,10 +2483,20 @@ const gravesPark = new ContentPSaR(
       <p>[Insert Send Link]</p>
 
       <p> 
-        The barn is available to hire for a flat fee of £50 for the day - 10am to 3.30pm. Bookings can be made using the online form.
+        The barn is available to hire for a flat fee of £50 for the day - 10am to 3.00pm. Bookings can be made using the online form.
       </p>
       <p>
-        Information about this topic will be available on the Council Website
+        Hire does not include interactive sessions with our animals, and we are unable to offer this. 
+      </p>
+      <p>
+        You are welcome to bring your own entertainment and decorations. 
+      </p>
+      <p>
+        To request a booking, the customer should complete the online form <strong>Book a Room/Event/Film/Photoshoot form</strong> available here:{link}. 
+      </p>
+      <p>[Insert Send Link]</p>
+      <p>
+        Once we receive an enquiry, we will contact the customer to discuss availability. 
       </p>
     </div>
   </details>
@@ -2826,8 +2849,24 @@ const cctvParks = new ContentPSaR(
   "Information about CCTV enquiries in park spaces.",
   `
   <p>
-    All enquiries related to CCTV in park spaces should be directed to <a href="mailto:cctv@sheffield.gov.uk">cctv@sheffield.gov.uk</a>
+    CCTV cameras operate in park spaces in order to:
   </p>
+    <ul>
+      <li>Promote community safety by protecting people and property</li>
+      <li>Assist with the prevention and detection of crime</li>
+      <li>Help us act upon threats or instances of criminal and anti-social behaviour</li>
+      <li>Ensure safety and better services e.g. traffic management and alarms</li>
+    </ul>
+  <p>
+    CCTV footage is generally kept for 14 days then automatically deleted on day 15.
+  </p>
+  <p>
+    Details on the locations of CCTV cameras across the city, and how footage can be accessed, is available on the website 
+    <a href="https://www.sheffield.gov.uk/your-city-council/cctv-body-worn-video" target="_blank" rel="noopener noreferrer">
+    CCTV and Body Worn Video | Sheffield City Council</a>.
+  </p>
+
+  <p>[Insert Send Link]</p>
   
   `,
 
@@ -3130,7 +3169,7 @@ const lostFoundProperty = new ContentPSaR(
     Sheffield City Council is not responsible for property lost or damaged in parks.
   </p>
   <p>
-    When property is reported <strong>lost</strong>, we will attempt to locate the item based on the information provided.
+    When property is reported <strong>lost</strong>, we will attempt to reunite the item with the owner based on the information provided if found.
   </p>
   <p>
     If property is reported as <strong>found</strong>, we will attempt to reunite it with the owner if we receive a matching report of a lost item.
@@ -3357,7 +3396,7 @@ const dogCatWasteCommercial = new ContentPSaR(
   <p>[Insert Send Link]</p>
 
   <p>
-    The request form includes a link for immediate payment. If a customer reports an issue with payment, it can be made using the following link
+    The request form includes a link for immediate payment on the request confirmation screen. If a customer reports an issue with payment, it can be made using the following link
     <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank">
     https://ip.e-paycapita.com/Grit/Salt Requests</a>
   </p>
@@ -3463,6 +3502,9 @@ const gritSaltCommercial = new ContentPSaR(
     The material is supplied in 1 tonne builders’ bags using a grab lorry. <strong>The delivery location must be suitable to accommodate the lorry.</strong>
   </p>
   <p>
+    Deliveries will only be made on weekdays. 
+  </p>
+  <p>
     The price varies by volume required.
   </p>
   <p>
@@ -3492,7 +3534,7 @@ const gritSaltCommercial = new ContentPSaR(
 </table>
   
   <p>
-    Customers can fill out the request form which can be found on the website and includes a link for immediate payment.</p>
+    Customers can fill out the request form which can be found on the website and includes a link for immediate payment on the request confirmation page.</p>
 
   <p>
     If there has been an issue with payment, it can be made using the following link 
@@ -4131,7 +4173,7 @@ const memorialsInParks = new ContentPSaR(
     Donations of memorial or commemorative trees are welcome.
   </p>
   <p>
-    Details of how to donate can be found in the <strong>Tree Planting & Community Forestry</strong> knowledge article. 
+    Details of how to donate can be found in the <strong>Tree Planting and Community Forestry</strong> knowledge article. 
     Search for '<em>donate a tree</em>' using the search function above.
   </p>
 
@@ -4181,29 +4223,40 @@ const donatingToParks = new ContentPSaR(
   <p>[Insert Send Link]</p>
 
   <h3>Donating money</h3>
-  <p>
-    The Council welcomes financial donations to support the maintenance, enhancement, and improvement of parks and green spaces.
-  </p>
-  <p>
-    Donations will be used to support improvements such as planting schemes, park facilities, biodiversity projects, community initiatives, 
-    or other agreed improvements within parks and green spaces.
-  </p>
-  <p>
-    Donations can be made using the online form and can be allocated to a specific park on request. 
-    Any park-specific donation arrangements will be subject to Council financial procedures and operational requirements.
-  </p>
-  <p>
-    If a specific park is not selected, donations may be used for parks and green spaces across the city where they are most needed.
-  </p>
+    <p>
+      The Council welcomes financial donations to support the maintenance, enhancement, and improvement of parks and green spaces.
+    </p>
+    <p>
+      Donations will be used to support improvements such as planting schemes, park facilities, biodiversity projects, community initiatives, 
+      or other agreed improvements within parks and green spaces.
+    </p>
+    <p>
+      Donations can be made using the online form and can be allocated to a specific park. 
+      Any park-specific donation arrangements will be subject to Council financial procedures and operational requirements.
+    </p>
+    <p>
+      If a specific park is not selected, donations may be used for parks and green spaces across the city where they are most needed.
+    </p>
+    <p>
+      Once you have completed the donation request form you will find a link to make payment of your donation in the request confirmation screen.
+    </p>
 
   <h3>Donating items</h3>
-  <p>
-    We are unable to accept donations of items or equipment - for example furniture, plants, memorial items, or play equipment.
-  </p>
-  <p>
-    Graves Park Animal Farm will consider donations which support the care of animals, such as food, hay, sawdust, blankets and similar items. 
-    Donations must be agreed by the park manager and delivered to the park. We do not collect donations.
-  </p>
+    <p>
+      We are unable to accept donations of items or equipment - for example furniture, plants, memorial items, or play equipment.
+    </p>
+    <p>
+      Graves Park Animal Farm will consider donations which support the care of animals, such as food, hay, sawdust, blankets and similar items. 
+      Donations must be agreed by the park manager and delivered to the park. We do not collect donations.
+    </p>
+    <p>
+      Please provide details of the items you wish to donate using the form. A park manager will review the details and respond within 3-5 working days. 
+    </p>
+
+  <h3>Donating tree/plants</h3>
+    <p>
+      We do not accept donations of trees or plants. Please search for the knowledge article <strong>Tree Planting and Community Forestry</strong> for more info. 
+    </p>
   
   `,
   { buttonLabel: "Donate to parks", formName: "request_donation_parks" },
