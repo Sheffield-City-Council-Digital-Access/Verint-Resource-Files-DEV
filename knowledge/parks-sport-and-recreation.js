@@ -1937,6 +1937,97 @@ const filmingPhotoshoots = new ContentPSaR(
   }
 );
 
+const bookRoomOrParkBuilding = new ContentPSaR(
+  "bookRoomOrParkBuilding",
+  "Book a Room or Park Building",
+  "Information about hiring community buildings in parks and booking available venues.",
+  `
+  <p>
+    We have several community buildings in our parks that are available to hire.
+  </p>
+  <p>
+    The facilities vary by location and are capable of hosting a range of activities:
+  </p>
+    <ul>
+      <li>Private functions</li>
+      <li>Larger community events and activities</li>
+      <li>Education classes</li>
+      <li>Conferences</li>
+      <li>Meetings</li>
+    </ul>
+
+  <p>
+    Further information regarding facilities and booking requirements can be found at 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
+    Book a community building or advertising space in a park | Sheffield City Council</a>.
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    Layouts are available on the webpage but are not facilitated, so the person booking is responsible for the room setup.
+  </p>
+  <p>
+    The following facilities can be booked using the 
+    <a href="https://sheffield.zipporah.co.uk/Generic.Live/" target="_blank" rel="noopener noreferrer">Sheffield Council Booking System</a>:
+  </p>
+    <ul>
+      <li>Centre in the Park</li>
+      <li>Firth Park Clock Tower</li>
+      <li>Bole Hill Pavillion</li>
+      <li>Stannington Pavillion</li>
+    </ul>
+
+  <p>[Insert Send Link]</p>
+  
+  <p>To make a booking at the following venues, please submit an enquiry using our online form:</p>
+    <ul>
+      <li>Dorothy Fox Centre (Botanical Gardens) - Weddings</li>
+      <li>Woodland Discovery Centre (Ecclesall Woods) - Weddings</li>
+      <li>Shire Brook Valley Visitor Centre</li>
+      <li>Graves Park Animal Farm</li>
+    </ul>
+
+  <p>
+    The form is available on the website and must be completed by the interested party due to liability issues - 
+    <strong>the form must not be completed by customer service staff on their behalf</strong>.
+  </p>  
+  <p>
+    Once a completed form is received, we will contact the customer to discuss the requirements further.
+  </p>
+  
+  `,
+  { buttonLabel: "", formName: "parkBuildingBooking" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { 
+    type: "Information",
+    keywords: [
+      "book",
+      "hire",
+      "room",
+      "park",
+      "community",
+      "building",
+      "venue",
+      "booking",
+      "bookings",
+      "reservation",
+      "reservations",
+      "conference",
+      "meeting",
+      "meetings",
+      "education",
+      "classes",
+      "community",
+      "events",
+      "private functions",
+      "bookng",
+      "bokking",
+    ],
+    categories: ["Parks and Countryside", "Bookings"]
+  },
+  { date: "19/08/2026", name: "Liz Taster" }
+);
+
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
@@ -1947,6 +2038,7 @@ const bookingsParks = new MenuPSaR(
     bookASportsFacility,
     commercialActivitiesParks,
     filmingPhotoshoots,
+    bookRoomOrParkBuilding,
     
   ]
 );
