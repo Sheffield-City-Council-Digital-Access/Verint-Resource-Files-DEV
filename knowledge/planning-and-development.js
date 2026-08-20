@@ -3633,7 +3633,7 @@ const findAPropertysPlanningHistory = new ContentPaD(
 
 
 
-const planning = new MenuPaD(
+const planningApplications = new MenuPaD(
   "PlanningApplications",
   "Planning Applications",
   "Information regarding planning",
