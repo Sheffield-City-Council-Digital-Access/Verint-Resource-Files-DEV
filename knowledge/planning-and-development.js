@@ -3296,7 +3296,7 @@ const planningPermissionForHmo = new ContentPaD(
       </ul>
       <p>
         For information about HMOs, Article 4 restrictions and how planning permission requirements may affect your property, visit:
-        <a href="https://www.sheffield.gov.uk/planning-development/planning-permission-houses-multiple-occupation" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/planning-permission-hmo" target="_blank" rel="noopener noreferrer">
           Planning Permission for Houses in Multiple Occupation | Sheffield City Council
         </a>
       </p>
@@ -3419,6 +3419,77 @@ const planningPermissionForHmo = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const disabilityAccessPlanningGuidance = new ContentPaD(
+  "disabilityAccessPlanningGuidance",
+  "Disability Access Planning Guidance",
+  "Information about accessibility and inclusive design advice for planning applications, Building Regulations and licensed premises.",
+  `
+  <p>
+    The Council's Access Officer provides advice on physical access and inclusive design to help ensure developments are accessible for disabled people and comply with the Equality Act 2010.
+  </p>
+
+  <h3>Advice Available</h3>
+  <p>Advice can be provided on:</p>
+  <ul>
+    <li>Pre-planning enquiries and planning applications</li>
+    <li>Access requirements relating to Building Regulations, including Part M (Access to and Use of Buildings)</li>
+    <li>Access arrangements for licensed premises</li>
+  </ul>
+
+  <h3>Access Liaison Group (ALG)</h3>
+  <p>
+    The Access Liaison Group (ALG) is made up of disabled people from across Sheffield who help shape improvements to accessibility throughout the city.
+  </p>
+  <p>
+    New members are welcome and can contact the Access Officer for further information.
+  </p>
+
+  <h3>Design Guidance and Specialist Advice</h3>
+  <p>
+    Advice on inclusive design, disability access standards and specialist disability organisations is available from the Access Officer.
+  </p>
+  <p>
+    <strong>Email:</strong><br>
+    <a href="mailto:planningdc@sheffield.gov.uk">
+      planningdc@sheffield.gov.uk
+    </a>
+  </p>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>The Council's <strong>Access Officer</strong> can provide advice about physical access and inclusive design.</li>
+    <li>Advice can cover <strong>planning applications, pre-planning enquiries, Building Regulations Part M and licensed premises</strong>.</li>
+    <li>Customers requiring specialist accessibility advice can be directed to the Access Officer through the contact details provided.</li>
+    <li>The <strong>Access Liaison Group (ALG)</strong> includes disabled people from across Sheffield and welcomes new members.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "disability access",
+      "disabled access",
+      "accessibility",
+      "inclusive design",
+      "Access Officer",
+      "planning access advice",
+      "Building Regulations Part M",
+      "licensed premises",
+      "Access Liaison Group",
+      "ALG",
+      "Equality Act 2010",
+      "accessability",
+      "accesibility",
+      "disabilty access",
+      "inclusve design",
+      "acess officer"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -3433,6 +3504,7 @@ const planning = new MenuPaD(
     planningDecisionsAndAppeals,
     searchViewAndCommentOnPlanningApps,
     planningPermissionForHmo,
+    disabilityAccessPlanningGuidance,
   ]
 );
 
