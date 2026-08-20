@@ -2190,6 +2190,195 @@ const historicalPlanningRequests = new ContentPaD(
   { date: "16/07/2026", name: "Liz Taster" }
 );
 
+const applyForPlanningPermission = new ContentPaD(
+  "applyForPlanningPermission",
+  "Apply for Planning Permission",
+  "Guidance on applying for planning permission, including application fees, supporting documents and local planning requirements.",
+  `
+  <p>
+    You can apply for planning permission online through the Planning Portal. The service allows you to complete your application, upload supporting documents, create a site location plan and pay any required fees.
+  </p>
+  <p>
+    <strong>Apply online:</strong><br>
+    <a href="https://1app.planningportal.co.uk/Form/StartPlanningApplication" target="_blank" rel="noopener noreferrer">
+      Apply for Planning Permission | Planning Portal
+    </a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20planning%20permission\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before You Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Before applying, you should check whether planning permission is required for your proposed work.
+      </p>
+      <p>There are several ways to do this:</p>
+      <ul>
+        <li>Check whether your proposal qualifies as permitted development</li>
+        <li>Submit a Lawful Development Certificate application to obtain written confirmation</li>
+        <li>Submit a pre-application enquiry if you would like planning advice before making a formal application</li>
+        <li>Review planning application fees before applying</li>
+      </ul>
+      <p>
+        For further information and access to all available services, visit:
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/apply" target="_blank" rel="noopener noreferrer">
+          Apply for Planning Permission | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20planning%20permission\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Supporting Documents</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        When you apply, you must provide the information and supporting documents required for your application. This will normally include:
+      </p>
+      <ul>
+        <li>An application form</li>
+        <li>Plans and drawings</li>
+        <li>Ownership certificates</li>
+        <li>Any additional supporting statements required for your proposal</li>
+      </ul>
+      <p>
+        Applications that do not include the required information may not be validated until the missing information is received.
+      </p>
+      <p>
+        <strong>Further guidance:</strong><br>
+        <a href="https://www.gov.uk/guidance/making-an-application" target="_blank" rel="noopener noreferrer">
+          Making an Application | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Making%20an%20application\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Application Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Planning application fees are paid directly through the Planning Portal when you submit your application online. VAT is not payable on planning applications.
+      </p>
+      <p>
+        Sheffield City Council does not accept payment by cheque.
+      </p>
+      <p>
+        If you submit your application by post, you will be sent a payment link by email.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Local Planning Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Some applications may require additional information to meet Sheffield's local planning validation requirements.
+      </p>
+      <p>
+        <strong>View local planning requirements:</strong><br>
+        <a href="https://www.sheffield.gov.uk/planning-development/local-planning-guidance" target="_blank" rel="noopener noreferrer">
+          Local Planning Requirements | Sheffield City Council
+        </a>
+      </p>
+
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Local%20planning%20requirements\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Customers should <strong>check whether planning permission is required</strong> before applying.</li>
+    <li>Planning applications can be submitted online through the <strong>Planning Portal</strong>.</li>
+    <li>Customers must provide the <strong>required plans, documents and supporting information</strong>.</li>
+    <li>Applications may require additional information to meet <strong>Sheffield's local validation requirements</strong>.</li>
+    <li>Applications cannot be validated until the required information has been provided.</li>
+    <li>Application fees can be paid through the Planning Portal when applying online.</li>
+  </ul>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "planning permission",
+      "planning application",
+      "planning portal",
+      "permitted development",
+      "lawful development certificate",
+      "pre-application enquiry",
+      "application fees",
+      "supporting documents",
+      "local planning requirements",
+      "planing permission",
+      "planing application",
+      "permision",
+      "aplication"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -2198,6 +2387,7 @@ const planning = new MenuPaD(
   [
     reportingAPlanningEnforcementIssue,
     historicalPlanningRequests,
+    applyForPlanningPermission,
   ]
 );
 
