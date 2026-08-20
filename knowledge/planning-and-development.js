@@ -3490,6 +3490,147 @@ const disabilityAccessPlanningGuidance = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const findAPropertysPlanningHistory = new ContentPaD(
+  "findAPropertysPlanningHistory",
+  "Find a Property's Planning History",
+  "Information about planning history searches, fees, archived planning files and viewing historical planning records.",
+  `
+  <p>
+    If you would like to find the planning history of a property or site, there are several search options available depending on the information you require.
+  </p>
+  <p>
+    For further information about planning history searches and archived planning records, visit:
+    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank" rel="noopener noreferrer">
+      Find a Property's Planning History | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20a%20property%27s%20planning%20history\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Property Purchases</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are buying a property, you may require a comprehensive or expedited search. In these circumstances, you should contact the Local Land Charges team for advice.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Planning History Requests</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Planning history searches are available for planning applications and enforcement cases from 2001 to the present day.
+      </p>
+      <p>
+        Searches can be extended back to 1975 for an additional charge.
+      </p>
+      <h4>Fees</h4>
+      <ul>
+        <li>£25 for a straightforward domestic property search, including VAT</li>
+        <li>£50 for a commercial property search, including VAT</li>
+        <li>Complex searches may incur additional charges</li>
+      </ul>
+      <p>To request a search, you will need:</p>
+      <ul>
+        <li>A covering letter</li>
+        <li>A 1:1250 location plan</li>
+        <li>Payment of the appropriate fee</li>
+      </ul>
+      <p>
+        Please allow up to 5 working days after payment has been received for the search to be completed.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Viewing Historical Planning Files</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Historical planning files may be available to view in person, subject to approval.
+      </p>
+      <p>
+        If you know the planning application number, you can request access to archived files by contacting the Planning Service.
+      </p>
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:planningdc@sheffield.gov.uk">
+          planningdc@sheffield.gov.uk
+        </a>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Additional Information</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Complex sites require an appointment to view records</li>
+        <li>Up to 10 minutes of assistance is provided free of charge</li>
+        <li>Additional assistance may be chargeable</li>
+        <li>Historic planning applications from 1998 to 2003 can be viewed on the public computer at First Point, Howden House</li>
+      </ul>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Customers buying a property who require a comprehensive or expedited search should be directed to <strong>Local Land Charges</strong>.</li>
+    <li>Planning history searches are available from <strong>2001 onwards</strong> and can be extended back to 1975 for an additional charge.</li>
+    <li>Customers requesting a search need a <strong>covering letter, 1:1250 location plan and the appropriate fee</strong>.</li>
+    <li>Allow up to <strong>5 working days after payment</strong> for a planning history search to be completed.</li>
+    <li>Historical files may be available to view in person where the customer knows the <strong>planning application reference</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "planning history",
+      "property planning history",
+      "historical planning applications",
+      "archived planning files",
+      "planning records",
+      "planning enforcement history",
+      "planning application reference",
+      "planning history search",
+      "Local Land Charges",
+      "view planning files",
+      "property purchase",
+      "Howden House",
+      "planing history",
+      "planning histroy",
+      "historical planing applications",
+      "archived planing files"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -3505,6 +3646,7 @@ const planning = new MenuPaD(
     searchViewAndCommentOnPlanningApps,
     planningPermissionForHmo,
     disabilityAccessPlanningGuidance,
+    findAPropertysPlanningHistory,
   ]
 );
 
