@@ -2453,7 +2453,7 @@ const applyForPreApplicationAdvice = new ContentPaD(
       </p>
       <p>
         <strong>Telephone:</strong><br>
-        0114 273 4218
+        0114 273 4218 <a href="tel:0114 2734218">0114 2734218</a> 
       </p>
       <p>
         <strong>Email:</strong><br>
@@ -2643,6 +2643,187 @@ const applyForPreApplicationAdvice = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const findOutIfYouNeedPlanningPermission = new ContentPaD(
+  "findOutIfYouNeedPlanningPermission",
+  "Find Out if You Need Planning Permission",
+  "Guidance on checking whether planning permission is required, including permitted development rights, local constraints and written confirmation.",
+  `
+  <p>
+    Not all building work, alterations or changes of use require planning permission. There are several ways to check whether permission is needed before starting work.
+  </p>
+  <p>
+    For further information about checking whether planning permission is required, visit:
+    <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/need-planning-permission" target="_blank" rel="noopener noreferrer">
+      Find Out if You Need Planning Permission | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20out%20if%20you%20need%20planning%20permission\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Check Permitted Development Rights</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Some types of development can be carried out without planning permission under Permitted Development Rights, provided specific conditions are met.
+      </p>
+      <p>
+        <strong>Interactive planning guides:</strong><br>
+        <a href="https://www.planningportal.co.uk/info/200125/do_you_need_permission" target="_blank" rel="noopener noreferrer">
+          Check if You Need Planning Permission | Planning Portal
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Check%20if%20you%20need%20planning%20permission\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Local Constraints</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Planning permission may still be required if:
+      </p>
+      <ul>
+        <li>The property is a listed building</li>
+        <li>The property is within a conservation area</li>
+        <li>An Article 4 Direction applies</li>
+        <li>Permitted development rights have been removed by a planning condition</li>
+        <li>The proposal affects protected trees</li>
+        <li>The proposal involves a House in Multiple Occupation (HMO) in an Article 4 area</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Additional Guidance</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Additional guidance is available for specific types of development, including:
+      </p>
+      <ul>
+        <li>Air Source Heat Pumps</li>
+        <li>Telecommunications Infrastructure</li>
+        <li>Houses in Multiple Occupation (HMOs)</li>
+        <li>Listed Buildings</li>
+        <li>Conservation Areas</li>
+        <li>Protected Trees</li>
+        <li>Other proposals that may be affected by local planning constraints</li>
+      </ul>
+      <p>
+        Guidance relevant to these proposals is available on the main planning permission page linked above.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Written Confirmation</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you would like written confirmation that planning permission is not required, you can apply for a Lawful Development Certificate (LDC).
+      </p>
+      <p>
+        If approved, this provides formal confirmation that the proposed development is lawful and may be useful when selling a property in the future.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Need Further Advice?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are unsure whether planning permission is required, you can submit a pre-application enquiry for written advice. Charges apply for this service.
+      </p>
+      <p>
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/pre-application-enquiry" target="_blank" rel="noopener noreferrer">
+          Make a Pre-Application Enquiry | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Make%20a%20pre-application%20enquiry\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Not all development requires planning permission; some work may be covered by <strong>Permitted Development Rights</strong>.</li>
+    <li>Local restrictions such as <strong>Article 4 Directions, listed buildings, conservation areas or planning conditions</strong> can affect permitted development rights.</li>
+    <li>A <strong>Lawful Development Certificate</strong> can provide formal written confirmation that proposed development is lawful.</li>
+    <li>If the customer remains unsure, they can request <strong>pre-application advice</strong>, for which a charge applies.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "do I need planning permission",
+      "planning permission required",
+      "permitted development",
+      "permitted development rights",
+      "Article 4",
+      "lawful development certificate",
+      "LDC",
+      "planning constraints",
+      "listed building",
+      "conservation area",
+      "protected trees",
+      "HMO",
+      "change of use",
+      "planing permission",
+      "planning permision",
+      "permited development",
+      "lawful developement certificate"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -2653,6 +2834,7 @@ const planning = new MenuPaD(
     historicalPlanningRequests,
     applyForPlanningPermission,
     applyForPreApplicationAdvice,
+    findOutIfYouNeedPlanningPermission,
   ]
 );
 
