@@ -4330,6 +4330,28 @@ const memorialsInParks = new ContentPSaR(
     Customers will then be advised of costs, conditions, and ongoing arrangements associated with the memorial bench scheme.
   </p>
 
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Memorial bench terms and conditions</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Terms and conditions apply to all memorial benches:
+      </p>
+        <ul>
+          <li>Memorials are engraved into the bench. We do not allow brass plates as these are regularly stolen and we are unable to replace them.</li>
+          <li>No political, sports team, or abusive content are allowed in memorials.</li>
+          <li>Personal items e.g./trinkets/vases/locks and flowers are not permitted either on or attached to the seat and will be removed by the City Council.</li>
+          <li>No responsibility can be accepted for theft.</li>
+          <li>The bench shall be a once only donation - it shall not be replaced by the Council at the end of its life or if it is destroyed by vandalism, 
+              but it can be replaced at your cost. </li>
+          <li>The City Council may remove the bench if it becomes unsafe.</li>
+          <li>Upkeep of the bench is the responsibility of the client. Advice can be given.</li>
+        </ul>
+    </div>
+  </details>
+
 <h3>Memorial Trees</h3>
   <p>
     Donations of memorial or commemorative trees are welcome.
