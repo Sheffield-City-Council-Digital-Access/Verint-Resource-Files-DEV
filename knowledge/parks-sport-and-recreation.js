@@ -1577,7 +1577,7 @@ const bannersInParks = new ContentPSaR(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1644,7 +1644,7 @@ const bookAnEvent = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1776,7 +1776,7 @@ const bookASportsFacility = new ContentPSaR(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Transactional",
     keywords: [
@@ -1828,7 +1828,7 @@ const commercialActivitiesParks = new ContentPSaR(
   
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1911,7 +1911,7 @@ const filmingPhotoshoots = new ContentPSaR(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2009,7 +2009,7 @@ const bookRoomOrParkBuilding = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   { 
     type: "Information",
     keywords: [
@@ -2065,7 +2065,7 @@ const weddingsInParks = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2282,7 +2282,7 @@ const activitiesInParks = new ContentPSaR(
 
 { buttonLabel: "", formName: "" },
 { typeKey: "" },
-{ typeKey: "" },
+{ typeKey: "parks_information_provided" },
 {
 type: "Information",
 keywords: [
@@ -2367,7 +2367,7 @@ const eventsInParks = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2435,7 +2435,7 @@ const rivelinValleyWaterPlay = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2484,7 +2484,7 @@ const sheffieldRoundWalk = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2549,7 +2549,7 @@ const playgrounds = new ContentPSaR(
   `,
   { buttonLabel: "Report playground issue", formName: "report_playground" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2714,7 +2714,7 @@ const gravesPark = new ContentPSaR(
 `,
   { buttonLabel: "Donate to animal farm", formName: "request_donation_parks" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2901,8 +2901,8 @@ const reportTreePark = new ContentPSaR(
   </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
-  { typeKey: "allotments_transferred_to_service" },
-  { typeKey: "allotments_information_provided" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -2974,7 +2974,7 @@ const antiSocialBehaviourParks = new ContentPSaR(
 
   { buttonLabel: "Report ASB", formName: "report_asb" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3037,7 +3037,7 @@ const cctvParks = new ContentPSaR(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3071,7 +3071,7 @@ const insurancePersonalInjuryCompensation = new ContentPSaR(
     `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3126,7 +3126,7 @@ const flyTipping = new ContentPSaR(
  
   { buttonLabel: "Report Fly-tipping", formName: "report_fly_tipping"},
   { typeKey: ""},
-  { typeKey: ""},
+  { typeKey: "parks_information_provided"},
   {
     type: "Information",
     keywords: [
@@ -3184,7 +3184,7 @@ const damageToPavementsAndSurfaces = new ContentPSaR(
   `,
   { buttonLabel: "Report damage", formName: "road_pavement_surface" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3238,7 +3238,7 @@ const damageToFencing = new ContentPSaR(
   `,
   { buttonLabel: "Report damage", formName: "report_fence_barrier" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Transactional",
     keywords: [
@@ -3283,7 +3283,8 @@ const litterAndLitterBins = new ContentPSaR(
     are considered based on the condition of the bin.
   </p>
   <p>
-    To report an issue with a litter bin, direct customers to use the online form here: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_litter_bin" 
+    To report an issue with a litter bin, direct customers to use the online form available here - click on 'Report a problem with a litter bin' 
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
     target="_blank" rel="noopener noreferrer">Report litter bin</a>.
   </p>
   <p>[Insert Send Link] 31</p>
@@ -3299,7 +3300,7 @@ const litterAndLitterBins = new ContentPSaR(
 `,
   { buttonLabel: "Report a litter bin", formName: "report_litter_bin" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3348,7 +3349,7 @@ const lostFoundProperty = new ContentPSaR(
   `,
   { buttonLabel: "Report lost/found property", formName: "report_lost_prop_parks" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3416,8 +3417,8 @@ const grassHedgeCutting = new ContentPSaR(
 
   `,
   { buttonLabel: "Report an issue", formName: "report_hedge_plant_grass" },
-  { typeKey: "Information" },
-  { typeKey: "Report" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3456,14 +3457,14 @@ const dogFouling = new ContentPSaR(
     Exemptions may be made for registered blind owners or people with certain disabilities affecting mobility or sight.
   </p>
   <p>
-    To report an issue with dog fouling, please use the online <a href="https://forms.sheffield.gov.uk/site/portal/form/report_dog_fouling" target="_blank" rel="noopener noreferrer">
+    To report an issue with dog fouling, please use the online form available here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
     Report dog fouling</a> form.
   </p>
   <p>[Insert Send Link] 35</p>
   `,
-  { buttonLabel: "Report Dog Fouling", formName: "report_dog_fouling" },
+  { buttonLabel: "Report dog fouling", formName: "report_dog_fouling" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3510,7 +3511,7 @@ const dogBins = new ContentPSaR(
 `,
   { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3604,7 +3605,7 @@ const dogCatWasteCommercial = new ContentPSaR(
 `,
   { buttonLabel: "Request waste collection", formName: "request_waste_collection" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "",
     keywords: [
@@ -3716,7 +3717,7 @@ const gritSaltCommercial = new ContentPSaR(
   `,
   { buttonLabel: "Order grit (commercial)", formName: "request_order_grit_salt" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3772,7 +3773,7 @@ const graffitiRemovalParkProperty = new ContentPSaR(
 `,
   { buttonLabel: "Report graffiti", formName: "report_graffiti" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3832,7 +3833,7 @@ const purchaseLeaseLicenceParks = new ContentPSaR(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3931,7 +3932,7 @@ const ecology = new ContentPSaR(
         `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "Information" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -4073,7 +4074,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -4155,7 +4156,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
   
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -4267,7 +4268,7 @@ const wildlifeInParks = new ContentPSaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -4421,7 +4422,7 @@ const memorialsInParks = new ContentPSaR(
   `,
   { buttonLabel: "Apply for a Memorial Bench", formName: "request_memorial_bench" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -4502,7 +4503,7 @@ const donatingToParks = new ContentPSaR(
   `,
   { buttonLabel: "Donate to parks", formName: "request_donation_parks" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -4561,7 +4562,7 @@ const treePreservationOrders = new ContentPSaR(
   
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
   {
     type: "Information",
     keywords: [
