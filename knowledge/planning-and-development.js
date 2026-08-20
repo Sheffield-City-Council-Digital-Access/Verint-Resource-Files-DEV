@@ -2211,5 +2211,8 @@ const planningAndDevelopment = new ServicePaD(
   "planningAndDevelopment",
   "Planning and Development",
   `Planning applications, building regulations, conservation, regeneration, planning committee…`,
-  [buildingControl]
+  [
+    buildingControl,
+    planning,
+  ]
 );
