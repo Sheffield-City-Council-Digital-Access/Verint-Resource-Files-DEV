@@ -63,7 +63,7 @@ const giveNoticeToDemolishABuilding = new ContentPaD(
   "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
   `  
     <p>
-      Customers planning to demolish a building in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
+      Customers planning to demolish a buildings over 50 cubic metres in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
     </p>
     <p>
       The notice allows the council to assess the proposal, provide guidance on safety requirements, and coordinate with relevant parties where needed.
@@ -172,194 +172,6 @@ const giveNoticeToDemolishABuilding = new ContentPaD(
 );
  
 
-const reportingAPlanningEnforcementIssue = new ContentPaD(
-  "reportingAPlanningEnforcementIssue",
-  "Reporting a Planning Enforcement Issue",
-  "Information about reporting a planning enforcement issue, including what can and cannot be reported.",
-  `
-  <p>
-    Residents can report a planning enforcement issue to the council if they believe development has taken place without planning permission 
-    or is not in line with the permission granted.
-  </p>
-  <p>
-    Planning enforcement allows the council to investigate potential breaches of planning control and decide if action is required.
-  </p>
-  <p>
-    Further details about planning enforcement, including a link to the form to report an issue can be found here: 
-    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
-    Reporting a planning enforcement issue | Sheffield City Council</a>
-  </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Report an Issue</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        <strong>Before reporting</strong>, residents are advised to check if the development already has planning permission before making a report.
-      </p>
-      <p>
-        Reports can be submitted using the council’s online reporting form. This can be found at 
-        <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
-        Reporting a planning enforcement issue | Sheffield City Council</a>
-      </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-      <p>Residents should report if they believe:</p>
-        <ul>
-          <li>Development has taken place without permission</li>
-          <li>A development is not complying with its approved plans or conditions</li>
-        </ul>
-
-      <p>
-        Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
-        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank">
-        Search, view and comment on planning applications | Sheffield City Council</a>
-      </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Search%20view%20and%20comment%20on%20planning%20applications\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Can Be Reported</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>The council can investigate the following types of issues:</p>
-        <ul>
-          <li>Development carried out without planning permission</li>
-          <li>Development that differs from approved planning permission</li>
-          <li>Breaches of planning conditions</li>
-          <li>Unauthorised advertisements</li>
-          <li>Unauthorised works to a listed building</li>
-          <li>Unauthorised works to protected trees</li>
-          <li>Unauthorised works in conservation areas or protected areas (such as greenbelt)</li>
-          <li>Unauthorised changes of use</li>
-          <li>Untidy land</li>
-        </ul>
-    </div>
-  </details>
-  
-  
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Cannot Be Reported</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Some issues are not planning enforcement matters and cannot be investigated:</p>
-        <ul>
-          <li>Non-material planning considerations – loss of property value, damage to private property, loss of view;</li>
-          <li>Private disputes or interests – boundary or land ownership disputes, internal alterations to houses (unless listed), security lights on houses, high hedges, business competition concerns;</li>
-          <li>Issues covered by other legislation – noise complaints, improper use of highways, building safety or dangerous structures, blocked rights of way, health and safety or site security issues</li>
-        </ul>
-      <p>
-        More detail on what can and cannot be investigated is available in the Local Enforcement Plan, available here: 
-        <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank">
-        Sheffield Local Enforcement Plan</a>
-      </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Local%20Enforcement%20Plan\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-    </div>
-  </details>
-
-
-
-  <h3>Key Information for Call Centre Staff</h3>
-    <p>When handling enquiries:</p>
-      <ul>
-        <li>Confirm whether the issue relates to a potential breach of planning control.</li>
-        <li>Check the issue is within planning enforcement scope.</li>
-        <li>Advise the resident to check if planning permission exists.</li>
-        <li>Direct the resident to the online reporting form if appropriate.</li>
-        <li>If the issue falls outside planning enforcement, signpost to the relevant service where applicable.</li>
-      </ul>
-    
-    `,
-  { buttonLabel: "Report a Planning Issue", formName: "report_planning_issue" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Report",
-    keywords: [
-      "planning",
-      "enforcement",
-      "report",
-      "planning",
-      "issue",
-      "breach",
-      "control",
-      "unauthorised",
-      "development",
-      "works",
-      "permission",
-      "enforcement",
-      "notice",
-      "applications",
-      "developement",
-      "planing",
-      "enforcment",
-      "enforcemnt",
-      "developement"
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "09/07/2026", name: "Liz Taster" }
-);
 
 
 const applyForABuildingNotice = new ContentPaD(
@@ -411,7 +223,7 @@ const applyForABuildingNotice = new ContentPaD(
           <li>Properties that are not single-family dwellings</li>
           <li>Work within 3 metres of a public sewer</li>
           <li>Buildings fronting onto a private road</li>
-          <li>Buildings subject to fire safety legislation (Regulatory Reform Order)</li>
+          <li>Buildings subject to fire safety legislation (The Regulatory Reform (Fire Safety) Order 2005)</li>
         </ul>
       <p>
         If the applicant <strong>cannot ensure compliance</strong> with building regulations, they should use a <strong>Full Plans</strong> application instead.
@@ -423,8 +235,9 @@ const applyForABuildingNotice = new ContentPaD(
           <li>Removing a load-bearing wall (with appropriate support)</li>
           <li>Installing or altering heating appliances and flues</li>
           <li>Extensions to an existing dwelling</li>
-          <li>Bathroom or shower installations</li>
+          <li>Bathroom or shower installations where a structural alterations are undertaken or creating a new drainage connection</li>
           <li>Replacement windows (if not using a FENSA-registered installer)</li>
+          <li>Domenstic re-roof  over 50% of the roof</li>
         </ul>
     </div>
   </details>
@@ -591,6 +404,7 @@ const fullPlansBuildingApplication = new ContentPaD(
           <li>Existing plans</li>
           <li>Proposed plans</li>
           <li>Construction specifications (may be included within plans)</li>
+          <li>Structural calculations</li>
           <li>Drainage details or plans showing any changes or building over drains</li>
         </ul>
       <p>
@@ -1047,9 +861,11 @@ const reportingDangerousStructures = new ContentPaD(
         Reports are submitted online via the council’s website.
       </p>
       <p>
+        Reporters should be encouraged to include photographs wherever possible.
+      </p>
+      <p>
         The enquiry will then be directed to the appropriate team for investigation.
       </p>
-
       <p>
         Once the report is received, the council will assess the report and an inspection may be carried out.
         <br>Appropriate action will be taken to remove or reduce the danger
@@ -1144,7 +960,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
   "Information about how residents (or their builders) can book a building site inspections as part of an existing building control application.",
   `
   <p>
-    Residents (or their builders) can book a building site inspection as part of an existing building control application with Sheffield City Council. 
+    Customers, builders, architects and agents can book a building site inspection as part of an existing building control application with Sheffield City Council. 
     The inspection service is included within the application and ensures work complies with building regulations.
   </p>
   <p>
@@ -1284,13 +1100,16 @@ const bookingBuildingSiteInspections = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        Customers can request a morning or afternoon visit.
+        Customers can request a morning visit.
       </p>
       <p>
         Requested dates or times cannot always be guaranteed.
       </p>
       <p>
         If the requested date is not available, the team will contact the customer to rearrange.
+      </p>
+      <p>
+         Site inspections must be booked a minimum of one day before the inspection is required. Same day inspection requests are not offered.
       </p>
     </div>
   </details>
@@ -1304,6 +1123,11 @@ const bookingBuildingSiteInspections = new ContentPaD(
     <div class="accordion-content">
       <p>
         A completion inspection is required at the end of a project. 
+      </p>
+      <p>
+        A Notice of Completion will need to be completed and submitted prior to book the completion visit
+      </p>
+      <p>
         Please see the knowledge tile <strong>Request a Completion Certificate</strong> for further information.
       </p>
     </div>
@@ -1498,31 +1322,13 @@ const workingWithAnRBCA = new ContentPaD(
       This is instead of the council ensuring compliance.
     </p>
     <p>
+      <strong>RBCAs are in direct competition with the Council and should not be advertised to customers as an option</strong>.
+    </p>
+    <p>
       Where a customer hires an RBCA, there is still information that needs to be provided to the council. 
       This is normally done by the RBCA, not by the customer.
+      Details of these scenarios can be found below.
     </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What is a Registered Building Control Approver?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A <strong>Registered Building Control Approver (RBCA)</strong> is an individual or company that can act as an 
-        alternative to Local Authority Building Control. They were previously known as an ‘Approved Inspector’.
-      </p>
-      <p>
-        RBCAs are authorised to ensure building projects comply with building regulations. 
-        They are responsible for all the things normally done by Building Control at the council - reviewing plans, 
-        inspecting work on-site, and issuing final certificates upon completion.
-      </p>
-      <p>
-        All RBCAs must be licensed and registered by the <strong>Building Safety Regulator (BSR)</strong>. 
-        Customers should check their registration when hiring them.
-      </p>
-    </div>
-  </details>
 
   
   <details class="accordion">
@@ -1610,6 +1416,617 @@ const workingWithAnRBCA = new ContentPaD(
   { date: "16/07/2026", name: "Liz Taster" }
 );
 
+
+
+
+const partnerAuthoritySchemeApplications = new ContentPaD(
+  "partnerAuthoritySchemeApplications",
+  "Partner Authority Scheme Applications",
+  "Details of the LABC Partner Authority scheme.",
+  `
+  <p>
+    The Local Authority Building Control (LABC) <strong>partner authority scheme</strong> is shared by all local authority building control 
+    teams in England and Wales. 
+  </p>
+
+  <p>
+    A company can choose to work with any local authority building control surveyor to undertake all pre-application and design 
+    work, regardless of the project's geographical location.
+  </p>
+
+  <p>
+    Architect companies interested in joining this scheme should review the details and complete the application to become a partner on the LABC website.
+  <p/>
+
+  <p>
+    Full details can be found here: 
+    <a href="https://www.labc.co.uk/about/how-labc-supports-your-authority/partner-authority-scheme-pas" target="_blank">
+    Partner Authority Scheme | LABC</a>
+  </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=LABC%20Partner%20Authority%20Scheme\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "LABC",
+      "PAS",
+      "partner",
+      "scheme",
+      "local",
+      "authority",
+      "parner",
+      "partnr",
+      "prtner",
+      "skeem",
+      "sceme",
+      "skeme",
+      "authorty",
+      "authrity",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "16/07/2026", name: "Liz Taster" }
+);
+
+const worksThatRequireABuildingControlApplication = new ContentPaD(
+  "worksThatRequireABuildingControlApplication",
+  "Works That Require a Building Control Application",
+  "Information about building works that require a building control application, exempt structures, and further guidance.",
+  `
+  <p>
+    Most proposed building works require a building control application before work begins. 
+    Building control approval helps ensure that building work complies with current Building Regulations.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Types of Work That Require an Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Examples of works that normally require a building control application include:</p>
+        <ul>
+          <li>Extensions to a building</li>
+          <li>Basement conversions</li>
+          <li>Loft conversions</li>
+          <li>Garage conversions</li>
+          <li>New underground drainage connections</li>
+          <li>Internal alterations</li>
+          <li>Upgrading the external thermal envelope of a building</li>
+          <li>Replacement roof coverings</li>
+          <li>Construction of new dwellings</li>
+          <li>Any material change of use to a building in accordance with Regulation 5 of the Building Regulations 2010</li>
+          <li>Electrical work that is not covered by a relevant competent persons scheme</li>
+          <li>Alterations to commercial, residential, institutional or public buildings that may materially affect:</li>
+            <ul>
+              <li>Structural safety</li>
+              <li>Fire safety</li>
+              <li>Access and use</li>
+              <li>Toilet provisions</li>
+            </ul>
+        </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Exempt Structures</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Some types of work are exempt from the requirement to submit a building control application under the legislation. 
+        These may include:
+      </p>
+        <ul>
+          <li>Class 1: Buildings used for the storage and manufacture of explosives that are granted under the Explosive Regulations 2014</li>
+          <li>Class 2: Buildings not normally frequented by people</li>
+          <li>Class 3: Greenhouses and agricultural buildings</li>
+          <li>Class 4: Temporary buildings</li>
+          <li>Class 5: Ancillary buildings, such as those used on construction sites</li>
+          <li>Class 6: Small detached buildings</li>
+          <li>Class 7: Certain extensions</li>
+        </ul>
+    </div>
+  </details>
+
+
+<h3>Additional Information</h3>
+  <p>
+    Further information can be found at:
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control/works-require" target="_blank" rel="noopener noreferrer">
+    Works that require a building control application | Sheffield City Council</a>.
+  </p>
+  <p>
+    A link can be found at the bottom of the above page to The Building Regulations 2010. 
+    These should be consulted for definitions and further details on exempt structures.
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Works%20that%20require%20a%20building%20control%20application\`
+      "
+    >
+      Send link to review further information
+    </button>
+`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "building",
+      "control",
+      "application",
+      "building",
+      "regulations",
+      "require",
+      "required",
+      "requiring",
+      "work",
+      "extensions",
+      "extension",
+      "approval",
+      "buildng",
+      "bulding",
+      "aplication",
+      "regualtions"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+const buildingControlExplained = new ContentPaD(
+  "buildingControlExplained",
+  "Building Control Explained",
+  "Information explaining the purpose of Building Control, when approval may be needed, and links to related Building Control services and guidance.",
+  `
+  <p>
+    Building Control helps make sure that building work meets the requirements of Building Regulations. 
+    It applies to a wide range of construction, alteration and improvement works and is intended to ensure that buildings are safe, 
+    accessible and compliant with current standards.
+  </p>
+
+<h3>What Building Control Does</h3>
+  <p>
+    Building Control oversees building work and checks that it complies with Building Regulations. 
+    This includes reviewing applications, carrying out inspections during construction, and confirming compliance when work is completed.
+  </p>
+
+<h3>Why Building Control Is Important</h3>
+  <p>
+    Building Regulations are designed to ensure that buildings are constructed and altered safely. 
+    Building Control provides checks throughout the construction process to help confirm that work meets the required standards.
+  </p>
+
+<h3>When You May Need Building Control</h3>
+  <p>
+    You may need Building Control approval before carrying out certain types of building work. Sheffield City Council provides guidance on:
+  </p>
+    <ul>
+      <li>Making a building control application – see <strong>Apply for a Building Notice</strong> and <strong>Full Plans Building Application</strong> articles</li>
+      <li>Understanding which works require an application – see <strong>Works That Require a Building Control Application</strong> and <strong>Apply for a Regularisation Certificate</strong> articles</li>
+      <li>Booking site inspections – see <strong>Booking Building Site Inspections</strong> article</li>
+      <li>Obtaining completion certification – see <strong>Request a Completion Certificate</strong> article</li>
+      <li>Reporting unauthorised building works – see <strong>Report Unauthorised Building Works</strong> article</li>
+      <li>Reporting dangerous structures – see <strong>Reporting Dangerous Structures</strong> article</li>
+    </ul>
+
+<h3>Further Information</h3>
+  <p>
+    For further explanation of building control, please direct customers to 
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control/building-control-explained" target="_blank" rel="noopener noreferrer">
+    Building control explained | Sheffield City Council</a>.
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Control%20Explained\`
+      "
+    >
+      Send link to review further information
+    </button>
+
+  <p>
+    Or direct customers to the main building control website: 
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control" target="_blank" rel="noopener noreferrer">
+    Building Control | Sheffield City Council</a>.
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Control\`
+      "
+    >
+      Send link to review further information
+    </button>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Building",
+      "control",
+      "Regulations",
+      "regulation",
+      "construction",
+      "alteration",
+      "works",
+      "application",
+      "applications",
+      "Notice",
+      "compliance",
+      "inspection",
+      "inspections",
+      "planning",
+      "development",
+      "approval",
+      "buildng",
+      "bulding",
+      "controll",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+const localActsSYMiscellaneousProvisions = new ContentPaD(
+  "localActsSYMiscellaneousProvisions",
+  "Local Acts: South Yorkshire Act, Miscellaneous Provisions Act",
+  "Information about works overseen by Building Control and the Dangerous Structures team that may be controlled under other legislation.",
+  `
+  <p>
+    Some work overseen by Building Control and the Dangerous Structures team falls outside the Building Regulations. 
+    These works may instead be controlled under other legislation, including the South Yorkshire Act 1980 and Local Government (Miscellaneous Provisions) Act 1982.
+  </p>
+  <p>
+    If you a customer thinks their project may be covered by these laws, our technical team can provide advice and guidance.
+  </p>
+`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Local Acts",
+      "South Yorkshire Act",
+      "Miscellaneous Provisions Act",
+      "Building Control",
+      "legislation",
+      "construction",
+      "building works",
+      "misc provisions act",
+      "Building",
+      "Controls",
+      "Control",
+      "South Yorkshre Act",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+const reportUnauthorisedBuildingWorks = new ContentPaD(
+  "reportUnauthorisedBuildingWorks",
+  "Report unauthorised building works",
+  "Information about reporting unauthorised building works, dangerous structures, and retrospective approval through regularisation.",
+  `
+  <p>
+    Any work carried out without the correct building control application is classed as unauthorised works.
+  </p>
+
+  <p>
+    If a customer suspects unauthorised works are taking place they can contact us. If it is relevant to building control, we have a duty to investigate it where appropriate.
+  </p>
+
+<h3>Dangerous structures</h3>
+  <p>
+    If they think that the works are dangerous or present a danger to life, then they may be classed as a dangerous structure.
+  </p>
+  <p> 
+    Please consult the knowledge tile <strong>Reporting Dangerous Structures</strong> for further information.
+  <p>
+
+<h3>Retrospective approval</h3>
+  <p>
+    Works which were unauthorised and have been completed will need to get retrospective approval, also known as regularisation.
+  </p>
+  <p> 
+    Please consult the knowledge tile <strong>Apply for a Regularisation Certificate</strong> for further information.
+  <p>
+`,
+  {},
+  { typeKey: "Building Control" },
+  { typeKey: "Reporting" },
+  {
+    type: "Information",
+    keywords: [
+      "report",
+      "unauthorised",
+      "building",
+      "works",
+      "work",
+      "unauthorized",
+      "dangerous",
+      "structures",
+      "structure",
+      "unsafe",
+      "building",
+      "retrospective",
+      "approval",
+      "regularisation",
+      "regularization",
+      "construction",
+      "unauthrised",
+      "bilding",
+      "buildng",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "20/08/2026", name: "Liz Taster" }
+);
+
+
+const buildingControl = new MenuPaD(
+  "buildingControl",
+  "Building Control",
+  "Information regarding building control",
+  [
+    giveNoticeToDemolishABuilding,
+    applyForABuildingNotice,
+    fullPlansBuildingApplication,
+    applyForARegularisationCertificate,
+    requestACompletionCertificate,
+    reportingDangerousStructures,
+    bookingBuildingSiteInspections,
+    localLandCharges,
+    workingWithAnRBCA,
+    partnerAuthoritySchemeApplications,
+    worksThatRequireABuildingControlApplication,
+    buildingControlExplained,
+    localActsSYMiscellaneousProvisions,
+    reportUnauthorisedBuildingWorks
+  ]
+);
+
+//#endregion Building Control
+
+//#region Planning
+
+const reportingAPlanningEnforcementIssue = new ContentPaD(
+  "reportingAPlanningEnforcementIssue",
+  "Reporting a Planning Enforcement Issue",
+  "Information about reporting a planning enforcement issue, including what can and cannot be reported.",
+  `
+  <p>
+    Residents can report a planning enforcement issue to the council if they believe development has taken place without planning permission 
+    or is not in line with the permission granted.
+  </p>
+  <p>
+    Planning enforcement allows the council to investigate potential breaches of planning control and decide if action is required.
+  </p>
+  <p>
+    Further details about planning enforcement, including a link to the form to report an issue can be found here: 
+    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
+    Reporting a planning enforcement issue | Sheffield City Council</a>
+  </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Report an Issue</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Before reporting</strong>, residents are advised to check if the development already has planning permission before making a report.
+      </p>
+      <p>
+        Reports can be submitted using the council’s online reporting form. This can be found at 
+        <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
+        Reporting a planning enforcement issue | Sheffield City Council</a>
+      </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+      <p>Residents should report if they believe:</p>
+        <ul>
+          <li>Development has taken place without permission</li>
+          <li>A development is not complying with its approved plans or conditions</li>
+        </ul>
+
+      <p>
+        Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank">
+        Search, view and comment on planning applications | Sheffield City Council</a>
+      </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Search%20view%20and%20comment%20on%20planning%20applications\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Can Be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The council can investigate the following types of issues:</p>
+        <ul>
+          <li>Development carried out without planning permission</li>
+          <li>Development that differs from approved planning permission</li>
+          <li>Breaches of planning conditions</li>
+          <li>Unauthorised advertisements</li>
+          <li>Unauthorised works to a listed building</li>
+          <li>Unauthorised works to protected trees</li>
+          <li>Unauthorised works in conservation areas or protected areas (such as greenbelt)</li>
+          <li>Unauthorised changes of use</li>
+          <li>Untidy land</li>
+        </ul>
+    </div>
+  </details>
+  
+  
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Cannot Be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Some issues are not planning enforcement matters and cannot be investigated:</p>
+        <ul>
+          <li>Non-material planning considerations – loss of property value, damage to private property, loss of view;</li>
+          <li>Private disputes or interests – boundary or land ownership disputes, internal alterations to houses (unless listed), security lights on houses, high hedges, business competition concerns;</li>
+          <li>Issues covered by other legislation – noise complaints, improper use of highways, building safety or dangerous structures, blocked rights of way, health and safety or site security issues</li>
+        </ul>
+      <p>
+        More detail on what can and cannot be investigated is available in the Local Enforcement Plan, available here: 
+        <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank">
+        Sheffield Local Enforcement Plan</a>
+      </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Local%20Enforcement%20Plan\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+    </div>
+  </details>
+
+
+
+  <h3>Key Information for Call Centre Staff</h3>
+    <p>When handling enquiries:</p>
+      <ul>
+        <li>Confirm whether the issue relates to a potential breach of planning control.</li>
+        <li>Check the issue is within planning enforcement scope.</li>
+        <li>Advise the resident to check if planning permission exists.</li>
+        <li>Direct the resident to the online reporting form if appropriate.</li>
+        <li>If the issue falls outside planning enforcement, signpost to the relevant service where applicable.</li>
+      </ul>
+    
+    `,
+  { buttonLabel: "Report a Planning Issue", formName: "report_planning_issue" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "planning",
+      "enforcement",
+      "report",
+      "planning",
+      "issue",
+      "breach",
+      "control",
+      "unauthorised",
+      "development",
+      "works",
+      "permission",
+      "enforcement",
+      "notice",
+      "applications",
+      "developement",
+      "planing",
+      "enforcment",
+      "enforcemnt",
+      "developement"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "09/07/2026", name: "Liz Taster" }
+);
 
 const historicalPlanningRequests = new ContentPaD(
   "historicalPlanningRequests",
@@ -1768,99 +2185,24 @@ const historicalPlanningRequests = new ContentPaD(
       "historial",
       "plannng"
     ],
-    categories: ["Planning and Development", "Building Control"]
+    categories: ["Planning and Development", "Planning"]
   },
   { date: "16/07/2026", name: "Liz Taster" }
 );
 
 
-const partnerAuthoritySchemeApplications = new ContentPaD(
-  "partnerAuthoritySchemeApplications",
-  "Partner Authority Scheme Applications",
-  "Details of the LABC Partner Authority scheme.",
-  `
-  <p>
-    The Local Authority Building Control (LABC) <strong>partner authority scheme</strong> is shared by all local authority building control 
-    teams in England and Wales. 
-  </p>
-
-  <p>
-    A company can choose to work with any local authority building control surveyor to undertake all pre-application and design 
-    work, regardless of the project's geographical location.
-  </p>
-
-  <p>
-    Architect companies interested in joining this scheme should review the details and complete the application to become a partner on the LABC website.
-  <p/>
-
-  <p>
-    Full details can be found here: 
-    <a href="https://www.labc.co.uk/about/how-labc-supports-your-authority/partner-authority-scheme-pas" target="_blank">
-    Partner Authority Scheme | LABC</a>
-  </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=LABC%20Partner%20Authority%20Scheme\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-    `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "LABC",
-      "PAS",
-      "partner",
-      "scheme",
-      "local",
-      "authority",
-      "parner",
-      "partnr",
-      "prtner",
-      "skeem",
-      "sceme",
-      "skeme",
-      "authorty",
-      "authrity",
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "16/07/2026", name: "Liz Taster" }
-);
-
-
-const buildingControl = new MenuPaD(
-  "buildingControl",
-  "Building Control",
-  "Information regarding building control",
+const planning = new MenuPaD(
+  "Planning",
+  "Planning",
+  "Information regarding planning",
   [
-    giveNoticeToDemolishABuilding,
     reportingAPlanningEnforcementIssue,
-    applyForABuildingNotice,
-    fullPlansBuildingApplication,
-    applyForARegularisationCertificate,
-    requestACompletionCertificate,
-    reportingDangerousStructures,
-    bookingBuildingSiteInspections,
-    localLandCharges,
-    workingWithAnRBCA,
     historicalPlanningRequests,
-    partnerAuthoritySchemeApplications,
   ]
 );
 
-//#endregion Building Control
+
+//#endregion Planning
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
