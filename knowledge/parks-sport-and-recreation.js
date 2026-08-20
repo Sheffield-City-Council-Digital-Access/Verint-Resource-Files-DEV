@@ -3684,6 +3684,55 @@ const gritSaltCommercial = new ContentPSaR(
   { date: "14/08/2026", name: "Liz Taster" }
 );
 
+const graffitiRemovalParkProperty = new ContentPSaR(
+  "graffitiRemovalParkProperty",
+  "Graffiti Removal (Park Property)",
+  "Report graffiti located on park property for inspection and appropriate action.",
+  `
+  <p>
+    Graffiti located on park property can be reported using the Graffiti Removal form.
+  </p>
+  <p>
+    When completing the form accuracy is very important to ensure the form is routed to the responsible team e.g. if the graffiti is on a building next to a road, 
+    please ensure you select the building, and not the road.
+  </p>
+  <p>
+    Once reported, the graffiti will be inspected and appropriate action will be taken, which can range from removal to cover up.
+  </p>
+  <p>
+    The report form can be found here: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_graffiti" target="_blank" rel="noopener noreferrer">
+    Graffiti Report Form</a> 
+  </p>
+  <p>[Insert Send Link]</p>
+
+  <p>
+    Please note - it is not always the Council's responsibility to remove graffiti, where the graffiti is on an item not owned by the council - e.g. bus stops, or broadband cabinets.
+    Information about reporting graffiti to the correctly responsible party, and links to do so, can be found here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
+    Report graffiti | Sheffield City Council</a> 
+  </p>
+  <p>[Insert Send Link]</p>
+
+`,
+  { buttonLabel: "Report graffiti", formName: "report_graffiti" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "graffiti",
+      "removal",
+      "remove",
+      "vandalism",
+      "tagging",
+      "graffitti",
+      "grafitti",
+      "grafiti",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "20/08/2026", name: "Liz Taster" }
+);
+
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance and Issues",
@@ -3703,6 +3752,7 @@ const maintenanceAndIssues = new MenuPSaR(
     dogBins,
     dogCatWasteCommercial,
     gritSaltCommercial,
+    graffitiRemovalParkProperty
     
   ]
 );
