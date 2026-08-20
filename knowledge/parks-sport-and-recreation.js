@@ -1728,7 +1728,6 @@ const bookASportsFacility = new ContentPSaR(
         <a href="https://www.sheffield.gov.uk/parks-sport-recreation/physical-activity-outdoor-sport/book-sports-pitch" target="_blank" rel="noopener noreferrer">
         Book a sports pitch | Sheffield City Council</a>.
       </p>
-
       <p>[Insert Send Link]</p>
     </div>
   </details>
@@ -1740,7 +1739,17 @@ const bookASportsFacility = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Missing info]</p>
+      <p>
+        We have pitches available for seasonal or occasional bookings. 
+      </p>
+      <p>
+        Pitches must be booked at least 5 working days in advance.
+      </p>
+      <p>
+        The link for payment can be found at <a href="https://www.sheffield.gov.uk/parks-sport-recreation/physical-activity-outdoor-sport/book-sports-pitch" target="_blank" rel="noopener noreferrer">
+        Book a sports pitch | Sheffield City Council</a>.
+      </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
