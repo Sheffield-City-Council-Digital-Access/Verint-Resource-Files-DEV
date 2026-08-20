@@ -2464,10 +2464,10 @@ const playgrounds = new ContentPSaR(
   "Information about children's playgrounds in Sheffield parks and open spaces, inspections, maintenance, and reporting damage.",
   `
   <p>
-    There are over 100 children's playgrounds in Sheffield’s parks and open spaces.
+    There are over 150 children's playgrounds in Sheffield’s parks and open spaces.
   </p>
   <p>
-    All the playgrounds in Sheffield's parks and open spaces are inspected on a daily, quarterly and annual basis.
+    All the playgrounds in Sheffield's parks and open spaces are checked on a regular basis, in addition to quarterly and annual routine inspections.
   </p>
   <p>
     Sheffield City Council are responsible for the maintenance of all the equipment and facilities provided. 
@@ -2487,6 +2487,10 @@ const playgrounds = new ContentPSaR(
     Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
     Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
     Delays may occur over the weekend due to staffing limitations.
+  </p>
+
+  <p>
+    If a customer is wanting to report an injury in a playground, please refer to the ‘<em>Insurance/Personal Injury/Compensation</em>’ knowledge tile.
   </p>
   
   `,
