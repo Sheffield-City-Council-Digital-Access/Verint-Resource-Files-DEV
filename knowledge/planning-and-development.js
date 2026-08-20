@@ -2824,6 +2824,228 @@ const findOutIfYouNeedPlanningPermission = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const planningDecisionsAndAppeals = new ContentPaD(
+  "planningDecisionsAndAppeals",
+  "Planning Decisions and Appeals",
+  "Information about how planning applications are decided, Planning Committee meetings, material planning considerations and the planning appeals process.",
+  `
+  <p>
+    Planning applications are assessed by a Planning Officer and considered against local and national planning policies, along with any relevant comments received during the consultation process.
+  </p>
+  <p>
+    A recommendation is then made to either approve or refuse the application.
+  </p>
+  <p>
+    For further information about planning decisions and appeals, visit:
+    <a href="https://www.sheffield.gov.uk/planning-development/decisions-appeals" target="_blank" rel="noopener noreferrer">
+      Planning Decisions and Appeals | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20decisions%20and%20appeals\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How Decisions Are Made</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <h4>Minor and Non-Controversial Applications</h4>
+      <p>
+        Most smaller planning applications are decided by senior planning officers under delegated powers.
+      </p>
+      <h4>Major or Controversial Applications</h4>
+      <p>
+        Significant developments and controversial applications may be referred to the Planning and Highways Committee, where councillors make the final decision.
+      </p>
+      <p>
+        Councillors may accept or reject the officer's recommendation after considering the application and any relevant information.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Speaking at Planning Committee</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Interested parties may request to speak at Planning and Highways Committee meetings. Any views should also be submitted in writing as part of the application process.
+      </p>
+      <p>
+        You are responsible for monitoring an application's progress, including whether it will be considered by the Committee.
+      </p>
+      <p>
+        <strong>Planning and Highways Committee information:</strong><br>
+        <a href="https://democracy.sheffield.gov.uk/mgCommitteeDetails.aspx?ID=373" target="_blank" rel="noopener noreferrer">
+          Planning and Highways Committee | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20and%20Highways%20Committee\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Is Considered When Making a Decision?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        When assessing an application, the Council may consider:
+      </p>
+      <ul>
+        <li>Local and national planning policies</li>
+        <li>Previous planning decisions and appeal decisions</li>
+        <li>The impact on the surrounding area</li>
+        <li>Comments received from consultees and interested parties</li>
+        <li>Material planning considerations</li>
+      </ul>
+      <h4>Impact on Local Amenities</h4>
+      <p>
+        Planning decisions may consider the impact on:
+      </p>
+      <ul>
+        <li>The appearance and character of an area</li>
+        <li>Privacy of neighbouring properties</li>
+        <li>Noise, pollution and environmental impacts</li>
+        <li>Highway, pedestrian and cyclist safety</li>
+        <li>Employment and the local economy</li>
+      </ul>
+      <p>
+        Objections do not automatically result in an application being refused, and a lack of objections does not guarantee that an application will be approved.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Appeals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applicants can appeal if:
+      </p>
+      <ul>
+        <li>Planning permission is refused</li>
+        <li>Conditions are attached to an approval</li>
+        <li>The application has not been determined within the target timescale</li>
+      </ul>
+      <p>
+        Only the applicant has the right to appeal. Third parties cannot appeal against a planning decision.
+      </p>
+      <p>
+        <strong>Make an appeal:</strong><br>
+        <a href="https://acp.planninginspectorate.gov.uk/" target="_blank" rel="noopener noreferrer">
+          Appeals Casework Portal | Planning Inspectorate
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20appeals\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Comments on Appeals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Anyone who submitted comments on the original planning application will be notified if an appeal is made and may be given the opportunity to submit further comments.
+      </p>
+      <p>
+        Comments on planning appeals must be submitted through the Appeals Casework Portal.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Appeal Time Limits</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Appeals must be submitted within the relevant timescale from the date shown on the decision notice:
+      </p>
+      <ul>
+        <li>Householder and minor commercial applications: 12 weeks</li>
+        <li>Advertisement consent applications: 8 weeks</li>
+        <li>Most other planning applications: 6 months</li>
+      </ul>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Most smaller applications are decided by planning officers under <strong>delegated powers</strong>; significant or controversial applications may go to the <strong>Planning and Highways Committee</strong>.</li>
+    <li>Objections do <strong>not automatically mean an application will be refused</strong>, and no objections does not guarantee approval.</li>
+    <li>Only the <strong>applicant</strong> has the right to appeal a planning decision; third parties cannot appeal.</li>
+    <li>An appeal may be possible following a <strong>refusal, conditions being imposed or non-determination</strong>.</li>
+    <li>Appeal deadlines vary depending on the type of application and run from the date of the decision notice.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "planning decision",
+      "planning appeal",
+      "planning refusal",
+      "planning conditions",
+      "non-determination",
+      "planning committee",
+      "Planning and Highways Committee",
+      "delegated decision",
+      "material planning considerations",
+      "planning objections",
+      "Planning Inspectorate",
+      "appeal time limit",
+      "third party appeal",
+      "planing decision",
+      "planning apeal",
+      "planning commitee"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -2835,6 +3057,7 @@ const planning = new MenuPaD(
     applyForPlanningPermission,
     applyForPreApplicationAdvice,
     findOutIfYouNeedPlanningPermission,
+    planningDecisionsAndAppeals,
   ]
 );
 
