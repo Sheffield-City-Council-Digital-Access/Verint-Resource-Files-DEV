@@ -81,7 +81,7 @@ const giveNoticeToDemolishABuilding = new ContentPaD(
     </p>
     <p>
       For full details and access to the form, see:
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/demolish-building" target="_blank">Apply to demolish a building | Sheffield City Council</a>
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/demolish-building" target="_blank" rel="noopener noreferrer">Apply to demolish a building | Sheffield City Council</a>
     </p>
 
         <button
@@ -188,7 +188,7 @@ const applyForABuildingNotice = new ContentPaD(
     </p>
     <p>
       Customers can apply or find more information here: 
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/building-notice" target="_blank">
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/building-notice" target="_blank" rel="noopener noreferrer">
       Building Notice Application | Sheffield City Council</a>
     </p>
 
@@ -345,7 +345,7 @@ const fullPlansBuildingApplication = new ContentPaD(
     </p>
     <p>
       For more information can be found here: 
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/full-plans" target="_blank">
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/full-plans" target="_blank" rel="noopener noreferrer">
       Full Plans Application – Sheffield City Council</a>
     </p>
 
@@ -524,7 +524,7 @@ const applyForARegularisationCertificate = new ContentPaD(
   </p>
   <p>
     Further information, including starting an application, can be found here:  
-    <a href="https://www.sheffield.gov.uk/planning-development/building-control/regularisation" target="_blank">
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control/regularisation" target="_blank" rel="noopener noreferrer">
     Regularisation Application | Sheffield City Council</a>
   </p>
 
@@ -712,7 +712,7 @@ const requestACompletionCertificate = new ContentPaD(
     </p>
     <p>
       Further information and the application form can be found here: 
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/completion"target="_blank">
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/completion"target="_blank" rel="noopener noreferrer">
       Completion certificates | Sheffield City Council</a>
     </p>
 
@@ -833,7 +833,7 @@ const reportingDangerousStructures = new ContentPaD(
   </p>
   <p>
     Full details and a link to the report form can be found here: 
-    <a href="https://www.sheffield.gov.uk/planning-development/building-regulations/report-dangerous-structure" target="_blank">
+    <a href="https://www.sheffield.gov.uk/planning-development/building-regulations/report-dangerous-structure" target="_blank" rel="noopener noreferrer">
     Report a dangerous structure | Sheffield City Council</a>
   </p>
 
@@ -967,7 +967,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
     Inspections are carried out by a qualified Registered Building Inspector (RBI) and are independent of the builder.
   </p>
   <p>
-    Further information can be found here: <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
+    Further information can be found here: <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank" rel="noopener noreferrer">
     Book a building site inspection | Sheffield City Council</a>
   </p>
 
@@ -1048,7 +1048,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
       </p>
       <p>
         Links to download the LABC app can be found here: 
-        <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank">
+        <a href="https://www.sheffield.gov.uk/planning-development/building-control/site-inspection" target="_blank" rel="noopener noreferrer">
         Book a building site inspection | Sheffield City Council</a>
       </p>
 
@@ -1188,7 +1188,7 @@ const localLandCharges = new ContentPaD(
     </p>
     <p>
       More detailed information can be found here: 
-      <a href="https://www.sheffield.gov.uk/your-city-council/legal-services/local-land-charges" target="_blank">
+      <a href="https://www.sheffield.gov.uk/your-city-council/legal-services/local-land-charges" target="_blank" rel="noopener noreferrer">
       Land and property searches | Sheffield City Council</a>
     </p>
 
@@ -1440,7 +1440,7 @@ const partnerAuthoritySchemeApplications = new ContentPaD(
 
   <p>
     Full details can be found here: 
-    <a href="https://www.labc.co.uk/about/how-labc-supports-your-authority/partner-authority-scheme-pas" target="_blank">
+    <a href="https://www.labc.co.uk/about/how-labc-supports-your-authority/partner-authority-scheme-pas" target="_blank" rel="noopener noreferrer">
     Partner Authority Scheme | LABC</a>
   </p>
 
@@ -1853,7 +1853,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
   </p>
   <p>
     Further details about planning enforcement, including a link to the form to report an issue can be found here: 
-    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
+    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank" rel="noopener noreferrer">
     Reporting a planning enforcement issue | Sheffield City Council</a>
   </p>
 
@@ -1882,7 +1882,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
       </p>
       <p>
         Reports can be submitted using the council’s online reporting form. This can be found at 
-        <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
+        <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank" rel="noopener noreferrer">
         Reporting a planning enforcement issue | Sheffield City Council</a>
       </p>
 
@@ -1907,7 +1907,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
 
       <p>
         Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
-        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank">
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank" rel="noopener noreferrer">
         Search, view and comment on planning applications | Sheffield City Council</a>
       </p>
 
@@ -1964,7 +1964,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
         </ul>
       <p>
         More detail on what can and cannot be investigated is available in the Local Enforcement Plan, available here: 
-        <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank">
+        <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank" rel="noopener noreferrer">
         Sheffield Local Enforcement Plan</a>
       </p>
 
@@ -2039,7 +2039,7 @@ const historicalPlanningRequests = new ContentPaD(
   </p>
   <p>
     For full details, refer customers to: 
-    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank">
+    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank" rel="noopener noreferrer">
     Find a property's planning history | Sheffield City Council</a>
   </p>
 
