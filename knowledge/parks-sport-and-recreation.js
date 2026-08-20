@@ -2040,6 +2040,57 @@ const bookRoomOrParkBuilding = new ContentPSaR(
   { date: "19/08/2026", name: "Liz Taster" }
 );
 
+const weddingsInParks = new ContentPSaR(
+  "weddingsInParks",
+  "Weddings in Parks",
+  "Information about wedding ceremonies at Sheffield Botanical Gardens and Ecclesall Woods, including how to enquire and what details to provide.",
+  `
+  <p>
+    Wedding ceremonies are welcome in the pavilion at the Sheffield Botanical Gardens, or inside the Woodland Discovery Centre at Ecclesall Woods. 
+    We do not hold a license for ceremonies to take place in any other park locations.
+  </p>
+  <p>
+    Those making a booking will need to book the registrar separately through the Ceremonies team.
+  </p>
+  <p>
+    To enquire about a wedding ceremony please contact <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
+    with the following details:
+  </p>
+    <ul>
+      <li>Preferred location – Sheffield Botanical Gardens or Woodland Discovery Centre</li>
+      <li>Preferred date, or date window for the wedding</li>
+      <li>Number of guests you plan to invite</li>
+      <li>Any other relevant information you wish to provide</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "wedding",
+      "weddings",
+      "ceremony",
+      "ceremonies",
+      "marriage",
+      "marry",
+      "registrar",
+      "registrars",
+      "wdding",
+      "weding",
+      "marrage",
+      "marrige",
+      "marridge",
+    ],
+    categories: ["Parks and Countryside", "Bookings"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
@@ -2051,6 +2102,7 @@ const bookingsParks = new MenuPSaR(
     commercialActivitiesParks,
     filmingPhotoshoots,
     bookRoomOrParkBuilding,
+    weddingsInParks,
     
   ]
 );
@@ -4086,7 +4138,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
   <p>[Insert Send Link]</p>
 
   <p>
-    Group, educational, or corporate volunteering enquiries should be directed to <a href="mailto:Michaella.Hulley@sheffield.gov.uk">Michaella.Hulley@sheffield.gov.uk</a> 
+    Group, educational, or corporate volunteering enquiries should be directed to <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
     and include the following information:
   </p>
     <ul>
