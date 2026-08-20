@@ -3287,7 +3287,18 @@ const litterAndLitterBins = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
     target="_blank" rel="noopener noreferrer">Report litter bin</a>.
   </p>
-  <p>[Insert Send Link] 31</p>
+      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20litter%20bin\`
+            "
+        >
+            Send link to review further information
+       </button>
 
 <h3>Litter Picking Resources and Support</h3>
   <p>
@@ -3460,7 +3471,18 @@ const dogFouling = new ContentPSaR(
     To report an issue with dog fouling, please use the online form available here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
     Report dog fouling</a> form.
   </p>
-  <p>[Insert Send Link] 35</p>
+      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20dog%20fouling\`
+            "
+        >
+            Send link to review further information
+      </button>
   `,
   { buttonLabel: "Report dog fouling", formName: "report_dog_fouling" },
   { typeKey: "" },
