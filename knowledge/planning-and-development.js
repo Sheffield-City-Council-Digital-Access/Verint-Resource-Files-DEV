@@ -3632,6 +3632,7 @@ const findAPropertysPlanningHistory = new ContentPaD(
 );
 
 
+
 const planning = new MenuPaD(
   "Planning",
   "Planning",
@@ -3662,6 +3663,6 @@ const planningAndDevelopment = new ServicePaD(
   `Planning applications, building regulations, conservation, regeneration, planning committee…`,
   [
     buildingControl,
-    planning,
+    planningApplications,
   ]
 );
