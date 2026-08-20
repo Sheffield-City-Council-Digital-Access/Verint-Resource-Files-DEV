@@ -1673,7 +1673,7 @@ const bookAnEvent = new ContentPSaR(
 
 const bookASportsFacility = new ContentPSaR(
   "bookASportsFacility",
-  "Book a Sports Facility (Football, Cricket, Tennis)",
+  "Book a Sports Facility",
   "Information on booking tennis courts, football pitches, cricket pitches and Graves Park pitch and putt.",
   `
   <p>
@@ -1715,7 +1715,7 @@ const bookASportsFacility = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        We have outdoor pitches available for seasonal or occasional bookings.
+        We have outdoor football pitches available for seasonal or occasional bookings.
       </p>
       <p>
         Pitches must be booked at least 5 working days in advance.
@@ -1740,7 +1740,7 @@ const bookASportsFacility = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        We have pitches available for seasonal or occasional bookings. 
+        We have cricket pitches available for seasonal or occasional bookings. 
       </p>
       <p>
         Pitches must be booked at least 5 working days in advance.
@@ -1988,7 +1988,7 @@ const bookRoomOrParkBuilding = new ContentPSaR(
 
   <p>[Insert Send Link]</p>
   
-  <p>To make a booking at the following venues, please submit an enquiry using our online form:</p>
+  <p>The following venues can be booked by submitting an enquiry using our online form:</p>
     <ul>
       <li>Dorothy Fox Centre (Botanical Gardens) - Weddings</li>
       <li>Woodland Discovery Centre (Ecclesall Woods) - Weddings</li>
@@ -1996,6 +1996,8 @@ const bookRoomOrParkBuilding = new ContentPSaR(
       <li>Graves Park Animal Farm</li>
     </ul>
 
+  <p>[Insert Send Link]</p>
+  
   <p>
     The form is available on the website and must be completed by the interested party due to liability issues - 
     <strong>the form must not be completed by customer service staff on their behalf</strong>.
@@ -2003,8 +2005,6 @@ const bookRoomOrParkBuilding = new ContentPSaR(
   <p>
     Once a completed form is received, we will contact the customer to discuss the requirements further.
   </p>
-
-  <p>[Insert Send Link]</p>
   
   `,
   { buttonLabel: "", formName: "" },
@@ -3762,8 +3762,8 @@ const graffitiRemovalParkProperty = new ContentPSaR(
   <p>[Insert Send Link]</p>
 
   <p>
-    Please note - it is not always the Council's responsibility to remove graffiti, where the graffiti is on an item not owned by the council - e.g. bus stops, or broadband cabinets.
-    Information about reporting graffiti to the correctly responsible party, and links to do so, can be found here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
+    <em>Please note</em> - it is not always the Council's responsibility to remove graffiti where the graffiti is on an item not owned by the council - e.g. bus stops, or broadband cabinets.
+    <br>Information about reporting graffiti to the correctly responsible party, and links to do so, can be found here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
     Report graffiti | Sheffield City Council</a> 
   </p>
   <p>[Insert Send Link]</p>
@@ -4322,12 +4322,26 @@ const memorialsInParks = new ContentPSaR(
   </p>
 
   <p>
+    Applications for a bench can be made by completing the online form here: [not yet published].
+  </p>
+  <p>[Insert Send Link]</p>
+  <p>
+    Once an application is received it will be reviewed by the Park Area Manager and a site assessment may be undertaken.
+  </p>
+  <p>
+    Approval will depend on the suitability of the location and existing provision.
+  </p>
+  <p>
+    Customers will then be advised of costs, conditions, and ongoing arrangements associated with the memorial bench scheme.
+  </p>
+
+  <p>
     Details can be found in the sections below about applications for memorial benches in different locations.
   </p>
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Parks</h3>
+      <h3>Benches in parks</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4362,7 +4376,7 @@ const memorialsInParks = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Woodland</h3>
+      <h3>Benches in woodland</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4371,20 +4385,6 @@ const memorialsInParks = new ContentPSaR(
       </p>
     </div>
   </details>
-
-  <p>
-    Applications for a bench can be made by completing the online form here: [not yet published].
-  </p>
-  <p>[Insert Send Link]</p>
-  <p>
-    Once an application is received it will be reviewed by the Park Area Manager and a site assessment may be undertaken.
-  </p>
-  <p>
-    Approval will depend on the suitability of the location and existing provision.
-  </p>
-  <p>
-    Customers will then be advised of costs, conditions, and ongoing arrangements associated with the memorial bench scheme.
-  </p>
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -4525,10 +4525,10 @@ const donatingToParks = new ContentPSaR(
   { date: "14/08/2026", name: "Liz Taster" }
 );
 
-const conservationAreasTreePreservationOrders = new ContentPSaR(
-  "conservationAreasTreePreservationOrders",
-  "Conservation Areas & Tree Preservation Orders",
-  "Information about Tree Preservation Orders (TPOs), conservation areas, protected trees, notification requirements, penalties, and how to apply for permission to carry out tree works.",
+const treePreservationOrders = new ContentPSaR(
+  "treePreservationOrders",
+  "Tree Preservation Orders and Conservation Areas",
+  "Information about Tree Preservation Orders (TPOs), conservation areas, protected trees and notification requirements.",
   `
   <p>
     Trees on private property may be legally protected by a Tree Preservation Order (TPO), this includes work which will impact the root system.
@@ -4551,8 +4551,8 @@ const conservationAreasTreePreservationOrders = new ContentPSaR(
   </p>
   <p>
     A map of conservation areas and TPOs can be found on our website along with details of how to apply for permission to carry out work on a protected tree: 
-    <a href="https://www.sheffield.gov.uk/planning-development/conservation-design/make-application-works-trees" target="_blank" rel="noopener noreferrer">
-    Make an application for works to trees | Sheffield City Council</a>.
+    <a href="https://www.sheffield.gov.uk/planning-development/conservation-design/tree-works-protected-trees" target="_blank" rel="noopener noreferrer">
+    Tree works and protected trees | Sheffield City Council</a>.
   </p>
   `,
   
@@ -4623,6 +4623,6 @@ const parksSportAndRecreation = new ServicePSaR(
    wildlifeInParks,
    memorialsInParks,
    donatingToParks,
-   conservationAreasTreePreservationOrders,
+   treePreservationOrders,
   ]
 );
