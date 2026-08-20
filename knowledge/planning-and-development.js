@@ -3046,6 +3046,225 @@ const planningDecisionsAndAppeals = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const searchViewAndCommentOnPlanningApplications = new ContentPaD(
+  "searchViewAndCommentOnPlanningApplications",
+  "Search, View and Comment on Planning Applications",
+  "Guidance on searching for current and historical planning applications, registering to comment, tracking applications and viewing enforcement notices.",
+  `
+  <p>
+    You can search and view both current and historical planning applications online. If an application is currently open for consultation, you may also be able to submit comments.
+  </p>
+  <p>
+    Comments should be made responsibly and focus on planning matters that are relevant to the application.
+  </p>
+  <p>
+    <strong>Search, view or comment on an application:</strong><br>
+    <a href="https://planningapps.sheffield.gov.uk/online-applications/" target="_blank" rel="noopener noreferrer">
+      Search, View and Comment on Planning Applications
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Search%20view%20and%20comment%20on%20planning%20applications\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Register to Comment</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To submit comments on an application, you must first register for a Public Access account.
+      </p>
+      <p>
+        <strong>Register on Public Access:</strong><br>
+        <a href="https://planningapps.sheffield.gov.uk/online-applications/registrationWizard.do?action=start" target="_blank" rel="noopener noreferrer">
+          Register for a Public Access Account
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20on%20Public%20Access\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before You Comment</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Comments and your address will normally be published online</li>
+        <li>Anonymous comments are generally not considered</li>
+        <li>Do not include personal information that you do not want published</li>
+        <li>Offensive, defamatory or inappropriate comments may be removed</li>
+        <li>Only comments relating to relevant planning considerations can be considered when an application is decided</li>
+        <li>Comments should be submitted before the consultation deadline wherever possible</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Tracking an Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You are responsible for monitoring the progress of an application, including whether it will be considered by the Planning and Highways Committee.
+      </p>
+      <p>
+        Any comments relating to a planning committee item should be submitted at least 24 hours before the meeting.
+      </p>
+      <p>
+        <strong>Planning Committee agendas:</strong><br>
+        <a href="https://democracy.sheffield.gov.uk/mgCommitteeDetails.aspx?ID=373" target="_blank" rel="noopener noreferrer">
+          Planning and Highways Committee | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20and%20Highways%20Committee\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Planning Decisions</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Information is available about how planning applications are assessed and which factors can be considered when making a decision.
+      </p>
+      <p>
+        <strong>Planning Decisions and Appeals:</strong><br>
+        <a href="https://www.sheffield.gov.uk/planning-development/decisions-appeals" target="_blank" rel="noopener noreferrer">
+          Planning Decisions and Appeals | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20decisions%20and%20appeals\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Enforcement and Breach Notices</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can search historical registers to check whether a property or site has been served with an Enforcement Notice or Breach of Condition Notice.
+      </p>
+      <p>
+        The historical registers can be searched using the planning application search linked at the top of this article.
+      </p>
+      <p>
+        For copies of notices or further information, contact:
+      </p>
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:planningdc@sheffield.gov.uk">
+          planningdc@sheffield.gov.uk
+        </a>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Important Information</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Planning application information may be incomplete and should not be used instead of a formal Local Land Charges search</li>
+        <li>Planning documents are protected by copyright and may only be used for consultation purposes</li>
+        <li>Additional copies must not be made without permission from the copyright owner</li>
+      </ul>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Customers can search both <strong>current and historical planning applications</strong> online.</li>
+    <li>A <strong>Public Access account</strong> is required to submit comments online.</li>
+    <li>Comments should relate to <strong>relevant planning considerations</strong> and should be submitted before the consultation deadline wherever possible.</li>
+    <li>Comments and the customer's address will normally be <strong>published online</strong>; anonymous comments are generally not considered.</li>
+    <li>Customers are responsible for <strong>monitoring the progress of an application</strong>, including whether it is going to Planning and Highways Committee.</li>
+    <li>Planning application information should not be used instead of a <strong>formal Local Land Charges search</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "search planning applications",
+      "view planning applications",
+      "comment on planning applications",
+      "planning application search",
+      "historical planning applications",
+      "Public Access",
+      "register to comment",
+      "planning objection",
+      "track planning application",
+      "planning committee",
+      "planning decision",
+      "enforcement notice",
+      "breach of condition",
+      "planning reference",
+      "planing application",
+      "planning aplication",
+      "planning serch",
+      "planning coment",
+      "public acess",
+      "enforcment notice"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -3058,6 +3277,7 @@ const planning = new MenuPaD(
     applyForPreApplicationAdvice,
     findOutIfYouNeedPlanningPermission,
     planningDecisionsAndAppeals,
+    searchViewAndCommentOnPlanningApplications,
   ]
 );
 
