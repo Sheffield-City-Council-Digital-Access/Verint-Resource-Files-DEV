@@ -2379,6 +2379,270 @@ const applyForPlanningPermission = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const applyForPreApplicationAdvice = new ContentPaD(
+  "applyForPreApplicationAdvice",
+  "Apply for Pre-Application Advice",
+  "Guidance on obtaining planning advice before submitting an application, including charges, payment, enquiry types, planning policies and specialist proposals.",
+  `
+  <p>
+    A pre-application enquiry allows you to receive planning advice before submitting a planning application. This can help identify potential issues early, understand planning requirements and improve the quality of your proposal before you apply.
+  </p>
+  <p>
+    Applications submitted without addressing planning policy requirements may be at greater risk of refusal.
+  </p>
+  <p>
+    For full details of the service, application requirements, fees and supporting guidance, visit:
+    <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/pre-application-enquiry" target="_blank" rel="noopener noreferrer">
+      Make a Pre-Application Enquiry | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Make%20a%20pre-application%20enquiry\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Charges for Pre-Application Advice</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Pre-application advice is a chargeable service and fees include VAT.
+      </p>
+      <p>
+        Although there is a cost, obtaining advice before submitting an application may help identify issues, avoid delays and potentially save money in the long term.
+      </p>
+      <p>
+        <strong>View current fees:</strong><br>
+        <a href="https://www.sheffield.gov.uk/sites/default/files/2026-03/pre-application-fees-from-1-april-2026x.pdf" target="_blank" rel="noopener noreferrer">
+          Pre-Application Fees | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Pre-application%20fees\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Pay</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can pay for pre-application advice by credit card, debit card or arrange a BACs payment.
+      </p>
+      <p>
+        <strong>Telephone:</strong><br>
+        0114 273 4218
+      </p>
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:planningapps@sheffield.gov.uk">
+          planningapps@sheffield.gov.uk
+        </a>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Submit a Pre-Application Enquiry</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        All pre-application enquiries must be submitted using the appropriate enquiry process. Different routes are available depending on the scale and complexity of the proposed development.
+      </p>
+      <p>This includes:</p>
+      <ul>
+        <li>Smaller-scale development proposals</li>
+        <li>Major development proposals</li>
+        <li>Applications requiring supporting plans and documents</li>
+        <li>Proposals seeking planning advice before a formal application is submitted</li>
+      </ul>
+      <p>
+        You must include the relevant fee and any supporting documents required for your enquiry.
+      </p>
+      <p>
+        Details of the available enquiry types, application requirements and submission process are provided on the main pre-application enquiry page linked above.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Planning Policies and Guidance</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Before submitting an enquiry, you may find it useful to review the local planning policies and guidance relevant to your proposal.
+      </p>
+      <p>
+        <strong>Sheffield Local Plan:</strong><br>
+        <a href="https://www.sheffield.gov.uk/planning-development/sheffield-plan" target="_blank" rel="noopener noreferrer">
+          Sheffield Local Plan | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Local%20Plan\`
+        "
+      >
+        Send link to review further information
+      </button>
+      <p>
+        <strong>Planning guidance and advice notes:</strong><br>
+        <a href="https://www.sheffield.gov.uk/planning-development/approved-planning-guidance" target="_blank" rel="noopener noreferrer">
+          Approved Planning Guidance | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Approved%20planning%20guidance\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Heritage Assets and Conservation Areas</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If your proposal affects a listed building, conservation area or other heritage asset, you may need to provide information explaining how the proposal affects the heritage significance of the site.
+      </p>
+      <p>
+        <strong>Check if a property is in a conservation area:</strong><br>
+        <a href="https://www.sheffield.gov.uk/planning-development/conservation-areas" target="_blank" rel="noopener noreferrer">
+          Conservation Areas | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Conservation%20areas\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Planning Performance Agreements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        For large or strategic developments, you may wish to enter into a Planning Performance Agreement (PPA).
+      </p>
+      <p>
+        A PPA provides a project management framework, agreed timescales and closer working between the applicant and the Council throughout the planning process.
+      </p>
+      <p>
+        Fees are based on the scale and complexity of the proposal.
+      </p>
+      <p>
+        <strong>Email for PPA enquiries:</strong><br>
+        <a href="mailto:planningdc.centralmajor@sheffield.gov.uk">
+          planningdc.centralmajor@sheffield.gov.uk
+        </a>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Confidentiality</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Pre-application enquiries are not published by the Council.
+      </p>
+      <p>
+        However, information may still be subject to requests under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+      </p>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Pre-application advice is available <strong>before a formal planning application is submitted</strong>.</li>
+    <li>The service is <strong>chargeable and fees include VAT</strong>.</li>
+    <li>The type of enquiry depends on the <strong>scale and complexity of the proposed development</strong>.</li>
+    <li>Customers must provide the <strong>required supporting information and relevant fee</strong>.</li>
+    <li>Large or strategic developments may be suitable for a <strong>Planning Performance Agreement (PPA)</strong>.</li>
+    <li>Pre-application enquiries are not normally published, but information may still be subject to <strong>Freedom of Information or Environmental Information requests</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "pre-application advice",
+      "pre-application enquiry",
+      "planning advice",
+      "pre-application fees",
+      "planning performance agreement",
+      "PPA",
+      "planning guidance",
+      "Sheffield Local Plan",
+      "heritage asset",
+      "conservation area",
+      "listed building",
+      "preapp",
+      "pre application",
+      "pre aplication",
+      "planing advice",
+      "planing enquiry"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -2388,6 +2652,7 @@ const planning = new MenuPaD(
     reportingAPlanningEnforcementIssue,
     historicalPlanningRequests,
     applyForPlanningPermission,
+    applyForPreApplicationAdvice,
   ]
 );
 
