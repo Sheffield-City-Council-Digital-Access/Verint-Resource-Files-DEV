@@ -4472,6 +4472,83 @@ const donatingToParks = new ContentPSaR(
   },
   { date: "14/08/2026", name: "Liz Taster" }
 );
+
+const conservationAreasTreePreservationOrders = new ContentPSaR(
+  "conservationAreasTreePreservationOrders",
+  "Conservation Areas & Tree Preservation Orders",
+  "Information about Tree Preservation Orders (TPOs), conservation areas, protected trees, notification requirements, penalties, and how to apply for permission to carry out tree works.",
+  `
+  <p>
+    Trees on private property may be legally protected by a Tree Preservation Order (TPO), this includes work which will impact the root system.
+  </p>
+  <p>
+    In a conservation area SCC must be notified of any tree work to allow consideration as to whether a tree merits protection. 
+    This includes:
+  </p>
+    <ul>
+      <li>Lopping and topping of branches</li>
+      <li>Severance of the roots</li>
+      <li>Removal of the tree</li>
+      <li>Uprooting of a tree</li>
+    </ul>
+  <p>
+    If a protected tree is dead or presents an immediate risk where work is urgently needed to remove that risk, the Council must be notified before acting.
+  </p>
+  <p>
+    Contravention of a Tree Preservation Order by damaging or carrying out work on a protected tree is punishable by a fine of up to £20,000 if convicted in a magistrate’s court.
+  </p>
+  <p>
+    A map of conservation areas and TPOs can be found on our website along with details of how to apply for permission to carry out work on a protected tree: 
+    <a href="https://www.sheffield.gov.uk/planning-development/conservation-design/make-application-works-trees" target="_blank" rel="noopener noreferrer">
+    Make an application for works to trees | Sheffield City Council</a>.
+  </p>
+  `,
+  
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "Conservation",
+      "Areas",
+      "Area",
+      "Tree",
+      "Preservation",
+      "Order",
+      "Orders",
+      "TPO",
+      "TPOs",
+      "protected",
+      "tree",
+      "trees",
+      "lopping",
+      "topping",
+      "pollarding",
+      "branches",
+      "roots",
+      "root",
+      "system",
+      "removal",
+      "remove",
+      "uprooting",
+      "uproot",
+      "dead tree",
+      "dangerous tree",
+      "protection",
+      "preservasion",
+      "presevation",
+      "consrvation",
+      "protcted",
+      "protction",
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
     
 
 //#endregion Top level tiles - must be listed in ServicePSAR
@@ -4494,5 +4571,6 @@ const parksSportAndRecreation = new ServicePSaR(
    wildlifeInParks,
    memorialsInParks,
    donatingToParks,
+   conservationAreasTreePreservationOrders,
   ]
 );
