@@ -3046,7 +3046,7 @@ const planningDecisionsAndAppeals = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
-const searchViewAndCommentOnPlanningApplications = new ContentPaD(
+const searchViewAndCommentOnPlanningApps = new ContentPaD(
   "searchViewAndCommentOnPlanningApplications",
   "Search, View and Comment on Planning Applications",
   "Guidance on searching for current and historical planning applications, registering to comment, tracking applications and viewing enforcement notices.",
@@ -3265,6 +3265,160 @@ const searchViewAndCommentOnPlanningApplications = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const planningPermissionForHmo = new ContentPaD(
+  "planningPermissionForHousesInMultipleOccupation",
+  "Planning Permission for Houses in Multiple Occupation (HMOs)",
+  "Guidance on planning permission requirements for Houses in Multiple Occupation, including Article 4 restrictions, HMO density and existing HMO use.",
+  `
+  <p>
+    If you are planning to convert a property into a House in Multiple Occupation (HMO), you may need planning permission depending on the location of the property and the number of occupants.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Do I Need Planning Permission?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Within Sheffield's Article 4 Area, planning permission is required to change a dwellinghouse (Use Class C3) into an HMO occupied by 3 to 6 unrelated people (Use Class C4).
+      </p>
+      <p>
+        You should check whether the property falls within the Article 4 Area before making plans to convert a property into an HMO.
+      </p>
+      <p>
+        Outside the Article 4 Area, planning permission is generally not required to convert a dwellinghouse into an HMO occupied by 3 to 6 unrelated people.
+      </p>
+      <p>Planning permission is normally required anywhere in the city for:</p>
+      <ul>
+        <li>HMOs occupied by 7 or more people</li>
+        <li>Conversions from another use class into an HMO</li>
+      </ul>
+      <p>
+        For information about HMOs, Article 4 restrictions and how planning permission requirements may affect your property, visit:
+        <a href="https://www.sheffield.gov.uk/planning-development/planning-permission-houses-multiple-occupation" target="_blank" rel="noopener noreferrer">
+          Planning Permission for Houses in Multiple Occupation | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20permission%20for%20houses%20in%20multiple%20occupation\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>HMO Licensing</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Even if planning permission is not required, you may still require an HMO licence. This is commonly required for properties occupied by 5 or more people.
+      </p>
+      <p>
+        Planning permission and HMO licensing are separate requirements.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How Applications Are Assessed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are assessed against Core Strategy Policy CS41.
+      </p>
+      <p>
+        As a guide, planning permission is less likely to be granted where 20% or more of residential properties within 200 metres of the property are already HMOs.
+      </p>
+      <p>
+        <strong>HMO Density List:</strong><br>
+        <a href="https://www.sheffield.gov.uk/sites/default/files/2026-05/hmo-density-list.xlsx" target="_blank" rel="noopener noreferrer">
+          HMO Density List | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=HMO%20density%20list\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>If the Property Is Already an HMO</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You may not need planning permission if:</p>
+      <ul>
+        <li>The property has been continuously used as an HMO since 10 December 2011</li>
+        <li>Planning permission for HMO use was previously granted and the property has remained in HMO use</li>
+      </ul>
+      <p>
+        You should keep evidence such as tenancy agreements that demonstrate continuous HMO occupation. This may be required for future planning enquiries, enforcement investigations or Lawful Development Certificate applications.
+      </p>
+      <p>
+        If a property has since reverted back to use as a normal dwellinghouse, planning permission may be required to change it back into an HMO.
+      </p>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Within Sheffield's <strong>Article 4 Area</strong>, planning permission is required to change a C3 dwellinghouse into a C4 HMO for 3 to 6 unrelated people.</li>
+    <li>Outside the Article 4 Area, this change is generally permitted for <strong>3 to 6 unrelated people</strong>.</li>
+    <li>Planning permission is normally required anywhere in Sheffield for an HMO occupied by <strong>7 or more people</strong>.</li>
+    <li><strong>Planning permission and HMO licensing are separate requirements</strong>; a property may require one or both.</li>
+    <li>Existing HMO use may be relevant where the property has been continuously used as an HMO since <strong>10 December 2011</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_and_development_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "HMO planning permission",
+      "house in multiple occupation",
+      "HMO",
+      "HMO conversion",
+      "change of use",
+      "C3 to C4",
+      "Article 4",
+      "HMO licensing",
+      "HMO density",
+      "Policy CS41",
+      "existing HMO",
+      "lawful development certificate",
+      "planing permission",
+      "HMO licencing",
+      "Artical 4",
+      "HMO denisty"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
 
 const planning = new MenuPaD(
   "Planning",
@@ -3277,7 +3431,8 @@ const planning = new MenuPaD(
     applyForPreApplicationAdvice,
     findOutIfYouNeedPlanningPermission,
     planningDecisionsAndAppeals,
-    searchViewAndCommentOnPlanningApplications,
+    searchViewAndCommentOnPlanningApps,
+    planningPermissionForHmo,
   ]
 );
 
