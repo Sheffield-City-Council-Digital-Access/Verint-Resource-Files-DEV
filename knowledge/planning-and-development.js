@@ -1781,9 +1781,9 @@ const reportUnauthorisedBuildingWorks = new ContentPaD(
     Please consult the knowledge tile <strong>Apply for a Regularisation Certificate</strong> for further information.
   <p>
 `,
-  {},
-  { typeKey: "Building Control" },
-  { typeKey: "Reporting" },
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
   {
     type: "Information",
     keywords: [
