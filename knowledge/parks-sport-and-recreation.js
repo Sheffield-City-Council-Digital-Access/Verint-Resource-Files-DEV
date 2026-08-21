@@ -1622,7 +1622,18 @@ const bookAnEvent = new ContentPSaR(
     Events in parks | Sheffield City Council</a> webpage, including the terms and conditions.
   </p>
 
-  <p>[Insert Send Link] 01</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <p>
     Enquiries about holding an event in a park are welcome and can be done by completing the <strong><em>Book a Room/Event/Film/Photoshoot</em></strong> form - 
@@ -1703,7 +1714,19 @@ const bookASportsFacility = new ContentPSaR(
         Book courts and pitches in Sheffield with Courtside</a>.
       </p>
 
-      <p>[Insert Send Link] 02</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20tennis%20courts\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -1728,7 +1751,20 @@ const bookASportsFacility = new ContentPSaR(
         <a href="https://www.sheffield.gov.uk/parks-sport-recreation/physical-activity-outdoor-sport/book-sports-pitch" target="_blank" rel="noopener noreferrer">
         Book a sports pitch | Sheffield City Council</a>.
       </p>
-      <p>[Insert Send Link] 03</p>
+
+      	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20sports%20pitch\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -1749,7 +1785,20 @@ const bookASportsFacility = new ContentPSaR(
         The link for payment can be found at <a href="https://www.sheffield.gov.uk/parks-sport-recreation/physical-activity-outdoor-sport/book-sports-pitch" target="_blank" rel="noopener noreferrer">
         Book a sports pitch | Sheffield City Council</a>.
       </p>
-      <p>[Insert Send Link] 04</p>
+
+      	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20sports%20pitch\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -1822,7 +1871,18 @@ const commercialActivitiesParks = new ContentPSaR(
     where there are further details and links to provisionally book activities.
   </p>
 
-  <p>[Insert Send Link] 05</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Fitness%20in%20parks\`
+            "
+        >
+            Send link to review further information
+        </button>
   
   `,
   
@@ -1867,14 +1927,25 @@ const filmingPhotoshoots = new ContentPSaR(
     Full terms and conditions are available on our website <a href="https://www.sheffield.gov.uk/business/permission-film-hold-photo-shoot-city-centre" target="_blank" rel="noopener noreferrer">
     Permission to film or hold a photo shoot in the city centre | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 06</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Permission%20to%20film\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <p>
     The booking form is available on the website and must be completed by the interested party due to liability issues. 
     <strong>The form should not be completed by customer service staff on their behalf.</strong>
   </p>
 
-  <p>[Insert Send Link] 07 - <em>this will be to wherever the new form is hosted</em>.</p>
 
   <p>Fees apply as follows:</p>
     <table>
@@ -1971,7 +2042,20 @@ const bookRoomOrParkBuilding = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
     Book a community building or advertising space in a park | Sheffield City Council</a>.
   </p>
-  <p>[Insert Send Link] 08</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20space%20in%20a%20park\`
+            "
+        >
+            Send link to review further information
+        </button>
+
   <p>
     Layouts are available on the webpage but are not facilitated, so the person booking is responsible for the room setup.
   </p>
@@ -1986,7 +2070,18 @@ const bookRoomOrParkBuilding = new ContentPSaR(
       <li>Stannington Pavillion</li>
     </ul>
 
-  <p>[Insert Send Link] 09</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Booking%20System\`
+            "
+        >
+            Send link to review further information
+        </button>
   
   <p>The following venues can be booked by submitting an enquiry using our online form:</p>
     <ul>
@@ -2153,7 +2248,18 @@ const activitiesInParks = new ContentPSaR(
         Barbecues in parks | Sheffield City Council</a>
       </p>
 
-      <p>[Insert Send Link] 11</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Barbecues%20in%20parks\`
+            "
+        >
+            Send link to review further information
+        </button>
 
     </div>
   </details>
@@ -2186,7 +2292,18 @@ const activitiesInParks = new ContentPSaR(
         Parks and green spaces | Sheffield City Council</a>
       </p>
 
-      <p>[Insert Send Link] 12</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20and%20green%20spaces\`
+            "
+        >
+            Send link to review further information
+        </button>
 
       <p>
         For the use of drones in filming or photoshoots please search for the knowledge article <strong>Filming and photoshoots</strong>
@@ -2211,7 +2328,18 @@ const activitiesInParks = new ContentPSaR(
         Fishing in parks | Sheffield City Council</a>.
       </p>
 
-      <p>[Insert Send Link] 13</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Fishing%20in%20parks\`
+            "
+        >
+            Send link to review further information
+        </button>
 
       <p>
         This website also has a list of places which are available to fish for a charge, and where day tickets can be purchased from.
@@ -2252,7 +2380,19 @@ const activitiesInParks = new ContentPSaR(
         Parks and green spaces | Sheffield City Council</a>
       </p>
 
-      <p>[Insert Send Link] 14</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20and%20green%20spaces\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -2274,7 +2414,19 @@ const activitiesInParks = new ContentPSaR(
         Report a problem with a tree | Sheffield City Council</a>
       </p>
   
-      <p>[Insert Send Link] 15</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20problem%20with%20a%20tree\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -2342,7 +2494,18 @@ const eventsInParks = new ContentPSaR(
     All Events in Sheffield</a>.
   </p>
 
-  <p>[Insert Send Link] 16</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=All%20Events%20in%20Sheffield\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -2430,7 +2593,18 @@ const rivelinValleyWaterPlay = new ContentPSaR(
     Rivelin Valley Water Play | Sheffield City Council</a>
   </p>
   
-  <p>[Insert Send Link] 17</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Rivelin%20Valley%20Water%20Play\`
+            "
+        >
+            Send link to review further information
+        </button>
   
   `,
   { buttonLabel: "", formName: "" },
@@ -2479,7 +2653,18 @@ const sheffieldRoundWalk = new ContentPSaR(
     <a href="https://www.welcometosheffield.co.uk/content/articles/sheffield-round-walk/" target="_blank" rel="noopener noreferrer">Sheffield Round Walk</a>
   </p>
   
-  <p>[Insert Send Link] 18</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Round%20Walk\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   `,
   { buttonLabel: "", formName: "" },
@@ -2530,7 +2715,20 @@ const playgrounds = new ContentPSaR(
     <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5dbfc04cd9564cb3a10a2af4d4c81796" target="_blank" rel="noopener noreferrer">
     Parks Playgrounds</a>.
   </p>
-  <p>[Insert Send Link] 19</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Playgrounds%20Map\`
+            "
+        >
+            Send link to review further information
+        </button>
+
   <p>
     Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
     form which can also be found here: [insert link once form live].
@@ -2642,7 +2840,19 @@ const gravesPark = new ContentPSaR(
         www.trybooking.co.uk</a> and can be booked through the site. 
         Click on <em>Find Event</em> and search for <em>Graves Park Animal Farm</em>.
       </p>
-      <p>[Insert Send Link] 21</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Park%20Events\`
+            "
+        >
+            Send link to review further information
+        </button>
 
       <p> 
         The barn is available to hire for a flat fee of £50 for the day - 10am to 3.00pm. 
@@ -2687,7 +2897,20 @@ const gravesPark = new ContentPSaR(
         www.trybooking.co.uk</a> – Click on <em>Find Event</em> and search for <em>Graves Park Animal Farm</em> and follow the organisation 
         to receive a notification when a volunteering event is planned.
       </p>
-      <p>[Insert Send Link] 23</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Park%20Events\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -2709,7 +2932,19 @@ const gravesPark = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/rose-garden-cafe-updates" target="_blank" rel="noopener noreferrer">
     Rose Garden Cafe Updates | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 24</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Rose%20Garden%20Cafe%20Updates\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 `,
   { buttonLabel: "Donate to animal farm", formName: "request_donation_parks" },
@@ -2952,7 +3187,18 @@ const antiSocialBehaviourParks = new ContentPSaR(
       Anti-social behaviour and community safety | Sheffield City Council</a>
     </p>
 
-    <p>[Insert Send Link] 25</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=ASB%20and%20community%20safety\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <h3>ASB in Parks</h3>
     <p>
@@ -3031,7 +3277,18 @@ const cctvParks = new ContentPSaR(
     CCTV and Body Worn Video | Sheffield City Council</a>.
   </p>
 
-  <p>[Insert Send Link] 26</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=CCTV%20and%20Body%20Worn%20Video\`
+            "
+        >
+            Send link to review further information
+        </button>
   
   `,
 
@@ -3113,14 +3370,37 @@ const flyTipping = new ContentPSaR(
     Fly-tipping and litter | Sheffield City Council</a>
   </p>
 
-  <p>[Insert Send Link] 27</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Fly-tipping%20and%20litter\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <p>
     Fly-tipping can be reported using the button at the bottom or with the link available here: 
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/report-fly-tipping-public-land" target="_blank" rel="noopener noreferrer">
     Reporting fly-tipping | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 28</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly%20tipping\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   `,
  
@@ -3167,10 +3447,23 @@ const damageToPavementsAndSurfaces = new ContentPSaR(
   `
   <p>
     Damage to footpaths or pavements should be reported using the online form found here: 
-    <a href="https://forms.sheffield.gov.uk/site/portal/form/road_pavement_surface" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/roads-pavements/report-problems/report-road-problems" target="_blank" rel="noopener noreferrer">
     Report a problem with a road or pavement surface</a>.
   </p>
-  <p>[Insert Send Link] 29</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20problem%20with%20the%20road%20or%20pavement%20surface\`
+            "
+        >
+            Send link to review further information
+        </button>
+
   <p>
     Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
   </p>
@@ -3224,7 +3517,20 @@ const damageToFencing = new ContentPSaR(
     <a href="https://forms.sheffield.gov.uk/site/portal/form/report_fence_barrier" target="_blank" rel="noopener noreferrer">
     Report a problem with a fence or barrier</a>.
   </p>
-  <p>[Insert Send Link] 30</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20problem%20with%20fences%20or%20safety%20barriers\`
+            "
+        >
+            Send link to review further information
+        </button>
+
   <p>
     Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
   </p>
@@ -3287,7 +3593,7 @@ const litterAndLitterBins = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
     target="_blank" rel="noopener noreferrer">Report litter bin</a>.
   </p>
-      <button
+        <button
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -3298,7 +3604,7 @@ const litterAndLitterBins = new ContentPSaR(
             "
         >
             Send link to review further information
-       </button>
+        </button>
 
 <h3>Litter Picking Resources and Support</h3>
   <p>
@@ -3306,7 +3612,19 @@ const litterAndLitterBins = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/fly-tipping-litter/organise-litter-picks" target="_blank" rel="noopener noreferrer">
     Organise a community litter pick | Sheffield City Council</a>.
   </p>
-  <p>[Insert Send Link] 32</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Organise%20a%20community%20litter%20pick\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 `,
   { buttonLabel: "Report a litter bin", formName: "report_litter_bin" },
@@ -3411,20 +3729,31 @@ const grassHedgeCutting = new ContentPSaR(
     Timing may vary depending on the type and location of the hedge, nesting bird considerations, and weather conditions.
   </p>
 <h3>Reporting issues</h3>
-  <p>
-    If someone wishes to report an area that appears to have been missed, requires attention, or an issue with grass or hedges 
-    ask them to use the form here: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_hedge_plant_grass" target="_blank" rel="noopener noreferrer">
-    Report hedges, plants or grassed areas</a>.
-    Once the report has been reviewed, the park manager will inspect the area and act where required.
-  </p>
-  <p>[Insert Send Link] 33</p>
+ 
 
   <p>
     Further information about grass cutting, hedge cutting, and other related topics can be found here:
     <a href="https://www.sheffield.gov.uk/roads-pavements/problems-plants-trees-weeds-grass" target="_blank" rel="noopener noreferrer">
     Problems with plants, trees, weeds and grass | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 34</p>
+   <p>
+    If someone wishes to report an area that appears to have been missed, requires attention, or an issue with grass or hedges 
+    ask them to use the form available on that web page - look for the green button marked "Report a problem with hedges, plants or grassed areas".
+    <br>Once the report has been reviewed, the park manager will inspect the area and act where required.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20hedges%20plants%20or%20grassed%20areas\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   `,
   { buttonLabel: "Report an issue", formName: "report_hedge_plant_grass" },
@@ -3471,7 +3800,7 @@ const dogFouling = new ContentPSaR(
     To report an issue with dog fouling, please use the online form available here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
     Report dog fouling</a> form.
   </p>
-      <button
+        <button
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -3482,7 +3811,7 @@ const dogFouling = new ContentPSaR(
             "
         >
             Send link to review further information
-      </button>
+        </button>
   `,
   { buttonLabel: "Report dog fouling", formName: "report_dog_fouling" },
   { typeKey: "" },
@@ -3675,7 +4004,19 @@ const gritSaltCommercial = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/roads-pavements/winter-road-maintenance-and-gritting/grit-bins-sheffield" target="_blank" rel="noopener noreferrer">
     Grit bins in Sheffield | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 38</p>
+
+  	    <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Grit%20bins%20in%20Sheffield\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <p>
     We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.
@@ -3780,17 +4121,27 @@ const graffitiRemovalParkProperty = new ContentPSaR(
     Once reported, the graffiti will be inspected and appropriate action will be taken, which can range from removal to cover up.
   </p>
   <p>
-    The report form can be found here: <a href="https://forms.sheffield.gov.uk/site/portal/form/report_graffiti" target="_blank" rel="noopener noreferrer">
-    Graffiti Report Form</a> 
+    The report form can be found here, ask customers to use the top link: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
+    Report graffiti | Sheffield City Council</a> 
   </p>
-  <p>[Insert Send Link] 39</p>
 
   <p>
     <em>Please note</em> - it is not always the Council's responsibility to remove graffiti where the graffiti is on an item not owned by the council - e.g. bus stops, or broadband cabinets.
-    <br>Information about reporting graffiti to the correctly responsible party, and links to do so, can be found here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
-    Report graffiti | Sheffield City Council</a> 
+    <br>Information about reporting graffiti to the correctly responsible party, and links to do so, can also be found at this website.
   </p>
-  <p>[Insert Send Link] 40</p>
+
+  	    <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20graffiti\`
+            "
+        >
+            Send link to review further information
+        </button>
 
 `,
   { buttonLabel: "Report graffiti", formName: "report_graffiti" },
@@ -3947,7 +4298,20 @@ const ecology = new ContentPSaR(
         <a href="https://www.sheffield.gov.uk/parks-sport-recreation/sheffield-biological-records-centre" target="_blank" rel="noopener noreferrer">
         Sheffield Biological Records Centre | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 41</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Biological%20Records%20Centre\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
          
@@ -4031,7 +4395,18 @@ const treePlantingCommunityForestry = new ContentPSaR(
         Trees for Streets</a>.
       </p>
 
-      <p>[Insert Send Link] 42</p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Trees%20for%20Streets\`
+            "
+        >
+            Send link to review further information
+        </button>
 
       <p>
         Not all parks have space for additional trees and the location within a park is decided by Tree Officers.
@@ -4145,21 +4520,57 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/parks-sport-recreation/friends-of-groups" target="_blank" rel="noopener noreferrer">
     'Friends of' groups | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 43</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Friends%20of%20groups\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <p>
     Further volunteer opportunities with Parks &amp; Countryside can be found here: 
     <a href="https://www.sheffield.gov.uk/parks-sport-recreation/volunteer-with-parks-countryside" target="_blank" rel="noopener noreferrer">
     Volunteer with Parks and Countryside | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 44</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Volunteer%20with%20Parks%20and%20Countryside\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <p>
     More information about litter picking is available here: 
     <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/fly-tipping-litter/organise-litter-picks" target="_blank" rel="noopener noreferrer">
     Organise a community litter pick | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 45</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Organise%20a%20community%20litter%20pick\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   <p>
     Group, educational, or corporate volunteering enquiries should be directed to <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
@@ -4283,7 +4694,20 @@ const wildlifeInParks = new ContentPSaR(
         <a href="https://www.wildsheffield.com/wildlife/local-rescue-centres/" target="_blank" rel="noopener noreferrer">
         Local Wildlife Rescue Centres - Sheffield & Rotherham Wildlife Trust</a>
       </p>
-      <p>[Insert Send Link] 46</p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Local%20Wildlife%20Rescue%20Centres\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -4578,7 +5002,19 @@ const treePreservationOrders = new ContentPSaR(
     <a href="https://www.sheffield.gov.uk/planning-development/conservation-design/tree-works-protected-trees" target="_blank" rel="noopener noreferrer">
     Tree works and protected trees | Sheffield City Council</a>.
   </p>
-  <p>[Insert Send Link] 49</p>
+  
+ 	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Tree%20works%20and%20protected%20trees\`
+            "
+        >
+            Send link to review further information
+        </button>
 
   `,
   
