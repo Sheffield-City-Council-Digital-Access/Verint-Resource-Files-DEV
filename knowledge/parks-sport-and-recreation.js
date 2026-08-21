@@ -1856,7 +1856,7 @@ const bookASportsFacility = new ContentPSaR(
 
 const commercialActivitiesParks = new ContentPSaR(
   "commercialActivitiesParks",
-  "Commercial Activities/Vendors",
+  "Commercial Activities and Vendors",
   "Information about commercial activities, vendors, and fitness-related activities in parks.",
   `
   <p>
@@ -1917,7 +1917,7 @@ const commercialActivitiesParks = new ContentPSaR(
 
 const filmingPhotoshoots = new ContentPSaR(
   "filmingPhotoshoots",
-  "Filming/Photoshoots in Parks",
+  "Filming and Photoshoots in Parks",
   "Information for customers wanting to hold a photo shoot on Parks & Countryside land.",
   `
   <p>
@@ -2287,7 +2287,7 @@ const activitiesInParks = new ContentPSaR(
       </p>
 
       <p>
-        Byelaws associated with park usage can be found at 
+        Byelaws associated with park usage can be found towards the bottom of the webpage:  
         <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-green-spaces" target="_blank" rel="noopener noreferrer">
         Parks and green spaces | Sheffield City Council</a>
       </p>
@@ -2375,7 +2375,7 @@ const activitiesInParks = new ContentPSaR(
       </p>
 
       <p>
-        Byelaws associated with park usage can be found at: 
+        Byelaws associated with park usage can be found towards the bottom of the webpage: 
         <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-green-spaces" target="_blank" rel="noopener noreferrer">
         Parks and green spaces | Sheffield City Council</a>
       </p>
@@ -2409,9 +2409,10 @@ const activitiesInParks = new ContentPSaR(
       </p>
 
       <p>
-        If you notice a dead or fallen tree in a dangerous state, please notify us using the <strong>‘Report an Issue with a tree’</strong> form
-        <a href="https://forms.sheffield.gov.uk/site/portal/form/report_tree" target="_blank" rel="noopener noreferrer">
-        Report a problem with a tree | Sheffield City Council</a>
+        If a customer notices a dead or fallen tree in a dangerous state, please ask them to notify us using the <strong>‘Report a problem with a street tree’</strong> 
+        form that can be found on the following page:
+        <a href="https://www.sheffield.gov.uk/roads-pavements/street-trees/managing-street-trees" target="_blank" rel="noopener noreferrer">
+        Managing and looking after street trees | Sheffield City Council</a>
       </p>
   
 	      <button
@@ -2741,7 +2742,7 @@ const playgrounds = new ContentPSaR(
   </p>
 
   <p>
-    If a customer is wanting to report an injury in a playground, please refer to the ‘<em>Insurance/Personal Injury/Compensation</em>’ knowledge tile.
+    If a customer is wanting to report an injury in a playground, please refer to the ‘<em>Insurance or Personal Injury or Compensation</em>’ knowledge tile.
   </p>
   
   `,
@@ -2812,8 +2813,9 @@ const gravesPark = new ContentPSaR(
         Donations must be agreed by the park manager and delivered to the park; we do not collect donations. Customers should complete the online donation form.
       </p>
       <p>
-        Information about this topic will be available on the Council Website
+        Further details are available on the website here:
       </p>
+      <p>[Insert Send Link] 50</p>
       <p>
         <strong>Can I donate an animal?</strong> No, we don’t take animals as donations and are unable to rescue animals.
       </p>
@@ -2836,9 +2838,9 @@ const gravesPark = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        Events held at the Animal Farm are advertised on <a href="http://www.trybooking.co.uk/" target="_blank" rel="noopener noreferrer">
+        Events held at the Animal Farm are advertised on <a href="https://www.trybooking.com/uk/book/search" target="_blank" rel="noopener noreferrer">
         www.trybooking.co.uk</a> and can be booked through the site. 
-        Click on <em>Find Event</em> and search for <em>Graves Park Animal Farm</em>.
+        Search for <em>Graves Park Animal Farm</em>.
       </p>
 
 	      <button
@@ -2893,8 +2895,8 @@ const gravesPark = new ContentPSaR(
         Information and updates on available opportunities can be found on the Graves Park Animal Farm Facebook page.
       </p>
       <p>
-        Opportunities are also advertised on <a href="http://www.trybooking.co.uk/" target="_blank" rel="noopener noreferrer">
-        www.trybooking.co.uk</a> – Click on <em>Find Event</em> and search for <em>Graves Park Animal Farm</em> and follow the organisation 
+        Opportunities are also advertised on <a href="https://www.trybooking.com/uk/book/search" target="_blank" rel="noopener noreferrer">
+        www.trybooking.co.uk</a> – Search for <em>Graves Park Animal Farm</em> and follow the organisation 
         to receive a notification when a volunteering event is planned.
       </p>
 
@@ -3317,7 +3319,7 @@ const cctvParks = new ContentPSaR(
 
 const insurancePersonalInjuryCompensation = new ContentPSaR(
   "insurancePersonalInjuryCompensation",
-  "Insurance, Personal Injury or Compensation",
+  "Insurance or Personal Injury or Compensation",
   "Information on reporting an injury or making a compensation claim.",
   `
   <p>
@@ -3364,6 +3366,25 @@ const flyTipping = new ContentPSaR(
   <p>
     Waste will be removed no later than 10 working days after being reported.
   </p>
+
+  <p>
+    Fly-tipping can be reported using the <em>'Report fly-tipping'</em> button available here: 
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/report-fly-tipping-public-land" target="_blank" rel="noopener noreferrer">
+    Reporting fly-tipping | Sheffield City Council</a>
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly%20tipping\`
+            "
+        >
+            Send link to review further information
+        </button>
   <p>
     Further information about how the council deals with fly-tipping can be found here: 
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter" target="_blank" rel="noopener noreferrer">
@@ -3383,24 +3404,7 @@ const flyTipping = new ContentPSaR(
             Send link to review further information
         </button>
 
-  <p>
-    Fly-tipping can be reported using the button at the bottom or with the link available here: 
-    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/report-fly-tipping-public-land" target="_blank" rel="noopener noreferrer">
-    Reporting fly-tipping | Sheffield City Council</a>
-  </p>
 
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly%20tipping\`
-            "
-        >
-            Send link to review further information
-        </button>
 
   `,
  
@@ -3449,6 +3453,9 @@ const damageToPavementsAndSurfaces = new ContentPSaR(
     Damage to footpaths or pavements should be reported using the online form found here: 
     <a href="https://www.sheffield.gov.uk/roads-pavements/report-problems/report-road-problems" target="_blank" rel="noopener noreferrer">
     Report a problem with a road or pavement surface</a>.
+  </p>
+  <p> 
+    Ask customers to click on the relevant link under the <em>'What would you like to report?'</em> section.
   </p>
 
 	      <button
@@ -3514,7 +3521,7 @@ const damageToFencing = new ContentPSaR(
   `
   <p>
     Damage to fencing should be reported using the online form found here: 
-    <a href="https://forms.sheffield.gov.uk/site/portal/form/report_fence_barrier" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/roads-pavements/faults-street-fences-bollards-benches" target="_blank" rel="noopener noreferrer">
     Report a problem with a fence or barrier</a>.
   </p>
 
@@ -3589,7 +3596,7 @@ const litterAndLitterBins = new ContentPSaR(
     are considered based on the condition of the bin.
   </p>
   <p>
-    To report an issue with a litter bin, direct customers to use the online form available here - click on 'Report a problem with a litter bin' 
+    To report an issue with a litter bin, direct customers to use the online form available here - <em>click on 'Report a problem with a litter bin' </em>
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
     target="_blank" rel="noopener noreferrer">Report litter bin</a>.
   </p>
@@ -3659,7 +3666,7 @@ const litterAndLitterBins = new ContentPSaR(
 
 const lostFoundProperty = new ContentPSaR(
   "lostFoundProperty",
-  "Lost/Found Property",
+  "Lost and Found Property",
   "Information about reporting lost or found property in parks.",
   `
   <p>
@@ -3798,7 +3805,8 @@ const dogFouling = new ContentPSaR(
   </p>
   <p>
     To report an issue with dog fouling, please use the online form available here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
-    Report dog fouling</a> form.
+    Report dog fouling</a>.
+    <br>Ask customers to click on the <em>'Report dog fouling'</em> button to access the form.
   </p>
         <button
             type="button"
@@ -3889,7 +3897,7 @@ const dogBins = new ContentPSaR(
 
 const dogCatWasteCommercial = new ContentPSaR(
   "dogCatWasteCommercial",
-  "Dog & Cat Waste (Commercial)",
+  "Dog and Cat Waste (Commercial)",
   "We provide dog and cat waste removal services to private companies e.g. kennels or vets, located within the Sheffield City boundaries.",
   `
   <p>
@@ -3995,7 +4003,7 @@ const dogCatWasteCommercial = new ContentPSaR(
 
 const gritSaltCommercial = new ContentPSaR(
   "gritSaltCommercial",
-  "Grit/Salt (Commercial)",
+  "Grit and Salt (Commercial)",
   "We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.",
   `
   <p>
@@ -4023,8 +4031,10 @@ const gritSaltCommercial = new ContentPSaR(
   </p>
 
   <p>
-    Information about this topic will be available on the Council Website
+    Further information and a form to make a request are available here:
   </p>
+
+  <p>[Insert Send Link] 51</p>
 
   <p>
     The minimum order is 0.5 tonnes, requests for more than10 tonnes require 28 days’ notice.
@@ -4042,27 +4052,36 @@ const gritSaltCommercial = new ContentPSaR(
     For amounts of 2 tonne or greater, the cost is £180 per tonne. The cost per tonne is higher for 0.5/1tonne due to the delivery.
   </p>
 
-<table>
-  <thead>
-    <tr>
-      <th><strong>Quantity</strong></th>
-      <th><strong>Cost</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>0.5 tonne</td><td>£150</td></tr>
-    <tr><td>1 tonne</td><td>£240</td></tr>
-    <tr><td>2 tonnes</td><td>£360</td></tr>
-    <tr><td>3 tonnes</td><td>£540</td></tr>
-    <tr><td>4 tonnes</td><td>£720</td></tr>
-    <tr><td>5 tonnes</td><td>£900</td></tr>
-    <tr><td>6 tonnes</td><td>£1,080</td></tr>
-    <tr><td>7 tonnes</td><td>£1,260</td></tr>
-    <tr><td>8 tonnes</td><td>£1,440</td></tr>
-    <tr><td>9 tonnes</td><td>£1,620</td></tr>
-    <tr><td>10 tonnes</td><td>£1,800</td></tr>
-  </tbody>
-</table>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Costs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <table>
+        <thead>
+          <tr>
+            <th><strong>Quantity</strong></th>
+            <th><strong>Cost</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0.5 tonne</td><td>£150</td></tr>
+          <tr><td>1 tonne</td><td>£240</td></tr>
+          <tr><td>2 tonnes</td><td>£360</td></tr>
+          <tr><td>3 tonnes</td><td>£540</td></tr>
+          <tr><td>4 tonnes</td><td>£720</td></tr>
+          <tr><td>5 tonnes</td><td>£900</td></tr>
+          <tr><td>6 tonnes</td><td>£1,080</td></tr>
+          <tr><td>7 tonnes</td><td>£1,260</td></tr>
+          <tr><td>8 tonnes</td><td>£1,440</td></tr>
+          <tr><td>9 tonnes</td><td>£1,620</td></tr>
+          <tr><td>10 tonnes</td><td>£1,800</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
   
   <p>
     Customers can fill out the request form which can be found on the website and includes a link for immediate payment on the request confirmation page.</p>
@@ -4121,8 +4140,9 @@ const graffitiRemovalParkProperty = new ContentPSaR(
     Once reported, the graffiti will be inspected and appropriate action will be taken, which can range from removal to cover up.
   </p>
   <p>
-    The report form can be found here, ask customers to use the top link: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
-    Report graffiti | Sheffield City Council</a> 
+    Information about how to report graffiti can be found here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
+    Report graffiti | Sheffield City Council</a>.
+    <br> Ask customers to use the same form that is used to report graffiti on the highway. 
   </p>
 
   <p>
@@ -4194,7 +4214,7 @@ const maintenanceAndIssues = new MenuPSaR(
 
 const purchaseLeaseLicenceParks = new ContentPSaR(
   "purchaseLeaseLicenceParks",
-  "Purchase, Lease, or Licence of Park Property",
+  "Purchase Lease or Licence of Park Property",
   "Information about the purchase, lease or license of park property and spaces.",
   `
   <p>
@@ -4450,6 +4470,20 @@ const treePlantingCommunityForestry = new ContentPSaR(
         <a href="https://www.eventbrite.co.uk/o/scc-community-forestry-20138037357" target="_blank" rel="noopener noreferrer">
         Community Forestry Eventbrite Page</a>.
       </p>
+
+      	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Community%20Forestry\`
+            "
+        >
+            Send link to review further information
+        </button>
+
     </div>
   </details>
 
@@ -4535,6 +4569,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
         </button>
 
   <p>
+    <br>
     Further volunteer opportunities with Parks &amp; Countryside can be found here: 
     <a href="https://www.sheffield.gov.uk/parks-sport-recreation/volunteer-with-parks-countryside" target="_blank" rel="noopener noreferrer">
     Volunteer with Parks and Countryside | Sheffield City Council</a>
@@ -4554,6 +4589,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
         </button>
 
   <p>
+    <br>
     More information about litter picking is available here: 
     <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/fly-tipping-litter/organise-litter-picks" target="_blank" rel="noopener noreferrer">
     Organise a community litter pick | Sheffield City Council</a>
@@ -4573,6 +4609,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
         </button>
 
   <p>
+    <br>
     Group, educational, or corporate volunteering enquiries should be directed to <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
     and include the following information:
   </p>
