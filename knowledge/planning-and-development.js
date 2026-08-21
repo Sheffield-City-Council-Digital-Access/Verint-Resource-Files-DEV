@@ -3819,6 +3819,132 @@ const planningProtectedTrees = new ContentPaD(
 
 //#endregion Planning Protected Trees
 
+//#region Property Boundaries
+
+const planningPropertyBoundaries = new ContentPaD(
+  "planningPropertyBoundaries",
+  "Property Boundaries",
+  "Information about property boundaries, land ownership and options for resolving boundary disputes.",
+  `
+  <p>
+    The Council does not determine property ownership or resolve boundary disputes.
+  </p>
+
+  <h3>Boundary Disputes</h3>
+  <p>
+    If you need advice about the location of a property boundary or the ownership of land, you may wish to:
+  </p>
+  <ul>
+    <li>Check the property deeds through HM Land Registry</li>
+    <li>Seek independent legal advice from a solicitor</li>
+    <li>Contact Citizens Advice</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_property_boundaries_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "property boundary",
+      "property boundaries",
+      "boundary dispute",
+      "land boundary",
+      "land ownership",
+      "property deeds",
+      "HM Land Registry",
+      "neighbour boundary dispute",
+      "ownership dispute",
+      "boundary advice",
+      "property boundry",
+      "boundary disupte"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "21/08/2026", name: "Andy Walker" }
+);
+
+//#endregion Property Boundaries
+
+//#region Dropped Kerb
+
+const planningDroppedKerbs = new ContentPaD(
+  "planningDroppedKerbs",
+  "Dropped Kerbs",
+  "Information about when planning permission may be required for a dropped kerb or vehicle access, including classified roads, Conservation Areas and listed structures.",
+  `
+  <p>
+    A dropped kerb may require planning permission in certain circumstances.
+  </p>
+
+  <h3>When Planning Permission May Be Required</h3>
+  <p>
+    Planning permission is normally required if:
+  </p>
+  <ul>
+    <li>The dropped kerb is proposed on a classified road</li>
+    <li>The works affect a listed structure</li>
+    <li>The works involve demolition within a Conservation Area where planning controls apply</li>
+  </ul>
+
+  <h3>Conservation Areas and Listed Buildings</h3>
+  <p>
+    If creating a vehicle access requires the demolition of a wall within a Conservation Area, planning permission may be required depending on the circumstances.
+  </p>
+  <p>
+    If the wall or structure is listed, Listed Building Consent and/or planning permission may also be required.
+  </p>
+
+  <h3>Further Advice</h3>
+  <p>
+    If you are unsure whether planning permission is required for a dropped kerb or vehicle access, you should seek planning advice before undertaking any work.
+  </p>
+  <p>
+    <strong>Find out if you need planning permission:</strong><br>
+    <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/need-planning-permission" target="_blank" rel="noopener noreferrer">
+      Find Out if You Need Planning Permission | Sheffield City Council
+    </a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20out%20if%20you%20need%20planning%20permission\`
+    "
+  >
+    Send link to review further information
+  </button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_dropped_kerbs_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "dropped kerb",
+      "dropped kerbs",
+      "vehicle access",
+      "classified road",
+      "dropped kerb planning permission",
+      "conservation area",
+      "listed building",
+      "listed wall",
+      "demolish a wall",
+      "driveway access",
+      "drop kerb",
+      "dropped curb"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "21/08/2026", name: "Andy Walker" }
+);
+
+//#endregion Dropped Kerb
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -3831,6 +3957,8 @@ const planningAndDevelopment = new ServicePaD(
     planningApplications,
     planningListedBuildings,
     planningProtectedTrees,
+    planningPropertyBoundaries,
+    planningDroppedKerbs,
     
   ]
 );
