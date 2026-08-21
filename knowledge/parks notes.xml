@@ -1,0 +1,277 @@
+Use reference spreadsheet and search for "Information about this topic will be available on the Council Website"
+
+
+
+
+10. TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 10'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_10">Send link 10</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 10') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+
+
+20. TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 20'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_20">Send link 20</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 20') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
+	
+
+
+22.TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 22'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_22">Send link 22</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 22') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
+	
+
+
+36. TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 36'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_36">Send link 36</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 36') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
+
+
+
+37. TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 37'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_37">Send link 37</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 37') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
+
+
+
+47.TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 47'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_47">Send link 47</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 47') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
+
+
+
+48. TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 48'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_48">Send link 48</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 48') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
+
+
+
+50. TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 50'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_50">Send link 50</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 50') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
+
+
+51. TBC
+	                    <!-- ENTER THE SERVICE THE LINK IS FROM -->
+            	<xsl:when test="$service = 'Send link 51'">
+            	    <dfor:field>
+                    	<dfor:name>link</dfor:name>
+                    	<!-- ADD THE HREF URL AND THE DISPLAY NAME -->
+                    	<dfor:value><![CDATA[
+                            <a href="https://www.sheffield.gov.uk/send_link_51">Send link51</a>
+                        ]]></dfor:value>
+                    </dfor:field>
+            	</xsl:when>
+
+
+    if (val === 'Send link 51') {
+        KDF.setVal('le_typekey', 'parks_information_provided');
+    }
+
+	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+    </button>
