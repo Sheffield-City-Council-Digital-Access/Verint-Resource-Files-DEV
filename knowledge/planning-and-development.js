@@ -3792,11 +3792,6 @@ const planningProtectedTrees = new ContentPaD(
       planningdc@sheffield.gov.uk
     </a>
   </p>
-
-  <h3>Quick Summary</h3>
-  <p>
-    Before carrying out work to a tree, check whether it is protected. Permission may be required if the tree is covered by a Tree Preservation Order, located within a Conservation Area or protected by a planning condition.
-  </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
