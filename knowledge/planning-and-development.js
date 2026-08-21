@@ -3651,8 +3651,96 @@ const planningApplications = new MenuPaD(
   ]
 );
 
-
 //#endregion Planning Applications
+
+//#region Planning Listed Buildings
+
+const listedBuildings = new ContentPaD(
+  "listedBuildings",
+  "Listed Buildings",
+  "Information about listed buildings, Listed Building Consent, checking whether a property is listed and obtaining conservation advice.",
+  `
+  <p>
+    Listed buildings are buildings of special architectural or historic interest. If a building is listed, you may need Listed Building Consent before carrying out alterations, extensions, demolition works or other changes that could affect its character.
+  </p>
+  <p>
+    Planning permission and Listed Building Consent are separate requirements and, in some cases, both may be needed.
+  </p>
+
+  <h3>Check if a Building Is Listed</h3>
+  <p>
+    You can search Historic England's register to find out whether a property is listed.
+  </p>
+  <p>
+    <strong>Search Historic England's List:</strong><br>
+    <a href="https://historicengland.org.uk/listing/the-list/" target="_blank" rel="noopener noreferrer">
+      Search the List | Historic England
+    </a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Search%20the%20List%20Historic%20England\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <h3>Further Advice</h3>
+  <p>
+    For advice about listed buildings, Listed Building Consent and conservation matters, contact:
+  </p>
+  <p>
+    <strong>Email:</strong><br>
+    <a href="mailto:conservation@sheffield.gov.uk">
+      conservation@sheffield.gov.uk
+    </a>
+  </p>
+
+  <h3>Quick Summary</h3>
+  <p>
+    Listed Building Consent may be required before carrying out works to a listed building. Check whether the property is listed and seek advice before starting any work.
+  </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_listed_buildings_information_provided" },
+  {
+    type: "Information",
+       keywords: [
+      "listed building",
+      "listed buildings",
+      "Listed Building Consent",
+      "listed building permission",
+      "check if building is listed",
+      "Historic England",
+      "heritage building",
+      "listed building alterations",
+      "listed building extension",
+      "listed building demolition",
+      "conservation advice",
+      "listed bulding"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "21/08/2026", name: "Andy Walker" }
+);
+
+const planningListedBuildings = new MenuPaD(
+  "planningListedBuildings",
+  "Planning Listed Buildings",
+  "Information regarding planning and listed buildings",
+  [
+  planningListedBuildings,
+  ]
+);
+
+//#endregion Planning Listed Buildings
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -3664,5 +3752,7 @@ const planningAndDevelopment = new ServicePaD(
   [
     buildingControl,
     planningApplications,
+    planningListedBuildings,
+    
   ]
 );
