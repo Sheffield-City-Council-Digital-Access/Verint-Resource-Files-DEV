@@ -2091,7 +2091,7 @@ const bookRoomOrParkBuilding = new ContentPSaR(
       <li>Graves Park Animal Farm</li>
     </ul>
 
-  <p>[Insert Send Link] 10</p>
+  <p>Information about this topic will be available on the Council Website</p>
   
   <p>
     The form is available on the website and must be completed by the interested party due to liability issues - 
@@ -2410,7 +2410,7 @@ const activitiesInParks = new ContentPSaR(
 
       <p>
         If a customer notices a dead or fallen tree in a dangerous state, please ask them to notify us using the <strong>‘Report a problem with a street tree’</strong> 
-        form that can be found on the following page:
+        form that can be found here:
         <a href="https://www.sheffield.gov.uk/roads-pavements/street-trees/managing-street-trees" target="_blank" rel="noopener noreferrer">
         Managing and looking after street trees | Sheffield City Council</a>
       </p>
@@ -2732,9 +2732,9 @@ const playgrounds = new ContentPSaR(
 
   <p>
     Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
-    form which can also be found here: [insert link once form live].
+    form.
   </p>
-  <p>[Insert Send Link] 20</p>
+  <p>Information about this topic will be available on the Council Website</p>
   <p>
     Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
     Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
@@ -2813,9 +2813,9 @@ const gravesPark = new ContentPSaR(
         Donations must be agreed by the park manager and delivered to the park; we do not collect donations. Customers should complete the online donation form.
       </p>
       <p>
-        Further details are available on the website here:
+        Further details are available on the website.
       </p>
-      <p>[Insert Send Link] 50</p>
+      <p>Information about this topic will be available on the Council Website</p>
       <p>
         <strong>Can I donate an animal?</strong> No, we don’t take animals as donations and are unable to rescue animals.
       </p>
@@ -2838,7 +2838,7 @@ const gravesPark = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        Events held at the Animal Farm are advertised on <a href="https://www.trybooking.com/uk/book/search" target="_blank" rel="noopener noreferrer">
+        Events held at the Animal Farm are advertised on <a href="https://www.trybooking.com/uk/book/search?keyword=Graves%20Park&location=&date=" target="_blank" rel="noopener noreferrer">
         www.trybooking.co.uk</a> and can be booked through the site. 
         Search for <em>Graves Park Animal Farm</em>.
       </p>
@@ -2866,9 +2866,9 @@ const gravesPark = new ContentPSaR(
         Customers who hire the barn are welcome to bring their own entertainment and decorations. 
       </p>
       <p>
-        To request a booking, the customer should complete the online form <strong>Book a Room/Event/Film/Photoshoot form</strong> available here:{link}. 
+        To request a booking, the customer should complete the online form.
       </p>
-      <p>[Insert Send Link] 22</p>
+      <p>Information about this topic will be available on the Council Website</p>
       <p>
         Once we receive an enquiry, we will contact the customer to discuss availability. 
       </p>
@@ -3368,7 +3368,7 @@ const flyTipping = new ContentPSaR(
   </p>
 
   <p>
-    Fly-tipping can be reported using the <em>'Report fly-tipping'</em> button available here: 
+    Fly-tipping can be reported using the <strong>'Report fly-tipping'</strong> button available here: 
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/report-fly-tipping-public-land" target="_blank" rel="noopener noreferrer">
     Reporting fly-tipping | Sheffield City Council</a>
   </p>
@@ -3455,7 +3455,7 @@ const damageToPavementsAndSurfaces = new ContentPSaR(
     Report a problem with a road or pavement surface</a>.
   </p>
   <p> 
-    Ask customers to click on the relevant link under the <em>'What would you like to report?'</em> section.
+    Ask customers to click on the relevant link under the <strong>'What would you like to report?'</strong> section.
   </p>
 
 	      <button
@@ -3596,7 +3596,7 @@ const litterAndLitterBins = new ContentPSaR(
     are considered based on the condition of the bin.
   </p>
   <p>
-    To report an issue with a litter bin, direct customers to use the online form available here - <em>click on 'Report a problem with a litter bin' </em>
+    To report an issue with a litter bin, direct customers to use the online form available here - ask customers to click on <strong>'Report a problem with a litter bin' </strong>:
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
     target="_blank" rel="noopener noreferrer">Report litter bin</a>.
   </p>
@@ -3683,7 +3683,7 @@ const lostFoundProperty = new ContentPSaR(
   </p>
   
   `,
-  { buttonLabel: "Report lost/found property", formName: "report_lost_prop_parks" },
+  { buttonLabel: "Report lost or found property", formName: "report_lost_prop_parks" },
   { typeKey: "" },
   { typeKey: "parks_information_provided" },
   {
@@ -3806,7 +3806,7 @@ const dogFouling = new ContentPSaR(
   <p>
     To report an issue with dog fouling, please use the online form available here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
     Report dog fouling</a>.
-    <br>Ask customers to click on the <em>'Report dog fouling'</em> button to access the form.
+    <br>Ask customers to click on the <strong>'Report dog fouling'</strong> button to access the form.
   </p>
         <button
             type="button"
@@ -3863,9 +3863,9 @@ const dogBins = new ContentPSaR(
     repairs or replacements are considered based on the condition of the bin.
   </p>
   <p>
-    To report an issue with a dog waste bin, use the online form available here: [link required once live]
+    To report an issue with a dog waste bin, use the online form.
   </p>
-  <p>[Insert Send Link] 36</p>
+  <p>Information about this topic will be available on the Council Website</p>
 
 `,
   { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
@@ -3918,9 +3918,9 @@ const dogCatWasteCommercial = new ContentPSaR(
   </p>
 
   <p>
-    Customers should fill out the request form here: [insert council website link].
+    Customers should fill out the request form online.
   </p>
-  <p>[Insert Send Link] 37</p>
+  <p>Information about this topic will be available on the Council Website</p>
 
   <p>
     The request form includes a link for immediate payment on the request confirmation screen. If a customer reports an issue with payment, it can be made using the following link
@@ -4031,10 +4031,10 @@ const gritSaltCommercial = new ContentPSaR(
   </p>
 
   <p>
-    Further information and a form to make a request are available here:
+    Further information and a form to make a request are available online.
   </p>
 
-  <p>[Insert Send Link] 51</p>
+  <p>Information about this topic will be available on the Council Website</p>
 
   <p>
     The minimum order is 0.5 tonnes, requests for more than10 tonnes require 28 days’ notice.
@@ -4807,9 +4807,9 @@ const memorialsInParks = new ContentPSaR(
   </p>
 
   <p>
-    Applications for a bench can be made by completing the online form here: [not yet published].
+    Applications for a bench can be made by completing the online form.
   </p>
-  <p>[Insert Send Link] 47</p>
+  <p>Information about this topic will be available on the Council Website</p>
   <p>
     Once an application is received it will be reviewed by the Park Area Manager and a site assessment may be undertaken.
   </p>
@@ -4945,7 +4945,7 @@ const donatingToParks = new ContentPSaR(
     Further details can be found below about donation types and how they are used.
   </p>
 
-  <p>[Insert Send Link] 48</p>
+  <p>Information about this topic will be available on the Council Website</p>
 
   <h3>Donating money</h3>
     <p>
