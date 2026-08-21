@@ -3701,11 +3701,6 @@ const planningListedBuildings = new ContentPaD(
       conservation@sheffield.gov.uk
     </a>
   </p>
-
-  <h3>Quick Summary</h3>
-  <p>
-    Listed Building Consent may be required before carrying out works to a listed building. Check whether the property is listed and seek advice before starting any work.
-  </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
