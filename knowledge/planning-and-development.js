@@ -3655,9 +3655,9 @@ const planningApplications = new MenuPaD(
 
 //#region Planning Listed Buildings
 
-const listedBuildings = new ContentPaD(
-  "listedBuildings",
-  "Listed Buildings",
+const planningListedBuildings = new ContentPaD(
+  "planningListedBuildings",
+  "Planning Listed Buildings",
   "Information about listed buildings, Listed Building Consent, checking whether a property is listed and obtaining conservation advice.",
   `
   <p>
@@ -3729,15 +3729,6 @@ const listedBuildings = new ContentPaD(
     categories: ["Planning and Development", "Planning"]
   },
   { date: "21/08/2026", name: "Andy Walker" }
-);
-
-const planningListedBuildings = new MenuPaD(
-  "planningListedBuildings",
-  "Planning Listed Buildings",
-  "Information regarding planning and listed buildings",
-  [
-  planningListedBuildings,
-  ]
 );
 
 //#endregion Planning Listed Buildings
