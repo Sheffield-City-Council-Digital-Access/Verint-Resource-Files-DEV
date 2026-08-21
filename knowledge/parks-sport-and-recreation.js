@@ -3596,9 +3596,10 @@ const litterAndLitterBins = new ContentPSaR(
     are considered based on the condition of the bin.
   </p>
   <p>
-    To report an issue with a litter bin, direct customers to use the online form available here - ask customers to click on <strong>'Report a problem with a litter bin' </strong>:
+    <br>To report an issue with a litter bin, direct customers to use the online form available here:
     <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
     target="_blank" rel="noopener noreferrer">Report litter bin</a>.
+    <br>Ask customers to click on <strong>'Report a problem with a litter bin' </strong>.
   </p>
         <button
             type="button"
