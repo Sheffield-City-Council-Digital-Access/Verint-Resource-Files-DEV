@@ -3733,6 +3733,97 @@ const planningListedBuildings = new ContentPaD(
 
 //#endregion Planning Listed Buildings
 
+//#region Planning Protected Trees
+
+const planningProtectedTrees = new ContentPaD(
+  "planningProtectedTrees",
+  "Protected Trees and Tree Preservation Orders (TPOs)",
+  "Information about protected trees, Tree Preservation Orders, Conservation Areas, tree works and requesting protection for a tree.",
+  `
+  <p>
+    Some trees are protected by a Tree Preservation Order (TPO) or because they are located within a Conservation Area. Permission may be required before carrying out work to a protected tree.
+  </p>
+
+  <h3>Tree Works</h3>
+  <p>
+    If you wish to prune, fell or carry out other work to a tree, you should first check whether it is protected by a TPO, located within a Conservation Area or protected by a planning condition.
+  </p>
+  <p>
+    For guidance and applications relating to protected trees, visit:
+  </p>
+  <p>
+    <strong>Protected Trees:</strong><br>
+    <a href="https://www.sheffield.gov.uk/planning-development/protected-trees" target="_blank" rel="noopener noreferrer">
+      Protected Trees | Sheffield City Council
+    </a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Protected%20Trees\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <h3>Request a Tree Preservation Order</h3>
+  <p>
+    If you believe a tree should be protected, you can request that it is assessed for a Tree Preservation Order.
+  </p>
+  <p>
+    <strong>Email:</strong><br>
+    <a href="mailto:protectedtrees@sheffield.gov.uk">
+      protectedtrees@sheffield.gov.uk
+    </a>
+  </p>
+
+  <h3>Tree Enquiries</h3>
+  <p>
+    All tree-related planning enquiries should be made by email.
+  </p>
+  <p>
+    <strong>Email:</strong><br>
+    <a href="mailto:planningdc@sheffield.gov.uk">
+      planningdc@sheffield.gov.uk
+    </a>
+  </p>
+
+  <h3>Quick Summary</h3>
+  <p>
+    Before carrying out work to a tree, check whether it is protected. Permission may be required if the tree is covered by a Tree Preservation Order, located within a Conservation Area or protected by a planning condition.
+  </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_protected_trees_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "protected trees",
+      "Tree Preservation Order",
+      "TPO",
+      "tree works",
+      "prune a tree",
+      "fell a tree",
+      "protected tree application",
+      "tree in a conservation area",
+      "tree planning condition",
+      "request a TPO",
+      "protectedtrees",
+      "tree preservaton order"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "21/08/2026", name: "Andy Walker" }
+);
+
+//#endregion Planning Protected Trees
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -3744,6 +3835,7 @@ const planningAndDevelopment = new ServicePaD(
     buildingControl,
     planningApplications,
     planningListedBuildings,
+    planningProtectedTrees,
     
   ]
 );
