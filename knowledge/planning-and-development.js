@@ -2393,7 +2393,7 @@ const disabilityAccessPlanningGuidance = new ContentPaD(
     Advice on inclusive design, disability access standards and specialist disability organisations is available from the Access Officer.
   </p>
   <p>
-    <strong>Email:</strong> <a href="mailto:planningdc@sheffield.gov.uk"> planningdc@sheffield.gov.uk</a>
+    <strong>Email: </strong> <a href="mailto:planningdc@sheffield.gov.uk"> planningdc@sheffield.gov.uk</a>
   </p>
   <h3>Key Information for Call Centre Staff</h3>
   <ul>
@@ -2513,7 +2513,7 @@ const findAPropertysPlanningHistory = new ContentPaD(
         If you know the planning application number, you can request access to archived files by contacting the Planning Service.
       </p>
       <p>
-        <strong>Email:</strong><a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a>
+        <strong>Email: </strong><a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a>
       </p>
     </div>
   </details>
@@ -3635,7 +3635,7 @@ const searchViewAndCommentOnPlanningApps = new ContentPaD(
         For copies of notices or further information, contact:
       </p>
       <p>
-        <strong>Email:</strong> <a href="mailto:planningdc@sheffield.gov.uk"> planningdc@sheffield.gov.uk</a>
+        <strong>Email: </strong> <a href="mailto:planningdc@sheffield.gov.uk"> planningdc@sheffield.gov.uk</a>
       </p>
     </div>
   </details>
@@ -3891,7 +3891,7 @@ const planningProtectedTrees = new ContentPaD(
     All tree-related planning enquiries should be made by email.
   </p>
   <p>
-    <strong>Email:</strong><a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a>
+    <strong>Email: </strong><a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a>
   </p>
   `,
   { buttonLabel: "", formName: "" },
