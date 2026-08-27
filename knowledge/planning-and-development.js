@@ -1066,7 +1066,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
         </button>
 
       <p>
-        If the app cannot be used, customers can contact the Building Control team directly on 0114 2734168 <a href="tel:0114 2734168">0114 2734168</a> 
+        If the app cannot be used, customers can contact the Building Control team directly on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734168')">0114 2734168</a>
       </p>
       <p>
         <em>Please note: The same information required for the app will still be needed.</em>
