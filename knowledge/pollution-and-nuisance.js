@@ -62,6 +62,9 @@ const badgerProtection = new ContentPaN(
   "Learn about the legal protections for badgers under the Protection of Badgers Act 1992 and the penalties for violating these laws.",
   `
     <p>
+      SCC do not provide services for badgers. Badgers are protected wildlife. 
+    </p>
+    <p>
       The Protection of Badgers Act 1992 makes it illegal for any person to kill,
       injure or take a Badger. It is also an offence to cruelly ill-treat a badger,
       to dig for or to snare a badger.
@@ -81,7 +84,7 @@ const badgerProtection = new ContentPaN(
       offender from owning a dog.
     </p>
     <p>
-      For more information, please visit: <a href="https://www.badgertrust.org.uk/" target="_blank">http://https://www.badgertrust.org.uk/</a>.
+      For more information, please visit: <a href="https://www.badgertrust.org.uk/" target="_blank"rel="noopener noreferrer">http://https://www.badgertrust.org.uk/</a>.
       <br>
  <button
         type="button"
@@ -97,7 +100,7 @@ const badgerProtection = new ContentPaN(
       </button>
     </p>
     <p>
-      You can also visit the government website at: <a href="https://www.gov.uk/guidance/badgers-protection-surveys-and-licences" target="_blank">https://www.gov.uk/guidance/badgers-protection-surveys-and-licences</a>.
+      You can also visit the government website at: <a href="https://www.gov.uk/guidance/badgers-protection-surveys-and-licences" target="_blank"rel="noopener noreferrer">https://www.gov.uk/guidance/badgers-protection-surveys-and-licences</a>.
       <br>
  <button
         type="button"
@@ -116,7 +119,7 @@ const badgerProtection = new ContentPaN(
       or
       <br>
       <br>
-      RPSCA information site at: <a href="https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law" target="_blank">https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law</a>.
+      RPSCA information site at: <a href="https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law" target="_blank"rel="noopener noreferrer">https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law</a>.
       <br>
  <button
         type="button"
@@ -173,7 +176,7 @@ const batProtectionBritain = new ContentPaN(
       <li>Intentionally or recklessly obstruct access to a bat roost </li>
     </ul>
     <p>
-      For more information, please visit <a href="https://www.bats.org.uk">https://www.bats.org.uk</a>. 
+      For more information, please visit <a href="https://www.bats.org.uk" target="_blank" rel="noopener noreferrer">https://www.bats.org.uk</a>. 
       <br>
 
        <button
@@ -190,6 +193,17 @@ const batProtectionBritain = new ContentPaN(
       </button>
 
     </p>
+
+    <p>
+      If a caller is concerned about a bat roost, advise them to contact the national bat helpline in the first instance for advice <strong>0345 1300 228</strong>. 
+      They may be able to offer advice if a caller needs to carry out works, are considering pest control, or are in any way concerned about the bats.
+    </p> 
+    <p>
+      Additional information regarding bats and contruction and development work can be found at <a href="https://www.gov.uk/guidance/bats-protection-surveys-and-licences" target="_blank" rel="noopener noreferrer">
+      Bats: protection and licences - GOV.UK</a> 
+    </p>
+
+    <p>[Insert Send Link]</p>
   `,
   {
     buttonLabel: "",
@@ -209,7 +223,7 @@ const batProtectionBritain = new ContentPaN(
       "Law",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/08/2026", name: "Liz Taster" }
 );
 
 const bedBugTreatment = new ContentPaN(
@@ -217,6 +231,7 @@ const bedBugTreatment = new ContentPaN(
   "Bed Bug Treatment",
   "Find out how to report and submit a bed bug sample for treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties.",
   `
+
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
@@ -354,7 +369,13 @@ const birdsandPigeonsTreatment = new ContentPaN(
       for further investigation.
       </p>
     </section>
-  `,
+  
+  <p>
+    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks SCC do not disturb/remove the nest. 
+    Ask the caller to get back in touch in the Autumn out of birds nesting season. 
+  </p>
+  
+    `,
   {
     buttonLabel: "",
     formName: "",
@@ -493,9 +514,11 @@ const bumbleBeesTreatment = new ContentPaN(
     </p>
     <p>Many plants would struggle to reproduce if it were not for the bees.
        Bees are on the decline, since the 1950’s many have had their populations halved.
+       They are endangered and generally not aggressive. They appear spring and will leave the nest around end of June.
     </p>
     <p>
-    Sheffield City Council will only undertake a treatment if the bees are a danger to human health.
+    Sheffield City Council will only undertake a treatment if the bees are a danger to human health. Under certain circumstances we can relocate nests, 
+    for example in a cupboard for electric/gas. 
     </p>
     <h3>Cost for Treatment</h3>
     <p>
@@ -1112,6 +1135,11 @@ const fleasTreatment = new ContentPaN(
     </ul>
   </div>
 </details>
+
+<h3>Additional Information</h3>
+<p>
+  Advise customer to have their pets treated at the vets just before SCC attend to spray.  
+</p>
   `,
   {
     buttonLabel: "Book treatment for Fleas",
@@ -1188,6 +1216,16 @@ const fliesTreatment = new ContentPaN(
       All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+
+    <p>
+      <strong>Drain flies</strong> - once identified SCC can treat drain flies, their presence indicate a plumbing issue and this needs resolving 
+      <em>before</em> booking the treatment.
+    </p>
+
+    <p>
+      <strong>Fruit flies</strong> - we do not usually treat for fruit flies, if confirmed that’s what they are. 
+      Advise the customer to dispose old of fruit and food from the area. 
+    </p>
   `,
   {
     buttonLabel: "Book treatment for Flies",
@@ -1215,7 +1253,7 @@ const foxesInformation = new ContentPaN(
   `
    <p>Sheffield City Council doesn't offer a service for foxes.</p>
     <p>For advice/information on foxes, please visit 
-    <a href="http://foxproject.org.uk" target="_blank">http://foxproject.org.uk</a>.
+    <a href="http://foxproject.org.uk" target="_blank" rel="noopener noreferrer">http://foxproject.org.uk</a>.
     <br>
  <button
         type="button"
@@ -1262,7 +1300,7 @@ const FrogsorFrogspawn = new ContentPaN(
       <br>
       For advice/information on Frogs or Frogspawn, please call DEFRA who are licenced to remove 
       frogs or frog spawn on <a href="tel:0113 2613333">0113 2613333</a> or visit:
-      <a href="https://www.gov.uk/browse/environment-countryside" target="_blank">https://www.gov.uk/browse/environment-countryside</a>.
+      <a href="https://www.gov.uk/browse/environment-countryside" target="_blank" rel="noopener noreferrer">https://www.gov.uk/browse/environment-countryside</a>.
       <br>
 
  <button
@@ -1390,6 +1428,9 @@ const gardenAntsTreatment = new ContentPaN(
       your enquiry to receive a quote.
     </p>
     <p>
+      We treat around entry points, doors, windows and vents. We do not treat further than one flag away from the property and we treat internally.
+    </p>
+    <p>
       If you receive one of the following benefits, the treatment cost will be
       reduced to <strong>£61.20:</strong>
     </p>
@@ -1432,7 +1473,7 @@ const honeyBeeTreatment = new ContentPaN(
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         Bee keepers may be able to collect Honey Bees, although they are under no obligation to collect the swarm
-        You can access information on the Sheffield Beekeepers Association at: <a href="https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/" target="_blank">https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/</a>
+        You can access information on the Sheffield Beekeepers Association at: <a href="https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/" target="_blank" rel="noopener noreferrer">https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/</a>
         <br>
         
     <button
@@ -1639,6 +1680,11 @@ const ladyBirdsTreatment = new ContentPaN(
       All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+
+    <p>
+      Recommend to the custoemr that once the ladybirds have been removed to thoroughly clean the area. 
+      This removes pheromones that attract the ladybirds in large numbers, preventing their return. 
+    </p>
   `,
   {
     buttonLabel: "Book treatment for Lady Birds",
@@ -1665,9 +1711,20 @@ const masonryBeesTreatment = new ContentPaN(
   "Details about masonry bee treatment, including costs, benefits-related discounts, and charges for additional nests or treatment of nests located at height.",
   `
   <h3>Masonry Bees</h3>
-  <p>Bees are not treated as pests in the traditional sense and should be relocated, not exterminated.
-  Sheffield City Council pest control service promotes this through legal adherence, professional partnerships, 
-  and prioritizing ethical environmental practices.</p> 
+  <p>
+    Bees are not treated as pests in the traditional sense and should be relocated, not exterminated.
+    Sheffield City Council pest control service promotes this through legal adherence, professional partnerships, 
+    and prioritizing ethical environmental practices.
+  </p> 
+
+  <p>
+    The masonry bee is often the first to appear in early spring. The queen looks for damaged brickwork/pointing or other gaps and lays approx. 400 eggs. 
+    <br> When the warm sunlight falls on the wall the bees start to hatch. This can take around a month for them to disperse. They do not return. 
+  </p>
+  <p>
+    Where a customer has had masonry bees that cannot/will not be treated, advise them to wait until bees have dispersed and then have repairs done to brickwork to prevent this recuring.
+  </p>
+  
     
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1686,7 +1743,9 @@ const masonryBeesTreatment = new ContentPaN(
 
     <h3> Treatment Cost</h3>
 
-    <p>The treatment cost is £79.20.</p>
+    <p>
+      The treatment cost is £79.20.
+    </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
       reduced to <strong>£61.20:</strong>
@@ -1706,14 +1765,14 @@ const masonryBeesTreatment = new ContentPaN(
       If the customer has paid in advance then a partial refund maybe issued i.e. Full fee minus call-out charge.
     </p>
 
-    </p>
+    
     <h3>Nests Up High</h3>
     <p>
-    Officers carry equipment that enables them to treat a nest located at height.<br>
-    In most cases the officer will be able to carry out a successful treatment using such equipment.<br>
-    If any further access equipment is required to treat the nest our officer will inform you of this at the time of the visit. 
-    If further access equipment is required, then it would possibly mean an added cost.<br>
-    If your customer is unsure about the possible additional cost, escalate the pest control enquiry and an officer will contact the customer about it.
+      Officers carry equipment that enables them to treat a nest located at height.<br>
+      In most cases the officer will be able to carry out a successful treatment using such equipment.<br>
+      If any further access equipment is required to treat the nest our officer will inform you of this at the time of the visit. 
+      If further access equipment is required, then it would possibly mean an added cost.<br>
+      If your customer is unsure about the possible additional cost, escalate the pest control enquiry and an officer will contact the customer about it.
     </p>
   `,
   {
@@ -1732,7 +1791,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "18/09/2025", name: "Shaz Athar" }
+  { date: "11/11/2025", name: "Liz Taster" }
 );
 
 const miceTreatment = new ContentPaN(
@@ -2151,7 +2210,11 @@ const ratTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      Free treatments, there is no call out charge if the Technician is unable to gain access.
+      Free treatments - there is no call out charge if the Technician is unable to gain access.
+    </p>
+    <p>
+      Please ntoe - If the tenant is hearing noises in loft ask if this is just in the daytime or at night. 
+      Rats tend to explore at night, noises in the loft only in the day could mean a squirrel issue. 
     </p>
         
     <details class="accordion">
@@ -2320,6 +2383,10 @@ const redSpiderMitesTreatment = new ContentPaN(
   "Red Spider Mites Treatment",
   "Information about Red Spider Mites treatment, including sample requirements, treatment costs, reduced prices for benefits recipients, and call-out fees.",
   `
+  <p>
+    Red spider mites do not bite humans and carry no known diseases however; they can cause skin irritation. 
+    We can offer a treatment for these where we would spray around the windows and doors with insecticide.
+  </p>
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
@@ -2616,11 +2683,14 @@ const squirrelsTreatment = new ContentPaN(
   "Squirrels Treatment",
   "Details on Squirrel treatment, including costs, discounted rates for benefits recipients, and the included call-out fee.",
   `
-    <p>
+  <p>
+    If the tenant can hear noises in the loft, ask if this is in the daytime or nighttime. Squirrels tend to sleep at night so noises at night are more likely to be a rat issue.
+  </p>
+  <p>
     For advice on squirrel treatments, please contact the pest control back office at:
     <a href="tel:01142930356">0114 293 0356</a> 
     or email: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>
-    </p>
+  </p>
   `,
   {
     buttonLabel: "",
@@ -2685,6 +2755,14 @@ const waspsTreatment = new ContentPaN(
     <li>Once the nest is dead no wasps will use the nest again; we do not remove dead nests.</li>
     <li>If the treatment on the original nest is unsuccessful, we can arrange a re-visit at no additional cost. The original treatment must have taken place within 2 weeks.</li>
   </ul>
+
+  <h3>Wasps on other land</h3>
+  <p>
+    If a member of public complains about a wasp nest on private land, there is no enforcement action can be taken to force them to resolve and get treated. 
+  </p>
+  <p>
+    If the wasp nest is on Council land then it needs reporting to the relevant service, Housing, Schools, PFM etc. 
+  </p>
 
   `,
   {
