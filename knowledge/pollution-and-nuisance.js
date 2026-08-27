@@ -115,7 +115,6 @@ const badgerProtection = new ContentPaN(
         Send link to review further information
       </button>
       <br>
-      <br>
       or
       <br>
       <br>
@@ -371,8 +370,8 @@ const birdsandPigeonsTreatment = new ContentPaN(
     </section>
   
   <p>
-    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks SCC do not disturb/remove the nest. 
-    Ask the caller to get back in touch in the Autumn out of birds nesting season. 
+    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks SCC will not disturb/remove the nest. 
+    Ask the caller to get back in touch in the Autumn out of the birds nesting season. 
   </p>
   
     `,
@@ -1138,7 +1137,7 @@ const fleasTreatment = new ContentPaN(
 
 <h3>Additional Information</h3>
 <p>
-  Advise customer to have their pets treated at the vets just before SCC attend to spray.  
+  If booking a treatment, advise the customer to have their pets treated at the vets just before SCC attend to spray.  
 </p>
   `,
   {
@@ -1423,13 +1422,14 @@ const gardenAntsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
+      We treat around entry points, doors, windows and vents. We do not treat further than one flag away from the property and we treat internally.
+    </p>
+    <p>
       The treatment cost for Garden Ants is <strong>£79.20.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
-    <p>
-      We treat around entry points, doors, windows and vents. We do not treat further than one flag away from the property and we treat internally.
-    </p>
+
     <p>
       If you receive one of the following benefits, the treatment cost will be
       reduced to <strong>£61.20:</strong>
@@ -1682,7 +1682,7 @@ const ladyBirdsTreatment = new ContentPaN(
     </p>
 
     <p>
-      Recommend to the custoemr that once the ladybirds have been removed to thoroughly clean the area. 
+      Recommend to the customer that once the ladybirds have been removed to thoroughly clean the area. 
       This removes pheromones that attract the ladybirds in large numbers, preventing their return. 
     </p>
   `,
@@ -2190,6 +2190,10 @@ const ratTreatment = new ContentPaN(
   "Rat Treatment",
   "Information on rat treatment, including costs, free treatment for certain benefits, communal area handling, and commercial property inquiries.",
   `
+    <p>
+      Please note - If the tenant is hearing noises in loft ask if this is just in the daytime or at night. 
+      Rats tend to explore at night, noises in the loft only in the day could mean a squirrel issue. 
+    </p>
     <h3>Cost for Treatment</h3>
     <p>
       The treatment cost for Rats is <strong>£124.80.</strong> This covers you for up to 3 visits.
@@ -2212,10 +2216,7 @@ const ratTreatment = new ContentPaN(
     <p>
       Free treatments - there is no call out charge if the Technician is unable to gain access.
     </p>
-    <p>
-      Please ntoe - If the tenant is hearing noises in loft ask if this is just in the daytime or at night. 
-      Rats tend to explore at night, noises in the loft only in the day could mean a squirrel issue. 
-    </p>
+
         
     <details class="accordion">
       <summary class="accordion-header">
