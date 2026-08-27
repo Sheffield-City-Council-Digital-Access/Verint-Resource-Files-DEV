@@ -56,124 +56,6 @@ class FormPaD extends CorePaD {
 
 //#region Building Control
 
-
-const giveNoticeToDemolishABuilding = new ContentPaD(
-  "giveNoticeToDemolishABuilding",
-  "Give Notice to Demolish a Building",
-  "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
-  `  
-    <p>
-      Customers planning to demolish a buildings over 50 cubic metres in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
-    </p>
-    <p>
-      The notice allows the council to assess the proposal, provide guidance on safety requirements, and coordinate with relevant parties where needed.
-    </p>
- 
-  <h3>What the Customer Needs to Do</h3>
-    <p>Customers intending to carry out demolition work must:</p>
-      <ul>
-        <li>Complete a <strong>“Notice of Intention to Demolish a Building” form</strong></li>
-        <li><strong>Submit</strong> the completed form to Building Control</li>
-        <li>Provide a <strong>site location plan</strong></li>
-      </ul>
-    <p>
-      The form can be returned by email, post or in person.
-    </p>
-    <p>
-      For full details and access to the form, see:
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/demolish-building" target="_blank" rel="noopener noreferrer">Apply to demolish a building | Sheffield City Council</a>
-    </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20to%20demolish%20a%20building\`
-            "
-        >
-            Send link to review further information
-        </button>
- 
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens Next</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Once the notice has been submitted the council will issue a <strong>Counter Notice (DEM 2 form)</strong>. 
-        This sets out conditions to help manage <strong>health and safety requirements</strong> during demolition.
-      </p>
-      <p>Building Control may:</p>
-        <ul>
-          <li>Carry out inspections where necessary</li>
-          <li>Continue inspections during and after demolition if required</li>
-          <li>Consult and coordinate with relevant organisations as appropriate</li>
-        </ul>
-    
-      <p>Building Control will also confirm if the building is:</p>
-        <ul>
-          <li>Within a <strong>Conservation Area</strong></li>
-          <li>A <strong>Listed Building</strong></li>
-          <li>Affecting a <strong>Listed Building</strong></li>
-        </ul>
-    
-      <p><strong>Inspections</strong> may take place:</p>
-        <ul>
-          <li>Before demolition (if required)</li>
-          <li>During demolition</li>
-          <li>After demolition</li>
-        </ul>
-      <p>
-        All inspections are carried out in line with current Building Control policy and procedures.
-      </p>
-      <p>
-        Building Control can also provide a <strong>Construction Design Management Principal Designer service</strong> for further assistance with demolition projects.
-      </p>
-    </div>
-  </details>
- 
-  <h3>Key Points for Call Centre Staff</h3>
-    <ul>
-      <li>Customers <strong>must notify the council before demolition begins</strong></li>
-      <li>A <strong>form</strong> and <strong>site location plan</strong> must be submitted</li>
-      <li>The council will issue a <strong>Counter Notice with conditions</strong></li>
-      <li>Additional checks may apply for <strong>listed buildings or conservation areas</strong></li>
-      <li>Inspections may be carried out at different stages of the work</li>
-    </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "demolition",
-      "demolish",
-      "building",
-      "notice",
-      "building control",
-      "form",
-      "DEM 2",
-      "inspection",
-      "inspections",
-      "notify",
-      "demoliton",
-      "demoltion",
-      "demolishin"
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "09/07/2026", name: "Liz Taster" }
-);
- 
-
-
-
 const applyForABuildingNotice = new ContentPaD(
   "applyForABuildingNotice",
   "Apply for a Building Notice",
@@ -324,184 +206,6 @@ const applyForABuildingNotice = new ContentPaD(
       "bilding",
       "notise",
       "bild",
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "10/07/2026", name: "Liz Taster" }
-);
-
-
-const fullPlansBuildingApplication = new ContentPaD(
-  "fullPlansBuildingApplication",
-  "Full Plans Building Application",
-  "Information about Full Plans Building Applications - including when they are needed and how to apply.",
-  `
-    <p>
-      A Full Plans Building Application is used to have detailed building proposals checked and approved before construction work begins. 
-      It ensures that plans comply with relevant Building Regulations and helps reduce the risk of issues, delays, or costly changes during construction.
-    </p>
-    <p>
-      This type of application is commonly submitted by an architect or principal designer on behalf of the customer.
-    </p>
-    <p>
-      For more information can be found here: 
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/full-plans" target="_blank" rel="noopener noreferrer">
-      Full Plans Application – Sheffield City Council</a>
-    </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Full%20Plans%20Application\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>When to Use a Full Plans Application</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Customers should choose a Full Plans Application when they want their building plans formally checked by a Registered Building Inspector (RBI) before starting work.
-      </p>
-      <p>It can be used for a wide range of building work, including:</p>
-        <ul>
-          <li>Erecting a new building</li>
-          <li>Extending an existing building</li>
-          <li>Structural alterations</li>
-          <li>Loft conversions</li>
-          <li>Changing the use of a building</li>
-          <li>Installing services or fittings (e.g. central heating)</li>
-          <li>Building larger conservatories</li>
-        </ul>
-      <p>
-        This route is particularly useful where certainty and compliance are important before work starts.
-      </p>
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What the Customer Needs to Provide</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        To submit a Full Plans Application, customers must provide detailed information about the proposed work. 
-        This includes:
-      </p>
-        <ul>
-          <li>Completed Full Plans application form</li>
-          <li>Block plan (typically at 1:1250 scale) showing the site and boundaries</li>
-          <li>Existing plans</li>
-          <li>Proposed plans</li>
-          <li>Construction specifications (may be included within plans)</li>
-          <li>Structural calculations</li>
-          <li>Drainage details or plans showing any changes or building over drains</li>
-        </ul>
-      <p>
-        <em>Please note: Incomplete submissions may delay the validation process.</em>
-      </p>
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Customers can submit a Full Plans Application in two ways:</p>
-        <ul>
-          <li><strong>Online via the Planning Portal</strong> - The council encourages use of the Planning Portal as it is quick and fully digital.</li>
-          <li><strong>Directly to Sheffield City Council</strong> - Available for customers unable to use the Planning Portal</li>
-        </ul>
-      <p>
-        <em>Please note: Any service charge added by the Planning Portal is deducted so the total cost remains the same</em>
-      </p>
-    </div>
-  </details>
-
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens After Submission</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The application is reviewed by a Registered Building Inspector (RBI).
-      </p>
-      <p>The RBI will either:</p>
-        <ul>
-          <li><strong>Approve the plans</strong>, or</li>
-          <li><strong>Request amendments</strong> if needed to meet regulations</li>
-        </ul>
-      <p>
-        If information is missing, the customer will be contacted before the application can be validated.
-      </p>
-      <p>
-        Once validated, an acknowledgement is sent to confirm the application has been accepted.
-      </p>
-    </div>
-  </details>
-
-  <h3>Key Points for Call Centre Staff</h3>
-    <ul>
-      <li>A Full Plans Application is the <strong>most thorough building control route</strong></li>
-      <li>It involves submitting <strong>detailed plans</strong> for approval <strong>before starting work</strong></li>
-      <li>It is recommended where customers want certainty and compliance upfront</li>
-      <li>This type of application is commonly submitted by an architect or principal designer on behalf of the customer.</li>
-      <li>Customers can apply online via the Planning Portal or directly with the council</li>
-      <li>Missing information is a common cause of delays — <em>encourage customers to include all required information when submitting applications</em></li>
-    </ul>
-    
-    `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "full plans building application",
-      "building control application",
-      "full plans application",
-      "full plans",
-      "building regulations",
-      "building",
-      "build",
-      "construction approval",
-      "apply building plans",
-      "construction",
-      "planning portal",
-      "home improvements",
-      "loft conversions",
-      "structural alterations",
-      "block plan",
-      "drainage plans",
-      "extensions",
-      "compliance",
-      "regulations",
-      "completion",
-      "certificate",
-      "application",
-      "bulding",
-      "buildng",
-      "bilding",
-      "notise",
-      "bild",
-      "fullplans",
-      "full plan",
-      "planing portal",
     ],
     categories: ["Planning and Development", "Building Control"]
   },
@@ -695,264 +399,6 @@ const applyForARegularisationCertificate = new ContentPaD(
   },
   { date: "10/07/2026", name: "Liz Taster" }
 );
-
-const requestACompletionCertificate = new ContentPaD(
-  "requestACompletionCertificate",
-  "Request a Completion Certificate",
-  "Guidance on how to request a completion certificate for building work.",
-  `
-    <p>
-      A <strong>completion certificate</strong> is issued at the end of a building project to confirm that the <strong>work complies with Building Regulations</strong>. 
-    </p>
-    <p>
-      It is provided by Building Control after all required checks and inspections are successfully completed.
-    </p>
-    <p>
-      This document is <strong>important and should be kept safe</strong>, as it may be required when selling a property or requested by mortgage lenders or insurers.
-    </p>
-    <p>
-      Further information and the application form can be found here: 
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/completion"target="_blank" rel="noopener noreferrer">
-      Completion certificates | Sheffield City Council</a>
-    </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Completion%20certificates\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        To request a completion certificate, a <strong>Regulation 16 (4) Notice of Completion form</strong> must be completed and submitted to Building Control.
-      </p>
-      <p>
-        This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.
-      </p>
-      <p>The form must be completed by all relevant duty holders:</p>
-        <ul>
-          <li>The client</li>
-          <li>The principal designer</li>
-          <li>The principal contractor</li>
-        </ul>
-      <p>
-        The Notice of Completion form is usually issued as part of the original application acknowledgement, but it can also be downloaded.
-      </p>
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How the Request is Processed</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <ul>
-        <li>The completed Notice of Completion form is submitted to Building Control.</li>
-        <li>The council reviews the form to ensure all required information is provided.</li>
-        <li>A <strong>completion inspection</strong> is arranged.</li>
-        <li>If the inspection is satisfactory, or once any outstanding issues are resolved, a completion certificate is issued.</li>
-      </ul>
-      <p>
-        This marks the formal completion of the Building Control process.
-      </p>
-    </div>
-  </details>
-
-  
-  <h3>Key points for Call Handlers</h3>
-  <ul>
-    <li>The <strong>Notice of Completion form</strong> must be completed by all relevant parties and submitted to Building Control.</li>
-    <li>This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.</li>
-    <li>A <strong>completion inspection</strong> must take place before a certificate can be issued.</li>
-    <li>The certificate confirms the work <strong>meets legal Building Regulation standards</strong>.</li>
-    <li>Once received, the Completion Certificate document should be kept safe.</li>
-  </ul>
-  
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Request",
-    keywords: [
-      "completion",
-      "certificate",
-      "certificates",
-      "cert",
-      "inspection",
-      "building",
-      "control",
-      "regulations",
-      "notice of completion",
-      "request",
-      "apply",
-      "construction",
-      "building project",
-      "complition",
-      "comletion",
-      "completion cert",
-      "completetion"
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "10/07/2026", name: "Liz Taster" }
-);
-
-
-const reportingDangerousStructures = new ContentPaD(
-  "reportingDangerousStructures",
-  "Reporting Dangerous Structures",
-  "Information on how residents can report a dangerous structure if a building or structure appears to pose a risk to people, property, or the surrounding area.",
-  `
-  <section class="alert-panel" role="alert" aria-label="Alert panel">
-    <h3>Emergency Situations</h3>
-      <p>
-        If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to <strong>call 999 immediately</strong>.
-      </p>
-  </section>
-  
-  <p>
-    Residents can report a dangerous structure to Sheffield City Council if a building or structure appears to pose a <strong>risk to people, property, or the surrounding area</strong>.
-  </p>
-  <p>
-    A dangerous structure may be publicly or privately owned and includes anything that could become unsafe or unstable.
-  </p>
-  <p>
-    Full details and a link to the report form can be found here: 
-    <a href="https://www.sheffield.gov.uk/planning-development/building-regulations/report-dangerous-structure" target="_blank" rel="noopener noreferrer">
-    Report a dangerous structure | Sheffield City Council</a>
-  </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20dangerous%20structure\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Report</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Reports are submitted online via the council’s website.
-      </p>
-      <p>
-        Reporters should be encouraged to include photographs wherever possible.
-      </p>
-      <p>
-        The enquiry will then be directed to the appropriate team for investigation.
-      </p>
-      <p>
-        Once the report is received, the council will assess the report and an inspection may be carried out.
-        <br>Appropriate action will be taken to remove or reduce the danger
-      </p>
-    </div>
-  </details>
-  
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What <strong>Can</strong> be Reported</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A report should be made when a structure could present a hazard to the public or nearby property. 
-        <br>Examples include:
-      </p>
-        <ul>
-          <li>Damaged or leaning walls, particularly where the public can access them</li>
-          <li>Walls over 1.5 metres high or retaining walls above 1.5 metres</li>
-          <li>Loose slates, tiles, gutters, or building materials</li>
-          <li>Broken glass or window frames</li>
-          <li>Damaged or unstable chimneys or chimney stacks</li>
-          <li>Falling debris from a building or structure</li>
-          <li>Buildings showing signs of possible collapse</li>
-          <li>Fire-damaged buildings</li>
-          <li>Vacant or accessible buildings posing a danger</li>
-          <li>Weakened or undermined structures</li>
-          <li>Trees posing a specific or imminent danger</li>
-        </ul>
-    </div>
-  </details>
-
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>What <strong>Cannot</strong> be Reported</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Some issues are not handled through the dangerous structures service. These include:</p>
-        <ul>
-          <li>Timber fences or domestic sheds</li>
-          <li>Debris contained within a private enclosed area</li>
-          <li>Walls in private rear gardens under 1.5 metres high</li>
-          <li>Hanging cables (<em>report to the relevant utility provider</em>)</li>
-          <li>Highway-related hazards such as trip hazards or inspection covers (<em>report to Amey</em>)</li>
-          <li>Boundary disputes or encroachments</li>
-          <li>Unsafe working practices (<em>report to the Health and Safety Executive</em>)</li>
-          <li>General tree issues such as overgrowth or roots causing damage</li>
-          <li>Bus shelters</li>
-        </ul>
-    </div>
-  </details>
-
-`,
-  { buttonLabel: "Report a Dangerous Structure", formName: "dangerous_structures" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Report",
-    keywords: [
-      "dangerous",
-      "structure",
-      "report",
-      "structures",
-      "unsafe",
-      "building",
-      "hazard",
-      "collapse",
-      "damage",
-      "damaged",
-      "falling",
-      "debris",
-      "unsafe",
-      "issue",
-      "dangeruos",
-      "dangrous",
-      "structre",
-      "stucture",
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "10/07/2026", name: "Liz Taster" }
-);
-
 
 const bookingBuildingSiteInspections = new ContentPaD(
   "bookingBuildingSiteInspections",
@@ -1172,6 +618,448 @@ const bookingBuildingSiteInspections = new ContentPaD(
   { date: "10/07/2026", name: "Liz Taster" }
 );
 
+const buildingControlExplained = new ContentPaD(
+  "buildingControlExplained",
+  "Building Control Explained",
+  "Information explaining the purpose of Building Control, when approval may be needed, and links to related Building Control services and guidance.",
+  `
+  <p>
+    Building Control helps make sure that building work meets the requirements of Building Regulations. 
+    It applies to a wide range of construction, alteration and improvement works and is intended to ensure that buildings are safe, 
+    accessible and compliant with current standards.
+  </p>
+
+<h3>What Building Control Does</h3>
+  <p>
+    Building Control oversees building work and checks that it complies with Building Regulations. 
+    This includes reviewing applications, carrying out inspections during construction, and confirming compliance when work is completed.
+  </p>
+
+<h3>Why Building Control Is Important</h3>
+  <p>
+    Building Regulations are designed to ensure that buildings are constructed and altered safely. 
+    Building Control provides checks throughout the construction process to help confirm that work meets the required standards.
+  </p>
+
+<h3>When You May Need Building Control</h3>
+  <p>
+    You may need Building Control approval before carrying out certain types of building work. Sheffield City Council provides guidance on:
+  </p>
+    <ul>
+      <li>Making a building control application – see <strong>Apply for a Building Notice</strong> and <strong>Full Plans Building Application</strong> articles</li>
+      <li>Understanding which works require an application – see <strong>Works That Require a Building Control Application</strong> and <strong>Apply for a Regularisation Certificate</strong> articles</li>
+      <li>Booking site inspections – see <strong>Booking Building Site Inspections</strong> article</li>
+      <li>Obtaining completion certification – see <strong>Request a Completion Certificate</strong> article</li>
+      <li>Reporting unauthorised building works – see <strong>Report Unauthorised Building Works</strong> article</li>
+      <li>Reporting dangerous structures – see <strong>Reporting Dangerous Structures</strong> article</li>
+    </ul>
+
+<h3>Further Information</h3>
+  <p>
+    For further explanation of building control, please direct customers to 
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control/building-control-explained" target="_blank" rel="noopener noreferrer">
+    Building control explained | Sheffield City Council</a>.
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Control%20Explained\`
+      "
+    >
+      Send link to review further information
+    </button>
+
+  <p>
+    Or direct customers to the main building control website: 
+    <a href="https://www.sheffield.gov.uk/planning-development/building-control" target="_blank" rel="noopener noreferrer">
+    Building Control | Sheffield City Council</a>.
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Control\`
+      "
+    >
+      Send link to review further information
+    </button>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Building",
+      "control",
+      "Regulations",
+      "regulation",
+      "construction",
+      "alteration",
+      "works",
+      "application",
+      "applications",
+      "Notice",
+      "compliance",
+      "inspection",
+      "inspections",
+      "planning",
+      "development",
+      "approval",
+      "buildng",
+      "bulding",
+      "controll",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const fullPlansBuildingApplication = new ContentPaD(
+  "fullPlansBuildingApplication",
+  "Full Plans Building Application",
+  "Information about Full Plans Building Applications - including when they are needed and how to apply.",
+  `
+    <p>
+      A Full Plans Building Application is used to have detailed building proposals checked and approved before construction work begins. 
+      It ensures that plans comply with relevant Building Regulations and helps reduce the risk of issues, delays, or costly changes during construction.
+    </p>
+    <p>
+      This type of application is commonly submitted by an architect or principal designer on behalf of the customer.
+    </p>
+    <p>
+      For more information can be found here: 
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/full-plans" target="_blank" rel="noopener noreferrer">
+      Full Plans Application – Sheffield City Council</a>
+    </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Full%20Plans%20Application\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When to Use a Full Plans Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers should choose a Full Plans Application when they want their building plans formally checked by a Registered Building Inspector (RBI) before starting work.
+      </p>
+      <p>It can be used for a wide range of building work, including:</p>
+        <ul>
+          <li>Erecting a new building</li>
+          <li>Extending an existing building</li>
+          <li>Structural alterations</li>
+          <li>Loft conversions</li>
+          <li>Changing the use of a building</li>
+          <li>Installing services or fittings (e.g. central heating)</li>
+          <li>Building larger conservatories</li>
+        </ul>
+      <p>
+        This route is particularly useful where certainty and compliance are important before work starts.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the Customer Needs to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To submit a Full Plans Application, customers must provide detailed information about the proposed work. 
+        This includes:
+      </p>
+        <ul>
+          <li>Completed Full Plans application form</li>
+          <li>Block plan (typically at 1:1250 scale) showing the site and boundaries</li>
+          <li>Existing plans</li>
+          <li>Proposed plans</li>
+          <li>Construction specifications (may be included within plans)</li>
+          <li>Structural calculations</li>
+          <li>Drainage details or plans showing any changes or building over drains</li>
+        </ul>
+      <p>
+        <em>Please note: Incomplete submissions may delay the validation process.</em>
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers can submit a Full Plans Application in two ways:</p>
+        <ul>
+          <li><strong>Online via the Planning Portal</strong> - The council encourages use of the Planning Portal as it is quick and fully digital.</li>
+          <li><strong>Directly to Sheffield City Council</strong> - Available for customers unable to use the Planning Portal</li>
+        </ul>
+      <p>
+        <em>Please note: Any service charge added by the Planning Portal is deducted so the total cost remains the same</em>
+      </p>
+    </div>
+  </details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Submission</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application is reviewed by a Registered Building Inspector (RBI).
+      </p>
+      <p>The RBI will either:</p>
+        <ul>
+          <li><strong>Approve the plans</strong>, or</li>
+          <li><strong>Request amendments</strong> if needed to meet regulations</li>
+        </ul>
+      <p>
+        If information is missing, the customer will be contacted before the application can be validated.
+      </p>
+      <p>
+        Once validated, an acknowledgement is sent to confirm the application has been accepted.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Points for Call Centre Staff</h3>
+    <ul>
+      <li>A Full Plans Application is the <strong>most thorough building control route</strong></li>
+      <li>It involves submitting <strong>detailed plans</strong> for approval <strong>before starting work</strong></li>
+      <li>It is recommended where customers want certainty and compliance upfront</li>
+      <li>This type of application is commonly submitted by an architect or principal designer on behalf of the customer.</li>
+      <li>Customers can apply online via the Planning Portal or directly with the council</li>
+      <li>Missing information is a common cause of delays — <em>encourage customers to include all required information when submitting applications</em></li>
+    </ul>
+    
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "full plans building application",
+      "building control application",
+      "full plans application",
+      "full plans",
+      "building regulations",
+      "building",
+      "build",
+      "construction approval",
+      "apply building plans",
+      "construction",
+      "planning portal",
+      "home improvements",
+      "loft conversions",
+      "structural alterations",
+      "block plan",
+      "drainage plans",
+      "extensions",
+      "compliance",
+      "regulations",
+      "completion",
+      "certificate",
+      "application",
+      "bulding",
+      "buildng",
+      "bilding",
+      "notise",
+      "bild",
+      "fullplans",
+      "full plan",
+      "planing portal",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
+
+const giveNoticeToDemolishABuilding = new ContentPaD(
+  "giveNoticeToDemolishABuilding",
+  "Give Notice to Demolish a Building",
+  "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
+  `  
+    <p>
+      Customers planning to demolish a buildings over 50 cubic metres in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
+    </p>
+    <p>
+      The notice allows the council to assess the proposal, provide guidance on safety requirements, and coordinate with relevant parties where needed.
+    </p>
+ 
+  <h3>What the Customer Needs to Do</h3>
+    <p>Customers intending to carry out demolition work must:</p>
+      <ul>
+        <li>Complete a <strong>“Notice of Intention to Demolish a Building” form</strong></li>
+        <li><strong>Submit</strong> the completed form to Building Control</li>
+        <li>Provide a <strong>site location plan</strong></li>
+      </ul>
+    <p>
+      The form can be returned by email, post or in person.
+    </p>
+    <p>
+      For full details and access to the form, see:
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/demolish-building" target="_blank" rel="noopener noreferrer">Apply to demolish a building | Sheffield City Council</a>
+    </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20to%20demolish%20a%20building\`
+            "
+        >
+            Send link to review further information
+        </button>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once the notice has been submitted the council will issue a <strong>Counter Notice (DEM 2 form)</strong>. 
+        This sets out conditions to help manage <strong>health and safety requirements</strong> during demolition.
+      </p>
+      <p>Building Control may:</p>
+        <ul>
+          <li>Carry out inspections where necessary</li>
+          <li>Continue inspections during and after demolition if required</li>
+          <li>Consult and coordinate with relevant organisations as appropriate</li>
+        </ul>
+    
+      <p>Building Control will also confirm if the building is:</p>
+        <ul>
+          <li>Within a <strong>Conservation Area</strong></li>
+          <li>A <strong>Listed Building</strong></li>
+          <li>Affecting a <strong>Listed Building</strong></li>
+        </ul>
+    
+      <p><strong>Inspections</strong> may take place:</p>
+        <ul>
+          <li>Before demolition (if required)</li>
+          <li>During demolition</li>
+          <li>After demolition</li>
+        </ul>
+      <p>
+        All inspections are carried out in line with current Building Control policy and procedures.
+      </p>
+      <p>
+        Building Control can also provide a <strong>Construction Design Management Principal Designer service</strong> for further assistance with demolition projects.
+      </p>
+    </div>
+  </details>
+ 
+  <h3>Key Points for Call Centre Staff</h3>
+    <ul>
+      <li>Customers <strong>must notify the council before demolition begins</strong></li>
+      <li>A <strong>form</strong> and <strong>site location plan</strong> must be submitted</li>
+      <li>The council will issue a <strong>Counter Notice with conditions</strong></li>
+      <li>Additional checks may apply for <strong>listed buildings or conservation areas</strong></li>
+      <li>Inspections may be carried out at different stages of the work</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "demolition",
+      "demolish",
+      "building",
+      "notice",
+      "building control",
+      "form",
+      "DEM 2",
+      "inspection",
+      "inspections",
+      "notify",
+      "demoliton",
+      "demoltion",
+      "demolishin"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "09/07/2026", name: "Liz Taster" }
+);
+ 
+const localActsSYMiscellaneousProvisions = new ContentPaD(
+  "localActsSYMiscellaneousProvisions",
+  "Local Acts: South Yorkshire Act, Miscellaneous Provisions Act",
+  "Information about works overseen by Building Control and the Dangerous Structures team that may be controlled under other legislation.",
+  `
+  <p>
+    Some work overseen by Building Control and the Dangerous Structures team falls outside the Building Regulations. 
+    These works may instead be controlled under other legislation, including the South Yorkshire Act 1980 and Local Government (Miscellaneous Provisions) Act 1982.
+  </p>
+  <p>
+    If you a customer thinks their project may be covered by these laws, our technical team can provide advice and guidance.
+  </p>
+`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Local Acts",
+      "South Yorkshire Act",
+      "Miscellaneous Provisions Act",
+      "Building Control",
+      "legislation",
+      "construction",
+      "building works",
+      "misc provisions act",
+      "Building",
+      "Controls",
+      "Control",
+      "South Yorkshre Act",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
 
 const localLandCharges = new ContentPaD(
   "localLandCharges",
@@ -1311,6 +1199,387 @@ const localLandCharges = new ContentPaD(
   { date: "15/07/2026", name: "Liz Taster" }
 );
 
+const partnerAuthoritySchemeApplications = new ContentPaD(
+  "partnerAuthoritySchemeApplications",
+  "Partner Authority Scheme Applications",
+  "Details of the LABC Partner Authority scheme.",
+  `
+  <p>
+    The Local Authority Building Control (LABC) <strong>partner authority scheme</strong> is shared by all local authority building control 
+    teams in England and Wales. 
+  </p>
+
+  <p>
+    A company can choose to work with any local authority building control surveyor to undertake all pre-application and design 
+    work, regardless of the project's geographical location.
+  </p>
+
+  <p>
+    Architect companies interested in joining this scheme should review the details and complete the application to become a partner on the LABC website.
+  <p/>
+
+  <p>
+    Full details can be found here: 
+    <a href="https://www.labc.co.uk/about/how-labc-supports-your-authority/partner-authority-scheme-pas" target="_blank" rel="noopener noreferrer">
+    Partner Authority Scheme | LABC</a>
+  </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=LABC%20Partner%20Authority%20Scheme\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "LABC",
+      "PAS",
+      "partner",
+      "scheme",
+      "local",
+      "authority",
+      "parner",
+      "partnr",
+      "prtner",
+      "skeem",
+      "sceme",
+      "skeme",
+      "authorty",
+      "authrity",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "16/07/2026", name: "Liz Taster" }
+);
+
+const reportUnauthorisedBuildingWorks = new ContentPaD(
+  "reportUnauthorisedBuildingWorks",
+  "Report unauthorised building works",
+  "Information about reporting unauthorised building works, dangerous structures, and retrospective approval through regularisation.",
+  `
+  <p>
+    Any work carried out without the correct building control application is classed as unauthorised works.
+  </p>
+
+  <p>
+    If a customer suspects unauthorised works are taking place they can contact us. If it is relevant to building control, we have a duty to investigate it where appropriate.
+  </p>
+
+<h3>Dangerous structures</h3>
+  <p>
+    If they think that the works are dangerous or present a danger to life, then they may be classed as a dangerous structure.
+  </p>
+  <p> 
+    Please consult the knowledge tile <strong>Reporting Dangerous Structures</strong> for further information.
+  <p>
+
+<h3>Retrospective approval</h3>
+  <p>
+    Works which were unauthorised and have been completed will need to get retrospective approval, also known as regularisation.
+  </p>
+  <p> 
+    Please consult the knowledge tile <strong>Apply for a Regularisation Certificate</strong> for further information.
+  <p>
+`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "report",
+      "unauthorised",
+      "building",
+      "works",
+      "work",
+      "unauthorized",
+      "dangerous",
+      "structures",
+      "structure",
+      "unsafe",
+      "building",
+      "retrospective",
+      "approval",
+      "regularisation",
+      "regularization",
+      "construction",
+      "unauthrised",
+      "bilding",
+      "buildng",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "20/08/2026", name: "Liz Taster" }
+);
+
+const reportingDangerousStructures = new ContentPaD(
+  "reportingDangerousStructures",
+  "Reporting Dangerous Structures",
+  "Information on how residents can report a dangerous structure if a building or structure appears to pose a risk to people, property, or the surrounding area.",
+  `
+  <section class="alert-panel" role="alert" aria-label="Alert panel">
+    <h3>Emergency Situations</h3>
+      <p>
+        If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to <strong>call 999 immediately</strong>.
+      </p>
+  </section>
+  
+  <p>
+    Residents can report a dangerous structure to Sheffield City Council if a building or structure appears to pose a <strong>risk to people, property, or the surrounding area</strong>.
+  </p>
+  <p>
+    A dangerous structure may be publicly or privately owned and includes anything that could become unsafe or unstable.
+  </p>
+  <p>
+    Full details and a link to the report form can be found here: 
+    <a href="https://www.sheffield.gov.uk/planning-development/building-regulations/report-dangerous-structure" target="_blank" rel="noopener noreferrer">
+    Report a dangerous structure | Sheffield City Council</a>
+  </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20dangerous%20structure\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Report</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Reports are submitted online via the council’s website.
+      </p>
+      <p>
+        Reporters should be encouraged to include photographs wherever possible.
+      </p>
+      <p>
+        The enquiry will then be directed to the appropriate team for investigation.
+      </p>
+      <p>
+        Once the report is received, the council will assess the report and an inspection may be carried out.
+        <br>Appropriate action will be taken to remove or reduce the danger
+      </p>
+    </div>
+  </details>
+  
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What <strong>Can</strong> be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A report should be made when a structure could present a hazard to the public or nearby property. 
+        <br>Examples include:
+      </p>
+        <ul>
+          <li>Damaged or leaning walls, particularly where the public can access them</li>
+          <li>Walls over 1.5 metres high or retaining walls above 1.5 metres</li>
+          <li>Loose slates, tiles, gutters, or building materials</li>
+          <li>Broken glass or window frames</li>
+          <li>Damaged or unstable chimneys or chimney stacks</li>
+          <li>Falling debris from a building or structure</li>
+          <li>Buildings showing signs of possible collapse</li>
+          <li>Fire-damaged buildings</li>
+          <li>Vacant or accessible buildings posing a danger</li>
+          <li>Weakened or undermined structures</li>
+          <li>Trees posing a specific or imminent danger</li>
+        </ul>
+    </div>
+  </details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>What <strong>Cannot</strong> be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Some issues are not handled through the dangerous structures service. These include:</p>
+        <ul>
+          <li>Timber fences or domestic sheds</li>
+          <li>Debris contained within a private enclosed area</li>
+          <li>Walls in private rear gardens under 1.5 metres high</li>
+          <li>Hanging cables (<em>report to the relevant utility provider</em>)</li>
+          <li>Highway-related hazards such as trip hazards or inspection covers (<em>report to Amey</em>)</li>
+          <li>Boundary disputes or encroachments</li>
+          <li>Unsafe working practices (<em>report to the Health and Safety Executive</em>)</li>
+          <li>General tree issues such as overgrowth or roots causing damage</li>
+          <li>Bus shelters</li>
+        </ul>
+    </div>
+  </details>
+
+`,
+  { buttonLabel: "Report a Dangerous Structure", formName: "dangerous_structures" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "dangerous",
+      "structure",
+      "report",
+      "structures",
+      "unsafe",
+      "building",
+      "hazard",
+      "collapse",
+      "damage",
+      "damaged",
+      "falling",
+      "debris",
+      "unsafe",
+      "issue",
+      "dangeruos",
+      "dangrous",
+      "structre",
+      "stucture",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
+const requestACompletionCertificate = new ContentPaD(
+  "requestACompletionCertificate",
+  "Request a Completion Certificate",
+  "Guidance on how to request a completion certificate for building work.",
+  `
+    <p>
+      A <strong>completion certificate</strong> is issued at the end of a building project to confirm that the <strong>work complies with Building Regulations</strong>. 
+    </p>
+    <p>
+      It is provided by Building Control after all required checks and inspections are successfully completed.
+    </p>
+    <p>
+      This document is <strong>important and should be kept safe</strong>, as it may be required when selling a property or requested by mortgage lenders or insurers.
+    </p>
+    <p>
+      Further information and the application form can be found here: 
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/completion"target="_blank" rel="noopener noreferrer">
+      Completion certificates | Sheffield City Council</a>
+    </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Completion%20certificates\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To request a completion certificate, a <strong>Regulation 16 (4) Notice of Completion form</strong> must be completed and submitted to Building Control.
+      </p>
+      <p>
+        This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.
+      </p>
+      <p>The form must be completed by all relevant duty holders:</p>
+        <ul>
+          <li>The client</li>
+          <li>The principal designer</li>
+          <li>The principal contractor</li>
+        </ul>
+      <p>
+        The Notice of Completion form is usually issued as part of the original application acknowledgement, but it can also be downloaded.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How the Request is Processed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>The completed Notice of Completion form is submitted to Building Control.</li>
+        <li>The council reviews the form to ensure all required information is provided.</li>
+        <li>A <strong>completion inspection</strong> is arranged.</li>
+        <li>If the inspection is satisfactory, or once any outstanding issues are resolved, a completion certificate is issued.</li>
+      </ul>
+      <p>
+        This marks the formal completion of the Building Control process.
+      </p>
+    </div>
+  </details>
+
+  
+  <h3>Key points for Call Handlers</h3>
+  <ul>
+    <li>The <strong>Notice of Completion form</strong> must be completed by all relevant parties and submitted to Building Control.</li>
+    <li>This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.</li>
+    <li>A <strong>completion inspection</strong> must take place before a certificate can be issued.</li>
+    <li>The certificate confirms the work <strong>meets legal Building Regulation standards</strong>.</li>
+    <li>Once received, the Completion Certificate document should be kept safe.</li>
+  </ul>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "completion",
+      "certificate",
+      "certificates",
+      "cert",
+      "inspection",
+      "building",
+      "control",
+      "regulations",
+      "notice of completion",
+      "request",
+      "apply",
+      "construction",
+      "building project",
+      "complition",
+      "comletion",
+      "completion cert",
+      "completetion"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
 const workingWithAnRBCA = new ContentPaD(
   "workingWithAnRBCA",
   "Working with a Registered Building Control Approver",
@@ -1410,74 +1679,6 @@ const workingWithAnRBCA = new ContentPaD(
       "reverion",
       "rversion",
       "revrsion",
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "16/07/2026", name: "Liz Taster" }
-);
-
-
-
-
-const partnerAuthoritySchemeApplications = new ContentPaD(
-  "partnerAuthoritySchemeApplications",
-  "Partner Authority Scheme Applications",
-  "Details of the LABC Partner Authority scheme.",
-  `
-  <p>
-    The Local Authority Building Control (LABC) <strong>partner authority scheme</strong> is shared by all local authority building control 
-    teams in England and Wales. 
-  </p>
-
-  <p>
-    A company can choose to work with any local authority building control surveyor to undertake all pre-application and design 
-    work, regardless of the project's geographical location.
-  </p>
-
-  <p>
-    Architect companies interested in joining this scheme should review the details and complete the application to become a partner on the LABC website.
-  <p/>
-
-  <p>
-    Full details can be found here: 
-    <a href="https://www.labc.co.uk/about/how-labc-supports-your-authority/partner-authority-scheme-pas" target="_blank" rel="noopener noreferrer">
-    Partner Authority Scheme | LABC</a>
-  </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=LABC%20Partner%20Authority%20Scheme\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-    `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "LABC",
-      "PAS",
-      "partner",
-      "scheme",
-      "local",
-      "authority",
-      "parner",
-      "partnr",
-      "prtner",
-      "skeem",
-      "sceme",
-      "skeme",
-      "authorty",
-      "authrity",
     ],
     categories: ["Planning and Development", "Building Control"]
   },
@@ -1602,215 +1803,9 @@ const worksThatRequireABuildingControlApplication = new ContentPaD(
   }
 );
 
-const buildingControlExplained = new ContentPaD(
-  "buildingControlExplained",
-  "Building Control Explained",
-  "Information explaining the purpose of Building Control, when approval may be needed, and links to related Building Control services and guidance.",
-  `
-  <p>
-    Building Control helps make sure that building work meets the requirements of Building Regulations. 
-    It applies to a wide range of construction, alteration and improvement works and is intended to ensure that buildings are safe, 
-    accessible and compliant with current standards.
-  </p>
 
-<h3>What Building Control Does</h3>
-  <p>
-    Building Control oversees building work and checks that it complies with Building Regulations. 
-    This includes reviewing applications, carrying out inspections during construction, and confirming compliance when work is completed.
-  </p>
 
-<h3>Why Building Control Is Important</h3>
-  <p>
-    Building Regulations are designed to ensure that buildings are constructed and altered safely. 
-    Building Control provides checks throughout the construction process to help confirm that work meets the required standards.
-  </p>
 
-<h3>When You May Need Building Control</h3>
-  <p>
-    You may need Building Control approval before carrying out certain types of building work. Sheffield City Council provides guidance on:
-  </p>
-    <ul>
-      <li>Making a building control application – see <strong>Apply for a Building Notice</strong> and <strong>Full Plans Building Application</strong> articles</li>
-      <li>Understanding which works require an application – see <strong>Works That Require a Building Control Application</strong> and <strong>Apply for a Regularisation Certificate</strong> articles</li>
-      <li>Booking site inspections – see <strong>Booking Building Site Inspections</strong> article</li>
-      <li>Obtaining completion certification – see <strong>Request a Completion Certificate</strong> article</li>
-      <li>Reporting unauthorised building works – see <strong>Report Unauthorised Building Works</strong> article</li>
-      <li>Reporting dangerous structures – see <strong>Reporting Dangerous Structures</strong> article</li>
-    </ul>
-
-<h3>Further Information</h3>
-  <p>
-    For further explanation of building control, please direct customers to 
-    <a href="https://www.sheffield.gov.uk/planning-development/building-control/building-control-explained" target="_blank" rel="noopener noreferrer">
-    Building control explained | Sheffield City Council</a>.
-  </p>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information send link"
-      onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Control%20Explained\`
-      "
-    >
-      Send link to review further information
-    </button>
-
-  <p>
-    Or direct customers to the main building control website: 
-    <a href="https://www.sheffield.gov.uk/planning-development/building-control" target="_blank" rel="noopener noreferrer">
-    Building Control | Sheffield City Council</a>.
-  </p>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information send link"
-      onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Control\`
-      "
-    >
-      Send link to review further information
-    </button>
-  
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Building",
-      "control",
-      "Regulations",
-      "regulation",
-      "construction",
-      "alteration",
-      "works",
-      "application",
-      "applications",
-      "Notice",
-      "compliance",
-      "inspection",
-      "inspections",
-      "planning",
-      "development",
-      "approval",
-      "buildng",
-      "bulding",
-      "controll",
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  {
-    date: "20/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const localActsSYMiscellaneousProvisions = new ContentPaD(
-  "localActsSYMiscellaneousProvisions",
-  "Local Acts: South Yorkshire Act, Miscellaneous Provisions Act",
-  "Information about works overseen by Building Control and the Dangerous Structures team that may be controlled under other legislation.",
-  `
-  <p>
-    Some work overseen by Building Control and the Dangerous Structures team falls outside the Building Regulations. 
-    These works may instead be controlled under other legislation, including the South Yorkshire Act 1980 and Local Government (Miscellaneous Provisions) Act 1982.
-  </p>
-  <p>
-    If you a customer thinks their project may be covered by these laws, our technical team can provide advice and guidance.
-  </p>
-`,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Local Acts",
-      "South Yorkshire Act",
-      "Miscellaneous Provisions Act",
-      "Building Control",
-      "legislation",
-      "construction",
-      "building works",
-      "misc provisions act",
-      "Building",
-      "Controls",
-      "Control",
-      "South Yorkshre Act",
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  {
-    date: "20/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const reportUnauthorisedBuildingWorks = new ContentPaD(
-  "reportUnauthorisedBuildingWorks",
-  "Report unauthorised building works",
-  "Information about reporting unauthorised building works, dangerous structures, and retrospective approval through regularisation.",
-  `
-  <p>
-    Any work carried out without the correct building control application is classed as unauthorised works.
-  </p>
-
-  <p>
-    If a customer suspects unauthorised works are taking place they can contact us. If it is relevant to building control, we have a duty to investigate it where appropriate.
-  </p>
-
-<h3>Dangerous structures</h3>
-  <p>
-    If they think that the works are dangerous or present a danger to life, then they may be classed as a dangerous structure.
-  </p>
-  <p> 
-    Please consult the knowledge tile <strong>Reporting Dangerous Structures</strong> for further information.
-  <p>
-
-<h3>Retrospective approval</h3>
-  <p>
-    Works which were unauthorised and have been completed will need to get retrospective approval, also known as regularisation.
-  </p>
-  <p> 
-    Please consult the knowledge tile <strong>Apply for a Regularisation Certificate</strong> for further information.
-  <p>
-`,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "report",
-      "unauthorised",
-      "building",
-      "works",
-      "work",
-      "unauthorized",
-      "dangerous",
-      "structures",
-      "structure",
-      "unsafe",
-      "building",
-      "retrospective",
-      "approval",
-      "regularisation",
-      "regularization",
-      "construction",
-      "unauthrised",
-      "bilding",
-      "buildng",
-    ],
-    categories: ["Planning and Development", "Building Control"]
-  },
-  { date: "20/08/2026", name: "Liz Taster" }
-);
 
 
 const buildingControl = new MenuPaD(
@@ -1818,377 +1813,103 @@ const buildingControl = new MenuPaD(
   "Building Control",
   "Information regarding building control",
   [
-    giveNoticeToDemolishABuilding,
     applyForABuildingNotice,
-    fullPlansBuildingApplication,
     applyForARegularisationCertificate,
-    requestACompletionCertificate,
-    reportingDangerousStructures,
     bookingBuildingSiteInspections,
-    localLandCharges,
-    workingWithAnRBCA,
-    partnerAuthoritySchemeApplications,
-    worksThatRequireABuildingControlApplication,
     buildingControlExplained,
+    fullPlansBuildingApplication,
+    giveNoticeToDemolishABuilding,
     localActsSYMiscellaneousProvisions,
-    reportUnauthorisedBuildingWorks
+    localLandCharges,
+    partnerAuthoritySchemeApplications,
+    reportUnauthorisedBuildingWorks,
+    reportingDangerousStructures,
+    requestACompletionCertificate,
+    workingWithAnRBCA,
+    worksThatRequireABuildingControlApplication
   ]
 );
 
 //#endregion Building Control
 
-//#region Planning Applications
+//#region Dropped Kerb
 
-const reportingAPlanningEnforcementIssue = new ContentPaD(
-  "reportingAPlanningEnforcementIssue",
-  "Reporting a Planning Enforcement Issue",
-  "Information about reporting a planning enforcement issue, including what can and cannot be reported.",
+const planningDroppedKerbs = new ContentPaD(
+  "planningDroppedKerbs",
+  "Dropped Kerbs (Planning and Development)",
+  "Information about when planning permission may be required for a dropped kerb or vehicle access, including classified roads, Conservation Areas and listed structures.",
   `
   <p>
-    Residents can report a planning enforcement issue to the council if they believe development has taken place without planning permission 
-    or is not in line with the permission granted.
+    A dropped kerb may require planning permission in certain circumstances.
+  </p>
+
+  <h3>When Planning Permission May Be Required</h3>
+  <p>
+    Planning permission is normally required if:
+  </p>
+  <ul>
+    <li>The dropped kerb is proposed on a classified road</li>
+    <li>The works affect a listed structure</li>
+    <li>The works involve demolition within a Conservation Area where planning controls apply</li>
+  </ul>
+
+  <h3>Conservation Areas and Listed Buildings</h3>
+  <p>
+    If creating a vehicle access requires the demolition of a wall within a Conservation Area, planning permission may be required depending on the circumstances.
   </p>
   <p>
-    Planning enforcement allows the council to investigate potential breaches of planning control and decide if action is required.
+    If the wall or structure is listed, Listed Building Consent and/or planning permission may also be required.
+  </p>
+
+  <h3>Further Advice</h3>
+  <p>
+    If you are unsure whether planning permission is required for a dropped kerb or vehicle access, you should seek planning advice before undertaking any work.
   </p>
   <p>
-    Further details about planning enforcement, including a link to the form to report an issue can be found here: 
-    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank" rel="noopener noreferrer">
-    Reporting a planning enforcement issue | Sheffield City Council</a>
+    <strong>Find out if you need planning permission:</strong><br>
+    <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/need-planning-permission" target="_blank" rel="noopener noreferrer">
+      Find Out if You Need Planning Permission | Sheffield City Council
+    </a>
   </p>
 
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Report an Issue</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        <strong>Before reporting</strong>, residents are advised to check if the development already has planning permission before making a report.
-      </p>
-      <p>
-        Reports can be submitted using the council’s online reporting form. This can be found at 
-        <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank" rel="noopener noreferrer">
-        Reporting a planning enforcement issue | Sheffield City Council</a>
-      </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-      <p>Residents should report if they believe:</p>
-        <ul>
-          <li>Development has taken place without permission</li>
-          <li>A development is not complying with its approved plans or conditions</li>
-        </ul>
-
-      <p>
-        Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
-        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank" rel="noopener noreferrer">
-        Search, view and comment on planning applications | Sheffield City Council</a>
-      </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Search%20view%20and%20comment%20on%20planning%20applications\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Can Be Reported</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>The council can investigate the following types of issues:</p>
-        <ul>
-          <li>Development carried out without planning permission</li>
-          <li>Development that differs from approved planning permission</li>
-          <li>Breaches of planning conditions</li>
-          <li>Unauthorised advertisements</li>
-          <li>Unauthorised works to a listed building</li>
-          <li>Unauthorised works to protected trees</li>
-          <li>Unauthorised works in conservation areas or protected areas (such as greenbelt)</li>
-          <li>Unauthorised changes of use</li>
-          <li>Untidy land</li>
-        </ul>
-    </div>
-  </details>
-  
-  
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Cannot Be Reported</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Some issues are not planning enforcement matters and cannot be investigated:</p>
-        <ul>
-          <li>Non-material planning considerations – loss of property value, damage to private property, loss of view;</li>
-          <li>Private disputes or interests – boundary or land ownership disputes, internal alterations to houses (unless listed), security lights on houses, high hedges, business competition concerns;</li>
-          <li>Issues covered by other legislation – noise complaints, improper use of highways, building safety or dangerous structures, blocked rights of way, health and safety or site security issues</li>
-        </ul>
-      <p>
-        More detail on what can and cannot be investigated is available in the Local Enforcement Plan, available here: 
-        <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank" rel="noopener noreferrer">
-        Sheffield Local Enforcement Plan</a>
-      </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Local%20Enforcement%20Plan\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-    </div>
-  </details>
-
-
-
-  <h3>Key Information for Call Centre Staff</h3>
-    <p>When handling enquiries:</p>
-      <ul>
-        <li>Confirm whether the issue relates to a potential breach of planning control.</li>
-        <li>Check the issue is within planning enforcement scope.</li>
-        <li>Advise the resident to check if planning permission exists.</li>
-        <li>Direct the resident to the online reporting form if appropriate.</li>
-        <li>If the issue falls outside planning enforcement, signpost to the relevant service where applicable.</li>
-      </ul>
-    
-    `,
-  { buttonLabel: "Report a Planning Issue", formName: "report_planning_issue" },
-  { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
-  {
-    type: "Report",
-    keywords: [
-      "planning",
-      "enforcement",
-      "report",
-      "planning",
-      "issue",
-      "breach",
-      "control",
-      "unauthorised",
-      "development",
-      "works",
-      "permission",
-      "enforcement",
-      "notice",
-      "applications",
-      "developement",
-      "planing",
-      "enforcment",
-      "enforcemnt",
-      "developement"
-    ],
-    categories: ["Planning and Development", "Planning"]
-  },
-  { date: "09/07/2026", name: "Liz Taster" }
-);
-
-const historicalPlanningRequests = new ContentPaD(
-  "historicalPlanningRequests",
-  "Historical Planning Application Requests",
-  "Guidance on how customers can request and access planning history information, including service details, charges, requirements, and processes.",
-  `
-  <p>
-    Customers may request information about the planning history of a property or site. 
-    Multiple options are available depending on the type of search, the time period required, and the level of detail needed.
-  </p>
-  <p>
-    For full details, refer customers to: 
-    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank" rel="noopener noreferrer">
-    Find a property's planning history | Sheffield City Council</a>
-  </p>
-
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20property%20planning%20history\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Planning History Requests</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <h4>Service Details</h4>
-        <ul>
-          <li>The service provides planning histories and enforcement case information.</li>
-          <li>Standard coverage is from <strong>2001 to the present date</strong>.</li>
-          <li>Requests can be extended back to <strong>1975</strong> for an additional charge.</li>
-        </ul>
-
-      <h4>Charges</h4>
-        <ul>
-          <li>£25 for a <strong>domestic, straightforward postal address search</strong> (including VAT).</li>
-          <li>£50 for a <strong>commercial search</strong> (including VAT).</li>
-          <li>More complex searches may incur <strong>higher charges by arrangement</strong>.</li>
-        </ul>
-
-      <h4>Requirements to Submit a Request</h4>
-        <ul>
-          <li>A covering letter</li>
-          <li>A <strong>1:1250 location plan</strong></li>
-          <li>Payment for the relevant fee</li>
-        </ul>
-
-      <h4>Processing Time</h4>
-        <p>
-          Searches are typically completed within <strong>5 working days after payment is received</strong>.
-        </p>
-    </div>
-  </details>  
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Complex or Specialist Searches</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Complex searches attract additional charges and are handled by the <strong>Records and Enquiries Team</strong>.
-      </p>
-      <p>
-        Customers should be directed to this team for detailed or unusual requests.
-      </p>
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Viewing Historical Planning Files</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Historical applications from <strong>1998 to 2003</strong> are available on a public computer at First Point, Howden House.
-      </p>
-
-      <h4>In-Person Viewing</h4>
-        <p>
-          In-person viewing is available for <strong>straightforward numbered properties (1975–2005)</strong>.
-        </p>
-        <p>Customers must:</p>
-          <ul>
-            <li>Complete a request form</li>
-            <li>Provide application numbers</li>
-            <li>Email it to the planning service at <a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a></li>
-            <li>Files can only be viewed after <strong>authorisation by senior managers</strong>.</li>
-          </ul>
-
-      <h4>Assistance and Support</h4>
-        <ul>
-          <li>Up to <strong>10 minutes of help is provided free of charge</strong>.</li>
-          <li>Additional assistance must be <strong>paid for in advance</strong>.</li>
-        </ul>
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Property Purchases</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Customers purchasing a property may require a <strong>comprehensive search or an expedited search</strong>. 
-        These enquiries should be referred to the <strong>Local Land Charges team</strong>. 
-      </p>
-      <p>
-        Please refer to the Local Land Charges knowledge article.
-      </p>
-    </div>
-  </details>
-
-
-  <h3>Key Points for Call Centre Staff</h3>
-    <ul>
-      <li>Confirm what time period the customer needs before advising on the correct route.</li>
-      <li>Check whether the customer requires a <strong>simple search, complex search, or in-person file viewing</strong>.</li>
-      <li>Inform customers about <strong>required documents and fees</strong> before submitting a request.</li>
-      <li>Direct complex queries and specialist requests to the <strong>Records and Enquiries Team</strong>.</li>
-      <li>Refer property purchase-related enquiries to the <strong>Local Land Charges team</strong>.</li>
-    </ul>
-    
-    `,
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20out%20if%20you%20need%20planning%20permission\`
+    "
+  >
+    Send link to review further information
+  </button>
+  `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
+  { typeKey: "planning_dropped_kerbs_information_provided" },
   {
     type: "Information",
     keywords: [
-      "planning",
-      "history",
-      "requests",
-      "historical",
-      "application",
-      "property",
-      "complex planning search",
-      "planning files",
-      "in person viewing",
-      "planing",
-      "historial",
-      "plannng"
+      "dropped kerb",
+      "dropped kerbs",
+      "vehicle access",
+      "classified road",
+      "dropped kerb planning permission",
+      "conservation area",
+      "listed building",
+      "listed wall",
+      "demolish a wall",
+      "driveway access",
+      "drop kerb",
+      "dropped curb"
     ],
     categories: ["Planning and Development", "Planning"]
   },
-  { date: "16/07/2026", name: "Liz Taster" }
+  { date: "21/08/2026", name: "Andy Walker" }
 );
+
+//#endregion Dropped Kerb
 
 //#region Planning Applications
 
@@ -2642,6 +2363,213 @@ const applyForPreApplicationAdvice = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const disabilityAccessPlanningGuidance = new ContentPaD(
+  "disabilityAccessPlanningGuidance",
+  "Disability Access Planning Guidance",
+  "Information about accessibility and inclusive design advice for planning applications, Building Regulations and licensed premises.",
+  `
+  <p>
+    The Council's Access Officer provides advice on physical access and inclusive design to help ensure developments are accessible for disabled people and comply with the Equality Act 2010.
+  </p>
+
+  <h3>Advice Available</h3>
+  <p>Advice can be provided on:</p>
+  <ul>
+    <li>Pre-planning enquiries and planning applications</li>
+    <li>Access requirements relating to Building Regulations, including Part M (Access to and Use of Buildings)</li>
+    <li>Access arrangements for licensed premises</li>
+  </ul>
+
+  <h3>Access Liaison Group (ALG)</h3>
+  <p>
+    The Access Liaison Group (ALG) is made up of disabled people from across Sheffield who help shape improvements to accessibility throughout the city.
+  </p>
+  <p>
+    New members are welcome and can contact the Access Officer for further information.
+  </p>
+
+  <h3>Design Guidance and Specialist Advice</h3>
+  <p>
+    Advice on inclusive design, disability access standards and specialist disability organisations is available from the Access Officer.
+  </p>
+  <p>
+    <strong>Email:</strong> <a href="mailto:planningdc@sheffield.gov.uk"> planningdc@sheffield.gov.uk</a>
+  </p>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>The Council's <strong>Access Officer</strong> can provide advice about physical access and inclusive design.</li>
+    <li>Advice can cover <strong>planning applications, pre-planning enquiries, Building Regulations Part M and licensed premises</strong>.</li>
+    <li>Customers requiring specialist accessibility advice can be directed to the Access Officer through the contact details provided.</li>
+    <li>The <strong>Access Liaison Group (ALG)</strong> includes disabled people from across Sheffield and welcomes new members.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_application_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "disability access",
+      "disabled access",
+      "accessibility",
+      "inclusive design",
+      "Access Officer",
+      "planning access advice",
+      "Building Regulations Part M",
+      "licensed premises",
+      "Access Liaison Group",
+      "ALG",
+      "Equality Act 2010",
+      "accessability",
+      "accesibility",
+      "disabilty access",
+      "inclusve design",
+      "acess officer"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
+const findAPropertysPlanningHistory = new ContentPaD(
+  "findAPropertysPlanningHistory",
+  "Find a Property's Planning History",
+  "Information about planning history searches, fees, archived planning files and viewing historical planning records.",
+  `
+  <p>
+    If you would like to find the planning history of a property or site, there are several search options available depending on the information you require.
+  </p>
+  <p>
+    For further information about planning history searches and archived planning records, visit:
+    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank" rel="noopener noreferrer">
+      Find a Property's Planning History | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20a%20propertys%20planning%20history\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Property Purchases</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are buying a property, you may require a comprehensive or expedited search. In these circumstances, you should contact the Local Land Charges team for advice.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Planning History Requests</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Planning history searches are available for planning applications and enforcement cases from 2001 to the present day.
+      </p>
+      <p>
+        Searches can be extended back to 1975 for an additional charge.
+      </p>
+      <h4>Fees</h4>
+      <ul>
+        <li>£25 for a straightforward domestic property search, including VAT</li>
+        <li>£50 for a commercial property search, including VAT</li>
+        <li>Complex searches may incur additional charges</li>
+      </ul>
+      <p>To request a search, you will need:</p>
+      <ul>
+        <li>A covering letter</li>
+        <li>A 1:1250 location plan</li>
+        <li>Payment of the appropriate fee</li>
+      </ul>
+      <p>
+        Please allow up to 5 working days after payment has been received for the search to be completed.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Viewing Historical Planning Files</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Historical planning files may be available to view in person, subject to approval.
+      </p>
+      <p>
+        If you know the planning application number, you can request access to archived files by contacting the Planning Service.
+      </p>
+      <p>
+        <strong>Email:</strong><a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Additional Information</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Complex sites require an appointment to view records</li>
+        <li>Up to 10 minutes of assistance is provided free of charge</li>
+        <li>Additional assistance may be chargeable</li>
+        <li>Historic planning applications from 1998 to 2003 can be viewed on the public computer at First Point, Howden House</li>
+      </ul>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Customers buying a property who require a comprehensive or expedited search should be directed to <strong>Local Land Charges</strong>.</li>
+    <li>Planning history searches are available from <strong>2001 onwards</strong> and can be extended back to 1975 for an additional charge.</li>
+    <li>Customers requesting a search need a <strong>covering letter, 1:1250 location plan and the appropriate fee</strong>.</li>
+    <li>Allow up to <strong>5 working days after payment</strong> for a planning history search to be completed.</li>
+    <li>Historical files may be available to view in person where the customer knows the <strong>planning application reference</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_application_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "planning history",
+      "property planning history",
+      "historical planning applications",
+      "archived planning files",
+      "planning records",
+      "planning enforcement history",
+      "planning application reference",
+      "planning history search",
+      "Local Land Charges",
+      "view planning files",
+      "property purchase",
+      "Howden House",
+      "planing history",
+      "planning histroy",
+      "historical planing applications",
+      "archived planing files"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
+
 const findOutIfYouNeedPlanningPermission = new ContentPaD(
   "findOutIfYouNeedPlanningPermission",
   "Find Out if You Need Planning Permission",
@@ -2822,6 +2750,169 @@ const findOutIfYouNeedPlanningPermission = new ContentPaD(
   },
   { date: "20/08/2026", name: "Andy Walker" }
 );
+
+const historicalPlanningRequests = new ContentPaD(
+  "historicalPlanningRequests",
+  "Historical Planning Application Requests",
+  "Guidance on how customers can request and access planning history information, including service details, charges, requirements, and processes.",
+  `
+  <p>
+    Customers may request information about the planning history of a property or site. 
+    Multiple options are available depending on the type of search, the time period required, and the level of detail needed.
+  </p>
+  <p>
+    For full details, refer customers to: 
+    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank" rel="noopener noreferrer">
+    Find a property's planning history | Sheffield City Council</a>
+  </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20property%20planning%20history\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Planning History Requests</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <h4>Service Details</h4>
+        <ul>
+          <li>The service provides planning histories and enforcement case information.</li>
+          <li>Standard coverage is from <strong>2001 to the present date</strong>.</li>
+          <li>Requests can be extended back to <strong>1975</strong> for an additional charge.</li>
+        </ul>
+
+      <h4>Charges</h4>
+        <ul>
+          <li>£25 for a <strong>domestic, straightforward postal address search</strong> (including VAT).</li>
+          <li>£50 for a <strong>commercial search</strong> (including VAT).</li>
+          <li>More complex searches may incur <strong>higher charges by arrangement</strong>.</li>
+        </ul>
+
+      <h4>Requirements to Submit a Request</h4>
+        <ul>
+          <li>A covering letter</li>
+          <li>A <strong>1:1250 location plan</strong></li>
+          <li>Payment for the relevant fee</li>
+        </ul>
+
+      <h4>Processing Time</h4>
+        <p>
+          Searches are typically completed within <strong>5 working days after payment is received</strong>.
+        </p>
+    </div>
+  </details>  
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Complex or Specialist Searches</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Complex searches attract additional charges and are handled by the <strong>Records and Enquiries Team</strong>.
+      </p>
+      <p>
+        Customers should be directed to this team for detailed or unusual requests.
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Viewing Historical Planning Files</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Historical applications from <strong>1998 to 2003</strong> are available on a public computer at First Point, Howden House.
+      </p>
+
+      <h4>In-Person Viewing</h4>
+        <p>
+          In-person viewing is available for <strong>straightforward numbered properties (1975–2005)</strong>.
+        </p>
+        <p>Customers must:</p>
+          <ul>
+            <li>Complete a request form</li>
+            <li>Provide application numbers</li>
+            <li>Email it to the planning service at <a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a></li>
+            <li>Files can only be viewed after <strong>authorisation by senior managers</strong>.</li>
+          </ul>
+
+      <h4>Assistance and Support</h4>
+        <ul>
+          <li>Up to <strong>10 minutes of help is provided free of charge</strong>.</li>
+          <li>Additional assistance must be <strong>paid for in advance</strong>.</li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Property Purchases</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers purchasing a property may require a <strong>comprehensive search or an expedited search</strong>. 
+        These enquiries should be referred to the <strong>Local Land Charges team</strong>. 
+      </p>
+      <p>
+        Please refer to the Local Land Charges knowledge article.
+      </p>
+    </div>
+  </details>
+
+
+  <h3>Key Points for Call Centre Staff</h3>
+    <ul>
+      <li>Confirm what time period the customer needs before advising on the correct route.</li>
+      <li>Check whether the customer requires a <strong>simple search, complex search, or in-person file viewing</strong>.</li>
+      <li>Inform customers about <strong>required documents and fees</strong> before submitting a request.</li>
+      <li>Direct complex queries and specialist requests to the <strong>Records and Enquiries Team</strong>.</li>
+      <li>Refer property purchase-related enquiries to the <strong>Local Land Charges team</strong>.</li>
+    </ul>
+    
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "planning",
+      "history",
+      "requests",
+      "historical",
+      "application",
+      "property",
+      "complex planning search",
+      "planning files",
+      "in person viewing",
+      "planing",
+      "historial",
+      "plannng"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "16/07/2026", name: "Liz Taster" }
+);
+
 
 const planningDecisionsAndAppeals = new ContentPaD(
   "planningDecisionsAndAppeals",
@@ -3045,6 +3136,349 @@ const planningDecisionsAndAppeals = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
+const planningPermissionForHmo = new ContentPaD(
+  "planningPermissionForHousesInMultipleOccupation",
+  "Planning Permission for Houses in Multiple Occupation (HMOs)",
+  "Guidance on planning permission requirements for Houses in Multiple Occupation, including Article 4 restrictions, HMO density and existing HMO use.",
+  `
+  <p>
+    If you are planning to convert a property into a House in Multiple Occupation (HMO), you may need planning permission depending on the location of the property and the number of occupants.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Do I Need Planning Permission?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Within Sheffield's Article 4 Area, planning permission is required to change a dwellinghouse (Use Class C3) into an HMO occupied by 3 to 6 unrelated people (Use Class C4).
+      </p>
+      <p>
+        You should check whether the property falls within the Article 4 Area before making plans to convert a property into an HMO.
+      </p>
+      <p>
+        Outside the Article 4 Area, planning permission is generally not required to convert a dwellinghouse into an HMO occupied by 3 to 6 unrelated people.
+      </p>
+      <p>Planning permission is normally required anywhere in the city for:</p>
+      <ul>
+        <li>HMOs occupied by 7 or more people</li>
+        <li>Conversions from another use class into an HMO</li>
+      </ul>
+      <p>
+        For information about HMOs, Article 4 restrictions and how planning permission requirements may affect your property, visit:
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/planning-permission-hmo" target="_blank" rel="noopener noreferrer">
+          Planning Permission for Houses in Multiple Occupation | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20permission%20for%20houses%20in%20multiple%20occupation\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>HMO Licensing</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Even if planning permission is not required, you may still require an HMO licence. This is commonly required for properties occupied by 5 or more people.
+      </p>
+      <p>
+        Planning permission and HMO licensing are separate requirements.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How Applications Are Assessed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are assessed against Core Strategy Policy CS41.
+      </p>
+      <p>
+        As a guide, planning permission is less likely to be granted where 20% or more of residential properties within 200 metres of the property are already HMOs.
+      </p>
+      <p>
+        <strong>HMO Density List:</strong><br>
+        <a href="https://www.sheffield.gov.uk/sites/default/files/2026-05/hmo-density-list.xlsx" target="_blank" rel="noopener noreferrer">
+          HMO Density List | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=HMO%20density%20list\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>If the Property Is Already an HMO</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You may not need planning permission if:</p>
+      <ul>
+        <li>The property has been continuously used as an HMO since 10 December 2011</li>
+        <li>Planning permission for HMO use was previously granted and the property has remained in HMO use</li>
+      </ul>
+      <p>
+        You should keep evidence such as tenancy agreements that demonstrate continuous HMO occupation. This may be required for future planning enquiries, enforcement investigations or Lawful Development Certificate applications.
+      </p>
+      <p>
+        If a property has since reverted back to use as a normal dwellinghouse, planning permission may be required to change it back into an HMO.
+      </p>
+    </div>
+  </details>
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Within Sheffield's <strong>Article 4 Area</strong>, planning permission is required to change a C3 dwellinghouse into a C4 HMO for 3 to 6 unrelated people.</li>
+    <li>Outside the Article 4 Area, this change is generally permitted for <strong>3 to 6 unrelated people</strong>.</li>
+    <li>Planning permission is normally required anywhere in Sheffield for an HMO occupied by <strong>7 or more people</strong>.</li>
+    <li><strong>Planning permission and HMO licensing are separate requirements</strong>; a property may require one or both.</li>
+    <li>Existing HMO use may be relevant where the property has been continuously used as an HMO since <strong>10 December 2011</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_application_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "HMO planning permission",
+      "house in multiple occupation",
+      "HMO",
+      "HMO conversion",
+      "change of use",
+      "C3 to C4",
+      "Article 4",
+      "HMO licensing",
+      "HMO density",
+      "Policy CS41",
+      "existing HMO",
+      "lawful development certificate",
+      "planing permission",
+      "HMO licencing",
+      "Artical 4",
+      "HMO denisty"
+    ],
+    categories: ["Planning and Development", "Planning Applications"]
+  },
+  { date: "20/08/2026", name: "Andy Walker" }
+);
+
+const reportingAPlanningEnforcementIssue = new ContentPaD(
+  "reportingAPlanningEnforcementIssue",
+  "Reporting a Planning Enforcement Issue",
+  "Information about reporting a planning enforcement issue, including what can and cannot be reported.",
+  `
+  <p>
+    Residents can report a planning enforcement issue to the council if they believe development has taken place without planning permission 
+    or is not in line with the permission granted.
+  </p>
+  <p>
+    Planning enforcement allows the council to investigate potential breaches of planning control and decide if action is required.
+  </p>
+  <p>
+    Further details about planning enforcement, including a link to the form to report an issue can be found here: 
+    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank" rel="noopener noreferrer">
+    Reporting a planning enforcement issue | Sheffield City Council</a>
+  </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Report an Issue</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Before reporting</strong>, residents are advised to check if the development already has planning permission before making a report.
+      </p>
+      <p>
+        Reports can be submitted using the council’s online reporting form. This can be found at 
+        <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank" rel="noopener noreferrer">
+        Reporting a planning enforcement issue | Sheffield City Council</a>
+      </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Reporting%20a%20planning%20enforcement%20issue\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+      <p>Residents should report if they believe:</p>
+        <ul>
+          <li>Development has taken place without permission</li>
+          <li>A development is not complying with its approved plans or conditions</li>
+        </ul>
+
+      <p>
+        Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank" rel="noopener noreferrer">
+        Search, view and comment on planning applications | Sheffield City Council</a>
+      </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Search%20view%20and%20comment%20on%20planning%20applications\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Can Be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The council can investigate the following types of issues:</p>
+        <ul>
+          <li>Development carried out without planning permission</li>
+          <li>Development that differs from approved planning permission</li>
+          <li>Breaches of planning conditions</li>
+          <li>Unauthorised advertisements</li>
+          <li>Unauthorised works to a listed building</li>
+          <li>Unauthorised works to protected trees</li>
+          <li>Unauthorised works in conservation areas or protected areas (such as greenbelt)</li>
+          <li>Unauthorised changes of use</li>
+          <li>Untidy land</li>
+        </ul>
+    </div>
+  </details>
+  
+  
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Cannot Be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Some issues are not planning enforcement matters and cannot be investigated:</p>
+        <ul>
+          <li>Non-material planning considerations – loss of property value, damage to private property, loss of view;</li>
+          <li>Private disputes or interests – boundary or land ownership disputes, internal alterations to houses (unless listed), security lights on houses, high hedges, business competition concerns;</li>
+          <li>Issues covered by other legislation – noise complaints, improper use of highways, building safety or dangerous structures, blocked rights of way, health and safety or site security issues</li>
+        </ul>
+      <p>
+        More detail on what can and cannot be investigated is available in the Local Enforcement Plan, available here: 
+        <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank" rel="noopener noreferrer">
+        Sheffield Local Enforcement Plan</a>
+      </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Local%20Enforcement%20Plan\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+    </div>
+  </details>
+
+
+
+  <h3>Key Information for Call Centre Staff</h3>
+    <p>When handling enquiries:</p>
+      <ul>
+        <li>Confirm whether the issue relates to a potential breach of planning control.</li>
+        <li>Check the issue is within planning enforcement scope.</li>
+        <li>Advise the resident to check if planning permission exists.</li>
+        <li>Direct the resident to the online reporting form if appropriate.</li>
+        <li>If the issue falls outside planning enforcement, signpost to the relevant service where applicable.</li>
+      </ul>
+    
+    `,
+  { buttonLabel: "Report a Planning Issue", formName: "report_planning_issue" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "planning",
+      "enforcement",
+      "report",
+      "planning",
+      "issue",
+      "breach",
+      "control",
+      "unauthorised",
+      "development",
+      "works",
+      "permission",
+      "enforcement",
+      "notice",
+      "applications",
+      "developement",
+      "planing",
+      "enforcment",
+      "enforcemnt",
+      "developement"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "09/07/2026", name: "Liz Taster" }
+);
+
 const searchViewAndCommentOnPlanningApps = new ContentPaD(
   "searchViewAndCommentOnPlanningApplications",
   "Search, View and Comment on Planning Applications",
@@ -3261,381 +3695,21 @@ const searchViewAndCommentOnPlanningApps = new ContentPaD(
   { date: "20/08/2026", name: "Andy Walker" }
 );
 
-const planningPermissionForHmo = new ContentPaD(
-  "planningPermissionForHousesInMultipleOccupation",
-  "Planning Permission for Houses in Multiple Occupation (HMOs)",
-  "Guidance on planning permission requirements for Houses in Multiple Occupation, including Article 4 restrictions, HMO density and existing HMO use.",
-  `
-  <p>
-    If you are planning to convert a property into a House in Multiple Occupation (HMO), you may need planning permission depending on the location of the property and the number of occupants.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Do I Need Planning Permission?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Within Sheffield's Article 4 Area, planning permission is required to change a dwellinghouse (Use Class C3) into an HMO occupied by 3 to 6 unrelated people (Use Class C4).
-      </p>
-      <p>
-        You should check whether the property falls within the Article 4 Area before making plans to convert a property into an HMO.
-      </p>
-      <p>
-        Outside the Article 4 Area, planning permission is generally not required to convert a dwellinghouse into an HMO occupied by 3 to 6 unrelated people.
-      </p>
-      <p>Planning permission is normally required anywhere in the city for:</p>
-      <ul>
-        <li>HMOs occupied by 7 or more people</li>
-        <li>Conversions from another use class into an HMO</li>
-      </ul>
-      <p>
-        For information about HMOs, Article 4 restrictions and how planning permission requirements may affect your property, visit:
-        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/planning-permission-hmo" target="_blank" rel="noopener noreferrer">
-          Planning Permission for Houses in Multiple Occupation | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20permission%20for%20houses%20in%20multiple%20occupation\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>HMO Licensing</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Even if planning permission is not required, you may still require an HMO licence. This is commonly required for properties occupied by 5 or more people.
-      </p>
-      <p>
-        Planning permission and HMO licensing are separate requirements.
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How Applications Are Assessed</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Applications are assessed against Core Strategy Policy CS41.
-      </p>
-      <p>
-        As a guide, planning permission is less likely to be granted where 20% or more of residential properties within 200 metres of the property are already HMOs.
-      </p>
-      <p>
-        <strong>HMO Density List:</strong><br>
-        <a href="https://www.sheffield.gov.uk/sites/default/files/2026-05/hmo-density-list.xlsx" target="_blank" rel="noopener noreferrer">
-          HMO Density List | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=HMO%20density%20list\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>If the Property Is Already an HMO</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>You may not need planning permission if:</p>
-      <ul>
-        <li>The property has been continuously used as an HMO since 10 December 2011</li>
-        <li>Planning permission for HMO use was previously granted and the property has remained in HMO use</li>
-      </ul>
-      <p>
-        You should keep evidence such as tenancy agreements that demonstrate continuous HMO occupation. This may be required for future planning enquiries, enforcement investigations or Lawful Development Certificate applications.
-      </p>
-      <p>
-        If a property has since reverted back to use as a normal dwellinghouse, planning permission may be required to change it back into an HMO.
-      </p>
-    </div>
-  </details>
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>Within Sheffield's <strong>Article 4 Area</strong>, planning permission is required to change a C3 dwellinghouse into a C4 HMO for 3 to 6 unrelated people.</li>
-    <li>Outside the Article 4 Area, this change is generally permitted for <strong>3 to 6 unrelated people</strong>.</li>
-    <li>Planning permission is normally required anywhere in Sheffield for an HMO occupied by <strong>7 or more people</strong>.</li>
-    <li><strong>Planning permission and HMO licensing are separate requirements</strong>; a property may require one or both.</li>
-    <li>Existing HMO use may be relevant where the property has been continuously used as an HMO since <strong>10 December 2011</strong>.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "planning_application_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "HMO planning permission",
-      "house in multiple occupation",
-      "HMO",
-      "HMO conversion",
-      "change of use",
-      "C3 to C4",
-      "Article 4",
-      "HMO licensing",
-      "HMO density",
-      "Policy CS41",
-      "existing HMO",
-      "lawful development certificate",
-      "planing permission",
-      "HMO licencing",
-      "Artical 4",
-      "HMO denisty"
-    ],
-    categories: ["Planning and Development", "Planning Applications"]
-  },
-  { date: "20/08/2026", name: "Andy Walker" }
-);
-
-const disabilityAccessPlanningGuidance = new ContentPaD(
-  "disabilityAccessPlanningGuidance",
-  "Disability Access Planning Guidance",
-  "Information about accessibility and inclusive design advice for planning applications, Building Regulations and licensed premises.",
-  `
-  <p>
-    The Council's Access Officer provides advice on physical access and inclusive design to help ensure developments are accessible for disabled people and comply with the Equality Act 2010.
-  </p>
-
-  <h3>Advice Available</h3>
-  <p>Advice can be provided on:</p>
-  <ul>
-    <li>Pre-planning enquiries and planning applications</li>
-    <li>Access requirements relating to Building Regulations, including Part M (Access to and Use of Buildings)</li>
-    <li>Access arrangements for licensed premises</li>
-  </ul>
-
-  <h3>Access Liaison Group (ALG)</h3>
-  <p>
-    The Access Liaison Group (ALG) is made up of disabled people from across Sheffield who help shape improvements to accessibility throughout the city.
-  </p>
-  <p>
-    New members are welcome and can contact the Access Officer for further information.
-  </p>
-
-  <h3>Design Guidance and Specialist Advice</h3>
-  <p>
-    Advice on inclusive design, disability access standards and specialist disability organisations is available from the Access Officer.
-  </p>
-  <p>
-    <strong>Email:</strong> <a href="mailto:planningdc@sheffield.gov.uk"> planningdc@sheffield.gov.uk</a>
-  </p>
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>The Council's <strong>Access Officer</strong> can provide advice about physical access and inclusive design.</li>
-    <li>Advice can cover <strong>planning applications, pre-planning enquiries, Building Regulations Part M and licensed premises</strong>.</li>
-    <li>Customers requiring specialist accessibility advice can be directed to the Access Officer through the contact details provided.</li>
-    <li>The <strong>Access Liaison Group (ALG)</strong> includes disabled people from across Sheffield and welcomes new members.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "planning_application_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "disability access",
-      "disabled access",
-      "accessibility",
-      "inclusive design",
-      "Access Officer",
-      "planning access advice",
-      "Building Regulations Part M",
-      "licensed premises",
-      "Access Liaison Group",
-      "ALG",
-      "Equality Act 2010",
-      "accessability",
-      "accesibility",
-      "disabilty access",
-      "inclusve design",
-      "acess officer"
-    ],
-    categories: ["Planning and Development", "Planning Applications"]
-  },
-  { date: "20/08/2026", name: "Andy Walker" }
-);
-
-const findAPropertysPlanningHistory = new ContentPaD(
-  "findAPropertysPlanningHistory",
-  "Find a Property's Planning History",
-  "Information about planning history searches, fees, archived planning files and viewing historical planning records.",
-  `
-  <p>
-    If you would like to find the planning history of a property or site, there are several search options available depending on the information you require.
-  </p>
-  <p>
-    For further information about planning history searches and archived planning records, visit:
-    <a href="https://www.sheffield.gov.uk/planning-development/planning-history" target="_blank" rel="noopener noreferrer">
-      Find a Property's Planning History | Sheffield City Council
-    </a>
-  </p>
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20a%20propertys%20planning%20history\`
-    "
-  >
-    Send link to review further information
-  </button>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Property Purchases</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        If you are buying a property, you may require a comprehensive or expedited search. In these circumstances, you should contact the Local Land Charges team for advice.
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Planning History Requests</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Planning history searches are available for planning applications and enforcement cases from 2001 to the present day.
-      </p>
-      <p>
-        Searches can be extended back to 1975 for an additional charge.
-      </p>
-      <h4>Fees</h4>
-      <ul>
-        <li>£25 for a straightforward domestic property search, including VAT</li>
-        <li>£50 for a commercial property search, including VAT</li>
-        <li>Complex searches may incur additional charges</li>
-      </ul>
-      <p>To request a search, you will need:</p>
-      <ul>
-        <li>A covering letter</li>
-        <li>A 1:1250 location plan</li>
-        <li>Payment of the appropriate fee</li>
-      </ul>
-      <p>
-        Please allow up to 5 working days after payment has been received for the search to be completed.
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Viewing Historical Planning Files</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Historical planning files may be available to view in person, subject to approval.
-      </p>
-      <p>
-        If you know the planning application number, you can request access to archived files by contacting the Planning Service.
-      </p>
-      <p>
-        <strong>Email:</strong><a href="mailto:planningdc@sheffield.gov.uk">planningdc@sheffield.gov.uk</a>
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Additional Information</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <ul>
-        <li>Complex sites require an appointment to view records</li>
-        <li>Up to 10 minutes of assistance is provided free of charge</li>
-        <li>Additional assistance may be chargeable</li>
-        <li>Historic planning applications from 1998 to 2003 can be viewed on the public computer at First Point, Howden House</li>
-      </ul>
-    </div>
-  </details>
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>Customers buying a property who require a comprehensive or expedited search should be directed to <strong>Local Land Charges</strong>.</li>
-    <li>Planning history searches are available from <strong>2001 onwards</strong> and can be extended back to 1975 for an additional charge.</li>
-    <li>Customers requesting a search need a <strong>covering letter, 1:1250 location plan and the appropriate fee</strong>.</li>
-    <li>Allow up to <strong>5 working days after payment</strong> for a planning history search to be completed.</li>
-    <li>Historical files may be available to view in person where the customer knows the <strong>planning application reference</strong>.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "planning_application_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "planning history",
-      "property planning history",
-      "historical planning applications",
-      "archived planning files",
-      "planning records",
-      "planning enforcement history",
-      "planning application reference",
-      "planning history search",
-      "Local Land Charges",
-      "view planning files",
-      "property purchase",
-      "Howden House",
-      "planing history",
-      "planning histroy",
-      "historical planing applications",
-      "archived planing files"
-    ],
-    categories: ["Planning and Development", "Planning Applications"]
-  },
-  { date: "20/08/2026", name: "Andy Walker" }
-);
-
 const planningApplications = new MenuPaD(
   "planningApplications",
   "Planning Applications",
   "Information regarding planning applications",
   [
-    reportingAPlanningEnforcementIssue,
-    historicalPlanningRequests,
     applyForPlanningPermission,
     applyForPreApplicationAdvice,
-    findOutIfYouNeedPlanningPermission,
-    planningDecisionsAndAppeals,
-    searchViewAndCommentOnPlanningApps,
-    planningPermissionForHmo,
     disabilityAccessPlanningGuidance,
     findAPropertysPlanningHistory,
+    findOutIfYouNeedPlanningPermission,
+    historicalPlanningRequests,
+    planningDecisionsAndAppeals,
+    planningPermissionForHmo,
+    reportingAPlanningEnforcementIssue,
+    searchViewAndCommentOnPlanningApps
   ]
 );
 
@@ -3715,6 +3789,53 @@ const planningListedBuildings = new ContentPaD(
 );
 
 //#endregion Planning Listed Buildings
+
+//#region Property Boundaries
+
+const planningPropertyBoundaries = new ContentPaD(
+  "planningPropertyBoundaries",
+  "Property Boundaries",
+  "Information about property boundaries, land ownership and options for resolving boundary disputes.",
+  `
+  <p>
+    The Council does not determine property ownership or resolve boundary disputes.
+  </p>
+
+  <h3>Boundary Disputes</h3>
+  <p>
+    If you need advice about the location of a property boundary or the ownership of land, you may wish to:
+  </p>
+  <ul>
+    <li>Check the property deeds through HM Land Registry</li>
+    <li>Seek independent legal advice from a solicitor</li>
+    <li>Contact Citizens Advice</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "planning_property_boundaries_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "property boundary",
+      "property boundaries",
+      "boundary dispute",
+      "land boundary",
+      "land ownership",
+      "property deeds",
+      "HM Land Registry",
+      "neighbour boundary dispute",
+      "ownership dispute",
+      "boundary advice",
+      "property boundry",
+      "boundary disupte"
+    ],
+    categories: ["Planning and Development", "Planning"]
+  },
+  { date: "21/08/2026", name: "Andy Walker" }
+);
+
+//#endregion Property Boundaries
 
 //#region Planning Protected Trees
 
@@ -3799,131 +3920,7 @@ const planningProtectedTrees = new ContentPaD(
 
 //#endregion Planning Protected Trees
 
-//#region Property Boundaries
 
-const planningPropertyBoundaries = new ContentPaD(
-  "planningPropertyBoundaries",
-  "Property Boundaries",
-  "Information about property boundaries, land ownership and options for resolving boundary disputes.",
-  `
-  <p>
-    The Council does not determine property ownership or resolve boundary disputes.
-  </p>
-
-  <h3>Boundary Disputes</h3>
-  <p>
-    If you need advice about the location of a property boundary or the ownership of land, you may wish to:
-  </p>
-  <ul>
-    <li>Check the property deeds through HM Land Registry</li>
-    <li>Seek independent legal advice from a solicitor</li>
-    <li>Contact Citizens Advice</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "planning_property_boundaries_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "property boundary",
-      "property boundaries",
-      "boundary dispute",
-      "land boundary",
-      "land ownership",
-      "property deeds",
-      "HM Land Registry",
-      "neighbour boundary dispute",
-      "ownership dispute",
-      "boundary advice",
-      "property boundry",
-      "boundary disupte"
-    ],
-    categories: ["Planning and Development", "Planning"]
-  },
-  { date: "21/08/2026", name: "Andy Walker" }
-);
-
-//#endregion Property Boundaries
-
-//#region Dropped Kerb
-
-const planningDroppedKerbs = new ContentPaD(
-  "planningDroppedKerbs",
-  "Dropped Kerbs (Planning and Development)",
-  "Information about when planning permission may be required for a dropped kerb or vehicle access, including classified roads, Conservation Areas and listed structures.",
-  `
-  <p>
-    A dropped kerb may require planning permission in certain circumstances.
-  </p>
-
-  <h3>When Planning Permission May Be Required</h3>
-  <p>
-    Planning permission is normally required if:
-  </p>
-  <ul>
-    <li>The dropped kerb is proposed on a classified road</li>
-    <li>The works affect a listed structure</li>
-    <li>The works involve demolition within a Conservation Area where planning controls apply</li>
-  </ul>
-
-  <h3>Conservation Areas and Listed Buildings</h3>
-  <p>
-    If creating a vehicle access requires the demolition of a wall within a Conservation Area, planning permission may be required depending on the circumstances.
-  </p>
-  <p>
-    If the wall or structure is listed, Listed Building Consent and/or planning permission may also be required.
-  </p>
-
-  <h3>Further Advice</h3>
-  <p>
-    If you are unsure whether planning permission is required for a dropped kerb or vehicle access, you should seek planning advice before undertaking any work.
-  </p>
-  <p>
-    <strong>Find out if you need planning permission:</strong><br>
-    <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/need-planning-permission" target="_blank" rel="noopener noreferrer">
-      Find Out if You Need Planning Permission | Sheffield City Council
-    </a>
-  </p>
-
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20out%20if%20you%20need%20planning%20permission\`
-    "
-  >
-    Send link to review further information
-  </button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "planning_dropped_kerbs_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "dropped kerb",
-      "dropped kerbs",
-      "vehicle access",
-      "classified road",
-      "dropped kerb planning permission",
-      "conservation area",
-      "listed building",
-      "listed wall",
-      "demolish a wall",
-      "driveway access",
-      "drop kerb",
-      "dropped curb"
-    ],
-    categories: ["Planning and Development", "Planning"]
-  },
-  { date: "21/08/2026", name: "Andy Walker" }
-);
-
-//#endregion Dropped Kerb
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -3934,11 +3931,10 @@ const planningAndDevelopment = new ServicePaD(
   `Planning applications, building regulations, conservation, regeneration, planning committee…`,
   [
     buildingControl,
+    planningDroppedKerbs,
     planningApplications,
     planningListedBuildings,
-    planningProtectedTrees,
     planningPropertyBoundaries,
-    planningDroppedKerbs,
-    
+    planningProtectedTrees
   ]
 );
