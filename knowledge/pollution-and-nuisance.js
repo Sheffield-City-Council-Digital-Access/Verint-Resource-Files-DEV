@@ -193,10 +193,12 @@ const batProtectionBritain = new ContentPaN(
 
     </p>
 
+    </br>
     <p>
       If a caller is concerned about a bat roost, advise them to contact the national bat helpline in the first instance for advice <strong>0345 1300 228</strong>. 
       They may be able to offer advice if a caller needs to carry out works, are considering pest control, or are in any way concerned about the bats.
     </p> 
+    </br>
     <p>
       Additional information regarding bats and contruction and development work can be found at <a href="https://www.gov.uk/guidance/bats-protection-surveys-and-licences" target="_blank" rel="noopener noreferrer">
       Bats: protection and licences - GOV.UK</a> 
@@ -250,10 +252,10 @@ const bedBugTreatment = new ContentPaN(
       <p>
         <h4>Initial enquiry</h4>
           <p>
-            Before a treatment can be booked in the insect need to be identified by a SCC Pest technician either a sample or digital image(s). 
+            Before a treatment can be booked in, the insects need to be identified by a SCC Pest technician - either a sample or digital image(s). 
           </p>
           <p>
-            If tenants are finding it difficult to collect a sample or find bugs to photograph advise that the bugs are usually clear in colour however 
+            If tenants are finding it difficult to collect a sample or find bugs to photograph, advise that the bugs are usually clear in colour however 
             turn red in the morning, recommend looking under the corner of mattresses, under cushions, suitcase or corners. 
           </p>
           <p>
@@ -273,6 +275,7 @@ const bedBugTreatment = new ContentPaN(
               <li>Recent visitors to your property.</li>
               <li>Eggs on second-hand furniture, clothing or mats.</li>
               <li>Neighbouring flats or houses.</li>
+            </ul>
         <h4>Will they return? </h4>
           <p>
             Bed bugs can lay eggs around the home; we spray the property twice and spaced at least two weeks apart.
@@ -396,6 +399,11 @@ const birdsandPigeonsTreatment = new ContentPaN(
   "Birds and Pigeons Treatment",
   "Learn how to request bird and pigeon treatment for commercial, health authority, industrial, and university properties, including how to receive a quote.",
   `
+  <p>
+    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks SCC will not disturb/remove the nest. 
+    Ask the caller to get back in touch in the Autumn out of the birds nesting season. 
+  </p>
+
   <h3>Commercial, Health Authority, Industrial and University</h3>
     <p>
         For bird and pigeons treatment enquiries related to Commercial, Health
@@ -419,10 +427,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       </p>
     </section>
   
-  <p>
-    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks SCC will not disturb/remove the nest. 
-    Ask the caller to get back in touch in the Autumn out of the birds nesting season. 
-  </p>
+
   
     `,
   {
@@ -441,7 +446,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "12/03/2025", name: "Dinah Williams" }
+  { date: "27/08/2026", name: "Liz Taster" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
@@ -1266,6 +1271,7 @@ const fliesTreatment = new ContentPaN(
       attends the property but is unable to complete the treatment.
     </p>
 
+    <h3>Additional Information</h3>
     <p>
       <strong>Drain flies</strong> - once identified SCC can treat drain flies, their presence indicate a plumbing issue and this needs resolving 
       <em>before</em> booking the treatment.
@@ -1292,7 +1298,7 @@ const fliesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "27/08/2026", name: "Liz Taster" }
 );
 
 const foulSmell = new ContentPaN(
@@ -1312,7 +1318,7 @@ const foulSmell = new ContentPaN(
   </p>
 
   `,
-  { buttonLabel: "Book Pest Control Treatment", formName: "pest_control_treatment", },
+  { buttonLabel: "Book Pest Treatment", formName: "pest_control_treatment", },
   { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
@@ -1366,7 +1372,7 @@ const foxesInformation = new ContentPaN(
   `,
   {
     buttonLabel: "",
-    formName: "pest_control_treatment",
+    formName: "",
   },
   { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
@@ -1515,10 +1521,11 @@ const gardenAntsTreatment = new ContentPaN(
   "Garden Ants Treatment",
   "Information on the treatment cost for garden ants, with details on available discounts for those receiving certain benefits.",
   `
-    <h3>Cost for Treatment</h3>
     <p>
       We treat around entry points, doors, windows and vents. We do not treat further than one flag away from the property and we treat internally.
     </p>
+
+    <h3>Cost for Treatment</h3>
     <p>
       The treatment cost for Garden Ants is <strong>£79.20.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
@@ -1557,7 +1564,7 @@ const gardenAntsTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "27/08/2026", name: "Liz Taster" }
 );
 
 const honeyBeeTreatment = new ContentPaN(
@@ -1812,7 +1819,7 @@ const insectIdentification = new ContentPaN(
   </details>
 
   `,
-  { buttonLabel: "Book Pest Control Treatment", formName: "pest_control_treatment", },
+  { buttonLabel: "Book Pest Treatment", formName: "pest_control_treatment", },
   { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
@@ -1870,7 +1877,7 @@ const ladyBirdsTreatment = new ContentPaN(
     </p>
   `,
   {
-    buttonLabel: "Book treatment for Lady Birds",
+    buttonLabel: "Book treatment for Ladybirds",
     formName: "pest_control_treatment",
   },
   { typeKey: "" },
@@ -1885,7 +1892,7 @@ const ladyBirdsTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "27/08/2026", name: "Liz Taster" }
 );
 
 const masonryBeesTreatment = new ContentPaN(
@@ -1974,7 +1981,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "11/11/2025", name: "Liz Taster" }
+  { date: "27/08/2026", name: "Liz Taster" }
 );
 
 const miceTreatment = new ContentPaN(
@@ -2250,7 +2257,7 @@ const otherPests = new ContentPaN(
   `
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Asian Hornets</h3>
+      <h3>Asian hornets</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2258,14 +2265,14 @@ const otherPests = new ContentPaN(
         Asian hornets do not come this far north; it is very unlikely that a caller has Asian hornets.
       </p>
       <p>
-        If the caller is persistent then request a photo(s).
+        If the caller is persistent then request a photo(s) is sent to <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
       </p>
     </div>
   </details>
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Bird Mites</h3>
+      <h3>Bird mites</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2273,7 +2280,7 @@ const otherPests = new ContentPaN(
         Once identified SCC can treat for bird mites. 
       </p>
       <p>
-        Please refer to the tile <strong>Insect Identification</strong>.
+        Please refer to the <strong>Insect Identification</strong> tile.
     </div>
   </details>
 
@@ -2287,19 +2294,19 @@ const otherPests = new ContentPaN(
         Request a sample. See <strong>Insect Identification</strong> tile.
       </p>
       <p>
-        Once identified will be insect price for a treatment. 
+        Once identified it will be insect price for a treatment. 
       </p>
     </div>
   </details>
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Fire Brat</h3>
+      <h3>Fire brat</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        Firebrats are stout-bodied quick-moving wingless insects.
+        Firebrats are stout-bodied, quick-moving, wingless insects.
         They are commonly found indoors, typically lingering in warm locations, such as near fireplaces, furnaces, and water heaters.
         They feed on starches and thus can cause damage to books, fabrics, and stored foods.
       </p>
@@ -2311,7 +2318,7 @@ const otherPests = new ContentPaN(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Maggot infestation</h3>
+      <h3>Maggots</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2342,7 +2349,9 @@ const otherPests = new ContentPaN(
     </summary>
     <div class="accordion-content">
       <p>
-        We require a sample to determine the species; spider enquires need escalating to the Pest Supervisor for sample ID in case it is a False Widow infestation. 
+        We require a sample to determine the species; spider enquiries need escalating to the Pest Supervisor for sample ID in case it is a False Widow infestation. 
+      </p>
+      <p>
         Other types of spiders we do not ordinarily treat, however if customer insists then please refer to a team leader in Service for technical advice.
       </p>
     </div>
@@ -2812,7 +2821,7 @@ const redSpiderMitesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+{ date: "27/08/2026", name: "Liz Taster" }
 );
 
 const sewageFliesTreatment = new ContentPaN(
@@ -3047,7 +3056,7 @@ const squirrelsTreatment = new ContentPaN(
   `,
   {
     buttonLabel: "",
-    formName: "pest_control_treatment",
+    formName: "",
   },
   { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
@@ -3061,7 +3070,7 @@ const squirrelsTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+{ date: "27/08/2026", name: "Liz Taster" }
 );
 
 const waspsTreatment = new ContentPaN(
@@ -3134,7 +3143,7 @@ const waspsTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+{ date: "27/08/2026", name: "Liz Taster" }
 );
 
 const weevilsTreatment = new ContentPaN(
