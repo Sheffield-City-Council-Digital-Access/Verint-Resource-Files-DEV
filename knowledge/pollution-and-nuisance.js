@@ -202,7 +202,18 @@ const batProtectionBritain = new ContentPaN(
       Bats: protection and licences - GOV.UK</a> 
     </p>
 
-    <p>[Insert Send Link]</p>
+    	<button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Bat%20Surveys%20and%20Licences\`
+            "
+        >
+            Send link to review further information
+    </button>
   `,
   {
     buttonLabel: "",
@@ -230,6 +241,45 @@ const bedBugTreatment = new ContentPaN(
   "Bed Bug Treatment",
   "Find out how to report and submit a bed bug sample for treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties.",
   `
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Background Information</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <h4>Initial enquiry</h4>
+          <p>
+            Before a treatment can be booked in the insect need to be identified by a SCC Pest technician either a sample or digital image(s). 
+          </p>
+          <p>
+            If tenants are finding it difficult to collect a sample or find bugs to photograph advise that the bugs are usually clear in colour however 
+            turn red in the morning, recommend looking under the corner of mattresses, under cushions, suitcase or corners. 
+          </p>
+          <p>
+            We cannot identify from images of the bites on humans.
+          </p>  
+        <h4>Once Identified</h4>
+          <p>
+            Once confirmed to be bed bugs, we will email the tenant/landlord with the appointment details (3 visits – 2 weeks apart)  and attach the bed bug advice leaflet. 
+            Advise to read carefully and to follow the instructions, failure to do so may result in our team not being able to treat and a call out fee could apply. 
+          </p>
+        <h4>How did I get them in my home?</h4>
+          <p>
+            Bed bugs can enter the home by several means:
+          </p>
+            <ul>
+              <li>In suitcases after a recent trip to hotel, bed and breakfast, or friend's house.</li> 
+              <li>Recent visitors to your property.</li>
+              <li>Eggs on second-hand furniture, clothing or mats.</li>
+              <li>Neighbouring flats or houses.</li>
+        <h4>Will they return? </h4>
+          <p>
+            Bed bugs can lay eggs around the home; we spray the property twice and spaced at least two weeks apart.
+          </p>   
+    </div>
+  </details>
+
 
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -338,7 +388,7 @@ const bedBugTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "27/08/2026", name: "Liz Taster" }
 );
 
 const birdsandPigeonsTreatment = new ContentPaN(
@@ -1245,6 +1295,51 @@ const fliesTreatment = new ContentPaN(
   { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
+const foulSmell = new ContentPaN(
+  "foulSmell",
+  "Foul Smell",
+  "Information to support if a caller is reporting a foul smell.",
+  `
+  <p>
+    If the caller is reporting a foul smell in the property this could be caused by decaying rodents/animals. Enquire if they are having a pest treatment or have seen activity.
+  </p>
+  <p>
+     If the caller requests a visit explain that we can investigate and lay traps if there are still live rodents, however we cannot start removing skirting boards,
+     floorboards or kitchen units. We do not carry the equipment to do this. 
+  </p>
+  <p>
+    Advise callers that the smell will often last about seven days and then subside, once the body decomposes.  Air fresheners like Neutradol can help cover the odour. 
+  </p>
+
+  `,
+  { buttonLabel: "Book Pest Control Treatment", formName: "pest_control_treatment", },
+  { typeKey: "" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Information",
+    keywords: 
+    [
+      "foul",
+      "smell",
+      "rodent",
+      "rodents",
+      "dead",
+      "decay",
+      "decaying", 
+      "Treatment", 
+      "Pests", 
+      "Vermin"
+    ],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health"
+    ],
+  },
+  { date: "27/08/2026", name: "Liz Taster" }
+);
+
 const foxesInformation = new ContentPaN(
   "foxesInformation",
   "Foxes Information",
@@ -1655,6 +1750,94 @@ const honeyBeeTreatment = new ContentPaN(
   { date: "08/05/2025", name: "Dinah Williams" }
 );
 
+const insectIdentification = new ContentPaN(
+  "insectIdentification",
+  "Insect Identification",
+  "Instructions on providing a sample of insects for identification.",
+  `
+  <p>
+    In order to provide the most appropriate treatment, it is important to ensure any insects are identified correctly.
+  </p>
+  <p>
+    Once a sample has been provided and the pests have been confirmed, the cost will be provided and the customer can request a treatment.
+  </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Providing a Physical Sample</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Providing Photos</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A photo sample can be emailed directly to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+      </p>
+      <p>
+        Images must be clear digital photo(s) of the <strong>actual insect(s) present</strong> - not from the internet.
+      </p>
+      <p>
+        We cannot identify insects from bite marks on humans.
+      </p>
+    </div>
+  </details>
+
+  `,
+  { buttonLabel: "Book Pest Control Treatment", formName: "pest_control_treatment", },
+  { typeKey: "" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Information",
+    keywords: 
+    [
+      "insect",
+      "insects",
+      "identification",
+      "ID",
+      "sample", 
+      "Treatment", 
+      "Pests", 
+      "Vermin"
+    ],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health"
+    ],
+  },
+  { date: "27/08/2026", name: "Liz Taster" }
+);
+
 const ladyBirdsTreatment = new ContentPaN(
   "ladyBirdsTreatment",
   "Ladybirds Treatment",
@@ -2060,6 +2243,175 @@ const mothsTreatment = new ContentPaN(
   { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
+const otherPests = new ContentPaN(
+  "otherPests",
+  "Other Pests",
+  "Brief details about treatments for other pests not listed in their own tiles.",
+  `
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Asian Hornets</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Asian hornets do not come this far north; it is very unlikely that a caller has Asian hornets.
+      </p>
+      <p>
+        If the caller is persistent then request a photo(s).
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Bird Mites</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once identified SCC can treat for bird mites. 
+      </p>
+      <p>
+        Please refer to the tile <strong>Insect Identification</strong>.
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Earwigs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Request a sample. See <strong>Insect Identification</strong> tile.
+      </p>
+      <p>
+        Once identified will be insect price for a treatment. 
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fire Brat</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Firebrats are stout-bodied quick-moving wingless insects.
+        They are commonly found indoors, typically lingering in warm locations, such as near fireplaces, furnaces, and water heaters.
+        They feed on starches and thus can cause damage to books, fabrics, and stored foods.
+      </p>
+      <p>
+        Request a sample (see <strong>Insect Identification</strong> tile), then can book an internal insect treatment. 
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Maggot infestation</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Report of a maggot infestation would require a visit. 
+        This will be the standard call out fee payable by the tenant, Housing or business requesting.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Moles</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        SCC treat moles – request information on if domestic or commercial, the size of area to be treated and number of mole hills. 
+        Email the information over to the Pest Technician Team Leader for a quote. 
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Spiders</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We require a sample to determine the species; spider enquires need escalating to the Pest Supervisor for sample ID in case it is a False Widow infestation. 
+        Other types of spiders we do not ordinarily treat, however if customer insists then please refer to a team leader in Service for technical advice.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Wood worm</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        SCC do not treat for wood worm, it requires a specialist provider.
+      </p>
+    </div>
+  </details>
+
+  `,
+  {
+    buttonLabel: "Book Pest Treatment",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: 
+    [
+      "Asian",
+      "hornets",
+      "hornet",
+      "bird",
+      "mites",
+      "mite",
+      "earwig",
+      "earwigs",
+      "ear",
+      "wig",
+      "wigs",
+      "fire",
+      "brat",
+      "brats",
+      "firebrat",
+      "firebrats",
+      "maggot",
+      "maggots",
+      "mole",
+      "moles",
+      "spider",
+      "spiders",
+      "wood",
+      "worm",
+      "worms",
+      "woodworm",
+      "woodworms",
+      "Treatment", 
+      "Pests", 
+      "Vermin"
+    ],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health"
+    ],
+  },
+  { date: "27/08/2026", name: "Liz Taster" }
+);
+
 const pharoahAntsTreatment = new ContentPaN(
   "pharoahAntsTreatment",
   "Pharoah Ants Treatment",
@@ -2385,7 +2737,7 @@ const redSpiderMitesTreatment = new ContentPaN(
   "Information about Red Spider Mites treatment, including sample requirements, treatment costs, reduced prices for benefits recipients, and call-out fees.",
   `
   <p>
-    Red spider mites do not bite humans and carry no known diseases however; they can cause skin irritation. 
+    Red spider mites do not bite humans and carry no known diseases, however, they can cause skin irritation. 
     We can offer a treatment for these where we would spray around the windows and doors with insecticide.
   </p>
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -2759,7 +3111,7 @@ const waspsTreatment = new ContentPaN(
 
   <h3>Wasps on other land</h3>
   <p>
-    If a member of public complains about a wasp nest on private land, there is no enforcement action can be taken to force them to resolve and get treated. 
+    If a member of public complains about a wasp nest on private land, there is no enforcement action that can be taken to force them to resolve and get treated. 
   </p>
   <p>
     If the wasp nest is on Council land then it needs reporting to the relevant service, Housing, Schools, PFM etc. 
@@ -2915,16 +3267,19 @@ const pestControl = new MenuPaN(
     dermestesBeetlesTreatment,
     fliesTreatment,
     fleasTreatment,
+    foulSmell,
     foxesInformation,
     FrogsorFrogspawn,
     furBeetlesTreatment,
     gardenAntsTreatment,
     honeyBeeTreatment,
+    insectIdentification,
     ladyBirdsTreatment,
     masonryBeesTreatment,
     miceTreatment,
     mitesTreatment,
     mothsTreatment,
+    otherPests,
     pharoahAntsTreatment,
     psocidsTreatment,
     ratTreatment,
@@ -2935,7 +3290,7 @@ const pestControl = new MenuPaN(
     squirrelsTreatment,
     waspsTreatment,
     weevilsTreatment,
-    woodliceTreatment
+    woodliceTreatment,    
   ]
 );
 
