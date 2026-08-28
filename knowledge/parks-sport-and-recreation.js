@@ -56,964 +56,70 @@ class FormPSaR extends CorePSaR {
 
 //#region Allotments
 
-const allotmentsEligibility = new ContentPSaR(
-  "allotmentsEligibility",
-  "Eligibility for Allotments",
-  "Who can apply for an allotment plot",
-  `
-    <p>
-      You must live within the Sheffield City Council boundary 
-      (or not more than 1 mile outside of it) to be eligible for a plot. 
-      If you plan to move to Sheffield, you may join the waiting list beforehand, 
-      but cannot sign up until you meet residency criteria. Moving more than 
-      1 mile outside Sheffield requires giving up your plot.
-    </p>
-    <p>
-      You must be 18 years old before taking a plot. If you reach the top of 
-      the waiting list before 18, you must wait until your 18th birthday.
-    </p>
-
-    <h3>Ready to Apply?</h3>
-    <p>
-      You can apply for an allotment online using the Sheffield City Council 
-      Allotment Application Service:
-      <br />
-      <a href="https://sheffield.colonycloud.co.uk/" target="_blank" rel="noopener noreferrer">
-        https://sheffield.colonycloud.co.uk/
-      </a>
-    </p>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to apply for an allotment"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20an%20allotment\`
-      "
-    >
-      Send link to apply for an allotment
-    </button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Eligibility",
-  "Eligability",
-  "Application",
-  "Aplication",
-  "Plots",
-  "Plot"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsContact = new ContentPSaR(
-  "allotmentsContact",
-  "Annual Waiting List Refresh",
-  "Information on the yearly waiting list refresh for allotments",
+const allotmentsEmergencies = new ContentPSaR(
+  "allotmentsEmergencies",
+  "Allotment Emergencies",
+  "What to do in an emergency on an allotment site",
   `
 <p>
-  In order to ensure our records are accurate and up to date, we 
-  conduct an annual refresh of the allotment waiting list around October. 
-  This involves contacting individuals who have been on the waiting list 
-  for more than a year to confirm whether they still wish to retain their place.
-  We request a response to this communication to verify continued interest. 
-  If we do not receive a reply, we will assume that the individual is no 
-  longer interested, and they will be removed from the waiting list.
+  Below is guidance on how allotment-related emergencies and urgent issues 
+  are managed both during and outside of normal operating hours.
 </p>
 
+<h3>Issues that may require an emergency response</h3>
 <p>
-  It is important for applicants to check their email inboxes carefully — 
-  including spam and junk folders — to ensure they do not miss this communication. 
-  Many enquiries relate to individuals not realising an email had been sent. 
-  If you believe you missed the email and did not respond in time, appeals 
-  should be directed to the manager via 
+  During office hours, the only allotment issues that may require an emergency response are:
+</p>
+<ul>
+  <li>A tenant locked on plot due to a lock or gate failure.</li>
+  <li>A built structure at immediate risk of failure that could cause serious injury.</li>
+</ul>
+<p>
+  These will be managed through CRM and forwarded to 
   <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
 </p>
 
+<h3>Non-emergency issues</h3>
 <p>
-  You can check the current waiting list information using the allotment map tool.  
-  The map shows the number of plots on each site, any vacancies, and how many people 
-  are currently on the waiting list. This can help you understand demand and expected 
-  waiting times before applying.
-  <br />
-  <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=227576827bf94eba994b9b64f907477b" 
-     target="_blank" 
-     rel="noopener noreferrer">
-     View allotment waiting list map
-  </a>
+  All other issues should be reported using the 
+  <strong>Report allotment</strong> button below. Examples include:
 </p>
-
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to allotment waiting list map"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20waiting%20list%20map\`
-  "
->
-  Send link to check the waiting list map
-</button>
-
+<ul>
+  <li>Water leaks</li>
+  <li>Small fires on plots</li>
+  <li>Off-road bikes (on applicable sites)</li>
+</ul>
 <p>
-  For more information on Sheffield allotments, consult the official policy and regulations document:
-  <br />
-  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" 
-     target="_blank" 
-     rel="noopener noreferrer">
-    Allotment Policy and Regulations
-  </a>
+  For any urgent issue outside normal office hours, please warm transfer the call:
+  <br>
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734542')">0114 2734542</a>
+  <br><br>
+  This number can also be reached via the general Council line:
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734567')">0114 2734567</a>.
+  All calls will be triaged by the out-of-hours service.
 </p>
-
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Allotments",
-      "Alotments",
-      "Allotment",
-      "Alotment",
-      "Waiting List",
-      "Waitng List",
-      "Annual Refresh",
-      "Anual Refresh",
-      "Renewal",
-      "Renewel",
-      "Map",
-      "Waiting List Map",
-      "Vacancies"
-    ],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "25/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsApplying = new ContentPSaR(
-  "allotmentsApplying",
-  "Applying for a Plot",
-  "How to apply for an allotment plot",
-  `
-    <h3>To apply for an allotment plot you must:</h3>
-    <ul>
-      <li>Be a Sheffield resident or live within 1 mile of the city boundary.</li>
-      <li>Only be on one waiting list at a time (exceptions at the discretion of the office).</li>
-      <li>Apply using the online form: 
-        <a href="https://sheffield.colonycloud.co.uk/" target="_blank" rel="noopener noreferrer">
-          https://sheffield.colonycloud.co.uk/
-        </a>
-      </li>
-    </ul>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to allotment application"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20an%20allotment\`
-      "
-    >
-      Send link to apply for an allotment
-    </button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Application",
-  "Aplication",
-  "Plots",
-  "Plot"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsPlotOffers = new ContentPSaR(
-  "allotmentsPlotOffers",
-  "Plot Offers",
-  "How plots are offered from the waiting list for allotments",
-  `
-    <h3>How Plots Are Offered</h3>
-    <p>
-    Applicants are selected from the waiting list on a first-come, 
-    first-served basis. When you reach the top of your chosen list, you’ll be 
-    offered a specific plot by email (or by post if you do not have an email address).
-    </p>
-
-    <h4>Responding to an Offer</h4>
-    <ul>
-      <li>Contact the office within <strong>10 working days</strong> of the offer (or <strong>14 days</strong> if sent by post) to accept, or the offer may be withdrawn.</li>
-      <li>If no response is received within <strong>28 days</strong>, we’ll assume you no longer wish to apply and remove your name from the waiting list.</li>
-      <li>Declining an offer is allowed once; further refusals may result in removal from the list.</li>
-      <li>Plot offers are site-specific and cannot be transferred to another site.</li>
-      <li>Use the <strong>Allotment request</strong> button below.</li>
-    </ul>
-
-    <h4>Questions About Your Waiting List Position</h4>
-    <p>
-    If you would like to ask about your place on the waiting list or discuss a 
-    plot offer, use the <strong>Allotment request</strong> button below.
-    </p>
-
-    <h4>Accepting a Plot</h4>
-    <p>
-    To accept a plot, you must submit your acceptance form promptly 
-    after viewing it. You can either return the paper form or complete the 
-    online form, along with the following documents:
-    </p>
-    <ul>
-      <li>Photo ID and proof of address</li>
-      <li>Proof of concession eligibility, if applicable</li>
-    </ul>
-    <p>
-    If your acceptance form and supporting documents are not 
-    received within <strong>5 working days</strong>, a reminder will be sent 
-    by email. If we do not receive them within a further <strong>5 working 
-    days</strong>, the offer may be withdrawn and your name removed from the 
-    waiting list.
-    </p>
-    <p>
-    Use the <strong>Allotment request</strong> button to submit your 
-    acceptance form or access the online form.
-    </p>
-
-    <h4>Concessions</h4>
-    <p>
-      Concessions are available to eligible tenants, including those on a 
-      low income, with disabilities, students, or of state pension age. You must 
-      provide valid evidence—such as proof of benefits, student status, or pension 
-      age—when first claiming and each year during the concession window 
-      (unless age-related). Claims cannot be backdated, and only one concession 
-      can be applied per tenant and plot. Failure to claim within the window 
-      means full rent is due.  
-      Please note that only one concession can be awarded per tenant overall, 
-      so if you have more than one plot, the concession can only be 
-      applied to a single plot.
-    </p>    
-    <p>For more information on Sheffield allotments, consult the official policy and regulations document:</p>
-    <p>
-      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
-        Allotment Policy and Regulations
-      </a>
-    </p>
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to Sheffield allotment policy and regulations"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-      "
-    >
-      Send link to review the policy and regulations
-    </button>
-  `,
-  { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-   keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Plot Offers",
-  "Plot Offer",
-  "Plot Ofers",
-  "Plot Ofer",
-  "Waiting List",
-  "Wating List",
-  "Waithing List",
-  "Eligibility",
-  "Eligability",
-  "Appeals",
-  "Appeal",
-  "Apeals",
-  "Apeal"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsPayingFees = new ContentPSaR(
-  "allotmentsPayingFees",
-  "Paying Annual Fees",
-  "Details about rent and water charges for allotments",
-  `
-  <p>
-    The rental year runs from 1st April to 31st March. Rent is reviewed and set annually, 
-    with due notice provided in accordance with the legal requirement to give tenants at least 
-    one year’s notice of any rent change. All allotment rent is reinvested into the running of the service, 
-    the provision of amenities, and the maintenance of sites.
-  </p>
-  <ul>
-    <li>You (the tenant) will be charged rent, plus a water charge if your site has a water supply.</li>
-    <li>There are a range of ways to pay. You are responsible for paying promptly on receipt of your invoice, whichever payment method you choose.</li>
-    <li>
-      If you opt for Direct Debit, you are responsible for ensuring payments are deducted from your account.  
-      Direct Debit arrangements must be in place no later than the <strong>1st of March</strong>.  
-      If the Direct Debit is not set up on time, other payment methods will be available.
-    </li>
-    <li>If you would struggle to pay your rent in full immediately, contact the Council promptly on receipt of your invoice; there may be options to help.</li>
-    <li>
-      Each January, tenants are contacted with details about the upcoming rental year, including information on rent and water charges, concession eligibility, 
-      and payment options such as Direct Debit setup.
-    </li>
-  </ul>
-    <p>
-    For more information on Sheffield allotments, consult the official policy and regulations document:
-    <br />
-    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
-    Allotment Policy and Regulations
-    </a>
-    </p>
-
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Rent",
-  "Rant",
-  "Payment",
-  "Paymant",
-  "Water Charges",
-  "Water Charge",
-  "Watar Charges",
-  "Watter Charges"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsNoticeToQuit = new ContentPSaR(
-  "allotmentsNoticeToQuit",
-  "Rent Notice to Quit Policy",
-  "What happens if rent is not paid for an allotment",
-  `
-    <p>
-      In addition to the Sheffield City Council standard payment policy, 
-      if you fail to pay within 40 days of your rent invoice date, 
-      you will be issued a Rent ‘Notice to Quit’. 
-      If you receive a Rent Notice to Quit, you may be able to keep the 
-      plot by submitting an appeal within 14 days of the issued date. 
-      Appeal details are included within the Notice to Quit letter, and 
-      customers should follow the instructions provided in their notice.
-    </p>
-    <ul>
-      <li>If your appeal is successful, you must clear all arrears during the 1-month Notice period.</li>
-      <li>If you receive 3 Notices to Quit for non-payment during your tenancy, the 3rd Notice will stand, even if payment is made during the Notice period.</li>
-      <li>Exceptional circumstances can be considered through the appeals process.</li>
-    </ul>
-    <p>
-      If you have received a Notice to Quit and wish to discuss your situation, 
-      use the <strong>Allotment request</strong> button below.
-    </p>
-    <p>
-     For more information on Sheffield allotments, consult the official policy and regulations document:
-    <br />
-    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
-    Allotment Policy and Regulations
-    </a>
-    </p>
-
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
-
-  `,
-  { buttonLabel: "Allotment Request", formName: "request_allotment_parks" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Notice to Quit",
-  "Notice to Quite",
-  "Rent",
-  "Rant",
-  "Arrears",
-  "Arears",
-  "Appeals",
-  "Appeel",
-  "Apeal"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsFires = new ContentPSaR(
-  "allotmentsFires",
-  "Burning and Fires",
-  "Rules for burning and using fires on plots within allotments",
-  `
-    <ul>
-      <li>Allowed only from 1st October to 30th April (subject to changes in legislation).</li>
-      <li>Burn only organic plant material from previous growing seasons.</li>
-      <li>No bonfires on open ground; must be contained in an incinerator or similar.</li>
-      <li>Do not cause a nuisance as defined in the 
-        <a href="https://www.legislation.gov.uk/ukpga/1990/43/contents" target="_blank" rel="noopener noreferrer">
-          Environmental Protection Act 1990
-        </a>.
-      </li>
-    </ul>
-    <h4>Reports from members of the public</h4>
-    <p>
-      Burning or smoke issues reported by members of the public should be directed to Environmental Protection Services (EPS). 
-      If the burning is creating a <strong>statutory nuisance</strong>—including excessive smoke or visibility issues on the highway—please see:
-    </p>
-    <p>
-      <a href="https://www.sheffield.gov.uk/pollution-nuisance/smoke-nuisance" target="_blank" rel="noopener noreferrer">
-        Report a smoke nuisance
-      </a>
-    </p>
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to Report a smoke nuisance"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20smoke%20nuisance\`
-      "
-    >
-      Send link to Report a smoke nuisance
-    </button>
-    <p>
-      For more information on Sheffield allotments, consult the official policy and regulations document:
-      <br />
-      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" 
-         target="_blank" 
-         rel="noopener noreferrer">
-         Allotment Policy and Regulations
-      </a>
-    </p>
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to Sheffield allotment policy and regulations"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-      "
-    >
-      Send link to review the policy and regulations
-    </button>
-  `,
-  { buttonLabel: "Report smoke", formName: "report_smoke" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Allotments",
-      "Allotment",
-      "Alotment",
-      "Fires",
-      "Fire",
-      "Fyres",
-      "Burning",
-      "Burnin",
-      "Buring",
-      "Environmental Protection Act",
-      "Enviromental Protection Act",
-      "Environmental Protetion Act",
-      "Enviromental Protction Act",
-      "Smoke nuisance",
-      "Smoke",
-      "Nuisance",
-      "Statutory nuisance"
-    ],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsDogs = new ContentPSaR(
-  "allotmentsDogs",
-  "Dogs on Allotments",
-  "Rules for dogs on allotment site",
-  `
-    <ul>
-      <li>You can bring your dog on site, but it must not cause a nuisance.</li>
-      <li>Dog waste must be collected and disposed of appropriately.</li>
-      <li>Dogs must be on leads in communal areas and not stray.</li>
-      <li>Dogs must not foul paths or plots.</li>
-      <li>Dogs cannot be left unattended on plots.</li>
-    </ul>
-
-    <p>
-      For more information on Sheffield allotments, consult the official policy and regulations document:
-      <br />
-      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
-         target="_blank"
-         rel="noopener noreferrer">
-        Allotment Policy and Regulations
-      </a>
-    </p>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to Sheffield allotment policy and regulations"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-      "
-    >
-      Send link to review the policy and regulations
-    </button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Allotments",
-      "Allotment",
-      "Alotment",
-      "Dogs",
-      "Doggs",
-      "Dgos",
-      "Rules",
-      "Rule",
-      "Ruels",
-      "Ruless"
-    ],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "25/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsWater = new ContentPSaR(
-  "allotmentsWater",
-  "Use of Water",
-  "Rules for using water on allotment plots",
-  `
-    <ul>
-      <li>Many of our sites have water supplies to help cultivate your plot and care for livestock. Do not drink the water; we cannot guarantee it is safe.</li>
-      <li>You must be present on your plot when using the water supply.</li>
-      <li>Hosepipes can only be used to fill water butts; no automated devices, sprinklers, or other water spraying devices are allowed.</li>
-      <li>Hosepipes must be disconnected from taps when not in use.</li>
-      <li>Water must only be used for watering produce and tending livestock kept on your plot.</li>
-      <li>Water must not be used to fill paddling pools or wash vehicles.</li>
-      <li>Supplies are metered; excessive use may result in increased charges.</li>
-    </ul>
-
-    <p>
-      For more information on Sheffield allotments, consult the official policy and regulations document:
-      <br />
-      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
-         target="_blank"
-         rel="noopener noreferrer">
-        Allotment Policy and Regulations
-      </a>
-    </p>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to Sheffield allotment policy and regulations"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-      "
-    >
-      Send link to review the policy and regulations
-    </button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Allotments",
-      "Allotment",
-      "Alotment",
-      "Water",
-      "Watter",
-      "Watr",
-      "Use of Water",
-      "Use of Watter",
-      "Use of Watr",
-      "Rules",
-      "Rule",
-      "Ruels",
-      "Ruless"
-    ],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "25/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsKeys = new ContentPSaR(
-  "allotmentsKeys",
-  "Site Keys",
-  "Rules for access and key responsibility for allotments",
-  `
-    <ul>
-      <li>Only the tenant, or a person authorised or accompanied by the tenant, is allowed on the site.</li>
-      <li>You are responsible for your site key and that of any co-worker; do not allow persons unknown to you or non-key holders to access the site.</li>
-    </ul>
-    <p>
-    For more information on Sheffield allotments, consult the official policy and regulations document:
-    <br />
-    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
-    Allotment Policy and Regulations
-    </a>
-    </p>
-
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
-
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Keys",
-  "Keyes",
-  "Kyes",
-  "Locks",
-  "Lokcs",
-  "Locs",
-  "Access",
-  "Acess",
-  "Acces",
-  "Acsess",
-  "Gate Access",
-  "Gate Acess",
-  "Gat Access"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "06/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsDrones = new ContentPSaR(
-  "allotmentsDrones",
-  "Drones",
-  "Drone use policy on allotment sites",
-  `
-    <p>
-      Drones are not permitted on any Sheffield City Council estate, 
-      including allotments, without prior written permission.
-    </p>
-
-    <p>
-      For more information on Sheffield allotments, consult the official policy and regulations document:
-      <br />
-      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
-         target="_blank"
-         rel="noopener noreferrer">
-        Allotment Policy and Regulations
-      </a>
-    </p>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to Sheffield allotment policy and regulations"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-      "
-    >
-      Send link to review the policy and regulations
-    </button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Allotments",
-      "Allotment",
-      "Alotment",
-      "Drones",
-      "Drone",
-      "Drons",
-      "Dronz",
-      "Model Aircraft",
-      "Modell Aircraft",
-      "Flying Drones",
-      "Fliying Drones",
-      "Rules",
-      "Rule",
-      "Ruels",
-      "Ruless"
-    ],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "25/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsTrees = new ContentPSaR(
-  "allotmentsTrees",
-  "Dangerous Trees on an Allotment",
-  "Reporting dangerous trees on allotment sites",
-  `
-<p>
-  If you notice a large tree that appears diseased, damaged, or at 
-  risk of failure and poses an immediate danger. 
-  Please use the <strong>Report Tree</strong> button below to notify 
-  us so that the situation can be assessed and addressed safely.
-</p>
-  `,
-  { buttonLabel: "Report tree", formName: "report_tree" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Trees",
-  "Tree",
-  "Tress",
-  "Treees",
-  "Safety",
-  "Saftey",
-  "Safty",
-  "Tree Safety",
-  "Tree Saftey",
-  "Tree Safty",
-  "Tree Hazards",
-  "Tree Hazard"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsAsbestos = new ContentPSaR(
-  "allotmentsAsbestos",
-  "Asbestos",
-  "Asbestos policy on allotments",
-  `
-  <p>
-      You must not bring asbestos onto your plot or sites. Asbestos was once 
-      a common building material 
-      and has found its way onto some allotments in the past. This is 
-      often in the form of asbestos 
-      cement sheets or pipes (used for roofing, chimneys, etc.), 
-      but it can take many other forms.
-    </p>
-    <p>
-      If you are unsure whether something on your plot may contain asbestos, 
-      please contact us for advice. 
-      Where confirmed, we will arrange for testing and removal.
-    </p>
   `,
   { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
-  { typeKey: "" },
+  { typeKey: "allotments_transferred_to_service" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Asbestos",
-  "Asbestoes",
-  "Asbesto",
-  "Safety",
-  "Saftey",
-  "Safty",
-  "Asbestos Safety",
-  "Asbestos Saftey",
-  "Asbestos Safty",
-  "Hazardous Material",
-  "Hazardous Materials",
-  "Hazardous Matrial"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Emergency",
+      "Emergencies",
+      "Urgent",
+      "Out of hours",
+      "Locked in allotment",
+      "Allotment fire",
+      "Allotment water leak",
+      "Allotment danger"
+    ],
     categories: ["Parks and Countryside", "Allotments"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsVermin = new ContentPSaR(
-  "allotmentsVermin",
-  "Rats and Vermin on Allotments",
-  "Policy for vermin control on allotment sites",
-  `<p>
-  Environmental Services will investigate rat issues and take action 
-  when appropriate to reduce numbers.
-  </p>
-  `,
-  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Vermin",
-  "Vermiin",
-  "Vermn",
-  "Rats",
-  "Rat",
-  "Ratts",
-  "Rodents",
-  "Rodent",
-  "Pests",
-  "Pest"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsKeyDeposit = new ContentPSaR(
-  "allotmentsKeyDeposits",
-  "Allotment Key Deposits",
-  "Costs and payment for replacement keys for allotments",
-  `<ul>
-    <li>Squire keys: £5 deposit</li>
-    <li>Mul-T-Lock keys: £30 deposit, with £25 refunded when the key is returned</li>
-    <li>Lost or stolen keys: £30 replacement charge</li>
-  </ul>
-  <p>
-      After submitting your request, you will be contacted with instructions on how to make payment.  
-      To request a key replacement, use the 
-      <strong>Allotment request</strong> button below.
-  </p>
-  <p>
-  For more information on Sheffield allotments, consult the official policy and regulations document:
-  <br />
-  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
-    Allotment Policy and Regulations
-  </a>
-  </p>
-
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
-
-  `,
-  { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
-  { typeKey: "" },
-  { typeKey: "allotments_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Keys",
-  "Keyes",
-  "Kyes",
-  "Deposit",
-  "Deposite",
-  "Depost",
-  "Security Deposit",
-  "Key Deposit"
-],
-    categories: ["Parks and Countryside", "Allotments"]
-  },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "26/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsEnquiries = new ContentPSaR(
@@ -1296,6 +402,845 @@ const allotmentsEnquiries = new ContentPSaR(
   { date: "12/05/2026", name: "Liz Taster" }
 );
 
+const allotmentsKeyDeposit = new ContentPSaR(
+  "allotmentsKeyDeposits",
+  "Allotment Key Deposits",
+  "Costs and payment for replacement keys for allotments",
+  `<ul>
+    <li>Squire keys: £5 deposit</li>
+    <li>Mul-T-Lock keys: £30 deposit, with £25 refunded when the key is returned</li>
+    <li>Lost or stolen keys: £30 replacement charge</li>
+  </ul>
+  <p>
+      After submitting your request, you will be contacted with instructions on how to make payment.  
+      To request a key replacement, use the 
+      <strong>Allotment request</strong> button below.
+  </p>
+  <p>
+  For more information on Sheffield allotments, consult the official policy and regulations document:
+  <br />
+  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+  </a>
+  </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+
+  `,
+  { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Keys",
+  "Keyes",
+  "Kyes",
+  "Deposit",
+  "Deposite",
+  "Depost",
+  "Security Deposit",
+  "Key Deposit"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsContact = new ContentPSaR(
+  "allotmentsContact",
+  "Annual Waiting List Refresh",
+  "Information on the yearly waiting list refresh for allotments",
+  `
+<p>
+  In order to ensure our records are accurate and up to date, we 
+  conduct an annual refresh of the allotment waiting list around October. 
+  This involves contacting individuals who have been on the waiting list 
+  for more than a year to confirm whether they still wish to retain their place.
+  We request a response to this communication to verify continued interest. 
+  If we do not receive a reply, we will assume that the individual is no 
+  longer interested, and they will be removed from the waiting list.
+</p>
+
+<p>
+  It is important for applicants to check their email inboxes carefully — 
+  including spam and junk folders — to ensure they do not miss this communication. 
+  Many enquiries relate to individuals not realising an email had been sent. 
+  If you believe you missed the email and did not respond in time, appeals 
+  should be directed to the manager via 
+  <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
+</p>
+
+<p>
+  You can check the current waiting list information using the allotment map tool.  
+  The map shows the number of plots on each site, any vacancies, and how many people 
+  are currently on the waiting list. This can help you understand demand and expected 
+  waiting times before applying.
+  <br />
+  <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=227576827bf94eba994b9b64f907477b" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     View allotment waiting list map
+  </a>
+</p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to allotment waiting list map"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20waiting%20list%20map\`
+  "
+>
+  Send link to check the waiting list map
+</button>
+
+<p>
+  For more information on Sheffield allotments, consult the official policy and regulations document:
+  <br />
+  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    Allotment Policy and Regulations
+  </a>
+</p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Allotments",
+      "Alotments",
+      "Allotment",
+      "Alotment",
+      "Waiting List",
+      "Waitng List",
+      "Annual Refresh",
+      "Anual Refresh",
+      "Renewal",
+      "Renewel",
+      "Map",
+      "Waiting List Map",
+      "Vacancies"
+    ],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "25/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsApplying = new ContentPSaR(
+  "allotmentsApplying",
+  "Applying for a Plot",
+  "How to apply for an allotment plot",
+  `
+    <h3>To apply for an allotment plot you must:</h3>
+    <ul>
+      <li>Be a Sheffield resident or live within 1 mile of the city boundary.</li>
+      <li>Only be on one waiting list at a time (exceptions at the discretion of the office).</li>
+      <li>Apply using the online form: 
+        <a href="https://sheffield.colonycloud.co.uk/" target="_blank" rel="noopener noreferrer">
+          https://sheffield.colonycloud.co.uk/
+        </a>
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to allotment application"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20an%20allotment\`
+      "
+    >
+      Send link to apply for an allotment
+    </button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Application",
+  "Aplication",
+  "Plots",
+  "Plot"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsAsbestos = new ContentPSaR(
+  "allotmentsAsbestos",
+  "Asbestos",
+  "Asbestos policy on allotments",
+  `
+  <p>
+      You must not bring asbestos onto your plot or sites. Asbestos was once 
+      a common building material 
+      and has found its way onto some allotments in the past. This is 
+      often in the form of asbestos 
+      cement sheets or pipes (used for roofing, chimneys, etc.), 
+      but it can take many other forms.
+    </p>
+    <p>
+      If you are unsure whether something on your plot may contain asbestos, 
+      please contact us for advice. 
+      Where confirmed, we will arrange for testing and removal.
+    </p>
+  `,
+  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Asbestos",
+  "Asbestoes",
+  "Asbesto",
+  "Safety",
+  "Saftey",
+  "Safty",
+  "Asbestos Safety",
+  "Asbestos Saftey",
+  "Asbestos Safty",
+  "Hazardous Material",
+  "Hazardous Materials",
+  "Hazardous Matrial"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsFires = new ContentPSaR(
+  "allotmentsFires",
+  "Burning and Fires",
+  "Rules for burning and using fires on plots within allotments",
+  `
+    <ul>
+      <li>Allowed only from 1st October to 30th April (subject to changes in legislation).</li>
+      <li>Burn only organic plant material from previous growing seasons.</li>
+      <li>No bonfires on open ground; must be contained in an incinerator or similar.</li>
+      <li>Do not cause a nuisance as defined in the 
+        <a href="https://www.legislation.gov.uk/ukpga/1990/43/contents" target="_blank" rel="noopener noreferrer">
+          Environmental Protection Act 1990
+        </a>.
+      </li>
+    </ul>
+    <h4>Reports from members of the public</h4>
+    <p>
+      Burning or smoke issues reported by members of the public should be directed to Environmental Protection Services (EPS). 
+      If the burning is creating a <strong>statutory nuisance</strong>—including excessive smoke or visibility issues on the highway—please see:
+    </p>
+    <p>
+      <a href="https://www.sheffield.gov.uk/pollution-nuisance/smoke-nuisance" target="_blank" rel="noopener noreferrer">
+        Report a smoke nuisance
+      </a>
+    </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Report a smoke nuisance"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20smoke%20nuisance\`
+      "
+    >
+      Send link to Report a smoke nuisance
+    </button>
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" 
+         target="_blank" 
+         rel="noopener noreferrer">
+         Allotment Policy and Regulations
+      </a>
+    </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
+  `,
+  { buttonLabel: "Report smoke", formName: "report_smoke" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Fires",
+      "Fire",
+      "Fyres",
+      "Burning",
+      "Burnin",
+      "Buring",
+      "Environmental Protection Act",
+      "Enviromental Protection Act",
+      "Environmental Protetion Act",
+      "Enviromental Protction Act",
+      "Smoke nuisance",
+      "Smoke",
+      "Nuisance",
+      "Statutory nuisance"
+    ],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsTrees = new ContentPSaR(
+  "allotmentsTrees",
+  "Dangerous Trees on an Allotment",
+  "Reporting dangerous trees on allotment sites",
+  `
+<p>
+  If you notice a large tree that appears diseased, damaged, or at 
+  risk of failure and poses an immediate danger. 
+  Please use the <strong>Report Tree</strong> button below to notify 
+  us so that the situation can be assessed and addressed safely.
+</p>
+  `,
+  { buttonLabel: "Report tree", formName: "report_tree" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Trees",
+  "Tree",
+  "Tress",
+  "Treees",
+  "Safety",
+  "Saftey",
+  "Safty",
+  "Tree Safety",
+  "Tree Saftey",
+  "Tree Safty",
+  "Tree Hazards",
+  "Tree Hazard"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsDogs = new ContentPSaR(
+  "allotmentsDogs",
+  "Dogs on Allotments",
+  "Rules for dogs on allotment site",
+  `
+    <ul>
+      <li>You can bring your dog on site, but it must not cause a nuisance.</li>
+      <li>Dog waste must be collected and disposed of appropriately.</li>
+      <li>Dogs must be on leads in communal areas and not stray.</li>
+      <li>Dogs must not foul paths or plots.</li>
+      <li>Dogs cannot be left unattended on plots.</li>
+    </ul>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Dogs",
+      "Doggs",
+      "Dgos",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "25/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsDrones = new ContentPSaR(
+  "allotmentsDrones",
+  "Drones",
+  "Drone use policy on allotment sites",
+  `
+    <p>
+      Drones are not permitted on any Sheffield City Council estate, 
+      including allotments, without prior written permission.
+    </p>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Drones",
+      "Drone",
+      "Drons",
+      "Dronz",
+      "Model Aircraft",
+      "Modell Aircraft",
+      "Flying Drones",
+      "Fliying Drones",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "25/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsEligibility = new ContentPSaR(
+  "allotmentsEligibility",
+  "Eligibility for Allotments",
+  "Who can apply for an allotment plot",
+  `
+    <p>
+      You must live within the Sheffield City Council boundary 
+      (or not more than 1 mile outside of it) to be eligible for a plot. 
+      If you plan to move to Sheffield, you may join the waiting list beforehand, 
+      but cannot sign up until you meet residency criteria. Moving more than 
+      1 mile outside Sheffield requires giving up your plot.
+    </p>
+    <p>
+      You must be 18 years old before taking a plot. If you reach the top of 
+      the waiting list before 18, you must wait until your 18th birthday.
+    </p>
+
+    <h3>Ready to Apply?</h3>
+    <p>
+      You can apply for an allotment online using the Sheffield City Council 
+      Allotment Application Service:
+      <br />
+      <a href="https://sheffield.colonycloud.co.uk/" target="_blank" rel="noopener noreferrer">
+        https://sheffield.colonycloud.co.uk/
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to apply for an allotment"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20an%20allotment\`
+      "
+    >
+      Send link to apply for an allotment
+    </button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Eligibility",
+  "Eligability",
+  "Application",
+  "Aplication",
+  "Plots",
+  "Plot"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsPayingFees = new ContentPSaR(
+  "allotmentsPayingFees",
+  "Paying Annual Fees",
+  "Details about rent and water charges for allotments",
+  `
+  <p>
+    The rental year runs from 1st April to 31st March. Rent is reviewed and set annually, 
+    with due notice provided in accordance with the legal requirement to give tenants at least 
+    one year’s notice of any rent change. All allotment rent is reinvested into the running of the service, 
+    the provision of amenities, and the maintenance of sites.
+  </p>
+  <ul>
+    <li>You (the tenant) will be charged rent, plus a water charge if your site has a water supply.</li>
+    <li>There are a range of ways to pay. You are responsible for paying promptly on receipt of your invoice, whichever payment method you choose.</li>
+    <li>
+      If you opt for Direct Debit, you are responsible for ensuring payments are deducted from your account.  
+      Direct Debit arrangements must be in place no later than the <strong>1st of March</strong>.  
+      If the Direct Debit is not set up on time, other payment methods will be available.
+    </li>
+    <li>If you would struggle to pay your rent in full immediately, contact the Council promptly on receipt of your invoice; there may be options to help.</li>
+    <li>
+      Each January, tenants are contacted with details about the upcoming rental year, including information on rent and water charges, concession eligibility, 
+      and payment options such as Direct Debit setup.
+    </li>
+  </ul>
+    <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+    </a>
+    </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Rent",
+  "Rant",
+  "Payment",
+  "Paymant",
+  "Water Charges",
+  "Water Charge",
+  "Watar Charges",
+  "Watter Charges"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+
+const allotmentsPlotOffers = new ContentPSaR(
+  "allotmentsPlotOffers",
+  "Plot Offers",
+  "How plots are offered from the waiting list for allotments",
+  `
+    <h3>How Plots Are Offered</h3>
+    <p>
+    Applicants are selected from the waiting list on a first-come, 
+    first-served basis. When you reach the top of your chosen list, you’ll be 
+    offered a specific plot by email (or by post if you do not have an email address).
+    </p>
+
+    <h4>Responding to an Offer</h4>
+    <ul>
+      <li>Contact the office within <strong>10 working days</strong> of the offer (or <strong>14 days</strong> if sent by post) to accept, or the offer may be withdrawn.</li>
+      <li>If no response is received within <strong>28 days</strong>, we’ll assume you no longer wish to apply and remove your name from the waiting list.</li>
+      <li>Declining an offer is allowed once; further refusals may result in removal from the list.</li>
+      <li>Plot offers are site-specific and cannot be transferred to another site.</li>
+      <li>Use the <strong>Allotment request</strong> button below.</li>
+    </ul>
+
+    <h4>Questions About Your Waiting List Position</h4>
+    <p>
+    If you would like to ask about your place on the waiting list or discuss a 
+    plot offer, use the <strong>Allotment request</strong> button below.
+    </p>
+
+    <h4>Accepting a Plot</h4>
+    <p>
+    To accept a plot, you must submit your acceptance form promptly 
+    after viewing it. You can either return the paper form or complete the 
+    online form, along with the following documents:
+    </p>
+    <ul>
+      <li>Photo ID and proof of address</li>
+      <li>Proof of concession eligibility, if applicable</li>
+    </ul>
+    <p>
+    If your acceptance form and supporting documents are not 
+    received within <strong>5 working days</strong>, a reminder will be sent 
+    by email. If we do not receive them within a further <strong>5 working 
+    days</strong>, the offer may be withdrawn and your name removed from the 
+    waiting list.
+    </p>
+    <p>
+    Use the <strong>Allotment request</strong> button to submit your 
+    acceptance form or access the online form.
+    </p>
+
+    <h4>Concessions</h4>
+    <p>
+      Concessions are available to eligible tenants, including those on a 
+      low income, with disabilities, students, or of state pension age. You must 
+      provide valid evidence—such as proof of benefits, student status, or pension 
+      age—when first claiming and each year during the concession window 
+      (unless age-related). Claims cannot be backdated, and only one concession 
+      can be applied per tenant and plot. Failure to claim within the window 
+      means full rent is due.  
+      Please note that only one concession can be awarded per tenant overall, 
+      so if you have more than one plot, the concession can only be 
+      applied to a single plot.
+    </p>    
+    <p>For more information on Sheffield allotments, consult the official policy and regulations document:</p>
+    <p>
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
+  `,
+  { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+   keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Plot Offers",
+  "Plot Offer",
+  "Plot Ofers",
+  "Plot Ofer",
+  "Waiting List",
+  "Wating List",
+  "Waithing List",
+  "Eligibility",
+  "Eligability",
+  "Appeals",
+  "Appeal",
+  "Apeals",
+  "Apeal"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsVermin = new ContentPSaR(
+  "allotmentsVermin",
+  "Rats and Vermin on Allotments",
+  "Policy for vermin control on allotment sites",
+  `<p>
+      Environmental Services will investigate rat issues and take action 
+      when appropriate to reduce numbers.
+  </p>
+  `,
+  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Vermin",
+  "Vermiin",
+  "Vermn",
+  "Rats",
+  "Rat",
+  "Ratts",
+  "Rodents",
+  "Rodent",
+  "Pests",
+  "Pest"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsNoticeToQuit = new ContentPSaR(
+  "allotmentsNoticeToQuit",
+  "Rent Notice to Quit Policy",
+  "What happens if rent is not paid for an allotment",
+  `
+    <p>
+      In addition to the Sheffield City Council standard payment policy, 
+      if you fail to pay within 40 days of your rent invoice date, 
+      you will be issued a Rent ‘Notice to Quit’. 
+      If you receive a Rent Notice to Quit, you may be able to keep the 
+      plot by submitting an appeal within 14 days of the issued date. 
+      Appeal details are included within the Notice to Quit letter, and 
+      customers should follow the instructions provided in their notice.
+    </p>
+    <ul>
+      <li>If your appeal is successful, you must clear all arrears during the 1-month Notice period.</li>
+      <li>If you receive 3 Notices to Quit for non-payment during your tenancy, the 3rd Notice will stand, even if payment is made during the Notice period.</li>
+      <li>Exceptional circumstances can be considered through the appeals process.</li>
+    </ul>
+    <p>
+      If you have received a Notice to Quit and wish to discuss your situation, 
+      use the <strong>Allotment request</strong> button below.
+    </p>
+    <p>
+     For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+    </a>
+    </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+
+  `,
+  { buttonLabel: "Allotment Request", formName: "request_allotment_parks" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Notice to Quit",
+  "Notice to Quite",
+  "Rent",
+  "Rant",
+  "Arrears",
+  "Arears",
+  "Appeals",
+  "Appeel",
+  "Apeal"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "18/11/2025", name: "Andy Walker" }
+);
+
 const allotmentsReportIssue = new ContentPSaR(
   "allotmentsReportIssue",
   "Report an Issue in an Allotment",
@@ -1466,51 +1411,105 @@ const allotmentsTreeManagement = new ContentPSaR(
   { date: "17/11/2025", name: "Andy Walker" }
 );
 
-const allotmentsEmergencies = new ContentPSaR(
-  "allotmentsEmergencies",
-  "Allotment Emergencies",
-  "What to do in an emergency on an allotment site",
+const allotmentsKeys = new ContentPSaR(
+  "allotmentsKeys",
+  "Site Keys",
+  "Rules for access and key responsibility for allotments",
   `
-<p>
-  Below is guidance on how allotment-related emergencies and urgent issues 
-  are managed both during and outside of normal operating hours.
-</p>
+    <ul>
+      <li>Only the tenant, or a person authorised or accompanied by the tenant, is allowed on the site.</li>
+      <li>You are responsible for your site key and that of any co-worker; do not allow persons unknown to you or non-key holders to access the site.</li>
+    </ul>
+    <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+    </a>
+    </p>
 
-<h3>Issues that may require an emergency response</h3>
-<p>
-  During office hours, the only allotment issues that may require an emergency response are:
-</p>
-<ul>
-  <li>A tenant locked on plot due to a lock or gate failure.</li>
-  <li>A built structure at immediate risk of failure that could cause serious injury.</li>
-</ul>
-<p>
-  These will be managed through CRM and forwarded to 
-  <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
-</p>
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
 
-<h3>Non-emergency issues</h3>
-<p>
-  All other issues should be reported using the 
-  <strong>Report allotment</strong> button below. Examples include:
-</p>
-<ul>
-  <li>Water leaks</li>
-  <li>Small fires on plots</li>
-  <li>Off-road bikes (on applicable sites)</li>
-</ul>
-<p>
-  For any urgent issue outside normal office hours, please warm transfer the call:
-  <br>
-  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734542')">0114 2734542</a>
-  <br><br>
-  This number can also be reached via the general Council line:
-  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734567')">0114 2734567</a>.
-  All calls will be triaged by the out-of-hours service.
-</p>
   `,
-  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
-  { typeKey: "allotments_transferred_to_service" },
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Keys",
+  "Keyes",
+  "Kyes",
+  "Locks",
+  "Lokcs",
+  "Locs",
+  "Access",
+  "Acess",
+  "Acces",
+  "Acsess",
+  "Gate Access",
+  "Gate Acess",
+  "Gat Access"
+],
+    categories: ["Parks and Countryside", "Allotments"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const allotmentsWater = new ContentPSaR(
+  "allotmentsWater",
+  "Use of Water",
+  "Rules for using water on allotment plots",
+  `
+    <ul>
+      <li>Many of our sites have water supplies to help cultivate your plot and care for livestock. Do not drink the water; we cannot guarantee it is safe.</li>
+      <li>You must be present on your plot when using the water supply.</li>
+      <li>Hosepipes can only be used to fill water butts; no automated devices, sprinklers, or other water spraying devices are allowed.</li>
+      <li>Hosepipes must be disconnected from taps when not in use.</li>
+      <li>Water must only be used for watering produce and tending livestock kept on your plot.</li>
+      <li>Water must not be used to fill paddling pools or wash vehicles.</li>
+      <li>Supplies are metered; excessive use may result in increased charges.</li>
+    </ul>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -1518,44 +1517,47 @@ const allotmentsEmergencies = new ContentPSaR(
       "Allotments",
       "Allotment",
       "Alotment",
-      "Emergency",
-      "Emergencies",
-      "Urgent",
-      "Out of hours",
-      "Locked in allotment",
-      "Allotment fire",
-      "Allotment water leak",
-      "Allotment danger"
+      "Water",
+      "Watter",
+      "Watr",
+      "Use of Water",
+      "Use of Watter",
+      "Use of Watr",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
     ],
     categories: ["Parks and Countryside", "Allotments"]
   },
-  { date: "26/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
+
 
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
    `Allotment eligibility, Applying for an allotment, Plot offers, Notice to quit, Keys and access, Key deposits, Trees, Asbestos, Reporting an issue…`,
   [
-    allotmentsEligibility,
+    allotmentsEmergencies,
+    allotmentsEnquiries,
+    allotmentsKeys,
     allotmentsContact,
     allotmentsApplying,
-    allotmentsPlotOffers,
-    allotmentsPayingFees,
-    allotmentsNoticeToQuit,
-    allotmentsFires,
-    allotmentsDogs,
-    allotmentsWater,
-    allotmentsKeys,
-    allotmentsDrones,
-    allotmentsTrees,
     allotmentsAsbestos,
+    allotmentsFires,
+    allotmentsTrees,
+    allotmentsDogs,
+    allotmentsDrones,
+    allotmentsEligibility,
+    allotmentsPayingFees,
+    allotmentsPlotOffers,
     allotmentsVermin,
-    allotmentsKeyDeposit,
-    allotmentsEnquiries,
+    allotmentsNoticeToQuit,
     allotmentsReportIssue,
+    allotmentsKeyDeposit,
     allotmentsTreeManagement,
-    allotmentsEmergencies
+    allotmentsWater,
   ]
 );
 
@@ -2712,7 +2714,7 @@ const eventsInParks = new ContentPSaR(
         Concerns regarding Hillsborough Park to be directed to <a href="mailto:Events@sheffield.gov.uk">Events@sheffield.gov.uk</a>
       </p>
       <p>
-        Tramlines have a dedicated line for residents during the event: 0114 3213662. 
+        Tramlines have a dedicated line for residents during the event: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 3213662')">0114 3213662</a>. 
         <br> The phoneline is open on all festival days and in the days prior/following the event, 8am to 11pm. 
         <br>Enquiries can also be submitted to <a href="mailto:residents@tramlines.org.uk">residents@tramlines.org.uk</a>
       </p>
@@ -2904,7 +2906,7 @@ const gravesPark = new ContentPSaR(
     Opening Hours - 9am -5pm, 7 days a week
   </p>
   <p>
-    Phone number - 0114 2582705
+    Phone number - <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2582705')">0114 2582705</a>
   </p>
   <p>
     Updates regarding the café restoration can be found on the Council website here 
@@ -3198,9 +3200,6 @@ const eventsAndActivities = new MenuPSaR(
 
 
 //#region Maintenance and Issues
-
-
-
 
 const antiSocialBehaviourParks = new ContentPSaR(
   "antiSocialBehaviourParks",
@@ -4299,7 +4298,7 @@ const reportTreePark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>When the Council may carry out work</h3>
+      <h3>When the Council May Carry Out Work</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
