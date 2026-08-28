@@ -3608,6 +3608,57 @@ const taxiVehicleInspections = new ContentBusiness(
 
 //#endregion Taxi Licensing
 
+//#region General Licensing
+
+
+const templateTile = new ContentPaD(
+  "templateTile",
+  "Template Tile",
+  "Description to go on main tile.",
+  `
+    <h3>Header</h3>
+    <p>Content</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "building_control_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "01/07/2026", name: "Liz Taster" }
+);
+
+  const generalLicensing = new MenuBusiness(
+  "generalLicensing",
+  "General Licensing",
+  "Information regarding general licensing.",
+  [
+    templateTile,
+
+  ]
+);
+
+//#endregion General Licensing
+
+
+
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
