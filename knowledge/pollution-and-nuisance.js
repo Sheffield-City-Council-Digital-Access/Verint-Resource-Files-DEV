@@ -62,7 +62,7 @@ const badgerProtection = new ContentPaN(
   "Learn about the legal protections for badgers under the Protection of Badgers Act 1992 and the penalties for violating these laws.",
   `
     <p>
-      SCC do not provide services for badgers. Badgers are protected wildlife. 
+      Sheffield City Council do not provide services for badgers. Badgers are protected wildlife. 
     </p>
     <p>
       The Protection of Badgers Act 1992 makes it illegal for any person to kill,
@@ -253,7 +253,7 @@ const bedBugTreatment = new ContentPaN(
       <p>
         <h4>Initial enquiry</h4>
           <p>
-            Before a treatment can be booked in, the insects need to be identified by a SCC Pest technician - either a sample or digital image(s). 
+            Before a treatment can be booked in, the insects need to be identified by a Sheffield City Council Pest technician - either a sample or digital image(s). 
           </p>
           <p>
             If tenants are finding it difficult to collect a sample or find bugs to photograph, advise that the bugs are usually clear in colour however 
@@ -401,7 +401,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
   "Learn how to request bird and pigeon treatment for commercial, health authority, industrial, and university properties, including how to receive a quote.",
   `
   <p>
-    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks SCC will not disturb/remove the nest. 
+    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks Sheffield City Council will not disturb/remove the nest. 
     Ask the caller to get back in touch in the Autumn out of the birds nesting season. 
   </p>
 
@@ -511,7 +511,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
+        <h3>Commercial and Houses in Multiple Occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -612,7 +612,7 @@ const bumbleBeesTreatment = new ContentPaN(
     
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
+        <h3>Commercial and Houses in Multiple Occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -730,7 +730,7 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
+        <h3>Commercial and Houses in Multiple Occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -1193,7 +1193,7 @@ const fleasTreatment = new ContentPaN(
 
 <h3>Additional Information</h3>
 <p>
-  If booking a treatment, advise the customer to have their pets treated at the vets just before SCC attend to spray.  
+  If booking a treatment, advise the customer to have their pets treated at the vets just before Sheffield City Council attend to spray.  
 </p>
   `,
   {
@@ -1274,7 +1274,7 @@ const fliesTreatment = new ContentPaN(
 
     <h3>Additional Information</h3>
     <p>
-      <strong>Drain flies</strong> - once identified SCC can treat drain flies, their presence indicate a plumbing issue and this needs resolving 
+      <strong>Drain flies</strong> - once identified Sheffield City Council can treat drain flies, their presence indicate a plumbing issue and this needs resolving 
       <em>before</em> booking the treatment.
     </p>
 
@@ -1390,8 +1390,8 @@ const foxesInformation = new ContentPaN(
   { date: "27/11/2024", name: "Nathan Smith" }
 );
 
-const FrogsorFrogspawn = new ContentPaN(
-  "FrogsorFrogspawn",
+const frogsorFrogspawn = new ContentPaN(
+  "frogsorFrogspawn",
   "Frogs or Frogspawn",
   "Guidance on handling frog or frogspawn issues, including contact information for DEFRA for removal and additional resources.",
   `
@@ -1643,7 +1643,7 @@ const honeyBeeTreatment = new ContentPaN(
               S33 OBE
             </td>
             <td>
-              <a href="tel:0794 6375387">0794 6375387</a><
+              <a href="tel:0794 6375387">0794 6375387</a>
             <br>
               Please send pictures via WhatsApp.
             </td>
@@ -1935,7 +1935,7 @@ const masonryBeesTreatment = new ContentPaN(
     <h3> Treatment Cost</h3>
 
     <p>
-      The treatment cost is £79.20.
+      The treatment cost is <strong>£79.20</strong>.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
@@ -2258,7 +2258,7 @@ const otherPests = new ContentPaN(
   `
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Asian hornets</h3>
+      <h3>Asian Hornets</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2273,12 +2273,12 @@ const otherPests = new ContentPaN(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Bird mites</h3>
+      <h3>Bird Mites</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        Once identified SCC can treat for bird mites. 
+        Once identified Sheffield City Council can treat for bird mites. 
       </p>
       <p>
         Please refer to the <strong>Insect Identification</strong> tile.
@@ -2302,7 +2302,7 @@ const otherPests = new ContentPaN(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Fire brat</h3>
+      <h3>Fire Brat</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2337,7 +2337,7 @@ const otherPests = new ContentPaN(
     </summary>
     <div class="accordion-content">
       <p>
-        SCC treat moles – request information on if domestic or commercial, the size of area to be treated and number of mole hills. 
+        Sheffield City Council treat moles – request information on if domestic or commercial, the size of area to be treated and number of mole hills. 
         Email the information over to the Pest Technician Team Leader for a quote. 
       </p>
     </div>
@@ -2360,12 +2360,12 @@ const otherPests = new ContentPaN(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Wood worm</h3>
+      <h3>Wood Worm</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        SCC do not treat for wood worm, it requires a specialist provider.
+        Sheffield City Council do not treat for wood worm, it requires a specialist provider.
       </p>
     </div>
   </details>
@@ -2603,7 +2603,7 @@ const ratTreatment = new ContentPaN(
     </details>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial, Health Authority, Industrial and University</h3>
+        <h3>Commercial, Health Authority, Industrial, and University</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -3279,7 +3279,7 @@ const pestControl = new MenuPaN(
     fleasTreatment,
     foulSmell,
     foxesInformation,
-    FrogsorFrogspawn,
+    frogsorFrogspawn,
     furBeetlesTreatment,
     gardenAntsTreatment,
     honeyBeeTreatment,
