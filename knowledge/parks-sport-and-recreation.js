@@ -73,7 +73,7 @@ const allotmentsEligibility = new ContentPSaR(
       the waiting list before 18, you must wait until your 18th birthday.
     </p>
 
-    <h3>Ready to apply?</h3>
+    <h3>Ready to Apply?</h3>
     <p>
       You can apply for an allotment online using the Sheffield City Council 
       Allotment Application Service:
@@ -2360,7 +2360,7 @@ const activitiesInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Metal detecting</h3>
+      <h3>Metal Detecting</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2399,7 +2399,7 @@ const activitiesInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Wood collecting</h3>
+      <h3>Wood Collecting</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2774,7 +2774,7 @@ const gravesPark = new ContentPSaR(
   "Graves Park",
   "Information about events, activities and facilities at Graves Park, including the animal farm.",
   `
-<h3>Animal farm</h3>
+<h3>Animal Farm</h3>
   <p>
     <strong>Opening hours</strong> - 10am -3.30pm, 7 days a week
   </p>
@@ -2791,7 +2791,7 @@ const gravesPark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Animal farm FAQs</h3>
+      <h3>Animal Farm FAQs</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2821,8 +2821,10 @@ const gravesPark = new ContentPSaR(
       </p>
       <p>The enquirer can contact:</p>
         <ul>
-          <li>Heeley City Farm who may be able to take the animal or offer further guidance - 0114 2580482</li>
-          <li>Royal Society for the Prevention of Cruelty to Animals (RSPCA) - 0114 2898050</li>
+          <li>Heeley City Farm who may be able to take the animal or offer further guidance - 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2580482')">0114 2580482</a></li>
+          <li>Royal Society for the Prevention of Cruelty to Animals (RSPCA) - 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2898050')">0114 2898050</a></li>
         </ul>
       <p>
         <strong>Sick/Injured/Loose farm animals</strong> - If an animal living in an enclosure/field within the Animal Farm appears to be sick, 
@@ -2833,7 +2835,7 @@ const gravesPark = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Animal farm events and barn hire</h3>
+      <h3>Animal Farm Events and Barn Hire</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2878,7 +2880,7 @@ const gravesPark = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Animal farm work experience and volunteering</h3>
+      <h3>Animal Farm Work Experience and Volunteering</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2917,7 +2919,7 @@ const gravesPark = new ContentPSaR(
   </details>
 
 
-<h3>Park train</h3>
+<h3>Park Train</h3>
   <p>
     The park train runs through the summer holidays and on sunny weekends.
   </p>
@@ -3006,7 +3008,7 @@ const eventsAndActivities = new MenuPSaR(
 
 const reportTreePark = new ContentPSaR(
   "reportTreePark",
-  "Report an Issue with a Tree",
+  "Report an Issue with a Tree (Parks)",
   "Information on how the Council manages trees, what issues we can respond to, and when you may take action yourself.",
   `
   <p>
@@ -3017,7 +3019,7 @@ const reportTreePark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Trees causing shade, overhang or other nuisance issues</h3>
+      <h3>Trees Causing Shade, Overhang or Other Nuisance Issues</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3042,7 +3044,7 @@ const reportTreePark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Pruning branches that overhang your property</h3>
+      <h3>Pruning Branches That Overhang Your Property</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3058,7 +3060,7 @@ const reportTreePark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Trees on council land touching houses</h3>
+      <h3>Trees on Council Land Touching Houses</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3086,7 +3088,7 @@ const reportTreePark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Vandalism and illegal felling</h3>
+      <h3>Vandalism and Illegal Felling</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3100,7 +3102,7 @@ const reportTreePark = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Emergency situations with trees</h3>
+      <h3>Emergency Situations with Trees</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3133,9 +3135,6 @@ const reportTreePark = new ContentPSaR(
       </p>
     </div>
   </details>
-  <p>
-    To report an issue, use the <strong>Report tree</strong> button below.
-  </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
   { typeKey: "" },
@@ -3715,7 +3714,7 @@ const grassHedgeCutting = new ContentPSaR(
   "Grass and Hedge Cutting",
   "Information about grass cutting schedules, hedge cutting periods, and reporting issues with grassed areas and hedges.",
   `
-<h3>Grass cutting</h3>
+<h3>Grass Cutting</h3>
   <p>
     Grass is cut every 3-4 weeks following a schedule, starting in April and running to the end of October. 
     Frequency depends on the weather conditions, grass growth rates, and site conditions.
@@ -3725,7 +3724,7 @@ const grassHedgeCutting = new ContentPSaR(
     If this is the case, litter will be collected shortly after the grass has been cut, but not necessarily on the same day.
   </p>
 
-<h3>Hedge cutting</h3>
+<h3>Hedge Cutting</h3>
   <p>
     Hedge cutting takes place during specific periods:
   </p>
@@ -3736,7 +3735,7 @@ const grassHedgeCutting = new ContentPSaR(
   <p>
     Timing may vary depending on the type and location of the hedge, nesting bird considerations, and weather conditions.
   </p>
-<h3>Reporting issues</h3>
+<h3>Reporting Issues</h3>
  
 
   <p>
@@ -3935,7 +3934,7 @@ const dogCatWasteCommercial = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Cost details</h3>
+      <h3>Cost Details</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4304,7 +4303,7 @@ const ecology = new ContentPSaR(
   
       <details class="accordion">
     <summary class="accordion-header">
-      <h3>Ecology data requests</h3>
+      <h3>Ecology Data Requests</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4387,7 +4386,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Donating my tree</h3>
+      <h3>Donating My Tree</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4406,7 +4405,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Donating to plant a tree</h3>
+      <h3>Donating to Plant a Tree</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4447,7 +4446,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Maintenance of young trees</h3>
+      <h3>Maintenance of Young Trees</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4462,7 +4461,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Community Forestry events</h3>
+      <h3>Community Forestry Events</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4491,7 +4490,7 @@ const treePlantingCommunityForestry = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Community Forestry volunteering</h3>
+      <h3>Community Forestry Volunteering</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4666,7 +4665,7 @@ const wildlifeInParks = new ContentPSaR(
   
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Nesting birds & wildlife crime</h3>
+      <h3>Nesting Birds and Wildlife Crime</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4680,7 +4679,7 @@ const wildlifeInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Snakes & unusual wildlife</h3>
+      <h3>Snakes and Unusual Wildlife</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4697,7 +4696,7 @@ const wildlifeInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Loose wildlife</h3>
+      <h3>Loose Wildlife</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4711,7 +4710,7 @@ const wildlifeInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-        <h3>Wildlife welfare concerns</h3>
+        <h3>Wildlife Welfare Concerns</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4720,11 +4719,12 @@ const wildlifeInParks = new ContentPSaR(
       </p>
 
       <p>
-        Royal Society for the Prevention of Cruelty to Animals (RSPCA) - 0114 2898050
+        Royal Society for the Prevention of Cruelty to Animals (RSPCA) - 
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2898050')">0114 2898050</a>
       </p>
 
       <p>
-        Sheffield & Rotherham Wildlife Trust – 0114 2634335
+        Sheffield & Rotherham Wildlife Trust – <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2634335')">0114 2634335</a>
       </p>
 
       <p>
@@ -4827,7 +4827,7 @@ const memorialsInParks = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Benches in parks</h3>
+      <h3>Benches in Parks</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4862,7 +4862,7 @@ const memorialsInParks = new ContentPSaR(
 
 <details class="accordion">
     <summary class="accordion-header">
-      <h3>Benches in woodland</h3>
+      <h3>Benches in Woodland</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4874,7 +4874,7 @@ const memorialsInParks = new ContentPSaR(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Memorial bench terms and conditions</h3>
+      <h3>Memorial Bench Terms and Conditions</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4948,7 +4948,7 @@ const donatingToParks = new ContentPSaR(
 
   <p>Information about this topic will be available on the Council Website</p>
 
-  <h3>Donating money</h3>
+  <h3>Donating Money</h3>
     <p>
       The Council welcomes financial donations to support the maintenance, enhancement, and improvement of parks and green spaces.
     </p>
@@ -4967,7 +4967,7 @@ const donatingToParks = new ContentPSaR(
       Once a customer has completed the donation request form they will find a link to make payment of their donation in the request confirmation screen.
     </p>
 
-  <h3>Donating items</h3>
+  <h3>Donating Items</h3>
     <p>
       We are unable to accept donations of items or equipment - for example furniture, plants, memorial items, or play equipment.
     </p>
@@ -4979,7 +4979,7 @@ const donatingToParks = new ContentPSaR(
       Please provide details of the items you wish to donate using the form. A park manager will review the details and respond within 3-5 working days. 
     </p>
 
-  <h3>Donating tree/plants</h3>
+  <h3>Donating Trees/Plants</h3>
     <p>
       We do not accept donations of trees or plants. Please search for the knowledge article <strong>Tree Planting and Community Forestry</strong> for more info. 
     </p>
