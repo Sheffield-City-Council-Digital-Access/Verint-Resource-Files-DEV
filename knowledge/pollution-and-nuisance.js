@@ -195,7 +195,8 @@ const batProtectionBritain = new ContentPaN(
 
     </br>
     <p>
-      If a caller is concerned about a bat roost, advise them to contact the national bat helpline in the first instance for advice <strong>0345 1300 228</strong>. 
+      If a caller is concerned about a bat roost, advise them to contact the national bat helpline in the first instance for advice 
+      <strong><a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 1300 228')">0345 1300 228</a></strong>. 
       They may be able to offer advice if a caller needs to carry out works, are considering pest control, or are in any way concerned about the bats.
     </p> 
     </br>
