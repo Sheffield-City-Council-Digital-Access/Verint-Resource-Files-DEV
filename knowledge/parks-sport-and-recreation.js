@@ -1561,6 +1561,7 @@ const allotmentsParks = new MenuPSaR(
 
 //#endregion Allotments
 
+
 //#region Bookings
 
 const bannersInParks = new ContentPSaR(
@@ -1568,11 +1569,9 @@ const bannersInParks = new ContentPSaR(
   "Banners in Parks",
   "Information about banner applications on park property or fencing.",
   `
-  
   <p>
     Due to limited resources, we are not currently accepting applications for banners on park property or fencing.
   </p>
-  
   `,
 
   { buttonLabel: "", formName: "" },
@@ -1603,23 +1602,30 @@ const bannersInParks = new ContentPSaR(
   }
 );
 
-const bookAnEvent = new ContentPSaR(
-  "bookAnEvent",
-  "Book an Event",
-  "Information about holding private events in parks and how to make an enquiry using the booking form.",
+
+const bookRoomOrParkBuilding = new ContentPSaR(
+  "bookRoomOrParkBuilding",
+  "Book a Room or Park Building",
+  "Information about hiring community buildings in parks and booking available venues.",
   `
   <p>
-    Private events for friends/families are welcome - our green spaces are for all to use. 
+    We have several community buildings in our parks that are available to hire.
   </p>
-  
   <p>
-    Remind customers to be mindful of other park users, and to not erect structures such as gazebos.
+    The facilities vary by location and are capable of hosting a range of activities:
   </p>
-  
+    <ul>
+      <li>Private functions</li>
+      <li>Larger community events and activities</li>
+      <li>Education classes</li>
+      <li>Conferences</li>
+      <li>Meetings</li>
+    </ul>
+
   <p>
-    More information about holding an event in a park can be found on the 
-    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/events-parks" target="_blank" rel="noopener noreferrer">
-    Events in parks | Sheffield City Council</a> webpage, including the terms and conditions.
+    Further information regarding facilities and booking requirements can be found at 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
+    Book a community building or advertising space in a park | Sheffield City Council</a>.
   </p>
 
 	      <button
@@ -1629,58 +1635,91 @@ const bookAnEvent = new ContentPSaR(
             onclick="
                 window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                     KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20space%20in%20a%20park\`
             "
         >
             Send link to review further information
         </button>
 
   <p>
-    Enquiries about holding an event in a park are welcome and can be done by completing the <strong><em>Book a Room/Event/Film/Photoshoot</em></strong> form - 
-    this is available at the link above.
+    Layouts are available on the webpage but are not facilitated, so the person booking is responsible for the room setup.
   </p>
-
   <p>
-    The form must be completed by the interested party due to liability issues - <strong>the form must not be completed by customer service staff on their behalf.</strong>
+    The following facilities can be booked using the 
+    <a href="https://sheffield.zipporah.co.uk/Generic.Live/" target="_blank" rel="noopener noreferrer">Sheffield Council Parks Booking System</a>:
   </p>
+    <ul>
+      <li>Centre in the Park</li>
+      <li>Firth Park Clock Tower</li>
+      <li>Bole Hill Pavillion</li>
+      <li>Stannington Pavillion</li>
+    </ul>
 
-  <p>
-    Once the form has been submitted, the customer will be contacted to discuss the booking further.
-  </p>
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Booking%20System\`
+            "
+        >
+            Send link to review further information
+        </button>
+  
+  <p>The following venues can be booked by submitting an enquiry using our online form:</p>
+    <ul>
+      <li>Dorothy Fox Centre (Botanical Gardens) - Weddings</li>
+      <li>Woodland Discovery Centre (Ecclesall Woods) - Weddings</li>
+      <li>Shire Brook Valley Visitor Centre</li>
+      <li>Graves Park Animal Farm</li>
+    </ul>
 
+  <p>Information about this topic will be available on the Council Website</p>
+  
   <p>
-    Please also refer to other relevant articles in the <strong>'Bookings'</strong> section of the <strong>'Parks, sport and recreation'</strong> knowledge menu.
+    The form is available on the website and must be completed by the interested party due to liability issues - 
+    <strong>the form must not be completed by customer service staff on their behalf</strong>.
+  </p>  
+  <p>
+    Once a completed form is received, we will contact the customer to discuss the requirements further.
   </p>
   
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "parks_information_provided" },
-  {
+  { 
     type: "Information",
     keywords: [
-      "event",
-      "events",
+      "book",
+      "hire",
+      "room",
       "park",
-      "parks",
-      "private event",
-      "private events",
-      "gazebo",
-      "gazebos",
-      "book a room",
-      "enquiry",
-      "application",
+      "community",
+      "building",
+      "venue",
       "booking",
+      "bookings",
+      "reservation",
+      "reservations",
+      "conference",
+      "meeting",
+      "meetings",
+      "education",
+      "classes",
+      "community",
+      "events",
+      "private functions",
+      "bookng",
       "bokking",
-      "booknig",
-      "evnt",
-      "evnts",
     ],
-    categories: ["Parks and Countryside", "Booking"]
+    categories: ["Parks and Countryside", "Bookings"]
   },
-  { date: "07/08/2026", name: "Liz Taster" }
+  { date: "19/08/2026", name: "Liz Taster" }
 );
- 
+
 
 const bookASportsFacility = new ContentPSaR(
   "bookASportsFacility",
@@ -1854,6 +1893,86 @@ const bookASportsFacility = new ContentPSaR(
   { date: "07/08/2026", name: "Liz Taster" }
 );
 
+
+const bookAnEvent = new ContentPSaR(
+  "bookAnEvent",
+  "Book an Event",
+  "Information about holding private events in parks and how to make an enquiry using the booking form.",
+  `
+  <p>
+    Private events for friends/families are welcome - our green spaces are for all to use. 
+  </p>
+  
+  <p>
+    Remind customers to be mindful of other park users, and to not erect structures such as gazebos.
+  </p>
+  
+  <p>
+    More information about holding an event in a park can be found on the 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/events-parks" target="_blank" rel="noopener noreferrer">
+    Events in parks | Sheffield City Council</a> webpage, including the terms and conditions.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Events%20in%20parks\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <p>
+    Enquiries about holding an event in a park are welcome and can be done by completing the <strong><em>Book a Room/Event/Film/Photoshoot</em></strong> form - 
+    this is available at the link above.
+  </p>
+
+  <p>
+    The form must be completed by the interested party due to liability issues - <strong>the form must not be completed by customer service staff on their behalf.</strong>
+  </p>
+
+  <p>
+    Once the form has been submitted, the customer will be contacted to discuss the booking further.
+  </p>
+
+  <p>
+    Please also refer to other relevant articles in the <strong>'Bookings'</strong> section of the <strong>'Parks, sport and recreation'</strong> knowledge menu.
+  </p>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "event",
+      "events",
+      "park",
+      "parks",
+      "private event",
+      "private events",
+      "gazebo",
+      "gazebos",
+      "book a room",
+      "enquiry",
+      "application",
+      "booking",
+      "bokking",
+      "booknig",
+      "evnt",
+      "evnts",
+    ],
+    categories: ["Parks and Countryside", "Booking"]
+  },
+  { date: "07/08/2026", name: "Liz Taster" }
+);
+ 
+
 const commercialActivitiesParks = new ContentPSaR(
   "commercialActivitiesParks",
   "Commercial Activities and Vendors",
@@ -2018,122 +2137,6 @@ const filmingPhotoshoots = new ContentPSaR(
   }
 );
 
-const bookRoomOrParkBuilding = new ContentPSaR(
-  "bookRoomOrParkBuilding",
-  "Book a Room or Park Building",
-  "Information about hiring community buildings in parks and booking available venues.",
-  `
-  <p>
-    We have several community buildings in our parks that are available to hire.
-  </p>
-  <p>
-    The facilities vary by location and are capable of hosting a range of activities:
-  </p>
-    <ul>
-      <li>Private functions</li>
-      <li>Larger community events and activities</li>
-      <li>Education classes</li>
-      <li>Conferences</li>
-      <li>Meetings</li>
-    </ul>
-
-  <p>
-    Further information regarding facilities and booking requirements can be found at 
-    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
-    Book a community building or advertising space in a park | Sheffield City Council</a>.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20space%20in%20a%20park\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <p>
-    Layouts are available on the webpage but are not facilitated, so the person booking is responsible for the room setup.
-  </p>
-  <p>
-    The following facilities can be booked using the 
-    <a href="https://sheffield.zipporah.co.uk/Generic.Live/" target="_blank" rel="noopener noreferrer">Sheffield Council Parks Booking System</a>:
-  </p>
-    <ul>
-      <li>Centre in the Park</li>
-      <li>Firth Park Clock Tower</li>
-      <li>Bole Hill Pavillion</li>
-      <li>Stannington Pavillion</li>
-    </ul>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Booking%20System\`
-            "
-        >
-            Send link to review further information
-        </button>
-  
-  <p>The following venues can be booked by submitting an enquiry using our online form:</p>
-    <ul>
-      <li>Dorothy Fox Centre (Botanical Gardens) - Weddings</li>
-      <li>Woodland Discovery Centre (Ecclesall Woods) - Weddings</li>
-      <li>Shire Brook Valley Visitor Centre</li>
-      <li>Graves Park Animal Farm</li>
-    </ul>
-
-  <p>Information about this topic will be available on the Council Website</p>
-  
-  <p>
-    The form is available on the website and must be completed by the interested party due to liability issues - 
-    <strong>the form must not be completed by customer service staff on their behalf</strong>.
-  </p>  
-  <p>
-    Once a completed form is received, we will contact the customer to discuss the requirements further.
-  </p>
-  
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  { 
-    type: "Information",
-    keywords: [
-      "book",
-      "hire",
-      "room",
-      "park",
-      "community",
-      "building",
-      "venue",
-      "booking",
-      "bookings",
-      "reservation",
-      "reservations",
-      "conference",
-      "meeting",
-      "meetings",
-      "education",
-      "classes",
-      "community",
-      "events",
-      "private functions",
-      "bookng",
-      "bokking",
-    ],
-    categories: ["Parks and Countryside", "Bookings"]
-  },
-  { date: "19/08/2026", name: "Liz Taster" }
-);
 
 const weddingsInParks = new ContentPSaR(
   "weddingsInParks",
@@ -2186,24 +2189,212 @@ const weddingsInParks = new ContentPSaR(
   }
 );
 
+
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
    `Details of how to book different parks services and facilities, including rooms, events, spors facilities and photoshoots.`,
   [
     bannersInParks,
-    bookAnEvent,
+    bookRoomOrParkBuilding,
     bookASportsFacility,
+    bookAnEvent,
     commercialActivitiesParks,
     filmingPhotoshoots,
-    bookRoomOrParkBuilding,
     weddingsInParks,
-    
   ]
 );
 
 //#endregion Bookings
 
+const donatingToParks = new ContentPSaR(
+  "donatingToParks",
+  "Donating to Parks and Green Spaces",
+  "Information about financial donations and item donations for parks and green spaces.",
+  `
+  <p>
+    Customers wishing to make donations to Sheffield's Parks and Green Spaces should be directed to complete the online form available on the website.
+    Further details can be found below about donation types and how they are used.
+  </p>
+
+  <p>Information about this topic will be available on the Council Website</p>
+
+  <h3>Donating Money</h3>
+    <p>
+      The Council welcomes financial donations to support the maintenance, enhancement, and improvement of parks and green spaces.
+    </p>
+    <p>
+      Donations will be used to support improvements such as planting schemes, park facilities, biodiversity projects, community initiatives, 
+      or other agreed improvements within parks and green spaces.
+    </p>
+    <p>
+      Donations can be made using the online form and can be allocated to a specific park. 
+      Any park-specific donation arrangements will be subject to Council financial procedures and operational requirements.
+    </p>
+    <p>
+      If a specific park is not selected, donations may be used for parks and green spaces across the city where they are most needed.
+    </p>
+    <p>
+      Once a customer has completed the donation request form they will find a link to make payment of their donation in the request confirmation screen.
+    </p>
+
+  <h3>Donating Items</h3>
+    <p>
+      We are unable to accept donations of items or equipment - for example furniture, plants, memorial items, or play equipment.
+    </p>
+    <p>
+      Graves Park Animal Farm will consider donations which support the care of animals, such as food, hay, sawdust, blankets and similar items. 
+      Donations must be agreed by the park manager and delivered to the park. We do not collect donations.
+    </p>
+    <p>
+      Please provide details of the items you wish to donate using the form. A park manager will review the details and respond within 3-5 working days. 
+    </p>
+
+  <h3>Donating Trees/Plants</h3>
+    <p>
+      We do not accept donations of trees or plants. Please search for the knowledge article <strong>Tree Planting and Community Forestry</strong> for more info. 
+    </p>
+  
+  `,
+  { buttonLabel: "Donate to parks", formName: "request_donation_parks" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "donation",
+      "donations",
+      "donate",
+      "donating",
+      "financial",
+      "money",
+      "supportparks",
+      "charitable",
+      "giving",
+      "contribution",
+      "contributions",
+      "dontation",
+      "donatoin",
+      "donatons"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "14/08/2026", name: "Liz Taster" }
+);
+
+
+const ecology = new ContentPSaR(
+  "ecology",
+  "Ecology",
+  "Information about crayfish trapping restrictions and ecology data requests.",
+  `
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Crayfish</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The council does not allow crayfish trapping on its land anywhere in Sheffield unless it is for approved scientific research with an Environment Agency 
+        licence and landowner permission.
+      </p>
+      <p>
+        It is a criminal offence which can lead to prosecution, fines, and other penalties.
+      </p>
+      <p>
+        Crayfish trapping controls are in place, including for invasive crayfish, due to the potential to make environmental problems worse. 
+        Potential risks are:
+      </p>
+        <ul>
+          <li>Spreading invasive species and disease</li>
+          <li>Accidentally harming protected native crayfish</li>
+          <li>Catching other wildlife such as fish, water voles or otters</li>
+          <li>Damaging riverbanks and habitats</li>
+        </ul>
+
+        <p>
+          The UK’s native, white-clawed crayfish is endangered and legally protected due to major long-term declines caused by invasive species and disease. 
+          There are only two populations of white-clawed crayfish in Sheffield and they must be protected.
+        </p>
+
+        <p>
+          Further enquiries are to be directed to <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>
+        </p>
+    </div>
+  </details>
+  
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ecology Data Requests</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Enquiries may be received regarding Sheffield and Barnsley Record Centre data requests.
+      </p>
+      <p>
+        If the person has already completed a data request form, it should be sent to <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>
+      </p>
+      <p>
+        If the person wants to make a new data request, they can find the form and further information on the process and requirements at 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/sheffield-biological-records-centre" target="_blank" rel="noopener noreferrer">
+        Sheffield Biological Records Centre | Sheffield City Council</a>
+      </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Biological%20Records%20Centre\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+    </div>
+  </details>
+         
+        `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "ecology",
+      "crayfish",
+      "crayfishes",
+      "cray fish",
+      "white-clawed",
+      "white clawed",
+      "native",
+      "invasive",
+      "Environment Agency",
+      "scientific research",
+      "wildlife",
+      "riverbanks",
+      "habitats",
+      "protected species",
+      "Biological Records Centre",
+      "data requests",
+      "biological records",
+      "data request",
+      "trapping",
+      "traping",
+      "crayfsh",
+      "ecolgy",
+      "biolgical"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
 
 //#region Events and Activities
 
@@ -2551,223 +2742,7 @@ const eventsInParks = new ContentPSaR(
     name: "Liz Taster"
   }
 );
- 
 
-const rivelinValleyWaterPlay = new ContentPSaR(
-  "rivelinValleyWaterPlay",
-  "Rivelin Valley Water Play",
-  "Information about opening dates, opening hours, admission fees, accessibility facilities, etc. for Rivelin Valley Water Play.",
-  `
-  <p>
-    Rivelin Valley Water Play is open from Spring Bank Holiday until the first weekend in September.
-  </p>
-  <p>
-    Admission is <strong>free</strong>.
-  </p>
-
-<h3>Opening Hours</h3>
-  <p><strong>Out of school holidays</strong> – Open weekends only, 10am to 4.30pm</p>
-  <p><strong>During school holidays</strong> – Open every day, 10am to 4.30pm</p>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Accessibility</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Disabled access and facilities:</p>
-        <ul>
-          <li>Ramped access with handrails into the paddling pool</li>
-          <li>The water play area is accessible to people of all abilities, and special aqua wheelchairs are available for loan to disabled children and their carers</li>
-          <li>Changing Places toilet facility - access is controlled by a Radar key which can be obtained from the nearby cafe</li>
-          <li>3 large splash pads with colourful anti-slip surfacing</li>
-        </ul>
-    </div>
-  </details>
-
-
-<h3>More Information</h3>
-  <p>
-    Further information can be found at: 
-    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/rivelin-valley-water-play" target="_blank" rel="noopener noreferrer">
-    Rivelin Valley Water Play | Sheffield City Council</a>
-  </p>
-  
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Rivelin%20Valley%20Water%20Play\`
-            "
-        >
-            Send link to review further information
-        </button>
-  
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Rivelin",
-      "Valley",
-      "Water",
-      "Play",
-      "park",
-      "splash",
-      "pad",
-      "pads",
-      "paddling",
-      "pool",
-      "aqua wheelchair",
-      "aqua wheelchairs",
-      "Changing Places",
-      "waterplay",
-      "Rivelen",
-      "Rivlin",
-      "vally",
-      "splas"
-    ],
-    categories: ["Parks and Countryside", "Events and Activities"]
-  },
-  {
-    date: "12/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const sheffieldRoundWalk = new ContentPSaR(
-  "sheffieldRoundWalk",
-  "Sheffield Round Walk",
-  "Information about the Sheffield Round Walk and access to an online PDF guide.",
-  `
-  <p>
-    We have previously offered booklets about the Sheffield Round Walk for sale however these are no longer available.
-  </p>
-  <p>
-    A PDF with information about the walk is available online at 
-    <a href="https://www.welcometosheffield.co.uk/content/articles/sheffield-round-walk/" target="_blank" rel="noopener noreferrer">Sheffield Round Walk</a>
-  </p>
-  
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Round%20Walk\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Sheffield",
-      "Round",
-      "Walk",
-      "walking",
-      "walk",
-      "walks",
-      "trail",
-      "trails",
-      "route",
-      "routes",
-      "hiking",
-      "Shefield ",
-      "Wak"
-    ],
-    categories: ["Parks and Countryside", "Events and Activities"]
-  },
-  {
-    date: "12/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const playgrounds = new ContentPSaR(
-  "playgrounds",
-  "Playgrounds",
-  "Information about children's playgrounds in Sheffield parks and open spaces, inspections, maintenance, and reporting damage.",
-  `
-  <p>
-    There are over 150 children's playgrounds in Sheffield’s parks and open spaces.
-  </p>
-  <p>
-    All the playgrounds in Sheffield's parks and open spaces are checked on a regular basis, in addition to quarterly and annual routine inspections.
-  </p>
-  <p>
-    Sheffield City Council are responsible for the maintenance of all the equipment and facilities provided. 
-    All new playground equipment complies with European Standard EN1176/7.
-  </p>
-  <p>
-    A map of all playgrounds in Sheffield can be found here: 
-    <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5dbfc04cd9564cb3a10a2af4d4c81796" target="_blank" rel="noopener noreferrer">
-    Parks Playgrounds</a>.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Playgrounds%20Map\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <p>
-    Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
-    form.
-  </p>
-  <p>Information about this topic will be available on the Council Website</p>
-  <p>
-    Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
-    Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
-    Delays may occur over the weekend due to staffing limitations.
-  </p>
-
-  <p>
-    If a customer is wanting to report an injury in a playground, please refer to the ‘<em>Insurance or Personal Injury or Compensation</em>’ knowledge tile.
-  </p>
-  
-  `,
-  { buttonLabel: "Report playground issue", formName: "report_playground" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "playground",
-      "playgrounds",
-      "play",
-      "area",
-      "areas",
-      "children's",
-      "childrens",
-      "equipment",
-      "playgroud",
-      "playgrond",
-      "playgraound"
-    ],
-    categories: ["Parks and Countryside", "Events and Activities"]
-  },
-  { date: "13/08/2026", name: "Liz Taster" }
-);
 
 const gravesPark = new ContentPSaR(
   "gravesPark",
@@ -2985,6 +2960,226 @@ const gravesPark = new ContentPSaR(
   { date: "14/08/2026", name: "Liz Taster" }
 );
 
+
+const playgrounds = new ContentPSaR(
+  "playgrounds",
+  "Playgrounds",
+  "Information about children's playgrounds in Sheffield parks and open spaces, inspections, maintenance, and reporting damage.",
+  `
+  <p>
+    There are over 150 children's playgrounds in Sheffield’s parks and open spaces.
+  </p>
+  <p>
+    All the playgrounds in Sheffield's parks and open spaces are checked on a regular basis, in addition to quarterly and annual routine inspections.
+  </p>
+  <p>
+    Sheffield City Council are responsible for the maintenance of all the equipment and facilities provided. 
+    All new playground equipment complies with European Standard EN1176/7.
+  </p>
+  <p>
+    A map of all playgrounds in Sheffield can be found here: 
+    <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5dbfc04cd9564cb3a10a2af4d4c81796" target="_blank" rel="noopener noreferrer">
+    Parks Playgrounds</a>.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Playgrounds%20Map\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <p>
+    Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
+    form.
+  </p>
+  <p>Information about this topic will be available on the Council Website</p>
+  <p>
+    Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
+    Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
+    Delays may occur over the weekend due to staffing limitations.
+  </p>
+
+  <p>
+    If a customer is wanting to report an injury in a playground, please refer to the ‘<em>Insurance or Personal Injury or Compensation</em>’ knowledge tile.
+  </p>
+  
+  `,
+  { buttonLabel: "Report playground issue", formName: "report_playground" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "playground",
+      "playgrounds",
+      "play",
+      "area",
+      "areas",
+      "children's",
+      "childrens",
+      "equipment",
+      "playgroud",
+      "playgrond",
+      "playgraound"
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
+
+const rivelinValleyWaterPlay = new ContentPSaR(
+  "rivelinValleyWaterPlay",
+  "Rivelin Valley Water Play",
+  "Information about opening dates, opening hours, admission fees, accessibility facilities, etc. for Rivelin Valley Water Play.",
+  `
+  <p>
+    Rivelin Valley Water Play is open from Spring Bank Holiday until the first weekend in September.
+  </p>
+  <p>
+    Admission is <strong>free</strong>.
+  </p>
+
+<h3>Opening Hours</h3>
+  <p><strong>Out of school holidays</strong> – Open weekends only, 10am to 4.30pm</p>
+  <p><strong>During school holidays</strong> – Open every day, 10am to 4.30pm</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Accessibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Disabled access and facilities:</p>
+        <ul>
+          <li>Ramped access with handrails into the paddling pool</li>
+          <li>The water play area is accessible to people of all abilities, and special aqua wheelchairs are available for loan to disabled children and their carers</li>
+          <li>Changing Places toilet facility - access is controlled by a Radar key which can be obtained from the nearby cafe</li>
+          <li>3 large splash pads with colourful anti-slip surfacing</li>
+        </ul>
+    </div>
+  </details>
+
+
+<h3>More Information</h3>
+  <p>
+    Further information can be found at: 
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/rivelin-valley-water-play" target="_blank" rel="noopener noreferrer">
+    Rivelin Valley Water Play | Sheffield City Council</a>
+  </p>
+  
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Rivelin%20Valley%20Water%20Play\`
+            "
+        >
+            Send link to review further information
+        </button>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Rivelin",
+      "Valley",
+      "Water",
+      "Play",
+      "park",
+      "splash",
+      "pad",
+      "pads",
+      "paddling",
+      "pool",
+      "aqua wheelchair",
+      "aqua wheelchairs",
+      "Changing Places",
+      "waterplay",
+      "Rivelen",
+      "Rivlin",
+      "vally",
+      "splas"
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const sheffieldRoundWalk = new ContentPSaR(
+  "sheffieldRoundWalk",
+  "Sheffield Round Walk",
+  "Information about the Sheffield Round Walk and access to an online PDF guide.",
+  `
+  <p>
+    We have previously offered booklets about the Sheffield Round Walk for sale however these are no longer available.
+  </p>
+  <p>
+    A PDF with information about the walk is available online at 
+    <a href="https://www.welcometosheffield.co.uk/content/articles/sheffield-round-walk/" target="_blank" rel="noopener noreferrer">Sheffield Round Walk</a>
+  </p>
+  
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Round%20Walk\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Sheffield",
+      "Round",
+      "Walk",
+      "walking",
+      "walk",
+      "walks",
+      "trail",
+      "trails",
+      "route",
+      "routes",
+      "hiking",
+      "Shefield ",
+      "Wak"
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  {
+    date: "12/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
 const eventsAndActivities = new MenuPSaR(
   "eventsAndActivities",
   "Events and Activities",
@@ -2992,11 +3187,10 @@ const eventsAndActivities = new MenuPSaR(
   [
     activitiesInParks,
     eventsInParks,
+    gravesPark,
+    playgrounds,
     rivelinValleyWaterPlay,
     sheffieldRoundWalk,
-    playgrounds,
-    gravesPark
-    
   ]
 );
 
@@ -3004,6 +3198,1038 @@ const eventsAndActivities = new MenuPSaR(
 
 
 //#region Maintenance and Issues
+
+
+
+
+const antiSocialBehaviourParks = new ContentPSaR(
+  "antiSocialBehaviourParks",
+  "Anti-social Behaviour in Parks",
+  "Information about reporting anti-social behaviour and how reports are managed in parks.",
+  `
+    <p>
+      <strong>In the first instance antisocial behaviour should be reported to the Police via 101, or using 999 if it is an emergency.</strong>
+    </p>
+
+    <p>
+      Sheffield City Council take reports of anti-social behaviour (ASB) seriously and assess each report based on the circumstances, 
+      including the frequency of incidents, the impact on others, and any associated risks.
+    </p>
+    <p>
+      Examples of ASB may include vandalism, threatening behaviour, drug or alcohol-related nuisance, damage to property, noise nuisance, 
+      illegal use of vehicles, and harassment.
+    </p>
+
+    <p>
+      Further information about the councils approach to antisocial behaviour and a link to contact the ASB team can be found here: 
+      <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/crime-anti-social-behaviour/anti-social-behaviour" target="_blank" rel="noopener noreferrer">
+      Anti-social behaviour and community safety | Sheffield City Council</a>
+    </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=ASB%20and%20community%20safety\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <h3>ASB in Parks</h3>
+    <p>
+      Reports of ASB are passed to the Area Manager responsible for the park to review.
+    </p>
+    <p>
+      Records are maintained to help identify patterns, hot-spots and repeat incidents.
+    </p>
+    <p>
+      Depending on the nature and severity of the issue, we may work with other Council services, the Police, Community Safety teams, 
+      or other partner organisations to address the problem collectively.
+    </p>
+    <p>
+      Where an incident has been reported to Police, ask customers to <strong>provide the crime reference number or incident number</strong> - 
+      this assists council officers when liaising with other organisations.
+    </p>
+    
+  `,
+
+  { buttonLabel: "Report ASB", formName: "report_asb" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "anti-social behaviour",
+      "antisocial",
+      "behaviour",
+      "ASB",
+      "anti social",
+      "report ASB",
+      "parks",
+      "park",
+      "vandalism",
+      "threatening behaviour",
+      "drug",
+      "alcohol",
+      "noise",
+      "nuisance",
+      "property damage",
+      "illegal vehicles",
+      "harassment",
+      "behavour",
+      "antisocail",
+      "behviour"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "07/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const cctvParks = new ContentPSaR(
+  "cctvParks",
+  "CCTV in Parks",
+  "Information about CCTV enquiries in park spaces.",
+  `
+  <p>
+    CCTV cameras operate in park spaces in order to:
+  </p>
+    <ul>
+      <li>Promote community safety by protecting people and property</li>
+      <li>Assist with the prevention and detection of crime</li>
+      <li>Help us act upon threats or instances of criminal and anti-social behaviour</li>
+      <li>Ensure safety and better services e.g. traffic management and alarms</li>
+    </ul>
+  <p>
+    CCTV footage is generally kept for 14 days then automatically deleted on day 15.
+  </p>
+  <p>
+    Details on the locations of CCTV cameras across the city, and how footage can be accessed, is available on the website 
+    <a href="https://www.sheffield.gov.uk/your-city-council/cctv-body-worn-video" target="_blank" rel="noopener noreferrer">
+    CCTV and Body Worn Video | Sheffield City Council</a>.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=CCTV%20and%20Body%20Worn%20Video\`
+            "
+        >
+            Send link to review further information
+        </button>
+  
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "CCTV",
+      "camera",
+      "cameras",
+      "security",
+      "surveillance",
+      "CCTVs",
+      "cttv",
+      "cvtv",
+      "survellance",
+      "camra",
+      "camras"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "07/08/2026", name: "Liz Taster" }
+);
+
+
+const damageToFencing = new ContentPSaR(
+  "damageToFencing",
+  "Damage to Fencing (Parks)",
+  "Information on reporting damage to fencing in parks and countryside areas.",
+  `
+  <p>
+    Damage to fencing should be reported using the online form found here: 
+    <a href="https://www.sheffield.gov.uk/roads-pavements/faults-street-fences-bollards-benches" target="_blank" rel="noopener noreferrer">
+    Report a problem with a fence or barrier</a>.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20problem%20with%20fences%20or%20safety%20barriers\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <p>
+    Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
+  </p>
+  <p>
+    Repairs are prioritised based on public safety, accessibility, and severity of damage.
+  </p>
+  <p>
+    Parks &amp; Countryside will only contact the reporter if additional information is required.
+  </p>
+  
+  `,
+  { buttonLabel: "Report damage", formName: "report_fence_barrier" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Transactional",
+    keywords: [
+      "damage",
+      "damaged",
+      "fence",
+      "fencing",
+      "fences",
+      "repair",
+      "repairs",
+      "maintenance",
+      "report",
+      "reporting",
+      "reported",
+      "broken",
+      "fense",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
+
+const damageToPavementsAndSurfaces = new ContentPSaR(
+  "damageToPavementsAndSurfaces",
+  "Damage to Pavements and Surfaces (Parks)",
+  "Information on reporting damage to footpaths, pavements and surfaces in parks and countryside areas.",
+  `
+  <p>
+    Damage to footpaths or pavements should be reported using the online form found here: 
+    <a href="https://www.sheffield.gov.uk/roads-pavements/report-problems/report-road-problems" target="_blank" rel="noopener noreferrer">
+    Report a problem with a road or pavement surface</a>.
+  </p>
+  <p> 
+    Ask customers to click on the relevant link under the <strong>'What would you like to report?'</strong> section.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20problem%20with%20the%20road%20or%20pavement%20surface\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <p>
+    Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
+  </p>
+  <p>
+    Repairs are prioritised based on public safety, accessibility, and severity of damage.
+  </p>
+  <p>
+    Parks &amp; Countryside will only contact the reporter if additional information is required.
+  </p>
+  
+  `,
+  { buttonLabel: "Report damage", formName: "road_pavement_surface" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "damage",
+      "damaged",
+      "footpath",
+      "footpaths",
+      "path",
+      "paths",
+      "pavement",
+      "pavements",
+      "surface",
+      "surfaces",
+      "repair",
+      "repairs",
+      "maintenance",
+      "report",
+      "reporting",
+      "walkway",
+      "walkways",
+      "pavment",
+      "footpth"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
+
+const dogCatWasteCommercial = new ContentPSaR(
+  "dogCatWasteCommercial",
+  "Dog and Cat Waste (Commercial)",
+  "We provide dog and cat waste removal services to private companies e.g. kennels or vets, located within the Sheffield City boundaries.",
+  `
+  <p>
+    We provide dog and cat waste removal services to private companies e.g. kennels or vets located within the Sheffield City boundaries.
+  </p>
+
+  <p>The following criteria must be met:</p>
+    <ul>
+      <li>Collection must be from an accessible location, ideally enabling a vehicle to park next to the waste point or within a reasonable distance</li>
+      <li>The waste must be bagged and meet the agreed standard of BK090A9, BK090A8 or equivalent (SCC does not supply these bags)</li>
+      <li>All waste bags must be securely tied by cable ties to prevent spillage</li>
+      <li>Individual bags must weigh no more than 20kg</li>
+      <li>Waste transfer notes can be supplied at the customer’s request</li>
+    </ul>
+
+  <p>
+    The charge varies depending on the number of bags in a single collection. <strong>Charges start at £40.95</strong> for one bag, with additional bags charged at £5 each.
+  </p>
+
+  <p>
+    Customers should fill out the request form online.
+  </p>
+  <p>Information about this topic will be available on the Council Website</p>
+
+  <p>
+    The request form includes a link for immediate payment on the request confirmation screen. If a customer reports an issue with payment, it can be made using the following link
+    <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank" rel="noopener noreferrer">
+    https://ip.e-paycapita.com/Grit/Salt Requests</a>
+  </p>
+
+  <p>
+    Once an enquiry has been submitted, the customer will be contacted by a member of the Parks &amp; Countryside service to discuss the request.
+  </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost Details</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Number of Bags</th>
+            <th>Cost of collection</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>£40.95</td></tr>
+          <tr><td>2</td><td>£45.95</td></tr>
+          <tr><td>3</td><td>£50.95</td></tr>
+          <tr><td>4</td><td>£55.95</td></tr>
+          <tr><td>5</td><td>£60.95</td></tr>
+          <tr><td>6</td><td>£65.95</td></tr>
+          <tr><td>7</td><td>£70.95</td></tr>
+          <tr><td>8</td><td>£75.95</td></tr>
+          <tr><td>9</td><td>£80.95</td></tr>
+          <tr><td>10</td><td>£85.95</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+`,
+  { buttonLabel: "Request waste collection", formName: "request_waste_collection" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "",
+    keywords: [
+      "dog",
+      "cat",
+      "waste",
+      "Commercial",
+      "commercial",
+      "animal",
+      "pet",
+      "removal",
+      "collection",
+      "collections",
+      "private",
+      "company",
+      "companies",
+      "kennels",
+      "kennel",
+      "vets",
+      "vet",
+      "veterinary",
+      "bags",
+      "bagged",
+      "wast",
+      "comercial",
+      "kenels",
+      "payement"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const dogBins = new ContentPSaR(
+  "dogBins",
+  "Dog Bins",
+  "Information about dog waste bin emptying schedules, maintenance, and reporting issues.",
+  `
+  <p>
+    Dog waste bins in parks are emptied weekly or twice a week depending on volume - this is based on varying demand, location and usage.
+  </p>
+  <p>
+    We do not conduct planned maintenance on dog waste bins. Damaged, vandalised, or defective bins are assessed when reported and 
+    repairs or replacements are considered based on the condition of the bin.
+  </p>
+  <p>
+    To report an issue with a dog waste bin, use the online form.
+  </p>
+  <p>Information about this topic will be available on the Council Website</p>
+
+`,
+  { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "dog",
+      "bin",
+      "bins",
+      "waste",
+      "dogs",
+      "fouling",
+      "litter",
+      "damaged",
+      "damage",
+      "poo",
+      "poop",
+      "vandalised",
+      "defective",
+      "dogbn",
+      "wast",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
+
+const dogFouling = new ContentPSaR(
+  "dogFouling",
+  "Dog Fouling (Parks and Countryside)",
+  "Information about reporting dog fouling and related penalties.",
+  `
+  <p>
+    Dog fouling is illegal in the UK and can result in a fixed penalty notice ranging from £50 to £100, or prosecution in a magistrate’s court. 
+    Exemptions may be made for registered blind owners or people with certain disabilities affecting mobility or sight.
+  </p>
+  <p>
+    To report an issue with dog fouling, please use the online form available here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
+    Report dog fouling</a>.
+    <br>Ask customers to click on the <strong>'Report dog fouling'</strong> button to access the form.
+  </p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20dog%20fouling\`
+            "
+        >
+            Send link to review further information
+        </button>
+  `,
+  { buttonLabel: "Report dog fouling", formName: "report_dog_fouling" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "dog",
+      "fouling",
+      "foul",
+      "mess",
+      "waste",
+      "dogs",
+      "pets",
+      "pet",
+      "canine",
+      "poop",
+      "poo",
+      "fauling",
+      "foulling",
+      "fowling"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const flyTipping = new ContentPSaR(
+  "flyTipping",
+  "Fly Tipping (Parks)",
+  "Information about reporting fly-tipping and how waste is removed from parks and woodland areas.",
+  `
+  <p>
+    Reports of fly tipping are referred to the parks/woodland management team who will assess the scale of the issue and the response required.
+  </p>
+  <p>
+    Some materials require a specialist response and will take longer to remove.
+  </p>
+  <p>
+    Waste will be removed no later than 10 working days after being reported.
+  </p>
+
+  <p>
+    Fly-tipping can be reported using the <strong>'Report fly-tipping'</strong> button available here: 
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/report-fly-tipping-public-land" target="_blank" rel="noopener noreferrer">
+    Reporting fly-tipping | Sheffield City Council</a>
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly%20tipping\`
+            "
+        >
+            Send link to review further information
+        </button>
+  <p>
+    Further information about how the council deals with fly-tipping can be found here: 
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter" target="_blank" rel="noopener noreferrer">
+    Fly-tipping and litter | Sheffield City Council</a>
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Fly-tipping%20and%20litter\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  `,
+ 
+  { buttonLabel: "Report Fly-tipping", formName: "report_fly_tipping"},
+  { typeKey: ""},
+  { typeKey: "parks_information_provided"},
+  {
+    type: "Information",
+    keywords: [
+      "fly",
+      "tipping",
+      "fly-tipping",
+      "illegal",
+      "dumped",
+      "waste",
+      "rubbish",
+      "litter",
+      "parks",
+      "woodland",
+      "waste removal",
+      "fly tip",
+      "fly tips",
+      "dumping",
+      "refuse",
+      "trash",
+      "flytipping",
+      "fly tiping",
+      "flytippng",
+      "tpping",
+      "tippng",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "07/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const graffitiRemovalParkProperty = new ContentPSaR(
+  "graffitiRemovalParkProperty",
+  "Graffiti Removal (Park Property)",
+  "Report graffiti located on park property for inspection and appropriate action.",
+  `
+  <p>
+    Graffiti located on park property can be reported using the Graffiti Removal form.
+  </p>
+  <p>
+    When completing the form accuracy is very important to ensure the form is routed to the responsible team e.g. if the graffiti is on a building next to a road, 
+    please ensure you select the building, and not the road.
+  </p>
+  <p>
+    Once reported, the graffiti will be inspected and appropriate action will be taken, which can range from removal to cover up.
+  </p>
+  <p>
+    Information about how to report graffiti can be found here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
+    Report graffiti | Sheffield City Council</a>.
+    <br> Ask customers to use the same form that is used to report graffiti on the highway. 
+  </p>
+
+  <p>
+    <em>Please note</em> - it is not always the Council's responsibility to remove graffiti where the graffiti is on an item not owned by the council - e.g. bus stops, or broadband cabinets.
+    <br>Information about reporting graffiti to the correctly responsible party, and links to do so, can also be found at this website.
+  </p>
+
+  	    <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20graffiti\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+`,
+  { buttonLabel: "Report graffiti", formName: "report_graffiti" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "graffiti",
+      "removal",
+      "remove",
+      "vandalism",
+      "tagging",
+      "graffitti",
+      "grafitti",
+      "grafiti",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "20/08/2026", name: "Liz Taster" }
+);
+
+
+const grassHedgeCutting = new ContentPSaR(
+  "grassHedgeCutting",
+  "Grass and Hedge Cutting (Parks)",
+  "Information about grass cutting schedules, hedge cutting periods, and reporting issues with grassed areas and hedges.",
+  `
+<h3>Grass Cutting</h3>
+  <p>
+    Grass is cut every 3-4 weeks following a schedule, starting in April and running to the end of October. 
+    Frequency depends on the weather conditions, grass growth rates, and site conditions.
+  </p>
+  <p>
+    Where visible, litter is collected prior to cutting. If the grass is too long some litter cannot be seen by our operatives. 
+    If this is the case, litter will be collected shortly after the grass has been cut, but not necessarily on the same day.
+  </p>
+
+<h3>Hedge Cutting</h3>
+  <p>
+    Hedge cutting takes place during specific periods:
+  </p>
+    <ul>
+      <li>June to August</li>
+      <li>October to December</li>
+    </ul>
+  <p>
+    Timing may vary depending on the type and location of the hedge, nesting bird considerations, and weather conditions.
+  </p>
+<h3>Reporting Issues</h3>
+ 
+
+  <p>
+    Further information about grass cutting, hedge cutting, and other related topics can be found here:
+    <a href="https://www.sheffield.gov.uk/roads-pavements/problems-plants-trees-weeds-grass" target="_blank" rel="noopener noreferrer">
+    Problems with plants, trees, weeds and grass | Sheffield City Council</a>
+  </p>
+   <p>
+    If someone wishes to report an area that appears to have been missed, requires attention, or an issue with grass or hedges 
+    ask them to use the form available on that web page - look for the green button marked "Report a problem with hedges, plants or grassed areas".
+    <br>Once the report has been reviewed, the park manager will inspect the area and act where required.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20hedges%20plants%20or%20grassed%20areas\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  `,
+  { buttonLabel: "Report an issue", formName: "report_hedge_plant_grass" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "grass",
+      "cutting",
+      "cut",
+      "mow",
+      "mowing",
+      "lawn",
+      "hedge",
+      "trim",
+      "trimming",
+      "hedges",
+      "grassed",
+      "weeds",
+      "grasscutting",
+      "hedgecutting",
+      "gras",
+      "cuting",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
+const gritSaltCommercial = new ContentPSaR(
+  "gritSaltCommercial",
+  "Grit and Salt (Commercial)",
+  "We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.",
+  `
+  <p>
+    <strong>The following does not apply to public grit bins which are maintained and refilled regularly as required.</strong> 
+    More information about public grit bins can be found at 
+    <a href="https://www.sheffield.gov.uk/roads-pavements/winter-road-maintenance-and-gritting/grit-bins-sheffield" target="_blank" rel="noopener noreferrer">
+    Grit bins in Sheffield | Sheffield City Council</a>
+  </p>
+
+  	    <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Grit%20bins%20in%20Sheffield\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <p>
+    We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.
+  </p>
+
+  <p>
+    Further information and a form to make a request are available online.
+  </p>
+
+  <p>Information about this topic will be available on the Council Website</p>
+
+  <p>
+    The minimum order is 0.5 tonnes, requests for more than10 tonnes require 28 days’ notice.
+  </p>
+  <p>
+    The material is supplied in 1 tonne builders’ bags using a grab lorry. <strong>The delivery location must be suitable to accommodate the lorry.</strong>
+  </p>
+  <p>
+    Deliveries will only be made on weekdays. 
+  </p>
+  <p>
+    The price varies by volume required.
+  </p>
+  <p>
+    For amounts of 2 tonne or greater, the cost is £180 per tonne. The cost per tonne is higher for 0.5/1tonne due to the delivery.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Costs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <table>
+        <thead>
+          <tr>
+            <th><strong>Quantity</strong></th>
+            <th><strong>Cost</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0.5 tonne</td><td>£150</td></tr>
+          <tr><td>1 tonne</td><td>£240</td></tr>
+          <tr><td>2 tonnes</td><td>£360</td></tr>
+          <tr><td>3 tonnes</td><td>£540</td></tr>
+          <tr><td>4 tonnes</td><td>£720</td></tr>
+          <tr><td>5 tonnes</td><td>£900</td></tr>
+          <tr><td>6 tonnes</td><td>£1,080</td></tr>
+          <tr><td>7 tonnes</td><td>£1,260</td></tr>
+          <tr><td>8 tonnes</td><td>£1,440</td></tr>
+          <tr><td>9 tonnes</td><td>£1,620</td></tr>
+          <tr><td>10 tonnes</td><td>£1,800</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <p>
+    Customers can fill out the request form which can be found on the website and includes a link for immediate payment on the request confirmation page.
+  </p>
+
+  <p>
+    If there has been an issue with payment, it can be made using the following link 
+    <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank" rel="noopener noreferrer">
+    https://ip.e-paycapita.com/Grit/Salt Requests</a>
+  </p>
+
+  <p>
+    Once an enquiry is made through the online form the customer will be contacted by a member of the Parks &amp; Countryside service to discuss the request.
+  </p>
+  
+  `,
+  { buttonLabel: "Order grit (commercial)", formName: "request_order_grit_salt" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Grit",
+      "Salt",
+      "Commercial",
+      "bins",
+      "bins",
+      "winter",
+      "gritting",
+      "salting",
+      "road",
+      "rock",
+      "de-icing",
+      "deicing",
+      "gritt",
+      "grittt",
+      "sault",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "14/08/2026", name: "Liz Taster" }
+);
+
+
+const insurancePersonalInjuryCompensation = new ContentPSaR(
+  "insurancePersonalInjuryCompensation",
+  "Insurance or Personal Injury or Compensation",
+  "Information on reporting an injury or making a compensation claim.",
+  `
+  <p>
+    If someone wishes to report an injury or claim compensation they should contact 
+    <a href="mailto:insurance@sheffield.gov.uk">insurance@sheffield.gov.uk</a> with details of their claim.
+  </p>
+    
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "insurance",
+      "insurances",
+      "personal",
+      "injury",
+      "injuries",
+      "compensation",
+      "claim",
+      "claims",
+      "accident",
+      "indurance",
+      "compansation",
+      "injruy"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "07/08/2026", name: "Liz Taster" }
+);
+
+
+const litterAndLitterBins = new ContentPSaR(
+  "litterAndLitterBins",
+  "Litter and Litter Bins (Parks)",
+  "Information about litter bin responsibilities, emptying schedules, maintenance, reporting issues, and community litter picking support.",
+  `
+  <p>
+    Responsibility for litter bins varies depending on their location. Some bins are managed by the Parks and Countryside Service, 
+    while others may be the responsibility of Highways, Housing Services, or other Council services.
+  </p>
+  <p>
+    Litter bins in parks are generally emptied daily although this varies depending on demand, location and usage. 
+    Special events and adverse weather can occasionally impact scheduled emptying.
+  </p>
+  <p>
+    Throughout the warmer periods an increase in park visitor numbers can lead to higher-than-expected volumes of waste, and bin overflows; 
+    we attempt to address these instances as a priority.
+  </p>
+  <p>
+    We do not conduct planned maintenance on bins. Damaged, vandalised, or defective bins are assessed when reported and repairs or replacements 
+    are considered based on the condition of the bin.
+  </p>
+  <p>
+    <br>To report an issue with a litter bin, direct customers to use the online form available here:
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
+    target="_blank" rel="noopener noreferrer">Report litter bin</a>.
+    <br>Ask customers to click on <strong>'Report a problem with a litter bin' </strong>.
+  </p>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20litter%20bin\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+<h3>Litter Picking Resources and Support</h3>
+  <p>
+    For information about litter picking, please refer customers to: 
+    <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/fly-tipping-litter/organise-litter-picks" target="_blank" rel="noopener noreferrer">
+    Organise a community litter pick | Sheffield City Council</a>.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Organise%20a%20community%20litter%20pick\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+`,
+  { buttonLabel: "Report a litter bin", formName: "report_litter_bin" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "litter",
+      "bin",
+      "bins",
+      "waste",
+      "rubbish",
+      "trash",
+      "overflow",
+      "overflows",
+      "emptying",
+      "damaged",
+      "vandalised",
+      "defective",
+      "pick",
+      "picking",
+      "litterbin",
+      "binn",
+      "bns",
+      "rubbis",
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
+
+
+const lostFoundProperty = new ContentPSaR(
+  "lostFoundProperty",
+  "Lost and Found Property",
+  "Information about reporting lost or found property in parks.",
+  `
+  <p>
+    Sheffield City Council is not responsible for property lost or damaged in parks.
+  </p>
+  <p>
+    When property is reported <strong>lost</strong>, we will attempt to reunite the item with the owner based on the information provided, if the item is found.
+  </p>
+  <p>
+    If property is reported as <strong>found</strong>, we will attempt to reunite it with the owner if we receive a matching report of a lost item.
+  </p>
+  <p>
+    Once informed about lost property we will only contact the reporter if the item is found.
+  </p>
+  
+  `,
+  { buttonLabel: "Report lost or found property", formName: "report_lost_prop_parks" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "lost",
+      "found",
+      "property",
+      "item",
+      "missing",
+      "unclaimed",
+      "items",
+      "belongings",
+      "foud",
+      "propety",
+      "proprty"
+    ],
+    categories: ["Parks and Countryside", "Maintenance and Issues"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
 
 
 const reportTreePark = new ContentPSaR(
@@ -3164,1051 +4390,177 @@ const reportTreePark = new ContentPSaR(
 );
 
 
-const antiSocialBehaviourParks = new ContentPSaR(
-  "antiSocialBehaviourParks",
-  "Anti-social Behaviour in Parks",
-  "Information about reporting anti-social behaviour and how reports are managed in parks.",
-  `
-    <p>
-      <strong>In the first instance antisocial behaviour should be reported to the Police via 101, or using 999 if it is an emergency.</strong>
-    </p>
-
-    <p>
-      Sheffield City Council take reports of anti-social behaviour (ASB) seriously and assess each report based on the circumstances, 
-      including the frequency of incidents, the impact on others, and any associated risks.
-    </p>
-    <p>
-      Examples of ASB may include vandalism, threatening behaviour, drug or alcohol-related nuisance, damage to property, noise nuisance, 
-      illegal use of vehicles, and harassment.
-    </p>
-
-    <p>
-      Further information about the councils approach to antisocial behaviour and a link to contact the ASB team can be found here: 
-      <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/crime-anti-social-behaviour/anti-social-behaviour" target="_blank" rel="noopener noreferrer">
-      Anti-social behaviour and community safety | Sheffield City Council</a>
-    </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=ASB%20and%20community%20safety\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <h3>ASB in Parks</h3>
-    <p>
-      Reports of ASB are passed to the Area Manager responsible for the park to review.
-    </p>
-    <p>
-      Records are maintained to help identify patterns, hot-spots and repeat incidents.
-    </p>
-    <p>
-      Depending on the nature and severity of the issue, we may work with other Council services, the Police, Community Safety teams, 
-      or other partner organisations to address the problem collectively.
-    </p>
-    <p>
-      Where an incident has been reported to Police, ask customers to <strong>provide the crime reference number or incident number</strong> - 
-      this assists council officers when liaising with other organisations.
-    </p>
-    
-  `,
-
-  { buttonLabel: "Report ASB", formName: "report_asb" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "anti-social behaviour",
-      "antisocial",
-      "behaviour",
-      "ASB",
-      "anti social",
-      "report ASB",
-      "parks",
-      "park",
-      "vandalism",
-      "threatening behaviour",
-      "drug",
-      "alcohol",
-      "noise",
-      "nuisance",
-      "property damage",
-      "illegal vehicles",
-      "harassment",
-      "behavour",
-      "antisocail",
-      "behviour"
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  {
-    date: "07/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-
-const cctvParks = new ContentPSaR(
-  "cctvParks",
-  "CCTV in Parks",
-  "Information about CCTV enquiries in park spaces.",
-  `
-  <p>
-    CCTV cameras operate in park spaces in order to:
-  </p>
-    <ul>
-      <li>Promote community safety by protecting people and property</li>
-      <li>Assist with the prevention and detection of crime</li>
-      <li>Help us act upon threats or instances of criminal and anti-social behaviour</li>
-      <li>Ensure safety and better services e.g. traffic management and alarms</li>
-    </ul>
-  <p>
-    CCTV footage is generally kept for 14 days then automatically deleted on day 15.
-  </p>
-  <p>
-    Details on the locations of CCTV cameras across the city, and how footage can be accessed, is available on the website 
-    <a href="https://www.sheffield.gov.uk/your-city-council/cctv-body-worn-video" target="_blank" rel="noopener noreferrer">
-    CCTV and Body Worn Video | Sheffield City Council</a>.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=CCTV%20and%20Body%20Worn%20Video\`
-            "
-        >
-            Send link to review further information
-        </button>
-  
-  `,
-
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "CCTV",
-      "camera",
-      "cameras",
-      "security",
-      "surveillance",
-      "CCTVs",
-      "cttv",
-      "cvtv",
-      "survellance",
-      "camra",
-      "camras"
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "07/08/2026", name: "Liz Taster" }
-);
-
-const insurancePersonalInjuryCompensation = new ContentPSaR(
-  "insurancePersonalInjuryCompensation",
-  "Insurance or Personal Injury or Compensation",
-  "Information on reporting an injury or making a compensation claim.",
-  `
-  <p>
-    If someone wishes to report an injury or claim compensation they should contact 
-    <a href="mailto:insurance@sheffield.gov.uk">insurance@sheffield.gov.uk</a> with details of their claim.
-  </p>
-    
-    `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "insurance",
-      "insurances",
-      "personal",
-      "injury",
-      "injuries",
-      "compensation",
-      "claim",
-      "claims",
-      "accident",
-      "indurance",
-      "compansation",
-      "injruy"
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "07/08/2026", name: "Liz Taster" }
-);
-
-const flyTipping = new ContentPSaR(
-  "flyTipping",
-  "Fly Tipping",
-  "Information about reporting fly-tipping and how waste is removed from parks and woodland areas.",
-  `
-  <p>
-    Reports of fly tipping are referred to the parks/woodland management team who will assess the scale of the issue and the response required.
-  </p>
-  <p>
-    Some materials require a specialist response and will take longer to remove.
-  </p>
-  <p>
-    Waste will be removed no later than 10 working days after being reported.
-  </p>
-
-  <p>
-    Fly-tipping can be reported using the <strong>'Report fly-tipping'</strong> button available here: 
-    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/report-fly-tipping-public-land" target="_blank" rel="noopener noreferrer">
-    Reporting fly-tipping | Sheffield City Council</a>
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly%20tipping\`
-            "
-        >
-            Send link to review further information
-        </button>
-  <p>
-    Further information about how the council deals with fly-tipping can be found here: 
-    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter" target="_blank" rel="noopener noreferrer">
-    Fly-tipping and litter | Sheffield City Council</a>
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Fly-tipping%20and%20litter\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-
-
-  `,
- 
-  { buttonLabel: "Report Fly-tipping", formName: "report_fly_tipping"},
-  { typeKey: ""},
-  { typeKey: "parks_information_provided"},
-  {
-    type: "Information",
-    keywords: [
-      "fly",
-      "tipping",
-      "fly-tipping",
-      "illegal",
-      "dumped",
-      "waste",
-      "rubbish",
-      "litter",
-      "parks",
-      "woodland",
-      "waste removal",
-      "fly tip",
-      "fly tips",
-      "dumping",
-      "refuse",
-      "trash",
-      "flytipping",
-      "fly tiping",
-      "flytippng",
-      "tpping",
-      "tippng",
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  {
-    date: "07/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const damageToPavementsAndSurfaces = new ContentPSaR(
-  "damageToPavementsAndSurfaces",
-  "Damage to Pavements and Surfaces",
-  "Information on reporting damage to footpaths, pavements and surfaces in parks and countryside areas.",
-  `
-  <p>
-    Damage to footpaths or pavements should be reported using the online form found here: 
-    <a href="https://www.sheffield.gov.uk/roads-pavements/report-problems/report-road-problems" target="_blank" rel="noopener noreferrer">
-    Report a problem with a road or pavement surface</a>.
-  </p>
-  <p> 
-    Ask customers to click on the relevant link under the <strong>'What would you like to report?'</strong> section.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20problem%20with%20the%20road%20or%20pavement%20surface\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <p>
-    Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
-  </p>
-  <p>
-    Repairs are prioritised based on public safety, accessibility, and severity of damage.
-  </p>
-  <p>
-    Parks &amp; Countryside will only contact the reporter if additional information is required.
-  </p>
-  
-  `,
-  { buttonLabel: "Report damage", formName: "road_pavement_surface" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "damage",
-      "damaged",
-      "footpath",
-      "footpaths",
-      "path",
-      "paths",
-      "pavement",
-      "pavements",
-      "surface",
-      "surfaces",
-      "repair",
-      "repairs",
-      "maintenance",
-      "report",
-      "reporting",
-      "walkway",
-      "walkways",
-      "pavment",
-      "footpth"
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "13/08/2026", name: "Liz Taster" }
-);
-
-
-const damageToFencing = new ContentPSaR(
-  "damageToFencing",
-  "Damage to Fencing",
-  "Information on reporting damage to fencing in parks and countryside areas.",
-  `
-  <p>
-    Damage to fencing should be reported using the online form found here: 
-    <a href="https://www.sheffield.gov.uk/roads-pavements/faults-street-fences-bollards-benches" target="_blank" rel="noopener noreferrer">
-    Report a problem with a fence or barrier</a>.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20problem%20with%20fences%20or%20safety%20barriers\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <p>
-    Reported damage will be assessed and any appropriate action will be undertaken within 3-5 working days. Urgent issues will be assessed as a priority.
-  </p>
-  <p>
-    Repairs are prioritised based on public safety, accessibility, and severity of damage.
-  </p>
-  <p>
-    Parks &amp; Countryside will only contact the reporter if additional information is required.
-  </p>
-  
-  `,
-  { buttonLabel: "Report damage", formName: "report_fence_barrier" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Transactional",
-    keywords: [
-      "damage",
-      "damaged",
-      "fence",
-      "fencing",
-      "fences",
-      "repair",
-      "repairs",
-      "maintenance",
-      "report",
-      "reporting",
-      "reported",
-      "broken",
-      "fense",
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "13/08/2026", name: "Liz Taster" }
-);
-
-const litterAndLitterBins = new ContentPSaR(
-  "litterAndLitterBins",
-  "Litter and Litter Bins",
-  "Information about litter bin responsibilities, emptying schedules, maintenance, reporting issues, and community litter picking support.",
-  `
-  <p>
-    Responsibility for litter bins varies depending on their location. Some bins are managed by the Parks and Countryside Service, 
-    while others may be the responsibility of Highways, Housing Services, or other Council services.
-  </p>
-  <p>
-    Litter bins in parks are generally emptied daily although this varies depending on demand, location and usage. 
-    Special events and adverse weather can occasionally impact scheduled emptying.
-  </p>
-  <p>
-    Throughout the warmer periods an increase in park visitor numbers can lead to higher-than-expected volumes of waste, and bin overflows; 
-    we attempt to address these instances as a priority.
-  </p>
-  <p>
-    We do not conduct planned maintenance on bins. Damaged, vandalised, or defective bins are assessed when reported and repairs or replacements 
-    are considered based on the condition of the bin.
-  </p>
-  <p>
-    <br>To report an issue with a litter bin, direct customers to use the online form available here:
-    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter/dealing-litter" 
-    target="_blank" rel="noopener noreferrer">Report litter bin</a>.
-    <br>Ask customers to click on <strong>'Report a problem with a litter bin' </strong>.
-  </p>
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20litter%20bin\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-<h3>Litter Picking Resources and Support</h3>
-  <p>
-    For information about litter picking, please refer customers to: 
-    <a href="https://www.sheffield.gov.uk/pollution-and-nuisance/fly-tipping-litter/organise-litter-picks" target="_blank" rel="noopener noreferrer">
-    Organise a community litter pick | Sheffield City Council</a>.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Organise%20a%20community%20litter%20pick\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-`,
-  { buttonLabel: "Report a litter bin", formName: "report_litter_bin" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "litter",
-      "bin",
-      "bins",
-      "waste",
-      "rubbish",
-      "trash",
-      "overflow",
-      "overflows",
-      "emptying",
-      "damaged",
-      "vandalised",
-      "defective",
-      "pick",
-      "picking",
-      "litterbin",
-      "binn",
-      "bns",
-      "rubbis",
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "13/08/2026", name: "Liz Taster" }
-);
-
-const lostFoundProperty = new ContentPSaR(
-  "lostFoundProperty",
-  "Lost and Found Property",
-  "Information about reporting lost or found property in parks.",
-  `
-  <p>
-    Sheffield City Council is not responsible for property lost or damaged in parks.
-  </p>
-  <p>
-    When property is reported <strong>lost</strong>, we will attempt to reunite the item with the owner based on the information provided, if the item is found.
-  </p>
-  <p>
-    If property is reported as <strong>found</strong>, we will attempt to reunite it with the owner if we receive a matching report of a lost item.
-  </p>
-  <p>
-    Once informed about lost property we will only contact the reporter if the item is found.
-  </p>
-  
-  `,
-  { buttonLabel: "Report lost or found property", formName: "report_lost_prop_parks" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "lost",
-      "found",
-      "property",
-      "item",
-      "missing",
-      "unclaimed",
-      "items",
-      "belongings",
-      "foud",
-      "propety",
-      "proprty"
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  {
-    date: "13/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const grassHedgeCutting = new ContentPSaR(
-  "grassHedgeCutting",
-  "Grass and Hedge Cutting",
-  "Information about grass cutting schedules, hedge cutting periods, and reporting issues with grassed areas and hedges.",
-  `
-<h3>Grass Cutting</h3>
-  <p>
-    Grass is cut every 3-4 weeks following a schedule, starting in April and running to the end of October. 
-    Frequency depends on the weather conditions, grass growth rates, and site conditions.
-  </p>
-  <p>
-    Where visible, litter is collected prior to cutting. If the grass is too long some litter cannot be seen by our operatives. 
-    If this is the case, litter will be collected shortly after the grass has been cut, but not necessarily on the same day.
-  </p>
-
-<h3>Hedge Cutting</h3>
-  <p>
-    Hedge cutting takes place during specific periods:
-  </p>
-    <ul>
-      <li>June to August</li>
-      <li>October to December</li>
-    </ul>
-  <p>
-    Timing may vary depending on the type and location of the hedge, nesting bird considerations, and weather conditions.
-  </p>
-<h3>Reporting Issues</h3>
- 
-
-  <p>
-    Further information about grass cutting, hedge cutting, and other related topics can be found here:
-    <a href="https://www.sheffield.gov.uk/roads-pavements/problems-plants-trees-weeds-grass" target="_blank" rel="noopener noreferrer">
-    Problems with plants, trees, weeds and grass | Sheffield City Council</a>
-  </p>
-   <p>
-    If someone wishes to report an area that appears to have been missed, requires attention, or an issue with grass or hedges 
-    ask them to use the form available on that web page - look for the green button marked "Report a problem with hedges, plants or grassed areas".
-    <br>Once the report has been reviewed, the park manager will inspect the area and act where required.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20hedges%20plants%20or%20grassed%20areas\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  `,
-  { buttonLabel: "Report an issue", formName: "report_hedge_plant_grass" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "grass",
-      "cutting",
-      "cut",
-      "mow",
-      "mowing",
-      "lawn",
-      "hedge",
-      "trim",
-      "trimming",
-      "hedges",
-      "grassed",
-      "weeds",
-      "grasscutting",
-      "hedgecutting",
-      "gras",
-      "cuting",
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  {
-    date: "13/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const dogFouling = new ContentPSaR(
-  "dogFouling",
-  "Dog Fouling",
-  "Information about reporting dog fouling and related penalties.",
-  `
-  <p>
-    Dog fouling is illegal in the UK and can result in a fixed penalty notice ranging from £50 to £100, or prosecution in a magistrate’s court. 
-    Exemptions may be made for registered blind owners or people with certain disabilities affecting mobility or sight.
-  </p>
-  <p>
-    To report an issue with dog fouling, please use the online form available here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
-    Report dog fouling</a>.
-    <br>Ask customers to click on the <strong>'Report dog fouling'</strong> button to access the form.
-  </p>
-        <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20dog%20fouling\`
-            "
-        >
-            Send link to review further information
-        </button>
-  `,
-  { buttonLabel: "Report dog fouling", formName: "report_dog_fouling" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "dog",
-      "fouling",
-      "foul",
-      "mess",
-      "waste",
-      "dogs",
-      "pets",
-      "pet",
-      "canine",
-      "poop",
-      "poo",
-      "fauling",
-      "foulling",
-      "fowling"
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  {
-    date: "13/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const dogBins = new ContentPSaR(
-  "dogBins",
-  "Dog Bins",
-  "Information about dog waste bin emptying schedules, maintenance, and reporting issues.",
-  `
-  <p>
-    Dog waste bins in parks are emptied weekly or twice a week depending on volume - this is based on varying demand, location and usage.
-  </p>
-  <p>
-    We do not conduct planned maintenance on dog waste bins. Damaged, vandalised, or defective bins are assessed when reported and 
-    repairs or replacements are considered based on the condition of the bin.
-  </p>
-  <p>
-    To report an issue with a dog waste bin, use the online form.
-  </p>
-  <p>Information about this topic will be available on the Council Website</p>
-
-`,
-  { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "dog",
-      "bin",
-      "bins",
-      "waste",
-      "dogs",
-      "fouling",
-      "litter",
-      "damaged",
-      "damage",
-      "poo",
-      "poop",
-      "vandalised",
-      "defective",
-      "dogbn",
-      "wast",
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "13/08/2026", name: "Liz Taster" }
-);
-
-const dogCatWasteCommercial = new ContentPSaR(
-  "dogCatWasteCommercial",
-  "Dog and Cat Waste (Commercial)",
-  "We provide dog and cat waste removal services to private companies e.g. kennels or vets, located within the Sheffield City boundaries.",
-  `
-  <p>
-    We provide dog and cat waste removal services to private companies e.g. kennels or vets located within the Sheffield City boundaries.
-  </p>
-
-  <p>The following criteria must be met:</p>
-    <ul>
-      <li>Collection must be from an accessible location, ideally enabling a vehicle to park next to the waste point or within a reasonable distance</li>
-      <li>The waste must be bagged and meet the agreed standard of BK090A9, BK090A8 or equivalent (SCC does not supply these bags)</li>
-      <li>All waste bags must be securely tied by cable ties to prevent spillage</li>
-      <li>Individual bags must weigh no more than 20kg</li>
-      <li>Waste transfer notes can be supplied at the customer’s request</li>
-    </ul>
-
-  <p>
-    The charge varies depending on the number of bags in a single collection. <strong>Charges start at £40.95</strong> for one bag, with additional bags charged at £5 each.
-  </p>
-
-  <p>
-    Customers should fill out the request form online.
-  </p>
-  <p>Information about this topic will be available on the Council Website</p>
-
-  <p>
-    The request form includes a link for immediate payment on the request confirmation screen. If a customer reports an issue with payment, it can be made using the following link
-    <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank" rel="noopener noreferrer">
-    https://ip.e-paycapita.com/Grit/Salt Requests</a>
-  </p>
-
-  <p>
-    Once an enquiry has been submitted, the customer will be contacted by a member of the Parks &amp; Countryside service to discuss the request.
-  </p>
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>Cost Details</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <table>
-        <thead>
-          <tr>
-            <th>Number of Bags</th>
-            <th>Cost of collection</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1</td><td>£40.95</td></tr>
-          <tr><td>2</td><td>£45.95</td></tr>
-          <tr><td>3</td><td>£50.95</td></tr>
-          <tr><td>4</td><td>£55.95</td></tr>
-          <tr><td>5</td><td>£60.95</td></tr>
-          <tr><td>6</td><td>£65.95</td></tr>
-          <tr><td>7</td><td>£70.95</td></tr>
-          <tr><td>8</td><td>£75.95</td></tr>
-          <tr><td>9</td><td>£80.95</td></tr>
-          <tr><td>10</td><td>£85.95</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </details>
-
-`,
-  { buttonLabel: "Request waste collection", formName: "request_waste_collection" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "",
-    keywords: [
-      "dog",
-      "cat",
-      "waste",
-      "Commercial",
-      "commercial",
-      "animal",
-      "pet",
-      "removal",
-      "collection",
-      "collections",
-      "private",
-      "company",
-      "companies",
-      "kennels",
-      "kennel",
-      "vets",
-      "vet",
-      "veterinary",
-      "bags",
-      "bagged",
-      "wast",
-      "comercial",
-      "kenels",
-      "payement"
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  {
-    date: "13/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const gritSaltCommercial = new ContentPSaR(
-  "gritSaltCommercial",
-  "Grit and Salt (Commercial)",
-  "We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.",
-  `
-  <p>
-    <strong>The following does not apply to public grit bins which are maintained and refilled regularly as required.</strong> 
-    More information about public grit bins can be found at 
-    <a href="https://www.sheffield.gov.uk/roads-pavements/winter-road-maintenance-and-gritting/grit-bins-sheffield" target="_blank" rel="noopener noreferrer">
-    Grit bins in Sheffield | Sheffield City Council</a>
-  </p>
-
-  	    <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Grit%20bins%20in%20Sheffield\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <p>
-    We provide Grit or Salt to private organisations located within the Sheffield City boundaries e.g. colleges and schools, for a charge.
-  </p>
-
-  <p>
-    Further information and a form to make a request are available online.
-  </p>
-
-  <p>Information about this topic will be available on the Council Website</p>
-
-  <p>
-    The minimum order is 0.5 tonnes, requests for more than10 tonnes require 28 days’ notice.
-  </p>
-  <p>
-    The material is supplied in 1 tonne builders’ bags using a grab lorry. <strong>The delivery location must be suitable to accommodate the lorry.</strong>
-  </p>
-  <p>
-    Deliveries will only be made on weekdays. 
-  </p>
-  <p>
-    The price varies by volume required.
-  </p>
-  <p>
-    For amounts of 2 tonne or greater, the cost is £180 per tonne. The cost per tonne is higher for 0.5/1tonne due to the delivery.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Costs</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <table>
-        <thead>
-          <tr>
-            <th><strong>Quantity</strong></th>
-            <th><strong>Cost</strong></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>0.5 tonne</td><td>£150</td></tr>
-          <tr><td>1 tonne</td><td>£240</td></tr>
-          <tr><td>2 tonnes</td><td>£360</td></tr>
-          <tr><td>3 tonnes</td><td>£540</td></tr>
-          <tr><td>4 tonnes</td><td>£720</td></tr>
-          <tr><td>5 tonnes</td><td>£900</td></tr>
-          <tr><td>6 tonnes</td><td>£1,080</td></tr>
-          <tr><td>7 tonnes</td><td>£1,260</td></tr>
-          <tr><td>8 tonnes</td><td>£1,440</td></tr>
-          <tr><td>9 tonnes</td><td>£1,620</td></tr>
-          <tr><td>10 tonnes</td><td>£1,800</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </details>
-
-  
-  <p>
-    Customers can fill out the request form which can be found on the website and includes a link for immediate payment on the request confirmation page.</p>
-
-  <p>
-    If there has been an issue with payment, it can be made using the following link 
-    <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank" rel="noopener noreferrer">
-    https://ip.e-paycapita.com/Grit/Salt Requests</a>
-  </p>
-
-  <p>
-    Once an enquiry is made through the online form the customer will be contacted by a member of the Parks &amp; Countryside service to discuss the request.
-  </p>
-  
-  `,
-  { buttonLabel: "Order grit (commercial)", formName: "request_order_grit_salt" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Grit",
-      "Salt",
-      "Commercial",
-      "bins",
-      "bins",
-      "winter",
-      "gritting",
-      "salting",
-      "road",
-      "rock",
-      "de-icing",
-      "deicing",
-      "gritt",
-      "grittt",
-      "sault",
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "14/08/2026", name: "Liz Taster" }
-);
-
-const graffitiRemovalParkProperty = new ContentPSaR(
-  "graffitiRemovalParkProperty",
-  "Graffiti Removal (Park Property)",
-  "Report graffiti located on park property for inspection and appropriate action.",
-  `
-  <p>
-    Graffiti located on park property can be reported using the Graffiti Removal form.
-  </p>
-  <p>
-    When completing the form accuracy is very important to ensure the form is routed to the responsible team e.g. if the graffiti is on a building next to a road, 
-    please ensure you select the building, and not the road.
-  </p>
-  <p>
-    Once reported, the graffiti will be inspected and appropriate action will be taken, which can range from removal to cover up.
-  </p>
-  <p>
-    Information about how to report graffiti can be found here: <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-graffiti" target="_blank" rel="noopener noreferrer">
-    Report graffiti | Sheffield City Council</a>.
-    <br> Ask customers to use the same form that is used to report graffiti on the highway. 
-  </p>
-
-  <p>
-    <em>Please note</em> - it is not always the Council's responsibility to remove graffiti where the graffiti is on an item not owned by the council - e.g. bus stops, or broadband cabinets.
-    <br>Information about reporting graffiti to the correctly responsible party, and links to do so, can also be found at this website.
-  </p>
-
-  	    <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20graffiti\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-`,
-  { buttonLabel: "Report graffiti", formName: "report_graffiti" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "graffiti",
-      "removal",
-      "remove",
-      "vandalism",
-      "tagging",
-      "graffitti",
-      "grafitti",
-      "grafiti",
-    ],
-    categories: ["Parks and Countryside", "Maintenance and Issues"]
-  },
-  { date: "20/08/2026", name: "Liz Taster" }
-);
-
 const maintenanceAndIssues = new MenuPSaR(
   "maintenanceAndIssues",
   "Maintenance and Issues",
    `Information about how to report maintenance and other issues in Sheffield parks.`,
   [
-    reportTreePark,
     antiSocialBehaviourParks,
     cctvParks,
-    insurancePersonalInjuryCompensation,
-    flyTipping,
-    damageToPavementsAndSurfaces,
     damageToFencing,
+    damageToPavementsAndSurfaces,
+    dogCatWasteCommercial,
+    dogBins,
+    dogFouling,
+    flyTipping,
+    graffitiRemovalParkProperty,
+    grassHedgeCutting,
+    gritSaltCommercial,
+    insurancePersonalInjuryCompensation,
     litterAndLitterBins,
     lostFoundProperty,
-    grassHedgeCutting,
-    dogFouling,
-    dogBins,
-    dogCatWasteCommercial,
-    gritSaltCommercial,
-    graffitiRemovalParkProperty
-    
+    reportTreePark,
   ]
 );
 
 //#endregion Maintenance and Issues
+
+
+const memorialsInParks = new ContentPSaR(
+  "memorialsInParks",
+  "Memorials in Parks",
+  "Information about ashes, memorial benches, and memorial trees in parks and green spaces.",
+  `
+<h3>Ashes</h3>
+  <p>
+    We do not allow the scattering of ashes on park land.
+  </p>
+
+<h3>Memorial Benches</h3>
+  <p>
+    The current <strong>cost</strong> for installation of a bench is <strong>£1000+</strong>. The bench would be a standard cast iron bench with recycled plastic slats to 
+    ensure consistency with other benches across park land.
+  </p>
+
+  <p>
+    Applications for a bench can be made by completing the online form.
+  </p>
+  <p>Information about this topic will be available on the Council Website</p>
+  <p>
+    Once an application is received it will be reviewed by the Park Area Manager and a site assessment may be undertaken.
+  </p>
+  <p>
+    Approval will depend on the suitability of the location and existing provision.
+  </p>
+  <p>
+    Customers will then be advised of costs, conditions, and ongoing arrangements associated with the memorial bench scheme.
+  </p>
+
+  <p>
+    Details can be found in the sections below about applications for memorial benches in different locations.
+  </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Benches in Parks</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Memorial benches are available in some parks and green spaces; however, availability varies by location. 
+        The suitability of installing additional benches depends on factors such as available space, existing bench provision, landscape considerations, 
+        maintenance requirements, accessibility, and the character of the site.
+      </p>
+
+      <p>
+        There is currently very limited space for additional benches in park spaces. A list of parks accepting applications to install a memorial bench is below:
+      </p>
+
+      <ul>
+        <li>Charlton Brook</li>
+        <li>Concord Park (limited and specific locations)</li>
+        <li>Crookes Valley</li>
+        <li>Don Fields</li>
+        <li>Greenhill Park</li>
+        <li>Grenoside Park</li>
+        <li>Hillsborough Park</li>
+        <li>Longley Park</li>
+        <li>Lowfields</li>
+        <li>Mount Pleasant</li>
+        <li>Oxley Park</li>
+        <li>Ponderosa</li>
+        <li>Ruskin Park</li>
+        <li>Weston Park</li>
+      </ul>
+    </div>
+  </details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Benches in Woodland</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We no longer accept requests to place memorial benches in woodland spaces.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Memorial Bench Terms and Conditions</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Terms and conditions apply to all memorial benches:
+      </p>
+        <ul>
+          <li>Memorials are engraved into the bench. We do not allow brass plates as these are regularly stolen and we are unable to replace them.</li>
+          <li>No political, sports team, or abusive content are allowed in memorials.</li>
+          <li>Personal items e.g./trinkets/vases/locks and flowers are not permitted either on or attached to the seat and will be removed by the City Council.</li>
+          <li>No responsibility can be accepted for theft.</li>
+          <li>The bench shall be a once only donation - it shall not be replaced by the Council at the end of its life or if it is destroyed by vandalism, 
+              but it can be replaced at your cost. </li>
+          <li>The City Council may remove the bench if it becomes unsafe.</li>
+          <li>Upkeep of the bench is the responsibility of the client. Advice can be given.</li>
+        </ul>
+    </div>
+  </details>
+
+<h3>Memorial Trees</h3>
+  <p>
+    Donations of memorial or commemorative trees are welcome.
+  </p>
+  <p>
+    Details of how to donate can be found in the <strong>Tree Planting and Community Forestry</strong> knowledge article. 
+    Search for '<em>donate a tree</em>' using the search function above.
+  </p>
+
+  `,
+  { buttonLabel: "Apply for a Memorial Bench", formName: "request_memorial_bench" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "memorial",
+      "memorials",
+      "ashes",
+      "scattering",
+      "scatter",
+      "bench",
+      "benches",
+      "commemorative",
+      "tree",
+      "trees",
+      "donation",
+      "donate",
+      "benchs",
+      "benche",
+      "benh",
+      "memoral",
+      "memmorial"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "13/08/2026",
+    name: "Liz Taster"
+  }
+);
+
 
 //#region Planning and Purchase
 
@@ -4259,120 +4611,7 @@ const parksPlanningAndPurchase = new MenuPSaR(
 
 //#endregion Planning and Purchase
 
-//#region Top level tiles - must be listed in ServicePSAR
 
-const ecology = new ContentPSaR(
-  "ecology",
-  "Ecology",
-  "Information about crayfish trapping restrictions and ecology data requests.",
-  `
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Crayfish</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The council does not allow crayfish trapping on its land anywhere in Sheffield unless it is for approved scientific research with an Environment Agency 
-        licence and landowner permission.
-      </p>
-      <p>
-        It is a criminal offence which can lead to prosecution, fines, and other penalties.
-      </p>
-      <p>
-        Crayfish trapping controls are in place, including for invasive crayfish, due to the potential to make environmental problems worse. 
-        Potential risks are:
-      </p>
-        <ul>
-          <li>Spreading invasive species and disease</li>
-          <li>Accidentally harming protected native crayfish</li>
-          <li>Catching other wildlife such as fish, water voles or otters</li>
-          <li>Damaging riverbanks and habitats</li>
-        </ul>
-
-        <p>
-          The UK’s native, white-clawed crayfish is endangered and legally protected due to major long-term declines caused by invasive species and disease. 
-          There are only two populations of white-clawed crayfish in Sheffield and they must be protected.
-        </p>
-
-        <p>
-          Further enquiries are to be directed to <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>
-        </p>
-    </div>
-  </details>
-  
-      <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Ecology Data Requests</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Enquiries may be received regarding Sheffield and Barnsley Record Centre data requests.
-      </p>
-      <p>
-        If the person has already completed a data request form, it should be sent to <a href="mailto:ecology@sheffield.gov.uk">ecology@sheffield.gov.uk</a>
-      </p>
-      <p>
-        If the person wants to make a new data request, they can find the form and further information on the process and requirements at 
-        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/sheffield-biological-records-centre" target="_blank" rel="noopener noreferrer">
-        Sheffield Biological Records Centre | Sheffield City Council</a>
-      </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Biological%20Records%20Centre\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-    </div>
-  </details>
-         
-        `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "ecology",
-      "crayfish",
-      "crayfishes",
-      "cray fish",
-      "white-clawed",
-      "white clawed",
-      "native",
-      "invasive",
-      "Environment Agency",
-      "scientific research",
-      "wildlife",
-      "riverbanks",
-      "habitats",
-      "protected species",
-      "Biological Records Centre",
-      "data requests",
-      "biological records",
-      "data request",
-      "trapping",
-      "traping",
-      "crayfsh",
-      "ecolgy",
-      "biolgical"
-    ],
-    categories: ["Parks and Countryside"]
-  },
-  {
-    date: "12/08/2026",
-    name: "Liz Taster"
-  }
-);
 
 const treePlantingCommunityForestry = new ContentPSaR(
   "treePlantingCommunityForestry",
@@ -4539,6 +4778,99 @@ const treePlantingCommunityForestry = new ContentPSaR(
   }
 );
 
+
+const treePreservationOrders = new ContentPSaR(
+  "treePreservationOrders",
+  "Tree Preservation Orders and Conservation Areas",
+  "Information about Tree Preservation Orders (TPOs), conservation areas, protected trees and notification requirements.",
+  `
+  <p>
+    Trees on private property may be legally protected by a Tree Preservation Order (TPO), this includes work which will impact the root system.
+  </p>
+  <p>
+    In a conservation area SCC must be notified of any tree work to allow consideration as to whether a tree merits protection. 
+    This includes:
+  </p>
+    <ul>
+      <li>Lopping and topping of branches</li>
+      <li>Severance of the roots</li>
+      <li>Removal of the tree</li>
+      <li>Uprooting of a tree</li>
+    </ul>
+  <p>
+    If a protected tree is dead or presents an immediate risk where work is urgently needed to remove that risk, the Council must be notified before acting.
+  </p>
+  <p>
+    Contravention of a Tree Preservation Order by damaging or carrying out work on a protected tree is punishable by a fine of up to £20,000 if convicted in a magistrate’s court.
+  </p>
+  <p>
+    A map of conservation areas and TPOs can be found on our website along with details of how to apply for permission to carry out work on a protected tree: 
+    <a href="https://www.sheffield.gov.uk/planning-development/conservation-design/tree-works-protected-trees" target="_blank" rel="noopener noreferrer">
+    Tree works and protected trees | Sheffield City Council</a>.
+  </p>
+  
+ 	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Tree%20works%20and%20protected%20trees\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  `,
+  
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Conservation",
+      "Areas",
+      "Area",
+      "Tree",
+      "Preservation",
+      "Order",
+      "Orders",
+      "TPO",
+      "TPOs",
+      "protected",
+      "tree",
+      "trees",
+      "lopping",
+      "topping",
+      "pollarding",
+      "branches",
+      "roots",
+      "root",
+      "system",
+      "removal",
+      "remove",
+      "uprooting",
+      "uproot",
+      "dead tree",
+      "dangerous tree",
+      "protection",
+      "preservasion",
+      "presevation",
+      "consrvation",
+      "protcted",
+      "protction",
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  {
+    date: "20/08/2026",
+    name: "Liz Taster"
+  }
+);
+
+
 const volunteeringWorkExperienceInParks = new ContentPSaR(
   "volunteeringWorkExperienceInParks",
   "Volunteering and Work Experience in Parks",
@@ -4653,6 +4985,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
     name: "Liz Taster"
   }
 );
+
 
 const wildlifeInParks = new ContentPSaR(
   "wildlifeInParks",
@@ -4791,319 +5124,6 @@ const wildlifeInParks = new ContentPSaR(
   }
 );
 
-const memorialsInParks = new ContentPSaR(
-  "memorialsInParks",
-  "Memorials in Parks",
-  "Information about ashes, memorial benches, and memorial trees in parks and green spaces.",
-  `
-<h3>Ashes</h3>
-  <p>
-    We do not allow the scattering of ashes on park land.
-  </p>
-
-<h3>Memorial Benches</h3>
-  <p>
-    The current <strong>cost</strong> for installation of a bench is <strong>£1000+</strong>. The bench would be a standard cast iron bench with recycled plastic slats to 
-    ensure consistency with other benches across park land.
-  </p>
-
-  <p>
-    Applications for a bench can be made by completing the online form.
-  </p>
-  <p>Information about this topic will be available on the Council Website</p>
-  <p>
-    Once an application is received it will be reviewed by the Park Area Manager and a site assessment may be undertaken.
-  </p>
-  <p>
-    Approval will depend on the suitability of the location and existing provision.
-  </p>
-  <p>
-    Customers will then be advised of costs, conditions, and ongoing arrangements associated with the memorial bench scheme.
-  </p>
-
-  <p>
-    Details can be found in the sections below about applications for memorial benches in different locations.
-  </p>
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>Benches in Parks</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Memorial benches are available in some parks and green spaces; however, availability varies by location. 
-        The suitability of installing additional benches depends on factors such as available space, existing bench provision, landscape considerations, 
-        maintenance requirements, accessibility, and the character of the site.
-      </p>
-
-      <p>
-        There is currently very limited space for additional benches in park spaces. A list of parks accepting applications to install a memorial bench is below:
-      </p>
-
-      <ul>
-        <li>Charlton Brook</li>
-        <li>Concord Park (limited and specific locations)</li>
-        <li>Crookes Valley</li>
-        <li>Don Fields</li>
-        <li>Greenhill Park</li>
-        <li>Grenoside Park</li>
-        <li>Hillsborough Park</li>
-        <li>Longley Park</li>
-        <li>Lowfields</li>
-        <li>Mount Pleasant</li>
-        <li>Oxley Park</li>
-        <li>Ponderosa</li>
-        <li>Ruskin Park</li>
-        <li>Weston Park</li>
-      </ul>
-    </div>
-  </details>
-
-<details class="accordion">
-    <summary class="accordion-header">
-      <h3>Benches in Woodland</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        We no longer accept requests to place memorial benches in woodland spaces.
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Memorial Bench Terms and Conditions</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Terms and conditions apply to all memorial benches:
-      </p>
-        <ul>
-          <li>Memorials are engraved into the bench. We do not allow brass plates as these are regularly stolen and we are unable to replace them.</li>
-          <li>No political, sports team, or abusive content are allowed in memorials.</li>
-          <li>Personal items e.g./trinkets/vases/locks and flowers are not permitted either on or attached to the seat and will be removed by the City Council.</li>
-          <li>No responsibility can be accepted for theft.</li>
-          <li>The bench shall be a once only donation - it shall not be replaced by the Council at the end of its life or if it is destroyed by vandalism, 
-              but it can be replaced at your cost. </li>
-          <li>The City Council may remove the bench if it becomes unsafe.</li>
-          <li>Upkeep of the bench is the responsibility of the client. Advice can be given.</li>
-        </ul>
-    </div>
-  </details>
-
-<h3>Memorial Trees</h3>
-  <p>
-    Donations of memorial or commemorative trees are welcome.
-  </p>
-  <p>
-    Details of how to donate can be found in the <strong>Tree Planting and Community Forestry</strong> knowledge article. 
-    Search for '<em>donate a tree</em>' using the search function above.
-  </p>
-
-  `,
-  { buttonLabel: "Apply for a Memorial Bench", formName: "request_memorial_bench" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "memorial",
-      "memorials",
-      "ashes",
-      "scattering",
-      "scatter",
-      "bench",
-      "benches",
-      "commemorative",
-      "tree",
-      "trees",
-      "donation",
-      "donate",
-      "benchs",
-      "benche",
-      "benh",
-      "memoral",
-      "memmorial"
-    ],
-    categories: ["Parks and Countryside"]
-  },
-  {
-    date: "13/08/2026",
-    name: "Liz Taster"
-  }
-);
-
-const donatingToParks = new ContentPSaR(
-  "donatingToParks",
-  "Donating to Parks and Green Spaces",
-  "Information about financial donations and item donations for parks and green spaces.",
-  `
-  <p>
-    Customers wishing to make donations to Sheffield's Parks and Green Spaces should be directed to complete the online form available on the website.
-    Further details can be found below about donation types and how they are used.
-  </p>
-
-  <p>Information about this topic will be available on the Council Website</p>
-
-  <h3>Donating Money</h3>
-    <p>
-      The Council welcomes financial donations to support the maintenance, enhancement, and improvement of parks and green spaces.
-    </p>
-    <p>
-      Donations will be used to support improvements such as planting schemes, park facilities, biodiversity projects, community initiatives, 
-      or other agreed improvements within parks and green spaces.
-    </p>
-    <p>
-      Donations can be made using the online form and can be allocated to a specific park. 
-      Any park-specific donation arrangements will be subject to Council financial procedures and operational requirements.
-    </p>
-    <p>
-      If a specific park is not selected, donations may be used for parks and green spaces across the city where they are most needed.
-    </p>
-    <p>
-      Once a customer has completed the donation request form they will find a link to make payment of their donation in the request confirmation screen.
-    </p>
-
-  <h3>Donating Items</h3>
-    <p>
-      We are unable to accept donations of items or equipment - for example furniture, plants, memorial items, or play equipment.
-    </p>
-    <p>
-      Graves Park Animal Farm will consider donations which support the care of animals, such as food, hay, sawdust, blankets and similar items. 
-      Donations must be agreed by the park manager and delivered to the park. We do not collect donations.
-    </p>
-    <p>
-      Please provide details of the items you wish to donate using the form. A park manager will review the details and respond within 3-5 working days. 
-    </p>
-
-  <h3>Donating Trees/Plants</h3>
-    <p>
-      We do not accept donations of trees or plants. Please search for the knowledge article <strong>Tree Planting and Community Forestry</strong> for more info. 
-    </p>
-  
-  `,
-  { buttonLabel: "Donate to parks", formName: "request_donation_parks" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "donation",
-      "donations",
-      "donate",
-      "donating",
-      "financial",
-      "money",
-      "supportparks",
-      "charitable",
-      "giving",
-      "contribution",
-      "contributions",
-      "dontation",
-      "donatoin",
-      "donatons"
-    ],
-    categories: ["Parks and Countryside"]
-  },
-  { date: "14/08/2026", name: "Liz Taster" }
-);
-
-const treePreservationOrders = new ContentPSaR(
-  "treePreservationOrders",
-  "Tree Preservation Orders and Conservation Areas",
-  "Information about Tree Preservation Orders (TPOs), conservation areas, protected trees and notification requirements.",
-  `
-  <p>
-    Trees on private property may be legally protected by a Tree Preservation Order (TPO), this includes work which will impact the root system.
-  </p>
-  <p>
-    In a conservation area SCC must be notified of any tree work to allow consideration as to whether a tree merits protection. 
-    This includes:
-  </p>
-    <ul>
-      <li>Lopping and topping of branches</li>
-      <li>Severance of the roots</li>
-      <li>Removal of the tree</li>
-      <li>Uprooting of a tree</li>
-    </ul>
-  <p>
-    If a protected tree is dead or presents an immediate risk where work is urgently needed to remove that risk, the Council must be notified before acting.
-  </p>
-  <p>
-    Contravention of a Tree Preservation Order by damaging or carrying out work on a protected tree is punishable by a fine of up to £20,000 if convicted in a magistrate’s court.
-  </p>
-  <p>
-    A map of conservation areas and TPOs can be found on our website along with details of how to apply for permission to carry out work on a protected tree: 
-    <a href="https://www.sheffield.gov.uk/planning-development/conservation-design/tree-works-protected-trees" target="_blank" rel="noopener noreferrer">
-    Tree works and protected trees | Sheffield City Council</a>.
-  </p>
-  
- 	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Tree%20works%20and%20protected%20trees\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  `,
-  
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "Conservation",
-      "Areas",
-      "Area",
-      "Tree",
-      "Preservation",
-      "Order",
-      "Orders",
-      "TPO",
-      "TPOs",
-      "protected",
-      "tree",
-      "trees",
-      "lopping",
-      "topping",
-      "pollarding",
-      "branches",
-      "roots",
-      "root",
-      "system",
-      "removal",
-      "remove",
-      "uprooting",
-      "uproot",
-      "dead tree",
-      "dangerous tree",
-      "protection",
-      "preservasion",
-      "presevation",
-      "consrvation",
-      "protcted",
-      "protction",
-    ],
-    categories: ["Parks and Countryside"]
-  },
-  {
-    date: "20/08/2026",
-    name: "Liz Taster"
-  }
-);
-    
-
-//#endregion Top level tiles - must be listed in ServicePSAR
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -5114,15 +5134,15 @@ const parksSportAndRecreation = new ServicePSaR(
   `Parks, gardens, trees and woodlands, allotments, leisure and sports facilities, what's on, tourist information…`,
   [allotmentsParks,
    bookingsParks,
+   donatingToParks,
+   ecology,
    eventsAndActivities,
    maintenanceAndIssues,
+   memorialsInParks,
    parksPlanningAndPurchase,
-   ecology,
    treePlantingCommunityForestry,
+   treePreservationOrders,
    volunteeringWorkExperienceInParks,
    wildlifeInParks,
-   memorialsInParks,
-   donatingToParks,
-   treePreservationOrders,
   ]
 );
