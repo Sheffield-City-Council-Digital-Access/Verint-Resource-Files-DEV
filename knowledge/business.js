@@ -3667,7 +3667,8 @@ const templateTile = new ContentPaD(
     "Business",
     "Information regarding different buisnesses such as taxi licensing",
       [
-        taxiLicensing
+        taxiLicensing,
+        generalLicensing,
       ]
   );
 
