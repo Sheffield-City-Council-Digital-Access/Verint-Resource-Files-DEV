@@ -3610,8 +3610,142 @@ const taxiVehicleInspections = new ContentBusiness(
 
 //#region General Licensing
 
+const animalWelfareLicences = new ContentBusiness(
+  "animalWelfareLicences",
+  "Animal Welfare Licences",
+  "Information about businesses that need an animal welfare licence and how to apply.",
+  `
+    <p>
+      Residents and businesses can apply for animal welfare licences through Sheffield City Council. 
+      These licences cover specific activities involving the keeping of certain animals.
+    </p>
 
-const templateTile = new ContentPaD(
+    <p>
+      Full details and forms to apply for the various licence types can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+      Animal welfare licences | Sheffield City Council</a>.
+    </p>
+    <p>[Insert Send Link]</p>
+    
+    <p>
+      Customers should be advised to look through the information on the website in detail, 
+      along with the information available through the links provided in the <strong>New licensing requirements</strong> section.
+    </p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Activities Requiring an Animal Welfare Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A licence is required where one of the below activities is carried out as a business in Sheffield, where a profit or fee is involved:
+      </p>
+        <ul>
+          <li>provision of boarding for dogs in kennels</li>
+          <li>provision of boarding for cats in a cattery</li>
+          <li>provision of home boarding for dogs</li>
+          <li>provision of day care for dogs</li>
+          <li>breeding of dogs</li>
+          <li>hiring out of horses or donkeys etc for riding</li>
+          <li>keeping or training animals for exhibition</li>
+          <li>selling animals as pets</li>
+        </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Licence Types</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Five different licence types can be applied for:
+      </p>
+        <ul>
+          <li>Animal boarding establishment licence</li>
+          <li>Dog breeding licence</li>
+          <li>Performing animals registration certificate</li>
+          <li>Pet shop licence</li>
+          <li>Riding establishment licence</li>
+        </ul>
+      <p>
+        Links to the application forms for each licence type are available on the website       
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+        Animal welfare licences | Sheffield City Council</a>.
+      </p>
+      <p>[Insert Send Link]</p>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The regulations allow us to charge a fee to the applicant to cover ‘reasonable anticipated costs’. 
+        This includes costs for processing applications, issuing licences, inspecting premises, and enforcement.
+      </p>
+      <p>
+        Current costs range from £465 to £628 depending on the type of licence required.
+      <p>
+      <p>
+        Full details of costs can be found on the website
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+        Animal welfare licences | Sheffield City Council</a>.
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "animal_welfare_licence_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "animal",
+      "animals",
+      "welfare",
+      "licence",
+      "pet",
+      "pets",
+      "shop",
+      "shops",
+      "kennel",
+      "kennels",
+      "cattery",
+      "breeding",
+      "horse",
+      "riding",
+      "dog",
+      "dogs",
+      "cat",
+      "cats",
+      "boarding",
+      "anmal",
+      "animl",
+      "welfair",
+      "wellfare",
+      "welfar",
+      "catery",
+      "bording",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "02/09/2026", name: "Liz Taster" }
+);
+
+
+
+
+const templateTile = new ContentBusiness(
   "templateTile",
   "Template Tile",
   "Description to go on main tile.",
@@ -3633,23 +3767,26 @@ const templateTile = new ContentPaD(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "building_control_information_provided" },
+  { typeKey: "enquiry_type_information_provided" },
   {
     type: "Information",
     keywords: [
       "template",
       "templte"
     ],
-    categories: ["Planning and Development", "Building Control"]
+    categories: ["Business", "General Licensing"]
   },
-  { date: "01/07/2026", name: "Liz Taster" }
+  { date: "02/09/2026", name: "Liz Taster" }
 );
+
+
 
   const generalLicensing = new MenuBusiness(
   "generalLicensing",
   "General Licensing",
   "Information regarding general licensing.",
   [
+    animalWelfareLicences,
     templateTile,
 
   ]
