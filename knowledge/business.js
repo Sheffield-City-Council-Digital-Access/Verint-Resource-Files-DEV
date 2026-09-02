@@ -3783,7 +3783,7 @@ const scrapMetalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        A site licence is for anyone who wants to store or trade scrap metal at a <strong>fixed site</strong> or sites.
+        A site licence is for anyone who wants to store or trade scrap metal at a <strong><em>fixed site</em></strong> or sites.
       </p>
       <p>
         To get a site licence, the customer must identify all of the sites in Sheffield where they operate their scrap metal or motor salvage business. 
@@ -3813,7 +3813,7 @@ const scrapMetalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        A collector's licence is for anyone who wants to act as a <strong>mobile collector</strong> of scrap metal in Sheffield. 
+        A collector's licence is for anyone who wants to act as a <strong><em>mobile collector</em></strong> of scrap metal in Sheffield. 
         </br>The licence allows the collection of any approrpiate scrap metal - both commercial and domestic.
       </p>
       <p>
@@ -3846,7 +3846,22 @@ const scrapMetalLicences = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        A link to the application form can be found on the website. This available and submitted as a digital copy through a <strong>gov.uk</strong> site. 
+        A paper application can be found on the council website and can be submitted by post.
+      </p>
+      <p>
+        As well as the application form, applicants must also submit:
+      </p>
+        <ul>
+          <li>application fee</li>
+          <li>basic DBS check - dated within 1 month of application - for the applicant and all site managers</li>
+          <li>proof of identity and address, as detailed in the application</li>
+        </ul>
+      <p>
+        Customers may also need to complete a <em>Tax Check</em>. This applies to customers who are renewing a licence, applying for a new licence after a recent licence has expired, 
+        or applying for a new licence in Sheffield if they also hold a current licence with a different Local Authority.  
+      </p>
     </div>
   </details>
 
@@ -3856,7 +3871,19 @@ const scrapMetalLicences = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        There is a 28 day consultation period on each application. During this time the council with consult with various other authorities to determine suitability.
+        This includes the Environment Agency and South Yorkshire Police.
+      </p>
+      <p>
+        If there are any objections to an application, the customer will eb notified in writing and invited to attend a licensing committee.
+      </p>
+      <p>
+        If there are no issues or objections, the licence will be issued as soon as reasonable possible after the 28 day consultation period.
+      </p>
+      <p>
+        Customers <strong>must not start operating</strong> until they have received confirmation their licence has been granted - operating without a valid licence is an offence.
+      </p>
     </div>
   </details>
 
@@ -3892,7 +3919,7 @@ const scrapMetalLicences = new ContentBusiness(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "enquiry_type_information_provided" },
+  { typeKey: "scrap_metal_information_provided" },
   {
     type: "Information",
     keywords: [
