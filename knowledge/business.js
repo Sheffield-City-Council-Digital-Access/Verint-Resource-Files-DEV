@@ -3785,7 +3785,7 @@ const chaperoneLicences = new ContentBusiness(
       </p>
     </div>
   </details>
-  
+
 
       <details class="accordion">
     <summary class="accordion-header">
@@ -3796,9 +3796,9 @@ const chaperoneLicences = new ContentBusiness(
       <p>To renew a chaperone licence the customer must:</p>
         <ul>
           <li>submit a renewal application</li>
-          <li>submit and up to date signed phtotograph</li>
+          <li>submit an up to date, signed phtotograph</li>
           <li>complete the Council's online Chaperone training module again</li>
-          <li>compelte a new enhanced DBS check</li>
+          <li>complete a new enhanced DBS check</li>
         </ul>
       <p>
         Further details and the renewal application form can be found here:
