@@ -3847,7 +3847,7 @@ const scrapMetalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        A link to the application form can be found on the website. This available and submitted as a digital copy through a <strong>gov.uk</strong> site. 
+        A link to the application form can be found on the website. This is available and submitted as a digital copy through a <strong>gov.uk</strong> site. 
         A paper application can be found on the council website and can be submitted by post.
       </p>
       <p>
@@ -3876,10 +3876,10 @@ const scrapMetalLicences = new ContentBusiness(
         This includes the Environment Agency and South Yorkshire Police.
       </p>
       <p>
-        If there are any objections to an application, the customer will eb notified in writing and invited to attend a licensing committee.
+        If there are any objections to an application, the customer will be notified in writing and invited to attend a licensing committee.
       </p>
       <p>
-        If there are no issues or objections, the licence will be issued as soon as reasonable possible after the 28 day consultation period.
+        If there are no issues or objections, the licence will be issued as soon as reasonably possible after the 28 day consultation period ends.
       </p>
       <p>
         Customers <strong>must not start operating</strong> until they have received confirmation their licence has been granted - operating without a valid licence is an offence.
