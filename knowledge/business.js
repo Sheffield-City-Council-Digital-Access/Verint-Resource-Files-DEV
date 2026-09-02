@@ -3783,22 +3783,22 @@ const scrapMetalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        A site licence is for anyone who wants to store or trade scrap metal at a fixed site or sites.
+        A site licence is for anyone who wants to store or trade scrap metal at a <strong>fixed site</strong> or sites.
       </p>
       <p>
         To get a site licence, the customer must identify all of the sites in Sheffield where they operate their scrap metal or motor salvage business. 
-        They also need to name a site manager for each site.
+        </br>They also need to name a site manager for each site.
       </p>
       <p>
         Once obtained, the licence must be displayed in a prominent place in an area accessible to the public. 
       </p>
       <p>
-        Licences are valid for three years. Holders are responsible for renewing their licence in good time before it expires.
+        Licences are <strong>valid for three years</strong> - holders are responsible for renewing their licence in good time before it expires.
       </p>
 
-      <h3>Costs</h3>
+      <h4>Costs</h4>
       <p>
-        The cost for a new site licence, or to renew an existing site licence, is <strong>£371</strong>.
+        The cost for a <strong>new site licence</strong>, or to <strong>renew</strong> an existing site licence, is <strong>£371</strong>.
       </p> 
       <p>
         The cost for a copy of a licence is £10.50.
@@ -3813,8 +3813,8 @@ const scrapMetalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        A collector's licence is for anyone who wants to act as a mobile collector of scrap metal in Sheffield. 
-        The licence allows the collection of any approrpiate scrap metal - both commercial and domestic.
+        A collector's licence is for anyone who wants to act as a <strong>mobile collector</strong> of scrap metal in Sheffield. 
+        </br>The licence allows the collection of any approrpiate scrap metal - both commercial and domestic.
       </p>
       <p>
         A Sheffield collector's license does not permit the holder to collect from any other local authority area.
@@ -3827,10 +3827,10 @@ const scrapMetalLicences = new ContentBusiness(
         Once obtained, the licence must be displayed so it can easily be read from outside the vehicle used for collecting scrap metal. 
       </p>
       <p>
-        Licences are valid for three years. Holders are responsible for renewing their licence in good time before it expires.
+        Licences are <strong>valid for three years</strong - holders are responsible for renewing their licence in good time before it expires.
       </p>
 
-      <h3>Costs</h3>
+      <h4>Costs</h4>
       <p>
         The cost for a new collector's licence, or to renew an existing collector's licence, is <strong>£268</strong>.
       </p> 
@@ -3867,7 +3867,7 @@ const scrapMetalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        Customers need to apply to change your scrap metal dealers licence if they want to:
+        Customers need to <strong>apply to change</strong> their scrap metal dealers licence if they want to:
       </p>
         <ul>
           <li>change a licence from a site licence to a collectors licence (or vice versa)</li>
