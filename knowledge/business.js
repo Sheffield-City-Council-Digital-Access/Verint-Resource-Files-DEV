@@ -3743,6 +3743,92 @@ const animalWelfareLicences = new ContentBusiness(
 );
 
 
+const chaperoneLicences = new ContentBusiness(
+  "chaperoneLicences",
+  "Chaperone Licences",
+  "Details of how to apply for or renew a chaperone licence.",
+  `
+    <p>
+      A chaperone licence allows an approved adult to supervise children who take part in entertainment activities.
+    </p>
+    <p>
+      Approved chaperones help safeguard children who are taking part in licensed performances and activities. 
+      Chaperone licences are issued as part of the council's child licensing responsibilities.
+    </p>
+
+    <p>
+      Further details of what a chaperone does, details of how to apply for or renew a chaperone licence, and relevant application forms can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
+      Apply for or renew a chaperone licence | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+ 
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Applying for a <strong>New</strong> Chaperone Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>To become a licensed chaperone the customer must:</p>
+        <ul>
+          <li>submit an application</li>
+          <li>provide two references</li>
+          <li>complete the Council's online Chaperone training module</li>
+          <li>attend a short information interview</li>
+          <li>undergo an enhanced DBS check</li>
+        </ul>
+      <p>
+        Further details and the application form can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
+        Apply for or renew a chaperone licence | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+  
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Renewing a Chaperone Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>To renew a chaperone licence the customer must:</p>
+        <ul>
+          <li>submit a renewal application</li>
+          <li>submit and up to date signed phtotograph</li>
+          <li>complete the Council's online Chaperone training module again</li>
+          <li>compelte a new enhanced DBS check</li>
+        </ul>
+      <p>
+        Further details and the renewal application form can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
+        Apply for or renew a chaperone licence | Sheffield City Council</a>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "chaperone_licence_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "chaperone",
+      "licence",
+      "child",
+      "children",
+      "shaperone",
+      "chapperone",
+
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "02/09/2026", name: "Liz Taster" }
+);
+
+
 const scrapMetalLicences = new ContentBusiness(
   "scrapMetalLicencese",
   "Scrap Metal Licences",
@@ -3985,6 +4071,7 @@ const templateTile = new ContentBusiness(
   "Information regarding general licensing.",
   [
     animalWelfareLicences,
+    chaperoneLicences,
     scrapMetalLicences,
     templateTile,
 
