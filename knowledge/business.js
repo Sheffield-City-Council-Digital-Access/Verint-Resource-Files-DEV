@@ -3743,6 +3743,177 @@ const animalWelfareLicences = new ContentBusiness(
 );
 
 
+const scrapMetalLicences = new ContentBusiness(
+  "scrapMetalLicencese",
+  "Scrap Metal Licences",
+  "Details about scrap metal dealers licences - including collectors and site licences, and how to change details of a licence.",
+  `
+    <p>
+      Anyone who is a scrap metal dealer in Sheffield you must apply to Sheffield City Council for a licence. 
+      A customer needs a licence if they operate a business that involves buying or selling scrap metal of any type, including motor salvage. 
+    </p>
+
+    <p>
+      Anyone can apply for a scrap metal licence, but the council must be satisfied that an applicant is suitable.
+    </p>
+
+    <p>
+      There are two types of scrap metal dealer licences:
+    </p>
+      <ul>
+        <li>a <strong>site</strong> licence</li>
+        <li>a <strong>collector's</strong> licence</li>
+      </ul>
+    
+    <p>
+      An individual can only hold one of these licences at a time in Sheffield (or any local authority), they cannot hold both.
+    </p>
+
+    <p>
+      Full details about scrap metal licences can be found here: 
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
+      Scrap metal dealers licence | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Site Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A site licence is for anyone who wants to store or trade scrap metal at a fixed site or sites.
+      </p>
+      <p>
+        To get a site licence, the customer must identify all of the sites in Sheffield where they operate their scrap metal or motor salvage business. 
+        They also need to name a site manager for each site.
+      </p>
+      <p>
+        Once obtained, the licence must be displayed in a prominent place in an area accessible to the public. 
+      </p>
+      <p>
+        Licences are valid for three years. Holders are responsible for renewing their licence in good time before it expires.
+      </p>
+
+      <h3>Costs</h3>
+      <p>
+        The cost for a new site licence, or to renew an existing site licence, is <strong>£371</strong>.
+      </p> 
+      <p>
+        The cost for a copy of a licence is £10.50.
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Collector's Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A collector's licence is for anyone who wants to act as a mobile collector of scrap metal in Sheffield. 
+        The licence allows the collection of any approrpiate scrap metal - both commercial and domestic.
+      </p>
+      <p>
+        A Sheffield collector's license does not permit the holder to collect from any other local authority area.
+        Customer's must obtain additional collector's licenses from any local authority areas they want to collect in.
+      </p>
+      <p>
+        A collector's licence does not authorise the holder to have a fixed scrap metal site in any area.
+      </p>
+      <p>
+        Once obtained, the licence must be displayed so it can easily be read from outside the vehicle used for collecting scrap metal. 
+      </p>
+      <p>
+        Licences are valid for three years. Holders are responsible for renewing their licence in good time before it expires.
+      </p>
+
+      <h3>Costs</h3>
+      <p>
+        The cost for a new collector's licence, or to renew an existing collector's licence, is <strong>£268</strong>.
+      </p> 
+      <p>
+        The cost for a copy of a licence is £10.50.
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Next Steps After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Making Changes to a Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers need to apply to change your scrap metal dealers licence if they want to:
+      </p>
+        <ul>
+          <li>change a licence from a site licence to a collectors licence (or vice versa)</li>
+          <li>change the name of the licensee (not a transfer)</li>
+          <li>add or change sites on a site licence</li>
+          <li>change site manager</li>
+        </ul>
+      <p>
+        If the changes go beyond this, advise the customer they will need to apply for a new licence.
+      </p>
+
+      <p>
+        Further details can be found here: 
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
+        Change a scrap metal dealers licence | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "enquiry_type_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "scrap",
+      "metal",
+      "licence",
+      "site",
+      "sites",
+      "collector",
+      "collectors",
+      "collect",
+      "collection",
+      "scrp",
+      "metl",
+      "colelct",
+      "collecter",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "02/09/2026", name: "Liz Taster" }
+);
 
 
 const templateTile = new ContentBusiness(
@@ -3787,6 +3958,7 @@ const templateTile = new ContentBusiness(
   "Information regarding general licensing.",
   [
     animalWelfareLicences,
+    scrapMetalLicences,
     templateTile,
 
   ]
