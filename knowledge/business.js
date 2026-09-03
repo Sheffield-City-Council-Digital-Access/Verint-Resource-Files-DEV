@@ -4029,6 +4029,79 @@ const scrapMetalLicences = new ContentBusiness(
 );
 
 
+const secondHandDealerReg = new ContentBusiness(
+  "secondHandDealerReg",
+  "Second Hand Dealer Registration",
+  "Details of registration required for dealers of second hand goods in Sheffield.",
+  `
+    <p>
+      Any person who deals in second hand goods as a business must register with the council. 
+      Every business registered must keep a log of all transactions which can be inspected by the Police.
+    </p>
+
+    <p>
+      Registration <strong>costs £20</strong> and lasts for <strong>3 years</strong>. Customers need to re-apply after 3 years.
+    <p>
+
+    <p>
+      Customers wanting to apply need to complete and submit the application form, along with the £20 fee. 
+      Applications are normally processed within 14 days of being received.
+    <p>
+
+    <p>
+      Once granted, registration certificates should be displayed at the premises.
+    </p>
+
+    <p>
+      Full details and a link to the application form can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/second-hand-dealer-registration" target="_blank" rel="noopener noreferrer">
+      Second hand dealer registration | Sheffield City Council</a>
+    </p>
+
+    <p>[Insert Send Link]</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Exemptions from Registration</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Persons in the following categories do not need to register:</p>
+        <ul>
+          <li>a person who is registered as a scrap metal dealer</li>
+          <li>a person engaged in business as a dealer in waste paper, cardboard, textiles or plastics in bulk</li>
+          <li>a person engaged supplying new unused goods and to which the supply of second hand or used goods is merely incidental</li>
+          <li>any person engaged in a business carried on by a group organisation or body which is registered as a charity</li>
+          <li>a person engaged in the business either of financing the acquisition of goods by means of hire purchase agreements, 
+              conditional sale agreements or credit sale agreements</li>
+          <li>the holder of a licence issued under section 22 of the Consumer Credit Act 1974, who does not need such a licence because of section 21</li>
+        </ul>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "charity_collections_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "secondhand",
+      "second",
+      "hand",
+      "dealer",
+      "registration",
+      "register",
+      "secndhand",
+      "secnd"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "03/09/2026", name: "Liz Taster" }
+);
+
+
 const templateTile = new ContentBusiness(
   "templateTile",
   "Template Tile",
@@ -4060,7 +4133,7 @@ const templateTile = new ContentBusiness(
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "02/09/2026", name: "Liz Taster" }
+  { date: "03/09/2026", name: "Liz Taster" }
 );
 
 
@@ -4073,6 +4146,7 @@ const templateTile = new ContentBusiness(
     animalWelfareLicences,
     chaperoneLicences,
     scrapMetalLicences,
+    secondHandDealerReg,
     templateTile,
 
   ]
