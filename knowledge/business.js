@@ -3766,7 +3766,7 @@ const chaperoneLicences = new ContentBusiness(
 
     <details class="accordion">
     <summary class="accordion-header">
-      <h3>Applying for a <strong>New</strong> Chaperone Licence</h3>
+      <h3>Applying for a New Chaperone Licence</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3833,8 +3833,16 @@ const houseToHouseCollections = new ContentBusiness(
   "House To House Collection Permit",
   "Description to go on main tile.",
   `
-    
-
+    <p>
+      A house to house collection permit is needed for anyone planning on collecting money, items for sale or items for use from people's houses 
+      or from business premises for a charitable purpose.
+    </p>
+    <p>
+      The Charity Commission can issue an exemption certificate to larger charities while the Council regulates smaller collectors.
+    </p>
+    <p>
+      There is no charge for this permit, and it lasts for 1 year - customers need to apply to renew after a year.
+    </p>
 
     <p>
       Further information and the application form can be found here: 
@@ -3844,11 +3852,55 @@ const houseToHouseCollections = new ContentBusiness(
  
     <details class="accordion">
     <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
+      <h3>How to Apply</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        Applications must be made <strong>at least 28 days before the proposed collection start date</strong>.
+      </p>
+      <p>
+        The application form requires details to be provided for:
+      </p>
+        <ul>
+          <li>the applicant</li>
+          <li>the charity or fund the collection is to benefit</li> 
+          <li>the proposed collection - including: time period and location/area covered</li>
+        </ul>
+      <p>
+        A letter of authority from the charity or fund the collection benefits must also be included with the application.
+      </p>
+      <p>
+        Details of both routes of application can be found here: 
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
+        House to house collection permit | Sheffield City Council</a>
+    </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Next Steps After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        On receipt of your application we will consult with South Yorkshire Police and make such other enquiries as we think fit.
+      </p>
+      <p>
+        Where there are no issues we will issue you a permit as soon as possible.
+      </p>
+      <p>
+        Once a permit is issued, the applicant is required to make a separate application for copies and badges for all persons
+        involved in the collection. Further details can be found on the website.
+      </p>
+      <p>
+        Applicants must wait until they have received their permit before carrying out a collection.
+        Carrying out a charitable street collection without the required licence or permit may result in enforcement action.
+      </p>
     </div>
   </details>
  
@@ -3860,8 +3912,12 @@ const houseToHouseCollections = new ContentBusiness(
   {
     type: "Information",
     keywords: [
-      "template",
-      "templte"
+      "house",
+      "collection",
+      "collect",
+      "colelction",
+      "charity",
+      "permit"
     ],
     categories: ["Business", "General Licensing"]
   },
@@ -4185,13 +4241,13 @@ const streetCollectionPermit = new ContentBusiness(
         <ul>
           <li>the applicant</li>
           <li>the charity or fund the collection is to benefit</li> 
-          <li>the proposed collection - including, time, date and location</li>
+          <li>the proposed collection - including: time, date and location</li>
         </ul>
       <p>
         A letter of authority from the charity or fund the collection benefits must also be included with the application.
       </p>
       <p>
-        Details of both route of application can be found here:
+        Details of both routes of application can be found here:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-collection-permit" target="_blank" rel="noopener noreferrer">
       ⁠   Street collection permit | Sheffield City Council</a>
       </p>
