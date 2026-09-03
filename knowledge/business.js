@@ -4203,12 +4203,71 @@ const smallSocietyLotteries = new ContentBusiness(
   "Small Society Lotteries",
   "Description to go on main tile.",
   `
-    <h3>Header</h3>
-    <p>Content</p>
+    <p>
+      Any non-commercial society that wants to run a small lottery, raffle, prize draw, or similar fundraising activity 
+      must register with Sheffield City Council before doing so.
+    </p>
+    <p>
+      The lottery must be run to raise money for the society's 
+      purposes and not for private gain.
+    </p>
+
+    <p>
+      <strong>Fees</strong> - the initial registration fee is <strong>£40</strong>; the annual renewal fee is <strong>£20</strong>.
+    </p>
+
+    <p>
+      Full details and an online application form can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
+      Small society lotteries | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
  
+
     <details class="accordion">
     <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
+      <h3>Eligible Societies</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A society must be non-commercial and established for one of the following purposes:
+      </p>
+      <ul>
+        <li>Charitable purposes</li>
+        <li>Supporting or enabling participation in sport, athletics, or cultural activities</li>
+        <li>Other non-commercial purposes that are not for private gain</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Lottery Rules and Limits</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To qualify as a small society lottery:
+      </p>
+        <ul>
+          <li>Every ticket must be sold at the same price and contain specified information about the lottery and promote</li>
+          <li>Tickets may only be sold by people aged 16 or over to people aged 16 or over</li>
+          <li>At least <strong>20%</strong> of proceeds must be applied to the society's purposes</li>
+          <li>Proceeds from a single lottery must not exceed <strong>£20,000</strong></li>
+          <li>Total proceeds from all lotteries in a calendar year must not exceed <strong>£250,000</strong></li>
+          <li>The maximum prize value is £25,000</li>
+        </ul>
+      <p>
+        After each lottery, the society must <strong>submit a return</strong> to the local authority <strong>within three 
+        months</strong> of the final draw date.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
