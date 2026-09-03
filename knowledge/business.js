@@ -4251,12 +4251,12 @@ const smallSocietyLotteries = new ContentBusiness(
         To qualify as a small society lottery:
       </p>
         <ul>
-          <li>Every ticket must be sold at the same price and contain specified information about the lottery and promote</li>
-          <li>Tickets may only be sold by people aged 16 or over to people aged 16 or over</li>
+          <li>Every ticket must be sold at the <strong>same price</strong> and contain specified information about the lottery and promoter</li>
+          <li>Tickets may only be sold <strong>by</strong> people aged 16 or over, and <strong>to</strong> people aged 16 or over</li>
           <li>At least <strong>20%</strong> of proceeds must be applied to the society's purposes</li>
-          <li>Proceeds from a single lottery must not exceed <strong>£20,000</strong></li>
-          <li>Total proceeds from all lotteries in a calendar year must not exceed <strong>£250,000</strong></li>
-          <li>The maximum prize value is £25,000</li>
+          <li>Proceeds from a <strong>single lottery</strong> must not exceed <strong>£20,000</strong></li>
+          <li>Total proceeds from <strong>all lotteries in a calendar year</strong> must not exceed <strong>£250,000</strong></li>
+          <li>The <strong>maximum prize value</strong> is <strong>£25,000</strong></li>
         </ul>
       <p>
         After each lottery, the society must <strong>submit a return</strong> to the local authority <strong>within three 
@@ -4278,20 +4278,20 @@ const smallSocietyLotteries = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        Customers can submit an application to register a non-commercial society lottery by email or in the post.
+        Customers can submit an application to register a non-commercial society lottery <strong>by email</strong> or <strong>in the post</strong>.
       </p>
       <p>
-        The application must be made by someone authorised to act on behalf of the society
+        The application must be made by someone authorised to act on behalf of the society.
       </p>
       <p>
-        The application form requires details to be provided for:
+        The application form requires the following details to be provided:
       </p>
         <ul>
           <li>name and address of the society</li>
           <li>the society's aims, objectives, and purposes</li> 
-          <li>the charity registration number (if applicable)</li>
+          <li>the society's charity registration number (if applicable)</li>
           <li>details of the person making the application</li>
-          <li>correspondence address and phone number</li>
+          <li>a correspondence address and phone number</li>
         </ul>
     <p>
       A downloadable copy of the application form can be found here:
@@ -4315,8 +4315,8 @@ const smallSocietyLotteries = new ContentBusiness(
         Once payment has been made, the application is checked for compliance and referred to the police for checks.
       </p>
       <p>
-        Where there are no issues we will issue you a permit as soon as possible - 
-        the council aims to process applications within 28 days.
+        Where there are no issues the Council will issue a permit as soon as possible - 
+        we aim to process applications within 28 days.
       </p>
       <p>
         If there are any issues the applicant will be notified and invited to attend a meeting of the Licensing Committee 
