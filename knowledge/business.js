@@ -4201,7 +4201,7 @@ const secondHandDealerReg = new ContentBusiness(
 const smallSocietyLotteries = new ContentBusiness(
   "smallSocietyLotteries",
   "Small Society Lotteries",
-  "Description to go on main tile.",
+  "Details of eligibility and how to register to run small society lotteries in Sheffield.",
   `
     <p>
       Any non-commercial society that wants to run a small lottery, raffle, prize draw, or similar fundraising activity 
@@ -4262,6 +4262,12 @@ const smallSocietyLotteries = new ContentBusiness(
         After each lottery, the society must <strong>submit a return</strong> to the local authority <strong>within three 
         months</strong> of the final draw date.
       </p>
+      <p>
+        A return can be submitted online at the following link: 
+        <a href="https://www.sheffield.gov.uk/utilities/form/business/licensing/submit-small-society-lottery-draw-return-start" target="_blank" 
+        rel="noopener noreferrer">File a return for a non-commercial society lottery draw | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
@@ -4271,7 +4277,59 @@ const smallSocietyLotteries = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        Customers can submit an application to register a non-commercial society lottery by email or in the post.
+      </p>
+      <p>
+        The application must be made by someone authorised to act on behalf of the society
+      </p>
+      <p>
+        The application form requires details to be provided for:
+      </p>
+        <ul>
+          <li>name and address of the society</li>
+          <li>the society's aims, objectives, and purposes</li> 
+          <li>the charity registration number (if applicable)</li>
+          <li>details of the person making the application</li>
+          <li>correspondence address and phone number</li>
+        </ul>
+    <p>
+      A downloadable copy of the application form can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
+      Small society lotteries | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Next Steps After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        On receipt of an application the council will contact the applicant to take payment.
+      </p>
+      <p>
+        Once payment has been made, the application is checked for compliance and referred to the police for checks.
+      </p>
+      <p>
+        Where there are no issues we will issue you a permit as soon as possible - 
+        the council aims to process applications within 28 days.
+      </p>
+      <p>
+        If there are any issues the applicant will be notified and invited to attend a meeting of the Licensing Committee 
+        where the application will be discussed.
+      </p>
+      <p>
+        Applicants must wait until they have received their registration certificate before holding a lottery.
+      </p>
+      <p>
+        Details of the reasons an application may be refused can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
+        Small society lotteries | Sheffield City Council</a>
+      </p>
     </div>
   </details>
  
@@ -4283,8 +4341,13 @@ const smallSocietyLotteries = new ContentBusiness(
   {
     type: "Information",
     keywords: [
-      "template",
-      "templte"
+      "small",
+      "society",
+      "lottery",
+      "lotteries",
+      "letteries",
+      "loteries",
+      "lotterys",
     ],
     categories: ["Business", "General Licensing"]
   },
