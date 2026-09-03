@@ -3831,14 +3831,14 @@ const chaperoneLicences = new ContentBusiness(
 const houseToHouseCollections = new ContentBusiness(
   "houseToHouseCollections",
   "House To House Collection Permit",
-  "Description to go on main tile.",
+  "Details of how to apply for a permit to carry out house to house collections for charity.",
   `
     <p>
       A house to house collection permit is needed for anyone planning on collecting money, items for sale or items for use from people's houses 
       or from business premises for a charitable purpose.
     </p>
     <p>
-      The Charity Commission can issue an exemption certificate to larger charities while the Council regulates smaller collectors.
+      The Council regulates smaller collectors, the Charity Commission can issue an exemption certificate to larger charities. 
     </p>
     <p>
       There is no charge for this permit, and it lasts for 1 year - customers need to apply to renew after a year.
@@ -3868,7 +3868,7 @@ const houseToHouseCollections = new ContentBusiness(
         <ul>
           <li>the applicant</li>
           <li>the charity or fund the collection is to benefit</li> 
-          <li>the proposed collection - including: time period and location/area covered</li>
+          <li>the proposed collection - including the time period and location/area covered</li>
         </ul>
       <p>
         A letter of authority from the charity or fund the collection benefits must also be included with the application.
@@ -3878,6 +3878,7 @@ const houseToHouseCollections = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
         House to house collection permit | Sheffield City Council</a>
     </p>
+    <p>[Insert Send Link]</p>
     </div>
   </details>
 
@@ -4197,10 +4198,44 @@ const secondHandDealerReg = new ContentBusiness(
   { date: "03/09/2026", name: "Liz Taster" }
 );
 
+const smallSocietyLotteries = new ContentBusiness(
+  "smallSocietyLotteries",
+  "Small Society Lotteries",
+  "Description to go on main tile.",
+  `
+    <h3>Header</h3>
+    <p>Content</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "charity_collections_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "03/09/2026", name: "Liz Taster" }
+);
+
 const streetCollectionPermit = new ContentBusiness(
   "streetCollectionPermit",
   "Street Collection Permit",
-  "Description to go on main tile.",
+  "Details of how to apply for a permit to carry out a charity street collection.",
   `
     <p>
       A street collection permit is required for anyone wishing to collect money or sell items for charitable purposes in a street or other public place within Sheffield.
@@ -4212,7 +4247,7 @@ const streetCollectionPermit = new ContentBusiness(
       A permit is generally not required where items are being sold as part of a business and no charitable donation is being promoted from the proceeds. 
     </p>
     <p>
-      There is no fee or charge for a street collection permit
+      There is no fee or charge for a street collection permit.
     </p>
 
     <p>
@@ -4241,7 +4276,7 @@ const streetCollectionPermit = new ContentBusiness(
         <ul>
           <li>the applicant</li>
           <li>the charity or fund the collection is to benefit</li> 
-          <li>the proposed collection - including: time, date and location</li>
+          <li>the proposed collection - including the time, date and location</li>
         </ul>
       <p>
         A letter of authority from the charity or fund the collection benefits must also be included with the application.
@@ -4276,7 +4311,7 @@ const streetCollectionPermit = new ContentBusiness(
       </p>
         <ul>
           <li>any public inconvenience</li>
-          <li>other collections taking place - our policy to allow only one collection in a location at any one time.</li>
+          <li>other collections taking place - our policy to allow only one collection in a location at any one time</li>
           <li>the amount of money to be given to charity against the likely proceeds of the collection</li>
           <li>any convictions of the organiser</li>
         </ul>
@@ -4284,7 +4319,7 @@ const streetCollectionPermit = new ContentBusiness(
         Where there are no issues we will issue you a permit as soon as possible.
       </p>
       <p>
-        If there are any issues, a public hearing will be held to determine your application - the custoemr will be notified when this will be held.
+        If there are any issues, a public hearing will be held to determine the application - the applicant will be notified when this will be held.
       </p>
       <p>
         Applicants must wait until they have received their permit before carrying out a collection.
@@ -4359,6 +4394,7 @@ const templateTile = new ContentBusiness(
     houseToHouseCollections,
     scrapMetalLicences,
     secondHandDealerReg,
+    smallSocietyLotteries,
     streetCollectionPermit,
     templateTile,
 
