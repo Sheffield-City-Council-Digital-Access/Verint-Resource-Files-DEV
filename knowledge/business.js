@@ -4198,6 +4198,74 @@ const secondHandDealerReg = new ContentBusiness(
   { date: "03/09/2026", name: "Liz Taster" }
 );
 
+
+const skinPiercingRegistration = new ContentBusiness(
+  "skinPiercingRegistration",
+  "Skin Piercing Registration",
+  "Details of the application process, fees and requirements for skin piercing activities.",
+  `
+    <p>
+      Any person carrying out the business of body or skin piercing must be registered with the council.
+    </p>
+
+    <p>
+      A person needs to register if they work in:
+    </p>
+      <ul>
+        <li>tattooing</li>
+        <li>electrolysis</li>
+        <li>acupuncture</li>
+        <li>semi-permanent skin colouring/makeup</li>
+        <li>ear piercing</li>
+      </ul>
+
+    <p>
+      Both the premises and the person or people carrying out skin piercing need to be registered.
+    </p>
+
+    <p>
+      Application costs are:
+    </p>
+      <ul>
+        <li>£322 to register a premises </li>
+        <li>£61 to register an individual operator (individual)</li>
+        <li>£15 to add or remove an operator from a premises</li>
+      </ul>
+
+    <p>
+      Full details, including details of the relevant byelaws, and relevant application forms can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
+      Skin piercing registration | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "enquiry_type_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "03/09/2026", name: "Liz Taster" }
+);
+
+
 const smallSocietyLotteries = new ContentBusiness(
   "smallSocietyLotteries",
   "Small Society Lotteries",
@@ -4252,7 +4320,7 @@ const smallSocietyLotteries = new ContentBusiness(
       </p>
         <ul>
           <li>Every ticket must be sold at the <strong>same price</strong> and contain specified information about the lottery and promoter</li>
-          <li>Tickets may only be sold <strong>by</strong> people aged 16 or over, and <strong>to</strong> people aged 16 or over</li>
+          <li>Tickets may only be sold <strong><em>by</em></strong> people aged 16 or over, and <strong><em>to</em></strong> people aged 16 or over</li>
           <li>At least <strong>20%</strong> of proceeds must be applied to the society's purposes</li>
           <li>Proceeds from a <strong>single lottery</strong> must not exceed <strong>£20,000</strong></li>
           <li>Total proceeds from <strong>all lotteries in a calendar year</strong> must not exceed <strong>£250,000</strong></li>
@@ -4353,6 +4421,7 @@ const smallSocietyLotteries = new ContentBusiness(
   },
   { date: "03/09/2026", name: "Liz Taster" }
 );
+
 
 const streetCollectionPermit = new ContentBusiness(
   "streetCollectionPermit",
@@ -4509,13 +4578,14 @@ const templateTile = new ContentBusiness(
   const generalLicensing = new MenuBusiness(
   "generalLicensing",
   "General Licensing",
-  "Information regarding general licensing.",
+  "Information regarding a variety of different types of licensing and registration (not Taxi).",
   [
     animalWelfareLicences,
     chaperoneLicences,
     houseToHouseCollections,
     scrapMetalLicences,
     secondHandDealerReg,
+    skinPiercingRegistration,
     smallSocietyLotteries,
     streetCollectionPermit,
     templateTile,
