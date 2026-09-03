@@ -3828,6 +3828,46 @@ const chaperoneLicences = new ContentBusiness(
   { date: "02/09/2026", name: "Liz Taster" }
 );
 
+const houseToHouseCollections = new ContentBusiness(
+  "houseToHouseCollections",
+  "House To House Collection Permit",
+  "Description to go on main tile.",
+  `
+    
+
+
+    <p>
+      Further information and the application form can be found here: 
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
+      House to house collection permit | Sheffield City Council</a>
+    </p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "charity_collections_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "03/09/2026", name: "Liz Taster" }
+);
+
 
 const scrapMetalLicences = new ContentBusiness(
   "scrapMetalLicencese",
@@ -4032,7 +4072,7 @@ const scrapMetalLicences = new ContentBusiness(
 const secondHandDealerReg = new ContentBusiness(
   "secondHandDealerReg",
   "Second Hand Dealer Registration",
-  "Details of registration required for dealers of second hand goods in Sheffield.",
+  "Details of registration required for dealers of second hand goods.",
   `
     <p>
       Any person who deals in second hand goods as a business must register with the council. 
@@ -4044,7 +4084,7 @@ const secondHandDealerReg = new ContentBusiness(
     <p>
 
     <p>
-      Customers wanting to apply need to complete and submit the application form, along with the £20 fee. 
+      Customers wanting to apply need to complete and submit the application form. 
       Applications are normally processed within 14 days of being received.
     <p>
 
@@ -4101,6 +4141,121 @@ const secondHandDealerReg = new ContentBusiness(
   { date: "03/09/2026", name: "Liz Taster" }
 );
 
+const streetCollectionPermit = new ContentBusiness(
+  "streetCollectionPermit",
+  "Street Collection Permit",
+  "Description to go on main tile.",
+  `
+    <p>
+      A street collection permit is required for anyone wishing to collect money or sell items for charitable purposes in a street or other public place within Sheffield.
+    </p>
+    <p>
+      This includes collections in areas such as shopping precincts, public walkways, shop doorways and car parks, as well as on roads and streets.
+    </p>
+    <p>
+      A permit is generally not required where items are being sold as part of a business and no charitable donation is being promoted from the proceeds. 
+    </p>
+    <p>
+      There is no fee or charge for a street collection permit
+    </p>
+
+    <p>
+      Further information and a link to the online application form can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-collection-permit" target="_blank" rel="noopener noreferrer">
+      ⁠Street collection permit | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+ 
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        Applications must be made <strong>at least 28 days before the proposed collection date</strong>.
+      </p>
+      <p>
+        The application form requires details to be provided for:
+      </p>
+        <ul>
+          <li>the applicant</li>
+          <li>the charity or fund the collection is to benefit</li> 
+          <li>the proposed collection - including, time, date and location</li>
+        </ul>
+      <p>
+        A letter of authority from the charity or fund the collection benefits must also be included with the application.
+      </p>
+      <p>
+        Details of both route of application can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-collection-permit" target="_blank" rel="noopener noreferrer">
+      ⁠   Street collection permit | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+
+      <p>
+        Charities who wish to collect Direct Debit details in the City Centre need to email 
+        <a href="mailto:citycentre.management@sheffield.gov.uk">citycentre.management@sheffield.gov.uk</a> 
+        to request permission, instead of following the above application process. 
+      </p>
+    </div>
+  </details>
+
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Next Steps After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        On receipt of your application we will consult with South Yorkshire Police and make such other enquiries as we think fit.
+      </p>
+      <p>
+        Things we will consider include:
+      </p>
+        <ul>
+          <li>any public inconvenience</li>
+          <li>other collections taking place - our policy to allow only one collection in a location at any one time.</li>
+          <li>the amount of money to be given to charity against the likely proceeds of the collection</li>
+          <li>any convictions of the organiser</li>
+        </ul>
+      <p>
+        Where there are no issues we will issue you a permit as soon as possible.
+      </p>
+      <p>
+        If there are any issues, a public hearing will be held to determine your application - the custoemr will be notified when this will be held.
+      </p>
+      <p>
+        Applicants must wait until they have received their permit before carrying out a collection.
+        Carrying out a charitable street collection without the required licence or permit may result in enforcement action.
+      </p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "charity_collections_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "street",
+      "collection",
+      "collect",
+      "permit",
+      "charity",
+      "colelction"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "03/09/2026", name: "Liz Taster" }
+);
 
 const templateTile = new ContentBusiness(
   "templateTile",
@@ -4145,8 +4300,10 @@ const templateTile = new ContentBusiness(
   [
     animalWelfareLicences,
     chaperoneLicences,
+    houseToHouseCollections,
     scrapMetalLicences,
     secondHandDealerReg,
+    streetCollectionPermit,
     templateTile,
 
   ]
