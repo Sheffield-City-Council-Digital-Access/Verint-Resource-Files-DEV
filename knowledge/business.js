@@ -4216,7 +4216,7 @@ const skinPiercingRegistration = new ContentBusiness(
       </ul>
 
     <p>
-      Both the <strong>premises</strong> and the <strong>person or people</strong> carrying out skin piercing need to be registered.
+      Both the <strong>premises</strong> and the <strong>person(s))</strong> carrying out skin piercing need to be registered.
     </p>
 
     <p>
@@ -4248,7 +4248,7 @@ const skinPiercingRegistration = new ContentBusiness(
         Different details are required depending on the type of application - premises, individual or amendment.
       </p>
       <p>
-        The premises application required details around cleaning and setralisation methods, and also the equipment to be used.
+        The premises application required details around cleaning and steralisation methods, and also the equipment to be used.
       </p>
       <p>
         Details of both routes of application can be found here: 
@@ -4585,6 +4585,86 @@ const streetCollectionPermit = new ContentBusiness(
   { date: "03/09/2026", name: "Liz Taster" }
 );
 
+
+const streetPartyLicences = new ContentBusiness(
+  "streetPartyLicences",
+  "streetPartyLicences",
+  "Information about definition of and requirements to hold a street party, including applying for a road closure notification.",
+  `
+    <h3>What is a Street Party?</h3>
+    <p>We define a street party as:</p>
+    <ul>
+      <li>self-organised by the local residents</li>
+      <li>for residents/neighbours only</li>
+      <li>publicity only to residents</li>
+      <li>music is incidental and no selling is involved</li>
+    </ul>
+
+    <p>
+      Where these criteria apply, no no licences normally necessary and no formal risk assessment needed
+    </p>
+
+    <h3>What is Needed from the Council?</h3>
+    <p>
+      Typically a street party will involve closing a street. 
+      To do this, you need to complete a <strong>road closure application</strong> as soon as possible before the event is due to take place.  
+      We will need at least 2 weeks to process these applications
+    </p>
+    <p>
+      Further information and the road closure application form can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-party-licences" target="_blank" rel="noopener noreferrer">
+      Street party licences | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+ 
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When a Temporary Event Notice is Needed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        In some scenarios a Temporary Event Notice may also be required - this is a separate application for which there is a small charge.
+      </p>
+      <p>
+        A Temporary Event notice may be needed if any of the following are happening as part of the street party:
+      </p>
+        <ul>
+          <li>hold live performances, film screenings or dancing</li>
+          <li>play live or pre-recorded music for entertainment purposes</li>
+          <li>sell alcohol</li>
+          <li>hold a raffle</li>
+          <li>sell food and hot drinks between 11pm and 5am</li>
+        </ul>
+      <p> 
+        Information about Temporary Event Notices can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
+        Apply for a Temporary Event Notice | Sheffield City Council</a>
+      </p>
+
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "temporary_events_notice_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "street",
+      "party",
+      "road",
+      "closure",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "04/09/2026", name: "Liz Taster" }
+);
+
+
 const templateTile = new ContentBusiness(
   "templateTile",
   "Template Tile",
@@ -4616,7 +4696,7 @@ const templateTile = new ContentBusiness(
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "03/09/2026", name: "Liz Taster" }
+  { date: "04/09/2026", name: "Liz Taster" }
 );
 
 
@@ -4634,6 +4714,7 @@ const templateTile = new ContentBusiness(
     skinPiercingRegistration,
     smallSocietyLotteries,
     streetCollectionPermit,
+    streetPartyLicences,
     templateTile,
 
   ]
