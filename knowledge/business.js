@@ -3932,12 +3932,12 @@ const marriagePremisesApproval = new ContentBusiness(
   "Details of how to apply for a marriages and civil partnerships approval for a premises, and what premises this is permitted for.",
   `
     <p>
-      The Council can approve premises, like hotels and stately homes, to be used for civil marriage and civil partnership ceremonies.
+      The Council can approve premises like hotels and stately homes to be used for civil marriage and civil partnership ceremonies.
       We can also now approve religious premises for the ceremonies of civil partnerships.
     </p>
     <p>
-      For a premises to be eligible it must be a permanently immovable structure, and be considered a seemly and dignified venue for the proceedings, 
-      and ceremonies must take place in an identifiable and distinct part of those premises.
+      For a premises to be eligible it must be a permanently immovable structure, and be considered a seemly and dignified venue for the proceedings.
+      Ceremonies must take place in an identifiable and distinct part of those premises.
     </p>
     <p>
       The application <strong>cost is £998</strong> and if granted approval lasts for <strong>three years</strong>.
@@ -3968,12 +3968,12 @@ const marriagePremisesApproval = new ContentBusiness(
         <ul>
           <li>details of a 'responsible person' for the venue</li>
           <li>three copies of a plan of the premises which clearly identifies the room(s) in which the proceedings will take place</li>
-          <li>written consent from the person specified or governing authority of the religious organisation (religious premises only)<li>
+          <li>written consent from the person specified or governing authority of the religious organisation (religious premises only)</li>
         </ul>
       <p>
         There are six different application forms on the website. There are different forms for secular and religious premises, and for each there is a separate form
         to <strong>apply</strong> for, <strong>renew</strong> or make a <strong>change</strong> to an approval. 
-        Please encourage the customer to ensure they use submit the correct form for their venue and circumstances. 
+        Please encourage the customer to ensure they use and submit the correct form for their venue and circumstances. 
       </p>
       <p>
         All application forms can be found here:
@@ -3991,7 +3991,21 @@ const marriagePremisesApproval = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        Once an application is submitted, the council will advertise it in the local press and on our website.
+        The consultation period for the application will commence from the date of advertisement and last for a period of 21 days.
+      </p>
+      <p>
+        As soon as possible after the application is received, we will contact the applicant to arrange an appointment to 
+        inspect the premises along with the superintendent registrar.
+      </p>
+      <p>
+        If there are no issues with an application and it meets all the criteria, the approval will be issued after the 21 day consultation period ends.
+      </p>
+      <p>
+        If there are issues or objections to an application we will notify the applicant as soon as is reasonably practical. 
+        The application will then be decided on by our licensing committee and we will invite the applicant to attend.
+      </p>
     </div>
   </details>
 
@@ -4006,10 +4020,10 @@ const marriagePremisesApproval = new ContentBusiness(
         Changes can be made to premises approval using the <strong>'Make a change'</strong> application form for either a secular or religious premises.
       </p>
       <p>
-        Change you may need to make include changes to the name of the premises or responsible person(s), changes to contact details, other material changes.
+        Changes that may need to be made include changes to the name of the premises or responsible person(s), changes to contact details, or other material changes.
       </p>
       <p>
-        You should also use this form if you want to surrender or transfer a license.
+        Customers should also be advised to use this form if they want to surrender or transfer a license.
       </p>
     </div>
   </details>
@@ -4034,6 +4048,12 @@ const marriagePremisesApproval = new ContentBusiness(
           <li>any other temporary structure</li>
           <li>most forms of transport</li>
         </ul>
+      <p>
+        Further details around eligibility criteria for venue can be found on the website:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
+        Marriage and civil partnership premises approval | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
  
