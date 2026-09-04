@@ -4205,11 +4205,7 @@ const skinPiercingRegistration = new ContentBusiness(
   "Details of the application process, fees and requirements for skin piercing activities.",
   `
     <p>
-      Any person carrying out the business of body or skin piercing must be registered with the council.
-    </p>
-
-    <p>
-      A person needs to register if they work in:
+      Any person working in one of the below forms of skin piercing must be registered with the council:
     </p>
       <ul>
         <li>tattooing</li>
@@ -4220,16 +4216,16 @@ const skinPiercingRegistration = new ContentBusiness(
       </ul>
 
     <p>
-      Both the premises and the person or people carrying out skin piercing need to be registered.
+      Both the <strong>premises</strong> and the <strong>person or people</strong> carrying out skin piercing need to be registered.
     </p>
 
     <p>
-      Application costs are:
+      Application <strong>costs</strong> are:
     </p>
       <ul>
-        <li>£322 to register a premises </li>
-        <li>£61 to register an individual operator (individual)</li>
-        <li>£15 to add or remove an operator from a premises</li>
+        <li><strong>£322</strong> to register a <strong>premises</strong></li>
+        <li><strong>£61</strong> to register an <strong>individual</strong> operator (individual)</li>
+        <li><strong>£15</strong> to <strong>add or remove an operator</strong> from a premises</li>
       </ul>
 
     <p>
@@ -4241,11 +4237,46 @@ const skinPiercingRegistration = new ContentBusiness(
  
     <details class="accordion">
     <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
+      <h3>How to Apply</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        Different details are required depending on the type of application - premises, individual or amendment.
+      </p>
+      <p>
+        The premises application required details around cleaning and setralisation methods, and also the equipment to be used.
+      </p>
+      <p>
+        Details of both routes of application can be found here: 
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
+        Skin piercing registration | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Next Steps After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once we have received an application, the premises will be inspected within 28 days by the Health Protection Service to ensure that 
+        our skin piercing byelaws and health and safety requirements are being complied with.
+      </p>
+      <p>
+        If there are no issues, a registration certificate will be issued. 
+        If there are issues with an application, the customer will be notified as soon as possible to resolve them.
+      </p>
+      <p>
+        A business or individual must not operate in any skin piercing capacity until they have received their registration certificate.
+      </p>
     </div>
   </details>
  
@@ -4253,12 +4284,27 @@ const skinPiercingRegistration = new ContentBusiness(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "enquiry_type_information_provided" },
+  { typeKey: "skin_piercing_information_provided" },
   {
     type: "Information",
     keywords: [
-      "template",
-      "templte"
+      "skin",
+      "piercing",
+      "tattoo",
+      "tattooing",
+      "tattoos",
+      "electrolysis",
+      "acupuncture",
+      "semi-permanent",
+      "make up",
+      "makeup",
+      "ear",
+      "tatoo",
+      "peircing",
+      "electrolisis",
+      "accupuncture",
+      "acupunture",
+      "piecing",
     ],
     categories: ["Business", "General Licensing"]
   },
