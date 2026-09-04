@@ -4723,13 +4723,2473 @@ const statutoryNuisanceFromCommercialPremises = new ContentPaD(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
+const highHedges = new ContentPaD(
+  "highHedges",
+  "High Hedges",
+  "Information about resolving high hedge disputes, making a complaint, fees, Council action and appealing a decision.",
+  `
+  <p>
+    The Anti-Social Behaviour Act 2003 allows the Council to investigate complaints about excessively high evergreen or semi-evergreen hedges.
+  </p>
+  <p>
+    Before making a complaint, you must first take reasonable steps to resolve the issue directly with the hedge owner. Making a complaint to the Council should be a last resort.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Making a Complaint</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You should try to resolve the issue by:</p>
+      <ul>
+        <li>Speaking to the hedge owner about the problem</li>
+        <li>Sending at least two letters within a six-month period</li>
+        <li>Considering mediation</li>
+        <li>Keeping copies of letters, replies and details of other attempts to resolve the dispute</li>
+      </ul>
+      <p>
+        You will need to provide evidence that you have taken reasonable steps to resolve the issue before the Council can accept your complaint.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Making a Complaint</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If your attempts to resolve the issue have been unsuccessful, you can submit a complaint to the Council.
+      </p>
+      <p>You will need to provide:</p>
+      <ul>
+        <li>The appropriate fee</li>
+        <li>Photographs of the hedge</li>
+        <li>Copies of property deed plans showing boundary lines</li>
+        <li>Evidence of your attempts to resolve the issue</li>
+        <li>A location plan showing the hedge and affected properties, with measurements in metres</li>
+      </ul>
+      <p>
+        You must also send a copy of the completed complaint form to the hedge owner.
+      </p>
+      <p>
+        For guidance, fees and details of how to make a complaint, visit:
+        <a href="https://www.sheffield.gov.uk/pollution-nuisance/high-hedges" target="_blank" rel="noopener noreferrer">
+          High Hedges | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=High%20hedges\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After a Complaint</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council does not mediate or negotiate between neighbours. Its role is to assess whether the hedge is adversely affecting the reasonable enjoyment of the complainant's property.
+      </p>
+      <p>
+        Accepting a complaint does not guarantee that action will be taken. The Council will assess the hedge and may carry out a detailed calculation of its effect on light.
+      </p>
+      <p>Following the assessment, the Council may:</p>
+      <ul>
+        <li>Dismiss the complaint</li>
+        <li>Issue a Remedial Notice requiring the hedge owner to reduce and maintain the hedge at a specified height</li>
+      </ul>
+      <p>
+        Failure to comply with a Remedial Notice is an offence and may result in prosecution and a fine.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The current fees are:</p>
+      <ul>
+        <li>£450 full fee</li>
+        <li>£75 discounted fee for eligible customers receiving Housing Benefit or means-tested Jobseeker's Allowance</li>
+      </ul>
+      <p>
+        Evidence of benefit entitlement must be provided to receive the discounted fee.
+      </p>
+      <p>
+        The fee covers administration and assessment of the hedge. It may not be refunded if the hedge is not considered actionable.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Appealing a Decision</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The complainant, hedge owner or occupier may have a right to appeal certain decisions, including the issue, withdrawal or amendment of a Remedial Notice.
+      </p>
+      <p>
+        An appeal must be submitted to the Planning Inspectorate, with a copy sent to the Council, within 28 days of the relevant decision or notice.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Grounds for a Complaint</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A complaint can only be accepted if the hedge meets the legal definition of a high hedge and you have taken sufficient steps to resolve the matter with the hedge owner.
+      </p>
+      <p>
+        The Council's guidance includes a checklist to help you determine whether your complaint is likely to meet the required criteria.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>You must try to resolve the dispute with the hedge owner before contacting the Council</li>
+    <li>A fee and evidence of your attempts to resolve the issue must accompany the complaint</li>
+    <li>Accepting a complaint does not guarantee that the Council will take action</li>
+    <li>Appeals must normally be submitted within 28 days of the decision or notice</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "high hedges",
+      "high hedge complaint",
+      "hedge dispute",
+      "neighbour hedge",
+      "evergreen hedge",
+      "semi-evergreen hedge",
+      "Remedial Notice",
+      "high hedge fee",
+      "hedge mediation",
+      "appeal hedge decision",
+      "overgrown hedge",
+      "high hedge complant"
+    ],
+    categories: ["Environmental Regulations", "High Hedges"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const statutoryNuisanceFromDomesticProperties = new ContentPaD(
+  "statutoryNuisanceFromDomesticProperties",
+  "Statutory Nuisance from Domestic Properties",
+  "Information about reporting a statutory nuisance from a domestic property, how complaints are investigated and the action the Council may take.",
+  `
+  <p>
+    A statutory nuisance from a domestic property is an issue that unreasonably and substantially interferes with the use or enjoyment of another home, or which could harm someone's health.
+  </p>
+  <p>
+    Something that is annoying or inconvenient will not always meet the legal definition of a statutory nuisance.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before You Report</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Where possible and safe to do so, you should speak to the neighbour or property owner first to try to resolve the problem.
+      </p>
+      <p>
+        If the issue cannot be resolved, or contacting them is not appropriate, you can report it to the Private Housing Standards team.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Information You Will Need</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>When reporting a nuisance, you will be asked for:</p>
+      <ul>
+        <li>The address of the property causing the problem</li>
+        <li>Details of the issue and how it affects you</li>
+      </ul>
+      <p>
+        You will not be identified as the complainant, although the nature of the complaint may make it apparent who reported the issue.
+      </p>
+      <p>
+        You must also be prepared to attend court if this is required.
+      </p>
+      <p>
+        <strong>Report a nuisance from a neighbouring property:</strong><br>
+        <a href="https://www.sheffield.gov.uk/housing/private-housing-issues/report-nuisance-disrepair-neighbouring-properties" target="_blank" rel="noopener noreferrer">
+          Report Nuisance or Disrepair from a Neighbouring Property | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20nuisance%20or%20disrepair%20from%20a%20neighbouring%20property\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How Complaints Are Investigated</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council will assess the information provided and investigate where appropriate.
+      </p>
+      <p>
+        Officers must obtain enough evidence to establish that a statutory nuisance exists. This may require them to witness and experience the issue being reported.
+      </p>
+      <p>
+        Not every complaint will meet the legal threshold for formal action.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>If a Statutory Nuisance Is Found</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If a statutory nuisance exists, or is likely to occur or happen again, the Council may serve an abatement notice. This will explain what must be done to stop or restrict the nuisance.
+      </p>
+      <p>
+        Failing to comply with an abatement notice without a reasonable excuse is a criminal offence and may result in prosecution and a fine.
+      </p>
+      <p>
+        The Council may also carry out work to address the nuisance and recover the costs from the person responsible.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Customers should try to resolve the issue directly where it is safe and appropriate to do so</li>
+    <li>The Council needs evidence before it can confirm that a statutory nuisance exists</li>
+    <li>Not every annoyance or inconvenience will meet the legal threshold for action</li>
+    <li>An abatement notice may be served where a statutory nuisance is established</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "statutory nuisance",
+      "domestic nuisance",
+      "neighbour nuisance",
+      "private housing nuisance",
+      "report a nuisance",
+      "neighbouring property",
+      "abatement notice",
+      "nuisance complaint",
+      "property nuisance",
+      "domestic property complaint",
+      "statutory nuissance",
+      "neighbour complaint"
+    ],
+    categories: ["Environmental Regulations", "Statutory Nuisance"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const landAndPropertySearches = new ContentPaD(
+  "landAndPropertySearches",
+  "Land and Property Searches",
+  "Information about Local Land Charges and Local Authority Searches, including what searches contain, how to request a search and applicable fees.",
+  `
+  <p>
+    A Local Land Charge is a restriction or legal obligation affecting a particular piece of land or property. Local Authority Searches are commonly required when buying or selling property as part of the conveyancing process.
+  </p>
+  <p>
+    For further information about Land and Property Searches, visit:
+    <a href="https://www.sheffield.gov.uk/your-city-council/legal-services/local-land-charges" target="_blank" rel="noopener noreferrer">
+      Land and Property Searches | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Land%20and%20property%20searches\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What a Local Authority Search Includes</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A search can identify matters affecting a property or piece of land, including:
+      </p>
+      <ul>
+        <li>Charges relating to services such as roads</li>
+        <li>Tree Preservation Orders</li>
+        <li>Planning permissions and conditions</li>
+        <li>Conservation area restrictions</li>
+        <li>Legal agreements</li>
+        <li>Listed building status</li>
+      </ul>
+      <p>
+        This information helps buyers and their solicitors understand any restrictions, responsibilities or financial obligations before completing a purchase.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Requesting a Search</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A Local Authority Search can be requested:
+      </p>
+      <ul>
+        <li>By email</li>
+        <li>By post</li>
+        <li>Through a solicitor or another search provider</li>
+      </ul>
+      <p>
+        You can also carry out your own enquiries using the questions on the standard CON29 form.
+      </p>
+      <p>
+        For information about carrying out your own enquiries, contact:
+      </p>
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:foi@sheffield.gov.uk">
+          foi@sheffield.gov.uk
+        </a>
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The current fees are:
+      </p>
+      <ul>
+        <li>LLC1: £45.10, plus £1.40 for each additional parcel</li>
+        <li>Personal search: free</li>
+        <li>CON29R component data: minimum administration charge of £16.62, plus the cost of individual questions and VAT</li>
+        <li>CON29O: £11.75 plus VAT, £14.10 in total</li>
+        <li>Full CON29R: £78.10, plus £14.25 for each additional parcel and VAT</li>
+      </ul>
+      <p>
+        Annual information about Local Land Charges fees and finances is published by the Council.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Other Search Providers</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Property searches can also be obtained through third-party providers.
+      </p>
+      <p>
+        <strong>National Land Information Service:</strong><br>
+        <a href="https://www.nlis.org.uk/buying-nlis-searches" target="_blank" rel="noopener noreferrer">
+          Buy an NLIS Search | National Land Information Service
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=National%20Land%20Information%20Service\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Commercial land and estate searches:</strong><br>
+        <a href="https://www.tmgroup.co.uk/commercial/searches-property-data/commercial-land-and-estate-searches/" target="_blank" rel="noopener noreferrer">
+          Commercial Land and Estate Searches | TM Group
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Commercial%20land%20and%20estate%20searches\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Local Authority Searches are commonly required when <strong>buying or selling a property</strong>.</li>
+    <li>Searches can identify <strong>restrictions, responsibilities and financial obligations</strong> affecting land or property.</li>
+    <li>Customers can request a search directly or through a <strong>solicitor or search provider</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "land and property searches",
+      "Local Land Charges",
+      "Local Authority Search",
+      "property search",
+      "land search",
+      "conveyancing search",
+      "LLC1",
+      "CON29R",
+      "CON29O",
+      "personal search",
+      "property purchase",
+      "land serch"
+    ],
+    categories: ["Environmental Regulations", "Land and Property Searches"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const burglarAlarmsAndCarAlarms = new ContentPaD(
+  "burglarAlarmsAndCarAlarms",
+  "Burglar Alarms and Car Alarms",
+  "Information about reporting noisy burglar and car alarms, registering a key-holder and what to do if a fire alarm is sounding.",
+  `
+  <p>
+    If a car or burglar alarm is sounding and the owner is unavailable, you can report it to the Council. The Council has legal powers to silence an alarm if it continues to cause a noise nuisance.
+  </p>
+  <p>
+    <strong>Report noise nuisance:</strong><br>
+    https://forms.sheffield.gov.uk/site/portal/form/report_noise
+      Report Noise Nuisance | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20noise%20nuisance\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>If the Council Silences an Alarm</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the Council needs to change a lock to silence an alarm, the owner will be told how to collect the new keys.
+      </p>
+      <p>
+        Valid identification and proof of property ownership or tenancy will be required.
+      </p>
+      <p>
+        The Council may recover the costs of silencing the alarm from the owner.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Register a Key-holder</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can register a key-holder with the Alarm Registration Service. The Council can then contact them if a complaint is received about your alarm.
+      </p>
+      <p>
+        <strong>Register a key-holder:</strong><br>
+        <a href="https://www.sheffield.gov.uk/pollution-nuisance/alarms" target="_blank" rel="noopener noreferrer">
+          Burglar Alarms and Car Alarms | Sheffield City Council
+        </a>
+      </p>
+
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Burglar%20alarms%20and%20car%20alarms\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <section class="alert-panel" role="alert" aria-label="Emergency information">
+    <h3>Fire Alarms</h3>
+    <p>
+      If a fire alarm is sounding, call <strong>999</strong>.
+    </p>
+  </section>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>A sounding car or burglar alarm can be reported if the owner is unavailable</li>
+    <li>The Council may silence an alarm that continues to cause a noise nuisance</li>
+    <li>The alarm owner may be charged for the cost of silencing it</li>
+    <li>If a fire alarm is sounding, call <strong>999</strong></li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "burglar alarm",
+      "car alarm",
+      "sounding alarm",
+      "noisy alarm",
+      "report alarm",
+      "noise nuisance",
+      "silence an alarm",
+      "alarm key-holder",
+      "alarm registration",
+      "fire alarm",
+      "burgler alarm",
+      "car alerm"
+    ],
+    categories: ["Environmental Regulations", "Noise Nuisance"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const animalWelfareLicences = new ContentPaD(
+  "animalWelfareLicences",
+  "Animal Welfare Licences",
+  "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
+  `
+  <p>
+    You need an animal welfare licence if you operate any of the following activities as a business in Sheffield:
+  </p>
+  <ul>
+    <li>Boarding or providing day care for cats or dogs</li>
+    <li>Breeding dogs</li>
+    <li>Hiring out horses or other animals for riding</li>
+    <li>Keeping or training animals for exhibition</li>
+    <li>Selling animals as pets</li>
+  </ul>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Applying for a Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        After you apply, the Environmental Protection Service will arrange an inspection of the premises to check that the relevant licence conditions and animal welfare standards are met.
+      </p>
+      <p>
+        Operating without the required licence or failing to meet licence conditions may result in enforcement action.
+      </p>
+      <p>
+        <strong>Apply for an animal welfare licence:</strong><br>
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+          Animal Welfare Licences | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Licences\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Licence Ratings</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Most licensed premises receive a star rating from 1 to 5 following inspection. The rating reflects welfare standards and risk and may affect the length of the licence and how frequently inspections are carried out.
+      </p>
+      <p>
+        Licences for keeping or training animals for exhibition are normally issued for three years.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Application fees vary depending on the type and scale of the activity.
+      </p>
+      <p>
+        The relevant fee will be confirmed when you apply and covers application processing, inspections, issuing the licence and enforcement.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Further Guidance</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You should review the licensing guidance and regulations before applying to ensure your business can meet the required standards.
+      </p>
+      <p>
+        <strong>Animal activities licensing guidance:</strong><br>
+        https://www.gov.uk/government/publications/animal-activities-licensing-guidance-for-local-authorities
+          Animal Activities Licensing Guidance | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20activities%20licensing%20guidance\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Animal Welfare Regulations:</strong><br>
+        https://www.legislation.gov.uk/ukdsi/2018/9780111165485
+          Animal Welfare Regulations | Legislation.gov.uk
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Regulations\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Both the business activity and premises must meet the relevant animal welfare standards</li>
+    <li>An inspection will be arranged after an application is submitted</li>
+    <li>Fees vary depending on the type and scale of the activity</li>
+    <li>Operating without the required licence may result in enforcement action</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "animal welfare licence",
+      "animal boarding licence",
+      "dog day care licence",
+      "dog breeding licence",
+      "selling animals as pets",
+      "hiring out horses",
+      "animals for exhibition",
+      "animal licence inspection",
+      "animal licence rating",
+      "animal licensing fees",
+      "animal welfare regulations",
+      "animal welfare license"
+    ],
+    categories: ["Environmental Regulations", "Animal Welfare"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const dogFouling = new ContentPaD(
+  "dogFouling",
+  "Dog Fouling",
+  "Information about reporting dog fouling, the details required, possible penalties and helping to keep Sheffield clean.",
+  `
+  <p>
+    You can report dog fouling on roads, pavements, housing estates and in parks. Reports help the Council identify problem areas and take action where offenders can be identified.
+  </p>
+  <p>
+    <strong>Report dog fouling:</strong><br>
+    <a href="https://forms.sheffield.gov.uk/site/portal/form/report_dog_fouling" target="_blank" rel="noopener noreferrer">
+      Report Dog Fouling | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20dog%20fouling\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Reporting an Incident</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        When reporting dog fouling you have witnessed, provide as much information as possible, including:
+      </p>
+      <ul>
+        <li>The date, time and location</li>
+        <li>A description of the person responsible</li>
+        <li>A description of the dog</li>
+        <li>Vehicle details, if relevant</li>
+        <li>How clearly you witnessed the incident</li>
+      </ul>
+      <p>
+        You may be asked to provide a statement if formal action is considered.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Penalties</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Dog owners must clean up immediately after their dog in public places. Failure to do so could result in:
+      </p>
+      <ul>
+        <li>A £50 fixed penalty</li>
+        <li>Prosecution and a fine of up to £1,000</li>
+      </ul>
+      <p>
+        Further information about dog fouling and the responsibilities of dog owners is available here:
+        <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
+          Dog Fouling | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Dog%20fouling\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Helping Keep Sheffield Clean</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can also help keep your local area clean by joining or organising a community litter pick or supporting a local Friends Of group.
+      </p>
+      <p>
+        <strong>Organise a litter pick:</strong><br>
+        https://www.sheffield.gov.uk/pollution-nuisance/organise-litter-picks
+          Organise a Litter Pick | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Organise%20a%20litter%20pick\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Find a Friends Of group:</strong><br>
+        https://www.sheffield.gov.uk/parks-sport-recreation/friends-of-groups
+          Friends Of Groups | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Friends%20Of%20groups\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Dog fouling can be reported on roads, pavements, housing estates and in parks</li>
+    <li>Reports should include the location, date, time and descriptions of those involved</li>
+    <li>Customers may be asked to provide a statement if formal action is considered</li>
+    <li>Failing to clean up after a dog may result in a fixed penalty or prosecution</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "dog fouling",
+      "report dog fouling",
+      "dog mess",
+      "dog waste",
+      "dog fouling complaint",
+      "dog fouling penalty",
+      "fixed penalty",
+      "public place",
+      "litter pick",
+      "Friends Of group",
+      "dog fowling",
+      "dog foaling"
+    ],
+    categories: ["Environmental Regulations", "Animals"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const lostOrFoundDogs = new ContentPaD(
+  "lostOrFoundDogs",
+  "Lost or Found Dogs",
+  "Information about reporting a lost or found dog, contacting the Council kennels and reclaiming an impounded dog.",
+  `
+  <p>
+    If you have lost or found a dog in Sheffield, contact the Council so the details can be added to the lost and found dog register.
+  </p>
+  <p>
+    <strong>Report a lost dog:</strong><br>
+    <a href="https://forms.sheffield.gov.uk/site/portal/form/report_dog_as_lost" target="_blank" rel="noopener noreferrer">
+      Report a Lost Dog | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20lost%20dog\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>If You Find a Stray Dog</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You should:</p>
+      <ul>
+        <li>Return the dog to its owner, if possible</li>
+        <li>Contact the Council to arrange collection</li>
+        <li>Take the dog to the Council kennels during opening hours</li>
+      </ul>
+      <p>
+        If you want to look after the dog temporarily, you must contact the Council for advice.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>If You Have Lost Your Dog</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Contact the Council to check whether your dog has been found, seen or taken to the kennels.
+      </p>
+      <p>
+        <strong>Kennels telephone:</strong><br>
+        tel:07817497995
+          07817 497 995
+        </a>
+      </p>
+      <p>
+        Further information about lost and found dogs is available here:
+        <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/lost-or-found-dogs" target="_blank" rel="noopener noreferrer">
+          Lost or Found Dogs | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Lost%20or%20found%20dogs\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Council Kennels</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Address:</strong><br>
+        RSPCA Animal Shelter<br>
+        2 Stadium Way<br>
+        Sheffield<br>
+        S9 3HN
+      </p>
+      <p>
+        <strong>Opening hours:</strong><br>
+        Monday to Friday, 8:30am to 4:30pm
+      </p>
+      <p>
+        Appointments for reclaiming or adopting dogs are normally available between 10am and 3pm.
+      </p>
+      <p>
+        If reception is closed, call 07817 497 995 between 8am and 5pm.
+      </p>
+      <p>
+        Only card payments are accepted.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Reclaiming a Dog</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>If your dog has been impounded, you will need to pay:</p>
+      <ul>
+        <li>£69.55 for the first two days</li>
+        <li>£17.65 for each additional day</li>
+        <li>Any veterinary treatment costs</li>
+      </ul>
+      <p>
+        If the dog is not reclaimed within seven days, it becomes the Council's property and may be made available for adoption.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Lost and found dogs should be reported to the Council</li>
+    <li>Call the kennels on <strong>07817 497 995</strong> to check whether a dog has been found or impounded</li>
+    <li>Charges and veterinary costs may apply when reclaiming a dog</li>
+    <li>An unclaimed dog becomes the Council's property after seven days</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "lost dog",
+      "found dog",
+      "stray dog",
+      "report lost dog",
+      "report found dog",
+      "Council kennels",
+      "reclaim a dog",
+      "impounded dog",
+      "dog warden",
+      "RSPCA Animal Shelter",
+      "missing dog",
+      "lost or found dogs"
+    ],
+    categories: ["Environmental Regulations", "Animals"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const temporaryCareOfAnimals = new ContentPaD(
+  "temporaryCareOfAnimals",
+  "Temporary Care of Animals",
+  "Information about temporary care for pets when their owner is admitted to hospital or moves into residential care and cannot make other suitable arrangements.",
+  `
+  <p>
+    Sheffield City Council may arrange temporary care for pets when their owner is admitted to hospital or moves into residential care and cannot make other suitable arrangements.
+  </p>
+
+  <h3>Support Available</h3>
+  <p>
+    Temporary support may include:
+  </p>
+  <ul>
+    <li>Caring for a pet while its owner is in hospital or residential care</li>
+    <li>Arranging temporary accommodation until the pet can safely return home</li>
+    <li>Managing stray animals and providing dog warden services</li>
+  </ul>
+  <p>
+    Care may be provided through the RSPCA Sheffield Animal Shelter.
+  </p>
+
+  <h3>Location</h3>
+  <p>
+    <strong>RSPCA Sheffield Animal Shelter</strong><br>
+    2 Stadium Way<br>
+    Attercliffe<br>
+    Sheffield
+  </p>
+
+  <h3>Request Support</h3>
+  <p>
+    Contact Sheffield City Council if you need temporary care for a pet or advice about animal welfare services.
+  </p>
+  <p>
+    <strong>Animal services:</strong><br>
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals" target="_blank" rel="noopener noreferrer">
+      Animal Services | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20services\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Temporary care may be available when a pet owner is <strong>admitted to hospital or moves into residential care</strong>.</li>
+    <li>Support applies when the owner <strong>cannot make other suitable arrangements</strong> for their pet.</li>
+    <li>Customers should contact <strong>Animal Services</strong> to request support or advice.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "temporary care of animals",
+      "temporary pet care",
+      "pet owner in hospital",
+      "residential care",
+      "animal welfare",
+      "stray animals",
+      "dog warden",
+      "RSPCA Sheffield",
+      "animal shelter",
+      "animal services",
+      "care for pets",
+      "temporary animal care"
+    ],
+    categories: ["Environmental Regulations", "Animals"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const flyTippingAndWasteDisposal = new ContentPaD(
+  "flyTippingAndWasteDisposal",
+  "Fly-Tipping and Waste Disposal",
+  "Information about disposing of household waste legally, using registered waste carriers, reporting fly-tipping and clearing waste from private land.",
+  `
+  <p>
+    You are responsible for ensuring that your household waste is disposed of legally. If waste from your property is fly-tipped, you could be investigated if you did not take reasonable steps to check who collected it.
+  </p>
+  <p>
+    For further information about fly-tipping and disposing of waste legally, visit:
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/fly-tipping-and-litter" target="_blank" rel="noopener noreferrer">
+      Fly-Tipping and Litter | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Fly-tipping%20and%20litter\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Bulky Waste Collections</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you need to dispose of bulky household items, such as furniture or appliances, you can arrange a collection through Sheffield City Council.
+      </p>
+      <p>
+        <strong>Arrange a bulky waste collection:</strong><br>
+        <a href="https://wasteservices.sheffield.gov.uk/?_dl=t&l=bulky&p=/" target="_blank" rel="noopener noreferrer">
+          Arrange a Bulky Waste Collection
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Arrange%20a%20bulky%20waste%20collection\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Using a Private Waste Collector</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Before paying someone to remove your waste, you should:
+      </p>
+      <ul>
+        <li>Check that they are registered as a waste carrier</li>
+        <li>Ask for their waste carrier registration number</li>
+        <li>Record the collector's name and vehicle registration</li>
+        <li>Ask for a waste transfer note or receipt</li>
+        <li>Keep the receipt and registration details</li>
+      </ul>
+      <p>
+        <strong>Check a waste carrier:</strong><br>
+        <a href="https://environment.data.gov.uk/public-register/view/search-waste-carriers-brokers" target="_blank" rel="noopener noreferrer">
+          Search the Waste Carriers, Brokers and Dealers Register
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Check%20a%20waste%20carrier\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        Do not leave waste or scrap metal on the street, pavement, verge or edge of your property for an unknown collector. Make sure it is collected directly from your property by an authorised carrier or licensed scrap metal dealer.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Reporting Fly-Tipping</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>If you witness fly-tipping or find fly-tipped waste:</p>
+      <ul>
+        <li>Do not touch or move it, as it may be dangerous or contain evidence</li>
+        <li>Record the location, date and time</li>
+        <li>Provide a description and approximate quantity of the waste</li>
+        <li>Include details of any person or vehicle involved, if it is safe to do so</li>
+      </ul>
+      <p>
+        <strong>Report fly-tipping:</strong><br>
+        <a href="https://forms.sheffield.gov.uk/site/portal/form/report_fly_tipping" target="_blank" rel="noopener noreferrer">
+          Report Fly-Tipping | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly-tipping\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fly-Tipping on Private Land</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Landowners are responsible for removing fly-tipped waste from their land. The Council can provide a chargeable clearance service.
+      </p>
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">
+          environmentalservicesadmin@sheffield.gov.uk
+        </a>
+      </p>
+      <p>
+        <strong>Telephone:</strong><br>
+        tel:01142037411
+          0114 203 7411
+        </a>
+      </p>
+      <p>
+        Where evidence is available, the Council may investigate and take enforcement action against those responsible.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Householders must take reasonable steps to ensure their waste is collected by an authorised person</li>
+    <li>Customers should keep the waste carrier's details and a waste transfer note or receipt</li>
+    <li>Fly-tipped waste should not be touched or moved</li>
+    <li>Landowners are responsible for removing waste fly-tipped on private land</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "fly-tipping",
+      "report fly-tipping",
+      "fly-tipped waste",
+      "illegal waste disposal",
+      "waste carrier",
+      "private waste collector",
+      "bulky waste collection",
+      "waste transfer note",
+      "scrap metal collection",
+      "private land clearance",
+      "fly tipping",
+      "waste carier"
+    ],
+    categories: ["Environmental Regulations", "Fly-Tipping and Waste"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const bulkyWasteCollection = new ContentPaD(
+  "bulkyWasteCollection",
+  "Bulky Waste Collection",
+  "Information about booking a bulky waste collection, charges, free collections for eligible tenants and other disposal options.",
+  `
+  <p>
+    You can use the bulky waste collection service to dispose of large household items, such as furniture and electrical goods. You can also take bulky items to a household waste recycling centre.
+  </p>
+  <p>
+    For further information about the service, visit:
+    <a href="https://www.sheffield.gov.uk/bins-waste-recycling/other-services/bulky-waste-collection" target="_blank" rel="noopener noreferrer">
+      Bulky Waste Collection | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Bulky%20waste%20collection\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Bulky Waste Collections</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council can collect up to 12 bulky items from your home. Collections are normally completed within 7 working days after payment has been received.
+      </p>
+      <p>
+        The current charges, including VAT, are:
+      </p>
+      <ul>
+        <li>1 to 3 items: £40.25</li>
+        <li>4 to 6 items: £55.01</li>
+        <li>7 to 9 items: £75.59</li>
+        <li>10 to 12 items: £95.48</li>
+      </ul>
+      <p>
+        <strong>Book a bulky waste collection:</strong><br>
+        https://wasteservices.sheffield.gov.uk/?_dl=t&amp;l=bulky&amp;p=/
+          Book a Bulky Waste Collection
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20bulky%20waste%20collection\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Free Collections for Eligible Tenants</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You may qualify for one free collection of up to 12 items in any rolling 12-month period if you are:
+      </p>
+      <ul>
+        <li>A Sheffield City Council tenant</li>
+        <li>An Acis tenant</li>
+        <li>An eligible Together Housing, Great Places or Sanctuary tenant living in a property transferred from Sheffield City Council</li>
+      </ul>
+      <p>
+        The 12-month period runs from the date of your previous free collection. Contact your landlord if you are unsure whether you qualify.
+      </p>
+      <p>
+        Additional collections can be booked and paid for using the bulky waste collection service.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>More Than 12 Items</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A separate chargeable service is available for collections of more than 12 items or non-domestic items, such as fixtures, fittings and baths.
+      </p>
+      <p>
+        The minimum charge is £129.70. A visit may be required before the full cost can be confirmed. Contact the Council to discuss this type of collection.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Other Disposal Options</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can take bulky household waste to a household waste recycling centre.
+      </p>
+      <p>
+        <strong>Household waste recycling centres:</strong><br>
+        <a href="https://www.sheffield.gov.uk/bins-recycling-services/household-waste-recycling-centres" target="_blank" rel="noopener noreferrer">
+          Household Waste Recycling Centres | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Household%20waste%20recycling%20centres\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        If your unwanted furniture or electrical items are in good condition, consider donating them to a charity so they can be reused.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>The standard service can collect up to <strong>12 bulky household items</strong></li>
+    <li>Collections are normally completed within <strong>7 working days after payment</strong></li>
+    <li>Eligible tenants may receive <strong>one free collection in a rolling 12-month period</strong></li>
+    <li>A separate chargeable service is available for more than 12 items or non-domestic items</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "bulky waste collection",
+      "book bulky waste",
+      "bulky household items",
+      "furniture collection",
+      "electrical goods collection",
+      "free bulky collection",
+      "Council tenant collection",
+      "large waste collection",
+      "recycling centre",
+      "bulky waste charges",
+      "bulky rubbish",
+      "bulk waste collection"
+    ],
+    categories: ["Environmental Regulations", "Waste and Recycling"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+
+const foodLawInspectionsAndHygieneRatings = new ContentPaD(
+  "foodLawInspectionsAndHygieneRatings",
+  "Food Law Inspections and Hygiene Ratings",
+  "Information about food business inspections, food safety management, hygiene ratings, follow-up visits and requesting a re-rating.",
+  `
+  <p>
+    The Council carries out inspections of registered food businesses to check that food is being handled safely and food law requirements are being followed.
+  </p>
+  <p>
+    Inspections are normally unannounced. How often a business is inspected depends on the level of risk associated with the business.
+  </p>
+  <p>
+    For further information about food inspections and hygiene ratings, visit:
+    <a href="https://www.sheffield.gov.uk/public-health/food-safety/food-inspection-hygiene-rating-scheme" target="_blank" rel="noopener noreferrer">
+      Food Law Inspections and Hygiene Ratings | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Food%20law%20inspections%20and%20hygiene%20ratings\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Is Checked</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>During an inspection, the officer will check:</p>
+      <ul>
+        <li>How food is handled and stored</li>
+        <li>The cleanliness and condition of the premises</li>
+        <li>Facilities and pest control arrangements</li>
+        <li>Food safety management procedures</li>
+        <li>Staff food hygiene knowledge and training</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Food Safety Management</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You must have a written food safety management system explaining how your business produces safe food.
+      </p>
+      <p>
+        You should also keep records of routine opening, closing and food safety checks.
+      </p>
+      <p>
+        The Food Standards Agency provides Safer Food Better Business packs to help businesses meet these requirements.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Inspection Results and Hygiene Ratings</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Following an inspection, you will receive a report explaining:</p>
+      <ul>
+        <li>Any legal requirements that must be addressed</li>
+        <li>Recommended improvements</li>
+        <li>The timescale for completing any required work</li>
+      </ul>
+      <p>
+        Businesses included in the Food Hygiene Rating Scheme will also receive a hygiene rating.
+      </p>
+      <p>
+        The latest rating sticker must be displayed unless the business intends to appeal against the rating.
+      </p>
+      <p>
+        The rating will be published on the Food Standards Agency website once the inspection has been processed. You can give permission for the rating to be published before the appeal period ends.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Low Hygiene Ratings</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Businesses receiving a rating of 2 or below will be revisited in line with the Council's enforcement policy.
+      </p>
+      <p>
+        Officers will work with the business to help it meet the required standards. Formal enforcement action may be taken if serious problems remain or the business continues to break food safety law.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Request a Re-rating</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once the required improvements have been completed, you can apply for another inspection and a new food hygiene rating.
+      </p>
+      <p>
+        The re-rating service costs £150. If the request is accepted, an unannounced inspection will normally take place within 3 months of receiving the request and payment.
+      </p>
+      <p>
+        The new rating will reflect the conditions found during the inspection. This means the rating could increase, remain the same or decrease.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Food business inspections are normally unannounced</li>
+    <li>Businesses must have a written food safety management system</li>
+    <li>A rating of 2 or below will result in a follow-up visit</li>
+    <li>Businesses can request a re-rating after completing the required improvements</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "food hygiene inspection",
+      "food hygiene rating",
+      "food business inspection",
+      "food safety management",
+      "food hygiene sticker",
+      "low hygiene rating",
+      "request a re-rating",
+      "food safety inspection",
+      "Safer Food Better Business",
+      "food law",
+      "hygiene rerating",
+      "food hygene rating"
+    ],
+    categories: ["Environmental Regulations", "Food Safety"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const registerAFoodBusiness = new ContentPaD(
+  "registerAFoodBusiness",
+  "Register a Food Business",
+  "Information about registering a food business, who needs to register, inspections and reporting changes to a business.",
+  `
+  <p>
+    You must register a food business with Sheffield City Council at least <strong>28 days before opening</strong>.
+  </p>
+  <p>
+    Registration is free. Operating an unregistered food business is a criminal offence.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Needs to Register?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You must register if you regularly prepare, store, handle, cook, distribute, sell or provide food or drink.
+      </p>
+      <p>This includes:</p>
+      <ul>
+        <li>Restaurants, cafés, takeaways and pubs</li>
+        <li>Home-based catering businesses</li>
+        <li>Mobile food units and market stalls</li>
+        <li>Charities, lunch clubs and non-profit organisations</li>
+        <li>Seasonal businesses and food provided at events</li>
+      </ul>
+      <p>
+        Childminders who provide food are normally registered automatically if they registered with Ofsted on or after 1 January 2014.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Registration</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Your business will be assessed according to the food safety risk it presents.
+      </p>
+      <p>
+        Higher-risk businesses are inspected regularly. Lower-risk businesses may be inspected less often or asked to complete a self-assessment.
+      </p>
+      <p>
+        You can begin trading from the opening date entered on your registration form, provided you applied at least 28 days beforehand.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Changes to Your Business</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You must tell the Council if there is a change to:</p>
+      <ul>
+        <li>The business owner</li>
+        <li>The business name or address</li>
+        <li>The type of food business</li>
+        <li>Whether the business has stopped trading</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can register your food business online.
+      </p>
+      <p>
+        <strong>Register a food business:</strong><br>
+        <a href="https://register.food.gov.uk/new/sheffield" target="_blank" rel="noopener noreferrer">
+          Register a Food Business
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20food%20business\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Further information:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/food-and-cafe-licences/food-businesses" target="_blank" rel="noopener noreferrer">
+          Food Businesses | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Food%20businesses\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Food businesses must be registered at least <strong>28 days before opening</strong></li>
+    <li>Registration is free and applies to commercial, home-based, mobile and non-profit food businesses</li>
+    <li>The Council must be told about significant changes to the business or if it stops trading</li>
+    <li>Operating an unregistered food business is a criminal offence</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "register a food business",
+      "food business registration",
+      "food business",
+      "home catering business",
+      "mobile food business",
+      "market food stall",
+      "food business inspection",
+      "register before opening",
+      "food business changes",
+      "food business owner",
+      "food buisness",
+      "food registration"
+    ],
+    categories: ["Environmental Regulations", "Food Safety"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const skinPiercingRegistration = new ContentPaD(
+  "skinPiercingRegistration",
+  "Skin Piercing Registration",
+  "Information about registering skin piercing premises and operators, registration fees, inspections and hygiene requirements.",
+  `
+  <p>
+    You must register with Sheffield City Council if you operate a skin piercing business or carry out skin piercing treatments.
+  </p>
+  <p>
+    Both the premises and each person carrying out treatments must be registered. Acupuncture must be registered separately from other skin piercing activities.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Activities That Require Registration</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Registration is required for:</p>
+      <ul>
+        <li>Tattooing</li>
+        <li>Electrolysis</li>
+        <li>Acupuncture</li>
+        <li>Semi-permanent skin colouring</li>
+        <li>Ear piercing</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Registration Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Premises registration: £322</li>
+        <li>Individual operator registration: £61</li>
+        <li>Adding or removing an operator from registered premises: £15</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What You Need to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You will need to provide:</p>
+      <ul>
+        <li>A completed application</li>
+        <li>The required fee or payment reference</li>
+        <li>A privacy statement if applying by post</li>
+      </ul>
+      <p>
+        You can apply online to register premises or an operator.
+      </p>
+      <p>
+        <strong>Apply for skin piercing registration:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
+          Apply for Skin Piercing Registration
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        You can also apply to change an existing registration, including adding or removing an operator.
+      </p>
+      <p>
+        <strong>Change a skin piercing registration:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
+          Change a Skin Piercing Registration
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The premises will normally be inspected within 28 days to check compliance with skin piercing byelaws and health and safety requirements.
+      </p>
+      <p>
+        If the premises meet the required standards, a registration certificate will be issued. If any issues are found, you will be contacted and asked to resolve them.
+      </p>
+      <p>
+        You must not assume that registration has been granted if you have not received a decision. Contact the Council if you have not received an update within 28 days.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Hygiene and Safety</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You must comply with the Council's skin piercing byelaws and follow appropriate infection prevention and hygiene procedures when providing treatments.
+      </p>
+      <p>
+        <strong>Further information:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
+          Skin Piercing Registration | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Both the premises and each person carrying out treatments must be registered</li>
+    <li>Acupuncture must be registered separately from other skin piercing activities</li>
+    <li>The premises will normally be inspected within 28 days</li>
+    <li>Registration must be confirmed before treatments are provided</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "skin piercing registration",
+      "tattoo registration",
+      "tattoo licence",
+      "piercing licence",
+      "ear piercing",
+      "acupuncture registration",
+      "electrolysis registration",
+      "skin piercing premises",
+      "skin piercing operator",
+      "registration fees",
+      "piercing inspection",
+      "skin peircing"
+    ],
+    categories: ["Environmental Regulations", "Business Registrations"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const coolingTowerRegistration = new ContentPaD(
+  "coolingTowerRegistration",
+  "Cooling Tower Registration",
+  "Information about registering a cooling tower or evaporative condenser, updating an existing registration and registration requirements.",
+  `
+  <p>
+    Commercial premises in Sheffield must register any cooling tower or evaporative condenser with the Council.
+  </p>
+  <p>
+    Registration helps public health organisations respond quickly to possible outbreaks of Legionnaires' disease.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Needs to Register?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You must register if your commercial premises uses a cooling tower or evaporative condenser.
+      </p>
+      <p>You do not need to register equipment where:</p>
+      <ul>
+        <li>No water is exposed to the air</li>
+        <li>The water supply is disconnected</li>
+        <li>The electrical supply is disconnected</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Register</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Registration is free. If available, you should provide a site plan showing the location of the cooling tower or evaporative condenser.
+      </p>
+      <p>
+        The Council aims to process and acknowledge registrations within 21 days.
+      </p>
+      <p>
+        <strong>Register a cooling tower:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/cooling-tower-notification/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
+          Register a Cooling Tower or Evaporative Condenser
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20cooling%20tower\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Update a Registration</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You must update the Council if the details of an existing cooling tower or evaporative condenser registration change.
+      </p>
+      <p>
+        <strong>Update a cooling tower registration:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/cooling-tower-notification/sheffield/change-1" target="_blank" rel="noopener noreferrer">
+          Update a Cooling Tower Registration
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Update%20a%20cooling%20tower%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Further Information</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Further information about cooling tower registration requirements is available on the Council's website.
+      </p>
+      <p>
+        <strong>Cooling tower registration:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/cooling-tower-registration" target="_blank" rel="noopener noreferrer">
+          Cooling Tower Registration | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Cooling%20tower%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Commercial premises must register cooling towers and evaporative condensers with the Council</li>
+    <li>Registration is free and a site plan should be provided if available</li>
+    <li>The Council aims to acknowledge registrations within 21 days</li>
+    <li>Existing registrations must be updated when details change</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "cooling tower registration",
+      "register cooling tower",
+      "evaporative condenser",
+      "commercial cooling tower",
+      "cooling tower notification",
+      "update cooling tower",
+      "Legionnaires disease",
+      "cooling tower site plan",
+      "cooling tower application",
+      "cooling tower register",
+      "cooling tower licence",
+      "cooling tower regstration"
+    ],
+    categories: ["Environmental Regulations", "Business Registrations"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
+  "infectiousDiseasesAndFoodPoisoningPrivacyNotice",
+  "Infectious Diseases and Food Poisoning Investigations Privacy Notice",
+  "Information about how personal and medical information is collected, used, retained and shared during infectious disease and food poisoning investigations.",
+  `
+  <p>
+    The Council collects and uses personal and medical information when investigating infectious diseases and food poisoning. This helps identify the possible source of an illness, prevent it from spreading and protect public health.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Information We May Collect</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Information collected during an investigation may include:
+      </p>
+      <ul>
+        <li>Your name, address and contact details</li>
+        <li>Your date of birth and NHS number</li>
+        <li>Your occupation or school details</li>
+        <li>Health and medical information</li>
+        <li>Information about recent food, shopping, travel or food-handling activities</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Why We Use Your Information</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council uses this information to investigate and control infectious diseases and food poisoning as part of its legal public health duties.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How Long We Keep Your Information</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Information relating to an infectious disease or food poisoning investigation is normally kept for 6 years after the case is closed.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who We May Share Your Information With</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Where necessary, information may be shared with organisations involved in investigating and controlling illness, including:
+      </p>
+      <ul>
+        <li>General Practitioners</li>
+        <li>Public health organisations</li>
+        <li>Laboratories processing test results</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Your Data Protection Rights</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Depending on the legal basis used to process your information, you may have the right to:
+      </p>
+      <ul>
+        <li>Ask for a copy of your personal information</li>
+        <li>Ask for inaccurate or incomplete information to be corrected</li>
+        <li>Ask for the use of your information to be restricted</li>
+        <li>Make a complaint about how your information has been handled</li>
+      </ul>
+      <p>
+        Some rights may not apply where the Council is legally required to collect and use the information.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Contact the Data Protection Officer</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you have a question or complaint about how your personal information has been handled, contact:
+      </p>
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:dataprotectionofficer@sheffield.gov.uk">
+          dataprotectionofficer@sheffield.gov.uk
+        </a>
+      </p>
+      <p>
+        <strong>Telephone:</strong><br>
+        tel:01142052315
+          0114 205 2315
+        </a>
+      </p>
+      <p>
+        <strong>Address:</strong><br>
+        Data Protection Officer<br>
+        Sheffield City Council<br>
+        Town Hall<br>
+        Pinstone Street<br>
+        Sheffield<br>
+        S1 2HH
+      </p>
+      <p>
+        You can also raise concerns with the Information Commissioner's Office.
+      </p>
+      <p>
+        <strong>Information Commissioner's Office:</strong><br>
+        <a href="https://ico.org.uk/" target="_blank" rel="noopener noreferrer">
+          Information Commissioner's Office
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Information%20Commissioner%27s%20Office\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Personal and medical information is used to <strong>investigate illness, prevent it from spreading and protect public health</strong>.</li>
+    <li>Investigation records are normally kept for <strong>6 years after the case is closed</strong>.</li>
+    <li>Questions or complaints about personal information should be directed to the <strong>Data Protection Officer</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "infectious diseases privacy notice",
+      "food poisoning privacy notice",
+      "personal information",
+      "medical information",
+      "public health investigation",
+      "infectious disease investigation",
+      "food poisoning investigation",
+      "data protection rights",
+      "Data Protection Officer",
+      "Information Commissioner",
+      "ICO",
+      "privacy notise"
+    ],
+    categories: ["Environmental Regulations", "Privacy Notices"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const environmentalPermitsPartB = new ContentPaD(
+  "environmentalPermitsPartB",
+  "Environmental Permits (Part B)",
+  "Information about applying for a Part B environmental permit, application requirements, decision timescales and annual charges.",
+  `
+  <p>
+    Part B environmental permits control business activities that release emissions into the air. The permit required depends on the type of process being carried out and the emissions it produces.
+  </p>
+  <p>
+    Local authorities regulate Part B installations and mobile plants. Waste operations are regulated separately by the Environment Agency.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before You Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The operator of the regulated facility must make the application.
+      </p>
+      <p>
+        Businesses are encouraged to contact the Council for a pre-application discussion before applying.
+      </p>
+      <p>
+        Any required planning permission should be in place before an environmental permit is granted.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Application Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You will need to provide:</p>
+      <ul>
+        <li>A completed application form</li>
+        <li>Information about the activities and processes being carried out</li>
+        <li>Details of the emissions produced</li>
+        <li>Any supporting documents required for the operation</li>
+        <li>The relevant application fee</li>
+      </ul>
+      <p>
+        Contact the Council for details of current fees.
+      </p>
+      <p>
+        <strong>Apply for a Part B environmental permit:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/environmental-permitting/sheffield/apply-2" target="_blank" rel="noopener noreferrer">
+          Apply for an Environmental Permit
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Part%20B%20environmental%20permit\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council will review the application and may request further information. An incomplete or incorrectly submitted application may be returned.
+      </p>
+      <p>A decision will normally be made within:</p>
+      <ul>
+        <li>4 months for most applications</li>
+        <li>3 months for dry-cleaning operations</li>
+      </ul>
+      <p>
+        The application may be made public, and comments received may be considered before a decision is made.
+      </p>
+      <p>
+        You must not assume that a permit has been granted if you have not received a decision. Contact the Council if you have not received an update within the expected timescale.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Existing Permits and Annual Charges</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Businesses must pay an annual subsistence charge to maintain their permit. The amount depends on the regulated activity and the work required to monitor compliance.
+      </p>
+      <p>The online service can be used to:</p>
+      <ul>
+        <li>Apply for a new Part B permit</li>
+        <li>Apply to change an existing permit</li>
+        <li>Pay the annual subsistence charge</li>
+      </ul>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>The operator of the regulated facility must submit the application</li>
+    <li>Any required planning permission should be in place before a permit is granted</li>
+    <li>A decision normally takes up to 4 months, or 3 months for dry-cleaning operations</li>
+    <li>An annual subsistence charge must be paid to maintain the permit</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "Part B environmental permit",
+      "environmental permit",
+      "apply for Part B permit",
+      "air emissions permit",
+      "regulated facility",
+      "mobile plant permit",
+      "dry cleaning permit",
+      "environmental permit fee",
+      "annual subsistence charge",
+      "change environmental permit",
+      "Part B application",
+      "enviromental permit"
+    ],
+    categories: ["Environmental Regulations", "Environmental Permits"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
 const environmentalRegulations = new MenuPaD(
   "environmentalRegulations",
   "Environmental Regulations",
   "Information regarding environmental regulations",
   [
     contaminatedLand,
-    statutoryNuisanceFromCommercialPremises
+    statutoryNuisanceFromCommercialPremises,
+    highHedges,
+    statutoryNuisanceFromDomesticProperties,
+    landAndPropertySearches,
+    burglarAlarmsAndCarAlarms,
+    animalWelfareLicences,
+    dogFouling,
+    lostOrFoundDogs,
+    temporaryCareOfAnimals,
+    flyTippingAndWasteDisposal,
+    bulkyWasteCollection,
+    foodLawInspectionsAndHygieneRatings,
+    registerAFoodBusiness,
+    skinPiercingRegistration,
+    coolingTowerRegistration,
+    infectiousDiseasesAndFoodPoisoningPrivacyNotice,
+    environmentalPermitsPartB
 
   ]
 );
