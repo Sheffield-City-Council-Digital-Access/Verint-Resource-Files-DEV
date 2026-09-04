@@ -3992,7 +3992,7 @@ const marriagePremisesApproval = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        Once an application is submitted, the council will advertise it in the local press and on our website.
+        Once an application is submitted, the council will advertise it in the local press and on the council website.
         The consultation period for the application will commence from the date of advertisement and last for a period of 21 days.
       </p>
       <p>
@@ -4832,6 +4832,135 @@ const streetPartyLicences = new ContentBusiness(
 );
 
 
+const streetTradingConsent = new ContentBusiness(
+  "streetTradingConsent",
+  "streetTradingConsent",
+  "Guidance on street trading consent, including scenrios where it is needed, how to apply, and costs.",
+  `
+    <p>summary content/overview</p>
+    <p>specific info for different types to be in accordions<p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for static pitch street trading</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/static-pitch-street-trading" target="_blank" rel="noopener noreferrer">
+        Static pitch street trading consent | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for mobile street trading (ice cream)</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-ice-cream" target="_blank" rel="noopener noreferrer">
+        Mobile ice cream street trader consent | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for mobile street trading (fruit and vegetables)</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-fruit-veg" target="_blank" rel="noopener noreferrer">
+        Mobile fruit and vegetable street trader consent | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for school street trading consent</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/school-street-trading-consent" target="_blank" rel="noopener noreferrer">School street trading consent | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for football ground street trading consent</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/football-ground-street-traders-consent" target="_blank" rel="noopener noreferrer">
+        Football ground street trader consent | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply to change (vary) your street trading consent</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/change-vary-street-trading-consent" target="_blank" rel="noopener noreferrer">
+        Make a change or variation to your street trading consent | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for badges for street trading assistants</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/street-trading-consent-badges" target="_blank" rel="noopener noreferrer">
+        Badges for street trading consent holders and assistants | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "enquiry_type_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "04/09/2026", name: "Liz Taster" }
+);
+
+
 const templateTile = new ContentBusiness(
   "templateTile",
   "Template Tile",
@@ -4883,6 +5012,7 @@ const templateTile = new ContentBusiness(
     smallSocietyLotteries,
     streetCollectionPermit,
     streetPartyLicences,
+    streetTradingConsent,
     templateTile,
 
   ]
