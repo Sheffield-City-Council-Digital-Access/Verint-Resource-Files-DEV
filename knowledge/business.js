@@ -3926,6 +3926,153 @@ const houseToHouseCollections = new ContentBusiness(
 );
 
 
+const marriagePremisesApproval = new ContentBusiness(
+  "marriagePremisesApproval",
+  "Marriage and Civil Partnership Premises Approval",
+  "Details of how to apply for a marriages and civil partnerships approval for a premises, and what premises this is permitted for.",
+  `
+    <p>
+      The Council can approve premises, like hotels and stately homes, to be used for civil marriage and civil partnership ceremonies.
+      We can also now approve religious premises for the ceremonies of civil partnerships.
+    </p>
+    <p>
+      For a premises to be eligible it must be a permanently immovable structure, and be considered a seemly and dignified venue for the proceedings, 
+      and ceremonies must take place in an identifiable and distinct part of those premises.
+    </p>
+    <p>
+      The application <strong>cost is £998</strong> and if granted approval lasts for <strong>three years</strong>.
+    </p>
+    <p>
+      Full details of the eligibility requirements of different premises types and application forms can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
+      Marriage and civil partnership premises approval | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application for premises approval must be made by the proprietor or a trustee of the premises.
+      </p>
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        As well as the completed application form and fee, applicants must also provide:
+      </p>
+        <ul>
+          <li>details of a 'responsible person' for the venue</li>
+          <li>three copies of a plan of the premises which clearly identifies the room(s) in which the proceedings will take place</li>
+          <li>written consent from the person specified or governing authority of the religious organisation (religious premises only)<li>
+        </ul>
+      <p>
+        There are six different application forms on the website. There are different forms for secular and religious premises, and for each there is a separate form
+        to <strong>apply</strong> for, <strong>renew</strong> or make a <strong>change</strong> to an approval. 
+        Please encourage the customer to ensure they use submit the correct form for their venue and circumstances. 
+      </p>
+      <p>
+        All application forms can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
+        Marriage and civil partnership premises approval | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Make  Changes</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Changes can be made to premises approval using the <strong>'Make a change'</strong> application form for either a secular or religious premises.
+      </p>
+      <p>
+        Change you may need to make include changes to the name of the premises or responsible person(s), changes to contact details, other material changes.
+      </p>
+      <p>
+        You should also use this form if you want to surrender or transfer a license.
+      </p>
+    </div>
+  </details>
+    
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ineligible premises</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Under current regulations the term 'premises' is defined as a permanently immovable structure comprising of at least one room.
+      </p>
+      <p>
+        The following are outside this definition are not eligible for approval:
+      </p>
+        <ul>
+          <li>open air</li>
+          <li>a tent</li>
+          <li>a marquee</li>
+          <li>any other temporary structure</li>
+          <li>most forms of transport</li>
+        </ul>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "marriage_premises_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "wedding",
+      "marriage",
+      "civil",
+      "partnership",
+      "venue",
+      "venues",
+      "premises",
+      "ceremony",
+      "ceremonies",
+      "apply",
+      "renew",
+      "change",
+      "weddnig",
+      "cicil",
+      "civill",
+      "partership",
+      "seremony",
+      "marrage",
+      "marraige",
+      "premisses"
+
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "04/09/2026", name: "Liz Taster" }
+);
+
+
 const scrapMetalLicences = new ContentBusiness(
   "scrapMetalLicencese",
   "Scrap Metal Licences",
@@ -4589,7 +4736,7 @@ const streetCollectionPermit = new ContentBusiness(
 const streetPartyLicences = new ContentBusiness(
   "streetPartyLicences",
   "Street Party Licences",
-  "Information about the definition of a street party and the requirements to one, including applying for a road closure notification.",
+  "Information about the definition of a street party and the requirements to host one, including applying for a road closure notification.",
   `
     <h3>What is a Street Party?</h3>
     <p>We define an event as a street party if:</p>
@@ -4709,6 +4856,7 @@ const templateTile = new ContentBusiness(
     animalWelfareLicences,
     chaperoneLicences,
     houseToHouseCollections,
+    marriagePremisesApproval,
     scrapMetalLicences,
     secondHandDealerReg,
     skinPiercingRegistration,
