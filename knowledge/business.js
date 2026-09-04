@@ -4588,27 +4588,27 @@ const streetCollectionPermit = new ContentBusiness(
 
 const streetPartyLicences = new ContentBusiness(
   "streetPartyLicences",
-  "streetPartyLicences",
-  "Information about definition of and requirements to hold a street party, including applying for a road closure notification.",
+  "Street Party Licences",
+  "Information about the definition of a street party and the requirements to one, including applying for a road closure notification.",
   `
     <h3>What is a Street Party?</h3>
-    <p>We define a street party as:</p>
+    <p>We define an event as a street party if:</p>
     <ul>
-      <li>self-organised by the local residents</li>
-      <li>for residents/neighbours only</li>
-      <li>publicity only to residents</li>
+      <li>it is self-organised by the local residents</li>
+      <li>it is for residents/neighbours only</li>
+      <li>any publicity is only to residents</li>
       <li>music is incidental and no selling is involved</li>
     </ul>
 
     <p>
-      Where these criteria apply, no no licences normally necessary and no formal risk assessment needed
+      Where these criteria apply, no licences are normally necessary and no formal risk assessment is needed.
     </p>
 
     <h3>What is Needed from the Council?</h3>
     <p>
       Typically a street party will involve closing a street. 
-      To do this, you need to complete a <strong>road closure application</strong> as soon as possible before the event is due to take place.  
-      We will need at least 2 weeks to process these applications
+      To do this, a customer needs to complete a <strong><em>road closure application</em></strong> as soon as possible before the event is due to take place.  
+      the council needs at least <strong>2 weeks</strong> to process these applications.
     </p>
     <p>
       Further information and the road closure application form can be found here:
@@ -4631,18 +4631,18 @@ const streetPartyLicences = new ContentBusiness(
         A Temporary Event notice may be needed if any of the following are happening as part of the street party:
       </p>
         <ul>
-          <li>hold live performances, film screenings or dancing</li>
-          <li>play live or pre-recorded music for entertainment purposes</li>
-          <li>sell alcohol</li>
-          <li>hold a raffle</li>
-          <li>sell food and hot drinks between 11pm and 5am</li>
+          <li>holding live performances, film screenings or dancing</li>
+          <li>playing live or pre-recorded music for entertainment purposes</li>
+          <li>selling alcohol</li>
+          <li>holding a raffle</li>
+          <li>selling food and hot drinks between 11pm and 5am</li>
         </ul>
       <p> 
         Information about Temporary Event Notices can be found here:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
         Apply for a Temporary Event Notice | Sheffield City Council</a>
       </p>
-
+      <p>[Insert Send Link]</p>
     </div>
   </details>
  
