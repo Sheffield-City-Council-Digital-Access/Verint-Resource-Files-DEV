@@ -4407,6 +4407,333 @@ const cleanAirZone = new MenuPaN(
 
 //#endregion Clean Air Zone
 
+//#region Environmental Services
+
+const contaminatedLand = new ContentPaD(
+  "contaminatedLand",
+  "Contaminated Land",
+  "Information about contaminated land, developing affected sites, planning application requirements, environmental searches and the contaminated land register.",
+  `
+  <p>
+    The Environmental Protection Service helps manage risks from contaminated land in Sheffield. Contamination can affect people, property and the environment, particularly when land is developed, bought or sold.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Causes and Risks of Contamination</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Land may be contaminated because of:
+      </p>
+      <ul>
+        <li>Previous industrial use, including factories, mines and quarries</li>
+        <li>Demolition waste or contaminated materials used as infill</li>
+        <li>Former landfill sites</li>
+        <li>Naturally occurring substances at high levels</li>
+      </ul>
+      <p>
+        Many potentially contaminated sites can still be developed safely if the risks are properly assessed and the land is cleaned up or protected.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Developing a Site</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are developing a site, you are responsible for identifying and managing any contamination risks.
+      </p>
+      <p>
+        Depending on the proposed development and the site's previous use, you may need to provide:
+      </p>
+      <ul>
+        <li>A contaminated land risk assessment</li>
+        <li>Details of any necessary remediation work</li>
+        <li>Evidence confirming that remediation has been completed</li>
+        <li>Details of gas protection or cover systems</li>
+      </ul>
+      <p>
+        The developer is responsible for ensuring that the land is safe and suitable for its intended use.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Submitting a Planning Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        When applying to develop potentially contaminated land, you must:
+      </p>
+      <ul>
+        <li>Correctly complete the question about the site's existing use</li>
+        <li>Submit the required remediation and verification information</li>
+        <li>Raise potential contamination issues as early as possible</li>
+        <li>Provide evidence that the site will be safe for its proposed use</li>
+      </ul>
+      <p>
+        Information about remediation measures should also be retained with the property records, particularly where gas protection or cover systems have been installed.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Environmental Searches and Enquiries</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Environmental searches are often completed when residential or commercial property is bought or sold. Charges normally apply for searches and enquiries.
+      </p>
+      <p>
+        To submit an environmental search or enquiry, contact:
+      </p>
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:epsadmin@sheffield.gov.uk">
+          epsadmin@sheffield.gov.uk
+        </a>
+      </p>
+      <p>
+        You should include a plan clearly showing the boundary of the site.
+      </p>
+      <p>
+        The Council cannot guarantee that land will never be classified as contaminated, as new information may become available or environmental legislation may change.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Site Inspections and the Contaminated Land Register</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council investigates land where historical contamination may present a significant risk to people or the environment.
+      </p>
+      <p>
+        The contaminated land register records sites where formal remediation action has been taken. It does not contain details of every potentially contaminated site in Sheffield.
+      </p>
+      <p>
+        A property not appearing on the contaminated land register does not confirm that the land is free from contamination.
+      </p>
+    </div>
+  </details>
+
+  <h3>Further Information</h3>
+  <p>
+    For further information about contaminated land, environmental searches and developing potentially contaminated sites, visit:
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/contaminated-land" target="_blank" rel="noopener noreferrer">
+      Contaminated Land | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Contaminated%20land\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <h3>Key Information for Call Centre Staff</h3>
+    <ul>
+    <li>Developers are responsible for identifying and managing contamination risks</li>
+    <li>Planning applications may require a risk assessment and evidence that the site is safe</li>
+    <li>Environmental search requests must include a site boundary plan and be emailed to <strong>epsadmin@sheffield.gov.uk</strong></li>
+    <li>The contaminated land register does not include every potentially contaminated site in Sheffield</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "contaminated land",
+      "land contamination",
+      "contaminated site",
+      "environmental search",
+      "contamination risk assessment",
+      "land remediation",
+      "contaminated land register",
+      "gas protection system",
+      "former landfill",
+      "industrial land",
+      "property contamination",
+      "contaminated lad"
+    ],
+    categories: ["Environmental Regulations", "Contaminated Land"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const statutoryNuisanceFromCommercialPremises = new ContentPaD(
+  "statutoryNuisanceFromCommercialPremises",
+  "Statutory Nuisance from Commercial Premises",
+  "Information about statutory nuisance complaints involving businesses and commercial premises, including how complaints are assessed and investigated.",
+  `
+  <p>
+    The Environmental Protection Service investigates complaints about businesses and commercial premises that may cause a statutory nuisance.
+  </p>
+  <p>
+    A statutory nuisance is more than a minor inconvenience or everyday annoyance. The issue must unreasonably and substantially interfere with the use or enjoyment of a home or be likely to affect someone's health.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Issues That May Be Investigated</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The Council may investigate:</p>
+      <ul>
+        <li>Noise from commercial or industrial premises</li>
+        <li>Smoke, fumes, gases, dust, steam or strong smells</li>
+        <li>Artificial light affecting nearby properties</li>
+        <li>Accumulations of waste or other deposits</li>
+        <li>Animals or insects associated with commercial premises</li>
+        <li>Noise from machinery, equipment or vehicles being used in the street, excluding normal traffic noise</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How a Complaint Is Assessed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Each complaint is assessed individually. Officers may consider:</p>
+      <ul>
+        <li>How severely the issue affects the use or enjoyment of a home</li>
+        <li>How often it happens and how long it lasts</li>
+        <li>The time of day or night</li>
+        <li>The character of the surrounding area</li>
+        <li>Whether the activity provides an essential public benefit</li>
+        <li>Whether the business is taking reasonable steps to prevent or reduce the impact</li>
+      </ul>
+      <p>
+        Something being noticeable or annoying does not automatically make it a statutory nuisance.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Examples of Statutory Nuisance</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Issues that may be a statutory nuisance include:</p>
+      <ul>
+        <li>Repeated loud music or disturbance from licensed premises</li>
+        <li>Intrusive noise from faulty or poorly installed business equipment</li>
+        <li>Strong smells caused by inadequate extraction or ventilation</li>
+        <li>Commercial smoke entering nearby homes</li>
+        <li>Artificial light shining into a home and disrupting sleep</li>
+      </ul>
+      <p>Issues that may not be a statutory nuisance include:</p>
+      <ul>
+        <li>Normal traffic noise</li>
+        <li>Emergency work to essential services</li>
+        <li>Occasional events that finish at a reasonable time</li>
+        <li>Construction or demolition during accepted working hours where reasonable controls are used</li>
+        <li>Minor smells, smoke, dust or noise where suitable control measures are in place</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Construction and Demolition Hours</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The usual working hours for commercial construction and demolition are:
+      </p>
+      <ul>
+        <li>Monday to Friday: 7:30am to 6pm</li>
+        <li>Saturday: 8am to 1pm</li>
+        <li>Sunday and public holidays: no working</li>
+      </ul>
+      <p>
+        Different hours may sometimes be agreed in advance, and emergency work may need to take place outside these times.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How Complaints Are Investigated</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Officers may:</p>
+      <ul>
+        <li>Contact the person reporting the issue and the business involved</li>
+        <li>Ask for diary sheets or records of when the problem occurs</li>
+        <li>Visit the affected property or commercial premises</li>
+        <li>Check planning conditions, licences or environmental permits</li>
+        <li>Use noise recording or other measuring equipment</li>
+        <li>Consider evidence from other organisations</li>
+      </ul>
+      <p>
+        The Council must gather enough evidence before it can decide whether a statutory nuisance exists. Not every reported issue will meet the legal threshold for formal action.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>A statutory nuisance must substantially interfere with the use of a home or be likely to affect someone's health</li>
+    <li>Complaints are assessed based on their impact, frequency, duration and the time they occur</li>
+    <li>Customers may be asked to complete diary sheets or provide other evidence</li>
+    <li>Not every reported issue will meet the legal threshold for formal action</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "environmental_regulations_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "statutory nuisance",
+      "commercial nuisance",
+      "business noise",
+      "commercial noise",
+      "smoke nuisance",
+      "smell nuisance",
+      "artificial light nuisance",
+      "construction noise",
+      "demolition noise",
+      "commercial premises complaint",
+      "noise diary",
+      "statutory nuissance"
+    ],
+    categories: ["Environmental Regulations", "Statutory Nuisance"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+const environmentalRegulations = new MenuPaD(
+  "environmentalRegulations",
+  "Environmental Regulations",
+  "Information regarding environmental regulations",
+  [
+    contaminatedLand,
+    statutoryNuisanceFromCommercialPremises
+
+  ]
+);
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -4433,7 +4760,8 @@ const pollutionAndNuisance = new ServicePaN(
     reportNeedlesGlass,
     reportSmoke,
     reportNoise,
-    reportWaterAndDrainage
+    reportWaterAndDrainage,
+    environmentalRegulations
    
   ]
 );
