@@ -5474,8 +5474,8 @@ const animalWelfareLicences = new ContentPaD(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const dogFouling = new ContentPaD(
-  "dogFouling",
+const dogFoulEnviroReg = new ContentPaD(
+  "dogFoulEnviroReg",
   "Dog Fouling",
   "Information about reporting dog fouling, the details required, possible penalties and helping to keep Sheffield clean.",
   `
@@ -7179,7 +7179,7 @@ const environmentalRegulations = new MenuPaD(
     landAndPropertySearches,
     burglarAlarmsAndCarAlarms,
     animalWelfareLicences,
-    dogFouling,
+    dogFoulEnviroReg,
     lostOrFoundDogs,
     temporaryCareOfAnimals,
     flyTippingAndWasteDisposal,
