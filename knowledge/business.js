@@ -4834,7 +4834,7 @@ const streetPartyLicences = new ContentBusiness(
 
 const streetTradingConsent = new ContentBusiness(
   "streetTradingConsent",
-  "streetTradingConsent",
+  "Street Trading Consent",
   "Guidance on street trading consent, including scenrios where it is needed, how to apply, and costs.",
   `
     <p>summary content/overview</p>
