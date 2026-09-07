@@ -5224,7 +5224,7 @@ const burglarAlarmsAndCarAlarms = new ContentPaD(
     onclick="
       window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20noise%20nuisance\`
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20noise%20nuisances\`
     "
   >
     Send link to review further information
