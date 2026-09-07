@@ -7040,6 +7040,24 @@ const environmentalPermitsPartB = new ContentPaD(
   <p>
     Local authorities regulate Part B installations and mobile plants. Waste operations are regulated separately by the Environment Agency.
   </p>
+  <p>
+    For further information about environmental permits, visit:
+    <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/environmental-permit" target="_blank" rel="noopener noreferrer">
+      Environmental Permits | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = `${window.location.protocol}//${window.location.hostname}/form/launch/send_link_to_service?${
+        KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : ''
+      }interactionid=${KDF.getParams().interactionid}&sel_service=Environmental%20permits`
+    "
+  >
+    Send link to review further information
+  </button>
 
   <details class="accordion">
     <summary class="accordion-header">
