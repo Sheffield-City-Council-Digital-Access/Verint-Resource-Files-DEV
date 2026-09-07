@@ -5538,7 +5538,7 @@ const dogFoulEnviroReg = new ContentPaD(
       <p>
         Further information about dog fouling and the responsibilities of dog owners is available here:
         <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
-          Dog Fouling | Sheffield City Council
+          Dog Fouling Penalty | Sheffield City Council
         </a>
       </p>
       <button
@@ -5548,7 +5548,7 @@ const dogFoulEnviroReg = new ContentPaD(
         onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Dog%20fouling\`
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Dog%20fouling%20penalty\`
         "
       >
         Send link to review further information
@@ -6990,7 +6990,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
         onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Information%20Commissioner%27s%20Office\`
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Information%20Commissioners%20Office\`
         "
       >
         Send link to review further information
