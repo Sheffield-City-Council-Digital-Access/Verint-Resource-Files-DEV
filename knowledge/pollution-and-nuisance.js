@@ -5404,7 +5404,7 @@ const animalWelfareLicences = new ContentPaD(
       </p>
       <p>
         <strong>Animal activities licensing guidance:</strong><br>
-        https://www.gov.uk/government/publications/animal-activities-licensing-guidance-for-local-authorities
+        <a href="https://www.gov.uk/government/publications/animal-activities-licensing-guidance-for-local-authorities" target="_blank" rel="noopener noreferrer">
           Animal Activities Licensing Guidance | GOV.UK
         </a>
       </p>
@@ -5423,7 +5423,7 @@ const animalWelfareLicences = new ContentPaD(
 
       <p>
         <strong>Animal Welfare Regulations:</strong><br>
-        https://www.legislation.gov.uk/ukdsi/2018/9780111165485
+        <a href="https://www.legislation.gov.uk/ukdsi/2018/9780111165485" target="_blank" rel="noopener noreferrer">
           Animal Welfare Regulations | Legislation.gov.uk
         </a>
       </p>
@@ -6112,7 +6112,7 @@ const bulkyWasteCollection = new ContentPaD(
       </ul>
       <p>
         <strong>Book a bulky waste collection:</strong><br>
-        https://wasteservices.sheffield.gov.uk/?_dl=t&amp;l=bulky&amp;p=/
+        <a href="https://wasteservices.sheffield.gov.uk/?_dl=t&amp;l=bulky&amp;p=/" target="_blank" rel="noopener noreferrer">
           Book a Bulky Waste Collection
         </a>
       </p>
