@@ -5213,7 +5213,7 @@ const burglarAlarmsAndCarAlarms = new ContentPaD(
   </p>
   <p>
     <strong>Report noise nuisance:</strong><br>
-    https://forms.sheffield.gov.uk/site/portal/form/report_noise
+    <a href="https://forms.sheffield.gov.uk/site/portal/form/report_noise" target="_blank" rel="noopener noreferrer">
       Report Noise Nuisance | Sheffield City Council
     </a>
   </p>
@@ -5566,7 +5566,7 @@ const dogFoulEnviroReg = new ContentPaD(
       </p>
       <p>
         <strong>Organise a litter pick:</strong><br>
-        https://www.sheffield.gov.uk/pollution-nuisance/organise-litter-picks
+        <a href="https://www.sheffield.gov.uk/pollution-nuisance/organise-litter-picks" target="_blank" rel="noopener noreferrer">
           Organise a Litter Pick | Sheffield City Council
         </a>
       </p>
@@ -5585,7 +5585,7 @@ const dogFoulEnviroReg = new ContentPaD(
 
       <p>
         <strong>Find a Friends Of group:</strong><br>
-        https://www.sheffield.gov.uk/parks-sport-recreation/friends-of-groups
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/friends-of-groups" target="_blank" rel="noopener noreferrer">
           Friends Of Groups | Sheffield City Council
         </a>
       </p>
