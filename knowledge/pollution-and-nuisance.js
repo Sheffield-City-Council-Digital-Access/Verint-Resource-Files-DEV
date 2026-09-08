@@ -4786,7 +4786,7 @@ const highHedges = new ContentPaD(
         onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=High%20hedges\`
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=High%20hedge\`
         "
       >
         Send link to review further information
@@ -4951,7 +4951,7 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaD(
         onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20nuisance%20or%20disrepair%20from%20a%20neighbouring%20property\`
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20nuisance%20neighbouring%20property\`
         "
       >
         Send link to review further information
@@ -5415,7 +5415,7 @@ const animalWelfareLicences = new ContentPaD(
         onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20activities%20licensing%20guidance\`
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20activities%20licensing\`
         "
       >
         Send link to review further information
@@ -5999,7 +5999,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
         onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly-tipping\`
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20fly%20tipping\`
         "
       >
         Send link to review further information
