@@ -4555,7 +4555,7 @@ const contaminatedLand = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "contaminated_land_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -4699,7 +4699,7 @@ const statutoryNuisanceFromCommercialPremises = new ContentPaD(
     <li>Not every reported issue will meet the legal threshold for formal action</li>
   </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report noise", formName: "report_noise" },
   { typeKey: "" },
   { typeKey: "environmental_regulations_information_provided" },
   {
@@ -4871,9 +4871,9 @@ const highHedges = new ContentPaD(
     <li>Appeals must normally be submitted within 28 days of the decision or notice</li>
   </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report high hedge", formName: "report_high_hedge" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "high_hedge_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -5001,9 +5001,9 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaD(
     <li>An abatement notice may be served where a statutory nuisance is established</li>
   </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report noise", formName: "report_noise" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "nuisance_neighbour_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -5181,7 +5181,7 @@ const landAndPropertySearches = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "land_and_property_searches_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -5293,9 +5293,9 @@ const burglarAlarmsAndCarAlarms = new ContentPaD(
     <li>If a fire alarm is sounding, call <strong>999</strong></li>
   </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report an alarm ", formName: "report_noise" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "burglar_car_alarms_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -5452,7 +5452,7 @@ const animalWelfareLicences = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "animal_licence_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -5612,9 +5612,9 @@ const dogFoulEnviroReg = new ContentPaD(
     <li>Failing to clean up after a dog may result in a fixed penalty or prosecution</li>
   </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report dog fouling", formName: "report_dog_fouling" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "dog_fouling_nuisance_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -5769,9 +5769,9 @@ const lostOrFoundDogs = new ContentPaD(
     <li>An unclaimed dog becomes the Council's property after seven days</li>
   </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report lost dog", formName: "report_dog_as_lost" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "lost_found_dogs_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -5855,7 +5855,7 @@ const temporaryCareOfAnimals = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "animal_service_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -6041,9 +6041,9 @@ const flyTippingAndWasteDisposal = new ContentPaD(
     <li>Landowners are responsible for removing waste fly-tipped on private land</li>
   </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report fly-tipping", formName: "report_fly_tipping" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "fly_tipping_waste_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -6210,7 +6210,7 @@ const bulkyWasteCollection = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "bulky_waste_collection_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -6361,7 +6361,7 @@ const foodLawInspectionsAndHygieneRatings = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "food_law_inspections_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -6508,7 +6508,7 @@ const registerAFoodBusiness = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "register_food_business_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -6685,7 +6685,7 @@ const skinPiercingRegistration = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "skin_piercing_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -6837,7 +6837,7 @@ const coolingTowerRegistration = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "cooling_tower_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -7007,7 +7007,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "Commissioners_office_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -7164,7 +7164,7 @@ const environmentalPermitsPartB = new ContentPaD(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "environmental_regulations_information_provided" },
+  { typeKey: "environmental_permits_information_provided" },
   {
     type: "Application",
     keywords: [
