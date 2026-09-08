@@ -1309,7 +1309,14 @@ const communalAreas = new ContentH(
   { date: "14/07/2026", name: "Shaz Athar" }
 );
 
+
+
+
 // Communal fire safety is in the cross region section at the top of the area
+
+
+
+
 
 const decants = new FormH(
   "decants",
@@ -3628,6 +3635,33 @@ const accommodationNotSuitable = new ContentH(
 
           </div>
       </details>
+
+
+      YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+
+      <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/hou_homelessness?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&txt_test2=Enquiry%Counter\`"
+>
+            Send link to review further information
+    </button>
+
+
+      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+       Homelessness enquiry counter
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_homelessness?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}&txt_test=Enquiry%Counter\">Complete Counter</a>
+        for survery and provide a quote. 
+      </p>
   `,
 
   {
