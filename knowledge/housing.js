@@ -3645,10 +3645,12 @@ const accommodationNotSuitable = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/hou_homelessness?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&txt_test2=Enquiry%Counter\`"
+            }interactionid=\${KDF.getParams().interactionid}&txt_test2=Enquiry%20Counter\`"
 >
             Send link to review further information
     </button>
+
+
 
 
       <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -3659,7 +3661,7 @@ const accommodationNotSuitable = new ContentH(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${KDF.getParams().interactionid}&txt_test=Enquiry%Counter\">Complete Counter</a>
+  }interactionid=${KDF.getParams().interactionid}&txt_test=Enquiry%20Counter\">Complete Counter</a>
         for survery and provide a quote. 
       </p>
   `,
