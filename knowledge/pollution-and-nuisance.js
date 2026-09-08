@@ -5691,9 +5691,7 @@ const lostOrFoundDogs = new ContentPaD(
       </p>
       <p>
         <strong>Kennels telephone:</strong><br>
-        tel:07817497995
-          07817 497 995
-        </a>
+        <a href="tel:07817497995">07817497995</a>
       </p>
       <p>
         Further information about lost and found dogs is available here:
@@ -5770,7 +5768,7 @@ const lostOrFoundDogs = new ContentPaD(
   </ul>
   `,
   { buttonLabel: "Report lost dog", formName: "report_dog_as_lost" },
-  { typeKey: "" },
+  { typeKey: "lost_found_dogs_transferred_to_service" },
   { typeKey: "lost_found_dogs_information_provided" },
   {
     type: "Report",
@@ -6023,9 +6021,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
       </p>
       <p>
         <strong>Telephone:</strong><br>
-        tel:01142037411
-          0114 203 7411
-        </a>
+        <a href="tel:0114 20374110">0114 20374110</a> 
       </p>
       <p>
         Where evidence is available, the Council may investigate and take enforcement action against those responsible.
@@ -6042,7 +6038,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
   </ul>
   `,
   { buttonLabel: "Report fly-tipping", formName: "report_fly_tipping" },
-  { typeKey: "" },
+  { typeKey: "fly_tipping_waste_transferred_to_service" },
   { typeKey: "fly_tipping_waste_information_provided" },
   {
     type: "Report",
@@ -6961,9 +6957,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
       </p>
       <p>
         <strong>Telephone:</strong><br>
-        tel:01142052315
-          0114 205 2315
-        </a>
+       <a href="tel:0114 2052315">0114 2052315</a>
       </p>
       <p>
         <strong>Address:</strong><br>
@@ -7006,8 +7000,8 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
   </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "Commissioners_office_information_provided" },
+  { typeKey: "commissioners_office_transferred_to_service" },
+  { typeKey: "commissioners_office_information_provided" },
   {
     type: "Information",
     keywords: [
