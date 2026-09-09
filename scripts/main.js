@@ -488,9 +488,7 @@ function validateCurrencyField(fieldId) {
     inputElement.classList.add('dform_fielderror');
     if (validationMessage) {
       validationMessage.style.setProperty('display', 'block', 'important');
-      if (isEmpty && isRequired) {
-        validationMessage.textContent = "This field is required";
-      } else if (!isValidPattern) {
+      if (!isValidPattern) {
         validationMessage.textContent = "Please enter a valid currency amount";
       }
     }
