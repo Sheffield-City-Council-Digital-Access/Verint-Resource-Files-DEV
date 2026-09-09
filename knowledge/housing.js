@@ -3636,15 +3636,14 @@ const accommodationNotSuitable = new ContentH(
           </div>
       </details>
       <p>
-       Homelessness enquiry counter
+      For other enquires, please complete the
         <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/hou_homelessness?${
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${KDF.getParams().interactionid}&txt_routing=Enquiry%20Counter\">Complete Counter</a>
-        for survery and provide a quote. 
+  }interactionid=${KDF.getParams().interactionid}&txt_routing=Enquiry%20Counter\">Homelessness enquiry counter</a>. 
       </p>
   `,
 
