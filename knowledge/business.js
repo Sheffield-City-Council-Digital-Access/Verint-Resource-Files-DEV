@@ -3608,7 +3608,1760 @@ const taxiVehicleInspections = new ContentBusiness(
 
 //#endregion Taxi Licensing
 
-//#region Alcohol
+
+//#region General Licensing
+
+const animalWelfareLicences = new ContentBusiness(
+  "animalWelfareLicences",
+  "Animal Welfare Licences",
+  "Information about businesses that need an animal welfare licence and how to apply.",
+  `
+    <p>
+      Residents and businesses can apply for animal welfare licences through Sheffield City Council. 
+      These licences cover specific activities involving the keeping of certain animals.
+    </p>
+
+    <p>
+      Full details and forms to apply for the various licence types can be found here: 
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+      Animal welfare licences | Sheffield City Council</a>.
+    </p>
+    <p>[Insert Send Link]</p>
+    
+    <p>
+      Customers should be advised to look through the information on the website in detail, 
+      along with the information available through the links provided in the <strong>New licensing requirements</strong> section.
+    </p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Activities Requiring an Animal Welfare Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A licence is required where one of the below activities is carried out as a business in Sheffield, where a profit or fee is involved:
+      </p>
+        <ul>
+          <li>provision of boarding for dogs in kennels</li>
+          <li>provision of boarding for cats in a cattery</li>
+          <li>provision of home boarding for dogs</li>
+          <li>provision of day care for dogs</li>
+          <li>breeding of dogs</li>
+          <li>hiring out of horses or donkeys etc for riding</li>
+          <li>keeping or training animals for exhibition</li>
+          <li>selling animals as pets</li>
+        </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Licence Types</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Five different licence types can be applied for:
+      </p>
+        <ul>
+          <li>Animal boarding establishment licence</li>
+          <li>Dog breeding licence</li>
+          <li>Performing animals registration certificate</li>
+          <li>Pet shop licence</li>
+          <li>Riding establishment licence</li>
+        </ul>
+      <p>
+        Links to the application forms for each licence type are available on the website       
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+        Animal welfare licences | Sheffield City Council</a>.
+      </p>
+      <p>[Insert Send Link]</p>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The regulations allow us to charge a fee to the applicant to cover ‘reasonable anticipated costs’. 
+        This includes costs for processing applications, issuing licences, inspecting premises, and enforcement.
+      </p>
+      <p>
+        Current costs range from £465 to £628 depending on the type of licence required.
+      <p>
+      <p>
+        Full details of costs can be found on the website
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+        Animal welfare licences | Sheffield City Council</a>.
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "animal_welfare_licence_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "animal",
+      "animals",
+      "welfare",
+      "licence",
+      "pet",
+      "pets",
+      "shop",
+      "shops",
+      "kennel",
+      "kennels",
+      "cattery",
+      "breeding",
+      "horse",
+      "riding",
+      "dog",
+      "dogs",
+      "cat",
+      "cats",
+      "boarding",
+      "anmal",
+      "animl",
+      "welfair",
+      "wellfare",
+      "welfar",
+      "catery",
+      "bording",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "02/09/2026", name: "Liz Taster" }
+);
+
+
+const changeAPremisesLicence = new ContentBusiness(
+  "changeAPremisesLicence",
+  "Change a Premises Licence",
+  "Information about changing licensed activities, operating hours, conditions or the layout shown on a premises licence.",
+  `
+  <p>
+    You must apply to change a premises licence if the licensed activities, operating hours, conditions or layout of the premises are changing.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Changes You Can Make</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You can apply to:</p>
+      <ul>
+        <li>Change the hours of a licensable activity</li>
+        <li>Add or remove licensable activities</li>
+        <li>Add, remove or amend licence conditions</li>
+        <li>Change the layout shown on the premises plan</li>
+      </ul>
+      <p>You cannot use this process to:</p>
+      <ul>
+        <li>Extend a time-limited licence</li>
+        <li>Move the licence to another premises</li>
+        <li>Change the Designated Premises Supervisor</li>
+      </ul>
+      <p>
+        Contact the Council for advice if you need to make one of these changes.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Minor Variations</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A minor variation may be suitable if the proposed change will not adversely affect the licensing objectives.
+      </p>
+      <p>
+        This process is normally quicker and costs less than a full variation. The Council will decide whether the proposed change can be treated as a minor variation.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Can Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>An application can be made by:</p>
+      <ul>
+        <li>The premises licence holder</li>
+        <li>An authorised agent</li>
+        <li>A solicitor acting for the licence holder</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application fee is based on the premises' rateable value.
+      </p>
+      <p>Additional charges may apply where:</p>
+      <ul>
+        <li>The premises mainly sells alcohol</li>
+        <li>The premises can accommodate more than 5,000 people</li>
+      </ul>
+      <p>
+        Detailed fee information is available on the Council webpage.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What You Need to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You will normally need to provide:</p>
+      <ul>
+        <li>A completed variation application</li>
+        <li>The relevant application fee</li>
+        <li>A new premises plan if the layout is changing</li>
+        <li>The original premises licence and summary, or an explanation if these cannot be provided</li>
+        <li>Evidence that the application has been advertised correctly</li>
+        <li>Confirmation that responsible authorities have received the application, unless applying online</li>
+      </ul>
+      <p>
+        <strong>Application requirements and guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-premises-licence" target="_blank" rel="noopener noreferrer">
+          Change a Premises Licence | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A <strong>28-day consultation period</strong> begins the day after the application is received.
+      </p>
+      <ul>
+        <li>If no relevant representations are received, the variation may be granted</li>
+        <li>If relevant representations are received, a Licensing Committee hearing will be arranged</li>
+        <li>A hearing will normally take place within <strong>20 working days</strong> after the consultation period ends</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can apply online to change a premises licence.
+      </p>
+      <p>
+        <strong>Apply to change a premises licence:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
+          Apply Online | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20change%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>A variation is required to change <strong>licensed activities, operating hours, conditions or the premises layout</strong>.</li>
+    <li>A minor variation may be suitable for changes that do not adversely affect the <strong>licensing objectives</strong>.</li>
+    <li>Application fees are based on the premises' <strong>rateable value</strong>.</li>
+    <li>A full variation normally has a <strong>28-day consultation period</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "premises_licence_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "change a premises licence",
+      "premises licence variation",
+      "minor variation",
+      "change licensed hours",
+      "licensable activities",
+      "licence conditions",
+      "premises layout",
+      "premises plan",
+      "licensing consultation",
+      "Licensing Committee",
+      "variation application",
+      "premises lisence"
+    ],
+    categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
+  },
+  { date: "09/09/2026", name: "Andy Walker" }
+);
+
+
+const changeDesignatedPremisesSupervisor = new ContentBusiness(
+  "changeDesignatedPremisesSupervisor",
+  "Change the Designated Premises Supervisor",
+  "Information about changing the Designated Premises Supervisor, removing yourself as a DPS and the separate process for community premises.",
+  `
+  <p>
+    The Designated Premises Supervisor (DPS) is responsible for authorising alcohol sales at licensed premises and must hold a personal licence.
+  </p>
+  <p>
+    You must apply to change the DPS named on a premises licence. The proposed DPS must consent to the appointment, and the Council and South Yorkshire Police must be notified.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Can Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application can be made by:
+      </p>
+      <ul>
+        <li>The premises licence holder</li>
+        <li>An authorised agent</li>
+        <li>A solicitor acting for the licence holder</li>
+      </ul>
+      <p>
+        Community premises may be able to apply to operate without a DPS.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost and Application Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The fee to change the DPS is <strong>£23</strong>. There is no fee to consent to become a DPS or to ask to be removed from a licence.
+      </p>
+      <p>
+        The application must include:
+      </p>
+      <ul>
+        <li>A completed application form</li>
+        <li>Written consent from the proposed DPS</li>
+        <li>The original premises licence and summary, or an explanation if these cannot be provided</li>
+        <li>Confirmation that South Yorkshire Police has received the application</li>
+        <li>Confirmation that the existing DPS has been notified</li>
+      </ul>
+      <p>
+        Application fees are generally non-refundable.
+      </p>
+      <p>
+        <strong>Full application requirements and guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/designated-premises-supervisor" target="_blank" rel="noopener noreferrer">
+          Change the Designated Premises Supervisor | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20Designated%20Premises%20Supervisor\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        South Yorkshire Police has <strong>14 days</strong> to consider the application.
+      </p>
+      <ul>
+        <li>The new DPS can take immediate interim effect if this is requested on the application</li>
+        <li>If there is no objection, the application will be granted</li>
+        <li>If an objection is received, a Licensing Committee hearing will be arranged</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply to Change the DPS</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use this service if you are the premises licence holder, an authorised agent or a solicitor and want to appoint a new DPS.
+      </p>
+      <p>
+        <strong>Apply to change the DPS:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-2" target="_blank" rel="noopener noreferrer">
+          Apply to Change the Designated Premises Supervisor | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20to%20change%20the%20DPS\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Removing Yourself as a DPS</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A DPS who has left or is leaving the premises must notify both the Council and the premises licence holder as soon as possible.
+      </p>
+      <p>
+        Use this service if you are the current DPS and want your name removed from the premises licence.
+      </p>
+      <p>
+        <strong>Apply to be removed as the DPS:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-10" target="_blank" rel="noopener noreferrer">
+          Apply to Be Removed as the Designated Premises Supervisor | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20remove%20as%20the%20DPS\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        Alcohol cannot legally be sold after the DPS has been removed unless:
+      </p>
+      <ul>
+        <li>A new DPS has been named on the licence</li>
+        <li>The premises has permission to operate without a DPS</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Community Premises</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Community premises, such as community halls, may be able to transfer responsibility for alcohol sales from an individual DPS to a management committee or board.
+      </p>
+      <p>
+        This is a separate application process.
+      </p>
+      <p>
+        <strong>Community premises application guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/remove-designated-premises-supervisor-community-premises" target="_blank" rel="noopener noreferrer">
+          Remove the DPS Requirement from Community Premises | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Remove%20DPS%20community%20premises\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>The proposed DPS must hold a <strong>personal licence</strong> and consent to the appointment.</li>
+    <li>The fee to change the DPS is <strong>£23</strong>.</li>
+    <li>If a DPS leaves, alcohol cannot be sold until a replacement is named unless the premises can operate without one.</li>
+    <li>Community premises must use the <strong>separate application process</strong> to remove the DPS requirement.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "premises_licence_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "Designated Premises Supervisor",
+      "DPS",
+      "change the DPS",
+      "change designated premises supervisor",
+      "appoint a new DPS",
+      "remove yourself as DPS",
+      "DPS consent",
+      "personal licence holder",
+      "premises licence",
+      "community premises DPS",
+      "alcohol sales",
+      "designated premises superviser"
+    ],
+    categories: ["Licences and Permits", "Alcohol Licensing"]
+  },
+  { date: "09/09/2026", name: "Andy Walker" }
+);
+
+
+const chaperoneLicences = new ContentBusiness(
+  "chaperoneLicences",
+  "Chaperone Licences",
+  "Details of how to apply for or renew a chaperone licence.",
+  `
+    <p>
+      A chaperone licence allows an approved adult to supervise children who take part in entertainment activities.
+    </p>
+    <p>
+      Approved chaperones help safeguard children who are taking part in licensed performances and activities. 
+      Chaperone licences are issued as part of the council's child licensing responsibilities.
+    </p>
+
+    <p>
+      Further details of what a chaperone does, details of how to apply for or renew a chaperone licence, and relevant application forms can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
+      Apply for or renew a chaperone licence | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+ 
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Applying for a New Chaperone Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>To become a licensed chaperone the customer must:</p>
+        <ul>
+          <li>submit an application</li>
+          <li>provide two references</li>
+          <li>complete the Council's online Chaperone training module</li>
+          <li>attend a short information interview</li>
+          <li>undergo an enhanced DBS check</li>
+        </ul>
+      <p>
+        Further details and the application form can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
+        Apply for or renew a chaperone licence | Sheffield City Council</a>
+      </p>
+    </div>
+  </details>
+
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Renewing a Chaperone Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>To renew a chaperone licence the customer must:</p>
+        <ul>
+          <li>submit a renewal application</li>
+          <li>submit an up to date, signed phtotograph</li>
+          <li>complete the Council's online Chaperone training module again</li>
+          <li>complete a new enhanced DBS check</li>
+        </ul>
+      <p>
+        Further details and the renewal application form can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
+        Apply for or renew a chaperone licence | Sheffield City Council</a>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "chaperone_licence_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "chaperone",
+      "licence",
+      "child",
+      "children",
+      "shaperone",
+      "chapperone",
+
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "02/09/2026", name: "Liz Taster" }
+);
+
+
+const gamblingLicencesPremises = new ContentBusiness(
+  "gamblingLicencesPremises",
+  "Gambling Licences - Premises",
+  "Information about gambling premises licences, including new applications, transfers, variations, permits, licensing objectives and annual fees.",
+  `
+  <p>
+    Sheffield City Council issues gambling premises licences and permits under the Gambling Act 2005.
+  </p>
+  <p>
+    Licences or permits may be required for:
+  </p>
+  <ul>
+    <li>Amusement arcades</li>
+    <li>Casinos</li>
+    <li>Betting shops and bookmakers</li>
+    <li>Horse and dog tracks</li>
+    <li>Bingo premises</li>
+    <li>Pubs and clubs with gaming machines</li>
+    <li>Adult gaming centres</li>
+    <li>Licensed family entertainment centres</li>
+  </ul>
+  <p>
+    The correct application depends on whether you are applying for a new premises licence, transferring an existing licence or changing an existing licence.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Gambling operators may need an operating licence and relevant personal licences from the Gambling Commission before applying to the Council for a premises licence.
+      </p>
+      <p>
+        <strong>Gambling Commission licences and fees:</strong><br>
+        <a href="https://www.gamblingcommission.gov.uk/licensees-and-businesses/licences-and-fees" target="_blank" rel="noopener noreferrer">
+          Licences and Fees | Gambling Commission
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20Commission%20licences%20and%20fees\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        Customers should obtain independent legal advice if they are unsure which licence or permit they require.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>New Premises Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use <strong>Gambling licences - Premises Application New</strong> when applying for a gambling premises licence for premises that do not already hold the required licence.
+      </p>
+      <p>
+        The Council issues premises licences for:
+      </p>
+      <ul>
+        <li>Casinos</li>
+        <li>Betting premises and on-course betting</li>
+        <li>Bingo premises</li>
+        <li>Adult gaming centres</li>
+        <li>Licensed family entertainment centres</li>
+        <li>Racetracks</li>
+      </ul>
+      <p>
+        The application must include the required supporting information and application fee. An application will be invalid if the correct fee is not included.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Premises Transfer</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use <strong>Gambling licences - Premises Transfer</strong> when an existing gambling premises licence needs to be transferred to a new licence holder.
+      </p>
+      <p>
+        A transfer changes the person or organisation responsible for the licence. It does not automatically change the gambling activities or conditions authorised by the existing licence.
+      </p>
+      <p>
+        The new licence holder must comply with the existing licence and its conditions.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Premises Variation</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use <strong>Gambling licences - Premises Variation</strong> when the existing licence holder wants to change the premises licence.
+      </p>
+      <p>
+        This may include changes to:
+      </p>
+      <ul>
+        <li>The licensed gambling activities</li>
+        <li>The layout or area covered by the licence</li>
+        <li>Licence conditions</li>
+        <li>Other details about how the premises operates</li>
+      </ul>
+      <p>
+        A variation does not transfer the licence to another person or organisation. A separate transfer application is required where the licence holder is changing.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Other Gambling Permits and Notices</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council also issues permits for:
+      </p>
+      <ul>
+        <li>Gaming machines in members' clubs and licensed premises</li>
+        <li>Gaming in members' clubs</li>
+        <li>Prize gaming</li>
+        <li>Unlicensed family entertainment centres</li>
+      </ul>
+      <p>
+        The Council also endorses Temporary Use Notices and issues Provisional Statements.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Licensing Objectives</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are considered against three licensing objectives:
+      </p>
+      <ul>
+        <li>Preventing gambling from being associated with crime or disorder</li>
+        <li>Ensuring gambling is conducted fairly and openly</li>
+        <li>Protecting children and vulnerable people from harm or exploitation</li>
+      </ul>
+      <p>
+        Operators should ensure that staff understand how to identify and report safeguarding concerns involving children or vulnerable people.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees and Annual Payments</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The relevant fee must be included with the application. An application will be invalid if the correct fee is not provided.
+      </p>
+      <p>
+        Application fees are not normally refunded if the application is withdrawn or unsuccessful.
+      </p>
+      <p>
+        The first annual fee is payable within <strong>30 days</strong> of the premises licence being issued. Annual fees can then be paid for the different types of licensed gambling premises.
+      </p>
+      <p>
+        <strong>Application forms, fees, annual payments and guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-licences" target="_blank" rel="noopener noreferrer">
+          Gambling Licences | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20licences%20premises\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Customers must select the correct option for a <strong>new application, transfer or variation</strong>.</li>
+    <li>Operators may need the relevant <strong>Gambling Commission licences</strong> before applying to the Council.</li>
+    <li>The correct fee must accompany the application, or it will be invalid.</li>
+    <li>A transfer changes the <strong>licence holder</strong>, while a variation changes the <strong>existing licence details</strong>.</li>
+    <li>The first annual fee is payable within <strong>30 days of the licence being issued</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "gambling_licenced_premises_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "gambling licences",
+      "gambling premises licence",
+      "gambling premises application",
+      "new gambling premises licence",
+      "gambling premises transfer",
+      "gambling premises variation",
+      "casino licence",
+      "betting premises licence",
+      "bingo premises licence",
+      "adult gaming centre",
+      "family entertainment centre",
+      "racetrack licence",
+      "Gambling Commission",
+      "gambling annual fee",
+      "gambling license"
+    ],
+    categories: ["Licences and Permits", "Gambling Licensing"]
+  },
+  { date: "10/09/2026", name: "Andy Walker" }
+);
+
+
+const gamingMachinePermits = new ContentBusiness(
+  "gamingMachinePermits",
+  "Gaming Machine Permits",
+  "Information about applying for, transferring or changing a gaming machine permit and notifying the Council about two or fewer gaming machines.",
+  `
+  <p>
+    Sheffield City Council issues gaming machine permits for licensed premises, members' clubs and other eligible premises.
+  </p>
+  <p>
+    The correct application depends on whether you are applying for a new permit, transferring or changing an existing permit, or notifying the Council that you intend to provide no more than two gaming machines.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for a Gaming Machine Permit</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Licensed Premises Gaming Machine Permit</strong> application if you need permission to provide gaming machines at premises licensed to sell alcohol.
+      </p>
+      <p>
+        The application must include the relevant fee. Applications submitted without the correct fee will be invalid.
+      </p>
+      <p>
+        Application fees are not normally refunded if an application is withdrawn or unsuccessful.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Transfer a Gaming Machine Permit</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Licensed Premises Gaming Machine Permit Transfer</strong> application if the permit needs to be transferred following a change to the person or organisation responsible for the premises.
+      </p>
+      <p>
+        Customers should check the Council webpage for the current application form, fee and supporting information required.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Change a Gaming Machine Permit</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Licensed Premises Gaming Machine Permit Variation</strong> application if changes are required to an existing permit.
+      </p>
+      <p>
+        Customers should check the Council webpage for details of the changes that can be made and the relevant application requirements.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Notification of Two or Fewer Gaming Machines</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Notification of 2 or less gaming machines</strong> option if licensed premises want to notify the Council that they intend to provide no more than two gaming machines.
+      </p>
+      <p>
+        Customers should check the Council webpage for the notification form and current fee.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Gambling Licensing Objectives</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are considered in line with the Gambling Act licensing objectives:
+      </p>
+      <ul>
+        <li>Preventing gambling from being associated with crime or disorder</li>
+        <li>Ensuring gambling is conducted fairly and openly</li>
+        <li>Protecting children and vulnerable people from harm or exploitation</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Further Information and Applications</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        For application forms, current fees and full guidance, visit:
+      </p>
+      <p>
+        <strong>Gambling licences:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-licences" target="_blank" rel="noopener noreferrer">
+          Gambling Licences | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20licences%20gaming\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Select the relevant option for a <strong>new permit, transfer, variation or notification of two or fewer machines</strong>.</li>
+    <li>The correct fee must accompany the application.</li>
+    <li>Application fees are not normally refundable.</li>
+    <li>Direct customers to the Council's gambling licences webpage for the correct form, current fee and application requirements.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "gambling_licenced_premises_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "gaming machine permit",
+      "licensed premises gaming machine permit",
+      "gaming machine permit transfer",
+      "gaming machine permit variation",
+      "notification of 2 or less gaming machines",
+      "two gaming machines",
+      "gaming machines in licensed premises",
+      "gaming machine application",
+      "gaming machine fees",
+      "gambling licence",
+      "gambling permit",
+      "gaming mashine permit"
+    ],
+    categories: ["Licences and Permits", "Gambling Licensing"]
+  },
+  { date: "10/09/2026", name: "Andy Walker" }
+);
+
+
+const houseToHouseCollections = new ContentBusiness(
+  "houseToHouseCollections",
+  "House To House Collection Permit",
+  "Details of how to apply for a permit to carry out house to house collections for charity.",
+  `
+    <p>
+      A house to house collection permit is needed for anyone planning on collecting money, items for sale or items for use from people's houses 
+      or from business premises for a charitable purpose.
+    </p>
+    <p>
+      The Council regulates smaller collectors, the Charity Commission can issue an exemption certificate to larger charities. 
+    </p>
+    <p>
+      There is no charge for this permit, and it lasts for 1 year - customers need to apply to renew after a year.
+    </p>
+
+    <p>
+      Further information and the application form can be found here: 
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
+      House to house collection permit | Sheffield City Council</a>
+    </p>
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        Applications must be made <strong>at least 28 days before the proposed collection start date</strong>.
+      </p>
+      <p>
+        The application form requires details to be provided for:
+      </p>
+        <ul>
+          <li>the applicant</li>
+          <li>the charity or fund the collection is to benefit</li> 
+          <li>the proposed collection - including the time period and location/area covered</li>
+        </ul>
+      <p>
+        A letter of authority from the charity or fund the collection benefits must also be included with the application.
+      </p>
+      <p>
+        Details of both routes of application can be found here: 
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
+        House to house collection permit | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Next Steps After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        On receipt of your application we will consult with South Yorkshire Police and make such other enquiries as we think fit.
+      </p>
+      <p>
+        Where there are no issues we will issue you a permit as soon as possible.
+      </p>
+      <p>
+        Once a permit is issued, the applicant is required to make a separate application for copies and badges for all persons
+        involved in the collection. Further details can be found on the website.
+      </p>
+      <p>
+        Applicants must wait until they have received their permit before carrying out a collection.
+        Carrying out a charitable street collection without the required licence or permit may result in enforcement action.
+      </p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "charity_collections_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "house",
+      "collection",
+      "collect",
+      "colelction",
+      "charity",
+      "permit"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "03/09/2026", name: "Liz Taster" }
+);
+
+
+const hypnotismAuthorisation = new ContentBusiness(
+  "hypnotismAuthorisation",
+  "Hypnotism Authorisation",
+  "Details of how to apply for hypnotism authorisation and when it is needed.",
+  `
+    <p>
+      Hypnotism authorisation is required for anyone who wants to show, demonstrate, or perform a hypnotism act in public within Sheffield. 
+      Public hypnotism performances include hypnotism, mesmerism, and similar acts intended to induce a sleep-like state or trance that 
+      increases a person's susceptibility to suggestion.
+    </p>
+
+    <p>
+      <strong>Important conditions</strong>:
+    </p>
+      <ul>
+        <li>Authorisation holders must comply with the conditions attached to any authorisation granted</li>
+        <li>Hypnotism cannot be performed on anyone under 18 years of age</li>
+        <li>Self-induced hypnotism is not covered by this authorisation</li>
+      </ul>
+
+    <p>
+      Hypnotism authorisation is <strong>not required</strong> when the hypnotism takes place:
+    </p>
+      <ul>
+        <li>as part of the performance of a play</li>
+        <li>for scientific or research purposes</li>
+        <li>for the treatment of mental or physical disease</li>
+      </ul>
+
+    <p>
+      There is <strong>no cost</strong> or fee for an application for hypnotism authorisation.
+    </p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+    <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        Applications must be submitted in writing and include:
+      </p>
+        <ul>
+          <li>Details of the type of demonstration or performance.</li>
+          <li>The location where the demonstration or performance will take place.</li>
+          <li>A plan showing the rooms where the demonstration or performance will be held.</li>
+          <li>Dates and times of the demonstration or performance.</li>
+          <li>Details and copies of Public Liability Insurance.</li>
+          <li>A completed privacy statement included with the application form (<em>paper submissions only</em>).</li>
+      </ul>
+    
+      <p>
+        Further information and a link to apply online can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/hypnotism-licence" target="_blank" rel="noopener noreferrer">
+        Hypnotism authorisation | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The council considers all information provided with the application and aims to process applications within 28 days.
+      </p>
+      <p>
+        If there are no concerns, authorisation will be granted and issued after the 28-day period.
+      </p>
+      <p>
+        If the council is considering refusing the application, a notice of intention will be issued and the application will be determined by the licensing committee.
+      </p>
+      <p>
+        Applicants <strong>must not perform</strong> until they have received confirmation their authorisation has been granted.
+      </p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "hypnotism_authorisation_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "hypnotism",
+      "authorisation",
+      "licence",
+      "performance",
+      "hypnotise",
+      "mesmerism",
+      "mesmerise",
+      "trance",
+      "hpnotism",
+      "hipnotism",
+      "hypnotim",
+      "hypno",
+      "performancve",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "10/09/2026", name: "Liz Taster" }
+);
+
+
+const interimAuthorityNotice = new ContentBusiness(
+  "interimAuthorityNotice",
+  "Interim Authority Notice",
+  "Information about applying for an Interim Authority Notice when a premises licence holder dies, becomes mentally incapable or becomes insolvent.",
+  `
+  <p>
+    An Interim Authority Notice allows premises to continue selling alcohol if the premises licence holder dies, becomes mentally incapable or becomes insolvent.
+  </p>
+  <p>
+    It provides temporary authority while the existing premises licence is transferred or a new licence is obtained.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You must apply within <strong>28 consecutive days</strong>, starting from the day after the premises licence became invalid.
+      </p>
+      <p>An application can normally be made by:</p>
+      <ul>
+        <li>Someone with a prescribed interest in the premises</li>
+        <li>A personal representative of the former licence holder</li>
+        <li>Someone with power of attorney</li>
+        <li>An insolvency practitioner</li>
+      </ul>
+      <p>
+        <strong>Eligibility and application guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/interim-authority-notice" target="_blank" rel="noopener noreferrer">
+          Interim Authority Notice | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Interim%20Authority%20Notice\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost and Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application fee is <strong>£23</strong>.
+      </p>
+      <p>You will need to provide:</p>
+      <ul>
+        <li>A completed application</li>
+        <li>The application fee</li>
+        <li>Right to Work documentation</li>
+        <li>Confirmation that copies have been provided to the designated premises supervisor, South Yorkshire Police and the Home Office</li>
+      </ul>
+      <p>
+        Full details of the required application and supporting information are available on the Council webpage.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The premises may continue operating once the Interim Authority Notice has been submitted.
+      </p>
+      <p>
+        A <strong>28-day consultation period</strong> applies. South Yorkshire Police may object if there are exceptional circumstances relating to crime prevention.
+      </p>
+      <ul>
+        <li>If an objection is received, a Licensing Committee hearing will be arranged</li>
+        <li>If there are no objections, the interim authority will remain in effect</li>
+        <li>If no decision is received by the end of the consultation period, tacit consent applies</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How Long It Lasts</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        An Interim Authority Notice lasts for a maximum of <strong>3 months</strong>.
+      </p>
+      <p>
+        An application to transfer the premises licence must be submitted within this period. If this is not done, the licence will expire.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can apply and pay online.
+      </p>
+      <p>
+        <strong>Apply for an Interim Authority Notice:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-5" target="_blank" rel="noopener noreferrer">
+          Apply and Pay Online | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Interim%20Authority%20Notice\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>The application must be submitted within <strong>28 consecutive days</strong> of the premises licence becoming invalid.</li>
+    <li>The application fee is <strong>£23</strong>.</li>
+    <li>The notice lasts for a maximum of <strong>3 months</strong>.</li>
+    <li>The premises licence must be transferred within this period or it will expire.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "premises_licence_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "Interim Authority Notice",
+      "premises licence holder",
+      "premises licence transfer",
+      "licence holder died",
+      "insolvent licence holder",
+      "temporary alcohol authority",
+      "Licensing Committee",
+      "28 day application",
+      "interim authority fee",
+      "transfer premises licence",
+      "alcohol licence",
+      "interim authority"
+    ],
+    categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
+  },
+  { date: "09/09/2026", name: "Andy Walker" }
+);
+
+
+const marriagePremisesApproval = new ContentBusiness(
+  "marriagePremisesApproval",
+  "Marriage and Civil Partnership Premises Approval",
+  "Details of how to apply for a marriages and civil partnerships approval for a premises, and what premises this is permitted for.",
+  `
+    <p>
+      The Council can approve premises like hotels and stately homes to be used for civil marriage and civil partnership ceremonies.
+      We can also now approve religious premises for the ceremonies of civil partnerships.
+    </p>
+    <p>
+      For a premises to be eligible it must be a permanently immovable structure, and be considered a seemly and dignified venue for the proceedings.
+      Ceremonies must take place in an identifiable and distinct part of those premises.
+    </p>
+    <p>
+      The application <strong>cost is £998</strong> and if granted approval lasts for <strong>three years</strong>.
+    </p>
+    <p>
+      Full details of the eligibility requirements of different premises types and application forms can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
+      Marriage and civil partnership premises approval | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application for premises approval must be made by the proprietor or a trustee of the premises.
+      </p>
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        As well as the completed application form and fee, applicants must also provide:
+      </p>
+        <ul>
+          <li>details of a 'responsible person' for the venue</li>
+          <li>three copies of a plan of the premises which clearly identifies the room(s) in which the proceedings will take place</li>
+          <li>written consent from the person specified or governing authority of the religious organisation (religious premises only)</li>
+        </ul>
+      <p>
+        There are six different application forms on the website. There are different forms for secular and religious premises, and for each there is a separate form
+        to <strong>apply</strong> for, <strong>renew</strong> or make a <strong>change</strong> to an approval. 
+        Please encourage the customer to ensure they use and submit the correct form for their venue and circumstances. 
+      </p>
+      <p>
+        All application forms can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
+        Marriage and civil partnership premises approval | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once an application is submitted, the council will advertise it in the local press and on the council website.
+        The consultation period for the application will commence from the date of advertisement and last for a period of 21 days.
+      </p>
+      <p>
+        As soon as possible after the application is received, we will contact the applicant to arrange an appointment to 
+        inspect the premises along with the superintendent registrar.
+      </p>
+      <p>
+        If there are no issues with an application and it meets all the criteria, the approval will be issued after the 21 day consultation period ends.
+      </p>
+      <p>
+        If there are issues or objections to an application we will notify the applicant as soon as is reasonably practical. 
+        The application will then be decided on by our licensing committee and we will invite the applicant to attend.
+      </p>
+    </div>
+  </details>
+
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Make  Changes</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Changes can be made to premises approval using the <strong>'Make a change'</strong> application form for either a secular or religious premises.
+      </p>
+      <p>
+        Changes that may need to be made include changes to the name of the premises or responsible person(s), changes to contact details, or other material changes.
+      </p>
+      <p>
+        Customers should also be advised to use this form if they want to surrender or transfer a license.
+      </p>
+    </div>
+  </details>
+    
+ 
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ineligible premises</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Under current regulations the term 'premises' is defined as a permanently immovable structure comprising of at least one room.
+      </p>
+      <p>
+        The following are outside this definition are not eligible for approval:
+      </p>
+        <ul>
+          <li>open air</li>
+          <li>a tent</li>
+          <li>a marquee</li>
+          <li>any other temporary structure</li>
+          <li>most forms of transport</li>
+        </ul>
+      <p>
+        Further details around eligibility criteria for venue can be found on the website:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
+        Marriage and civil partnership premises approval | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "marriage_premises_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "wedding",
+      "marriage",
+      "civil",
+      "partnership",
+      "venue",
+      "venues",
+      "premises",
+      "ceremony",
+      "ceremonies",
+      "apply",
+      "renew",
+      "change",
+      "weddnig",
+      "cicil",
+      "civill",
+      "partership",
+      "seremony",
+      "marrage",
+      "marraige",
+      "premisses"
+
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "04/09/2026", name: "Liz Taster" }
+);
+
+
+const minorVariationPremisesLicence = new ContentBusiness(
+  "minorVariationPremisesLicence",
+  "Minor Variation to a Premises Licence or Club Premises Certificate",
+  "Information about making minor changes to a premises licence or club premises certificate, including eligibility, costs, application requirements and consultation.",
+  `
+  <p>
+    A minor variation is a simplified process for making small changes to a premises licence or club premises certificate.
+  </p>
+  <p>
+    It can only be used where the proposed changes will not negatively affect the licensing objectives.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Changes That May Be Allowed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A minor variation may be suitable for:
+      </p>
+      <ul>
+        <li>Minor changes to the premises layout</li>
+        <li>Small changes to licensing hours</li>
+        <li>Removing outdated or unenforceable conditions</li>
+        <li>Adding voluntary conditions</li>
+        <li>Adding certain licensable activities</li>
+      </ul>
+      <p>
+        It cannot be used to:
+      </p>
+      <ul>
+        <li>Extend the length of a licence</li>
+        <li>Make substantial changes to the premises</li>
+        <li>Change the Designated Premises Supervisor</li>
+        <li>Add the sale or supply of alcohol</li>
+        <li>Authorise alcohol sales between 11pm and 7am</li>
+        <li>Increase the hours during which alcohol may be supplied</li>
+      </ul>
+      <p>
+        If the changes are not suitable for a minor variation, a full variation of the premises licence or club premises certificate will be required.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Can Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application can be made by:
+      </p>
+      <ul>
+        <li>The premises licence or club premises certificate holder</li>
+        <li>An authorised agent</li>
+        <li>A solicitor acting for the holder</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost and Application Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application fee is <strong>£89</strong> and is generally non-refundable.
+      </p>
+      <p>
+        Applicants must provide:
+      </p>
+      <ul>
+        <li>A completed minor variation application</li>
+        <li>A new premises plan if the layout is changing</li>
+        <li>The original licence or certificate and summary, or an explanation if these cannot be provided</li>
+        <li>A notice displayed at the premises for <strong>10 consecutive working days</strong>, starting the day after the application is submitted</li>
+      </ul>
+      <p>
+        The Council cannot advise whether a minor or full variation is required. Applicants may need to obtain independent legal advice.
+      </p>
+      <p>
+        <strong>Full application requirements and advertising guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/minor-variation-premises-licence-club-premises-certificate" target="_blank" rel="noopener noreferrer">
+          Minor Variation to a Premises Licence or Club Premises Certificate | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Minor%20variation%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A <strong>10-working-day consultation period</strong> begins on the first working day after the application is received.
+      </p>
+      <p>
+        The Council must decide the application within <strong>15 working days</strong> of receipt:
+      </p>
+      <ul>
+        <li>The application will be granted if the changes will not negatively affect the licensing objectives</li>
+        <li>The application will be refused if the proposed changes could negatively affect the licensing objectives</li>
+        <li>If no decision is made within 15 working days, the application is treated as refused and the fee will be returned</li>
+      </ul>
+      <p>
+        Tacit consent does not apply, so applicants must not assume the variation has been granted.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the online service to apply for a minor variation to a premises licence or club premises certificate.
+      </p>
+      <p>
+        <strong>Apply for a minor variation:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-8" target="_blank" rel="noopener noreferrer">
+          Apply for a Minor Variation | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20minor%20variation\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>A minor variation is only suitable for <strong>small changes that will not negatively affect the licensing objectives</strong>.</li>
+    <li>The application costs <strong>£89</strong> and requires a notice to be displayed for 10 consecutive working days.</li>
+    <li>The Council must decide the application within <strong>15 working days</strong>.</li>
+    <li>Tacit consent does not apply, so the applicant must wait for a decision before treating the variation as granted.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "premises_licence_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "minor variation",
+      "premises licence minor variation",
+      "club premises certificate variation",
+      "change premises layout",
+      "change licensing hours",
+      "licence conditions",
+      "minor variation fee",
+      "licensing consultation",
+      "premises notice",
+      "full variation",
+      "apply for minor variation",
+      "minor varation"
+    ],
+    categories: ["Licences and Permits", "Alcohol Licensing"]
+  },
+  { date: "09/09/2026", name: "Andy Walker" }
+);
+
 
 const notificationOfAnInterest = new ContentBusiness(
   "notificationOfAnInterest",
@@ -3751,6 +5504,89 @@ const notificationOfAnInterest = new ContentBusiness(
     categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
   },
   { date: "09/09/2026", name: "Andy Walker" }
+);
+
+
+const PavementCafeLicencesHighways = new ContentBusiness(
+  "PavementCafeLicencesHighways",
+  "Pavement Cafe Licences",
+  "Details of Pavement Cafe licences under the Highways Act - including criteria and how to apply.",
+  `
+    <p>
+      A licence is needed to put tables and chairs outside a premises on the highway.
+    </p>
+
+    <p>
+      Pavement café licence requirements:
+    </p>
+      <ul>
+        <li>keep within the shop frontage - unless you have special consent to use other areas</li>
+        <li>control and clear litter and debris in and around your pavement café</li>
+        <li>provide tap barriers around your pavement café area so that visually impaired people can find their way around it safely</li>
+        <li>leave at least a 1.5 meter clear space between the outside of your tap barriers and the outer edge of the footpath</li>
+      </ul>
+
+    <p>
+      A <em>premises can apply for licence under the Highways Act 1980</em> if <strong>any</strong> of the following apply:
+    </p>
+      <ul>
+        <li>the premises does not sell food or drink</li>
+        <li>they wish to use furniture that is not removable</li>
+        <li>they intend to have music speakers</li>
+      </ul>
+    <p>
+      If none of the above apply, they may be able to apply for licence under the Levelling Up and Regeneration Act 2023.
+    </p>
+
+    <p>
+      <em>Please note</em>: Additional permissions are required for the sale of alcohol or to play amplified music.
+    </p>
+
+    <p>
+      The <strong>cost</strong> for a pavement café licence is <strong>£160</strong>.
+      </br>The licence lasts for <strong>1 year</strong> and must be renewed annually.
+    </p>
+
+    <p>
+        Once an application application is submitted, the applicant must post a public notice on your premises advertising your application.
+        This must be <strong>displayed for 28 days</strong>. 
+        </br>If there are no issues, the Council will issue the licence after the 28 day consultation period.
+    </p>
+
+    <p>
+      Full details around eligibility criteria and the application process can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/pavement-cafe-licence" target="_blank" rel="noopener noreferrer">
+      Pavement café licences | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+
+    <p>
+      Details of the application requirements and a link to the online application can be found here:
+      <a href="https://www.sheffield.gov.uk/utilities/form/business/licences-permits-registrations/apply-pavement-cafe-licence-start" target="_blank" rel="noopener noreferrer">
+      Apply for a pavement café licence | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "pavement_cafe_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "pavement",
+      "cafe",
+      "licence",
+      "street",
+      "highway",
+      "permit",
+      "shop",
+      "café",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "10/09/2026", name: "Liz Taster" }
 );
 
 
@@ -4389,776 +6225,6 @@ const provisionalStatement = new ContentBusiness(
 );
 
 
-const interimAuthorityNotice = new ContentBusiness(
-  "interimAuthorityNotice",
-  "Interim Authority Notice",
-  "Information about applying for an Interim Authority Notice when a premises licence holder dies, becomes mentally incapable or becomes insolvent.",
-  `
-  <p>
-    An Interim Authority Notice allows premises to continue selling alcohol if the premises licence holder dies, becomes mentally incapable or becomes insolvent.
-  </p>
-  <p>
-    It provides temporary authority while the existing premises licence is transferred or a new licence is obtained.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>When to Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You must apply within <strong>28 consecutive days</strong>, starting from the day after the premises licence became invalid.
-      </p>
-      <p>An application can normally be made by:</p>
-      <ul>
-        <li>Someone with a prescribed interest in the premises</li>
-        <li>A personal representative of the former licence holder</li>
-        <li>Someone with power of attorney</li>
-        <li>An insolvency practitioner</li>
-      </ul>
-      <p>
-        <strong>Eligibility and application guidance:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/interim-authority-notice" target="_blank" rel="noopener noreferrer">
-          Interim Authority Notice | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Interim%20Authority%20Notice\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Cost and Requirements</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The application fee is <strong>£23</strong>.
-      </p>
-      <p>You will need to provide:</p>
-      <ul>
-        <li>A completed application</li>
-        <li>The application fee</li>
-        <li>Right to Work documentation</li>
-        <li>Confirmation that copies have been provided to the designated premises supervisor, South Yorkshire Police and the Home Office</li>
-      </ul>
-      <p>
-        Full details of the required application and supporting information are available on the Council webpage.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens Next</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The premises may continue operating once the Interim Authority Notice has been submitted.
-      </p>
-      <p>
-        A <strong>28-day consultation period</strong> applies. South Yorkshire Police may object if there are exceptional circumstances relating to crime prevention.
-      </p>
-      <ul>
-        <li>If an objection is received, a Licensing Committee hearing will be arranged</li>
-        <li>If there are no objections, the interim authority will remain in effect</li>
-        <li>If no decision is received by the end of the consultation period, tacit consent applies</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How Long It Lasts</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        An Interim Authority Notice lasts for a maximum of <strong>3 months</strong>.
-      </p>
-      <p>
-        An application to transfer the premises licence must be submitted within this period. If this is not done, the licence will expire.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Apply Online</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You can apply and pay online.
-      </p>
-      <p>
-        <strong>Apply for an Interim Authority Notice:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-5" target="_blank" rel="noopener noreferrer">
-          Apply and Pay Online | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Interim%20Authority%20Notice\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>The application must be submitted within <strong>28 consecutive days</strong> of the premises licence becoming invalid.</li>
-    <li>The application fee is <strong>£23</strong>.</li>
-    <li>The notice lasts for a maximum of <strong>3 months</strong>.</li>
-    <li>The premises licence must be transferred within this period or it will expire.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "premises_licence_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "Interim Authority Notice",
-      "premises licence holder",
-      "premises licence transfer",
-      "licence holder died",
-      "insolvent licence holder",
-      "temporary alcohol authority",
-      "Licensing Committee",
-      "28 day application",
-      "interim authority fee",
-      "transfer premises licence",
-      "alcohol licence",
-      "interim authority"
-    ],
-    categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
-  },
-  { date: "09/09/2026", name: "Andy Walker" }
-);
-
-
-const changeDesignatedPremisesSupervisor = new ContentBusiness(
-  "changeDesignatedPremisesSupervisor",
-  "Change the Designated Premises Supervisor",
-  "Information about changing the Designated Premises Supervisor, removing yourself as a DPS and the separate process for community premises.",
-  `
-  <p>
-    The Designated Premises Supervisor (DPS) is responsible for authorising alcohol sales at licensed premises and must hold a personal licence.
-  </p>
-  <p>
-    You must apply to change the DPS named on a premises licence. The proposed DPS must consent to the appointment, and the Council and South Yorkshire Police must be notified.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Who Can Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The application can be made by:
-      </p>
-      <ul>
-        <li>The premises licence holder</li>
-        <li>An authorised agent</li>
-        <li>A solicitor acting for the licence holder</li>
-      </ul>
-      <p>
-        Community premises may be able to apply to operate without a DPS.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Cost and Application Requirements</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The fee to change the DPS is <strong>£23</strong>. There is no fee to consent to become a DPS or to ask to be removed from a licence.
-      </p>
-      <p>
-        The application must include:
-      </p>
-      <ul>
-        <li>A completed application form</li>
-        <li>Written consent from the proposed DPS</li>
-        <li>The original premises licence and summary, or an explanation if these cannot be provided</li>
-        <li>Confirmation that South Yorkshire Police has received the application</li>
-        <li>Confirmation that the existing DPS has been notified</li>
-      </ul>
-      <p>
-        Application fees are generally non-refundable.
-      </p>
-      <p>
-        <strong>Full application requirements and guidance:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/designated-premises-supervisor" target="_blank" rel="noopener noreferrer">
-          Change the Designated Premises Supervisor | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20Designated%20Premises%20Supervisor\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens Next</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        South Yorkshire Police has <strong>14 days</strong> to consider the application.
-      </p>
-      <ul>
-        <li>The new DPS can take immediate interim effect if this is requested on the application</li>
-        <li>If there is no objection, the application will be granted</li>
-        <li>If an objection is received, a Licensing Committee hearing will be arranged</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Apply to Change the DPS</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use this service if you are the premises licence holder, an authorised agent or a solicitor and want to appoint a new DPS.
-      </p>
-      <p>
-        <strong>Apply to change the DPS:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-2" target="_blank" rel="noopener noreferrer">
-          Apply to Change the Designated Premises Supervisor | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20to%20change%20the%20DPS\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Removing Yourself as a DPS</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A DPS who has left or is leaving the premises must notify both the Council and the premises licence holder as soon as possible.
-      </p>
-      <p>
-        Use this service if you are the current DPS and want your name removed from the premises licence.
-      </p>
-      <p>
-        <strong>Apply to be removed as the DPS:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-10" target="_blank" rel="noopener noreferrer">
-          Apply to Be Removed as the Designated Premises Supervisor | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20remove%20as%20the%20DPS\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        Alcohol cannot legally be sold after the DPS has been removed unless:
-      </p>
-      <ul>
-        <li>A new DPS has been named on the licence</li>
-        <li>The premises has permission to operate without a DPS</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Community Premises</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Community premises, such as community halls, may be able to transfer responsibility for alcohol sales from an individual DPS to a management committee or board.
-      </p>
-      <p>
-        This is a separate application process.
-      </p>
-      <p>
-        <strong>Community premises application guidance:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/remove-designated-premises-supervisor-community-premises" target="_blank" rel="noopener noreferrer">
-          Remove the DPS Requirement from Community Premises | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Remove%20DPS%20community%20premises\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>The proposed DPS must hold a <strong>personal licence</strong> and consent to the appointment.</li>
-    <li>The fee to change the DPS is <strong>£23</strong>.</li>
-    <li>If a DPS leaves, alcohol cannot be sold until a replacement is named unless the premises can operate without one.</li>
-    <li>Community premises must use the <strong>separate application process</strong> to remove the DPS requirement.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "premises_licence_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "Designated Premises Supervisor",
-      "DPS",
-      "change the DPS",
-      "change designated premises supervisor",
-      "appoint a new DPS",
-      "remove yourself as DPS",
-      "DPS consent",
-      "personal licence holder",
-      "premises licence",
-      "community premises DPS",
-      "alcohol sales",
-      "designated premises superviser"
-    ],
-    categories: ["Licences and Permits", "Alcohol Licensing"]
-  },
-  { date: "09/09/2026", name: "Andy Walker" }
-);
-
-
-const changeAPremisesLicence = new ContentBusiness(
-  "changeAPremisesLicence",
-  "Change a Premises Licence",
-  "Information about changing licensed activities, operating hours, conditions or the layout shown on a premises licence.",
-  `
-  <p>
-    You must apply to change a premises licence if the licensed activities, operating hours, conditions or layout of the premises are changing.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Changes You Can Make</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>You can apply to:</p>
-      <ul>
-        <li>Change the hours of a licensable activity</li>
-        <li>Add or remove licensable activities</li>
-        <li>Add, remove or amend licence conditions</li>
-        <li>Change the layout shown on the premises plan</li>
-      </ul>
-      <p>You cannot use this process to:</p>
-      <ul>
-        <li>Extend a time-limited licence</li>
-        <li>Move the licence to another premises</li>
-        <li>Change the Designated Premises Supervisor</li>
-      </ul>
-      <p>
-        Contact the Council for advice if you need to make one of these changes.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Minor Variations</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A minor variation may be suitable if the proposed change will not adversely affect the licensing objectives.
-      </p>
-      <p>
-        This process is normally quicker and costs less than a full variation. The Council will decide whether the proposed change can be treated as a minor variation.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Who Can Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>An application can be made by:</p>
-      <ul>
-        <li>The premises licence holder</li>
-        <li>An authorised agent</li>
-        <li>A solicitor acting for the licence holder</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Fees</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The application fee is based on the premises' rateable value.
-      </p>
-      <p>Additional charges may apply where:</p>
-      <ul>
-        <li>The premises mainly sells alcohol</li>
-        <li>The premises can accommodate more than 5,000 people</li>
-      </ul>
-      <p>
-        Detailed fee information is available on the Council webpage.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What You Need to Provide</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>You will normally need to provide:</p>
-      <ul>
-        <li>A completed variation application</li>
-        <li>The relevant application fee</li>
-        <li>A new premises plan if the layout is changing</li>
-        <li>The original premises licence and summary, or an explanation if these cannot be provided</li>
-        <li>Evidence that the application has been advertised correctly</li>
-        <li>Confirmation that responsible authorities have received the application, unless applying online</li>
-      </ul>
-      <p>
-        <strong>Application requirements and guidance:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-premises-licence" target="_blank" rel="noopener noreferrer">
-          Change a Premises Licence | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20premises%20licence\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens Next</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A <strong>28-day consultation period</strong> begins the day after the application is received.
-      </p>
-      <ul>
-        <li>If no relevant representations are received, the variation may be granted</li>
-        <li>If relevant representations are received, a Licensing Committee hearing will be arranged</li>
-        <li>A hearing will normally take place within <strong>20 working days</strong> after the consultation period ends</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Apply Online</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You can apply online to change a premises licence.
-      </p>
-      <p>
-        <strong>Apply to change a premises licence:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
-          Apply Online | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20change%20premises%20licence\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>A variation is required to change <strong>licensed activities, operating hours, conditions or the premises layout</strong>.</li>
-    <li>A minor variation may be suitable for changes that do not adversely affect the <strong>licensing objectives</strong>.</li>
-    <li>Application fees are based on the premises' <strong>rateable value</strong>.</li>
-    <li>A full variation normally has a <strong>28-day consultation period</strong>.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "premises_licence_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "change a premises licence",
-      "premises licence variation",
-      "minor variation",
-      "change licensed hours",
-      "licensable activities",
-      "licence conditions",
-      "premises layout",
-      "premises plan",
-      "licensing consultation",
-      "Licensing Committee",
-      "variation application",
-      "premises lisence"
-    ],
-    categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
-  },
-  { date: "09/09/2026", name: "Andy Walker" }
-);
-
-
-const minorVariationPremisesLicence = new ContentBusiness(
-  "minorVariationPremisesLicence",
-  "Minor Variation to a Premises Licence or Club Premises Certificate",
-  "Information about making minor changes to a premises licence or club premises certificate, including eligibility, costs, application requirements and consultation.",
-  `
-  <p>
-    A minor variation is a simplified process for making small changes to a premises licence or club premises certificate.
-  </p>
-  <p>
-    It can only be used where the proposed changes will not negatively affect the licensing objectives.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Changes That May Be Allowed</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A minor variation may be suitable for:
-      </p>
-      <ul>
-        <li>Minor changes to the premises layout</li>
-        <li>Small changes to licensing hours</li>
-        <li>Removing outdated or unenforceable conditions</li>
-        <li>Adding voluntary conditions</li>
-        <li>Adding certain licensable activities</li>
-      </ul>
-      <p>
-        It cannot be used to:
-      </p>
-      <ul>
-        <li>Extend the length of a licence</li>
-        <li>Make substantial changes to the premises</li>
-        <li>Change the Designated Premises Supervisor</li>
-        <li>Add the sale or supply of alcohol</li>
-        <li>Authorise alcohol sales between 11pm and 7am</li>
-        <li>Increase the hours during which alcohol may be supplied</li>
-      </ul>
-      <p>
-        If the changes are not suitable for a minor variation, a full variation of the premises licence or club premises certificate will be required.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Who Can Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The application can be made by:
-      </p>
-      <ul>
-        <li>The premises licence or club premises certificate holder</li>
-        <li>An authorised agent</li>
-        <li>A solicitor acting for the holder</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Cost and Application Requirements</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The application fee is <strong>£89</strong> and is generally non-refundable.
-      </p>
-      <p>
-        Applicants must provide:
-      </p>
-      <ul>
-        <li>A completed minor variation application</li>
-        <li>A new premises plan if the layout is changing</li>
-        <li>The original licence or certificate and summary, or an explanation if these cannot be provided</li>
-        <li>A notice displayed at the premises for <strong>10 consecutive working days</strong>, starting the day after the application is submitted</li>
-      </ul>
-      <p>
-        The Council cannot advise whether a minor or full variation is required. Applicants may need to obtain independent legal advice.
-      </p>
-      <p>
-        <strong>Full application requirements and advertising guidance:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/minor-variation-premises-licence-club-premises-certificate" target="_blank" rel="noopener noreferrer">
-          Minor Variation to a Premises Licence or Club Premises Certificate | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Minor%20variation%20premises%20licence\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens Next</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A <strong>10-working-day consultation period</strong> begins on the first working day after the application is received.
-      </p>
-      <p>
-        The Council must decide the application within <strong>15 working days</strong> of receipt:
-      </p>
-      <ul>
-        <li>The application will be granted if the changes will not negatively affect the licensing objectives</li>
-        <li>The application will be refused if the proposed changes could negatively affect the licensing objectives</li>
-        <li>If no decision is made within 15 working days, the application is treated as refused and the fee will be returned</li>
-      </ul>
-      <p>
-        Tacit consent does not apply, so applicants must not assume the variation has been granted.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Apply Online</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use the online service to apply for a minor variation to a premises licence or club premises certificate.
-      </p>
-      <p>
-        <strong>Apply for a minor variation:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-8" target="_blank" rel="noopener noreferrer">
-          Apply for a Minor Variation | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20minor%20variation\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>A minor variation is only suitable for <strong>small changes that will not negatively affect the licensing objectives</strong>.</li>
-    <li>The application costs <strong>£89</strong> and requires a notice to be displayed for 10 consecutive working days.</li>
-    <li>The Council must decide the application within <strong>15 working days</strong>.</li>
-    <li>Tacit consent does not apply, so the applicant must wait for a decision before treating the variation as granted.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "premises_licence_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "minor variation",
-      "premises licence minor variation",
-      "club premises certificate variation",
-      "change premises layout",
-      "change licensing hours",
-      "licence conditions",
-      "minor variation fee",
-      "licensing consultation",
-      "premises notice",
-      "full variation",
-      "apply for minor variation",
-      "minor varation"
-    ],
-    categories: ["Licences and Permits", "Alcohol Licensing"]
-  },
-  { date: "09/09/2026", name: "Andy Walker" }
-);
-
-
-
 const removeDPSFromCommunityPremises = new ContentBusiness(
   "removeDPSFromCommunityPremises",
   "Remove the Designated Premises Supervisor from Community Premises",
@@ -5330,1235 +6396,6 @@ const removeDPSFromCommunityPremises = new ContentBusiness(
   { date: "09/09/2026", name: "Andy Walker" }
 );
 
-
-const transferAPremisesLicence = new ContentBusiness(
-  "transferAPremisesLicence",
-  "Transfer a Premises Licence",
-  "Information about transferring a premises licence following a sale or change of ownership, including fees, application requirements and timescales.",
-  `
-  <p>
-    If a business with a premises licence is sold or changes ownership, the new owner can apply to transfer the licence into their name.
-  </p>
-  <p>
-    A transfer only changes the licence holder. It does not change the licensed activities, hours or conditions. The new licence holder must follow all existing conditions.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Who Can Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        An individual aged 18 or over, business, partnership or organisation taking over premises used for licensable activities can apply.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Cost and Application Requirements</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The transfer fee is <strong>£23</strong> and is generally non-refundable.
-      </p>
-      <p>You will normally need:</p>
-      <ul>
-        <li>A completed transfer application</li>
-        <li>Written consent from the existing licence holder</li>
-        <li>The original premises licence and summary</li>
-        <li>Right to Work evidence or a Home Office share code, if applying as an individual</li>
-        <li>Confirmation that the existing Designated Premises Supervisor has been notified</li>
-      </ul>
-      <p>
-        If consent from the existing licence holder cannot be obtained, you must explain why and provide evidence that you are legally entitled to occupy the premises.
-      </p>
-      <p>
-        If applying online, South Yorkshire Police will receive the application automatically. Postal applicants must send the Police a copy on the same day.
-      </p>
-      <p>
-        <strong>Application requirements and guidance:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/premises-licence-transfer" target="_blank" rel="noopener noreferrer">
-          Transfer a Premises Licence | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Transfer%20a%20premises%20licence\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens Next</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        South Yorkshire Police has <strong>14 days</strong> to consider the transfer and may object if it could undermine crime prevention.
-      </p>
-      <ul>
-        <li>The transfer can take immediate interim effect if requested on the application</li>
-        <li>If there is no objection, the transfer will be granted</li>
-        <li>If an objection is received, a Licensing Committee hearing will normally be held within 20 working days after the consultation ends</li>
-        <li>Tacit consent applies if no decision is received by the end of the 14-day period</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Apply or Give Consent Online</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        <strong>Apply to transfer a premises licence:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-3" target="_blank" rel="noopener noreferrer">
-          Apply to Transfer a Premises Licence | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20transfer%20a%20premises%20licence\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        <strong>Give consent to transfer a premises licence:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-6" target="_blank" rel="noopener noreferrer">
-          Give Consent to Transfer a Premises Licence | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Give%20consent%20transfer%20premises%20licence\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>A transfer only changes the <strong>premises licence holder</strong>; the existing activities, hours and conditions remain unchanged.</li>
-    <li>The transfer fee is <strong>£23</strong> and is generally non-refundable.</li>
-    <li>Written consent from the existing licence holder is normally required.</li>
-    <li>South Yorkshire Police has <strong>14 days</strong> to consider the transfer.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "premises_licence_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "transfer a premises licence",
-      "premises licence transfer",
-      "change licence holder",
-      "new business owner",
-      "licensed premises",
-      "transfer application",
-      "licence holder consent",
-      "Designated Premises Supervisor",
-      "South Yorkshire Police",
-      "interim effect",
-      "licensing committee",
-      "premises lisence transfer"
-    ],
-    categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
-  },
-  { date: "09/09/2026", name: "Andy Walker" }
-);
-
-//#endregion Alcohol
-
-//#region General Licensing
-
-const animalWelfareLicences = new ContentBusiness(
-  "animalWelfareLicences",
-  "Animal Welfare Licences",
-  "Information about businesses that need an animal welfare licence and how to apply.",
-  `
-    <p>
-      Residents and businesses can apply for animal welfare licences through Sheffield City Council. 
-      These licences cover specific activities involving the keeping of certain animals.
-    </p>
-
-    <p>
-      Full details and forms to apply for the various licence types can be found here: 
-      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
-      Animal welfare licences | Sheffield City Council</a>.
-    </p>
-    <p>[Insert Send Link]</p>
-    
-    <p>
-      Customers should be advised to look through the information on the website in detail, 
-      along with the information available through the links provided in the <strong>New licensing requirements</strong> section.
-    </p>
- 
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Activities Requiring an Animal Welfare Licence</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A licence is required where one of the below activities is carried out as a business in Sheffield, where a profit or fee is involved:
-      </p>
-        <ul>
-          <li>provision of boarding for dogs in kennels</li>
-          <li>provision of boarding for cats in a cattery</li>
-          <li>provision of home boarding for dogs</li>
-          <li>provision of day care for dogs</li>
-          <li>breeding of dogs</li>
-          <li>hiring out of horses or donkeys etc for riding</li>
-          <li>keeping or training animals for exhibition</li>
-          <li>selling animals as pets</li>
-        </ul>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Licence Types</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Five different licence types can be applied for:
-      </p>
-        <ul>
-          <li>Animal boarding establishment licence</li>
-          <li>Dog breeding licence</li>
-          <li>Performing animals registration certificate</li>
-          <li>Pet shop licence</li>
-          <li>Riding establishment licence</li>
-        </ul>
-      <p>
-        Links to the application forms for each licence type are available on the website       
-        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
-        Animal welfare licences | Sheffield City Council</a>.
-      </p>
-      <p>[Insert Send Link]</p>
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Fees</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The regulations allow us to charge a fee to the applicant to cover ‘reasonable anticipated costs’. 
-        This includes costs for processing applications, issuing licences, inspecting premises, and enforcement.
-      </p>
-      <p>
-        Current costs range from £465 to £628 depending on the type of licence required.
-      <p>
-      <p>
-        Full details of costs can be found on the website
-        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
-        Animal welfare licences | Sheffield City Council</a>.
-      </p>
-      <p>[Insert Send Link]</p>
-    </div>
-  </details>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "animal_welfare_licence_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "animal",
-      "animals",
-      "welfare",
-      "licence",
-      "pet",
-      "pets",
-      "shop",
-      "shops",
-      "kennel",
-      "kennels",
-      "cattery",
-      "breeding",
-      "horse",
-      "riding",
-      "dog",
-      "dogs",
-      "cat",
-      "cats",
-      "boarding",
-      "anmal",
-      "animl",
-      "welfair",
-      "wellfare",
-      "welfar",
-      "catery",
-      "bording",
-    ],
-    categories: ["Business", "General Licensing"]
-  },
-  { date: "02/09/2026", name: "Liz Taster" }
-);
-
-
-const gamblingLicencesPremises = new ContentBusiness(
-  "gamblingLicencesPremises",
-  "Gambling Licences - Premises",
-  "Information about gambling premises licences, including new applications, transfers, variations, permits, licensing objectives and annual fees.",
-  `
-  <p>
-    Sheffield City Council issues gambling premises licences and permits under the Gambling Act 2005.
-  </p>
-  <p>
-    Licences or permits may be required for:
-  </p>
-  <ul>
-    <li>Amusement arcades</li>
-    <li>Casinos</li>
-    <li>Betting shops and bookmakers</li>
-    <li>Horse and dog tracks</li>
-    <li>Bingo premises</li>
-    <li>Pubs and clubs with gaming machines</li>
-    <li>Adult gaming centres</li>
-    <li>Licensed family entertainment centres</li>
-  </ul>
-  <p>
-    The correct application depends on whether you are applying for a new premises licence, transferring an existing licence or changing an existing licence.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Before Applying</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Gambling operators may need an operating licence and relevant personal licences from the Gambling Commission before applying to the Council for a premises licence.
-      </p>
-      <p>
-        <strong>Gambling Commission licences and fees:</strong><br>
-        <a href="https://www.gamblingcommission.gov.uk/licensees-and-businesses/licences-and-fees" target="_blank" rel="noopener noreferrer">
-          Licences and Fees | Gambling Commission
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20Commission%20licences%20and%20fees\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        Customers should obtain independent legal advice if they are unsure which licence or permit they require.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>New Premises Application</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use <strong>Gambling licences - Premises Application New</strong> when applying for a gambling premises licence for premises that do not already hold the required licence.
-      </p>
-      <p>
-        The Council issues premises licences for:
-      </p>
-      <ul>
-        <li>Casinos</li>
-        <li>Betting premises and on-course betting</li>
-        <li>Bingo premises</li>
-        <li>Adult gaming centres</li>
-        <li>Licensed family entertainment centres</li>
-        <li>Racetracks</li>
-      </ul>
-      <p>
-        The application must include the required supporting information and application fee. An application will be invalid if the correct fee is not included.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Premises Transfer</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use <strong>Gambling licences - Premises Transfer</strong> when an existing gambling premises licence needs to be transferred to a new licence holder.
-      </p>
-      <p>
-        A transfer changes the person or organisation responsible for the licence. It does not automatically change the gambling activities or conditions authorised by the existing licence.
-      </p>
-      <p>
-        The new licence holder must comply with the existing licence and its conditions.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Premises Variation</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use <strong>Gambling licences - Premises Variation</strong> when the existing licence holder wants to change the premises licence.
-      </p>
-      <p>
-        This may include changes to:
-      </p>
-      <ul>
-        <li>The licensed gambling activities</li>
-        <li>The layout or area covered by the licence</li>
-        <li>Licence conditions</li>
-        <li>Other details about how the premises operates</li>
-      </ul>
-      <p>
-        A variation does not transfer the licence to another person or organisation. A separate transfer application is required where the licence holder is changing.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Other Gambling Permits and Notices</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The Council also issues permits for:
-      </p>
-      <ul>
-        <li>Gaming machines in members' clubs and licensed premises</li>
-        <li>Gaming in members' clubs</li>
-        <li>Prize gaming</li>
-        <li>Unlicensed family entertainment centres</li>
-      </ul>
-      <p>
-        The Council also endorses Temporary Use Notices and issues Provisional Statements.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Licensing Objectives</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Applications are considered against three licensing objectives:
-      </p>
-      <ul>
-        <li>Preventing gambling from being associated with crime or disorder</li>
-        <li>Ensuring gambling is conducted fairly and openly</li>
-        <li>Protecting children and vulnerable people from harm or exploitation</li>
-      </ul>
-      <p>
-        Operators should ensure that staff understand how to identify and report safeguarding concerns involving children or vulnerable people.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Fees and Annual Payments</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The relevant fee must be included with the application. An application will be invalid if the correct fee is not provided.
-      </p>
-      <p>
-        Application fees are not normally refunded if the application is withdrawn or unsuccessful.
-      </p>
-      <p>
-        The first annual fee is payable within <strong>30 days</strong> of the premises licence being issued. Annual fees can then be paid for the different types of licensed gambling premises.
-      </p>
-      <p>
-        <strong>Application forms, fees, annual payments and guidance:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-licences" target="_blank" rel="noopener noreferrer">
-          Gambling Licences | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20licences%20premises\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>Customers must select the correct option for a <strong>new application, transfer or variation</strong>.</li>
-    <li>Operators may need the relevant <strong>Gambling Commission licences</strong> before applying to the Council.</li>
-    <li>The correct fee must accompany the application, or it will be invalid.</li>
-    <li>A transfer changes the <strong>licence holder</strong>, while a variation changes the <strong>existing licence details</strong>.</li>
-    <li>The first annual fee is payable within <strong>30 days of the licence being issued</strong>.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "gambling_licenced_premises_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "gambling licences",
-      "gambling premises licence",
-      "gambling premises application",
-      "new gambling premises licence",
-      "gambling premises transfer",
-      "gambling premises variation",
-      "casino licence",
-      "betting premises licence",
-      "bingo premises licence",
-      "adult gaming centre",
-      "family entertainment centre",
-      "racetrack licence",
-      "Gambling Commission",
-      "gambling annual fee",
-      "gambling license"
-    ],
-    categories: ["Licences and Permits", "Gambling Licensing"]
-  },
-  { date: "10/09/2026", name: "Andy Walker" }
-);
-
-
-const gamingMachinePermits = new ContentBusiness(
-  "gamingMachinePermits",
-  "Gaming Machine Permits",
-  "Information about applying for, transferring or changing a gaming machine permit and notifying the Council about two or fewer gaming machines.",
-  `
-  <p>
-    Sheffield City Council issues gaming machine permits for licensed premises, members' clubs and other eligible premises.
-  </p>
-  <p>
-    The correct application depends on whether you are applying for a new permit, transferring or changing an existing permit, or notifying the Council that you intend to provide no more than two gaming machines.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Apply for a Gaming Machine Permit</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use the <strong>Licensed Premises Gaming Machine Permit</strong> application if you need permission to provide gaming machines at premises licensed to sell alcohol.
-      </p>
-      <p>
-        The application must include the relevant fee. Applications submitted without the correct fee will be invalid.
-      </p>
-      <p>
-        Application fees are not normally refunded if an application is withdrawn or unsuccessful.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Transfer a Gaming Machine Permit</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use the <strong>Licensed Premises Gaming Machine Permit Transfer</strong> application if the permit needs to be transferred following a change to the person or organisation responsible for the premises.
-      </p>
-      <p>
-        Customers should check the Council webpage for the current application form, fee and supporting information required.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Change a Gaming Machine Permit</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use the <strong>Licensed Premises Gaming Machine Permit Variation</strong> application if changes are required to an existing permit.
-      </p>
-      <p>
-        Customers should check the Council webpage for details of the changes that can be made and the relevant application requirements.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Notification of Two or Fewer Gaming Machines</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Use the <strong>Notification of 2 or less gaming machines</strong> option if licensed premises want to notify the Council that they intend to provide no more than two gaming machines.
-      </p>
-      <p>
-        Customers should check the Council webpage for the notification form and current fee.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Gambling Licensing Objectives</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Applications are considered in line with the Gambling Act licensing objectives:
-      </p>
-      <ul>
-        <li>Preventing gambling from being associated with crime or disorder</li>
-        <li>Ensuring gambling is conducted fairly and openly</li>
-        <li>Protecting children and vulnerable people from harm or exploitation</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Further Information and Applications</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        For application forms, current fees and full guidance, visit:
-      </p>
-      <p>
-        <strong>Gambling licences:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-licences" target="_blank" rel="noopener noreferrer">
-          Gambling Licences | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20licences%20gaming\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>Select the relevant option for a <strong>new permit, transfer, variation or notification of two or fewer machines</strong>.</li>
-    <li>The correct fee must accompany the application.</li>
-    <li>Application fees are not normally refundable.</li>
-    <li>Direct customers to the Council's gambling licences webpage for the correct form, current fee and application requirements.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "gambling_licenced_premises_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "gaming machine permit",
-      "licensed premises gaming machine permit",
-      "gaming machine permit transfer",
-      "gaming machine permit variation",
-      "notification of 2 or less gaming machines",
-      "two gaming machines",
-      "gaming machines in licensed premises",
-      "gaming machine application",
-      "gaming machine fees",
-      "gambling licence",
-      "gambling permit",
-      "gaming mashine permit"
-    ],
-    categories: ["Licences and Permits", "Gambling Licensing"]
-  },
-  { date: "10/09/2026", name: "Andy Walker" }
-);
-
-
-
-const chaperoneLicences = new ContentBusiness(
-  "chaperoneLicences",
-  "Chaperone Licences",
-  "Details of how to apply for or renew a chaperone licence.",
-  `
-    <p>
-      A chaperone licence allows an approved adult to supervise children who take part in entertainment activities.
-    </p>
-    <p>
-      Approved chaperones help safeguard children who are taking part in licensed performances and activities. 
-      Chaperone licences are issued as part of the council's child licensing responsibilities.
-    </p>
-
-    <p>
-      Further details of what a chaperone does, details of how to apply for or renew a chaperone licence, and relevant application forms can be found here:
-      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
-      Apply for or renew a chaperone licence | Sheffield City Council</a>
-    </p>
-    <p>[Insert Send Link]</p>
- 
-
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Applying for a New Chaperone Licence</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>To become a licensed chaperone the customer must:</p>
-        <ul>
-          <li>submit an application</li>
-          <li>provide two references</li>
-          <li>complete the Council's online Chaperone training module</li>
-          <li>attend a short information interview</li>
-          <li>undergo an enhanced DBS check</li>
-        </ul>
-      <p>
-        Further details and the application form can be found here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
-        Apply for or renew a chaperone licence | Sheffield City Council</a>
-      </p>
-    </div>
-  </details>
-
-
-      <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Renewing a Chaperone Licence</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>To renew a chaperone licence the customer must:</p>
-        <ul>
-          <li>submit a renewal application</li>
-          <li>submit an up to date, signed phtotograph</li>
-          <li>complete the Council's online Chaperone training module again</li>
-          <li>complete a new enhanced DBS check</li>
-        </ul>
-      <p>
-        Further details and the renewal application form can be found here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
-        Apply for or renew a chaperone licence | Sheffield City Council</a>
-    </div>
-  </details>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "chaperone_licence_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "chaperone",
-      "licence",
-      "child",
-      "children",
-      "shaperone",
-      "chapperone",
-
-    ],
-    categories: ["Business", "General Licensing"]
-  },
-  { date: "02/09/2026", name: "Liz Taster" }
-);
-
-const houseToHouseCollections = new ContentBusiness(
-  "houseToHouseCollections",
-  "House To House Collection Permit",
-  "Details of how to apply for a permit to carry out house to house collections for charity.",
-  `
-    <p>
-      A house to house collection permit is needed for anyone planning on collecting money, items for sale or items for use from people's houses 
-      or from business premises for a charitable purpose.
-    </p>
-    <p>
-      The Council regulates smaller collectors, the Charity Commission can issue an exemption certificate to larger charities. 
-    </p>
-    <p>
-      There is no charge for this permit, and it lasts for 1 year - customers need to apply to renew after a year.
-    </p>
-
-    <p>
-      Further information and the application form can be found here: 
-      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
-      House to house collection permit | Sheffield City Council</a>
-    </p>
- 
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Customers can apply online or can download an application form and submit this in the post.
-      </p>
-      <p>
-        Applications must be made <strong>at least 28 days before the proposed collection start date</strong>.
-      </p>
-      <p>
-        The application form requires details to be provided for:
-      </p>
-        <ul>
-          <li>the applicant</li>
-          <li>the charity or fund the collection is to benefit</li> 
-          <li>the proposed collection - including the time period and location/area covered</li>
-        </ul>
-      <p>
-        A letter of authority from the charity or fund the collection benefits must also be included with the application.
-      </p>
-      <p>
-        Details of both routes of application can be found here: 
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
-        House to house collection permit | Sheffield City Council</a>
-    </p>
-    <p>[Insert Send Link]</p>
-    </div>
-  </details>
-
-      <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Next Steps After Application</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        On receipt of your application we will consult with South Yorkshire Police and make such other enquiries as we think fit.
-      </p>
-      <p>
-        Where there are no issues we will issue you a permit as soon as possible.
-      </p>
-      <p>
-        Once a permit is issued, the applicant is required to make a separate application for copies and badges for all persons
-        involved in the collection. Further details can be found on the website.
-      </p>
-      <p>
-        Applicants must wait until they have received their permit before carrying out a collection.
-        Carrying out a charitable street collection without the required licence or permit may result in enforcement action.
-      </p>
-    </div>
-  </details>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "charity_collections_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "house",
-      "collection",
-      "collect",
-      "colelction",
-      "charity",
-      "permit"
-    ],
-    categories: ["Business", "General Licensing"]
-  },
-  { date: "03/09/2026", name: "Liz Taster" }
-);
-
-const hypnotismAuthorisation = new ContentBusiness(
-  "hypnotismAuthorisation",
-  "Hypnotism Authorisation",
-  "Details of how to apply for hypnotism authorisation and when it is needed.",
-  `
-    <p>
-      Hypnotism authorisation is required for anyone who wants to show, demonstrate, or perform a hypnotism act in public within Sheffield. 
-      Public hypnotism performances include hypnotism, mesmerism, and similar acts intended to induce a sleep-like state or trance that 
-      increases a person's susceptibility to suggestion.
-    </p>
-
-    <p>
-      <strong>Important conditions</strong>:
-    </p>
-      <ul>
-        <li>Authorisation holders must comply with the conditions attached to any authorisation granted</li>
-        <li>Hypnotism cannot be performed on anyone under 18 years of age</li>
-        <li>Self-induced hypnotism is not covered by this authorisation</li>
-      </ul>
-
-    <p>
-      Hypnotism authorisation is <strong>not required</strong> when the hypnotism takes place:
-    </p>
-      <ul>
-        <li>as part of the performance of a play</li>
-        <li>for scientific or research purposes</li>
-        <li>for the treatment of mental or physical disease</li>
-      </ul>
-
-    <p>
-      There is <strong>no cost</strong> or fee for an application for hypnotism authorisation.
-    </p>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-    <h3>How to Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Customers can apply online or can download an application form and submit this in the post.
-      </p>
-      <p>
-        Applications must be submitted in writing and include:
-      </p>
-        <ul>
-          <li>Details of the type of demonstration or performance.</li>
-          <li>The location where the demonstration or performance will take place.</li>
-          <li>A plan showing the rooms where the demonstration or performance will be held.</li>
-          <li>Dates and times of the demonstration or performance.</li>
-          <li>Details and copies of Public Liability Insurance.</li>
-          <li>A completed privacy statement included with the application form (<em>paper submissions only</em>).</li>
-      </ul>
-    
-      <p>
-        Further information and a link to apply online can be found here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/hypnotism-licence" target="_blank" rel="noopener noreferrer">
-        Hypnotism authorisation | Sheffield City Council</a>
-      </p>
-      <p>[Insert Send Link]</p>
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens After Application</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The council considers all information provided with the application and aims to process applications within 28 days.
-      </p>
-      <p>
-        If there are no concerns, authorisation will be granted and issued after the 28-day period.
-      </p>
-      <p>
-        If the council is considering refusing the application, a notice of intention will be issued and the application will be determined by the licensing committee.
-      </p>
-      <p>
-        Applicants <strong>must not perform</strong> until they have received confirmation their authorisation has been granted.
-      </p>
-    </div>
-  </details>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "hypnotism_authorisation_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "hypnotism",
-      "authorisation",
-      "licence",
-      "performance",
-      "hypnotise",
-      "mesmerism",
-      "mesmerise",
-      "trance",
-      "hpnotism",
-      "hipnotism",
-      "hypnotim",
-      "hypno",
-      "performancve",
-    ],
-    categories: ["Business", "General Licensing"]
-  },
-  { date: "10/09/2026", name: "Liz Taster" }
-);
-
-
-const marriagePremisesApproval = new ContentBusiness(
-  "marriagePremisesApproval",
-  "Marriage and Civil Partnership Premises Approval",
-  "Details of how to apply for a marriages and civil partnerships approval for a premises, and what premises this is permitted for.",
-  `
-    <p>
-      The Council can approve premises like hotels and stately homes to be used for civil marriage and civil partnership ceremonies.
-      We can also now approve religious premises for the ceremonies of civil partnerships.
-    </p>
-    <p>
-      For a premises to be eligible it must be a permanently immovable structure, and be considered a seemly and dignified venue for the proceedings.
-      Ceremonies must take place in an identifiable and distinct part of those premises.
-    </p>
-    <p>
-      The application <strong>cost is £998</strong> and if granted approval lasts for <strong>three years</strong>.
-    </p>
-    <p>
-      Full details of the eligibility requirements of different premises types and application forms can be found here:
-      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
-      Marriage and civil partnership premises approval | Sheffield City Council</a>
-    </p>
-    <p>[Insert Send Link]</p>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Apply</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The application for premises approval must be made by the proprietor or a trustee of the premises.
-      </p>
-      <p>
-        Customers can apply online or can download an application form and submit this in the post.
-      </p>
-      <p>
-        As well as the completed application form and fee, applicants must also provide:
-      </p>
-        <ul>
-          <li>details of a 'responsible person' for the venue</li>
-          <li>three copies of a plan of the premises which clearly identifies the room(s) in which the proceedings will take place</li>
-          <li>written consent from the person specified or governing authority of the religious organisation (religious premises only)</li>
-        </ul>
-      <p>
-        There are six different application forms on the website. There are different forms for secular and religious premises, and for each there is a separate form
-        to <strong>apply</strong> for, <strong>renew</strong> or make a <strong>change</strong> to an approval. 
-        Please encourage the customer to ensure they use and submit the correct form for their venue and circumstances. 
-      </p>
-      <p>
-        All application forms can be found here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
-        Marriage and civil partnership premises approval | Sheffield City Council</a>
-      </p>
-      <p>[Insert Send Link]</p>
-    </div>
-  </details>
-
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens After Application</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Once an application is submitted, the council will advertise it in the local press and on the council website.
-        The consultation period for the application will commence from the date of advertisement and last for a period of 21 days.
-      </p>
-      <p>
-        As soon as possible after the application is received, we will contact the applicant to arrange an appointment to 
-        inspect the premises along with the superintendent registrar.
-      </p>
-      <p>
-        If there are no issues with an application and it meets all the criteria, the approval will be issued after the 21 day consultation period ends.
-      </p>
-      <p>
-        If there are issues or objections to an application we will notify the applicant as soon as is reasonably practical. 
-        The application will then be decided on by our licensing committee and we will invite the applicant to attend.
-      </p>
-    </div>
-  </details>
-
-
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to Make  Changes</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Changes can be made to premises approval using the <strong>'Make a change'</strong> application form for either a secular or religious premises.
-      </p>
-      <p>
-        Changes that may need to be made include changes to the name of the premises or responsible person(s), changes to contact details, or other material changes.
-      </p>
-      <p>
-        Customers should also be advised to use this form if they want to surrender or transfer a license.
-      </p>
-    </div>
-  </details>
-    
- 
-    <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Ineligible premises</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Under current regulations the term 'premises' is defined as a permanently immovable structure comprising of at least one room.
-      </p>
-      <p>
-        The following are outside this definition are not eligible for approval:
-      </p>
-        <ul>
-          <li>open air</li>
-          <li>a tent</li>
-          <li>a marquee</li>
-          <li>any other temporary structure</li>
-          <li>most forms of transport</li>
-        </ul>
-      <p>
-        Further details around eligibility criteria for venue can be found on the website:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
-        Marriage and civil partnership premises approval | Sheffield City Council</a>
-      </p>
-      <p>[Insert Send Link]</p>
-    </div>
-  </details>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "marriage_premises_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "wedding",
-      "marriage",
-      "civil",
-      "partnership",
-      "venue",
-      "venues",
-      "premises",
-      "ceremony",
-      "ceremonies",
-      "apply",
-      "renew",
-      "change",
-      "weddnig",
-      "cicil",
-      "civill",
-      "partership",
-      "seremony",
-      "marrage",
-      "marraige",
-      "premisses"
-
-    ],
-    categories: ["Business", "General Licensing"]
-  },
-  { date: "04/09/2026", name: "Liz Taster" }
-);
-
-
-const PavementCafeLicencesHighways = new ContentBusiness(
-  "PavementCafeLicencesHighways",
-  "Pavement Cafe Licences",
-  "Details of Pavement Cafe licences under the Highways Act - including criteria and how to apply.",
-  `
-    <p>
-      A licence is needed to put tables and chairs outside a premises on the highway.
-    </p>
-
-    <p>
-      Pavement café licence requirements:
-    </p>
-      <ul>
-        <li>keep within the shop frontage - unless you have special consent to use other areas</li>
-        <li>control and clear litter and debris in and around your pavement café</li>
-        <li>provide tap barriers around your pavement café area so that visually impaired people can find their way around it safely</li>
-        <li>leave at least a 1.5 meter clear space between the outside of your tap barriers and the outer edge of the footpath</li>
-      </ul>
-
-    <p>
-      A <em>premises can apply for licence under the Highways Act 1980</em> if <strong>any</strong> of the following apply:
-    </p>
-      <ul>
-        <li>the premises does not sell food or drink</li>
-        <li>they wish to use furniture that is not removable</li>
-        <li>they intend to have music speakers</li>
-      </ul>
-    <p>
-      If none of the above apply, they may be able to apply for licence under the Levelling Up and Regeneration Act 2023.
-    </p>
-
-    <p>
-      <em>Please note</em>: Additional permissions are required for the sale of alcohol or to play amplified music.
-    </p>
-
-    <p>
-      The <strong>cost</strong> for a pavement café licence is <strong>£160</strong>.
-      </br>The licence lasts for <strong>1 year</strong> and must be renewed annually.
-    </p>
-
-    <p>
-        Once an application application is submitted, the applicant must post a public notice on your premises advertising your application.
-        This must be <strong>displayed for 28 days</strong>. 
-        </br>If there are no issues, the Council will issue the licence after the 28 day consultation period.
-    </p>
-
-    <p>
-      Full details around eligibility criteria and the application process can be found here:
-      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/pavement-cafe-licence" target="_blank" rel="noopener noreferrer">
-      Pavement café licences | Sheffield City Council</a>
-    </p>
-    <p>[Insert Send Link]</p>
-
-    <p>
-      Details of the application requirements and a link to the online application can be found here:
-      <a href="https://www.sheffield.gov.uk/utilities/form/business/licences-permits-registrations/apply-pavement-cafe-licence-start" target="_blank" rel="noopener noreferrer">
-      Apply for a pavement café licence | Sheffield City Council</a>
-    </p>
-    <p>[Insert Send Link]</p>
- 
-  `,
- 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "pavement_cafe_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "pavement",
-      "cafe",
-      "licence",
-      "street",
-      "highway",
-      "permit",
-      "shop",
-      "café",
-    ],
-    categories: ["Business", "General Licensing"]
-  },
-  { date: "10/09/2026", name: "Liz Taster" }
-);
 
 const scrapMetalLicences = new ContentBusiness(
   "scrapMetalLicencese",
@@ -7875,6 +7712,167 @@ const temporaryEventNotice = new ContentBusiness(
 );
 
 
+const transferAPremisesLicence = new ContentBusiness(
+  "transferAPremisesLicence",
+  "Transfer a Premises Licence",
+  "Information about transferring a premises licence following a sale or change of ownership, including fees, application requirements and timescales.",
+  `
+  <p>
+    If a business with a premises licence is sold or changes ownership, the new owner can apply to transfer the licence into their name.
+  </p>
+  <p>
+    A transfer only changes the licence holder. It does not change the licensed activities, hours or conditions. The new licence holder must follow all existing conditions.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Can Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        An individual aged 18 or over, business, partnership or organisation taking over premises used for licensable activities can apply.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost and Application Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The transfer fee is <strong>£23</strong> and is generally non-refundable.
+      </p>
+      <p>You will normally need:</p>
+      <ul>
+        <li>A completed transfer application</li>
+        <li>Written consent from the existing licence holder</li>
+        <li>The original premises licence and summary</li>
+        <li>Right to Work evidence or a Home Office share code, if applying as an individual</li>
+        <li>Confirmation that the existing Designated Premises Supervisor has been notified</li>
+      </ul>
+      <p>
+        If consent from the existing licence holder cannot be obtained, you must explain why and provide evidence that you are legally entitled to occupy the premises.
+      </p>
+      <p>
+        If applying online, South Yorkshire Police will receive the application automatically. Postal applicants must send the Police a copy on the same day.
+      </p>
+      <p>
+        <strong>Application requirements and guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/premises-licence-transfer" target="_blank" rel="noopener noreferrer">
+          Transfer a Premises Licence | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Transfer%20a%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        South Yorkshire Police has <strong>14 days</strong> to consider the transfer and may object if it could undermine crime prevention.
+      </p>
+      <ul>
+        <li>The transfer can take immediate interim effect if requested on the application</li>
+        <li>If there is no objection, the transfer will be granted</li>
+        <li>If an objection is received, a Licensing Committee hearing will normally be held within 20 working days after the consultation ends</li>
+        <li>Tacit consent applies if no decision is received by the end of the 14-day period</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply or Give Consent Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Apply to transfer a premises licence:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-3" target="_blank" rel="noopener noreferrer">
+          Apply to Transfer a Premises Licence | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20transfer%20a%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Give consent to transfer a premises licence:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/premises-licence/sheffield/change-6" target="_blank" rel="noopener noreferrer">
+          Give Consent to Transfer a Premises Licence | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Give%20consent%20transfer%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>A transfer only changes the <strong>premises licence holder</strong>; the existing activities, hours and conditions remain unchanged.</li>
+    <li>The transfer fee is <strong>£23</strong> and is generally non-refundable.</li>
+    <li>Written consent from the existing licence holder is normally required.</li>
+    <li>South Yorkshire Police has <strong>14 days</strong> to consider the transfer.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "premises_licence_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "transfer a premises licence",
+      "premises licence transfer",
+      "change licence holder",
+      "new business owner",
+      "licensed premises",
+      "transfer application",
+      "licence holder consent",
+      "Designated Premises Supervisor",
+      "South Yorkshire Police",
+      "interim effect",
+      "licensing committee",
+      "premises lisence transfer"
+    ],
+    categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
+  },
+  { date: "09/09/2026", name: "Andy Walker" }
+);
+
 
   const generalLicensing = new MenuBusiness(
   "generalLicensing",
@@ -7882,11 +7880,22 @@ const temporaryEventNotice = new ContentBusiness(
   "Information regarding a variety of different types of licensing and registration (not Taxi).",
   [
     animalWelfareLicences,
+    changeAPremisesLicence,
+    changeDesignatedPremisesSupervisor,
     chaperoneLicences,
+    gamblingLicencesPremises,
+    gamingMachinePermits,
     houseToHouseCollections,
     hypnotismAuthorisation,
+    interimAuthorityNotice,
     marriagePremisesApproval,
+    minorVariationPremisesLicence,
+    notificationOfAnInterest,
     PavementCafeLicencesHighways,
+    personalLicences,
+    premisesLicence,
+    provisionalStatement,
+    removeDPSFromCommunityPremises,
     scrapMetalLicences,
     secondHandDealerReg,
     sexShopSexCinemaLicence,
@@ -7897,25 +7906,11 @@ const temporaryEventNotice = new ContentBusiness(
     streetPartyLicences,
     streetTradingConsent,
     temporaryEventNotice,
-
-    gamblingLicencesPremises,
-    gamingMachinePermits,
-    
     transferAPremisesLicence,
-    removeDPSFromCommunityPremises,
-    minorVariationPremisesLicence,
-    changeAPremisesLicence,
-    changeDesignatedPremisesSupervisor,
-    interimAuthorityNotice,
-    provisionalStatement,
-    premisesLicence,
-    personalLicences,
-    notificationOfAnInterest,
   ]
 );
 
 //#endregion General Licensing
-
 
 
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
