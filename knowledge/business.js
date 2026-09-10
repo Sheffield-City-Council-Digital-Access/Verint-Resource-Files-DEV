@@ -6781,6 +6781,9 @@ const streetTradingConsent = new ContentBusiness(
         </br>
       </p>
       <p>
+        Traders can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
         Further information is available here - including street stall trading criteria and application forms:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/football-ground-street-traders-consent" target="_blank" rel="noopener noreferrer">
         Football ground street trader consent | Sheffield City Council</a>
@@ -6796,12 +6799,21 @@ const streetTradingConsent = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        Council consent is required to operate a mobile fruit and vegetable business (van) in Sheffield.
+      </p>
+      <p>
+        Traders can apply to trade in up to 5 different areas in Sheffield with each consent. 
+        The licensing committee may restrict the number of traders in a particular area.
+      </p>
+      <p>
+        The <strong>cost</strong> of a new consent or to renew a current consent is <strong>£411</strong>.
+      </p>
       <p>
         Traders can apply online or can download an application form and submit this in the post.
       </p>
       <p>
-        Further information is available here:
+        Further information is available here - including stall criteria, trading rules and restrictions, and application forms:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-fruit-veg" target="_blank" rel="noopener noreferrer">
         Mobile fruit and vegetable street trader consent | Sheffield City Council</a>
       </p>
@@ -6833,6 +6845,9 @@ const streetTradingConsent = new ContentBusiness(
         The <strong>cost</strong> of a new consent or to renew a current consent is <strong>£279</strong>.
       </p>
       <p>
+        Traders can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
         Further information is available here - including details of where ice-cream traders can and can't trade, street stall critiera, and application forms:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-ice-cream" target="_blank" rel="noopener noreferrer">
         Mobile ice cream street trader consent | Sheffield City Council</a>
@@ -6859,6 +6874,9 @@ const streetTradingConsent = new ContentBusiness(
       </p>
       <p>
         The <strong>cost</strong> of a new consent or to renew a current consent is <strong>£127</strong>.
+      </p>
+      <p>
+        Traders can apply online or can download an application form and submit this in the post.
       </p> 
       <p>
         Further information is available here - including street stall criteria and application forms:
@@ -6875,7 +6893,33 @@ const streetTradingConsent = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        Traders need a consent from the Council to carry out street trading on the same site for more than 20 minutes.
+      </p>
+      <p>
+        Traders need to identify the area they will be trading in - called a pitch.
+        Pitches are usually very specific and a detailed plan must be submitted as part of an application.
+      </p>
+      <p>
+        Consent will be given to trade on that pitch only. 
+        If a trader wants to move around various parts of the city, they need to apply for mobile street trading consent.
+      </p>
+      <p>
+        All stalls need to follow the Council's street stall trading criteria in order for consent to be granted.
+        These requirements can be found on the website.
+      </p>
+      <p>
+        The <strong>cost</strong> for a static trading consent depends on what is being traded, how often, when and where it is traded. 
+        The total amount will be set once the council has decided on a consent application. 
+        Applicants need to pay a £100 fee to cover the costs of processing your application - this will be deducted from the final cost if consent is awarded.
+      </p>
+      <p>
+        Applicants need to speak to our Highways and Planning Departments before submitting applications to discuss any issues they may have with the location 
+        and if any permissions will be needed from them to operate there.
+      </p>
+      <p>
+        Traders can apply online or can download an application form and submit this in the post.
+      </p>
       <p>
         Further information is available here:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/static-pitch-street-trading" target="_blank" rel="noopener noreferrer">
@@ -6892,9 +6936,22 @@ const streetTradingConsent = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
       <p>
-        Further information is available here:
+        Once a consent has been granted it is possible to make some changes to this for a fee.
+      </p>
+      <p>
+        The cost depends on the type of change required:
+      </p>
+        <ul>
+          <li>The cost for a minor variation is £32</li>
+          <li>The cost to change or vary a consent is £115</li>
+          <li>Some changes will not be considered a variation, and a new application will need to be made - the cost will be the standard cost for that type of consent</li>
+        </ul>
+      <p>
+      <p>
+        Traders can apply online or can download an application form and submit this in the post.
+      </p>
+        Further information can be found here - including what variations fall into which category, and application forms:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/change-vary-street-trading-consent" target="_blank" rel="noopener noreferrer">
         Make a change or variation to your street trading consent | Sheffield City Council</a>
       </p>
@@ -6936,12 +6993,30 @@ const streetTradingConsent = new ContentBusiness(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "enquiry_type_information_provided" },
+  { typeKey: "street_trader_consent_information_provided" },
   {
     type: "Information",
     keywords: [
-      "template",
-      "templte"
+      "street",
+      "trader",
+      "consent",
+      "trading",
+      "trade",
+      "stall",
+      "van",
+      "mobile",
+      "ice-cream",
+      "ice",
+      "cream",
+      "fruit",
+      "fruits",
+      "vegetable",
+      "vegetables",
+      "football",
+      "stadium",
+      "trade",
+      "school",
+      "pitch",
     ],
     categories: ["Business", "General Licensing"]
   },
