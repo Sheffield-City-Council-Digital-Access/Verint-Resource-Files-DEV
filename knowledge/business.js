@@ -6230,7 +6230,7 @@ const hypnotismAuthorisation = new ContentBusiness(
       There is <strong>no cost</strong> or fee for an application for hypnotism authorisation.
     </p>
 
-    
+
   <details class="accordion">
     <summary class="accordion-header">
     <h3>How to Apply</h3>
@@ -6287,7 +6287,7 @@ const hypnotismAuthorisation = new ContentBusiness(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "enquiry_type_information_provided" },
+  { typeKey: "hypnotism_authorisation_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -6830,6 +6830,235 @@ const secondHandDealerReg = new ContentBusiness(
     categories: ["Business", "General Licensing"]
   },
   { date: "03/09/2026", name: "Liz Taster" }
+);
+
+const sexShopSexCinemaLicence = new ContentBusiness(
+  "sexShopSexCinemaLicence",
+  "Sex Shop and Sex Cinema Licence",
+  "Details of how to apply for a sex shop or sex cinema licence and what this type of licence covers.",
+  `
+    <p>
+      Residents or businesses must apply for a licence if they want to operate a sex shop or sex cinema in Sheffield. 
+      Sex establishments are regulated by the local authority and applications are considered under the relevant licensing legislation.
+    </p>
+
+    <p>
+      This type of licence covers:
+    </p>
+      <ul>
+        <li>Sex shops - premises which consists to a significant degree of selling, hiring, exchanging, lending, displaying or demonstrating sex articles</li>
+        <li>Sex cinemas - premises used to a significant degree for showing films which are concerned primarily with, or relate to, 
+        or are intended to stimulate or encourage sexual activity.</li>
+      </ul>
+    <p>
+      This type of license <strong>does not cover sexual entertainment venues</strong> (such as a lap dancing or pole dancing club) - these require a different licence.
+      Please instead refer to information about sexual entertainment venue licences.
+    </p>
+
+    <p>
+      Full details and a link to the application form can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
+      Sex shop and sex cinema licence | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+
+    <p>
+      If granted, licence holders must comply with any conditions attached to the licence. 
+      Conditions may relate to:
+    </p>
+    <ul>
+      <li>Opening hours</li>
+      <li>Shop displays</li>
+      <li>Advertising</li>
+      <li>The visibility of the interior of the premises from outside</li>
+    </ul>
+    
+    <p>
+      A licence can be issued for up to <strong>1 year</strong>.
+      It is the licence holder's responsibility to ensure a licence is renewed before it expires.
+    </p>
+ 
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Costs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>A sex shop or sex cinema licence costs:</p>
+        <ul>
+          <li>the cost for a <strong>new application</strong> is <strong>£2,351</strong></li>
+          <li>the cost to <strong>renew a licence</strong> is <strong>£2,351</strong></li>
+          <li>the cost to <strong>transfer a licence</strong> is <strong>£1,200</strong></li>
+          <li>the cost to <strong>change a current licence</strong> is <strong>£850</strong></li>
+        </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        The applicant needs to submit:
+      </p>
+        <ul>
+          <li>a <strong>completed application form</strong> - this includes personal details, including details of any criminal convictions</li>
+          <li>a plan of the premises</li>
+          <li>any further documents as required in the application form (determined by the applicant and premises details)</li>
+          <li>evidence of advertising your application - the applicant needs to advertise your application in the local press 
+          <strong>within 7 days</strong> of submitting it to us and display a notice outside the premises for 21 days.</li>
+        </ul>
+      </p>
+      <p>
+        If applying by post, the applicant must also submit a signed privacy statement, and they must notify the Police of their application
+        (this is done automatically if the application is made online).
+      </p>
+      <p>
+        Full details and a link to the application form can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
+        Sex shop and sex cinema licence | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once the Council has received an application there is a 28 day consultation period where we will consult with 
+        South Yorkshire Police and wait for any objections to the application.
+      </p>
+      <p>
+        If no comments or objections are raised during this period the application will be granted and the licence will be issued.
+      </p>
+      <p>
+        If objections are received within the consultation period a public hearing must be held to determine your application.
+        The public hearing will generally be held within 20 working days after the last date for comments.
+      </p>
+       <p>
+        Customers <strong>must not start operating</strong> until they have received confirmation their licence has been granted.
+      </p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "sex_shop_licence_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "sex",
+      "shop",
+      "cinema",
+      "sexual"
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "10/09/2026", name: "Liz Taster" }
+);
+
+
+const sexualEntertainmentVenueLicence = new ContentBusiness(
+  "sexualEntertainmentVenueLicence",
+  "Sexual Entertainement Venue Licence",
+  "Information on sexual entertainment venue licences and how to apply.",
+  `
+ 
+    <p>
+      Sexual entertainment venues are defined as “any premises at which relevant entertainment is provided 
+      before a live audience for the financial gain of the organiser or the entertainer”. 
+      Relevant entertainement refers to lap dancing, pole dancing, strip shows, etc.
+    </p>
+
+    <p>
+      Full details of the types of establishment, and details of how to apply can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-entertainment-and-temporary-events/sexual-entertainment" target="_blank" rel="noopener noreferrer">
+      Sexual entertainment venue licences | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Guidance on making an application, and detailed information on all areas of the application process, are provided in the Sex Establishment Policy, 
+        available on the website.
+      </p>
+      <p>
+        The <strong>fee to apply for or renew</strong> an application is <strong>£3865</strong>.
+      </p>
+      <p>
+        To request an application pack, please get in touch with the licensing team.
+      </p> 
+      <p>
+        Applicants are required to submit a copy of their application to South Yorkshire Police within 7 days of sending their application to the Council.
+      </p>
+      <p>
+        Further details, including the Sex Establishment Policy, can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-entertainment-and-temporary-events/sexual-entertainment" target="_blank" rel="noopener noreferrer">
+        Sexual entertainment venue licences | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+ 
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once the Council has received an application there is a 28 day consultation period where we will consult with 
+        South Yorkshire Police and wait for any objections to the application.
+      </p>
+      <p>
+        If a valid objection is received, a Licensing Committee will hold a meeting to determine the application.
+      </p>
+       <p>
+        Customers <strong>must not start operating</strong> until they have received confirmation their licence has been granted.
+      </p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "sexual_entertainment_licence_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "sex",
+      "sexual",
+      "entertainment",
+      "pole dancing",
+      "lap dancing",
+      "club",
+      "venue",
+      "strip",
+      "stripper",
+      "show",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "10/09/2026", name: "Liz Taster" }
 );
 
 
@@ -7655,6 +7884,8 @@ const templateTile = new ContentBusiness(
     PavementCafeLicencesHighways,
     scrapMetalLicences,
     secondHandDealerReg,
+    sexShopSexCinemaLicence,
+    sexualEntertainmentVenueLicence,
     skinPiercingRegistration,
     smallSocietyLotteries,
     streetCollectionPermit,
