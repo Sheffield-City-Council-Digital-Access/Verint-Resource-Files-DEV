@@ -6723,15 +6723,29 @@ const streetTradingConsent = new ContentBusiness(
   "Street Trading Consent",
   "Guidance on street trading consent, including scenarios where it is needed, how to apply, and costs.",
   `
-    <p>summary content/overview</p>
-    <p>specific info for different types to be in accordions<p>
     <p>
-      Street trading is now prohibited in the City Centre - this area is now covered by Markets. 
-      To make enquires regardign trading in the City Centre, ask custoemrs to email:
-      marketsstreettrading@sheffield.gov.uk
+      All streets within the Sheffield city boundary are designated 'consent streets' and traders require consent from the Council to trade there.
+    </p>
+    <p>The Council can issue the following kinds of street trading consents:</p>
+      <ul>
+        <li>static pitch trading</li>
+        <li>mobile ice cream trading</li>
+        <li>mobile fruit and vegetables trading</li>
+        <li>school trading</li>
+        <li>football grounds trading</li>
+    <p>
+      Each consent will be subject to a set of standard conditions, and possibly additional conditions for that type of consent.
+    </p>
+    <p>
+      Further details can be found in the sections below, along with links to the relevant Council web pages with full details.
+    </p>
+    <p>
+      <em>Please note:</em> Street trading is now prohibited in the City Centre - this area is now covered by Markets. 
+      To make enquires regarding trading in the City Centre, ask customers to email:
+      <a href="mailto:marketsstreettrading@sheffield.gov.uk">marketsstreettrading@sheffield.gov.uk</a>
     </p>
  
-
+    
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Football ground street trading consent</h3>
@@ -6768,7 +6782,7 @@ const streetTradingConsent = new ContentBusiness(
         </br>
       </p>
       <p>
-        Further information, street stall trading criteria and application forms are available here:
+        Further information is available here - including street stall trading criteria and application forms:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/football-ground-street-traders-consent" target="_blank" rel="noopener noreferrer">
         Football ground street trader consent | Sheffield City Council</a>
       </p>
@@ -6804,9 +6818,24 @@ const streetTradingConsent = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
       <p>
-        Further information is available here:
+        Traders need Council consent to operate a mobile ice cream van business.
+      </p>
+      <p>
+        Ice-cream vans can trade in most places in Sheffield (outside the City Centre) from 9am-7pm, as long as they move from site to site. 
+        There are some restrictions, details of which can be found on the website.
+      </p>
+      <p>
+        Ice-cream vehicles will be inspected prior to issuing a consent to ensure it complies with our criteria.
+      </p>
+      <p>
+        A separate permit is needed to trade outside a school - see 'school street trading' below.
+      </p>
+      <p>
+        The <strong>cost</strong> of a new consent or to renew a current consent is <strong>£279</strong>.
+      </p>
+      <p>
+        Further information is available here - including details of where ice-cream traders can and can't trade, street stall critiera, and application forms:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-ice-cream" target="_blank" rel="noopener noreferrer">
         Mobile ice cream street trader consent | Sheffield City Council</a>
       </p>
@@ -6821,9 +6850,20 @@ const streetTradingConsent = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
       <p>
-        Further information is available here:
+        Council consent is needed to sell ice cream outside or near a school from Monday to Friday during school term times.
+      </p>
+      <p>
+        A trader must hold a valid ice cream mobile street trading consent prior to making an application for a school street trading consent (see above).
+      </p>
+      <p>
+        A school street trading consent allows trade from <strong>midday until 2pm</strong>, and from <strong>3pm until 4:30pm</strong>.
+      </p>
+      <p>
+        The <strong>cost</strong> of a new consent or to renew a current consent is <strong>£127</strong>.
+      </p> 
+      <p>
+        Further information is available here - including street stall criteria and application forms:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/school-street-trading-consent" target="_blank" rel="noopener noreferrer">School street trading consent | Sheffield City Council</a>
       </p>
       <p>[Insert Send Link]</p>
