@@ -6897,7 +6897,7 @@ const streetTradingConsent = new ContentBusiness(
         Traders need a consent from the Council to carry out street trading on the same site for more than 20 minutes.
       </p>
       <p>
-        Traders need to identify the area they will be trading in - called a pitch.
+        Traders need to identify the area (pitch) they will be trading in.
         Pitches are usually very specific and a detailed plan must be submitted as part of an application.
       </p>
       <p>
@@ -6911,7 +6911,8 @@ const streetTradingConsent = new ContentBusiness(
       <p>
         The <strong>cost</strong> for a static trading consent depends on what is being traded, how often, when and where it is traded. 
         The total amount will be set once the council has decided on a consent application. 
-        Applicants need to pay a £100 fee to cover the costs of processing your application - this will be deducted from the final cost if consent is awarded.
+        Applicants need to pay a <strong>£100 application fee</strong> to cover the costs of processing your application 
+        - this will be deducted from the final cost if consent is awarded.
       </p>
       <p>
         Applicants need to speak to our Highways and Planning Departments before submitting applications to discuss any issues they may have with the location 
@@ -6940,12 +6941,12 @@ const streetTradingConsent = new ContentBusiness(
         Once a consent has been granted it is possible to make some changes to this for a fee.
       </p>
       <p>
-        The cost depends on the type of change required:
+        The <strong>cost<strong> depends on the type of change required:
       </p>
         <ul>
-          <li>The cost for a minor variation is £32</li>
-          <li>The cost to change or vary a consent is £115</li>
-          <li>Some changes will not be considered a variation, and a new application will need to be made - the cost will be the standard cost for that type of consent</li>
+          <li>The cost for a <strong>minor variation is £32</strong></li>
+          <li>The cost to <strong>change or vary a consent is £115</strong></li>
+          <li>Some changes will not be considered a variation, and a <strong>new application</strong> will need to be made - the cost will be the standard cost for that type of consent</li>
         </ul>
       <p>
       <p>
