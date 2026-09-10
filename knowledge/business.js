@@ -5981,8 +5981,8 @@ const marriagePremisesApproval = new ContentBusiness(
 
 const PavementCafeLicencesHighways = new ContentBusiness(
   "PavementCafeLicencesHighways",
-  "Pavement Cafe Licences (under Highways Act)",
-  "Details of Pavement Cafe licences - including criteria and how to apply.",
+  "Pavement Cafe Licences",
+  "Details of Pavement Cafe licences under the Highways Act - including criteria and how to apply.",
   `
     <p>
       A licence is needed to put tables and chairs outside a premises on the highway.
@@ -5999,10 +5999,6 @@ const PavementCafeLicencesHighways = new ContentBusiness(
       </ul>
 
     <p>
-      Additional permissions are required for the sale of alcohol or to play amplified music.
-    </p>
-
-    <p>
       A premises can apply for licence under the Highways Act 1980 if any of the following apply:
     </p>
       <ul>
@@ -6015,28 +6011,32 @@ const PavementCafeLicencesHighways = new ContentBusiness(
     </p>
 
     <p>
+      <em>Please note</em>: Additional permissions are required for the sale of alcohol or to play amplified music.
+    </p>
+
+    <p>
       The <strong>cost</strong> for a pavement café licence is <strong>£160</strong>.
       </br>The licence lasts for <strong>1 year</strong> and must be renewed annually.
     </p>
 
     <p>
-        Full details around eligibility criteria and the application process can be found here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/pavement-cafe-licence" target="_blank" rel="noopener noreferrer">
-        Pavement café licences | Sheffield City Council</a>
-      </p>
-      <p>[Insert Send Link]</p>
-
-      <p>
-        Details of the application requirements and a link to the online application can be found here:
-        <a href="https://www.sheffield.gov.uk/utilities/form/business/licences-permits-registrations/apply-pavement-cafe-licence-start" target="_blank" rel="noopener noreferrer">
-        Apply for a pavement café licence | Sheffield City Council
-      </p>
-      <p>[Insert Send Link]</p>
-
-      <p>
         Once an application application is submitted, the applicant must post a public notice on your premises advertising your application.
         This must be displayed for 28 days. If there are no issues, we'll issue the licence after the 28 day consultation period.
-      </p>
+    </p>
+
+    <p>
+      Full details around eligibility criteria and the application process can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/pavement-cafe-licence" target="_blank" rel="noopener noreferrer">
+      Pavement café licences | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+
+    <p>
+      Details of the application requirements and a link to the online application can be found here:
+      <a href="https://www.sheffield.gov.uk/utilities/form/business/licences-permits-registrations/apply-pavement-cafe-licence-start" target="_blank" rel="noopener noreferrer">
+      Apply for a pavement café licence | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
  
   `,
  
