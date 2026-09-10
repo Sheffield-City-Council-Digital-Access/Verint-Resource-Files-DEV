@@ -6200,12 +6200,12 @@ const houseToHouseCollections = new ContentBusiness(
 const hypnotismAuthorisation = new ContentBusiness(
   "hypnotismAuthorisation",
   "Hypnotism Authorisation",
-  "Description to go on main tile.",
+  "Details of how to apply for hypnotism authorisation and when it is needed.",
   `
     <p>
       Hypnotism authorisation is required for anyone who wants to show, demonstrate, or perform a hypnotism act in public within Sheffield. 
       Public hypnotism performances include hypnotism, mesmerism, and similar acts intended to induce a sleep-like state or trance that 
-      increases a person's susceptibility to suggestion
+      increases a person's susceptibility to suggestion.
     </p>
 
     <p>
@@ -6218,14 +6218,21 @@ const hypnotismAuthorisation = new ContentBusiness(
       </ul>
 
     <p>
-      Hypnotism authorisation is <strong>not required</strong> when the hypnotism takes place as part of the performance of a play, for scientific or research purposes, 
-      or for the treatment of mental or physical disease. 
+      Hypnotism authorisation is <strong>not required</strong> when the hypnotism takes place:
     </p>
+      <ul>
+        <li>as part of the performance of a play</li>
+        <li>for scientific or research purposes</li>
+        <li>for the treatment of mental or physical disease</li>
+      </ul>
 
     <p>
       There is <strong>no cost</strong> or fee for an application for hypnotism authorisation.
     </p>
 
+    
+  <details class="accordion">
+    <summary class="accordion-header">
     <h3>How to Apply</h3>
       <div class="accordion-icon"></div>
     </summary>
