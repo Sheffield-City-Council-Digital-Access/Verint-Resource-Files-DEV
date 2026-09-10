@@ -6977,7 +6977,7 @@ const sexualEntertainmentVenueLicence = new ContentBusiness(
     <p>
       Sexual entertainment venues are defined as “any premises at which relevant entertainment is provided 
       before a live audience for the financial gain of the organiser or the entertainer”. 
-      'Relevant entertainement' refers to lap dancing, pole dancing, strip shows, etc.
+      </br>'Relevant entertainement' refers to lap dancing, pole dancing, strip shows, etc.
     </p>
 
     <p>
@@ -7834,13 +7834,16 @@ const streetTradingConsent = new ContentBusiness(
 );
 
 
-const templateTile = new ContentBusiness(
-  "templateTile",
-  "Template Tile",
+const temporaryEventNotice = new ContentBusiness(
+  "temporaryEventNotice",
+  "Temporary Event Notice",
   "Description to go on main tile.",
   `
-    <h3>Header</h3>
-    <p>Content</p>
+    <p>
+      Further information about how to apply for a temporary event notice can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
+      Apply for a Temporary Event Notice | Sheffield City Council</a>
+    </p>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -7860,12 +7863,15 @@ const templateTile = new ContentBusiness(
   {
     type: "Information",
     keywords: [
-      "template",
-      "templte"
+      "temporary",
+      "event",
+      "notice",
+      "temprary",
+      "tempory"
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "04/09/2026", name: "Liz Taster" }
+  { date: "10/09/2026", name: "Liz Taster" }
 );
 
 
@@ -7890,7 +7896,7 @@ const templateTile = new ContentBusiness(
     streetCollectionPermit,
     streetPartyLicences,
     streetTradingConsent,
-    templateTile,
+    temporaryEventNotice,
 
     gamblingLicencesPremises,
     gamingMachinePermits,
