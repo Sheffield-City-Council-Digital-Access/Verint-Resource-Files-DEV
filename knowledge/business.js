@@ -6197,6 +6197,112 @@ const houseToHouseCollections = new ContentBusiness(
   { date: "03/09/2026", name: "Liz Taster" }
 );
 
+const hypnotismAuthorisation = new ContentBusiness(
+  "hypnotismAuthorisation",
+  "Hypnotism Authorisation",
+  "Description to go on main tile.",
+  `
+    <p>
+      Hypnotism authorisation is required for anyone who wants to show, demonstrate, or perform a hypnotism act in public within Sheffield. 
+      Public hypnotism performances include hypnotism, mesmerism, and similar acts intended to induce a sleep-like state or trance that 
+      increases a person's susceptibility to suggestion
+    </p>
+
+    <p>
+      <strong>Important conditions</strong>:
+    </p>
+      <ul>
+        <li>Authorisation holders must comply with the conditions attached to any authorisation granted</li>
+        <li>Hypnotism cannot be performed on anyone under 18 years of age</li>
+        <li>Self-induced hypnotism is not covered by this authorisation</li>
+      </ul>
+
+    <p>
+      Hypnotism authorisation is <strong>not required</strong> when the hypnotism takes place as part of the performance of a play, for scientific or research purposes, 
+      or for the treatment of mental or physical disease. 
+    </p>
+
+    <p>
+      There is <strong>no cost</strong> or fee for an application for hypnotism authorisation.
+    </p>
+
+    <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers can apply online or can download an application form and submit this in the post.
+      </p>
+      <p>
+        Applications must be submitted in writing and include:
+      </p>
+        <ul>
+          <li>Details of the type of demonstration or performance.</li>
+          <li>The location where the demonstration or performance will take place.</li>
+          <li>A plan showing the rooms where the demonstration or performance will be held.</li>
+          <li>Dates and times of the demonstration or performance.</li>
+          <li>Details and copies of Public Liability Insurance.</li>
+          <li>A completed privacy statement included with the application form (<em>paper submissions only</em>).</li>
+      </ul>
+    
+      <p>
+        Further information and a link to apply online can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/hypnotism-licence" target="_blank" rel="noopener noreferrer">
+        Hypnotism authorisation | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The council considers all information provided with the application and aims to process applications within 28 days.
+      </p>
+      <p>
+        If there are no concerns, authorisation will be granted and issued after the 28-day period.
+      </p>
+      <p>
+        If the council is considering refusing the application, a notice of intention will be issued and the application will be determined by the licensing committee.
+      </p>
+      <p>
+        Applicants <strong>must not perform</strong> until they have received confirmation their authorisation has been granted.
+      </p>
+    </div>
+  </details>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "enquiry_type_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "hypnotism",
+      "authorisation",
+      "licence",
+      "performance",
+      "hypnotise",
+      "mesmerism",
+      "mesmerise",
+      "trance",
+      "hpnotism",
+      "hipnotism",
+      "hypnotim",
+      "hypno",
+      "performancve",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "10/09/2026", name: "Liz Taster" }
+);
+
 
 const marriagePremisesApproval = new ContentBusiness(
   "marriagePremisesApproval",
@@ -7537,6 +7643,7 @@ const templateTile = new ContentBusiness(
     animalWelfareLicences,
     chaperoneLicences,
     houseToHouseCollections,
+    hypnotismAuthorisation,
     marriagePremisesApproval,
     PavementCafeLicencesHighways,
     scrapMetalLicences,
