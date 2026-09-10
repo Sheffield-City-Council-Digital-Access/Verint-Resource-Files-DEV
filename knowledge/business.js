@@ -6967,6 +6967,16 @@ const templateTile = new ContentBusiness(
     streetTradingConsent,
     templateTile,
 
+    transferAPremisesLicence,
+    removeDPSFromCommunityPremises,
+    minorVariationPremisesLicence,
+    changeAPremisesLicence,
+    changeDesignatedPremisesSupervisor,
+    interimAuthorityNotice,
+    provisionalStatement,
+    premisesLicence,
+    personalLicences,
+    notificationOfAnInterest,
   ]
 );
 
