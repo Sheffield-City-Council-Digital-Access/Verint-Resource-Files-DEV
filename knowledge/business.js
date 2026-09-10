@@ -5979,6 +5979,87 @@ const marriagePremisesApproval = new ContentBusiness(
 );
 
 
+const PavementCafeLicencesHighways = new ContentBusiness(
+  "PavementCafeLicencesHighways",
+  "Pavement Cafe Licences (under Highways Act)",
+  "Details of Pavement Cafe licences - including criteria and how to apply.",
+  `
+    <p>
+      A licence is needed to put tables and chairs outside a premises on the highway.
+    </p>
+
+    <p>
+      Pavement café requirements:
+    </p>
+      <ul>
+        <li>keep within the shop frontage - unless you have special consent to use other areas</li>
+        <li>control and clear litter and debris in and around your pavement café</li>
+        <li>provide tap barriers around your pavement café area so that visually impaired people can find their way around it safely</li>
+        <li>leave at least a 1.5 meter clear space between the outside of your tap barriers and the outer edge of the footpath</li>
+      </ul>
+
+    <p>
+      Additional permissions are required for the sale of alcohol or to play amplified music.
+    </p>
+
+    <p>
+      A premises can apply for licence under the Highways Act 1980 if any of the following apply:
+    </p>
+      <ul>
+        <li>the premises does not sell food or drink</li>
+        <li>they wish to use furniture that is not removable</li>
+        <li>they intend to have music speakers</li>
+      </ul>
+    <p>
+      If none of the above apply, you may be able to apply for licence under the Levelling Up and Regeneration Act 2023.
+    </p>
+
+    <p>
+      The <strong>cost</strong> for a pavement café licence is <strong>£160</strong>.
+      </br>The licence lasts for <strong>1 year</strong> and must be renewed annually.
+    </p>
+
+    <p>
+        Full details around eligibility criteria and the application process can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/pavement-cafe-licence" target="_blank" rel="noopener noreferrer">
+        Pavement café licences | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+
+      <p>
+        Details of the application requirements and a link to the online application can be found here:
+        <a href="https://www.sheffield.gov.uk/utilities/form/business/licences-permits-registrations/apply-pavement-cafe-licence-start" target="_blank" rel="noopener noreferrer">
+        Apply for a pavement café licence | Sheffield City Council
+      </p>
+      <p>[Insert Send Link]</p>
+
+      <p>
+        Once an application application is submitted, the applicant must post a public notice on your premises advertising your application.
+        This must be displayed for 28 days. If there are no issues, we'll issue the licence after the 28 day consultation period.
+      </p>
+ 
+  `,
+ 
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "pavement_cafe_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "pavement",
+      "cafe",
+      "licence",
+      "street",
+      "highway",
+      "permit",
+      "shop",
+      "café",
+    ],
+    categories: ["Business", "General Licensing"]
+  },
+  { date: "10/09/2026", name: "Liz Taster" }
+);
+
 const scrapMetalLicences = new ContentBusiness(
   "scrapMetalLicencese",
   "Scrap Metal Licences",
@@ -6911,7 +6992,7 @@ const streetTradingConsent = new ContentBusiness(
       <p>
         The <strong>cost</strong> for a static trading consent depends on what is being traded, how often, when and where it is traded. 
         The total amount will be set once the council has decided on a consent application. 
-        Applicants need to pay a <strong>£100 application fee</strong> to cover the costs of processing your application 
+        Applicants need to pay a <strong>£100 application fee</strong> to cover the costs of processing the application 
         - this will be deducted from the final cost if consent is awarded.
       </p>
       <p>
@@ -7070,6 +7151,7 @@ const templateTile = new ContentBusiness(
     chaperoneLicences,
     houseToHouseCollections,
     marriagePremisesApproval,
+    PavementCafeLicencesHighways,
     scrapMetalLicences,
     secondHandDealerReg,
     skinPiercingRegistration,
