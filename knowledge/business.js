@@ -5989,7 +5989,7 @@ const PavementCafeLicencesHighways = new ContentBusiness(
     </p>
 
     <p>
-      Pavement café requirements:
+      Pavement café licence requirements:
     </p>
       <ul>
         <li>keep within the shop frontage - unless you have special consent to use other areas</li>
@@ -5999,7 +5999,7 @@ const PavementCafeLicencesHighways = new ContentBusiness(
       </ul>
 
     <p>
-      A premises can apply for licence under the Highways Act 1980 if any of the following apply:
+      A <em>premises can apply for licence under the Highways Act 1980</em> if <strong>any</strong> of the following apply:
     </p>
       <ul>
         <li>the premises does not sell food or drink</li>
@@ -6007,7 +6007,7 @@ const PavementCafeLicencesHighways = new ContentBusiness(
         <li>they intend to have music speakers</li>
       </ul>
     <p>
-      If none of the above apply, you may be able to apply for licence under the Levelling Up and Regeneration Act 2023.
+      If none of the above apply, they may be able to apply for licence under the Levelling Up and Regeneration Act 2023.
     </p>
 
     <p>
@@ -6021,7 +6021,8 @@ const PavementCafeLicencesHighways = new ContentBusiness(
 
     <p>
         Once an application application is submitted, the applicant must post a public notice on your premises advertising your application.
-        This must be displayed for 28 days. If there are no issues, we'll issue the licence after the 28 day consultation period.
+        This must be displayed for 28 days. 
+        </br>If there are no issues, the Council will issue the licence after the 28 day consultation period.
     </p>
 
     <p>
