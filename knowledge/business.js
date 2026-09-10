@@ -6745,7 +6745,7 @@ const streetTradingConsent = new ContentBusiness(
       <a href="mailto:marketsstreettrading@sheffield.gov.uk">marketsstreettrading@sheffield.gov.uk</a>
     </p>
  
-    
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Football ground street trading consent</h3>
@@ -6775,10 +6775,9 @@ const streetTradingConsent = new ContentBusiness(
       <p>
         Traders can apply online or can download an application form and submit this in the post.
       </p>
-      <h4>Costs</h4>
       <p>
-        Cost for a hot and cold <strong>food and drinks</strong> consent is <strong>£521</strong>.
-        </br>Cost for a <strong>memorabilia</strong> consent is <strong>£211</strong>.
+        The <strong>cost</strong> for a hot and cold <strong>food and drinks</strong> consent is <strong>£521</strong>.
+        </br>The <strong>cost</strong> for a <strong>memorabilia</strong> consent is <strong>£211</strong>.
         </br>
       </p>
       <p>
@@ -6801,7 +6800,6 @@ const streetTradingConsent = new ContentBusiness(
       <p>
         Traders can apply online or can download an application form and submit this in the post.
       </p>
-      <h4>Costs</h4>
       <p>
         Further information is available here:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-fruit-veg" target="_blank" rel="noopener noreferrer">
@@ -6822,11 +6820,11 @@ const streetTradingConsent = new ContentBusiness(
         Traders need Council consent to operate a mobile ice cream van business.
       </p>
       <p>
-        Ice-cream vans can trade in most places in Sheffield (outside the City Centre) from 9am-7pm, as long as they move from site to site. 
-        There are some restrictions, details of which can be found on the website.
+        Ice cream vans can trade in most places in Sheffield (outside the City Centre) from 9am-7pm, as long as they move from site to site. 
+        There are some restrictions, full details of which can be found on the website.
       </p>
       <p>
-        Ice-cream vehicles will be inspected prior to issuing a consent to ensure it complies with our criteria.
+        Ice-cream vehicles will be inspected prior to issuing a consent to ensure they comply with our criteria.
       </p>
       <p>
         A separate permit is needed to trade outside a school - see 'school street trading' below.
@@ -6920,11 +6918,10 @@ const streetTradingConsent = new ContentBusiness(
       <p>
         All badges expire at the end of March and traders will need to apply to renew them.
       </p>
-      <h4>Costs</h4>
       <p>
-        The cost of a <strong>new</strong> badge is <strong>£32</strong>.
-        </br>The cost to <strong>renew</strong> a badge is <strong>£32</strong>.
-        </br>The cost of a <strong>replacement</strong> badge is <strong>£22</strong>.
+        The <strong>cost</strong> of a <strong>new</strong> badge is <strong>£32</strong>.
+        </br>The <strong>cost</strong> to <strong>renew</strong> a badge is <strong>£32</strong>.
+        </br>The <strong>cost</strong> of a <strong>replacement</strong> badge is <strong>£22</strong>.
       </p>
       <p>
         Further information and a link to apply for badges is available here:
