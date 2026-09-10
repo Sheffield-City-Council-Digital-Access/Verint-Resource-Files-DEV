@@ -4874,6 +4874,7 @@ const streetTradingConsent = new ContentBusiness(
       <p>
         Cost for a hot and cold <strong>food and drinks</strong> consent is <strong>£521</strong>.
         </br>Cost for a <strong>memorabilia</strong> consent is <strong>£211</strong>.
+        </br>
       </p>
       <p>
         Further information, street stall trading criteria and application forms are available here:
@@ -4983,7 +4984,7 @@ const streetTradingConsent = new ContentBusiness(
         Any person who is working on a street trading pitch must wear an identification badge issued by Sheffield City Council.
       </p>
       <p>
-        Assistants may not commence work until being issued with the appropriate identification badge.
+        Assistants may not commence work until issued with the appropriate identification badge.
       </p>
       <p>
         All badges expire at the end of March and traders will need to apply to renew them.
@@ -4992,7 +4993,7 @@ const streetTradingConsent = new ContentBusiness(
       <p>
         The cost of a <strong>new</strong> badge is <strong>£32</strong>.
         </br>The cost to <strong>renew</strong> a badge is <strong>£32</strong>.
-        </br>The cost of a <strong>replacement</strong> badge is <strong>£22</strong.
+        </br>The cost of a <strong>replacement</strong> badge is <strong>£22</strong>.
       </p>
       <p>
         Further information and a link to apply for badges is available here:
