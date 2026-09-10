@@ -6021,7 +6021,7 @@ const PavementCafeLicencesHighways = new ContentBusiness(
 
     <p>
         Once an application application is submitted, the applicant must post a public notice on your premises advertising your application.
-        This must be displayed for 28 days. 
+        This must be <strong>displayed for 28 days</strong>. 
         </br>If there are no issues, the Council will issue the licence after the 28 day consultation period.
     </p>
 
