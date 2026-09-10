@@ -4835,27 +4835,78 @@ const streetPartyLicences = new ContentBusiness(
 const streetTradingConsent = new ContentBusiness(
   "streetTradingConsent",
   "Street Trading Consent",
-  "Guidance on street trading consent, including scenrios where it is needed, how to apply, and costs.",
+  "Guidance on street trading consent, including scenarios where it is needed, how to apply, and costs.",
   `
     <p>summary content/overview</p>
     <p>specific info for different types to be in accordions<p>
  
-    <details class="accordion">
+
+  <details class="accordion">
     <summary class="accordion-header">
-      <h3>Apply for static pitch street trading</h3>
+      <h3>Apply for football ground street trading consent</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Street trading is restricted around Sheffield’s football grounds. 
+        Consent is needed for traders to sell football memorabilia or food and drinks within an 800 metre radius of either stadium.
+      </p>
+      <p>
+        Traders need to follow the Council's street stall trading criteria in order for consent to be granted.
+        The number of traders granted consent is limited around each stadium. 
+        Any additional applications above these limits will be considered by the licensing committee.
+      </p>
+      <p>
+        Consent allows traders to operate at all first team home fixtures, friendlies and internationals at the following times:
+      </p>
+        <ul>
+          <li>4 hours before the match</li>
+          <li>during the match</li>
+          <li>up to 1 hour after the match</li>
+        </ul>
+      <p>
+        Traders need to apply for short term consent to operate at any other times, e.g. for beam back or non-football events.
+      </p>
+      <p>
+        Traders can apply online or can download an application form and submit this in the post.
+      </p>
+      <h4>Costs</h4>
+      <p>
+        Cost for a hot and cold <strong>food and drinks</strong> consent is <strong>£521</strong>.
+        </br>Cost for a <strong>memorabilia</strong> consent is <strong>£211</strong>.
+      </p>
+      <p>
+        Further information, street stall trading criteria and application forms are available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/football-ground-street-traders-consent" target="_blank" rel="noopener noreferrer">
+        Football ground street trader consent | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for mobile street trading (fruit and vegetables)</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>[Accordion content]</p>
       <p>
-        Further information is available here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/static-pitch-street-trading" target="_blank" rel="noopener noreferrer">
-        Static pitch street trading consent | Sheffield City Council</a>
+        Traders can apply online or can download an application form and submit this in the post.
       </p>
+      <h4>Costs</h4>
+      <p>
+        Further information is available here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-fruit-veg" target="_blank" rel="noopener noreferrer">
+        Mobile fruit and vegetable street trader consent | Sheffield City Council</a>
+      </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
-      <details class="accordion">
+
+  <details class="accordion">
     <summary class="accordion-header">
       <h3>Apply for mobile street trading (ice cream)</h3>
       <div class="accordion-icon"></div>
@@ -4867,25 +4918,12 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-ice-cream" target="_blank" rel="noopener noreferrer">
         Mobile ice cream street trader consent | Sheffield City Council</a>
       </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
-      <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Apply for mobile street trading (fruit and vegetables)</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>[Accordion content]</p>
-      <p>
-        Further information is available here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-fruit-veg" target="_blank" rel="noopener noreferrer">
-        Mobile fruit and vegetable street trader consent | Sheffield City Council</a>
-      </p>
-    </div>
-  </details>
 
-      <details class="accordion">
+  <details class="accordion">
     <summary class="accordion-header">
       <h3>Apply for school street trading consent</h3>
       <div class="accordion-icon"></div>
@@ -4896,25 +4934,29 @@ const streetTradingConsent = new ContentBusiness(
         Further information is available here:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/school-street-trading-consent" target="_blank" rel="noopener noreferrer">School street trading consent | Sheffield City Council</a>
       </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
-      <details class="accordion">
+
+  <details class="accordion">
     <summary class="accordion-header">
-      <h3>Apply for football ground street trading consent</h3>
+      <h3>Apply for static pitch street trading</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>[Accordion content]</p>
       <p>
         Further information is available here:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/football-ground-street-traders-consent" target="_blank" rel="noopener noreferrer">
-        Football ground street trader consent | Sheffield City Council</a>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/static-pitch-street-trading" target="_blank" rel="noopener noreferrer">
+        Static pitch street trading consent | Sheffield City Council</a>
       </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
-      <details class="accordion">
+
+  <details class="accordion">
     <summary class="accordion-header">
       <h3>Apply to change (vary) your street trading consent</h3>
       <div class="accordion-icon"></div>
@@ -4926,21 +4968,38 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/change-vary-street-trading-consent" target="_blank" rel="noopener noreferrer">
         Make a change or variation to your street trading consent | Sheffield City Council</a>
       </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
 
-      <details class="accordion">
+
+  <details class="accordion">
     <summary class="accordion-header">
       <h3>Apply for badges for street trading assistants</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
       <p>
-        Further information is available here:
+        Any person who is working on a street trading pitch must wear an identification badge issued by Sheffield City Council.
+      </p>
+      <p>
+        Assistants may not commence work until being issued with the appropriate identification badge.
+      </p>
+      <p>
+        All badges expire at the end of March and traders will need to apply to renew them.
+      </p>
+      <h4>Costs</h4>
+      <p>
+        The cost of a <strong>new</strong> badge is <strong>£32</strong>.
+        </br>The cost to <strong>renew</strong> a badge is <strong>£32</strong>.
+        </br>The cost of a <strong>replacement</strong> badge is <strong>£22</strong.
+      </p>
+      <p>
+        Further information and a link to apply for badges is available here:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/street-trading-consent-badges" target="_blank" rel="noopener noreferrer">
         Badges for street trading consent holders and assistants | Sheffield City Council</a>
       </p>
+      <p>[Insert Send Link]</p>
     </div>
   </details>
  
@@ -4957,7 +5016,7 @@ const streetTradingConsent = new ContentBusiness(
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "04/09/2026", name: "Liz Taster" }
+  { date: "10/09/2026", name: "Liz Taster" }
 );
 
 
