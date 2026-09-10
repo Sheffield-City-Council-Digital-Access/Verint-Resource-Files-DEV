@@ -6839,7 +6839,6 @@ const sexShopSexCinemaLicence = new ContentBusiness(
   `
     <p>
       Residents or businesses must apply for a licence if they want to operate a sex shop or sex cinema in Sheffield. 
-      Sex establishments are regulated by the local authority and applications are considered under the relevant licensing legislation.
     </p>
 
     <p>
@@ -6852,7 +6851,7 @@ const sexShopSexCinemaLicence = new ContentBusiness(
       </ul>
     <p>
       This type of license <strong>does not cover sexual entertainment venues</strong> (such as a lap dancing or pole dancing club) - these require a different licence.
-      Please instead refer to information about sexual entertainment venue licences.
+      Please instead refer to information about <em>sexual entertainment venue licences</em>.
     </p>
 
     <p>
@@ -6874,7 +6873,7 @@ const sexShopSexCinemaLicence = new ContentBusiness(
     </ul>
     
     <p>
-      A licence can be issued for up to <strong>1 year</strong>.
+      A licence can be issued for <strong>up to 1 year</strong>.
       It is the licence holder's responsibility to ensure a licence is renewed before it expires.
     </p>
  
@@ -6884,7 +6883,7 @@ const sexShopSexCinemaLicence = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>A sex shop or sex cinema licence costs:</p>
+      <p>For a sex shop or sex cinema licence:</p>
         <ul>
           <li>the cost for a <strong>new application</strong> is <strong>£2,351</strong></li>
           <li>the cost to <strong>renew a licence</strong> is <strong>£2,351</strong></li>
@@ -6908,14 +6907,14 @@ const sexShopSexCinemaLicence = new ContentBusiness(
       </p>
         <ul>
           <li>a <strong>completed application form</strong> - this includes personal details, including details of any criminal convictions</li>
-          <li>a plan of the premises</li>
+          <li>a <strong>plan of the premises</strong></li>
           <li>any further documents as required in the application form (determined by the applicant and premises details)</li>
-          <li>evidence of advertising your application - the applicant needs to advertise your application in the local press 
+          <li><strong>evidence of advertising your application</strong> - the applicant needs to advertise your application in the local press 
           <strong>within 7 days</strong> of submitting it to us and display a notice outside the premises for 21 days.</li>
         </ul>
       </p>
       <p>
-        If applying by post, the applicant must also submit a signed privacy statement, and they must notify the Police of their application
+        If applying <em>by post</em>, the applicant must also submit <em>a signed privacy statement</em>, and they must <em>notify the Police of their application</em>
         (this is done automatically if the application is made online).
       </p>
       <p>
@@ -6935,13 +6934,13 @@ const sexShopSexCinemaLicence = new ContentBusiness(
     <div class="accordion-content">
       <p>
         Once the Council has received an application there is a 28 day consultation period where we will consult with 
-        South Yorkshire Police and wait for any objections to the application.
+        South Yorkshire Police and wait for any comments on or objections to the application.
       </p>
       <p>
-        If no comments or objections are raised during this period the application will be granted and the licence will be issued.
+        If no comments or objections are raised during this period, the application will be granted and the licence will be issued.
       </p>
       <p>
-        If objections are received within the consultation period a public hearing must be held to determine your application.
+        If objections are received within the consultation period a public hearing must be held to determine the application.
         The public hearing will generally be held within 20 working days after the last date for comments.
       </p>
        <p>
@@ -6971,14 +6970,14 @@ const sexShopSexCinemaLicence = new ContentBusiness(
 
 const sexualEntertainmentVenueLicence = new ContentBusiness(
   "sexualEntertainmentVenueLicence",
-  "Sexual Entertainement Venue Licence",
+  "Sexual Entertainment Venue Licence",
   "Information on sexual entertainment venue licences and how to apply.",
   `
  
     <p>
       Sexual entertainment venues are defined as “any premises at which relevant entertainment is provided 
       before a live audience for the financial gain of the organiser or the entertainer”. 
-      Relevant entertainement refers to lap dancing, pole dancing, strip shows, etc.
+      'Relevant entertainement' refers to lap dancing, pole dancing, strip shows, etc.
     </p>
 
     <p>
@@ -7000,7 +6999,7 @@ const sexualEntertainmentVenueLicence = new ContentBusiness(
         available on the website.
       </p>
       <p>
-        The <strong>fee to apply for or renew</strong> an application is <strong>£3865</strong>.
+        The <strong>fee to apply for</strong> or <strong>renew</strong> an application is <strong>£3865</strong>.
       </p>
       <p>
         To request an application pack, please get in touch with the licensing team.
@@ -7032,7 +7031,7 @@ const sexualEntertainmentVenueLicence = new ContentBusiness(
         If a valid objection is received, a Licensing Committee will hold a meeting to determine the application.
       </p>
        <p>
-        Customers <strong>must not start operating</strong> until they have received confirmation their licence has been granted.
+        Customers <strong>must not start operating</strong> until they have received confirmation a licence has been granted.
       </p>
     </div>
   </details>
