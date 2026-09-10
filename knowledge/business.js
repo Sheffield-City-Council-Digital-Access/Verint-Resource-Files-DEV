@@ -5629,6 +5629,392 @@ const animalWelfareLicences = new ContentBusiness(
 );
 
 
+const gamblingLicencesPremises = new ContentBusiness(
+  "gamblingLicencesPremises",
+  "Gambling Licences - Premises",
+  "Information about gambling premises licences, including new applications, transfers, variations, permits, licensing objectives and annual fees.",
+  `
+  <p>
+    Sheffield City Council issues gambling premises licences and permits under the Gambling Act 2005.
+  </p>
+  <p>
+    Licences or permits may be required for:
+  </p>
+  <ul>
+    <li>Amusement arcades</li>
+    <li>Casinos</li>
+    <li>Betting shops and bookmakers</li>
+    <li>Horse and dog tracks</li>
+    <li>Bingo premises</li>
+    <li>Pubs and clubs with gaming machines</li>
+    <li>Adult gaming centres</li>
+    <li>Licensed family entertainment centres</li>
+  </ul>
+  <p>
+    The correct application depends on whether you are applying for a new premises licence, transferring an existing licence or changing an existing licence.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Gambling operators may need an operating licence and relevant personal licences from the Gambling Commission before applying to the Council for a premises licence.
+      </p>
+      <p>
+        <strong>Gambling Commission licences and fees:</strong><br>
+        <a href="https://www.gamblingcommission.gov.uk/licensees-and-businesses/licences-and-fees" target="_blank" rel="noopener noreferrer">
+          Licences and Fees | Gambling Commission
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20Commission%20licences%20and%20fees\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        Customers should obtain independent legal advice if they are unsure which licence or permit they require.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>New Premises Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use <strong>Gambling licences - Premises Application New</strong> when applying for a gambling premises licence for premises that do not already hold the required licence.
+      </p>
+      <p>
+        The Council issues premises licences for:
+      </p>
+      <ul>
+        <li>Casinos</li>
+        <li>Betting premises and on-course betting</li>
+        <li>Bingo premises</li>
+        <li>Adult gaming centres</li>
+        <li>Licensed family entertainment centres</li>
+        <li>Racetracks</li>
+      </ul>
+      <p>
+        The application must include the required supporting information and application fee. An application will be invalid if the correct fee is not included.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Premises Transfer</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use <strong>Gambling licences - Premises Transfer</strong> when an existing gambling premises licence needs to be transferred to a new licence holder.
+      </p>
+      <p>
+        A transfer changes the person or organisation responsible for the licence. It does not automatically change the gambling activities or conditions authorised by the existing licence.
+      </p>
+      <p>
+        The new licence holder must comply with the existing licence and its conditions.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Premises Variation</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use <strong>Gambling licences - Premises Variation</strong> when the existing licence holder wants to change the premises licence.
+      </p>
+      <p>
+        This may include changes to:
+      </p>
+      <ul>
+        <li>The licensed gambling activities</li>
+        <li>The layout or area covered by the licence</li>
+        <li>Licence conditions</li>
+        <li>Other details about how the premises operates</li>
+      </ul>
+      <p>
+        A variation does not transfer the licence to another person or organisation. A separate transfer application is required where the licence holder is changing.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Other Gambling Permits and Notices</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council also issues permits for:
+      </p>
+      <ul>
+        <li>Gaming machines in members' clubs and licensed premises</li>
+        <li>Gaming in members' clubs</li>
+        <li>Prize gaming</li>
+        <li>Unlicensed family entertainment centres</li>
+      </ul>
+      <p>
+        The Council also endorses Temporary Use Notices and issues Provisional Statements.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Licensing Objectives</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are considered against three licensing objectives:
+      </p>
+      <ul>
+        <li>Preventing gambling from being associated with crime or disorder</li>
+        <li>Ensuring gambling is conducted fairly and openly</li>
+        <li>Protecting children and vulnerable people from harm or exploitation</li>
+      </ul>
+      <p>
+        Operators should ensure that staff understand how to identify and report safeguarding concerns involving children or vulnerable people.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees and Annual Payments</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The relevant fee must be included with the application. An application will be invalid if the correct fee is not provided.
+      </p>
+      <p>
+        Application fees are not normally refunded if the application is withdrawn or unsuccessful.
+      </p>
+      <p>
+        The first annual fee is payable within <strong>30 days</strong> of the premises licence being issued. Annual fees can then be paid for the different types of licensed gambling premises.
+      </p>
+      <p>
+        <strong>Application forms, fees, annual payments and guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-licences" target="_blank" rel="noopener noreferrer">
+          Gambling Licences | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20licences%20premises\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Customers must select the correct option for a <strong>new application, transfer or variation</strong>.</li>
+    <li>Operators may need the relevant <strong>Gambling Commission licences</strong> before applying to the Council.</li>
+    <li>The correct fee must accompany the application, or it will be invalid.</li>
+    <li>A transfer changes the <strong>licence holder</strong>, while a variation changes the <strong>existing licence details</strong>.</li>
+    <li>The first annual fee is payable within <strong>30 days of the licence being issued</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "gambling_licenced_premises_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "gambling licences",
+      "gambling premises licence",
+      "gambling premises application",
+      "new gambling premises licence",
+      "gambling premises transfer",
+      "gambling premises variation",
+      "casino licence",
+      "betting premises licence",
+      "bingo premises licence",
+      "adult gaming centre",
+      "family entertainment centre",
+      "racetrack licence",
+      "Gambling Commission",
+      "gambling annual fee",
+      "gambling license"
+    ],
+    categories: ["Licences and Permits", "Gambling Licensing"]
+  },
+  { date: "10/09/2026", name: "Andy Walker" }
+);
+
+
+const gamingMachinePermits = new ContentBusiness(
+  "gamingMachinePermits",
+  "Gaming Machine Permits",
+  "Information about applying for, transferring or changing a gaming machine permit and notifying the Council about two or fewer gaming machines.",
+  `
+  <p>
+    Sheffield City Council issues gaming machine permits for licensed premises, members' clubs and other eligible premises.
+  </p>
+  <p>
+    The correct application depends on whether you are applying for a new permit, transferring or changing an existing permit, or notifying the Council that you intend to provide no more than two gaming machines.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for a Gaming Machine Permit</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Licensed Premises Gaming Machine Permit</strong> application if you need permission to provide gaming machines at premises licensed to sell alcohol.
+      </p>
+      <p>
+        The application must include the relevant fee. Applications submitted without the correct fee will be invalid.
+      </p>
+      <p>
+        Application fees are not normally refunded if an application is withdrawn or unsuccessful.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Transfer a Gaming Machine Permit</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Licensed Premises Gaming Machine Permit Transfer</strong> application if the permit needs to be transferred following a change to the person or organisation responsible for the premises.
+      </p>
+      <p>
+        Customers should check the Council webpage for the current application form, fee and supporting information required.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Change a Gaming Machine Permit</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Licensed Premises Gaming Machine Permit Variation</strong> application if changes are required to an existing permit.
+      </p>
+      <p>
+        Customers should check the Council webpage for details of the changes that can be made and the relevant application requirements.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Notification of Two or Fewer Gaming Machines</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use the <strong>Notification of 2 or less gaming machines</strong> option if licensed premises want to notify the Council that they intend to provide no more than two gaming machines.
+      </p>
+      <p>
+        Customers should check the Council webpage for the notification form and current fee.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Gambling Licensing Objectives</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are considered in line with the Gambling Act licensing objectives:
+      </p>
+      <ul>
+        <li>Preventing gambling from being associated with crime or disorder</li>
+        <li>Ensuring gambling is conducted fairly and openly</li>
+        <li>Protecting children and vulnerable people from harm or exploitation</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Further Information and Applications</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        For application forms, current fees and full guidance, visit:
+      </p>
+      <p>
+        <strong>Gambling licences:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-licences" target="_blank" rel="noopener noreferrer">
+          Gambling Licences | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Gambling%20licences%20gaming\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>Select the relevant option for a <strong>new permit, transfer, variation or notification of two or fewer machines</strong>.</li>
+    <li>The correct fee must accompany the application.</li>
+    <li>Application fees are not normally refundable.</li>
+    <li>Direct customers to the Council's gambling licences webpage for the correct form, current fee and application requirements.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "gambling_licenced_premises_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "gaming machine permit",
+      "licensed premises gaming machine permit",
+      "gaming machine permit transfer",
+      "gaming machine permit variation",
+      "notification of 2 or less gaming machines",
+      "two gaming machines",
+      "gaming machines in licensed premises",
+      "gaming machine application",
+      "gaming machine fees",
+      "gambling licence",
+      "gambling permit",
+      "gaming mashine permit"
+    ],
+    categories: ["Licences and Permits", "Gambling Licensing"]
+  },
+  { date: "10/09/2026", name: "Andy Walker" }
+);
+
+
+
 const chaperoneLicences = new ContentBusiness(
   "chaperoneLicences",
   "Chaperone Licences",
@@ -7162,6 +7548,9 @@ const templateTile = new ContentBusiness(
     streetTradingConsent,
     templateTile,
 
+    gamblingLicencesPremises,
+    gamingMachinePermits,
+    
     transferAPremisesLicence,
     removeDPSFromCommunityPremises,
     minorVariationPremisesLicence,
