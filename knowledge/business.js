@@ -3608,11 +3608,9 @@ const taxiVehicleInspections = new ContentBusiness(
 
 //#endregion Taxi Licensing
 
-//#region General Licensing
-
 //#region Alcohol
 
-const notificationOfAnInterest = new ContentPaD(
+const notificationOfAnInterest = new ContentBusiness(
   "notificationOfAnInterest",
   "Notification of an Interest",
   "Information about registering a legal interest in licensed premises, including eligibility, notifications, costs and how to apply.",
@@ -3756,7 +3754,7 @@ const notificationOfAnInterest = new ContentPaD(
 );
 
 
-const personalLicences = new ContentPaD(
+const personalLicences = new ContentBusiness(
   "personalLicences",
   "Personal Licences",
   "Information about applying for a personal licence, relevant convictions, licence validity, changing personal details and replacing a licence.",
@@ -3938,7 +3936,7 @@ const personalLicences = new ContentPaD(
 );
 
 
-const premisesLicence = new ContentPaD(
+const premisesLicence = new ContentBusiness(
   "premisesLicence",
   "Premises Licence",
   "Information about premises licences, licensable activities, application requirements, fees, consultation and changing an existing licence.",
@@ -4165,7 +4163,7 @@ const premisesLicence = new ContentPaD(
 );
 
 
-const provisionalStatement = new ContentPaD(
+const provisionalStatement = new ContentBusiness(
   "provisionalStatement",
   "Provisional Statement",
   "Information about applying for a provisional statement before construction or alteration work begins, including application requirements, advertising and consultation.",
@@ -4391,7 +4389,7 @@ const provisionalStatement = new ContentPaD(
 );
 
 
-const interimAuthorityNotice = new ContentPaD(
+const interimAuthorityNotice = new ContentBusiness(
   "interimAuthorityNotice",
   "Interim Authority Notice",
   "Information about applying for an Interim Authority Notice when a premises licence holder dies, becomes mentally incapable or becomes insolvent.",
@@ -4556,7 +4554,7 @@ const interimAuthorityNotice = new ContentPaD(
 );
 
 
-const changeDesignatedPremisesSupervisor = new ContentPaD(
+const changeDesignatedPremisesSupervisor = new ContentBusiness(
   "changeDesignatedPremisesSupervisor",
   "Change the Designated Premises Supervisor",
   "Information about changing the Designated Premises Supervisor, removing yourself as a DPS and the separate process for community premises.",
@@ -4780,7 +4778,7 @@ const changeDesignatedPremisesSupervisor = new ContentPaD(
 );
 
 
-const changeAPremisesLicence = new ContentPaD(
+const changeAPremisesLicence = new ContentBusiness(
   "changeAPremisesLicence",
   "Change a Premises Licence",
   "Information about changing licensed activities, operating hours, conditions or the layout shown on a premises licence.",
@@ -4974,7 +4972,7 @@ const changeAPremisesLicence = new ContentPaD(
 );
 
 
-const minorVariationPremisesLicence = new ContentPaD(
+const minorVariationPremisesLicence = new ContentBusiness(
   "minorVariationPremisesLicence",
   "Minor Variation to a Premises Licence or Club Premises Certificate",
   "Information about making minor changes to a premises licence or club premises certificate, including eligibility, costs, application requirements and consultation.",
@@ -5161,7 +5159,7 @@ const minorVariationPremisesLicence = new ContentPaD(
 
 
 
-const removeDPSFromCommunityPremises = new ContentPaD(
+const removeDPSFromCommunityPremises = new ContentBusiness(
   "removeDPSFromCommunityPremises",
   "Remove the Designated Premises Supervisor from Community Premises",
   "Information about transferring responsibility for alcohol sales from a Designated Premises Supervisor to the management committee or board of community premises.",
@@ -5333,7 +5331,7 @@ const removeDPSFromCommunityPremises = new ContentPaD(
 );
 
 
-const transferAPremisesLicence = new ContentPaD(
+const transferAPremisesLicence = new ContentBusiness(
   "transferAPremisesLicence",
   "Transfer a Premises Licence",
   "Information about transferring a premises licence following a sale or change of ownership, including fees, application requirements and timescales.",
@@ -5494,8 +5492,9 @@ const transferAPremisesLicence = new ContentPaD(
   { date: "09/09/2026", name: "Andy Walker" }
 );
 
-//#Endregion Alcohol
+//#endregion Alcohol
 
+//#region General Licensing
 
 const animalWelfareLicences = new ContentBusiness(
   "animalWelfareLicences",
