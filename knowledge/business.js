@@ -4819,6 +4819,20 @@ const chaperoneLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
         Apply for or renew a chaperone licence | Sheffield City Council</a>
       </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Chaperone%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -4840,6 +4854,21 @@ const chaperoneLicences = new ContentBusiness(
         Further details and the renewal application form can be found here:
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
         Apply for or renew a chaperone licence | Sheffield City Council</a>
+      </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Chaperone%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
  
@@ -5271,6 +5300,19 @@ const houseToHouseCollections = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
       House to house collection permit | Sheffield City Council</a>
     </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=House%20to%20house%20collection%20permit\`
+        "
+      >
+            Send link to review further information
+    </button>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -7997,6 +8039,20 @@ const smallSocietyLotteries = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
         Small society lotteries | Sheffield City Council</a>
       </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Small%20society%20lotteries\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
  
@@ -8748,7 +8804,7 @@ const temporaryEventNotice = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
       Apply for a Temporary Event Notice | Sheffield City Council</a>
     </p>
-    
+
     <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
