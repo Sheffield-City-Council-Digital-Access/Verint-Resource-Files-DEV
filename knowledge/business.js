@@ -3626,7 +3626,7 @@ const animalWelfareLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
       Animal welfare licences | Sheffield City Council</a>.
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 01 </p>
     
     <p>
       Customers should be advised to look through the information on the website in detail, 
@@ -3676,7 +3676,7 @@ const animalWelfareLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
         Animal welfare licences | Sheffield City Council</a>.
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 02 </p>
       </p>
     </div>
   </details>
@@ -3699,7 +3699,7 @@ const animalWelfareLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
         Animal welfare licences | Sheffield City Council</a>.
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 03 </p>
     </div>
   </details>
  
@@ -3741,6 +3741,427 @@ const animalWelfareLicences = new ContentBusiness(
     categories: ["Business", "General Licensing"]
   },
   { date: "02/09/2026", name: "Liz Taster" }
+);
+
+
+const applyForAClubPremisesCertificate = new ContentBusiness(
+  "applyForAClubPremisesCertificate",
+  "Apply for a Club Premises Certificate",
+  "Information about applying for a club premises certificate, including eligibility, permitted activities, fees, application requirements and advertising.",
+  `
+  <p>
+    A club premises certificate allows a qualifying voluntary or social club to supply alcohol and provide regulated entertainment for its members and their guests.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the Certificate Allows</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A qualifying club can use the certificate to:
+      </p>
+      <ul>
+        <li>Supply alcohol to club members</li>
+        <li>Sell alcohol to guests of members for consumption at the premises</li>
+        <li>Provide regulated entertainment for members and their guests</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Can Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The club must be established and operated in good faith and normally have at least <strong>25 members</strong>.
+      </p>
+      <p>
+        There must usually be at least two days between a person applying or being nominated for membership and receiving membership privileges.
+      </p>
+      <p>
+        Additional conditions apply where alcohol is supplied. Relevant miners' welfare institutes, registered societies and friendly societies may also qualify.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application fee is based on the premises' rateable value:
+      </p>
+      <ul>
+        <li>Band A: £100</li>
+        <li>Band B: £190</li>
+        <li>Band C: £315</li>
+        <li>Band D: £450</li>
+        <li>Band E: £635</li>
+      </ul>
+      <p>
+        An annual fee must also be paid on the anniversary of the date the certificate was granted.
+      </p>
+      <p>
+        Current annual fees and payment links are available on the Council webpage.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What You Need to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application must include:
+      </p>
+      <ul>
+        <li>A completed application form</li>
+        <li>A declaration confirming that the club is a qualifying club</li>
+        <li>A plan of the premises</li>
+        <li>A copy of the club rules</li>
+        <li>The relevant application fee</li>
+        <li>Evidence that the application has been advertised correctly</li>
+        <li>Confirmation that responsible authorities have received the application, unless applying online</li>
+      </ul>
+      <p>
+        The premises plan should normally be drawn to a scale of <strong>1:100</strong> and show the layout, entrances, exits, escape routes, areas used for licensable activities and relevant safety facilities.
+      </p>
+      <p>
+        <strong>Full eligibility, premises plan, advertising and fee requirements:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/apply-club-premises-certificate" target="_blank" rel="noopener noreferrer">
+          Apply for a Club Premises Certificate | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20club%20premises%20certificate\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Advertising the Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application must be advertised:
+      </p>
+      <ul>
+        <li>In a local newspaper within 10 working days of applying</li>
+        <li>By displaying a notice at the premises for at least 28 consecutive days</li>
+      </ul>
+      <p>
+        The premises notice must be A4 or larger, pale blue and printed clearly in black text using a font size of at least 16.
+      </p>
+      <p>
+        Full advertising requirements are available on the Council webpage.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use this service to submit a new application for a club premises certificate.
+      </p>
+      <p>
+        <strong>Apply for a club premises certificate:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/club-licensing/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
+          Apply for a Club Premises Certificate | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20club%20premises%20certificate%20online\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        A separate declaration must also be completed to confirm that the club meets the qualifying conditions.
+      </p>
+      <p>
+        <strong>Complete the qualifying club declaration:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/club-licensing/sheffield/apply-2" target="_blank" rel="noopener noreferrer">
+          Complete the Club Premises Declaration | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Complete%20club%20premises%20declaration\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>The certificate is for qualifying <strong>voluntary or social clubs</strong> supplying alcohol or entertainment to members and guests.</li>
+    <li>The club must normally have at least <strong>25 members</strong>.</li>
+    <li>The application requires a premises plan, club rules, correct fee and evidence of advertising.</li>
+    <li>Both the certificate application and the separate <strong>qualifying club declaration</strong> must be completed.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "club_premises_certificate_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "club premises certificate",
+      "apply for club premises certificate",
+      "qualifying club",
+      "voluntary club",
+      "social club",
+      "club alcohol licence",
+      "regulated entertainment",
+      "club members",
+      "club premises declaration",
+      "club premises fees",
+      "premises plan",
+      "club premises certficate"
+    ],
+    categories: ["Licences and Permits", "Alcohol Licensing"]
+  },
+  { date: "10/09/2026", name: "Andy Walker" }
+);
+
+
+const changeAClubPremisesCertificate = new ContentBusiness(
+  "changeAClubPremisesCertificate",
+  "Change a Club Premises Certificate",
+  "Information about changing a club premises certificate, including permitted changes, fees, application requirements, advertising and consultation.",
+  `
+  <p>
+    You must apply to change a club premises certificate if the club wants to alter the licensed activities, operating hours, conditions or layout of the premises.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Changes You Can Make</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can apply to change:
+      </p>
+      <ul>
+        <li>The hours of a licensable activity</li>
+        <li>The licensable activities provided</li>
+        <li>Conditions attached to the certificate</li>
+        <li>The layout shown on the premises plan</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Minor Variations</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A minor variation may be available for small changes that do not negatively affect the licensing objectives.
+      </p>
+      <p>
+        This process is normally quicker and costs less than a full variation.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Can Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application must be made on behalf of the club. An authorised agent or solicitor may sign the application for the club.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application fee depends on the premises' rateable value:
+      </p>
+      <ul>
+        <li>Band A: £100</li>
+        <li>Band B: £190</li>
+        <li>Band C: £315</li>
+        <li>Band D: £450</li>
+        <li>Band E: £635</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What You Need to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application must include:
+      </p>
+      <ul>
+        <li>A completed variation application</li>
+        <li>A new premises plan if the layout is changing</li>
+        <li>The original club premises certificate and summary, or an explanation if these cannot be provided</li>
+        <li>Evidence that the application has been advertised correctly</li>
+        <li>Confirmation that responsible authorities have received the application, unless applying online</li>
+      </ul>
+      <p>
+        The premises plan should normally be drawn to a scale of <strong>1:100</strong> and show the relevant layout, entrances, exits, escape routes, activity areas and safety facilities.
+      </p>
+      <p>
+        <strong>Full application, premises plan and advertising requirements:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-club-premises-certificate" target="_blank" rel="noopener noreferrer">
+          Change a Club Premises Certificate | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20club%20premises%20certificate\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Advertising the Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The application must be advertised:
+      </p>
+      <ul>
+        <li>In a local newspaper within 10 working days of applying</li>
+        <li>By displaying a notice at the premises for at least 28 consecutive days</li>
+      </ul>
+      <p>
+        The premises notice must be A4 or larger, pale blue and printed clearly in black text using a font size of at least 16.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A <strong>28-day consultation period</strong> begins the day after the application is received.
+      </p>
+      <ul>
+        <li>If no relevant representations are received, the variation will normally be granted</li>
+        <li>If relevant representations are received, a public hearing will be required</li>
+        <li>The hearing will normally take place within <strong>20 working days</strong> after the consultation closes</li>
+      </ul>
+      <p>
+        Tacit consent applies if the applicant has not received a decision by the end of the 28-day period.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use this online service to apply to change an existing club premises certificate.
+      </p>
+      <p>
+        <strong>Apply to change a club premises certificate:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/club-licensing/sheffield/change-1" target="_blank" rel="noopener noreferrer">
+          Apply Online | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20change%20club%20premises%20certificate\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>The application must be made <strong>on behalf of the club</strong>.</li>
+    <li>Fees depend on the premises' <strong>rateable value</strong>.</li>
+    <li>A new premises plan is required if the layout is changing.</li>
+    <li>The application must be advertised and is subject to a <strong>28-day consultation period</strong>.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "club_premises_certificate_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "change a club premises certificate",
+      "club premises certificate variation",
+      "change club licence",
+      "club licensing hours",
+      "club licensable activities",
+      "club licence conditions",
+      "club premises layout",
+      "club premises plan",
+      "club certificate fees",
+      "club premises consultation",
+      "minor variation",
+      "club premises certficate"
+    ],
+    categories: ["Licences and Permits", "Alcohol Licensing"]
+  },
+  { date: "10/09/2026", name: "Andy Walker" }
 );
 
 
@@ -3935,6 +4356,152 @@ const changeAPremisesLicence = new ContentBusiness(
     categories: ["Licences, Permits and Registrations", "Alcohol Licensing"]
   },
   { date: "09/09/2026", name: "Andy Walker" }
+);
+
+
+const changeClubDetailsOrRules = new ContentBusiness(
+  "changeClubDetailsOrRules",
+  "Change Club Details or Rules",
+  "Information about notifying the Council of changes to a club's name, registered address or club rules.",
+  `
+  <p>
+    A club premises certificate must accurately reflect the club's current name, registered address and rules. The club secretary is responsible for notifying the Council when any of these details change.
+  </p>
+  <p>
+    The notification must be made within <strong>28 days</strong> of the change.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Changes That Must Be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council must be notified if the club changes:
+      </p>
+      <ul>
+        <li>Its name</li>
+        <li>Its registered address</li>
+        <li>Its club rules</li>
+      </ul>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost and Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The fee is <strong>£10.50</strong>.
+      </p>
+      <p>
+        The notification must include:
+      </p>
+      <ul>
+        <li>Details of the change</li>
+        <li>The club premises certificate, or an explanation if it cannot be provided</li>
+        <li>The correct fee</li>
+        <li>A copy of the amended club rules, where applicable</li>
+      </ul>
+      <p>
+        <strong>Full requirements and guidance:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-rules-club-premises-certificate" target="_blank" rel="noopener noreferrer">
+          Change Details or Club Rules for a Club Premises Certificate | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20details%20or%20club%20rules\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens Next</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The change takes effect immediately if the required documents and fee are provided.
+      </p>
+      <p>
+        The Council aims to update the certificate within <strong>14 days</strong>.
+      </p>
+      <p>
+        Tacit consent applies if the club has not received a response by the end of the 14-day period.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Notify the Council Online</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Use this service to notify the Council about a change to the club's name, registered address or rules.
+      </p>
+      <p>
+        <strong>Notify the Council online:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/club-licensing/sheffield/change-2" target="_blank" rel="noopener noreferrer">
+          Notify the Council of Changes to Club Details or Rules | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Notify%20changes%20to%20club%20rules\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information for Call Centre Staff</h3>
+  <ul>
+    <li>The notification must be made by the <strong>club secretary within 28 days</strong>.</li>
+    <li>The fee is <strong>£10.50</strong>.</li>
+    <li>The notification must include the certificate and details of the change.</li>
+    <li>The change takes effect immediately if the notification is complete.</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "club_premises_certificate_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "change club details",
+      "change club rules",
+      "club premises certificate",
+      "change club name",
+      "change club address",
+      "registered club address",
+      "amend club rules",
+      "club secretary",
+      "notify club changes",
+      "update club premises certificate",
+      "club certificate fee",
+      "change club detials"
+    ],
+    categories: ["Licences and Permits", "Club Premises Certificates"]
+  },
+  { date: "10/09/2026", name: "Andy Walker" }
 );
 
 
@@ -4180,7 +4747,7 @@ const chaperoneLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
       Apply for or renew a chaperone licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 04 </p>
  
 
     <details class="accordion">
@@ -4683,7 +5250,7 @@ const houseToHouseCollections = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
         House to house collection permit | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 05</p>
     </div>
   </details>
 
@@ -4791,7 +5358,7 @@ const hypnotismAuthorisation = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/hypnotism-licence" target="_blank" rel="noopener noreferrer">
         Hypnotism authorisation | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 06</p>
     </div>
   </details>
 
@@ -5031,7 +5598,7 @@ const marriagePremisesApproval = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
       Marriage and civil partnership premises approval | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 07</p>
 
 
   <details class="accordion">
@@ -5064,7 +5631,7 @@ const marriagePremisesApproval = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
         Marriage and civil partnership premises approval | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 08 </p>
     </div>
   </details>
 
@@ -5137,7 +5704,7 @@ const marriagePremisesApproval = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
         Marriage and civil partnership premises approval | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 09 </p>
     </div>
   </details>
  
@@ -5558,14 +6125,14 @@ const PavementCafeLicencesHighways = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/pavement-cafe-licence" target="_blank" rel="noopener noreferrer">
       Pavement café licences | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 10 </p>
 
     <p>
       Details of the application requirements and a link to the online application can be found here:
       <a href="https://www.sheffield.gov.uk/utilities/form/business/licences-permits-registrations/apply-pavement-cafe-licence-start" target="_blank" rel="noopener noreferrer">
       Apply for a pavement café licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 11 </p>
  
   `,
  
@@ -6428,7 +6995,7 @@ const scrapMetalLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
       Scrap metal dealers licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 12 </p>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -6565,7 +7132,7 @@ const scrapMetalLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
         Change a scrap metal dealers licence | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 13 </p>
     </div>
   </details>
 
@@ -6626,7 +7193,7 @@ const secondHandDealerReg = new ContentBusiness(
       Second hand dealer registration | Sheffield City Council</a>
     </p>
 
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 14 </p>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -6696,7 +7263,7 @@ const sexShopSexCinemaLicence = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
       Sex shop and sex cinema licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 15 </p>
 
     <p>
       If granted, licence holders must comply with any conditions attached to the licence. 
@@ -6759,7 +7326,7 @@ const sexShopSexCinemaLicence = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
         Sex shop and sex cinema licence | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 16 </p>
     </div>
   </details>
 
@@ -6822,7 +7389,7 @@ const sexualEntertainmentVenueLicence = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-entertainment-and-temporary-events/sexual-entertainment" target="_blank" rel="noopener noreferrer">
       Sexual entertainment venue licences | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 17 </p>
 
 
   <details class="accordion">
@@ -6849,7 +7416,7 @@ const sexualEntertainmentVenueLicence = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-entertainment-and-temporary-events/sexual-entertainment" target="_blank" rel="noopener noreferrer">
         Sexual entertainment venue licences | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 18 </p>
     </div>
   </details>
 
@@ -6932,7 +7499,7 @@ const skinPiercingRegistration = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
       Skin piercing registration | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 19 </p>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -6954,7 +7521,7 @@ const skinPiercingRegistration = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
         Skin piercing registration | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 20 </p>
     </div>
   </details>
 
@@ -7034,7 +7601,7 @@ const smallSocietyLotteries = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
       Small society lotteries | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 21 </p>
  
 
     <details class="accordion">
@@ -7080,7 +7647,7 @@ const smallSocietyLotteries = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/utilities/form/business/licensing/submit-small-society-lottery-draw-return-start" target="_blank" 
         rel="noopener noreferrer">File a return for a non-commercial society lottery draw | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 22 </p>
     </div>
   </details>
 
@@ -7111,7 +7678,7 @@ const smallSocietyLotteries = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
       Small society lotteries | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 23 </p>
     </div>
   </details>
 
@@ -7191,7 +7758,7 @@ const streetCollectionPermit = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-collection-permit" target="_blank" rel="noopener noreferrer">
       ⁠Street collection permit | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 24 </p>
  
 
     <details class="accordion">
@@ -7222,7 +7789,7 @@ const streetCollectionPermit = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-collection-permit" target="_blank" rel="noopener noreferrer">
       ⁠   Street collection permit | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 25 </p>
 
       <p>
         Charities who wish to collect Direct Debit details in the City Centre need to email 
@@ -7314,7 +7881,7 @@ const streetPartyLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-party-licences" target="_blank" rel="noopener noreferrer">
       Street party licences | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 26 </p>
  
 
     <details class="accordion">
@@ -7341,7 +7908,7 @@ const streetPartyLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
         Apply for a Temporary Event Notice | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 27 </p>
     </div>
   </details>
  
@@ -7434,7 +8001,7 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/football-ground-street-traders-consent" target="_blank" rel="noopener noreferrer">
         Football ground street trader consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 28 </p>
     </div>
   </details>
 
@@ -7463,7 +8030,7 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-fruit-veg" target="_blank" rel="noopener noreferrer">
         Mobile fruit and vegetable street trader consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 29 </p>
     </div>
   </details>
 
@@ -7498,7 +8065,7 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-ice-cream" target="_blank" rel="noopener noreferrer">
         Mobile ice cream street trader consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 30 </p>
     </div>
   </details>
 
@@ -7526,9 +8093,10 @@ const streetTradingConsent = new ContentBusiness(
       </p> 
       <p>
         Further information is available here - including street stall criteria and application forms:
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/school-street-trading-consent" target="_blank" rel="noopener noreferrer">School street trading consent | Sheffield City Council</a>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/school-street-trading-consent" target="_blank" rel="noopener noreferrer">
+        School street trading consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 31 </p>
     </div>
   </details>
 
@@ -7572,7 +8140,7 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/static-pitch-street-trading" target="_blank" rel="noopener noreferrer">
         Static pitch street trading consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 32 </p>
     </div>
   </details>
 
@@ -7602,7 +8170,7 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/change-vary-street-trading-consent" target="_blank" rel="noopener noreferrer">
         Make a change or variation to your street trading consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 33 </p>
     </div>
   </details>
 
@@ -7632,7 +8200,7 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/street-trading-consent-badges" target="_blank" rel="noopener noreferrer">
         Badges for street trading consent holders and assistants | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link]</p>
+      <p>[Insert Send Link] 34 </p>
     </div>
   </details>
  
@@ -7716,7 +8284,7 @@ const temporaryEventNotice = new ContentBusiness(
     <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
     Apply for a Temporary Event Notice | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link]</p>
+  <p>[Insert Send Link] 35 </p>
  
   <details class="accordion">
     <summary class="accordion-header">
@@ -7741,7 +8309,7 @@ const temporaryEventNotice = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
       Apply for a Temporary Event Notice | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link]</p>
+    <p>[Insert Send Link] 36 </p>
     </div>
   </details>
 
@@ -7952,13 +8520,25 @@ const transferAPremisesLicence = new ContentBusiness(
 );
 
 
+
+
+
+
+
+
+
+
+
   const generalLicensing = new MenuBusiness(
   "generalLicensing",
   "General Licensing",
   "Information regarding a variety of different types of licensing and registration (not Taxi).",
   [
     animalWelfareLicences,
+    applyForAClubPremisesCertificate,
+    changeAClubPremisesCertificate,
     changeAPremisesLicence,
+    changeClubDetailsOrRules,
     changeDesignatedPremisesSupervisor,
     chaperoneLicences,
     gamblingLicencesPremises,
