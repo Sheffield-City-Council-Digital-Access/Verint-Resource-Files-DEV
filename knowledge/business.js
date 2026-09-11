@@ -7698,7 +7698,7 @@ const temporaryEventNotice = new ContentBusiness(
   </p>
 
   <p>
-    The <strong>cost</strong> to apply for a Temporary Event Notification is <strong>£21</strong>.
+    The <strong>cost</strong> to apply for a Temporary Event Notice is <strong>£21</strong>.
   </p>
 
   <p>
@@ -7707,12 +7707,12 @@ const temporaryEventNotice = new ContentBusiness(
     <ul>
       <li>a <strong>maximum capacity of 499 people</strong> at any one time, including attendees, staff and performers</li>
       <li>events lasting <strong>less than 7 days</strong> (168 hours)</li>
-      <li>a minimum of 24 hours between temporary event notices on the same premises</li>
-      <li>a temporary event notice does not exempt the holder from any requirements under e.g. planning law</li>
+      <li>a minimum of 24 hours between Temporary Event Notices on the same premises</li>
+      <li>a Temporary Event Notice does not exempt the holder from any requirements under e.g. planning law</li>
     </ul>
 
   <p>
-    Further information about how to apply for a temporary event notice can be found here:
+    Further information about how to apply for a Temporary Event Notice can be found here:
     <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
     Apply for a Temporary Event Notice | Sheffield City Council</a>
   </p>
@@ -7755,13 +7755,13 @@ const temporaryEventNotice = new ContentBusiness(
         Once the Council receives an application that complies with our restrictions, we will acknowledge the notice and send this back to the applicant.
       </p>
       <p>
-        The Council cannot refuse a valid temporary event notice unless the responsible authorities object to it.
+        The Council cannot refuse a valid Temporary Event Notice unless the responsible authorities object to it.
         Objections may only be raised if it is considered the event could lead to crime and disorder, cause a public nuisance, be a threat to public 
         safety or put children at risk of harm.
       </p>
       <p>
         During the event or activity a copy of the Temporary Event Notice must be prominently displayed at the premises.
-        The temporary event notice must be kept at the premises either in the applicants custody or in the custody of a person they have nominated.
+        The Temporary Event Notice must be kept at the premises either in the applicants custody or in the custody of a person they have nominated.
         A police officer or authorised person may request to see this document during the event.
       </p>
       <p>
