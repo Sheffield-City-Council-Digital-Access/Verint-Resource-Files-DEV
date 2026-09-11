@@ -3626,7 +3626,19 @@ const animalWelfareLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
       Animal welfare licences | Sheffield City Council</a>.
     </p>
-    <p>[Insert Send Link] 01 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Licences\`
+        "
+      >
+            Send link to review further information
+    </button>
     
     <p>
       Customers should be advised to look through the information on the website in detail, 
@@ -3676,7 +3688,20 @@ const animalWelfareLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
         Animal welfare licences | Sheffield City Council</a>.
       </p>
-      <p>[Insert Send Link] 02 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Licences\`
+        "
+      >
+            Send link to review further information
+    </button>
+
       </p>
     </div>
   </details>
@@ -3699,7 +3724,20 @@ const animalWelfareLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
         Animal welfare licences | Sheffield City Council</a>.
       </p>
-      <p>[Insert Send Link] 03 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Licences\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
  
@@ -4747,7 +4785,19 @@ const chaperoneLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/child-licensing/chaperone-licence" target="_blank" rel="noopener noreferrer">
       Apply for or renew a chaperone licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 04 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Chaperone%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
  
 
     <details class="accordion">
@@ -5250,7 +5300,20 @@ const houseToHouseCollections = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/house-to-house-collection-permit" target="_blank" rel="noopener noreferrer">
         House to house collection permit | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 05</p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=House%20to%20house%20collection%20permit\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -5358,7 +5421,20 @@ const hypnotismAuthorisation = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/hypnotism-licence" target="_blank" rel="noopener noreferrer">
         Hypnotism authorisation | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 06</p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Hypnotism%20authorisation\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -5598,7 +5674,19 @@ const marriagePremisesApproval = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
       Marriage and civil partnership premises approval | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 07</p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Marriage%20and%20civil%20partnership%20premises%20approval\`
+        "
+      >
+            Send link to review further information
+    </button>
 
 
   <details class="accordion">
@@ -5631,7 +5719,20 @@ const marriagePremisesApproval = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
         Marriage and civil partnership premises approval | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 08 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Marriage%20and%20civil%20partnership%20premises%20approval\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -5704,7 +5805,20 @@ const marriagePremisesApproval = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/marriage-civil-partnership-premises-approval" target="_blank" rel="noopener noreferrer">
         Marriage and civil partnership premises approval | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 09 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Marriage%20and%20civil%20partnership%20premises%20approval\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
  
@@ -6125,14 +6239,38 @@ const PavementCafeLicencesHighways = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/pavement-cafe-licence" target="_blank" rel="noopener noreferrer">
       Pavement café licences | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 10 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Pavement%20cafe%20licences\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       Details of the application requirements and a link to the online application can be found here:
       <a href="https://www.sheffield.gov.uk/utilities/form/business/licences-permits-registrations/apply-pavement-cafe-licence-start" target="_blank" rel="noopener noreferrer">
       Apply for a pavement café licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 11 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20pavement%20cafe%20licence\`
+        "
+      >
+            Send link to review further information
+    </button>
  
   `,
  
@@ -6995,7 +7133,19 @@ const scrapMetalLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
       Scrap metal dealers licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 12 </p>
+  
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Scrap%20metal%20dealers%20licence\`
+        "
+      >
+            Send link to review further information
+    </button>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -7132,7 +7282,20 @@ const scrapMetalLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
         Change a scrap metal dealers licence | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 13 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20scrap%20metal%20dealers%20licence\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -7193,7 +7356,18 @@ const secondHandDealerReg = new ContentBusiness(
       Second hand dealer registration | Sheffield City Council</a>
     </p>
 
-    <p>[Insert Send Link] 14 </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Second%20hand%20dealer%20registration\`
+        "
+      >
+            Send link to review further information
+    </button>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -7263,7 +7437,19 @@ const sexShopSexCinemaLicence = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
       Sex shop and sex cinema licence | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 15 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Sex%20shop%20and%20sex%20cinema%20licence\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       If granted, licence holders must comply with any conditions attached to the licence. 
@@ -7326,7 +7512,20 @@ const sexShopSexCinemaLicence = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
         Sex shop and sex cinema licence | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 16 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Sex%20shop%20and%20sex%20cinema%20licence\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -7389,7 +7588,19 @@ const sexualEntertainmentVenueLicence = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-entertainment-and-temporary-events/sexual-entertainment" target="_blank" rel="noopener noreferrer">
       Sexual entertainment venue licences | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 17 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Sexual%20entertainment%20venue%20licences\`
+        "
+      >
+            Send link to review further information
+    </button>
 
 
   <details class="accordion">
@@ -7416,7 +7627,20 @@ const sexualEntertainmentVenueLicence = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/gambling-entertainment-and-temporary-events/sexual-entertainment" target="_blank" rel="noopener noreferrer">
         Sexual entertainment venue licences | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 18 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Sexual%20entertainment%20venue%20licences\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -7499,7 +7723,19 @@ const skinPiercingRegistration = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
       Skin piercing registration | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 19 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
+        "
+      >
+            Send link to review further information
+    </button>
  
     <details class="accordion">
     <summary class="accordion-header">
@@ -7521,7 +7757,20 @@ const skinPiercingRegistration = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
         Skin piercing registration | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 20 </p>
+  	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -7601,7 +7850,19 @@ const smallSocietyLotteries = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
       Small society lotteries | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 21 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Small%20society%20lotteries\`
+        "
+      >
+            Send link to review further information
+    </button>
  
 
     <details class="accordion">
@@ -7647,7 +7908,20 @@ const smallSocietyLotteries = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/utilities/form/business/licensing/submit-small-society-lottery-draw-return-start" target="_blank" 
         rel="noopener noreferrer">File a return for a non-commercial society lottery draw | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 22 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=File%20a%20return%20for%20a%20non-commercial%20society%20lottery%20draw\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -7678,7 +7952,20 @@ const smallSocietyLotteries = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/small-society-lotteries" target="_blank" rel="noopener noreferrer">
       Small society lotteries | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 23 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Small%20society%20lotteries\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -7758,7 +8045,19 @@ const streetCollectionPermit = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-collection-permit" target="_blank" rel="noopener noreferrer">
       ⁠Street collection permit | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 24 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=⁠Street%20collection%20permit\`
+        "
+      >
+            Send link to review further information
+    </button>
  
 
     <details class="accordion">
@@ -7789,7 +8088,19 @@ const streetCollectionPermit = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-collection-permit" target="_blank" rel="noopener noreferrer">
       ⁠   Street collection permit | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 25 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=⁠Street%20collection%20permit\`
+        "
+      >
+            Send link to review further information
+    </button>
 
       <p>
         Charities who wish to collect Direct Debit details in the City Centre need to email 
@@ -7881,7 +8192,19 @@ const streetPartyLicences = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-party-licences" target="_blank" rel="noopener noreferrer">
       Street party licences | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 26 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Street%20party%20licences\`
+        "
+      >
+            Send link to review further information
+    </button>
  
 
     <details class="accordion">
@@ -7908,7 +8231,20 @@ const streetPartyLicences = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
         Apply for a Temporary Event Notice | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 27 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Temporary%20Event%20Notice\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
  
@@ -8001,7 +8337,20 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/football-ground-street-traders-consent" target="_blank" rel="noopener noreferrer">
         Football ground street trader consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 28 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Football%20ground%20street%20trader%20consent\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -8030,7 +8379,20 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-fruit-veg" target="_blank" rel="noopener noreferrer">
         Mobile fruit and vegetable street trader consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 29 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Mobile%20fruit%20and%20vegetable%20street%20trader%20consent\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -8065,7 +8427,20 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/mobile-trading-ice-cream" target="_blank" rel="noopener noreferrer">
         Mobile ice cream street trader consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 30 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Mobile%20ice%20cream%20street%20trader%20consent\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -8096,7 +8471,20 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/school-street-trading-consent" target="_blank" rel="noopener noreferrer">
         School street trading consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 31 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=School%20street%20trading%20consent\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -8140,7 +8528,20 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/static-pitch-street-trading" target="_blank" rel="noopener noreferrer">
         Static pitch street trading consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 32 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Static%20pitch%20street%20trading%20consent\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -8170,7 +8571,20 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/change-vary-street-trading-consent" target="_blank" rel="noopener noreferrer">
         Make a change or variation to your street trading consent | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 33 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Make%20a%20change%20to%20your%20street%20trading%20consent\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -8200,7 +8614,20 @@ const streetTradingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/street-trading-licenses/street-trading-consent-badges" target="_blank" rel="noopener noreferrer">
         Badges for street trading consent holders and assistants | Sheffield City Council</a>
       </p>
-      <p>[Insert Send Link] 34 </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Badges%20for%20street%20trading%20assistants\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
  
@@ -8284,7 +8711,19 @@ const temporaryEventNotice = new ContentBusiness(
     <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
     Apply for a Temporary Event Notice | Sheffield City Council</a>
   </p>
-  <p>[Insert Send Link] 35 </p>
+	
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Temporary%20Event%20Notice\`
+        "
+      >
+            Send link to review further information
+    </button>
  
   <details class="accordion">
     <summary class="accordion-header">
@@ -8309,7 +8748,20 @@ const temporaryEventNotice = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
       Apply for a Temporary Event Notice | Sheffield City Council</a>
     </p>
-    <p>[Insert Send Link] 36 </p>
+    
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Temporary%20Event%20Notice\`
+        "
+      >
+            Send link to review further information
+    </button>
+
     </div>
   </details>
 
@@ -8518,15 +8970,6 @@ const transferAPremisesLicence = new ContentBusiness(
   },
   { date: "09/09/2026", name: "Andy Walker" }
 );
-
-
-
-
-
-
-
-
-
 
 
   const generalLicensing = new MenuBusiness(
