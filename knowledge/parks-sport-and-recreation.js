@@ -1679,7 +1679,7 @@ const bookRoomOrParkBuilding = new ContentPSaR(
     </ul>
 
   <p>
-    Information about parks bookings and a link to the online booking form can be found here:
+    A link to the online booking form can be found here - please note these rooms are booked with the same form used to book events in parks:
     <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
     Events in parks | Sheffield City Council</a>
   </p>
@@ -2170,8 +2170,12 @@ const weddingsInParks = new ContentPSaR(
     Those making a booking will need to book the registrar separately through the Ceremonies team.
   </p>
   <p>
-    To enquire about a wedding ceremony please contact <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
-    with the following details:
+    To enquire about a wedding ceremony please complete the online form available here - please wedding enquiriesa are made with the same form used to book events in parks:
+    <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    Events in parks | Sheffield City Council</a>
+  </p>
+  <p> 
+    The form will require you to provide the below details:
   </p>
     <ul>
       <li>Preferred location – Sheffield Botanical Gardens or Woodland Discovery Centre</li>
@@ -2180,7 +2184,7 @@ const weddingsInParks = new ContentPSaR(
       <li>Any other relevant information you wish to provide</li>
     </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request a wedding in a park", formName: "request_booking_parks" },
   { typeKey: "" },
   { typeKey: "parks_information_provided" },
   {
@@ -2840,7 +2844,7 @@ const gravesPark = new ContentPSaR(
       >
             Send link to review further information
     </button>
-    
+
       <p>
         <strong>Can I donate an animal?</strong> No, we don’t take animals as donations and are unable to rescue animals.
       </p>
@@ -3065,8 +3069,24 @@ const playgrounds = new ContentPSaR(
     Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
     form.
   </p>
-  <p>Information about this topic will be available on the Council Website</p>
-  <p>[Insert Send Link] 05</p>
+  <p>
+    Further information about playgrounds can be found here - there is a link to report an issue with a playground halfway down the page:
+    <a href="https://cms.sheffield.gov.uk/preview-link/node/18/e9a6d49d-14f6-4da7-9311-0f1b58117102" target="_blank" rel="noopener noreferrer">
+    Parks and green spaces | Sheffield City Council</a>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20and%20green%20spaces\`
+        "
+      >
+            Send link to review further information
+    </button>
+
   <p>
     Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
     Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
@@ -3669,10 +3689,11 @@ const dogBins = new ContentPSaR(
     repairs or replacements are considered based on the condition of the bin.
   </p>
   <p>
-    To report an issue with a dog waste bin, use the online form.
+    To report an issue with a dog waste bin, use the online form available here:
+    <a href="http://www.acisgroup.co.uk" target="_blank" rel="noopener noreferrer">http://www.acisgroup.co.uk</a>
   </p>
   <p>Information about this topic will be available on the Council Website</p>
-  <p>[Insert Send Link] 06</p>
+ 
 
 `,
   { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
