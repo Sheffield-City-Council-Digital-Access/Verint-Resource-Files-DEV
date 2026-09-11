@@ -7683,9 +7683,9 @@ const temporaryEventNotice = new ContentBusiness(
   </p>
 
   <p>
-    A TEN must be submitted 10 clear working days before the day of the event.
-    </br> A TEN submitted between 5-9 working days before the day of the event is considered a 'late temporary event notice'.
-    </br> A TEN cannot be submitted with fewer than 5 clear working days before the event.
+    A TEN application must be submitted 10 clear working days before the day of the event.
+    </br> A TEN application submitted between 5-9 working days before the day of the event is considered a 'late temporary event notice'.
+    </br> A TEN application cannot be submitted with fewer than 5 clear working days before the event.
   </p>
 
   <p>
@@ -7694,11 +7694,11 @@ const temporaryEventNotice = new ContentBusiness(
     </br><strong>Individuals</strong> without a personal licence may apply for <strong>up to 5</strong> TENs a year (or 2 late TENs).
   </p>
   <p>
-    The applicant who applies for the notice will be accountable for the whole event.
+    The person who applies for the notice will be accountable for the whole event.
   </p>
 
   <p>
-    The <strong>cost</strong> to apply for a temporary Event notification is <strong>£21</strong>.
+    The <strong>cost</strong> to apply for a Temporary Event Notification is <strong>£21</strong>.
   </p>
 
   <p>
@@ -7706,7 +7706,7 @@ const temporaryEventNotice = new ContentBusiness(
   </p>
     <ul>
       <li>a <strong>maximum capacity of 499 people</strong> at any one time, including attendees, staff and performers</li>
-      <li>events lasting less than 7 days (168 hours)</li>
+      <li>events lasting <strong>less than 7 days</strong> (168 hours)</li>
       <li>a minimum of 24 hours between temporary event notices on the same premises</li>
       <li>a temporary event notice does not exempt the holder from any requirements under e.g. planning law</li>
     </ul>
@@ -7752,7 +7752,7 @@ const temporaryEventNotice = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        Once the Council receives your application and it complies with our restrictions, we will acknowledge your notice and send this back to you.
+        Once the Council receives an application that complies with our restrictions, we will acknowledge the notice and send this back to the applicant.
       </p>
       <p>
         The Council cannot refuse a valid temporary event notice unless the responsible authorities object to it.
@@ -7760,12 +7760,12 @@ const temporaryEventNotice = new ContentBusiness(
         safety or put children at risk of harm.
       </p>
       <p>
-        During the event or activity a copy of the temporary event notice must be prominently displayed at the premises.
+        During the event or activity a copy of the Temporary Event Notice must be prominently displayed at the premises.
         The temporary event notice must be kept at the premises either in the applicants custody or in the custody of a person they have nominated.
-        A police officer or authorised person may request to see this document.
+        A police officer or authorised person may request to see this document during the event.
       </p>
       <p>
-        Unlike most licences, an applicant can carry out the event even if they have not heard back from the Council.
+        Unlike most licences, <strong>tacit consent does apply</strong>. An applicant can carry out the event even if they have not heard back from the Council.
       </p>
     </div>
   </details>
