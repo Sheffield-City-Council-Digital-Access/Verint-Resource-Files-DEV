@@ -2174,6 +2174,20 @@ const weddingsInParks = new ContentPSaR(
     <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
     Events in parks | Sheffield City Council</a>
   </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20events%20in%20parks\`
+        "
+      >
+            Send link to review further information
+    </button>
+
   <p> 
     The form will require you to provide the below details:
   </p>
@@ -3690,10 +3704,9 @@ const dogBins = new ContentPSaR(
   </p>
   <p>
     To report an issue with a dog waste bin, use the online form available here:
-    <a href="http://www.acisgroup.co.uk" target="_blank" rel="noopener noreferrer">http://www.acisgroup.co.uk</a>
+    <a href="https://cms.sheffield.gov.uk/REPLACE-ME" target="_blank" rel="noopener noreferrer">
+    https://cms.sheffield.gov.uk/REPLACE-ME</a>
   </p>
-  <p>Information about this topic will be available on the Council Website</p>
- 
 
 `,
   { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
