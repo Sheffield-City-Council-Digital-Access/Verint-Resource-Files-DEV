@@ -7579,7 +7579,7 @@ const streetTradingConsent = new ContentBusiness(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Apply to change (vary) your street trading consent</h3>
+      <h3>Apply to change (vary) a street trading consent</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -7674,21 +7674,99 @@ const streetTradingConsent = new ContentBusiness(
 const temporaryEventNotice = new ContentBusiness(
   "temporaryEventNotice",
   "Temporary Event Notice",
-  "Description to go on main tile.",
+  "Details of when a Temporary Event Notice is needed and how to apply for one.",
   `
-    <p>
-      Further information about how to apply for a temporary event notice can be found here:
-      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
-      Apply for a Temporary Event Notice | Sheffield City Council</a>
-    </p>
+  <p>
+    A Temporary Event Notice (TEN) enables someone to legally host short-term events involving alcohol and entertainment.
+    A TEN is needed for one-off events and occasions that involve alcohol, entertainment or late night refreshment; 
+    or for events not covered by an existing licence.
+  </p>
+
+  <p>
+    A TEN must be submitted 10 clear working days before the day of the event.
+    </br> A TEN submitted between 5-9 working days before the day of the event is considered a 'late temporary event notice'.
+    </br> A TEN cannot be submitted with fewer than 5 clear working days before the event.
+  </p>
+
+  <p>
+    Anyone over the age of 18 can apply for a TEN.
+    </br><strong>Personal licence holders</strong> may apply for <strong>up to 50</strong> TENs a year (or 10 late TENs).
+    </br><strong>Individuals</strong> without a personal licence may apply for <strong>up to 5</strong> TENs a year (or 2 late TENs).
+  </p>
+  <p>
+    The applicant who applies for the notice will be accountable for the whole event.
+  </p>
+
+  <p>
+    The <strong>cost</strong> to apply for a temporary Event notification is <strong>£21</strong>.
+  </p>
+
+  <p>
+    Temporary Event Notices are limited to:
+  </p>
+    <ul>
+      <li>a <strong>maximum capacity of 499 people</strong> at any one time, including attendees, staff and performers</li>
+      <li>events lasting less than 7 days (168 hours)</li>
+      <li>a minimum of 24 hours between temporary event notices on the same premises</li>
+      <li>a temporary event notice does not exempt the holder from any requirements under e.g. planning law</li>
+    </ul>
+
+  <p>
+    Further information about how to apply for a temporary event notice can be found here:
+    <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
+    Apply for a Temporary Event Notice | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
  
-    <details class="accordion">
+  <details class="accordion">
     <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
+      <h3>How to Apply</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>
+        Customers can apply online or can download an application form and submit this by email to 
+        <a href="mailto:licensingservice@sheffield.gov.uk">licensingservice@sheffield.gov.uk</a>
+      </p>
+      <p>
+        Customers must submit:
+      </p>
+        <ul>
+          <li>a completed Temporary Event Notice application</li>
+          <li>a fee of £21</li>
+          <li>a floor plan - where the event is in an open space, or applies to a smaller section of a large event</li>
+        </ul>
+      <p>
+      Further information about how to apply and a link to the application form can be found here:
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/temporary-event-notice" target="_blank" rel="noopener noreferrer">
+      Apply for a Temporary Event Notice | Sheffield City Council</a>
+    </p>
+    <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Happens After Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once the Council receives your application and it complies with our restrictions, we will acknowledge your notice and send this back to you.
+      </p>
+      <p>
+        The Council cannot refuse a valid temporary event notice unless the responsible authorities object to it.
+        Objections may only be raised if it is considered the event could lead to crime and disorder, cause a public nuisance, be a threat to public 
+        safety or put children at risk of harm.
+      </p>
+      <p>
+        During the event or activity a copy of the temporary event notice must be prominently displayed at the premises.
+        The temporary event notice must be kept at the premises either in the applicants custody or in the custody of a person they have nominated.
+        A police officer or authorised person may request to see this document.
+      </p>
+      <p>
+        Unlike most licences, an applicant can carry out the event even if they have not heard back from the Council.
+      </p>
     </div>
   </details>
  
@@ -7696,7 +7774,7 @@ const temporaryEventNotice = new ContentBusiness(
  
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "enquiry_type_information_provided" },
+  { typeKey: "temporary_events_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -7708,7 +7786,7 @@ const temporaryEventNotice = new ContentBusiness(
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "10/09/2026", name: "Liz Taster" }
+  { date: "11/09/2026", name: "Liz Taster" }
 );
 
 
