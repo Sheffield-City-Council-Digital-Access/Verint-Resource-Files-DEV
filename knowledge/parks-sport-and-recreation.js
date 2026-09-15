@@ -1678,7 +1678,24 @@ const bookRoomOrParkBuilding = new ContentPSaR(
       <li>Graves Park Animal Farm</li>
     </ul>
 
-  <p>Information about this topic will be available on the Council Website</p>
+  <p>
+    A link to the online booking form can be found here - please note these rooms are booked with the same form used to book events in parks:
+    <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    Events in parks | Sheffield City Council</a>
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20events%20in%20parks\`
+        "
+      >
+            Send link to review further information
+    </button>
   
   <p>
     The form is available on the website and must be completed by the interested party due to liability issues - 
@@ -2153,8 +2170,26 @@ const weddingsInParks = new ContentPSaR(
     Those making a booking will need to book the registrar separately through the Ceremonies team.
   </p>
   <p>
-    To enquire about a wedding ceremony please contact <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
-    with the following details:
+    To enquire about a wedding ceremony please complete the online form available here - please wedding enquiriesa are made with the same form used to book events in parks:
+    <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    Events in parks | Sheffield City Council</a>
+  </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20events%20in%20parks\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <p> 
+    The form will require you to provide the below details:
   </p>
     <ul>
       <li>Preferred location – Sheffield Botanical Gardens or Woodland Discovery Centre</li>
@@ -2163,7 +2198,7 @@ const weddingsInParks = new ContentPSaR(
       <li>Any other relevant information you wish to provide</li>
     </ul>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request a wedding in a park", formName: "request_booking_parks" },
   { typeKey: "" },
   { typeKey: "parks_information_provided" },
   {
@@ -2219,7 +2254,23 @@ const donatingToParks = new ContentPSaR(
     Further details can be found below about donation types and how they are used.
   </p>
 
-  <p>Information about this topic will be available on the Council Website</p>
+  <p>
+    Further information and a link to the online form to donate to parks can be found here:
+    <a href="https://cms.sheffield.gov.uk/preview-link/node/9526/c5f16f76-97fb-4bfe-addb-4b1352231fb6" target="_blank" rel="noopener noreferrer">
+    Donate to a park | Sheffield City Council</a>
+  </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Donate%20to%20a%20park\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Donating Money</h3>
     <p>
@@ -2790,9 +2841,24 @@ const gravesPark = new ContentPSaR(
         Donations must be agreed by the park manager and delivered to the park; we do not collect donations. Customers should complete the online donation form.
       </p>
       <p>
-        Further details are available on the website.
+        Further details about donating to parks, including a link to the online form to make a donation, is available here:
+        <a href="https://cms.sheffield.gov.uk/preview-link/node/9526/c5f16f76-97fb-4bfe-addb-4b1352231fb6" target="_blank" rel="noopener noreferrer">
+        Donate to a park | Sheffield City Council</a>
       </p>
-      <p>Information about this topic will be available on the Council Website</p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Donate%20to%20a%20park\`
+        "
+      >
+            Send link to review further information
+    </button>
+
       <p>
         <strong>Can I donate an animal?</strong> No, we don’t take animals as donations and are unable to rescue animals.
       </p>
@@ -2845,9 +2911,25 @@ const gravesPark = new ContentPSaR(
         Customers who hire the barn are welcome to bring their own entertainment and decorations. 
       </p>
       <p>
-        To request a booking, the customer should complete the online form.
+        To request a booking, the customer should complete the online form. 
+        A link to the form can be found here:
+        <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+        Events in parks | Sheffield City Council</a>
       </p>
-      <p>Information about this topic will be available on the Council Website</p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20events%20in%20parks\`
+        "
+      >
+            Send link to review further information
+    </button>
+
       <p>
         Once we receive an enquiry, we will contact the customer to discuss availability. 
       </p>
@@ -3001,7 +3083,24 @@ const playgrounds = new ContentPSaR(
     Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
     form.
   </p>
-  <p>Information about this topic will be available on the Council Website</p>
+  <p>
+    Further information about playgrounds can be found here - there is a link to report an issue with a playground halfway down the page:
+    <a href="https://cms.sheffield.gov.uk/preview-link/node/18/e9a6d49d-14f6-4da7-9311-0f1b58117102" target="_blank" rel="noopener noreferrer">
+    Parks and green spaces | Sheffield City Council</a>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20and%20green%20spaces\`
+        "
+      >
+            Send link to review further information
+    </button>
+
   <p>
     Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
     Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
@@ -3508,9 +3607,8 @@ const dogCatWasteCommercial = new ContentPSaR(
   </p>
 
   <p>
-    Customers should fill out the request form online.
+    <strong><em>This is an internal only form - an advisor needs to fill out the request over the phone with the customer.</em></strong>
   </p>
-  <p>Information about this topic will be available on the Council Website</p>
 
   <p>
     The request form includes a link for immediate payment on the request confirmation screen. If a customer reports an issue with payment, it can be made using the following link
@@ -3605,9 +3703,10 @@ const dogBins = new ContentPSaR(
     repairs or replacements are considered based on the condition of the bin.
   </p>
   <p>
-    To report an issue with a dog waste bin, use the online form.
+    To report an issue with a dog waste bin, use the online form available here:
+    <a href="https://cms.sheffield.gov.uk/REPLACE-ME" target="_blank" rel="noopener noreferrer">
+    https://cms.sheffield.gov.uk/REPLACE-ME</a>
   </p>
-  <p>Information about this topic will be available on the Council Website</p>
 
 `,
   { buttonLabel: "Report Dog Bin Issue", formName: "report_dog_bin" },
@@ -3963,12 +4062,6 @@ const gritSaltCommercial = new ContentPSaR(
   </p>
 
   <p>
-    Further information and a form to make a request are available online.
-  </p>
-
-  <p>Information about this topic will be available on the Council Website</p>
-
-  <p>
     The minimum order is 0.5 tonnes, requests for more than10 tonnes require 28 days’ notice.
   </p>
   <p>
@@ -4015,7 +4108,7 @@ const gritSaltCommercial = new ContentPSaR(
   </details>
 
   <p>
-    Customers can fill out the request form which can be found on the website and includes a link for immediate payment on the request confirmation page.
+    <strong><em>This is an internal only form - an advisor needs to fill out the request over the phone with the customer.</em></strong>
   </p>
 
   <p>
@@ -4432,9 +4525,25 @@ const memorialsInParks = new ContentPSaR(
   </p>
 
   <p>
-    Applications for a bench can be made by completing the online form.
+    Applications for a bench can be made by completing the online form available here - the page has details about multiple types of 
+    memorial, and the link to the form is towards the bottom of the page:
+    <a href="https://cms.sheffield.gov.uk/preview-link/node/2501/1a8121eb-40a4-4ef8-9060-8abd87d2f615" target="_blank" rel="noopener noreferrer">
+    Commemorative memorials | Sheffield City Council</a>
   </p>
-  <p>Information about this topic will be available on the Council Website</p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Commemorative%20memorials\`
+        "
+      >
+            Send link to review further information
+    </button>
+
   <p>
     Once an application is received it will be reviewed by the Park Area Manager and a site assessment may be undertaken.
   </p>

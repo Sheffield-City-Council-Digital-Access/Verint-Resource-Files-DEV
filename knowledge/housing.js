@@ -1309,7 +1309,14 @@ const communalAreas = new ContentH(
   { date: "14/07/2026", name: "Shaz Athar" }
 );
 
+
+
+
 // Communal fire safety is in the cross region section at the top of the area
+
+
+
+
 
 const decants = new FormH(
   "decants",
@@ -3628,6 +3635,16 @@ const accommodationNotSuitable = new ContentH(
 
           </div>
       </details>
+      <p>
+      For other enquires, please complete the
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_homelessness?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}&txt_routing=Enquiry%20Counter\">Homelessness enquiry counter</a>. 
+      </p>
   `,
 
   {
