@@ -165,8 +165,8 @@ const customerPaidTwice = new ContentP(
   "Report a double payment issue by emailing Customer Services with the details of the problem for investigation",
   `
       <p>
-        The customer needs to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> advising 
-        the issue they experienced, customer services will then look into the issue
+        The customer needs to email <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a> advising 
+        the issue they experienced, Parking Services will then look into the issue.
       </p>
     `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -195,7 +195,7 @@ const customerPaidTwice = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "19/09/2026", name: "Liz Taster" }
 );
 
 //#endregion Cross regional tiles
@@ -2627,8 +2627,7 @@ const confirmationOfPayment = new ContentP(
   "Report payment discrepancies by submitting a written appeal and proof of payment, including the last 4 digits of the card if applicable.",
   `
   <p>
-    Payments can take up to 3–4 days to show on our system regardless of the
-    payment method.
+    Payments can take up to 3–4 days to show on our system, particularly when payment has been made through Paypoint and/or at a Post Office.
   </p>
   <p>
     If the customer has received further correspondence from Parking Services
@@ -2636,7 +2635,7 @@ const confirmationOfPayment = new ContentP(
   </p>
   <ul>
     <li>They believe payment has already been made</li>
-    <li>Gateway is not showing case is fully paid (closed)</li>
+    <li>Taranto is not showing case is fully paid (closed)</li>
   </ul>
   <p>
     The customer should make a written appeal online or in writing (ideally online
@@ -2675,7 +2674,7 @@ const confirmationOfPayment = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "19/09/2026", name: "Liz Taster" }
 );
 
 //
@@ -2688,7 +2687,7 @@ const customerTriedToPayOnline = new ContentP(
   "Ensure the vehicle registration number and full PCN number are entered correctly without spaces when trying to pay online.",
   `
 		<p>
-			The PCN should show on Gateway/online within minutes of being issued,
+			The PCN should show on Taranto/online within minutes of being issued,
 			therefore the customer may have incorrect details. The ticket details can be
 			confirmed on Gateway.
       <br>
@@ -2699,6 +2698,9 @@ const customerTriedToPayOnline = new ContentP(
       <br>
 			Check the person entering the details has entered the VRM without spaces and
 			entered the full PCN number.
+      <br>
+      Check for common errors such as inserting a letter 'O' instead of the number '0',
+      and other common letter/number mix ups.
 		</p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -2731,7 +2733,7 @@ const customerTriedToPayOnline = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "19/09/2026", name: "Liz Taster" }
 );
 
 const customerUnableToPay = new ContentP(
@@ -2749,7 +2751,7 @@ const customerUnableToPay = new ContentP(
     </p>
     <ul>
       <li>They believe payment has already been made</li>
-      <li>Gateway is not showing case is fully paid (closed)</li>
+      <li>Taranto is not showing case is fully paid (closed)</li>
     </ul>
     <p>
       The customer should make a written appeal online or in writing (ideally online
@@ -2796,7 +2798,7 @@ const customerUnableToPay = new ContentP(
       <p>
         If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
       </div>
     </details>
@@ -2817,6 +2819,7 @@ const customerUnableToPay = new ContentP(
         </p>
         <p><strong>Equita</strong><br>
         Phone: <a href="tel:01604628360">01604 628 360</a>
+        Email: <a href="mailto:info@equita.co.uk">info@equita.co.uk</a>
         </p>
         <p><strong>Excel</strong><br>
         Phone: <a href="tel:03303639988">0330 363 9988</a><br>
@@ -3394,19 +3397,112 @@ const debtRegistrationAndWarrantCases = new ContentP(
   "Debt Registration and Warrant Cases",
   "Find out what happens when a PCN reaches the debt registration or warrant stage, including how to respond and what support is available.",
   `
-    <p>
-      Challenges can be made online within 28 days of receiving the original
-      ticket. It can take up to 24 hours to appear on the online portal.
-      <br>
-      <br>
-      Documentation can be uploaded to support the challenge, the online link also
-      enables the motorist to use an interactive portal to guide them through their
-      appeal and the evidence can be viewed (e.g photos of the contravention)
-      <br>
-      <br>
-      Do not discuss any possible outcomes or give your opinions. Parking services
-      will contact the customer following the decision.
-    </p>
+  <p>
+    Please see relevant guidance below based on the stage the PCN is at.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Case is at debt registration – what are the customers options?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the case is currently at debt registration this means that we are unable to accept representations from the customer. 
+        Their options moving forward are to either pay the PCN or file a Witness Statement with the Traffic Enforcement Centre. 
+        Below are the grounds a witness statement can be made to the Traffic Enforcement Centre:
+      </p>
+        <ul>
+          <li>Grounds 1 - did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
+          <li>Grounds 2 - made a formal challenge on time but did not get a ‘notice of rejection’</li>
+          <li>Grounds 3 - appealed to an independent tribunal on time but did not get a response</li>
+          <li>Grounds 4 - have proof you’ve paid the penalty charge, such as a credit card statement</li>
+        </ul>
+      <p>
+        To file a Witness Statement they will need to complete form TE9. 
+        This form is published through gov.uk, ask customers to search for:
+        <br>'<em>TE9 - Witness statement - unpaid penalty charge</em>'.
+      </p>
+      <p>
+        The form must be returned by post to:
+        <br>Traffic Enforcement Centre
+        <br>County Court Business Centre
+        <br>St Katharine’s House
+        <br>21-27 St Katharine’s Street
+        <br>Northampton
+        <br>NN1 2LH
+        <br>
+        <br>Or by email to <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a>.  
+      </p>
+      <p>
+        If they have any queries about submitting the application, they can contact the 
+        Traffic Enforcement Centre on <strong>0300 123 1059</strong> or <strong>0300 619 450</strong> (9am-5pm).
+      </p>
+      <p>
+        Once they have filed a Witness Statement with the Traffic Enforcement Centre (TEC) they will send us a confirmation 
+        when this has been received and is being processed. 
+        When they make a witness statement, this is filed with TEC and they have the power to issue a revoking order which 
+        essentially instructs us to revoke the debt and re-issue at an earlier stage. 
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Case is at warrant – what are the customers options?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the case is currently at warrant/enforcement agents this means that we are unable to accept representations from the customer. 
+        Their options moving forward are to either pay the PCN with the enforcement agents (see contact details below) or file a Late Witness 
+        Statement with the Traffic Enforcement Centre. There are certain grounds that they would have to fall under in order to do this.
+        Below are the grounds a witness statement can be made to the Traffic Enforcement Centre:
+      </p>
+        <ul>
+          <li>Grounds 1 - did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
+          <li>Grounds 2 - made a formal challenge on time but did not get a ‘notice of rejection’</li>
+          <li>Grounds 3 - appealed to an independent tribunal on time but did not get a response</li>
+          <li>Grounds 4 - have proof you’ve paid the penalty charge, such as a credit card statement</li>
+        </ul>
+      <p>
+        To do this they will need to complete forms TE7 and TE9. 
+        These forms are published through gov.uk, ask customers to search for:
+        <br>'<em>TE9 - Witness statement - unpaid penalty charge</em>', and
+        <br>'<em>TE7 - Application to file a statement out of time</em>'. 
+      </p>
+      <p>
+        These forms must be returned by post to:
+        <br>Traffic Enforcement Centre
+        <br>County Court Business Centre
+        <br>St Katharine’s House
+        <br>21-27 St Katharine’s Street
+        <br>Northampton
+        <br>NN1 2LH
+        <br>
+        <br>Or by email to <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a>.  
+      </p>
+      <p>
+        If they have any queries about submitting the application, they can contact the 
+        Traffic Enforcement Centre on <strong>0300 123 1059</strong> or <strong>0300 619 450</strong> (9am-5pm).
+      </p>
+      <p>
+        Once they have filed a Late Witness Statement with the Traffic Enforcement Centre (TEC) then they will send us a confirmation when this has been 
+        received and is being processed. We will then write to the enforcement agents and ask them to place enforcement on hold while we wait for TEC to 
+        send a revoking order.
+      </p>
+      <p>
+        To allow the customer time to do this we can write to the Enforcement Agents and inform them that they are in the process of filing with TEC and 
+        ask them to place enforcement on hold for the time being to allow them to do so. If they do not file a Late Witness Statement then enforcement 
+        will continue unless they contact us further.
+      </p>
+      <p>
+        You can contact us via warm transfer on PSNP1 to discuss the case and inform us that we need to ask the enforcement agents to place enforcement on hold.
+      </p>
+    </div>
+  </details>  
+
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
