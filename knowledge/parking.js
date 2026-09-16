@@ -89,7 +89,7 @@ const makingAPayment = new ContentP(
     </p>
     <p>
       For further information, visit
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank"
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank" rel="noopener noreferrer"
         >Sheffield Parking</a
       >.
       <button
@@ -299,7 +299,7 @@ const applyBlueBadge = new ContentP(
       </p>
      
       <p>
-      <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
+      <a href="https://www.gov.uk/apply-blue-badge" target="_blank" rel="noopener noreferrer">https://www.gov.uk/apply-blue-badge</a>
       <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to apply for a blue badge"
           onclick="
@@ -769,7 +769,7 @@ const illegalParking = new ContentP(
     <h3>Incorrectly Parked Vehicles (in Contravention)</h3>
     <p>
     Customers can report an incorrectly parked vehicle via our website:<br>
-    <a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">
+    <a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank" rel="noopener noreferrer">
              https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle
     </a>
     Report an incorrectly parked vehicle
@@ -1146,7 +1146,8 @@ const businessPermit = new ContentP(
 </details>
 
 <p>
-	For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit</a>.
+	For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit" target="_blank" rel="noopener noreferrer">
+  https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit</a>.
 </p>
 
      <button
@@ -1165,7 +1166,8 @@ const businessPermit = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 
@@ -1326,7 +1328,8 @@ const residentsCarer = new ContentP(
 
 <p>
     For further information, visit  
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit" target="_blank"> https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit</a>
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit</a>
 </p>
 
 <button
@@ -1345,7 +1348,7 @@ const residentsCarer = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
      
   `,
@@ -1497,7 +1500,8 @@ const greenParkingPermit = new ContentP(
 	
 	<p>
 	  For further information, visit 
-	  <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits</a>.
+	  <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits</a>.
 	</p>
 	
 	<button
@@ -1516,7 +1520,8 @@ const greenParkingPermit = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 `,
   {
@@ -1667,7 +1672,8 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates" target="_blank">https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates</a>.
+    <a href="https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates</a>.
 </p>
 
 <button
@@ -1686,7 +1692,8 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -1777,7 +1784,8 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit</a>.
   </p>
  </div>
 </details>
@@ -1798,7 +1806,8 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
       <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -1913,7 +1922,8 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit</a>.
   </p>
 </div>
 
@@ -1933,7 +1943,8 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
      <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2089,7 +2100,8 @@ Get in touch with us for any other problems regarding parking permit application
 
 
                         <p>
-                    For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits</a>.
+                    For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits" target="_blank" rel="noopener noreferrer">
+                    https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits</a>.
                     
                 </p>
          <button
@@ -2108,7 +2120,8 @@ Get in touch with us for any other problems regarding parking permit application
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2152,8 +2165,8 @@ const staffPermit = new ContentP(
   `<p>
   Staff who need to apply for a parking permit should contact Facilities Management 
   for assistance. Full details on how to apply for a staff parking permit can be (Internal Only)
-  found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
-  target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
+  found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" target="_blank" rel="noopener noreferrer">
+  https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
 </p>
 
 
@@ -2173,7 +2186,8 @@ const staffPermit = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
   `,
@@ -2310,7 +2324,8 @@ const tradePermit = new ContentP(
 
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits</a>.
 
     </p>
              <button
@@ -2329,7 +2344,8 @@ const tradePermit = new ContentP(
     <h4>Taranto</h4>
 
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2390,7 +2406,8 @@ const utilityPermit = new ContentP(
   
   <h4>Taranto</h4>
   <p>
-    <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+    https://sheffield.taran.to/CombinedLogin.aspx</a>
   </p>
 
  	`,
@@ -2534,7 +2551,8 @@ Contractors needing more time to work at a property will need to apply for trade
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit</a>.
   </p>
 </div>
 
@@ -2560,7 +2578,8 @@ Contractors needing more time to work at a property will need to apply for trade
        <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2689,7 +2708,7 @@ const customerTriedToPayOnline = new ContentP(
 		<p>
 			The PCN should show on Taranto/online within minutes of being issued,
 			therefore the customer may have incorrect details. The ticket details can be
-			confirmed on Gateway.
+			confirmed on Taranto.
       <br>
       <br>
       The Vehicle Registration Number (VRN) should be entered without spaces along 
@@ -2698,6 +2717,7 @@ const customerTriedToPayOnline = new ContentP(
       <br>
 			Check the person entering the details has entered the VRM without spaces and
 			entered the full PCN number.
+      <br>
       <br>
       Check for common errors such as inserting a letter 'O' instead of the number '0',
       and other common letter/number mix ups.
@@ -2834,7 +2854,7 @@ const customerUnableToPay = new ContentP(
         Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
         </p>
         <p><strong>PACE</strong><br>
-        Phone: <a href="tel:01142930853">0114 2930853</a><br>
+        Phone: <a href="tel:01142930853">0114 293 0853</a><br>
         Email: <a href="mailto:enforcementteam@sheffield.gov.uk">enforcementteam@sheffield.gov.uk</a>
         </p>
         <p><strong>Phoenix/CDER</strong><br>
@@ -2945,7 +2965,7 @@ const enforcementBaliffEnquiries = new ContentP(
         Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
         </p>
         <p><strong>PACE</strong><br>
-        Phone: <a href="tel:01142930853">0114 2930853</a><br>
+        Phone: <a href="tel:01142930853">0114 293 0853</a><br>
         Email: <a href="mailto:enforcementteam@sheffield.gov.uk">enforcementteam@sheffield.gov.uk</a>
         </p>
         <p><strong>Phoenix/CDER</strong><br>
@@ -3033,7 +3053,8 @@ const howCanIAppeal = new ContentP(
         <li>Charge Certificate (CC)</li>
       </ul>
       Then they need to do this via <br>
-      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank"https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
+      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank" rel="noopener noreferrer">
+      https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
 
     <button
     type="button"
@@ -3217,7 +3238,7 @@ const howLongDoIHaveToAppeal = new ContentP(
       take if they are unhappy with the decision.
       <br>
       <br>
-      General information relating to the PCN Enforcement is available at: <a href="http://www.patrol-uk.info"target="_blank">http://www.patrol-uk.info</a>
+      General information relating to the PCN Enforcement is available at: <a href="http://www.patrol-uk.info" target="_blank" rel="noopener noreferrer">http://www.patrol-uk.info</a>
       <br>
       
 <button
@@ -3294,7 +3315,8 @@ const multiplepcns = new ContentP(
 
 <p>To file a Witness Statement, they will need to complete Form TE9.<br>
 Form TE9 can be found at: 
-<a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf">https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf</a></p>
+<a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf" target="_blank" rel="noopener noreferrer">
+TE9 - Witness statement - unpaid penalty charge</a></p>
 
 <button
     type="button"
@@ -3337,7 +3359,8 @@ Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
 
 <p>To do this, they will need to complete Forms TE7 and TE9.<br>
 Forms can be found at:<br>
-<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a><br>
+<a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf" target="_blank" rel="noopener noreferrer">
+TE9 - Witness statement - unpaid penalty charge</a><br>
 
 <button
     type="button"
@@ -3352,7 +3375,8 @@ Forms can be found at:<br>
     Send link to review further information
 </button>
 
-<a href="https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time">https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time</a></p>
+<a href="https://assets.publishing.service.gov.uk/media/62bebaeee90e073f56752a86/TE7_0622_save.pdf" target="_blank" rel="noopener noreferrer">
+TE7 - Application to file a statement out of time</a></p>
 
 <button
     type="button"
@@ -3442,8 +3466,8 @@ const debtRegistrationAndWarrantCases = new ContentP(
       <p>
         To file a Witness Statement, they will need to complete Form TE9.
         <br>Form TE9 can be found at: 
-        <a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf">
-        https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf</a>
+        <a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf"  target="_blank" rel="noopener noreferrer">
+        TE9 - Witness statement - unpaid penalty charge</a>
       </p>
 
     <button
@@ -3506,8 +3530,8 @@ const debtRegistrationAndWarrantCases = new ContentP(
         <p>
           To do this, they will need to complete Forms TE7 and TE9.
           <br>Forms can be found at:
-          <br> <a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">
-          https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a><br>
+          <br> <a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf" target="_blank" rel="noopener noreferrer">
+          TE9 - Witness statement - unpaid penalty charge</a><br>
 
         <button
             type="button"
@@ -3522,8 +3546,8 @@ const debtRegistrationAndWarrantCases = new ContentP(
             Send link to review further information
         </button>
 
-          <a href="https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time">
-          https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time</a>
+          <a href="https://assets.publishing.service.gov.uk/media/62bebaeee90e073f56752a86/TE7_0622_save.pdf" target="_blank" rel="noopener noreferrer">
+          TE7 - Application to file a statement out of time</a>
         </p>
 
         <button
@@ -3618,7 +3642,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <ul>
-          <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank">Money Advice Service</a></strong></li>
+          <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank" rel="noopener noreferrer">Money Advice Service</a></strong></li>
   <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3632,7 +3656,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://www.stepchange.org/" target="_blank">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
+          <li><strong><a href="https://www.stepchange.org/" target="_blank" rel="noopener noreferrer">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3646,7 +3670,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank">GOV.UK – Pay Off Your Debts</a></strong></li>
+          <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank" rel="noopener noreferrer">GOV.UK – Pay Off Your Debts</a></strong></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3660,7 +3684,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 8084000</a> (Monday to Friday 9am–8pm)</li>
+          <li><strong><a href="https://nationaldebtline.org/" target="_blank" rel="noopener noreferrer">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 8084000</a> (Monday to Friday 9am–8pm)</li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3674,7 +3698,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank">Citizens Advice</a></strong><br>
+          <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank" rel="noopener noreferrer">Citizens Advice</a></strong><br>
 
           <button
     type="button"
@@ -3702,7 +3726,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
         </ul>
         <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
         debts you cannot pay. More information about DROs is available here:</p>
-        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank">https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers</a></p>
+        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank" rel="noopener noreferrer">https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers</a></p>
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3725,7 +3749,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <ul>
-          <li><a href="https://www.rethink.org/advice-and-information" target="_blank">https://www.rethink.org/advice-and-information</a></li>
+          <li><a href="https://www.rethink.org/advice-and-information" target="_blank" rel="noopener noreferrer">https://www.rethink.org/advice-and-information</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3739,7 +3763,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
+          <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank" rel="noopener noreferrer">
+          Breathing Space Guidance for Creditors – GOV.UK</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3765,7 +3790,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
         <ul>
-          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank">https://www.sheffield.gov.uk/parking/request-parking-bay-suspension</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/parking/request-parking-bay-suspension</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3779,7 +3804,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3812,7 +3838,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
 
         <h4>Driver has received a Bus Lane PCN but has a valid PHV licence</h4>
         <ul>
-          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a></li>
+          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3845,7 +3872,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <p>Customers can report incorrectly parked vehicles online:</p>
-        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle</a></p>
+        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank" rel="noopener noreferrer">
+        https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle</a></p>
         
         <button
     type="button"
@@ -4112,8 +4140,8 @@ const emailPcnAppealsInfoLink = new ContentP(
 
 <p>
    Information about appealing a PCN is available at: 
-   <a href="https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine"
-   target="_blank">https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine</a>
+   <a href="https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine" target="_blank" rel="noopener noreferrer">
+   https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine</a>
 </p>
 
 <button
