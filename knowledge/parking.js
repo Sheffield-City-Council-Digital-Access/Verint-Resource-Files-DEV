@@ -3035,7 +3035,7 @@ const howCanIAppeal = new ContentP(
       <br>
       Appeals should always be made online however, if you are unable to make 
       an online appeal, you can email: <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a>
-      explaining the reason for the appeal
+      explaining the reason for the appeal.
     </p>
 
     <details class="accordion">
@@ -3087,8 +3087,8 @@ const howCanIAppeal = new ContentP(
       <br><br>
       They also have the option to come to First Point and fill in a form there that will be sent to us and attached to the case.
       <br><br>
-      If a customer is asking about reasonable adjustments (i.e. due to a disability), please contact the NPT backoffice team - warm transfer to:
-      <strong>Advisor Note: (Internal number Storm line):</strong><a href="tel: 87061">87061</a>. 
+      If a customer is asking about reasonable adjustments (i.e. due to a disability), please contact the NPT backoffice team who will be able to advise.
+      <br>warm transfer to: <strong>Advisor Note: (Internal number Storm line):</strong><a href="tel: 87061">87061</a>. 
       If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
     </p>
@@ -3229,7 +3229,7 @@ const howLongDoIHaveToAppeal = new ContentP(
   "Find out the next steps if your PCN challenge is rejected, including information on how to proceed with further action.",
   `	
     <p>
-      Advise the customer that timescales for next stops will be clearly stated in the last piece of correspondence sent to customer.
+      Advise the customer that timescales for next steps will be clearly stated in the last piece of correspondence sent to customer.
       <br>Ask the customer to refer to the correspondence most recently received.
     </p>
     
@@ -4073,7 +4073,7 @@ const unableToResolvePcn = new ContentP(
     </details>
 
   <p>
-    If you are still unable to resolve the PCN, you can warm transfer to:
+    If you are still unable to resolve the PCN, you can warm transfer to the NPT back office team - 
     <strong>Advisor Note: (Internal number Storm line):</strong>
     <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
   </p>
