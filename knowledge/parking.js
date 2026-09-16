@@ -3054,7 +3054,7 @@ const howCanIAppeal = new ContentP(
       </ul>
       Then they need to do this via <br>
       <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank" rel="noopener noreferrer">
-      https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
+      https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a><br><br>
 
     <button
     type="button"
@@ -3088,7 +3088,7 @@ const howCanIAppeal = new ContentP(
       They also have the option to come to First Point and fill in a form there that will be sent to us and attached to the case.
       <br><br>
       If a customer is asking about reasonable adjustments (i.e. due to a disability), please contact the NPT backoffice team who will be able to advise.
-      <br>warm transfer to: <strong>Advisor Note: (Internal number Storm line):</strong><a href="tel: 87061">87061</a>. 
+      <br>Warm transfer to: <strong>Advisor Note: (Internal number Storm line):</strong><a href="tel: 87061">87061</a>. 
       If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
     </p>
@@ -3136,7 +3136,7 @@ const howCanIAppeal = new ContentP(
   <div class="accordion-content">
     <ul>
       <li>Name is on a PCN for a vehicle they have NEVER owned: Provide a police report for fraud and to appeal the PCN on this basis.</li>
-      <li>State vehicle has been cloned: Provide photographs of all sides of the vehicle and a crime reference number.</li>
+      <li>State vehicle has been cloned: Provide photographs of <strong>all sides</strong> of the vehicle and a crime reference number.</li>
       <li>State vehicle was stolen: Provide police evidence such as a crime reference/incident number.</li>
       <li>State they were involved in an emergency: Provide proof such as hospital admission or other relevant documentation.</li>
       <li>State their vehicle broke down: Provide evidence such as mechanic receipts or towing documentation.</li>
