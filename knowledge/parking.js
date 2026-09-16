@@ -2833,6 +2833,10 @@ const customerUnableToPay = new ContentP(
         Phone: <a href="tel:01604633001">01604 633001</a><br>
         Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
         </p>
+        <p><strong>PACE</strong><br>
+        Phone: <a href="tel:01142930853">0114 2930853</a><br>
+        Email: <a href="mailto:enforcementteam@sheffield.gov.uk">enforcementteam@sheffield.gov.uk</a>
+        </p>
         <p><strong>Phoenix/CDER</strong><br>
         Phone: <a href="tel:03004605295">0300 460 5295</a><br>
         Email: <a href="mailto:info@contactcder.co.uk">info@contactcder.co.uk</a>
@@ -2870,7 +2874,7 @@ const customerUnableToPay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "28/07/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const enforcementBaliffEnquiries = new ContentP(
@@ -2908,9 +2912,7 @@ const enforcementBaliffEnquiries = new ContentP(
       <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type.<br><br> 
       If you can, try to get as much information from the customer such as the PCN reference and any background information. If there is no answer, raise an enquiry using the form PCN enquiry below.
     </p>
-    <p>
-    If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
-    </p>
+
 
         <details class="accordion">
       <summary class="accordion-header">
@@ -2928,6 +2930,7 @@ const enforcementBaliffEnquiries = new ContentP(
         </p>
         <p><strong>Equita</strong><br>
         Phone: <a href="tel:01604628360">01604 628 360</a>
+        Email: <a href="mailto:info@equita.co.uk">info@equita.co.uk</a>
         </p>
         <p><strong>Excel</strong><br>
         Phone: <a href="tel:03303639988">0330 363 9988</a><br>
@@ -2940,6 +2943,10 @@ const enforcementBaliffEnquiries = new ContentP(
         <p><strong>Newlyn</strong><br>
         Phone: <a href="tel:01604633001">01604 633001</a><br>
         Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
+        </p>
+        <p><strong>PACE</strong><br>
+        Phone: <a href="tel:01142930853">0114 2930853</a><br>
+        Email: <a href="mailto:enforcementteam@sheffield.gov.uk">enforcementteam@sheffield.gov.uk</a>
         </p>
         <p><strong>Phoenix/CDER</strong><br>
         Phone: <a href="tel:03004605295">0300 460 5295</a><br>
@@ -2983,7 +2990,7 @@ const enforcementBaliffEnquiries = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "28/07/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const howCanIAppeal = new ContentP(
@@ -3019,6 +3026,7 @@ const howCanIAppeal = new ContentP(
   <div class="accordion-content">
     <p>
       If the case is at the following stages:
+    </p>
       <ul>
         <li>PCN issued (parking or camera – bus lane/CAZ)</li>
         <li>Notice to Owner (NTO)</li>
@@ -3027,7 +3035,7 @@ const howCanIAppeal = new ContentP(
       Then they need to do this via <br>
       <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank"https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
 
-      <button
+    <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
@@ -3036,10 +3044,11 @@ const howCanIAppeal = new ContentP(
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
         }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20Penalty%20Charge%20Notice\`
     "
->
-    Send link to review further information
-</button>
+    >
+        Send link to review further information
+    </button>
 
+    <p>
       If they are unable to do this via the website, then they can appeal via email to:<br>
       <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a><br>
       Or via post to:<br>
@@ -3049,11 +3058,18 @@ const howCanIAppeal = new ContentP(
       Sheffield,<br>
       S1 9AQ
       </address><br><br>
-      We are unable to listen to / accept representations over the phone and we are not allowed to accept emails from yourselves as representations.<br><br>
+      We are unable to listen to / accept representations over the phone and we are not allowed to accept emails from yourselves as representations.
+      <br><br>
       If the customer states they are unable to make representations online or via 
       email then please direct them to family/friends in the first instance or 
-      Citizens Advice (opening times 10am – 4pm): <a href="tel:0808 2787820"> 0808 2787820</a>.<br><br>
+      Citizens Advice (opening times 10am – 4pm): <a href="tel:0808 2787820"> 0808 2787820</a>.
+      <br><br>
       They also have the option to come to First Point and fill in a form there that will be sent to us and attached to the case.
+      <br><br>
+      If a customer is asking about reasonable adjustments (i.e. due to a disability), please contact the NPT backoffice team - warm transfer to:
+      <strong>Advisor Note: (Internal number Storm line):</strong><a href="tel: 87061">87061</a>. 
+      If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
     </p>
   </div>
 </details>
@@ -3098,8 +3114,8 @@ const howCanIAppeal = new ContentP(
   </summary>
   <div class="accordion-content">
     <ul>
-      <li>Name is on a PCN for a vehicle they have NEVER owned: Provide a police report for fraud and appeal the PCN.</li>
-      <li>State vehicle has been cloned: Provide photographs of the vehicle and a crime reference number.</li>
+      <li>Name is on a PCN for a vehicle they have NEVER owned: Provide a police report for fraud and to appeal the PCN on this basis.</li>
+      <li>State vehicle has been cloned: Provide photographs of all sides of the vehicle and a crime reference number.</li>
       <li>State vehicle was stolen: Provide police evidence such as a crime reference/incident number.</li>
       <li>State they were involved in an emergency: Provide proof such as hospital admission or other relevant documentation.</li>
       <li>State their vehicle broke down: Provide evidence such as mechanic receipts or towing documentation.</li>
@@ -3146,7 +3162,7 @@ const howCanIAppeal = new ContentP(
 <p>
   If you are still unable to resolve the PCN, you can warm transfer to:
   <strong>Advisor Note: (Internal number Storm line):</strong>
-  <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+  <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
 </p>
   </div>
 </details>
@@ -3183,7 +3199,7 @@ const howCanIAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "28/07/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const howLongDoIHaveToAppeal = new ContentP(
@@ -3191,7 +3207,11 @@ const howLongDoIHaveToAppeal = new ContentP(
   "How long do I have to appeal?",
   "Find out the next steps if your PCN challenge is rejected, including information on how to proceed with further action.",
   `	
-    <h3>Rejected PCN's</h3>
+    <p>
+      Advise the customer that timescales for next stops will be clearly stated in the last piece of correspondence sent to customer.
+      <br>Ask the customer to refer to the correspondence most recently received.
+    </p>
+    
     <p>
       The correspondence to reject their challenge will explain the next steps to
       take if they are unhappy with the decision.
@@ -3246,7 +3266,7 @@ const howLongDoIHaveToAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "15/05/2025", name: "Dinah Williams" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 //
@@ -3904,7 +3924,9 @@ const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
     They can write on the envelope ‘not at this address’ and return it to the sender.<br>
     They can email <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a> with the PCN reference and explain the person does 
     not live at the address (including any forwarding address, if known).<br>
-    Let them know they are not liable for the PCN and can disregard it.
+    Let the customer know they are <strong>not liable</strong> for the PCN and should not pay it.
+    <br><br>If there is future correspondence or contact with e.g. baliffs, the customer should provide the same information, explaining the person
+    does not live at the address (and providing a forwarding address, if known). They are still not liable and should not pay.
     </p>
 
   `,
@@ -3938,7 +3960,7 @@ const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "08/05/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const unableToResolvePcn = new ContentP(
@@ -3955,7 +3977,7 @@ const unableToResolvePcn = new ContentP(
       <p>
         If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87061">87061</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
     </div>
   </details>
@@ -3969,7 +3991,7 @@ const unableToResolvePcn = new ContentP(
       <p>
         If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
       </div>
     </details>
@@ -4021,6 +4043,13 @@ const unableToResolvePcn = new ContentP(
       </p>
       </div>
     </details>
+
+  <p>
+    If you are still unable to resolve the PCN, you can warm transfer to:
+    <strong>Advisor Note: (Internal number Storm line):</strong>
+    <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+  </p>
+
   `,
   { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
   { typeKey: "penalty_charge_notice_transferred_to_service" },
@@ -4052,7 +4081,7 @@ const unableToResolvePcn = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "29/07/2025", name: "Dinah Williams" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const emailPcnAppealsInfoLink = new ContentP(
