@@ -1589,6 +1589,8 @@ const bannersInParks = new ContentPSaR(
       "advertising",
       "advertisement",
       "parks",
+      "poster",
+      "posters",
       "applications",
       "application",
       "banner permit",
@@ -1868,6 +1870,9 @@ const bookASportsFacility = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
+        Booking is not required - the pitch and putt is openly available.
+      </p>
+      <p>
         <strong>Cost</strong> - The pitch and putt is free to play and open throughout the year.
       </p>
       <p>
@@ -2113,7 +2118,7 @@ const filmingPhotoshoots = new ContentPSaR(
     Once a request for permission has been received it will be reviewed and the requestor will be contacted within 5 working days.
   </p>
   <p>
-    Once permission is agreed, payment is required via an online link. Onc payment is received, confirmation of permission will be provided by email.
+    Once permission has been granted you will be sent an email link for payment. Upon payment, confirmation of your permission will be emailed to you. 
   </p>
   
   `,
@@ -2170,7 +2175,7 @@ const weddingsInParks = new ContentPSaR(
     Those making a booking will need to book the registrar separately through the Ceremonies team.
   </p>
   <p>
-    To enquire about a wedding ceremony please complete the online form available here - please wedding enquiriesa are made with the same form used to book events in parks:
+    To enquire about a wedding ceremony please complete the online form available here - please not: wedding enquiries are made with the same form used to book events in parks:
     <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
     Events in parks | Sheffield City Council</a>
   </p>
@@ -2230,7 +2235,7 @@ const weddingsInParks = new ContentPSaR(
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
-   `Details of how to book different parks services and facilities, including rooms, events, spors facilities and photoshoots.`,
+   `Details of how to book different parks services and facilities, including rooms, events, sports facilities and photoshoots.`,
   [
     bannersInParks,
     bookRoomOrParkBuilding,
@@ -2469,6 +2474,16 @@ const activitiesInParks = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
+        <section class="alert-panel" role="alert" aria-label="Alert panel">
+      <p>
+          <section class="alert-panel" role="alert" aria-label="Alert panel">
+    <h3>Emergency Situations</h3>
+      <p>
+        If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to <strong>call 999 immediately</strong>.
+      </p>
+        Barbecues are <strong>currently not permitted</strong> in our parks, woodlands and green spaces due to hot and dry weather conditions. 
+        This restriction will remain in place throughout the summer period.      </p>
+  </section>
       <p>
         BBQs are allowed in parks, but customers are asked to following these rules:
       </p>
