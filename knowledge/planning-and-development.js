@@ -116,7 +116,6 @@ const applyForABuildingNotice = new ContentPaD(
         <ul>
           <li>Removing a load-bearing wall (with appropriate support)</li>
           <li>Installing or altering heating appliances and flues</li>
-          <li>Extensions to an existing dwelling</li>
           <li>Bathroom or shower installations where a structural alterations are undertaken or creating a new drainage connection</li>
           <li>Replacement windows (if not using a FENSA-registered installer)</li>
           <li>Domenstic re-roof  over 50% of the roof</li>
@@ -571,7 +570,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
         A completion inspection is required at the end of a project. 
       </p>
       <p>
-        A Notice of Completion will need to be completed and submitted prior to book the completion visit
+        A Notice of Completion will need to be completed and submitted prior to booking the completion visit
       </p>
       <p>
         Please see the knowledge tile <strong>Request a Completion Certificate</strong> for further information.
@@ -772,6 +771,7 @@ const fullPlansBuildingApplication = new ContentPaD(
       <p>It can be used for a wide range of building work, including:</p>
         <ul>
           <li>Erecting a new building</li>
+          <li>All commercial premises and sports facilities</li>
           <li>Extending an existing building</li>
           <li>Structural alterations</li>
           <li>Loft conversions</li>
@@ -913,7 +913,7 @@ const giveNoticeToDemolishABuilding = new ContentPaD(
   "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
   `  
     <p>
-      Customers planning to demolish a buildings over 50 cubic metres in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
+      Customers planning to demolish a building over 50 cubic metres in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
     </p>
     <p>
       The notice allows the council to assess the proposal, provide guidance on safety requirements, and coordinate with relevant parties where needed.
