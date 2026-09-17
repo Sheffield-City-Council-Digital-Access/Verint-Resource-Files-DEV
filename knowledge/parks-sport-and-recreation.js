@@ -2115,6 +2115,10 @@ const filmingPhotoshoots = new ContentPSaR(
     </table>
 
   <p>
+    If you are wanting to use a drone as part of a photoshoot you must include details in your application. 
+    You will received confirmation of whether or not you are able to use your drone in the response to your request.
+  </p>
+  <p>
     Once a request for permission has been received it will be reviewed and the requestor will be contacted within 5 working days.
   </p>
   <p>
@@ -2476,7 +2480,7 @@ const activitiesInParks = new ContentPSaR(
     <div class="accordion-content">
         <section class="alert-panel" role="alert" aria-label="Alert panel">
           </p>
-            Barbecues are <strong>currently not permitted</strong> in our parks, woodlands and green spaces due to hot and dry weather conditions. 
+            <strong>Barbecues are currently not permitted</strong> in our parks, woodlands and green spaces due to hot and dry weather conditions. 
             This restriction will remain in place throughout the summer period.      
           </p>
         </section>
@@ -2561,7 +2565,7 @@ const activitiesInParks = new ContentPSaR(
         </button>
 
       <p>
-        For the use of drones in filming or photoshoots please search for the knowledge article <strong>Filming and photoshoots</strong>
+        For the use of drones in filming or photoshoots please search for the knowledge article <strong>Filming and photoshoots</strong>.
       </p>
     </div>
   </details>
@@ -2668,6 +2672,9 @@ const activitiesInParks = new ContentPSaR(
         form that can be found here:
         <a href="https://www.sheffield.gov.uk/roads-pavements/street-trees/managing-street-trees" target="_blank" rel="noopener noreferrer">
         Managing and looking after street trees | Sheffield City Council</a>
+      </p>
+      <p>
+        The same form is used for trees in parks as well as street trees - please ask the customer to use this form regardless of location.
       </p>
   
 	      <button
@@ -2815,7 +2822,7 @@ const gravesPark = new ContentPSaR(
   `
 <h3>Animal Farm</h3>
   <p>
-    <strong>Opening hours</strong> - 10am -3.30pm, 7 days a week
+    <strong>Opening hours</strong> - 10am -3.30pm, 7 days a week.
   </p>
   <p>
     <strong>Admission fee</strong> - Admission is free, but donations are welcome on arrival.
@@ -3212,6 +3219,8 @@ const rivelinValleyWaterPlay = new ContentPSaR(
       "Valley",
       "Water",
       "Play",
+      "playground",
+      "ground",
       "park",
       "splash",
       "pad",
@@ -3360,7 +3369,7 @@ const antiSocialBehaviourParks = new ContentPSaR(
       or other partner organisations to address the problem collectively.
     </p>
     <p>
-      Where an incident has been reported to Police, ask customers to <strong>provide the crime reference number or incident number</strong> - 
+      Where an incident has been reported to the Police, ask customers to <strong>provide the crime reference number or incident number</strong> - 
       this assists council officers when liaising with other organisations.
     </p>
     
