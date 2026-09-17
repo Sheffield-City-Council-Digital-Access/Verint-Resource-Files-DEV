@@ -2475,15 +2475,11 @@ const activitiesInParks = new ContentPSaR(
     </summary>
     <div class="accordion-content">
         <section class="alert-panel" role="alert" aria-label="Alert panel">
-      <p>
-          <section class="alert-panel" role="alert" aria-label="Alert panel">
-    <h3>Emergency Situations</h3>
-      <p>
-        If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to <strong>call 999 immediately</strong>.
-      </p>
-        Barbecues are <strong>currently not permitted</strong> in our parks, woodlands and green spaces due to hot and dry weather conditions. 
-        This restriction will remain in place throughout the summer period.      </p>
-  </section>
+          </p>
+            Barbecues are <strong>currently not permitted</strong> in our parks, woodlands and green spaces due to hot and dry weather conditions. 
+            This restriction will remain in place throughout the summer period.      
+          </p>
+        </section>
       <p>
         BBQs are allowed in parks, but customers are asked to following these rules:
       </p>
