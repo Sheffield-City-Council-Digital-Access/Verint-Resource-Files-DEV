@@ -3299,108 +3299,17 @@ const multiplepcns = new ContentP(
   "Multiple PCN's",
   "Find out how to challenge multiple PCNs online, including how to submit evidence and use the interactive portal for your appeal.",
   `
-<h4>Case is at Debt Registration – What Are the Customer’s Options?</h4>
-
-<p>If the case is currently at debt registration, this means that we are unable to accept representations from the customer.</p>
-
-<p>Their options moving forward are to either pay the PCN or file a Witness Statement with the Traffic Enforcement Centre.</p>
-
-<p>The reasons for filing a Witness Statement are:</p>
-<ul>
-  <li>Grounds 1: Did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
-  <li>Grounds 2: Made a formal challenge on time but did not get a ‘notice of rejection’</li>
-  <li>Grounds 3: Appealed to an independent tribunal on time but did not get a response</li>
-  <li>Grounds 4: Have proof you’ve paid the penalty charge, such as a credit card statement</li>
-</ul>
-
-<p>To file a Witness Statement, they will need to complete Form TE9.<br>
-Form TE9 can be found at: 
-<a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf" target="_blank" rel="noopener noreferrer">
-TE9 - Witness statement - unpaid penalty charge</a></p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
-    "
->
-    Send link to review further information
-</button>
-
-
-<p>The form must be returned to:<br>
-Traffic Enforcement Centre<br>
-County Court Business Centre<br>
-St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
-Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
-
-<p>If they have any queries, they can contact the Traffic Enforcement Centre:<br>
-<a href="tel:03001231059"> 0300 1231059</a> or <a href="tel: 0300619450"> 0300 619450</a> (9am–5pm)</p>
-
-<hr>
-
-<h4>Case is at Warrant – What Are the Customer’s Options?</h4>
-
-<p>If the case is currently at warrant/enforcement agents, this means that we are unable to accept representations from the customer.</p>
-
-<p>Their options moving forward are to either pay the PCN with the enforcement agents or file a Late Witness Statement with the Traffic Enforcement Centre.</p>
-
-<p>The reasons for filing a Late Witness Statement are:</p>
-<ul>
-  <li>Grounds 1: Did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
-  <li>Grounds 2: Made a formal challenge on time but did not get a ‘notice of rejection’</li>
-  <li>Grounds 3: Appealed to an independent tribunal on time but did not get a response</li>
-  <li>Grounds 4: Have proof you’ve paid the penalty charge, such as a credit card statement</li>
-</ul>
-
-<p>To do this, they will need to complete Forms TE7 and TE9.<br>
-Forms can be found at:<br>
-<a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf" target="_blank" rel="noopener noreferrer">
-TE9 - Witness statement - unpaid penalty charge</a><br>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
-    "
->
-    Send link to review further information
-</button>
-
-<a href="https://assets.publishing.service.gov.uk/media/62bebaeee90e073f56752a86/TE7_0622_save.pdf" target="_blank" rel="noopener noreferrer">
-TE7 - Application to file a statement out of time</a></p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Application%20to%20file%20a%20statement%20out%20of%20time\`
-    "
->
-    Send link to review further information
-</button>
-
-<p>The forms must be returned to:<br>
-Traffic Enforcement Centre<br>
-County Court Business Centre<br>
-St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
-Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
-
-<p>If they have any queries about submitting the application, they can contact the Traffic Enforcement Centre:<br>
-<a href="tel:03001231059">0300 123 1059</a> or <a href="tel: 0300619450">0300 619 450</a> (9am–5pm)</p>
-
-<p>Once they have filed a Late Witness Statement with the Traffic Enforcement Centre, we will write to the enforcement agents and ask them to place enforcement on hold while we wait for TEC to send a revoking order.</p>
+<p>
+  Advisors may assist customers with enquiries relating to multiple PCNs where the information is straightforward and within their knowledge. 
+</p>
+<p>
+  Where the enquiry is complex, involves several PCNs with differing statuses, or requires detailed case assessment, the customer should be warm transferred to NPT.
+  <br><strong>Advisor Note: (Internal number Storm line):</strong> <a href="tel: 87061">87061</a>. 
+  If there is no answer, raise an enquiry using the form PCN enquiry below.
+</p>
+<p>
+  Advisors must only discuss PCNs relating to the caller or where appropriate authority has been provided.
+</p>
 
   `,
   { buttonLabel: "Parking Permit", formName: "" },
