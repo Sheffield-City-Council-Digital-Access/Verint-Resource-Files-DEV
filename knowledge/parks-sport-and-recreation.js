@@ -2179,9 +2179,8 @@ const weddingsInParks = new ContentPSaR(
     Those making a booking will need to book the registrar separately through the Ceremonies team.
   </p>
   <p>
-    To enquire about a wedding ceremony please complete the online form available here - please not: wedding enquiries are made with the same form used to book events in parks:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
-    Events in parks | Sheffield City Council</a>
+    To enquire about a wedding ceremony please complete the online form available here: <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    Events in parks | Sheffield City Council</a> please note, wedding enquiries are made with the same form used to book events in parks.
   </p>
 
     <button
