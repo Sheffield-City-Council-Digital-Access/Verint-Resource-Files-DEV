@@ -421,33 +421,35 @@ const birdsandPigeonsTreatment = new ContentPaN(
   "Feral Pigeon Treatment",
   "Learn how to request feral pigeon treatment for commercial, health authority, industrial, and university properties, including how to receive a quote.",
   `
-  <p>
-    If a caller requests the removal of a feral pigeon nest, we need to consider the season. If pigeons are occupying the nest and there could be eggs or chicks, Sheffield City Council will not disturb or remove the nest.
-    Ask the caller to get back in touch in the autumn, outside of the bird nesting season.
-  </p>
-
-  <br><br>
-
-  <h3>Commercial, Health Authority, Industrial and University</h3>
-
-  <p>
-    For feral pigeon treatment enquiries related to Commercial, Health Authority,
-    Industrial, and University properties, please email your request to
-    <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>.
-    We will assess your request and provide you with a quote for the treatment.
-  </p>
-
-  <section class="info-panel" role="region" aria-label="Information panel">
     <p>
-      If your enquiry doesn't fall into any of the above categories, we will need
-      to refer your
-      <a href="${window.location.protocol}//${
-        window.location.hostname
-      }/form/launch/pest_control_technician?${
-        KDF.getParams().customerid
-          ? `customerider investigation.
+      If a caller requests the removal of a feral pigeon nest, we need to consider
+      the season. If pigeons are occupying the nest and there could be eggs or
+      chicks, Sheffield City Council will not disturb or remove the nest. Ask the
+      caller to get back in touch in the autumn, outside of the bird nesting season.
     </p>
-  </section>
+
+    <br><br>
+
+    <h3>Commercial, Health Authority, Industrial and University</h3>
+
+    <p>
+      For feral pigeon treatment enquiries related to Commercial, Health Authority,
+      Industrial, and University properties, please email your request to
+      <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>.
+      We will assess your request and provide you with a quote for the treatment.
+    </p>
+
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need
+        to refer your
+        customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+        }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
   `,
   {
     buttonLabel: "",
