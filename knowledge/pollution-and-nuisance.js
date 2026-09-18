@@ -424,29 +424,39 @@ const birdsandPigeonsTreatment = new ContentPaN(
     <p>
       If a caller requests the removal of a feral pigeon nest, we need to consider
       the season. If pigeons are occupying the nest and there could be eggs or
-      chicks, Sheffield City Council will not disturb or remove the nest. Ask the
-      caller to get back in touch in the autumn, outside of the bird nesting season.
+      chicks, Sheffield City Council will not disturb or remove the nest.
     </p>
 
-    <br><br>
+    <p>
+      Ask the caller to get back in touch in the autumn, outside of the bird
+      nesting season.
+    </p>
 
     <h3>Commercial, Health Authority, Industrial and University</h3>
 
     <p>
       For feral pigeon treatment enquiries related to Commercial, Health Authority,
       Industrial, and University properties, please email your request to
-      <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>.
+      <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">
+        EnvironmentalServicesAdmin@sheffield.gov.uk
+      </a>.
       We will assess your request and provide you with a quote for the treatment.
     </p>
 
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section
+      class="info-panel"
+      role="region"
+      aria-label="Information panel"
+    >
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need
         to refer your
         customerid
-            ? `customerid=${KDF.getParams().customerid}&`
+            ? \`customerid=\${KDF.getParams().customerid}&\`
             : ""
-        }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        }interactionid=\${KDF.getParams().interactionid}">
+          report to a technician
+        </a>
         for further investigation.
       </p>
     </section>
@@ -464,7 +474,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "18/09/2026", name: "Andy Walker" }
