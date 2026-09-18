@@ -3243,7 +3243,6 @@ const pestControl = new MenuPaN(
     badgerProtection,
     batProtectionBritain,
     bedBugTreatment,
-    birdsandPigeonsTreatment,
     biscuitBeetlesTreatment,
     bumbleBeesTreatment,
     carpetBeetlesTreatment,
