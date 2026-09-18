@@ -1589,6 +1589,8 @@ const bannersInParks = new ContentPSaR(
       "advertising",
       "advertisement",
       "parks",
+      "poster",
+      "posters",
       "applications",
       "application",
       "banner permit",
@@ -1868,6 +1870,9 @@ const bookASportsFacility = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
+        Booking is not required - the pitch and putt is openly available.
+      </p>
+      <p>
         <strong>Cost</strong> - The pitch and putt is free to play and open throughout the year.
       </p>
       <p>
@@ -2110,10 +2115,14 @@ const filmingPhotoshoots = new ContentPSaR(
     </table>
 
   <p>
+    If you are wanting to use a drone as part of a photoshoot you must include details in your application. 
+    You will received confirmation of whether or not you are able to use your drone in the response to your request.
+  </p>
+  <p>
     Once a request for permission has been received it will be reviewed and the requestor will be contacted within 5 working days.
   </p>
   <p>
-    Once permission is agreed, payment is required via an online link. Onc payment is received, confirmation of permission will be provided by email.
+    Once permission has been granted you will be sent an email link for payment. Upon payment, confirmation of your permission will be emailed to you. 
   </p>
   
   `,
@@ -2170,9 +2179,8 @@ const weddingsInParks = new ContentPSaR(
     Those making a booking will need to book the registrar separately through the Ceremonies team.
   </p>
   <p>
-    To enquire about a wedding ceremony please complete the online form available here - please wedding enquiriesa are made with the same form used to book events in parks:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
-    Events in parks | Sheffield City Council</a>
+    To enquire about a wedding ceremony please complete the online form available here: <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    Events in parks | Sheffield City Council</a> please note, wedding enquiries are made with the same form used to book events in parks.
   </p>
 
     <button
@@ -2230,7 +2238,7 @@ const weddingsInParks = new ContentPSaR(
 const bookingsParks = new MenuPSaR(
   "bookings",
   "Bookings",
-   `Details of how to book different parks services and facilities, including rooms, events, spors facilities and photoshoots.`,
+   `Details of how to book different parks services and facilities, including rooms, events, sports facilities and photoshoots.`,
   [
     bannersInParks,
     bookRoomOrParkBuilding,
@@ -2469,6 +2477,12 @@ const activitiesInParks = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
+        <section class="alert-panel" role="alert" aria-label="Alert panel">
+          </p>
+            <strong>Barbecues are currently not permitted</strong> in our parks, woodlands and green spaces due to hot and dry weather conditions. 
+            This restriction will remain in place throughout the summer period.      
+          </p>
+        </section>
       <p>
         BBQs are allowed in parks, but customers are asked to following these rules:
       </p>
@@ -2550,7 +2564,7 @@ const activitiesInParks = new ContentPSaR(
         </button>
 
       <p>
-        For the use of drones in filming or photoshoots please search for the knowledge article <strong>Filming and photoshoots</strong>
+        For the use of drones in filming or photoshoots please search for the knowledge article <strong>Filming and photoshoots</strong>.
       </p>
     </div>
   </details>
@@ -2657,6 +2671,9 @@ const activitiesInParks = new ContentPSaR(
         form that can be found here:
         <a href="https://www.sheffield.gov.uk/roads-pavements/street-trees/managing-street-trees" target="_blank" rel="noopener noreferrer">
         Managing and looking after street trees | Sheffield City Council</a>
+      </p>
+      <p>
+        The same form is used for trees in parks as well as street trees - please ask the customer to use this form regardless of location.
       </p>
   
 	      <button
@@ -2804,7 +2821,7 @@ const gravesPark = new ContentPSaR(
   `
 <h3>Animal Farm</h3>
   <p>
-    <strong>Opening hours</strong> - 10am -3.30pm, 7 days a week
+    <strong>Opening hours</strong> - 10am -3.30pm, 7 days a week.
   </p>
   <p>
     <strong>Admission fee</strong> - Admission is free, but donations are welcome on arrival.
@@ -3201,6 +3218,8 @@ const rivelinValleyWaterPlay = new ContentPSaR(
       "Valley",
       "Water",
       "Play",
+      "playground",
+      "ground",
       "park",
       "splash",
       "pad",
@@ -3349,7 +3368,7 @@ const antiSocialBehaviourParks = new ContentPSaR(
       or other partner organisations to address the problem collectively.
     </p>
     <p>
-      Where an incident has been reported to Police, ask customers to <strong>provide the crime reference number or incident number</strong> - 
+      Where an incident has been reported to the Police, ask customers to <strong>provide the crime reference number or incident number</strong> - 
       this assists council officers when liaising with other organisations.
     </p>
     
