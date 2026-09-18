@@ -958,13 +958,15 @@ const cricketsTreatment = new ContentPaN(
 
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
-        The treatment cost for internal cricket infestations will be provided on
-        request. We will send your
+      The treatment cost for internal cricket infestations will be provided on request. We will send your
         <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/pest_control_technician?${
- actionid}">request to a technician</a>
-        for a survey and to provide a quote.
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survery and provide a quote. 
       </p>
     </section>
 
