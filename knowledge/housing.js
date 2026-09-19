@@ -362,7 +362,7 @@ const rentAndAffordability = new ContentH(
     </div>
 </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -3639,7 +3639,7 @@ const accommodationNotSuitable = new ContentH(
       For other enquires, please complete the
         <a href="${window.location.protocol}//${
     window.location.hostname
-  }/form/launch/hou_homelessness?${
+  }/form/launch/hou_advice_service?${
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
@@ -3649,7 +3649,7 @@ const accommodationNotSuitable = new ContentH(
 
   {
     buttonLabel: "Raise Homelessness Enquiry",
-    formName: "hou_homelessness",
+    formName: "hou_advice_service",
   },
   { typeKey: "homeless_information_provided" },
   { typeKey: "homeless_transferred_to_service" },
@@ -3989,7 +3989,7 @@ const asbHomeless = new ContentH(
     </details>
     `,
   {
-    buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",
+    buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",
   },
   { typeKey: "homeless_information_provided" },
   { typeKey: "homeless_transferred_to_service" },
@@ -4252,7 +4252,7 @@ const asbCuckooing = new ContentH(
     </div>
 </details>
     `,
-  {buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  {buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -5049,7 +5049,7 @@ const askedToLeave = new ContentH(
     </div>
 </details>
   `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -5915,7 +5915,7 @@ const disrepairHomeless = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6061,7 +6061,7 @@ const domesticAbuseAssessment = new ContentH(
     </details>
 
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6193,7 +6193,7 @@ const earlyHelpAndPrevention = new ContentH(
     </details>
 
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6590,7 +6590,7 @@ const endofHomeOffice = new ContentH(
     </details>
   
   `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -6980,7 +6980,7 @@ const homelessTest = new ContentH(
       <a href="https://sccextranet.sharepoint.com/:p:/r/sites/HousingandNeighbourhoodsDigitalRingbinder/Shared%20Documents/Homelessness%20and%20Supported%20Housing%20Service/Staff%20Procedures%20and%20guidance/CRM%20Forms/Form%201B%20Housing%20Need/Homelessness%20Test.pptx?d=wf780fad2fb0241349567ce0f61916ed5&csf=1&web=1&e=h9b9l0" target="_blank">Homeless Test</a>
     </p>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -7625,7 +7625,7 @@ const lostJob = new ContentH(
       </ul>
     </p>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -8200,7 +8200,7 @@ const overcrowding = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -8432,7 +8432,7 @@ const preventionEndOfSupportedAccommodation = new ContentH(
         </div>
     </details> 
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -9494,7 +9494,7 @@ const relationship = new ContentH(
     </div>
 </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -9785,7 +9785,7 @@ const repairsHomelessness = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -10124,7 +10124,7 @@ const section8 = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -10445,7 +10445,7 @@ const section8V2 = new ContentH(
     </div>
 </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -10699,7 +10699,7 @@ const stayingWithFriendsOrFamily = new ContentH(
           </div>
       </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
@@ -10873,7 +10873,7 @@ const threatenedWithEvictionOrPossession = new ContentH(
         </div>
     </details>
     `,
-  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_homelessness",},
+  { buttonLabel: "Raise Homelessness Enquiry", formName: "hou_advice_service",},
   { typeKey: "homeless_information_provided"},
   { typeKey: "homeless_transferred_to_service"},
   {
