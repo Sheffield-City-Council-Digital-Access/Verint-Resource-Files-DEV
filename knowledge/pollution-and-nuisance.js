@@ -334,7 +334,7 @@ const bedBugTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£106:</strong>
+      reduced to <strong>£106.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -496,7 +496,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£73:</strong>
+      reduced to <strong>£73.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -583,7 +583,7 @@ const bumbleBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£64.00.</strong>
+      reduced to <strong>£64.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -825,7 +825,7 @@ const clusterFliesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £73:00.
+      reduced to <strong>£73.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -906,7 +906,7 @@ const cockroachesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£106:</strong>
+      reduced to <strong>£106.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1113,7 +1113,7 @@ const fleasTreatment = new ContentPaN(
     </p>
     <p>
       If you are in receipt of one of the benefits listed below, the treatment cost
-      will be reduced to <strong>£73:00</strong>.
+      will be reduced to <strong>£73.00</strong>.
     </p>
     <ul>
       <li>Housing Benefit</li>
@@ -1127,7 +1127,7 @@ const fleasTreatment = new ContentPaN(
       property.
     </p>
     <h3>Call Out Charges</h3>
-    <p>All prices contain a call out fee of £40.80.</strong></p>
+    <p>All prices contain a call out fee of <strong>£40.80.</strong></p>
     <p>
       If we attend the property and the officer is unable to complete the treatment,
       the call out charge will be applied.
@@ -1258,7 +1258,7 @@ const fliesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£73.00:</strong>
+      reduced to <strong>£73.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1535,7 +1535,7 @@ const gardenAntsTreatment = new ContentPaN(
 
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£64.00:</strong>
+      reduced to <strong>£64.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1939,7 +1939,7 @@ const masonryBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£64.00:</strong>
+      reduced to <strong>£64.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1993,13 +1993,13 @@ const miceTreatment = new ContentPaN(
     <h3>Cost for Treatment</h3>
     <p>
       We will only provide treatment for Mice inside the property. 
-      The cost for the treatment is <strong>£130</strong> This is based on a standard size
+      The cost for the treatment is <strong>£130.00</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£64:</strong>
+      reduced to <strong>£64.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -2218,7 +2218,7 @@ const mothsTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£73.00:</strong>
+      reduced to <strong>£73.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -2558,7 +2558,7 @@ const ratTreatment = new ContentPaN(
     </p>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Rats is <strong>£130</strong> This covers you for up to 3 visits.
+      The treatment cost for Rats is <strong>£130.00</strong> This covers you for up to 3 visits.
       If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
@@ -2918,7 +2918,7 @@ const silverFishTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£73.00:</strong>
+      reduced to <strong>£73.00</strong>
       <br>
       
     </p>
@@ -3004,7 +3004,7 @@ const spiderBeetlesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£73.00:</strong>
+      reduced to <strong>£73.00</strong>
     
     </p>
     <ul>
@@ -3085,7 +3085,7 @@ const waspsTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£64.00:</strong>
+      reduced to <strong>£64.00</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
