@@ -2261,7 +2261,7 @@ const otherPests = new ContentPaN(
       <h3>Asian Hornets</h3>
       <div class="accordion-icon"></div>
     </summary>
-    <div class="accordion-content">
+    <div class="accordion-content"> 
       <p>
         Asian hornets do not come this far north; it is very unlikely that a caller has Asian hornets.
       </p>
