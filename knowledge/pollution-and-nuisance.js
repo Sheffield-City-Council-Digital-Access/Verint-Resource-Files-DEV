@@ -3382,7 +3382,7 @@ const waspsTreatment = new ContentPaN(
         for survey and provide a quote. 
       </p>
     </section>
-
+    
   `,
   {
     buttonLabel: "Book treatment for Wasps",
