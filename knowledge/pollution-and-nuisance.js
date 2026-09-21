@@ -5317,8 +5317,8 @@ const burglarAlarmsAndCarAlarms = new ContentPaD(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const animalWelfareLicences = new ContentPaD(
-  "animalWelfareLicences",
+const animalWelfareLicenceEnviro = new ContentPaD(
+  "animalWelfareLicencesEnviro",
   "Animal Welfare Licences",
   "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
   `
@@ -7191,7 +7191,7 @@ const environmentalRegulations = new MenuPaD(
     statutoryNuisanceFromDomesticProperties,
     landAndPropertySearches,
     burglarAlarmsAndCarAlarms,
-    animalWelfareLicences,
+    animalWelfareLicenceEnviro,
     dogFoulEnviroReg,
     lostOrFoundDogs,
     temporaryCareOfAnimals,

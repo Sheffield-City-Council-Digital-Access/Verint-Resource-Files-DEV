@@ -789,9 +789,21 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
   </details>
 
   <h3>Related Information</h3>
-    <p>
-      Customers should ensure they also have a <strong>valid taxi driver licence</strong>.
-    </p>
+  <p>
+    We will try and accommodate requests within 24 hours where possible.
+  </p>
+  <p>
+    <strong>Insurance information</strong>
+  </p>
+  <p>
+    Your hackney carriage must have the correct insurance in place to carry passengers 
+    for hire and reward.
+  </p>
+  <p>
+    This should be a valid insurance certificate or cover note confirming that you, 
+    or a licensed driver, are insured to drive the vehicle and detailing the purposes 
+    for which it can be used.
+  </p>
     
   `,
 
@@ -1238,7 +1250,7 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"],
   },
-  { date: "10/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 const renewPrivateHireOperatorLicence = new ContentBusiness(
@@ -2298,7 +2310,7 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "17/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -2336,27 +2348,27 @@ const applyKnowledgeTest = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>How to Apply</h3>
-    <p>
-      The Knowledge Test must be booked <strong>online</strong>.
-    </p>
-    <p>
-      Applicants need to <strong>make an appointment</strong> to take the test.
-    </p>
-    <p>
-      Payment is made as part of the online application.
-    </p>
-    <p>
-      If an applicant arrives late for their appointment, the test will not take place and the fee will not be refunded.
-    </p>
+    <h3>How to Apply</h3>
+      <p>
+        The Knowledge Test must be booked <strong>online</strong>.
+      </p>
+      <p>
+        Applicants need to <strong>make an appointment</strong> to take the test.
+      </p>
+      <p>
+        Payment is made as part of the online application.
+      </p>
+      <p>
+        If an applicant arrives late for their appointment, the test will not take place and the fee will not be refunded.
+      </p>
 
-  <h3>Cost</h3>
-    <p>
-      The fee to take the Knowledge Test is <strong>£87</strong>.
-    </p>
-    <p>
-      If the applicant fails, the fee is <strong>non-refundable</strong> and must be paid again to retake the test.
-    </p>
+    <h3>Cost</h3>
+      <p>
+        The fee to take the Knowledge Test is <strong>£87</strong>.
+      </p>
+      <p>
+        If the applicant fails, the fee is <strong>non-refundable</strong> and must be paid again to retake the test.
+      </p>
     
 
   <details class="accordion">
@@ -2427,20 +2439,37 @@ const applyKnowledgeTest = new ContentBusiness(
   </details>
  
 
-<details class="accordion">
+  <details class="accordion">
     <summary class="accordion-header">
       <h3>Outcome</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <ul>
-        <li>Applicants who pass can continue with the taxi driver licence process.</li>
-        <li>Applicants who fail must pay again to retake the test.</li>
-      </ul>
+      <p>
+        All required tests and checks must be successfully completed and passed before a new taxi driver licence application can be submitted.
+      </p>
+      <p>
+        For information on applying for a new taxi driver licence, visit:
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence" target="_blank">
+           Applying for a new taxi driver licence | Sheffield City Council</a>      
+        </a>
+        <br>
+        <button
+          type="button"
+          class="dform_widget email-btn dform_widget_type_button"
+          aria-label="Send link to applying for a new taxi driver licence"
+          onclick="
+                window.location.href = \`${window.location.protocol}//${window.location.hostname}/form/launch/send_link_to_service?${
+                  KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : ''
+                }interactionid=${KDF.getParams().interactionid}&sel_service=Applying%20New%20Taxi%20Driver\`
+              "
+        >
+          Send link to review further information
+        </button>
+      </p>
     </div>
   </details>
 
-    
     `,
 
   { buttonLabel: "Apply for Knowledge Test", formName: "apply_knowledge_test" },
@@ -2475,7 +2504,7 @@ const applyKnowledgeTest = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "17/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
