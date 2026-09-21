@@ -3141,7 +3141,7 @@ const waspsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health" 
+      "Environmental Health"
     ],
   },
 { date: "27/08/2026", name: "Liz Taster" }
