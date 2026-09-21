@@ -328,13 +328,13 @@ const bedBugTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Bed Bugs is <strong>£348.00.</strong> This is based on a standard size
+      The treatment cost for Bed Bugs is <strong>£362.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£102:</strong>
+      reduced to <strong>£106:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -490,13 +490,13 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The cost for Biscuit Beetle treatment is <strong>£110.00.</strong> This is based on a standard size
+      The cost for Biscuit Beetle treatment is <strong>£115.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£70:</strong>
+      reduced to <strong>£73:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -819,13 +819,13 @@ const clusterFliesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Cluster Flies is <strong>£110.00.</strong> This is based on a standard size
+      The treatment cost for Cluster Flies is <strong>£115.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £70:
+      reduced to £73:00.
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -900,13 +900,13 @@ const cockroachesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Cockroaches is <strong>£348.00.</strong> This is based on a standard size
+      The treatment cost for Cockroaches is <strong>£362.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£102:</strong>
+      reduced to <strong>£106:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1105,7 +1105,7 @@ const fleasTreatment = new ContentPaN(
   "Learn about the costs, eligibility for discounted treatment for fleas, the call-out fee, and the process for submitting samples or identifying potential flea infestations.",
   `
     <h3>Cost for Flea Treatment</h3>
-    <p>The treatment cost for Fleas is <strong>£132.00</strong>.</p>
+    <p>The treatment cost for Fleas is <strong>£138.00</strong>.</p>
     <p>
       This charge is based on a standard size of a 3 bed semi-detached property. If
       the property is bigger than this, please escalate the enquiry so a quote can
@@ -1113,7 +1113,7 @@ const fleasTreatment = new ContentPaN(
     </p>
     <p>
       If you are in receipt of one of the benefits listed below, the treatment cost
-      will be reduced to <strong>£70:00</strong>.
+      will be reduced to <strong>£73:00</strong>.
     </p>
     <ul>
       <li>Housing Benefit</li>
@@ -1127,7 +1127,7 @@ const fleasTreatment = new ContentPaN(
       property.
     </p>
     <h3>Call Out Charges</h3>
-    <p>All prices contain a call out fee of £40.80.</p>
+    <p>All prices contain a call out fee of £40.80.</strong></p>
     <p>
       If we attend the property and the officer is unable to complete the treatment,
       the call out charge will be applied.
@@ -1252,13 +1252,13 @@ const fliesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Flies is <strong>£110.00.</strong> This is based on a standard size
+      The treatment cost for Flies is <strong>£115.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£70.00:</strong>
+      reduced to <strong>£73.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1528,14 +1528,14 @@ const gardenAntsTreatment = new ContentPaN(
 
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Garden Ants is <strong>£79.20.</strong> This is based on a standard size
+      The treatment cost for Garden Ants is <strong>£83.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
 
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£61.20:</strong>
+      reduced to <strong>£64.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1993,13 +1993,13 @@ const miceTreatment = new ContentPaN(
     <h3>Cost for Treatment</h3>
     <p>
       We will only provide treatment for Mice inside the property. 
-      The cost for the treatment is <strong>£124.80.</strong> This is based on a standard size
+      The cost for the treatment is <strong>£130</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£61.20:</strong>
+      reduced to <strong>£64:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -2010,7 +2010,7 @@ const miceTreatment = new ContentPaN(
     </ul>
     <p>
       This covers you for up to 3 visits. If you require further treatments, 
-      each additional treatment will cost <strong>£58.00.</strong>
+      each additional treatment will cost <strong>£58.00 (including VAT).</strong>
     </p>
     <p>
       All prices include a call-out fee of £40.80 This fee applies if our officer
@@ -2212,13 +2212,13 @@ const mothsTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Moths is <strong>£132.00.</strong> This is based on a standard size
+      The treatment cost for Moths is <strong>£138.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£70.00:</strong>
+      reduced to <strong>£73.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -2558,7 +2558,7 @@ const ratTreatment = new ContentPaN(
     </p>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Rats is <strong>£124.80.</strong> This covers you for up to 3 visits.
+      The treatment cost for Rats is <strong>£130</strong> This covers you for up to 3 visits.
       If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
@@ -2912,13 +2912,13 @@ const silverFishTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Silver Fish is <strong>£110.00.</strong> This is based on a standard size
+      The treatment cost for Silver Fish is <strong>£115.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£70.00:</strong>
+      reduced to <strong>£73.00:</strong>
       <br>
       
     </p>
@@ -2964,7 +2964,7 @@ const spiderBeetlesTreatment = new ContentPaN(
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Cluster Flies in your domestic property, we
+        Before we can provide treatment for Spider Beetles in your domestic property, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -2998,13 +2998,13 @@ const spiderBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Spider Beetles is <strong>£110.00.</strong> This is based on a standard size
+      The treatment cost for Spider Beetles is <strong>£115.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£70.00:</strong>
+      reduced to <strong>£73.00:</strong>
     
     </p>
     <ul>
@@ -3081,11 +3081,11 @@ const waspsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Wasps is <strong>£79.20.</strong>
+      The treatment cost for Wasps is <strong>£83.00.</strong>
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£61.20:</strong>
+      reduced to <strong>£64.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
