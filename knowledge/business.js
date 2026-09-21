@@ -59,7 +59,7 @@ class CoreBusiness {
   
 const drivingStandardsTestGuide = new ContentBusiness(
   "drivingStandardsTestGuide",
-  "Driving Standards Test Guide",
+  "Apply for Driving Standards Test",
   "Details of the Driving Standards Test - part of a taxi driver licence application.",
   `
   <h3>Overview</h3>
@@ -178,11 +178,11 @@ const drivingStandardsTestGuide = new ContentBusiness(
       </p>
 
       <p>If an applicant fails:</p>
-        <ul>
-          <li>They will need to take additional lessons with a qualified instructor</li>
-          <li>They must complete this before booking another test</li>
-          <li>The test fee is not refundable and must be paid again for a re-test</li>
-        </ul>
+      <ul>
+        <li>They may need to take additional lessons with a qualified instructor</li>
+        <li>If additional lessons are required, they must be completed before booking another test</li>
+        <li>The test fee is not refundable and must be paid again for a re-test</li>
+      </ul>
     </div>
   </details>
 
@@ -239,7 +239,7 @@ const drivingStandardsTestGuide = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"],
   },
-  { date: "03/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -249,9 +249,14 @@ const surrenderLicence = new ContentBusiness(
   "What to do if you decide to stop using your vehicle as a licenced vehicle.",
   `
   <p>
-    To surrender a vehicle licence customers need to complete an online form.        
+    Vehicle proprietors may wish to de-licence their vehicle and surrender the licence plate. To do this, the current vehicle proprietor must complete the online surrender form.
   </p>
-
+  <p>
+    The form requires details of the vehicle registration number and licence plate number.
+  </p>
+  <p>
+    Licensing will confirm by email once the surrender has been processed.
+  </p>
   <p>
     For <strong>private hire</strong> vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/surrender"target="_blank">
@@ -289,10 +294,9 @@ const surrenderLicence = new ContentBusiness(
       >
             Send link to review further information
     </button>
-    
-  <p>
-    Where possible, the customer needs to return their plate to us.
-  </p>
+    <p>
+      Where possible, the customer should return their licence plate to the Licensing Team.
+    </p>
 
   <h3>Re-licencing a vehicle</h3>
     <p>
@@ -328,7 +332,7 @@ const surrenderLicence = new ContentBusiness(
       ],
       categories: ["Business", "Taxi Licensing"],
     },
-    { date: "11/06/2026", name: "Liz Taster"} 
+    { date: "21/09/2026", name: "Andy Walker"} 
   );
 
 const transferLicence = new ContentBusiness(
@@ -376,9 +380,20 @@ const transferLicence = new ContentBusiness(
           <li>details of the person, business or partnership the licence is being transferred to</li>
           <li>where this is a parnership, details of all partners need to be submitted</li>
         </ul>
-      <p>
-        The information provided will be used to contact the new licence holder(s) to complete a declaration form.
-      </p>
+        <p>
+          The information provided will be used to contact the proposed new licence holder(s) to complete a declaration form.
+        </p>
+        <p>
+          Consent to the transfer is required from both the current licence holder and the proposed new licence holder.
+        </p>
+        <p>
+          The proposed new vehicle proprietor will also be required to provide supporting documentation, including:
+        </p>
+        <ul>
+          <li>A copy of a valid vehicle insurance certificate</li>
+          <li>A Basic DBS certificate, or</li>
+          <li>Confirmation that they are subscribed to the DBS Update Service</li>
+        </ul>
 
     <h3>Cost</h3>
       <p>
@@ -404,9 +419,8 @@ const transferLicence = new ContentBusiness(
       ],
       categories: ["Business", "Taxi Licensing"],
     },
-    { date: "11/06/2026", name: "Liz Taster"} 
+    { date: "22/09/2026", name: "Andy Walker"} 
   );
-
 
 const applyPrivateHireVehicleLicence = new ContentBusiness(
   "applyPrivateHireVehicleLicence",
@@ -538,26 +552,36 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     </div>
   </details>
 
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Issuing the Licence</h3>
-     <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Once the vehicle passes the compliance test, the customer must provide:</p>
-        <ul>
-          <li><strong>Insurance certificate or insurance cover note</strong></li>
-          <li><strong>Compliance certificate</strong></li>
-        </ul>
-      
-      <p>
-        The compliance test certificate is valid for <strong>14 days</strong>.
-      </p>
-      <p>
-        The council will then issue the vehicle licence.
-      </p>
-    </div>
-  </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Issuing the Licence</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>Once the vehicle passes the compliance test, the customer must provide:</p>
+    <ul>
+      <li><strong>Insurance certificate or insurance cover note</strong></li>
+      <li><strong>Compliance certificate</strong></li>
+    </ul>
+    <p>
+      The compliance certificate is valid for <strong>10 days</strong>.
+    </p>
+    <p>
+      We will try and accommodate requests within 24 hours where possible.
+    </p>
+    <p>
+      <strong>Insurance information</strong>
+    </p>
+    <p>
+      Your private hire vehicle must have in place the correct insurance to carry passengers for hire and reward.
+      <br>
+      This is a valid insurance certificate or cover note that tells us that you, or a licensed driver, are insured to drive the vehicle and the purposes that it can be used for.
+    </p>
+    <p>
+      The council will then issue the vehicle licence.
+    </p>
+  </div>
+</details>
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -576,13 +600,6 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
       </p>
     </div>
   </details>
-
-  <h3>Related Information</h3>
-    <p>Customers should ensure they also have: </p>
-      <ul>
-        <li>A <strong>valid taxi driver licence</strong></li>
-        <li>A <strong>licensed operator</strong> (if working through a company)</li>
-      </ul>
       
       `,
 
@@ -614,7 +631,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"],
   },
-  { date: "04/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -834,12 +851,13 @@ const applyTaxiDriverLicence = new ContentBusiness(
   "Guidance for applying for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield.",
   `
   <h3>Overview</h3>
-    <p>
-      Customers must apply for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield. 
-      A licence will only be granted once the applicant has passed all stages of the “fit and proper test”. 
-      <strong>Applicants cannot drive a taxi while their application is being processed.</strong>
-    </p>
-
+  <p>
+    Customers must apply for a <strong>combined private hire and hackney carriage driver licence</strong> to drive a licensed hackney carriage or private hire vehicle in Sheffield.
+  </p>
+  <p>
+    A licence will only be granted once the applicant has successfully completed all required stages of the application process.
+    <strong>Applicants cannot drive a taxi while their application is being processed.</strong>
+  </p>
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -866,10 +884,9 @@ const applyTaxiDriverLicence = new ContentBusiness(
           <li>Medical assessment confirming fitness to drive</li>
           <li>Provide a passport-sized photograph.</li>
         </ul>
-    
-      <p>
-        Applicants must complete all required stages before they are eligible to submit an application.
-      </p>
+        <p>
+          Applicants must complete all required stages before they are eligible to submit a <strong>Stage 3 application</strong> to become a licensed driver.
+        </p>
 
     </div>
   </details>
@@ -880,20 +897,18 @@ const applyTaxiDriverLicence = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        Once all pre‑application requirements are completed, customers can submit an <strong>online application form</strong> for a new taxi driver licence.
-      </p>
-    
-      <p>As part of the application, customers ust provide all required documents, including:</p>
+    <p>
+      Once all pre‑application requirements are completed, customers can submit their <strong>Stage 3 application</strong> for a new taxi driver licence.
+    </p>
+  
+      <p>As part of the Stage 3 application, customers must provide all required documents, including:</p>
         <ul>
           <li>Proof of right to work (if not already verified)</li>
           <li>Current DVLA driving licence</li>
         </ul>
-    
       <p>
         After submitting the application, an email link will be sent to pay the licence fee.
       </p>
-
     </div>
   </details>
 
@@ -923,6 +938,9 @@ const applyTaxiDriverLicence = new ContentBusiness(
       <li>The process is structured in three stages, with the application only submitted their application at the final stage.</li>
       <li>Customers are not permitted to work as taxi drivers until their licence is approved.</li>
       <li>Payment is made after submitting the online form via a separate email link.</li>
+      <li>Once a DBS certificate is obtained, the customer must sign up to the DBS Update 
+      Service and maintain their subscription. Checks will be carried out before a badge 
+      is issued and throughout the duration of the licence.</li>
     </ul>
 
   <h3>Useful Links</h3>
@@ -964,6 +982,8 @@ const applyTaxiDriverLicence = new ContentBusiness(
             Send link to review further information
     </button>
 
+
+
     `,
 
   { buttonLabel: "Apply Taxi Driver Licence", formName: "apply_taxi_driver_lice" },
@@ -999,7 +1019,7 @@ const applyTaxiDriverLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"],
   },
-  { date: "05/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -1082,21 +1102,21 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
 
 
 <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Eligibility Criteria</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
-        <ul>
-          <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
-          <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
-          <li>Having the <strong>legal right to work in the UK</strong></li>
-          <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
-          <li>Using a <strong>business name</strong> that is not the same as, or too similar to, one already used in Sheffield</li>
-        </ul>
-    </div>
-  </details>
+  <summary class="accordion-header">
+    <h3>Eligibility Criteria</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
+    <ul>
+      <li>We will consider the applicant's <strong>DBS check</strong> and take into account any convictions. Partnerships and company directors will be required to undertake an annual DBS check. Relevant convictions may be referred to the <strong>Licensing Sub-Committee</strong>.</li>
+      <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+      <li>Having the <strong>legal right to work in the UK</strong></li>
+      <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+      <li>Using a <strong>business name</strong> that is not the same as, or too similar to, one already used in Sheffield. Checks can be made against the public register of current Private Hire Operators in Sheffield.</li>
+    </ul>
+  </div>
+</details>
  
 
 <details class="accordion">
@@ -1136,9 +1156,9 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
         </ul>
     
       <p>
-        The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.
+        Fees vary depending on the duration of the licence and the number of vehicles operated. 
+        Customers should refer to the fee table on the council website for current charges.
       </p>
-    
       <p> 
         A full breakdown of fees can be found here: 
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
@@ -1170,7 +1190,6 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       </p>
     </div>
   </details>
- 
 
   <h3>Key Information for Call Handling</h3>
     <ul>
@@ -1180,8 +1199,8 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       <li>Remind customers that <strong>additional checks and documents may be required</strong>.</li>
       <li>Where applying as a company or partnership, <strong>all relevant individuals must meet the requirements</strong> (e.g. DBS and tax checks) </li>
       <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
+      <li>The appropriate fee payment link is issued after the renewal application has been received and the correct fee band has been determined.</li>
     </ul>
-
 
   <h3>Related Guidance</h3>
     <p>
@@ -1410,12 +1429,13 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
         Renew a private hire operator licence | Sheffield City Council</a> 
       </p>
-    
-      <p>Examples:</p>
-        <ul>
-          <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
-          <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
-        </ul>
+      <p>
+        A full breakdown of current fees can be found on the council website using the link above.
+      </p>
+      <p>
+        The correct fee payment link will be sent to the applicant after the renewal 
+        application has been received and the appropriate fee band has been confirmed.
+      </p>
 
       <button
         type="button"
@@ -1518,10 +1538,8 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"],
   },
-  { date: "10/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
-
-
 
 const changeOfNameOrAddress = new ContentBusiness(
   "changeOfNameOrAddress",
@@ -1588,6 +1606,7 @@ const changeOfNameOrAddress = new ContentBusiness(
         <li>The same process and fee apply if changes are needed for a taxi vehicle licence.</li>
         <li>Customers should ensure all supporting documents (such as DVLA licence details) are up to date before submitting their request.</li>
         <li>The customer may also need to notify their taxi operator.</li>
+        <li>The customer must also notify their private hire operator and pay the required DBS fee of £41.</li>
     </ul>
     
     `,
@@ -1729,7 +1748,9 @@ const renewTaxiDriverLicence = new ContentBusiness(
     Customers should renew their taxi driver licence online. Applications are assessed to confirm the driver is still a “fit and proper” person to hold a licence.
   </p>
   <p>
-    Drivers can renew their licence <strong>up to 2 months before the expiry date</strong>.
+    Drivers can make their renewal application <strong>up to 2 months before the expiry 
+    date</strong>. However, the Licensing Service will normally issue the renewed licence 
+    within the month before the existing licence is due to expire.
   </p>
   <p>
     If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.
@@ -1782,11 +1803,18 @@ const renewTaxiDriverLicence = new ContentBusiness(
     Payment is made during the application process.
   </p>
   
-  <p>After submission, the council will review the application either:</p>
-    <ul>
-      <li>Confirm the licence has been renewed, or</li>
-      <li>Ask for further information, if required.</li>
-    </ul>
+  <p>
+    After submission, and during the month leading up to the badge expiry date, the 
+    council will review the application.
+  </p>
+  <ul>
+    <li>The driver should receive an email from Taxi Plus requesting consent for their DVLA 
+    driving licence to be checked.</li>
+    <li>The council may request further information if required.</li>
+    <li>The council may contact the driver if any information or documents are missing from 
+    the application.</li>
+    <li>Once all checks have been completed, the renewal application will be determined.</li>
+  </ul>
 
 <details class="accordion">
   <summary class="accordion-header">
@@ -1802,11 +1830,11 @@ const renewTaxiDriverLicence = new ContentBusiness(
         <li>HMRC tax check code (9 digits)</li>
         <li>DBS certificate number or DBS online service details (dated within the same month as licence expiry)</li>
         <li>Medical assessment certificate (if required based on age or medical condition)</li>
+        <li>Updated passport-style photograph</li>
         <li>Right to work documentation (if applicable)</li>
       </ul>
   </div>
 </details>
- 
 
 <details class="accordion">
   <summary class="accordion-header">
@@ -1827,7 +1855,6 @@ const renewTaxiDriverLicence = new ContentBusiness(
   </div>
 </details>
 
-
 <details class="accordion">
   <summary class="accordion-header">
     <h3>Late Renewals</h3>
@@ -1836,16 +1863,17 @@ const renewTaxiDriverLicence = new ContentBusiness(
     <div class="accordion-content">
       <ul>
         <li>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still use the renewal process.</li>
-        <li>After this period, the driver must <strong>apply for a new licence instead of renewing.</strong></li>
+        <li>Individuals that make an application for a licence between <strong>1 month and 12 months</strong> since the expiry of their last licence will be considered a new applicant, but will not be required to undertake further training, examinations or tests if these have already been completed.</li>
+        <li>Individuals that make an application for a licence after a period of <strong>more than 12 months</strong> since the expiry of their last licence will be classed as a new applicant. They will not be required to undertake the Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver, but will be required to undertake all other tests, examinations and training appropriate for new drivers.</li>
         <li>If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.</li>
       </ul>
     </div>
 </details>
- 
 
 <h3>Important Notes for Call Handling</h3>
   <ul>
     <li>Drivers must <strong>stop working immediately if their licence expires</strong> until renewal is confirmed.</li>
+    <li>Renewal applications submitted at the last minute, particularly immediately before weekends, bank holidays or other peak periods, may not be processed prior to the licence expiring.</li>
     <li>Payment <strong>does not guarantee automatic renewal</strong> — applications must be approved first.</li>
     <li>If the renewal window is missed by more than 1 month, direct the customer to <strong>apply for a new licence</strong> instead.</li>
     <li>Customers should ensure all required information is ready before starting the online application to avoid delays.</li>
@@ -1883,7 +1911,7 @@ const renewTaxiDriverLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "12/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -1892,20 +1920,36 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
   "Renew - Private Hire Vehicle Licence",
   "Guidance on renewing a private hire vehicle licence - including requirements, costs, and process details.",
 
-  `<h3>Overview</h3>
-    <p>
-      Customers should renew their private hire vehicle licence <strong>online</strong>. The licence allows a vehicle to 
-      continue operating for private hire purposes and is valid for a maximum of 12 months.
-    </p>
-    
-    <p>
-      Renewal should be completed <strong>within the same month the licence is due to expire</strong>. 
-      Customers are responsible for checking their licence expiry date and renewing on time.
-    </p>
-    
-    <p> If the licence <strong>expires</strong>, the vehicle <strong>cannot legally be used for hire and reward</strong> 
-      until renewal is confirmed.
-    </p>
+  `
+  <h3>Overview</h3>
+  <p>
+    Customers should renew their private hire vehicle licence <strong>online</strong>. 
+    The licence allows a vehicle to continue operating legally as a private hire vehicle 
+    and is valid for a maximum of 12 months.
+  </p>
+  <p>
+    Renewal should be completed <strong>within the same month the licence is due to 
+    expire</strong>. Customers are responsible for checking their licence expiry date 
+    and renewing on time.
+  </p>
+  <p>
+    If the customer misses the expiry deadline, they will have <strong>up to one 
+    month</strong> to renew it.
+  </p>
+  <p>
+    After that date, the customer will need to apply for a <strong>new private hire 
+    vehicle licence</strong>, which will need to meet the current vehicle age specification 
+    requirements.
+  </p>
+  <p>
+    If the licence expires, the vehicle <strong>cannot legally be used as a taxi</strong> 
+    until renewal is confirmed.
+  </p>
+  <p>
+    <strong>Renewal applications submitted at the last minute, particularly immediately 
+    before weekends, bank holidays or other peak periods, may not be processed before the 
+    licence expires.</strong>
+  </p>
 
   <h3>Useful Links</h3>
     <p>
@@ -2028,23 +2072,24 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
   </details>
  
 
-<details class="accordion">
+  <details class="accordion">
     <summary class="accordion-header">
       <h3>Late Renewals</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
-        use the renewal process.
+        Customers who miss their licence expiry date may have <strong>up to one month</strong>
+        after expiry to renew their licence.
       </p>
-    
+
       <p>
-        After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
+        After this period, the customer must <strong>apply for a new private hire vehicle licence</strong>,
+        which will need to meet the current vehicle age specification requirements.
       </p>
-    
+
       <p>
-        If the licence has expired, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+        If the licence has expired, the vehicle <strong>cannot legally be used as a taxi</strong>
         until renewal is confirmed.
       </p>
     </div>
@@ -2091,7 +2136,7 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "17/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -2101,18 +2146,34 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
   "Guidance on renewing a hackney carriage vehicle licence - including requirements, costs, and process details.",
 
   `
-  <h3>Overview</h3>
+    <h3>Overview</h3>
     <p>
-      Customers should renew their hackney carriage vehicle licence <strong>online</strong>. The licence allows a vehicle to 
-      continue operating legally as a hackney carriage and is valid for a maximum of 12 months.
+      Customers should renew their hackney carriage vehicle licence <strong>online</strong>. 
+      The licence allows a vehicle to continue operating legally as a hackney carriage 
+      and is valid for a maximum of 12 months.
     </p>
     <p>
-      Renewal should be completed <strong>within the same month the licence is due to expire</strong>. 
-      Customers are responsible for checking their licence expiry date and renewing on time.
+      Renewal should be completed <strong>within the same month the licence is due 
+      to expire</strong>. Customers are responsible for checking their licence expiry 
+      date and renewing on time.
     </p>
     <p>
-      If the licence <strong>expires</strong>, the vehicle <strong>cannot legally be used as a taxi</strong> 
+      If the customer misses the expiry deadline, they will have <strong>up to one 
+      month</strong> to renew it.
+    </p>
+    <p>
+      After that date, the customer will need to apply for a <strong>new hackney carriage 
+      vehicle licence</strong>. Any new application will need to meet the current vehicle 
+      age specification requirements.
+    </p>
+    <p>
+      If the licence expires, the vehicle <strong>cannot legally be used as a taxi</strong> 
       until renewal is confirmed.
+    </p>
+    <p>
+      <strong>Renewal applications submitted at the last minute, particularly immediately 
+      before weekends, bank holidays or other peak periods, may not be processed before 
+      the licence expires.</strong>
     </p>
 
   <h3>Useful Links</h3>
@@ -2232,28 +2293,28 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
     </div>
   </details>
        
-
 <details class="accordion">
     <summary class="accordion-header">
       <h3>Late Renewals</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
-        use the renewal process.
-      </p>
-      <p>
-        After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
-      </p>
-      <p>
-        If the licence has expired, the vehicle <strong>cannot legally be used as a hackney carriage</strong> 
-        until renewal is confirmed.
-      </p>
+    <p>
+      Customers who miss their licence expiry date may have <strong>up to one month</strong> 
+      after expiry to renew their licence.
+    </p>
+    <p>
+      After this period, the customer must <strong>apply for a new hackney carriage 
+      vehicle licence</strong>, which will need to meet the current vehicle age 
+      specification requirements.
+    </p>
+    <p>
+      If the licence has expired, the vehicle <strong>cannot legally be used as a 
+      taxi</strong> until renewal is confirmed.
+    </p>
     </div>
   </details>
        
-
   <h3>Important Notes for Call Handling</h3>
     <ul>
       <li>The renewal application should be made as soon as possible after the vehicle passes its compliance test.</li>
@@ -2298,7 +2359,7 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "17/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -2575,8 +2636,6 @@ const orderReplacementTaxiItems = new ContentBusiness(
   { date: "18/06/2026", name: "Liz Taster" }
 );
 
-
-
 const taxiAdvertisingConsent = new ContentBusiness(
   "taxiAdvertisingConsent",
   "Taxi Advertising Consent",
@@ -2658,14 +2717,15 @@ const taxiAdvertisingConsent = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>Advertising may be placed:</p>
-        <ul>
-          <li>On the rear window - using contra vision or similar material</li>
-          <li>As half or full vehicle livery* – this must not distract from required signage</li>
-          <li>On a digital screen</li>
-          <li>As illuminated exterior media</li>
-          <li>As a door sign (<em>hackney carriage only</em>)</li>
-          <li>On tip seats (<em>hackney carriage only</em>)</li>
-        </ul>
+      <ul>
+        <li>On the rear window - using contra vision or similar material</li>
+        <li>As half or full vehicle livery* – this must not distract from required signage</li>
+        <li>On a digital screen</li>
+        <li>As illuminated exterior media</li>
+        <li>As a rear door sign (<em>private hire vehicles only</em>)</li>
+        <li>As a door sign (<em>hackney carriage only</em>)</li>
+        <li>On tip seats (<em>hackney carriage only</em>)</li>
+      </ul>
     
       <p>
         <em>* If a vehicle is fully wrapped (full livery) the DVLA V5C logbook must be updated, and vehicle colour must be recorded as “full livery”.</em>
@@ -2767,9 +2827,8 @@ const taxiAdvertisingConsent = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "18/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
-
 
 
 const reportTaxiAccident = new ContentBusiness(
@@ -2780,6 +2839,9 @@ const reportTaxiAccident = new ContentBusiness(
   <h3>Overview</h3>
     <p>
       If a taxi has been involved in an accident, this <strong>must be reported within 72 hours</strong>.
+    </p>
+    <p>
+      Any damage to the vehicle, including <strong>vandalism</strong>, must also be reported to the Licensing Service.
     </p>
     <p>
       This applies to both <strong>private hire vehicles</strong> and <strong>hackney carriage vehicles</strong> 
@@ -2818,6 +2880,12 @@ const reportTaxiAccident = new ContentBusiness(
       <p>
         Drivers (or vehicle proprietors) must complete an <strong>Accident Damage Report form online</strong>.
       </p>
+      <p>
+        Details provided must be <strong>accurate and complete</strong>.
+      </p>
+      <p>
+        To help the Licensing Service evaluate the extent of the damage and determine whether an inspection is required, photographs of the vehicle should also be provided and attached to the report.
+      </p>
     
       <p>They must provide full details of the accident and damage to the vehicle, including any damage that affects:</p>
         <ul>
@@ -2840,7 +2908,13 @@ const reportTaxiAccident = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        The Council will <strong>inspect the vehicle in person</strong> to decide whether the vehicle is still suitable to carry passengers.
+        The Licensing Service will review the information and photographs provided to determine whether a vehicle inspection is required.
+      </p>
+      <p>
+        If an inspection is required, the Licensing Service will contact the vehicle proprietor to arrange a suitable date and time for the vehicle to be inspected at the <strong>Licensing Service, Staniforth Road Depot</strong>.
+      </p>
+      <p>
+        The inspection will determine whether the vehicle remains suitable to carry passengers for hire or reward.
       </p>
       <p>
         If the vehicle is <strong>not fit for use</strong>, the vehicle licence will be <strong>suspended</strong>. 
@@ -2853,7 +2927,6 @@ const reportTaxiAccident = new ContentBusiness(
       </p>
     </div>
   </details>
-
 
     <details class="accordion">
     <summary class="accordion-header">
@@ -2868,13 +2941,14 @@ const reportTaxiAccident = new ContentBusiness(
     </div>
   </details>
 
-
   <h3>Key Messages for Call Handling</h3>
     <ul>
-      <li>Report the accident <strong>within 72 hours</strong></li>
+      <li>Report any accident, damage or vandalism <strong>within 72 hours</strong></li>
       <li>Complete the <strong>Accident Damage Report form</strong> online</li>
+      <li>Provide photographs showing the damage to the vehicle</li>
+      <li>Ensure all information provided is accurate and complete</li>
       <li>Do not use the vehicle if it may be unsafe</li>
-      <li>Await inspection and follow Licensing instructions before returning to work</li>
+      <li>Follow Licensing Service instructions before returning the vehicle to service</li>
     </ul>
     
     `,
@@ -2914,7 +2988,7 @@ const reportTaxiAccident = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "18/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -2928,6 +3002,12 @@ const taxiComplaints = new ContentBusiness(
       Customers can report <strong>complaints about taxi drivers</strong>, vehicles, or operators licensed in Sheffield. 
       The council is responsible for investigating these complaints and may take enforcement action where necessary.
     </p>
+    <p>
+      In order for the Licensing Service to investigate a complaint, enough information must be provided to identify the driver and vehicle involved. This may include vehicle details, driver details, or information contained within a booking record.
+    </p>
+    <p>
+      Sheffield City Council can only investigate matters involving drivers and vehicles licensed by Sheffield City Council. If the complaint relates to a driver or vehicle licensed by another licensing authority, the council will be unable to take further action and the complainant should contact the relevant licensing authority responsible for investigating the matter.
+    </p>    
     <p>
       Complaints are currently submitted by email using a form available here: 
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/passenger-information/complain-about-taxi-or-driver" target="_blank">
@@ -3020,7 +3100,7 @@ const taxiComplaints = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "18/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
@@ -3166,9 +3246,10 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
 
     <h3>What Drivers Need to Do</h3>
     <ul>
-      <li>Request a DBS application pack from the taxi licensing team</li>
-      <li>Complete the form and attend <strong>Howden House</strong> for document checks</li>
-      <li>Pay the <strong>£49.50 fee</strong></li>
+      <li>Request a DBS application pack from the Taxi Licensing Team.</li>
+      <li>Attend Howden House First Point between 10:00am and 4:00pm, Monday to Friday, to have identity documents checked and verified in person by an officer.</li>
+      <li>Complete the DBS application process following document verification.</li>
+      <li>Pay the <strong>£41 DBS fee</strong>.</li>
     </ul>
 
     <p>
@@ -3217,10 +3298,8 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "19/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
-
-
 
 const taxiDriverMedical = new ContentBusiness(
   "taxiDriverMedical",
@@ -3252,27 +3331,31 @@ const taxiDriverMedical = new ContentBusiness(
             Send link to review further information
         </button>
 
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What the Medical Checks</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>The assessment looks at key health areas, including:</p>
-        <ul>
-          <li>Neurological health</li>
-          <li>Eyesight</li>
-          <li>Heart health</li>
-          <li>Mental health</li>
-          <li>Diabetes</li>
-          <li>Drug or alcohol issues</li>
-          <li>Other relevant conditions</li>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>What the Medical Assessment Checks</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+      <p>The assessment considers a range of medical conditions and health factors that 
+      may affect a person's ability to drive safely, including:</p>
+      <ul>
+        <li>Eyesight and vision standards</li>
+        <li>Neurological conditions</li>
+        <li>Epilepsy and seizure-related conditions</li>
+        <li>Heart and cardiovascular conditions</li>
+        <li>Diabetes</li>
+        <li>Mental health conditions</li>
+        <li>Alcohol dependency or misuse</li>
+        <li>Drug dependency or misuse</li>
+        <li>Physical disabilities or mobility issues</li>
+        <li>Respiratory conditions</li>
+        <li>Sleep disorders, including sleep apnoea</li>
+        <li>Any other medical condition that may affect safe driving</li>
       </ul>
-    </div>
-  </details>
+      </div>
+    </details>
  
-
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Ongoing Requirements</h3>
@@ -3287,7 +3370,7 @@ const taxiDriverMedical = new ContentBusiness(
         <li>Drivers <strong>age 45+</strong> require a medical <strong>every 5 years</strong></li>
         <li>Drivers <strong>age 65+</strong> require a medical <strong>every year</strong></li>
         <li>Extra checks may be required if recommended by a GP</li>
-        <li>Drivers must report any health changes</li>
+        <li>Drivers must report any health changes to the licensing service by email</li>
       </ul>
     </div>
   </details>
@@ -3313,11 +3396,9 @@ const taxiDriverMedical = new ContentBusiness(
         <ul>
           <li>Email (photos of all pages)</li>
           <li>Post</li>
-          <li>In person</li>
         </ul>
     </div>
   </details>
-    
 
   <h3>Key information for call centre staff</h3>
     <ul>
@@ -3358,7 +3439,7 @@ const taxiDriverMedical = new ContentBusiness(
     ],
     categories: ["Business", "Taxi Licensing"]
   },
-  { date: "19/06/2026", name: "Liz Taster" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 
