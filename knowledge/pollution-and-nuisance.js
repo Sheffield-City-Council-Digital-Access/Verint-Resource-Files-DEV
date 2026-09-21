@@ -1325,14 +1325,18 @@ const fliesTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: [
+  keywords: [
     "Flies",
     "Flys",
     "Cluster Flies",
     "Cluster Flys",
+    "Sewage Flies",
+    "Sewage Fly",
+    "Sewige Flies",
     "Treatment",
     "Pests",
     "Pest",
+    "Pestss",
     "Vermin",
     "Verman"
   ],
@@ -2917,7 +2921,7 @@ const ratTreatment = new ContentPaN(
 { date: "27/08/2026", name: "Liz Taster" }
 ); */
 
-const sewageFliesTreatment = new ContentPaN(
+/* const sewageFliesTreatment = new ContentPaN(
   "sewageFliesTreatment",
   "Sewage Flies Treatment",
   "Information on Sewage Flies treatment, including sample requirements, treatment costs, discounted prices for benefits recipients, and associated call-out fees.",
@@ -2995,7 +2999,7 @@ const sewageFliesTreatment = new ContentPaN(
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
-);
+); */
 
 const silverFishTreatment = new ContentPaN(
   "silverFishTreatment",
@@ -3384,7 +3388,6 @@ const pestControl = new MenuPaN(
     pharoahAntsTreatment,
     psocidsTreatment,
     ratTreatment,
-    sewageFliesTreatment,
     silverFishTreatment,
     spiderBeetlesTreatment,
     squirrelsTreatment,
