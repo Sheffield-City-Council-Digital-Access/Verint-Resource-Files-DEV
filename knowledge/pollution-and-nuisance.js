@@ -579,11 +579,11 @@ const bumbleBeesTreatment = new ContentPaN(
     <p>
       If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
       required treatment for a domestic properties such as Council Housing, Housing Association, Privately Owned, Private Rented,
-      then the treatment cost for Bumble Bees is <strong>£79.20.</strong>
+      then the treatment cost for Bumble Bees is <strong>£83.00.</strong>
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£61.20.</strong>
+      reduced to <strong>£64.00.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1935,11 +1935,11 @@ const masonryBeesTreatment = new ContentPaN(
     <h3> Treatment Cost</h3>
 
     <p>
-      The treatment cost is <strong>£79.20</strong>.
+      The treatment cost is <strong>£83.00</strong>.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£61.20:</strong>
+      reduced to <strong>£64.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -3235,7 +3235,7 @@ const woodliceTreatment = new ContentPaN(
     </section>
 
     <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
 
