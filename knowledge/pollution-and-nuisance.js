@@ -2215,7 +2215,7 @@ const mitesTreatment = new ContentPaN(
   <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for mite treatment in your domestic property
+        Before we can provide treatment for mites in your domestic property
         such as Council House, Housing Association or Private Rented, we
         will need a sample of the pest.
       </p>
@@ -2555,8 +2555,41 @@ const pharoahAntsTreatment = new ContentPaN(
   "Pharoah Ants Treatment",
   "Details on Pharoah Ant treatment costs and available discounts for benefit recipients.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Pharoah Ants in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
-    
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
        The treatment cost will be on request. We will send your 
@@ -3039,6 +3072,40 @@ const silverFishTreatment = new ContentPaN(
   "Silver Fish Treatment",
   "Information on Silver Fish treatment, including treatment costs, discounted prices for benefits recipients, and associated call-out fees.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Silver Fish in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
     <p>
       The treatment cost for Silver Fish is <strong>£110.00.</strong> This is based on a standard size
@@ -3347,8 +3414,41 @@ const woodliceTreatment = new ContentPaN(
   "Woodlice Treatment",
   "Information on the cost of treatment for woodlice, including benefits-related discounts, and the call-out fee.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Woodlice in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
-    
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
        The treatment cost will be on request. We will send your 
