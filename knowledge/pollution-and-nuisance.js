@@ -1693,8 +1693,21 @@ const honeyBeeTreatment = new ContentPaN(
       will remove bees, which are nesting in a cavity, chimney etc.
       <br>
       <br>
-      You can call through to Environmental Services on <strong>30353</strong>
+      For further advice refer to a technician
     </p>
+      <section class="info-panel" role="region" aria-label="Information panel">
+          <p>
+          The treatment cost will be on request. We will send your 
+            <a href="${window.location.protocol}//${
+        window.location.hostname
+      }/form/launch/pest_control_technician?${
+        KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+      }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+            for survey and provide a quote. 
+          </p>
+      </section>    
     <details class="accordion">
     <summary class="accordion-header">
       <h3>Beekeepers List</h3>
