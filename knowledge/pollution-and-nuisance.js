@@ -1435,15 +1435,18 @@ const foxesInformation = new ContentPaN(
       If the customer is a commercial business owner, please refer to a technician for advice.
     </p>
     <section class="info-panel" role="region" aria-label="Information panel">
-      <p>
+        <p>
         The treatment cost will be on request. We will send your 
-        customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
-  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
-        for survey and provide a quote. 
-      </p>
-    </section>
+          <a href="${window.location.protocol}//${
+      window.location.hostname
+    }/form/launch/pest_control_technician?${
+      KDF.getParams().customerid
+        ? `customerid=${KDF.getParams().customerid}&`
+        : ""
+    }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+          for survey and provide a quote. 
+        </p>
+      </section>
   `,
   {
     buttonLabel: "",
