@@ -1327,13 +1327,8 @@ const fliesTreatment = new ContentPaN(
 
     <h3>Additional Information</h3>
     <p>
-      <strong>Drain flies</strong> - once identified Sheffield City Council can treat drain flies, their presence indicate a plumbing issue and this needs resolving 
-      <em>before</em> booking the treatment.
-    </p>
-
-    <p>
-      <strong>Fruit flies</strong> - we do not usually treat for fruit flies, if confirmed that’s what they are. 
-      Advise the customer to dispose old of fruit and food from the area. 
+      Typical flies found within properties in Sheffield are, drain, fruit, blow, house
+      and cluster flies. To correctly identify please send us your sample.
     </p>
   `,
   {
