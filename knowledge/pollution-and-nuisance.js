@@ -1242,7 +1242,7 @@ const fleasTreatment = new ContentPaN(
         onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=PreventingFleas%20in%20Animals\`
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Preventing%20Fleas%20in%20Animals\`
         "
       >
         Send link to review further information
