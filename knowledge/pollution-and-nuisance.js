@@ -1167,68 +1167,87 @@ const fleasTreatment = new ContentPaN(
       the call out charge will be applied.
     </p>
     <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Do I need to provide a sample?</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
+      <summary class="accordion-header">
+        <h3>Do I need to provide a sample?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Normally, we don't require a sample of fleas before scheduling a
+          treatment, as they are small, elusive, and difficult to catch. <br>
+          <br>
+          However, some individuals may mistakenly believe they have a flea
+          infestation due to skin conditions or psychological issues.<br>
+          <br>
+          Find out if the customer has pets like cats or dogs, as fleas are commonly
+          associated with pets. Ask if they've noticed bites, especially on their
+          lower legs or ankles. Also, check if they’ve recently moved into a vacant
+          property, as fleas can linger in unoccupied homes, and the customer may
+          have seen small, dark insects jumping around.
+        </p>
+        <p>
+          Sometimes people can believe they have fleas because:
+        </p>
+        <ul>
+          <li>They feel something crawling on them</li>
+          <li>They are itching</li>
+          <li>They are covered in bites all over their body</li>
+          <li>They do not have pets</li>
+        </ul>
+        <p>
+          In these cases, we may request a sample or photo for identification.
+          Alternatively, we can monitor the property using traps and proceed with
+          treatment if fleas are confirmed.
+        </p>
+        <p>You can either bring your sample to:</p>
+        <address>
+          First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1
+          2SH
+        </address>
+        <p>Or you can post your sample to:</p>
+        <address>
+          Environmental Services<br />
+          Block B, Staniforth Road Depot<br />
+          Staniforth Road<br />
+          Sheffield, S9 3HD
+        </address>
+        <p>
+          Please ensure your sample is in a secure, crush-proof container, alive or
+          dead. Attach information detailing:
+        </p>
+        <ul>
+          <li>Your name</li>
+          <li>Your address</li>
+          <li>Your contact number and/or email</li>
+          <li>How long the insects have been present</li>
+          <li>Where in the property the insects have been found</li>
+        </ul>
+      </div>
+    </details>
+    <br><br>
+    <h3>Additional Information</h3>
     <p>
-      Normally, we don't require a sample of fleas before scheduling a
-      treatment, as they are small, elusive, and difficult to catch. <br>
+      If booking a treatment, advise the customer to have their pets treated at the vets just before Sheffield City Council attend to spray.
+    </p>
+    <p>
+      Ensure any domestic animals are treated separately. Further information can be found at:
+      <a href="https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/conditions/preventing-fleas-in-dogs-cats-and-rabbits" target="_blank" rel="noopener noreferrer">
+        https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/conditions/preventing-fleas-in-dogs-cats-and-rabbits
+      </a>
       <br>
-      However, some individuals may mistakenly believe they have a flea
-      infestation due to skin conditions or psychological issues.<br>
-    <br>
-      Find out if the customer has pets like cats or dogs, as fleas are commonly
-      associated with pets. Ask if they've noticed bites, especially on their
-      lower legs or ankles. Also, check if they’ve recently moved into a vacant
-      property, as fleas can linger in unoccupied homes, and the customer may
-      have seen small, dark insects jumping around.
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about preventing fleas in dogs, cats and rabbits"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=PreventingFleas%20in%20Animals\`
+        "
+      >
+        Send link to review further information
+      </button>
     </p>
-    <p>
-      Sometimes people can believe they have fleas because:
-    </p>
-    <ul>
-      <li>They feel something crawling on them</li>
-      <li>They are itching</li>
-      <li>They are covered in bites all over their body</li>
-      <li>They do not have pets</li>
-    </ul>
-    <p>
-      In these cases, we may request a sample or photo for identification.
-      Alternatively, we can monitor the property using traps and proceed with
-      treatment if fleas are confirmed.
-    </p>
-    <p>You can either bring your sample to:</p>
-    <address>
-      First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1
-      2SH
-    </address>
-    <p>Or you can post your sample to:</p>
-    <address>
-      Environmental Services<br />
-      Block B, Staniforth Road Depot<br />
-      Staniforth Road<br />
-      Sheffield, S9 3HD
-    </address>
-    <p>
-      Please ensure your sample is in a secure, crush-proof container, alive or
-      dead. Attach information detailing:
-    </p>
-    <ul>
-      <li>Your name</li>
-      <li>Your address</li>
-      <li>Your contact number and/or email</li>
-      <li>How long the insects have been present</li>
-      <li>Where in the property the insects have been found</li>
-    </ul>
-  </div>
-</details>
-
-<h3>Additional Information</h3>
-<p>
-  If booking a treatment, advise the customer to have their pets treated at the vets just before Sheffield City Council attend to spray.  
-</p>
   `,
   {
     buttonLabel: "Book treatment for Fleas",
@@ -1241,7 +1260,7 @@ const fleasTreatment = new ContentPaN(
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 const fliesTreatment = new ContentPaN(
