@@ -1903,7 +1903,7 @@ const ladyBirdsTreatment = new ContentPaN(
   <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Biscuit Beetles in your domestic property
+        Before we can provide treatment for ladybirds in your domestic property
         such as Council House, Housing Association or Private Rented, we
         will need a sample of the pest.
       </p>
@@ -2212,8 +2212,41 @@ const mitesTreatment = new ContentPaN(
   "Mites Treatment",
   "Details about mite treatment costs, benefit-related discounts, and the call-out fee.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for mite treatment in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
-    
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
        The treatment cost will be on request. We will send your 
@@ -3052,7 +3085,7 @@ const silverFishTreatment = new ContentPaN(
   { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
-const spiderBeetlesTreatment = new ContentPaN(
+/* const spiderBeetlesTreatment = new ContentPaN(
   "spiderBeetlesTreatment",
   "Spider Beetles Treatment",
   "Details on Spider Beetles treatment, including sample submission instructions, treatment cost, discounted prices for benefits recipients, and call-out fees.",
@@ -3135,7 +3168,7 @@ const spiderBeetlesTreatment = new ContentPaN(
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
-);
+); */
 
 const squirrelsTreatment = new ContentPaN(
   "squirrelsTreatment",
@@ -3389,7 +3422,6 @@ const pestControl = new MenuPaN(
     psocidsTreatment,
     ratTreatment,
     silverFishTreatment,
-    spiderBeetlesTreatment,
     squirrelsTreatment,
     waspsTreatment,
     weevilsTreatment,
