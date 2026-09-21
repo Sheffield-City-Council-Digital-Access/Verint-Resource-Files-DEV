@@ -2766,7 +2766,7 @@ const ratTreatment = new ContentPaN(
       If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
-      All prices include a call-out fee of <strong>£40.00.</strong> This fee applies if our officer
+      All prices include a call-out fee of <strong>£40.80.</strong> This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <p>
@@ -2783,7 +2783,6 @@ const ratTreatment = new ContentPaN(
       Free treatments - there is no call out charge if the Technician is unable to gain access.
     </p>
 
-        
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Communal Areas</h3>
@@ -3285,7 +3284,10 @@ const squirrelsTreatment = new ContentPaN(
   "Details on Squirrel treatment, including costs, discounted rates for benefits recipients, and the included call-out fee.",
   `
   <p>
-    If the tenant can hear noises in the loft, ask if this is in the daytime or nighttime. Squirrels tend to sleep at night so noises at night are more likely to be a rat issue.
+    If the tenant can hear squirrels in the loft during the daytime, ask whether they 
+    are also seeing squirrels in the garden. If they are not seeing squirrels during 
+    the day and are only hearing noises at night, it is more likely to be a rat issue 
+    rather than squirrels.
   </p>
   <p>
     For advice on squirrel treatments, please contact the pest control back office at:
@@ -3364,6 +3366,22 @@ const waspsTreatment = new ContentPaN(
   <p>
     If the wasp nest is on Council land then it needs reporting to the relevant service, Housing, Schools, PFM etc. 
   </p>
+    <p>
+     If a wasp nest is on a public right of way, refer to technician
+  </p>
+   <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
 
   `,
   {
