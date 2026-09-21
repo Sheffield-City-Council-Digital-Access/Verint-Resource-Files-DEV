@@ -6526,8 +6526,8 @@ const registerAFoodBusiness = new ContentPaD(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const skinPiercingRegistration = new ContentPaD(
-  "skinPiercingRegistration",
+const skinPiercingRegistrationEnviro = new ContentPaD(
+  "skinPiercingRegistrationEnviro",
   "Skin Piercing Registration",
   "Information about registering skin piercing premises and operators, registration fees, inspections and hygiene requirements.",
   `
@@ -7199,7 +7199,7 @@ const environmentalRegulations = new MenuPaD(
     bulkyWasteCollection,
     foodLawInspectionsAndHygieneRatings,
     registerAFoodBusiness,
-    skinPiercingRegistration,
+    skinPiercingRegistrationEnviro,
     coolingTowerRegistration,
     infectiousDiseasesAndFoodPoisoningPrivacyNotice,
     environmentalPermitsPartB
