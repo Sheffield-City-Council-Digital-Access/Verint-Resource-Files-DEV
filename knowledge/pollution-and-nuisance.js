@@ -800,87 +800,6 @@ const carpetBeetlesTreatment = new ContentPaN(
   { date: "28/02/2025", name: "Dinah Williams" }
 );
 
-const clusterFliesTreatment = new ContentPaN(
-  "clusterFliesTreatment",
-  "Cluster Flies Treatment",
-  "Learn how to submit a sample for Cluster Flies treatment, the treatment cost for domestic properties, including discounts for eligible benefits, and the associated call-out fee for treatment.",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>Sample Required</h3>
-      <p>
-        Before we can provide treatment for Cluster Flies in your domestic property, we
-        will need a sample of the pest.
-      </p>
-      <p>You can either bring your sample to:</p>
-      <address>
-        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
-      </address>
-      <p>Or you can post your sample to:</p>
-      <address>
-        Environmental Services<br />
-        Block B, Staniforth Road Depot<br />
-        Staniforth Road<br />
-        Sheffield, S9 3HD
-      </address>
-      <p>
-        Please ensure your sample is in a secure, crush-proof container, alive or
-        dead. Attach information detailing:
-      </p>
-      <ul>
-        <li>Your name</li>
-        <li>Your address</li>
-        <li>Your contact number and/or email</li>
-        <li>How long the insects have been present</li>
-        <li>Where in the property the insects have been found</li>
-      </ul>
-      <p>
-        If a sample has been provided and the pests have been confirmed, you can request a treatment.
-      </p>
-      <p>
-        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
-      </p>
-    </section>
-    <h3>Cost for Treatment</h3>
-    <p>
-      The treatment cost for Cluster Flies is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to £70:
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
-  `,
-  {
-    buttonLabel: "Book treatment for Cluster Flies",
-    formName: "pest_control_treatment",
-  },
-  { typeKey: "" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Cluster Flies", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Environmental Health"
-    ],
-  },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
-);
-
 const cockroachesTreatment = new ContentPaN(
   "cockroachesTreatment",
   "Cockroaches Treatment",
@@ -1325,7 +1244,17 @@ const fliesTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Flies", "Treatment", "Pests", "Vermin"],
+    keywords: [
+    "Flies",
+    "Flys",
+    "Cluster Flies",
+    "Cluster Flys",
+    "Treatment",
+    "Pests",
+    "Pest",
+    "Vermin",
+    "Verman"
+  ],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -3340,7 +3269,6 @@ const pestControl = new MenuPaN(
     biscuitBeetlesTreatment,
     bumbleBeesTreatment,
     carpetBeetlesTreatment,
-    clusterFliesTreatment,
     cockroachesTreatment,
     cricketsTreatment,
     dermestesBeetlesTreatment,
