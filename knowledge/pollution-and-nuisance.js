@@ -1418,7 +1418,7 @@ const foxesInformation = new ContentPaN(
     <p>For advice/information on foxes, please visit 
     <a href="http://foxproject.org.uk" target="_blank" rel="noopener noreferrer">http://foxproject.org.uk</a>.
     <br>
- <button
+    <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
         aria-label="Send link to further information about the fox project"
@@ -1430,8 +1430,20 @@ const foxesInformation = new ContentPaN(
       >
         Send link to review further information
       </button>
-
     </p>
+    <p>
+      If the customer is a commercial business owner, please refer to a technician for advice.
+    </p>
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+        The treatment cost will be on request. We will send your 
+        customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
   `,
   {
     buttonLabel: "",
@@ -1449,7 +1461,7 @@ const foxesInformation = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 const frogsorFrogspawn = new ContentPaN(
