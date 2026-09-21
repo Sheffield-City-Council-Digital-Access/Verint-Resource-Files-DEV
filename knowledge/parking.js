@@ -89,7 +89,7 @@ const makingAPayment = new ContentP(
     </p>
     <p>
       For further information, visit
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank"
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank" rel="noopener noreferrer"
         >Sheffield Parking</a
       >.
       <button
@@ -165,8 +165,8 @@ const customerPaidTwice = new ContentP(
   "Report a double payment issue by emailing Customer Services with the details of the problem for investigation",
   `
       <p>
-        The customer needs to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> advising 
-        the issue they experienced, customer services will then look into the issue
+        The customer needs to email <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a> advising 
+        the issue they experienced, Parking Services will then look into the issue.
       </p>
     `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -195,7 +195,7 @@ const customerPaidTwice = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "19/09/2026", name: "Liz Taster" }
 );
 
 //#endregion Cross regional tiles
@@ -299,7 +299,7 @@ const applyBlueBadge = new ContentP(
       </p>
      
       <p>
-      <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
+      <a href="https://www.gov.uk/apply-blue-badge" target="_blank" rel="noopener noreferrer">https://www.gov.uk/apply-blue-badge</a>
       <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to apply for a blue badge"
           onclick="
@@ -769,7 +769,7 @@ const illegalParking = new ContentP(
     <h3>Incorrectly Parked Vehicles (in Contravention)</h3>
     <p>
     Customers can report an incorrectly parked vehicle via our website:<br>
-    <a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">
+    <a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank" rel="noopener noreferrer">
              https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle
     </a>
     Report an incorrectly parked vehicle
@@ -1146,7 +1146,8 @@ const businessPermit = new ContentP(
 </details>
 
 <p>
-	For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit</a>.
+	For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit" target="_blank" rel="noopener noreferrer">
+  https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit</a>.
 </p>
 
      <button
@@ -1165,7 +1166,8 @@ const businessPermit = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 
@@ -1326,7 +1328,8 @@ const residentsCarer = new ContentP(
 
 <p>
     For further information, visit  
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit" target="_blank"> https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit</a>
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit</a>
 </p>
 
 <button
@@ -1345,7 +1348,7 @@ const residentsCarer = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
      
   `,
@@ -1497,7 +1500,8 @@ const greenParkingPermit = new ContentP(
 	
 	<p>
 	  For further information, visit 
-	  <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits</a>.
+	  <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits</a>.
 	</p>
 	
 	<button
@@ -1516,7 +1520,8 @@ const greenParkingPermit = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 `,
   {
@@ -1667,7 +1672,8 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates" target="_blank">https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates</a>.
+    <a href="https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates</a>.
 </p>
 
 <button
@@ -1686,7 +1692,8 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -1777,7 +1784,8 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit</a>.
   </p>
  </div>
 </details>
@@ -1798,7 +1806,8 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
       <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -1913,7 +1922,8 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit</a>.
   </p>
 </div>
 
@@ -1933,7 +1943,8 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
      <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2089,7 +2100,8 @@ Get in touch with us for any other problems regarding parking permit application
 
 
                         <p>
-                    For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits</a>.
+                    For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits" target="_blank" rel="noopener noreferrer">
+                    https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits</a>.
                     
                 </p>
          <button
@@ -2108,7 +2120,8 @@ Get in touch with us for any other problems regarding parking permit application
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2152,8 +2165,8 @@ const staffPermit = new ContentP(
   `<p>
   Staff who need to apply for a parking permit should contact Facilities Management 
   for assistance. Full details on how to apply for a staff parking permit can be (Internal Only)
-  found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
-  target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
+  found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" target="_blank" rel="noopener noreferrer">
+  https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
 </p>
 
 
@@ -2173,7 +2186,8 @@ const staffPermit = new ContentP(
     <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
   `,
@@ -2310,7 +2324,8 @@ const tradePermit = new ContentP(
 
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits</a>.
 
     </p>
              <button
@@ -2329,7 +2344,8 @@ const tradePermit = new ContentP(
     <h4>Taranto</h4>
 
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2390,7 +2406,8 @@ const utilityPermit = new ContentP(
   
   <h4>Taranto</h4>
   <p>
-    <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+    https://sheffield.taran.to/CombinedLogin.aspx</a>
   </p>
 
  	`,
@@ -2534,7 +2551,8 @@ Contractors needing more time to work at a property will need to apply for trade
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit</a>.
   </p>
 </div>
 
@@ -2560,7 +2578,8 @@ Contractors needing more time to work at a property will need to apply for trade
        <h4>Taranto</h4>
     
     <p>
-      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank" rel="noopener noreferrer">
+      https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
 
 	`,
@@ -2627,8 +2646,7 @@ const confirmationOfPayment = new ContentP(
   "Report payment discrepancies by submitting a written appeal and proof of payment, including the last 4 digits of the card if applicable.",
   `
   <p>
-    Payments can take up to 3–4 days to show on our system regardless of the
-    payment method.
+    Payments can take up to 3–4 days to show on our system, particularly when payment has been made through Paypoint and/or at a Post Office.
   </p>
   <p>
     If the customer has received further correspondence from Parking Services
@@ -2636,7 +2654,7 @@ const confirmationOfPayment = new ContentP(
   </p>
   <ul>
     <li>They believe payment has already been made</li>
-    <li>Gateway is not showing case is fully paid (closed)</li>
+    <li>Taranto is not showing case is fully paid (closed)</li>
   </ul>
   <p>
     The customer should make a written appeal online or in writing (ideally online
@@ -2675,7 +2693,7 @@ const confirmationOfPayment = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "19/09/2026", name: "Liz Taster" }
 );
 
 //
@@ -2688,9 +2706,9 @@ const customerTriedToPayOnline = new ContentP(
   "Ensure the vehicle registration number and full PCN number are entered correctly without spaces when trying to pay online.",
   `
 		<p>
-			The PCN should show on Gateway/online within minutes of being issued,
+			The PCN should show on Taranto/online within minutes of being issued,
 			therefore the customer may have incorrect details. The ticket details can be
-			confirmed on Gateway.
+			confirmed on Taranto.
       <br>
       <br>
       The Vehicle Registration Number (VRN) should be entered without spaces along 
@@ -2699,6 +2717,10 @@ const customerTriedToPayOnline = new ContentP(
       <br>
 			Check the person entering the details has entered the VRM without spaces and
 			entered the full PCN number.
+      <br>
+      <br>
+      Check for common errors such as inserting a letter 'O' instead of the number '0',
+      and other common letter/number mix ups.
 		</p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -2731,7 +2753,7 @@ const customerTriedToPayOnline = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "19/09/2026", name: "Liz Taster" }
 );
 
 const customerUnableToPay = new ContentP(
@@ -2749,7 +2771,7 @@ const customerUnableToPay = new ContentP(
     </p>
     <ul>
       <li>They believe payment has already been made</li>
-      <li>Gateway is not showing case is fully paid (closed)</li>
+      <li>Taranto is not showing case is fully paid (closed)</li>
     </ul>
     <p>
       The customer should make a written appeal online or in writing (ideally online
@@ -2796,7 +2818,7 @@ const customerUnableToPay = new ContentP(
       <p>
         If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
       </div>
     </details>
@@ -2817,6 +2839,7 @@ const customerUnableToPay = new ContentP(
         </p>
         <p><strong>Equita</strong><br>
         Phone: <a href="tel:01604628360">01604 628 360</a>
+        Email: <a href="mailto:info@equita.co.uk">info@equita.co.uk</a>
         </p>
         <p><strong>Excel</strong><br>
         Phone: <a href="tel:03303639988">0330 363 9988</a><br>
@@ -2829,6 +2852,10 @@ const customerUnableToPay = new ContentP(
         <p><strong>Newlyn</strong><br>
         Phone: <a href="tel:01604633001">01604 633001</a><br>
         Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
+        </p>
+        <p><strong>PACE</strong><br>
+        Phone: <a href="tel:01142930853">0114 293 0853</a><br>
+        Email: <a href="mailto:enforcementteam@sheffield.gov.uk">enforcementteam@sheffield.gov.uk</a>
         </p>
         <p><strong>Phoenix/CDER</strong><br>
         Phone: <a href="tel:03004605295">0300 460 5295</a><br>
@@ -2867,7 +2894,7 @@ const customerUnableToPay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "28/07/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const enforcementBaliffEnquiries = new ContentP(
@@ -2905,9 +2932,7 @@ const enforcementBaliffEnquiries = new ContentP(
       <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type.<br><br> 
       If you can, try to get as much information from the customer such as the PCN reference and any background information. If there is no answer, raise an enquiry using the form PCN enquiry below.
     </p>
-    <p>
-    If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
-    </p>
+
 
         <details class="accordion">
       <summary class="accordion-header">
@@ -2925,6 +2950,7 @@ const enforcementBaliffEnquiries = new ContentP(
         </p>
         <p><strong>Equita</strong><br>
         Phone: <a href="tel:01604628360">01604 628 360</a>
+        Email: <a href="mailto:info@equita.co.uk">info@equita.co.uk</a>
         </p>
         <p><strong>Excel</strong><br>
         Phone: <a href="tel:03303639988">0330 363 9988</a><br>
@@ -2937,6 +2963,10 @@ const enforcementBaliffEnquiries = new ContentP(
         <p><strong>Newlyn</strong><br>
         Phone: <a href="tel:01604633001">01604 633001</a><br>
         Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
+        </p>
+        <p><strong>PACE</strong><br>
+        Phone: <a href="tel:01142930853">0114 293 0853</a><br>
+        Email: <a href="mailto:enforcementteam@sheffield.gov.uk">enforcementteam@sheffield.gov.uk</a>
         </p>
         <p><strong>Phoenix/CDER</strong><br>
         Phone: <a href="tel:03004605295">0300 460 5295</a><br>
@@ -2980,7 +3010,7 @@ const enforcementBaliffEnquiries = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "28/07/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const howCanIAppeal = new ContentP(
@@ -3005,7 +3035,7 @@ const howCanIAppeal = new ContentP(
       <br>
       Appeals should always be made online however, if you are unable to make 
       an online appeal, you can email: <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a>
-      explaining the reason for the appeal
+      explaining the reason for the appeal.
     </p>
 
     <details class="accordion">
@@ -3016,15 +3046,17 @@ const howCanIAppeal = new ContentP(
   <div class="accordion-content">
     <p>
       If the case is at the following stages:
+    </p>
       <ul>
         <li>PCN issued (parking or camera – bus lane/CAZ)</li>
         <li>Notice to Owner (NTO)</li>
         <li>Charge Certificate (CC)</li>
       </ul>
       Then they need to do this via <br>
-      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank"https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
+      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank" rel="noopener noreferrer">
+      https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a><br><br>
 
-      <button
+    <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
@@ -3033,10 +3065,11 @@ const howCanIAppeal = new ContentP(
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
         }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20Penalty%20Charge%20Notice\`
     "
->
-    Send link to review further information
-</button>
+    >
+        Send link to review further information
+    </button>
 
+    <p>
       If they are unable to do this via the website, then they can appeal via email to:<br>
       <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a><br>
       Or via post to:<br>
@@ -3046,11 +3079,18 @@ const howCanIAppeal = new ContentP(
       Sheffield,<br>
       S1 9AQ
       </address><br><br>
-      We are unable to listen to / accept representations over the phone and we are not allowed to accept emails from yourselves as representations.<br><br>
+      We are unable to listen to / accept representations over the phone and we are not allowed to accept emails from yourselves as representations.
+      <br><br>
       If the customer states they are unable to make representations online or via 
       email then please direct them to family/friends in the first instance or 
-      Citizens Advice (opening times 10am – 4pm): <a href="tel:0808 2787820"> 0808 2787820</a>.<br><br>
+      Citizens Advice (opening times 10am – 4pm): <a href="tel:0808 2787820"> 0808 2787820</a>.
+      <br><br>
       They also have the option to come to First Point and fill in a form there that will be sent to us and attached to the case.
+      <br><br>
+      If a customer is asking about reasonable adjustments (i.e. due to a disability), please contact the NPT backoffice team who will be able to advise.
+      <br>Warm transfer to: <strong>Advisor Note: (Internal number Storm line):</strong><a href="tel: 87061">87061</a>. 
+      If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
     </p>
   </div>
 </details>
@@ -3095,8 +3135,8 @@ const howCanIAppeal = new ContentP(
   </summary>
   <div class="accordion-content">
     <ul>
-      <li>Name is on a PCN for a vehicle they have NEVER owned: Provide a police report for fraud and appeal the PCN.</li>
-      <li>State vehicle has been cloned: Provide photographs of the vehicle and a crime reference number.</li>
+      <li>Name is on a PCN for a vehicle they have NEVER owned: Provide a police report for fraud and to appeal the PCN on this basis.</li>
+      <li>State vehicle has been cloned: Provide photographs of <strong>all sides</strong> of the vehicle and a crime reference number.</li>
       <li>State vehicle was stolen: Provide police evidence such as a crime reference/incident number.</li>
       <li>State they were involved in an emergency: Provide proof such as hospital admission or other relevant documentation.</li>
       <li>State their vehicle broke down: Provide evidence such as mechanic receipts or towing documentation.</li>
@@ -3143,7 +3183,7 @@ const howCanIAppeal = new ContentP(
 <p>
   If you are still unable to resolve the PCN, you can warm transfer to:
   <strong>Advisor Note: (Internal number Storm line):</strong>
-  <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+  <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
 </p>
   </div>
 </details>
@@ -3180,7 +3220,7 @@ const howCanIAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "28/07/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const howLongDoIHaveToAppeal = new ContentP(
@@ -3188,13 +3228,17 @@ const howLongDoIHaveToAppeal = new ContentP(
   "How long do I have to appeal?",
   "Find out the next steps if your PCN challenge is rejected, including information on how to proceed with further action.",
   `	
-    <h3>Rejected PCN's</h3>
+    <p>
+      Advise the customer that timescales for next steps will be clearly stated in the last piece of correspondence sent to customer.
+      <br>Ask the customer to refer to the correspondence most recently received.
+    </p>
+    
     <p>
       The correspondence to reject their challenge will explain the next steps to
       take if they are unhappy with the decision.
       <br>
       <br>
-      General information relating to the PCN Enforcement is available at: <a href="http://www.patrol-uk.info"target="_blank">http://www.patrol-uk.info</a>
+      General information relating to the PCN Enforcement is available at: <a href="http://www.patrol-uk.info" target="_blank" rel="noopener noreferrer">http://www.patrol-uk.info</a>
       <br>
       
 <button
@@ -3243,7 +3287,7 @@ const howLongDoIHaveToAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "15/05/2025", name: "Dinah Williams" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 //
@@ -3255,108 +3299,21 @@ const multiplepcns = new ContentP(
   "Multiple PCN's",
   "Find out how to challenge multiple PCNs online, including how to submit evidence and use the interactive portal for your appeal.",
   `
-<h4>Case is at Debt Registration – What Are the Customer’s Options?</h4>
+<p>
+  Advisors may assist customers with enquiries relating to multiple PCNs where the information is straightforward and within their knowledge. 
+</p>
+<p>
+  Advisors must only discuss PCNs relating to the caller or where appropriate authority has been provided.
+</p>
+<p>
+  Where the enquiry is complex, involves several PCNs with differing statuses, or requires detailed case assessment, the customer should be warm transferred to NPT.
+  <br><strong>Advisor Note: (Internal number Storm line):</strong> <a href="tel: 87061">87061</a>. 
+  If there is no answer, raise an enquiry using the form PCN enquiry below.
+</p>
 
-<p>If the case is currently at debt registration, this means that we are unable to accept representations from the customer.</p>
-
-<p>Their options moving forward are to either pay the PCN or file a Witness Statement with the Traffic Enforcement Centre.</p>
-
-<p>The reasons for filing a Witness Statement are:</p>
-<ul>
-  <li>Grounds 1: Did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
-  <li>Grounds 2: Made a formal challenge on time but did not get a ‘notice of rejection’</li>
-  <li>Grounds 3: Appealed to an independent tribunal on time but did not get a response</li>
-  <li>Grounds 4: Have proof you’ve paid the penalty charge, such as a credit card statement</li>
-</ul>
-
-<p>To file a Witness Statement, they will need to complete Form TE9.<br>
-Form TE9 can be found at: 
-<a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf">https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf</a></p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
-    "
->
-    Send link to review further information
-</button>
-
-
-<p>The form must be returned to:<br>
-Traffic Enforcement Centre<br>
-County Court Business Centre<br>
-St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
-Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
-
-<p>If they have any queries, they can contact the Traffic Enforcement Centre:<br>
-<a href="tel:03001231059"> 0300 1231059</a> or <a href="tel: 0300619450"> 0300 619450</a> (9am–5pm)</p>
-
-<hr>
-
-<h4>Case is at Warrant – What Are the Customer’s Options?</h4>
-
-<p>If the case is currently at warrant/enforcement agents, this means that we are unable to accept representations from the customer.</p>
-
-<p>Their options moving forward are to either pay the PCN with the enforcement agents or file a Late Witness Statement with the Traffic Enforcement Centre.</p>
-
-<p>The reasons for filing a Late Witness Statement are:</p>
-<ul>
-  <li>Grounds 1: Did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
-  <li>Grounds 2: Made a formal challenge on time but did not get a ‘notice of rejection’</li>
-  <li>Grounds 3: Appealed to an independent tribunal on time but did not get a response</li>
-  <li>Grounds 4: Have proof you’ve paid the penalty charge, such as a credit card statement</li>
-</ul>
-
-<p>To do this, they will need to complete Forms TE7 and TE9.<br>
-Forms can be found at:<br>
-<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a><br>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
-    "
->
-    Send link to review further information
-</button>
-
-<a href="https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time">https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time</a></p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Application%20to%20file%20a%20statement%20out%20of%20time\`
-    "
->
-    Send link to review further information
-</button>
-
-<p>The forms must be returned to:<br>
-Traffic Enforcement Centre<br>
-County Court Business Centre<br>
-St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
-Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
-
-<p>If they have any queries about submitting the application, they can contact the Traffic Enforcement Centre:<br>
-<a href="tel:03001231059">0300 123 1059</a> or <a href="tel: 0300619450">0300 619 450</a> (9am–5pm)</p>
-
-<p>Once they have filed a Late Witness Statement with the Traffic Enforcement Centre, we will write to the enforcement agents and ask them to place enforcement on hold while we wait for TEC to send a revoking order.</p>
 
   `,
-  { buttonLabel: "Parking Permit", formName: "" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
   { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -3386,7 +3343,7 @@ Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "17/09/2026", name: "Liz Taster" }
 );
 
 const debtRegistrationAndWarrantCases = new ContentP(
@@ -3394,19 +3351,159 @@ const debtRegistrationAndWarrantCases = new ContentP(
   "Debt Registration and Warrant Cases",
   "Find out what happens when a PCN reaches the debt registration or warrant stage, including how to respond and what support is available.",
   `
-    <p>
-      Challenges can be made online within 28 days of receiving the original
-      ticket. It can take up to 24 hours to appear on the online portal.
-      <br>
-      <br>
-      Documentation can be uploaded to support the challenge, the online link also
-      enables the motorist to use an interactive portal to guide them through their
-      appeal and the evidence can be viewed (e.g photos of the contravention)
-      <br>
-      <br>
-      Do not discuss any possible outcomes or give your opinions. Parking services
-      will contact the customer following the decision.
-    </p>
+  <p>
+    Please see relevant guidance below based on the stage the PCN is at.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Case is at debt registration – what are the customers options?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the case is currently at debt registration this means that we are unable to accept representations from the customer. 
+        Their options moving forward are to either pay the PCN or file a Witness Statement with the Traffic Enforcement Centre. 
+        Below are the grounds a witness statement can be made to the Traffic Enforcement Centre:
+      </p>
+        <ul>
+          <li>Grounds 1 - did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
+          <li>Grounds 2 - made a formal challenge on time but did not get a ‘notice of rejection’</li>
+          <li>Grounds 3 - appealed to an independent tribunal on time but did not get a response</li>
+          <li>Grounds 4 - have proof you’ve paid the penalty charge, such as a credit card statement</li>
+        </ul>
+      
+      <p>
+        To file a Witness Statement, they will need to complete Form TE9.
+        <br>Form TE9 can be found at: 
+        <a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf"  target="_blank" rel="noopener noreferrer">
+        TE9 - Witness statement - unpaid penalty charge</a>
+      </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
+      "
+    >
+        Send link to review further information
+    </button>
+      
+      <p>
+        The form must be returned by post to:
+        <br>Traffic Enforcement Centre
+        <br>County Court Business Centre
+        <br>St Katharine’s House
+        <br>21-27 St Katharine’s Street
+        <br>Northampton
+        <br>NN1 2LH
+        <br>
+        <br>Or by email to <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a>.  
+      </p>
+      <p>
+        If they have any queries about submitting the application, they can contact the 
+        Traffic Enforcement Centre on <strong>0300 123 1059</strong> or <strong>0300 619 450</strong> (9am-5pm).
+      </p>
+      <p>
+        Once they have filed a Witness Statement with the Traffic Enforcement Centre (TEC) they will send us a confirmation 
+        when this has been received and is being processed. 
+        When they make a witness statement, this is filed with TEC and they have the power to issue a revoking order which 
+        essentially instructs us to revoke the debt and re-issue at an earlier stage. 
+      </p>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Case is at warrant – what are the customers options?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the case is currently at warrant/enforcement agents this means that we are unable to accept representations from the customer. 
+        Their options moving forward are to either pay the PCN with the enforcement agents (see contact details below) or file a Late Witness 
+        Statement with the Traffic Enforcement Centre. There are certain grounds that they would have to fall under in order to do this.
+        Below are the grounds a witness statement can be made to the Traffic Enforcement Centre:
+      </p>
+        <ul>
+          <li>Grounds 1 - did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
+          <li>Grounds 2 - made a formal challenge on time but did not get a ‘notice of rejection’</li>
+          <li>Grounds 3 - appealed to an independent tribunal on time but did not get a response</li>
+          <li>Grounds 4 - have proof you’ve paid the penalty charge, such as a credit card statement</li>
+        </ul>
+
+        <p>
+          To do this, they will need to complete Forms TE7 and TE9.
+          <br>Forms can be found at:
+          <br> <a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf" target="_blank" rel="noopener noreferrer">
+          TE9 - Witness statement - unpaid penalty charge</a><br>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+          <a href="https://assets.publishing.service.gov.uk/media/62bebaeee90e073f56752a86/TE7_0622_save.pdf" target="_blank" rel="noopener noreferrer">
+          TE7 - Application to file a statement out of time</a>
+        </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Application%20to%20file%20a%20statement%20out%20of%20time\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+      <p>
+        These forms must be returned by post to:
+        <br>Traffic Enforcement Centre
+        <br>County Court Business Centre
+        <br>St Katharine’s House
+        <br>21-27 St Katharine’s Street
+        <br>Northampton
+        <br>NN1 2LH
+        <br>
+        <br>Or by email to <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a>.  
+      </p>
+      <p>
+        If they have any queries about submitting the application, they can contact the 
+        Traffic Enforcement Centre on <strong>0300 123 1059</strong> or <strong>0300 619 450</strong> (9am-5pm).
+      </p>
+      <p>
+        Once they have filed a Late Witness Statement with the Traffic Enforcement Centre (TEC) then they will send us a confirmation when this has been 
+        received and is being processed. We will then write to the enforcement agents and ask them to place enforcement on hold while we wait for TEC to 
+        send a revoking order.
+      </p>
+      <p>
+        To allow the customer time to do this we can write to the Enforcement Agents and inform them that they are in the process of filing with TEC and 
+        ask them to place enforcement on hold for the time being to allow them to do so. If they do not file a Late Witness Statement then enforcement 
+        will continue unless they contact us further.
+      </p>
+      <p>
+        You can contact us via warm transfer on PSNP1 to discuss the case and inform us that we need to ask the enforcement agents to place enforcement on hold.
+      </p>
+    </div>
+  </details>  
+
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -3438,7 +3535,7 @@ const debtRegistrationAndWarrantCases = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "08/05/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const debtGuidanceRelatedToPCNs = new ContentP(
@@ -3455,7 +3552,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <ul>
-          <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank">Money Advice Service</a></strong></li>
+          <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank" rel="noopener noreferrer">Money Advice Service</a></strong></li>
   <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3469,7 +3566,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://www.stepchange.org/" target="_blank">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
+          <li><strong><a href="https://www.stepchange.org/" target="_blank" rel="noopener noreferrer">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3483,7 +3580,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank">GOV.UK – Pay Off Your Debts</a></strong></li>
+          <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank" rel="noopener noreferrer">GOV.UK – Pay Off Your Debts</a></strong></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3497,7 +3594,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 8084000</a> (Monday to Friday 9am–8pm)</li>
+          <li><strong><a href="https://nationaldebtline.org/" target="_blank" rel="noopener noreferrer">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 8084000</a> (Monday to Friday 9am–8pm)</li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3511,7 +3608,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank">Citizens Advice</a></strong><br>
+          <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank" rel="noopener noreferrer">Citizens Advice</a></strong><br>
 
           <button
     type="button"
@@ -3539,7 +3636,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
         </ul>
         <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
         debts you cannot pay. More information about DROs is available here:</p>
-        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank">https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers</a></p>
+        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank" rel="noopener noreferrer">https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers</a></p>
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3562,7 +3659,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <ul>
-          <li><a href="https://www.rethink.org/advice-and-information" target="_blank">https://www.rethink.org/advice-and-information</a></li>
+          <li><a href="https://www.rethink.org/advice-and-information" target="_blank" rel="noopener noreferrer">https://www.rethink.org/advice-and-information</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3576,7 +3673,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
+          <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank" rel="noopener noreferrer">
+          Breathing Space Guidance for Creditors – GOV.UK</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3602,7 +3700,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
         <ul>
-          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank">https://www.sheffield.gov.uk/parking/request-parking-bay-suspension</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/parking/request-parking-bay-suspension</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3616,7 +3714,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
     Send link to review further information
 </button>
 
-          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3649,7 +3748,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
 
         <h4>Driver has received a Bus Lane PCN but has a valid PHV licence</h4>
         <ul>
-          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a></li>
+          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a></li>
           <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -3682,7 +3782,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <p>Customers can report incorrectly parked vehicles online:</p>
-        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle</a></p>
+        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank" rel="noopener noreferrer">
+        https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle</a></p>
         
         <button
     type="button"
@@ -3757,12 +3858,13 @@ const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
   "Post Received For Someone Not Living At The Address",
   "Find out what happens when a PCN is sent to your address but the person does not live at the address.",
   `
-    <h3>PCN Received For Someone Not Living At The Address</h3>
     <p>
     They can write on the envelope ‘not at this address’ and return it to the sender.<br>
     They can email <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a> with the PCN reference and explain the person does 
     not live at the address (including any forwarding address, if known).<br>
-    Let them know they are not liable for the PCN and can disregard it.
+    Let the customer know they are <strong>not liable</strong> for the PCN and should not pay it.
+    <br><br>If there is future correspondence or contact with e.g. baliffs, the customer should provide the same information, explaining the person
+    does not live at the address (and providing a forwarding address, if known). They are still not liable and should not pay.
     </p>
 
   `,
@@ -3796,7 +3898,7 @@ const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "08/05/2025", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const unableToResolvePcn = new ContentP(
@@ -3813,7 +3915,7 @@ const unableToResolvePcn = new ContentP(
       <p>
         If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87061">87061</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
     </div>
   </details>
@@ -3827,7 +3929,7 @@ const unableToResolvePcn = new ContentP(
       <p>
         If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
       </p>
       </div>
     </details>
@@ -3879,6 +3981,13 @@ const unableToResolvePcn = new ContentP(
       </p>
       </div>
     </details>
+
+  <p>
+    If you are still unable to resolve the PCN, you can warm transfer to the NPT back office team - 
+    <strong>Advisor Note: (Internal number Storm line):</strong>
+    <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+  </p>
+
   `,
   { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
   { typeKey: "penalty_charge_notice_transferred_to_service" },
@@ -3910,7 +4019,7 @@ const unableToResolvePcn = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "29/07/2025", name: "Dinah Williams" }
+  { date: "16/09/2026", name: "Liz Taster" }
 );
 
 const emailPcnAppealsInfoLink = new ContentP(
@@ -3941,8 +4050,8 @@ const emailPcnAppealsInfoLink = new ContentP(
 
 <p>
    Information about appealing a PCN is available at: 
-   <a href="https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine"
-   target="_blank">https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine</a>
+   <a href="https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine" target="_blank" rel="noopener noreferrer">
+   https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine</a>
 </p>
 
 <button
