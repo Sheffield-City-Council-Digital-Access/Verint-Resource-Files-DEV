@@ -2237,7 +2237,20 @@ const mitesTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Mites", "Treatment", "Pests", "Vermin"],
+    keywords: [
+    "Mites",
+    "Mite",
+    "Mitess",
+    "Spider Mites",
+    "Spider Mite",
+    "Spidar Mites",
+    "Treatment",
+    "Treatmant",
+    "Pests",
+    "Pest",
+    "Pestss",
+    "Vermin"
+  ],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -2245,7 +2258,7 @@ const mitesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 const mothsTreatment = new ContentPaN(
@@ -2820,7 +2833,7 @@ const ratTreatment = new ContentPaN(
   { date: "11/07/2025", name: "Joseph Coupland" }
 );
 
-const redSpiderMitesTreatment = new ContentPaN(
+/* const redSpiderMitesTreatment = new ContentPaN(
   "redSpiderMitesTreatment",
   "Red Spider Mites Treatment",
   "Information about Red Spider Mites treatment, including sample requirements, treatment costs, reduced prices for benefits recipients, and call-out fees.",
@@ -2902,7 +2915,7 @@ const redSpiderMitesTreatment = new ContentPaN(
     ],
   },
 { date: "27/08/2026", name: "Liz Taster" }
-);
+); */
 
 const sewageFliesTreatment = new ContentPaN(
   "sewageFliesTreatment",
@@ -3371,7 +3384,6 @@ const pestControl = new MenuPaN(
     pharoahAntsTreatment,
     psocidsTreatment,
     ratTreatment,
-    redSpiderMitesTreatment,
     sewageFliesTreatment,
     silverFishTreatment,
     spiderBeetlesTreatment,
