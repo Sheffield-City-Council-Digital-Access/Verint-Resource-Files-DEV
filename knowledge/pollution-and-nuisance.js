@@ -3350,7 +3350,6 @@ const pestControl = new MenuPaN(
     biscuitBeetlesTreatment,
     bumbleBeesTreatment,
     carpetBeetlesTreatment,
-    clusterFliesTreatment,
     cockroachesTreatment,
     cricketsTreatment,
     dermestesBeetlesTreatment,
