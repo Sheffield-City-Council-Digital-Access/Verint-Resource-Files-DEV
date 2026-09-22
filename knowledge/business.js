@@ -161,7 +161,6 @@ const drivingStandardsTestGuide = new ContentBusiness(
       </p>
     </div>
   </details>
- 
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -185,7 +184,6 @@ const drivingStandardsTestGuide = new ContentBusiness(
       </ul>
     </div>
   </details>
-
   
 <details class="accordion">
     <summary class="accordion-header">
@@ -262,7 +260,6 @@ const surrenderLicence = new ContentBusiness(
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/surrender"target="_blank">
     Surrender a private hire vehicle licence | Sheffield City Council</a></p>
   </p>
-
     <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
@@ -281,7 +278,6 @@ const surrenderLicence = new ContentBusiness(
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/Surrender-vehicle-licence"target="_blank">
     Surrender a hackney carriage vehicle licence | Sheffield City Council</a></p>
   </p>
-
     <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
