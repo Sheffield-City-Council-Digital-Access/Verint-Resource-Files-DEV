@@ -116,7 +116,6 @@ const applyForABuildingNotice = new ContentPaD(
         <ul>
           <li>Removing a load-bearing wall (with appropriate support)</li>
           <li>Installing or altering heating appliances and flues</li>
-          <li>Extensions to an existing dwelling</li>
           <li>Bathroom or shower installations where a structural alterations are undertaken or creating a new drainage connection</li>
           <li>Replacement windows (if not using a FENSA-registered installer)</li>
           <li>Domenstic re-roof  over 50% of the roof</li>
@@ -571,7 +570,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
         A completion inspection is required at the end of a project. 
       </p>
       <p>
-        A Notice of Completion will need to be completed and submitted prior to book the completion visit
+        A Notice of Completion will need to be completed and submitted prior to booking the completion visit.
       </p>
       <p>
         Please see the knowledge tile <strong>Request a Completion Certificate</strong> for further information.
@@ -772,6 +771,7 @@ const fullPlansBuildingApplication = new ContentPaD(
       <p>It can be used for a wide range of building work, including:</p>
         <ul>
           <li>Erecting a new building</li>
+          <li>All commercial premises and sports facilities</li>
           <li>Extending an existing building</li>
           <li>Structural alterations</li>
           <li>Loft conversions</li>
@@ -913,7 +913,7 @@ const giveNoticeToDemolishABuilding = new ContentPaD(
   "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
   `  
     <p>
-      Customers planning to demolish a buildings over 50 cubic metres in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
+      Customers planning to demolish a building over 50 cubic metres in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
     </p>
     <p>
       The notice allows the council to assess the proposal, provide guidance on safety requirements, and coordinate with relevant parties where needed.
@@ -2027,7 +2027,7 @@ const applyForPlanningPermission = new ContentPaD(
         Planning application fees are paid directly through the Planning Portal when you submit your application online. VAT is not payable on planning applications.
       </p>
       <p>
-        Sheffield City Council does not accept payment by cheque.
+      Sheffield City Council does not accept payment by cheque. Payments are accepted by debit or credit card, or by bank transfer.
       </p>
       <p>
         If you submit your application by post, you will be sent a payment link by email.
@@ -2176,7 +2176,7 @@ const applyForPreApplicationAdvice = new ContentPaD(
       </p>
       <p>
         <strong>Telephone:</strong><br>
-        0114 273 4218 <a href="tel:0114 2734218">0114 2734218</a> 
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734218')">0114 2734218</a>
       </p>
       <p>
         <strong>Email:</strong><br>
@@ -2913,20 +2913,19 @@ const historicalPlanningRequests = new ContentPaD(
   { date: "16/07/2026", name: "Liz Taster" }
 );
 
-
 const planningDecisionsAndAppeals = new ContentPaD(
   "planningDecisionsAndAppeals",
   "Planning Decisions and Appeals",
-  "Information about how planning applications are decided, Planning Committee meetings, material planning considerations and the planning appeals process.",
+  "Information about how planning applications are decided, Planning and Highways Committee meetings, material planning considerations and how to appeal a planning decision.",
   `
   <p>
-    Planning applications are assessed by a Planning Officer and considered against local and national planning policies, along with any relevant comments received during the consultation process.
+    Planning applications are assessed by a Planning Officer against local and national planning policies. Relevant comments received during the consultation process will also be considered.
   </p>
   <p>
-    A recommendation is then made to either approve or refuse the application.
+    The Planning Officer will make a recommendation to approve or refuse the application. Some applications can be decided by planning officers under delegated powers, while others may be considered by the Planning and Highways Committee.
   </p>
   <p>
-    For further information about planning decisions and appeals, visit:
+    <strong>Planning decisions and appeals information:</strong><br>
     <a href="https://www.sheffield.gov.uk/planning-development/decisions-appeals" target="_blank" rel="noopener noreferrer">
       Planning Decisions and Appeals | Sheffield City Council
     </a>
@@ -2950,20 +2949,19 @@ const planningDecisionsAndAppeals = new ContentPaD(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <h4>Minor and Non-Controversial Applications</h4>
+      <h4>Decisions Made by Planning Officers</h4>
       <p>
-        Most smaller planning applications are decided by senior planning officers under delegated powers.
+        Most smaller and non-controversial planning applications are decided by planning officers under delegated powers.
       </p>
-      <h4>Major or Controversial Applications</h4>
+      <h4>Decisions Made by Committee</h4>
       <p>
         Significant developments and controversial applications may be referred to the Planning and Highways Committee, where councillors make the final decision.
       </p>
       <p>
-        Councillors may accept or reject the officer's recommendation after considering the application and any relevant information.
+        Councillors will consider the Planning Officer's recommendation and the relevant planning information before making a decision. The Committee may agree with or reject the recommendation.
       </p>
     </div>
   </details>
-
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Speaking at Planning Committee</h3>
@@ -2971,10 +2969,13 @@ const planningDecisionsAndAppeals = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        Interested parties may request to speak at Planning and Highways Committee meetings. Any views should also be submitted in writing as part of the application process.
+        Interested parties may request to speak at a Planning and Highways Committee meeting when an application is being considered.
       </p>
       <p>
-        You are responsible for monitoring an application's progress, including whether it will be considered by the Committee.
+        Any comments about the application should also be submitted in writing through the planning application process.
+      </p>
+      <p>
+        You are responsible for monitoring the progress of an application, including checking whether it will be considered by the Committee.
       </p>
       <p>
         <strong>Planning and Highways Committee information:</strong><br>
@@ -2996,7 +2997,6 @@ const planningDecisionsAndAppeals = new ContentPaD(
       </button>
     </div>
   </details>
-
   <details class="accordion">
     <summary class="accordion-header">
       <h3>What Is Considered When Making a Decision?</h3>
@@ -3004,53 +3004,56 @@ const planningDecisionsAndAppeals = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        When assessing an application, the Council may consider:
+        When assessing a planning application, the Council may consider:
       </p>
       <ul>
         <li>Local and national planning policies</li>
-        <li>Previous planning decisions and appeal decisions</li>
-        <li>The impact on the surrounding area</li>
+        <li>Previous planning decisions and relevant appeal decisions</li>
+        <li>The effect of the proposed development on the surrounding area</li>
         <li>Comments received from consultees and interested parties</li>
-        <li>Material planning considerations</li>
+        <li>Other material planning considerations</li>
       </ul>
+
       <h4>Impact on Local Amenities</h4>
       <p>
-        Planning decisions may consider the impact on:
+        Relevant considerations may include the effect of the proposed development on:
       </p>
       <ul>
-        <li>The appearance and character of an area</li>
-        <li>Privacy of neighbouring properties</li>
-        <li>Noise, pollution and environmental impacts</li>
+        <li>The appearance and character of the area</li>
+        <li>The privacy of neighbouring properties</li>
+        <li>Noise, pollution and the environment</li>
         <li>Highway, pedestrian and cyclist safety</li>
         <li>Employment and the local economy</li>
       </ul>
       <p>
-        Objections do not automatically result in an application being refused, and a lack of objections does not guarantee that an application will be approved.
+        The number of comments received does not determine the outcome of an application. Objections do not automatically mean that an application will be refused, and a lack of objections does not guarantee approval.
       </p>
     </div>
   </details>
-
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Appeals</h3>
+      <h3>Appealing a Planning Decision</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        Applicants can appeal if:
+        An applicant may be able to appeal to the Planning Inspectorate if:
       </p>
       <ul>
         <li>Planning permission is refused</li>
-        <li>Conditions are attached to an approval</li>
-        <li>The application has not been determined within the target timescale</li>
+        <li>Planning permission is granted with conditions they disagree with</li>
+        <li>The Council does not make a decision within the relevant period</li>
       </ul>
       <p>
-        Only the applicant has the right to appeal. Third parties cannot appeal against a planning decision.
+        Only the applicant, or someone acting on the applicant's behalf, can make an appeal. Third parties, including neighbours and other people who commented on the application, cannot appeal against the Council's decision.
       </p>
       <p>
-        <strong>Make an appeal:</strong><br>
-        <a href="https://acp.planninginspectorate.gov.uk/" target="_blank" rel="noopener noreferrer">
-          Appeals Casework Portal | Planning Inspectorate
+        Appeals are made through the Appeal a Planning Decision service. The applicant should check the decision notice and the GOV.UK guidance before starting an appeal.
+      </p>
+      <p>
+        <strong>Make a planning appeal:</strong><br>
+        <a href="https://www.gov.uk/appeal-planning-decision/make-an-appeal" target="_blank" rel="noopener noreferrer">
+          Appeal Against a Planning Decision | GOV.UK
         </a>
       </p>
       <button
@@ -3063,26 +3066,45 @@ const planningDecisionsAndAppeals = new ContentPaD(
           }interactionid=\${KDF.getParams().interactionid}&sel_service=Planning%20appeals\`
         "
       >
-        Send link to review further information
+        Send link to make a planning appeal
       </button>
     </div>
   </details>
-
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Comments on Appeals</h3>
+      <h3>Commenting on a Planning Appeal</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        Anyone who submitted comments on the original planning application will be notified if an appeal is made and may be given the opportunity to submit further comments.
+        People who commented on the original planning application will normally be notified if an appeal is made.
       </p>
       <p>
-        Comments on planning appeals must be submitted through the Appeals Casework Portal.
+        The notification will explain whether further comments can be submitted and how to submit them. Existing comments about the planning application may also be provided to the Planning Inspectorate.
       </p>
+      <p>
+        You will need the appeal reference number to comment through the online service. This can be found on the notification from the Council.
+      </p>
+      <p>
+        <strong>Comment on a planning appeal:</strong><br>
+        <a href="https://appeal-planning-decision.service.gov.uk/comment-planning-appeal/enter-appeal-reference" target="_blank" rel="noopener noreferrer">
+          Comment on a Planning Appeal | Planning Inspectorate
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Comment%20on%20a%20planning%20appeal\`
+        "
+      >
+        Send link to comment on a planning appeal
+      </button>
     </div>
   </details>
-
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Appeal Time Limits</h3>
@@ -3090,22 +3112,34 @@ const planningDecisionsAndAppeals = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        Appeals must be submitted within the relevant timescale from the date shown on the decision notice:
+        The deadline for making an appeal depends on the application and appeal type.
       </p>
-      <ul>
-        <li>Householder and minor commercial applications: 12 weeks</li>
-        <li>Advertisement consent applications: 8 weeks</li>
-        <li>Most other planning applications: 6 months</li>
-      </ul>
+      <p>
+        The applicant should check the decision notice issued by the Council and the current GOV.UK guidance for the relevant deadline.
+      </p>
+      <p>
+        An appeal may not be accepted if it is submitted after the applicable deadline.
+      </p>
+      <p>
+        <strong>Check the current appeal guidance:</strong><br>
+        <a href="https://www.gov.uk/appeal-planning-decision" target="_blank" rel="noopener noreferrer">
+          Appeal Against a Planning Decision | GOV.UK
+        </a>
+      </p>
     </div>
   </details>
+
   <h3>Key Information for Call Centre Staff</h3>
   <ul>
-    <li>Most smaller applications are decided by planning officers under <strong>delegated powers</strong>; significant or controversial applications may go to the <strong>Planning and Highways Committee</strong>.</li>
-    <li>Objections do <strong>not automatically mean an application will be refused</strong>, and no objections does not guarantee approval.</li>
-    <li>Only the <strong>applicant</strong> has the right to appeal a planning decision; third parties cannot appeal.</li>
+    <li>Most smaller applications are decided by planning officers under <strong>delegated powers</strong>.</li>
+    <li>Significant or controversial applications may be considered by the <strong>Planning and Highways Committee</strong>.</li>
+    <li>The number of comments received does not determine the decision.</li>
+    <li>Objections do <strong>not automatically mean an application will be refused</strong>, and a lack of objections does not guarantee approval.</li>
+    <li>Only the <strong>applicant or someone acting on their behalf</strong> can appeal a planning decision.</li>
+    <li>Third parties cannot appeal against the Council's decision, but they may be able to comment during the appeal process.</li>
     <li>An appeal may be possible following a <strong>refusal, conditions being imposed or non-determination</strong>.</li>
-    <li>Appeal deadlines vary depending on the type of application and run from the date of the decision notice.</li>
+    <li>Appeals are made using the <strong>Appeal a Planning Decision service</strong>, not the Appeals Casework Portal.</li>
+    <li>Appeal deadlines vary, so applicants should check their decision notice and the current GOV.UK guidance.</li>
   </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -3133,7 +3167,7 @@ const planningDecisionsAndAppeals = new ContentPaD(
     ],
     categories: ["Planning and Development", "Planning Applications"]
   },
-  { date: "20/08/2026", name: "Andy Walker" }
+  { date: "16/09/2026", name: "Andy Walker" }
 );
 
 const planningPermissionForHmo = new ContentPaD(
@@ -3162,7 +3196,7 @@ const planningPermissionForHmo = new ContentPaD(
       </p>
       <p>Planning permission is normally required anywhere in the city for:</p>
       <ul>
-        <li>HMOs occupied by 7 or more people</li>
+        <li>HMOs occupied by 7 or more people, which are treated as a separate type of planning use rather than a standard HMO use class (Sui Generis)</li>
         <li>Conversions from another use class into an HMO</li>
       </ul>
       <p>
@@ -3257,7 +3291,7 @@ const planningPermissionForHmo = new ContentPaD(
   <ul>
     <li>Within Sheffield's <strong>Article 4 Area</strong>, planning permission is required to change a C3 dwellinghouse into a C4 HMO for 3 to 6 unrelated people.</li>
     <li>Outside the Article 4 Area, this change is generally permitted for <strong>3 to 6 unrelated people</strong>.</li>
-    <li>Planning permission is normally required anywhere in Sheffield for an HMO occupied by <strong>7 or more people</strong>.</li>
+    <li>Planning permission is normally required anywhere in Sheffield for an HMO occupied by 7 or more people, as this is treated as a separate type of planning use rather than a standard HMO use class (Sui Generis).</li>
     <li><strong>Planning permission and HMO licensing are separate requirements</strong>; a property may require one or both.</li>
     <li>Existing HMO use may be relevant where the property has been continuously used as an HMO since <strong>10 December 2011</strong>.</li>
   </ul>
