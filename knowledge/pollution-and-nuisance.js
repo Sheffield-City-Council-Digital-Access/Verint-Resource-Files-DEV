@@ -134,10 +134,31 @@ const badgerProtection = new ContentPaN(
       </button>
 
     </p>
+    <p>
+      If you find a dead badger on the road, you can report it to Sheffield City Council for removal.
+      <br>
+      Report a dead badger at:
+      <a href="https://www.sheffield.gov.uk/pollution-nuisance/report-dead-animal" target="_blank" rel="noopener noreferrer">
+        https://www.sheffield.gov.uk/pollution-nuisance/report-dead-animal
+      </a>
+      <br>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to report a dead badger"
+        onclick="
+              window.location.href = \`${window.location.protocol}//${window.location.hostname}/form/launch/send_link_to_service?${
+                KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : ''
+              }interactionid=${KDF.getParams().interactionid}&sel_service=Report%20Dead%20Badger\`
+            "
+      >
+        Send link to report a dead badger
+      </button>
+    </p> 
   `,
   {
-    buttonLabel: "",
-    formName: "",
+    buttonLabel: "Report dead animal",
+    formName: "report_dead_animal",
   },
   { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
@@ -153,7 +174,7 @@ const badgerProtection = new ContentPaN(
       "Law",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "18/09/2026", name: "Andy Walker" }
 );
 
 const batProtectionBritain = new ContentPaN(
@@ -323,7 +344,7 @@ const bedBugTreatment = new ContentPaN(
         <li>Where in the property the insects have been found</li>
       </ul>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -396,24 +417,29 @@ const bedBugTreatment = new ContentPaN(
 );
 
 const birdsandPigeonsTreatment = new ContentPaN(
-  "birdsandPigeonsTreatment",
-  "Birds and Pigeons Treatment",
-  "Learn how to request bird and pigeon treatment for commercial, health authority, industrial, and university properties, including how to receive a quote.",
+  "feralPigeonsTreatment",
+  "Feral Pigeon Treatment",
+  "Learn how to request feral pigeon treatment for commercial, health authority, industrial, and university properties, including how to receive a quote.",
   `
-  <p>
-    If a caller request a birds nest removing, we need to consider the season. If birds are occupying the nest and there could be eggs or chicks Sheffield City Council will not disturb/remove the nest. 
-    Ask the caller to get back in touch in the Autumn out of the birds nesting season. 
-  </p>
-
-  <h3>Commercial, Health Authority, Industrial and University</h3>
     <p>
-        For bird and pigeons treatment enquiries related to Commercial, Health
-        Authority, Industrial, and University properties, please email your
-        request to
-        <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
-        We will assess your request and provide you with a quote for the
-        treatment.  
+      If a caller requests the removal of a feral pigeon nest, we need to consider
+      the season. If pigeons are occupying the nest and there could be eggs or
+      chicks, Sheffield City Council will not disturb or remove the nest.
     </p>
+    <p>
+      Ask the caller to get back in touch in the autumn, outside of the bird
+      nesting season.
+    </p>
+    <h3>Commercial, Health Authority, Industrial and University</h3>
+    <p>
+      For feral pigeon treatment enquiries related to Commercial, Health Authority,
+      Industrial, and University properties, please email your request to
+      <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">
+        EnvironmentalServicesAdmin@sheffield.gov.uk
+      </a>.
+      We will assess your request and provide you with a quote for the treatment.
+    </p>
+
    <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need
@@ -427,10 +453,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       for further investigation.
       </p>
     </section>
-  
-
-  
-    `,
+  `,
   {
     buttonLabel: "",
     formName: "",
@@ -439,15 +462,15 @@ const birdsandPigeonsTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Birds and Pigeons", "Treatment", "Pests", "Vermin"],
+    keywords: ["Feral Pigeons", "Pigeons", "Pest Control", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "27/08/2026", name: "Liz Taster" }
+  { date: "18/09/2026", name: "Andy Walker" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
@@ -485,7 +508,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
         <li>Where in the property the insects have been found</li>
       </ul>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -702,7 +725,7 @@ const carpetBeetlesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -777,7 +800,7 @@ const carpetBeetlesTreatment = new ContentPaN(
   { date: "28/02/2025", name: "Dinah Williams" }
 );
 
-const clusterFliesTreatment = new ContentPaN(
+/* const clusterFliesTreatment = new ContentPaN(
   "clusterFliesTreatment",
   "Cluster Flies Treatment",
   "Learn how to submit a sample for Cluster Flies treatment, the treatment cost for domestic properties, including discounts for eligible benefits, and the associated call-out fee for treatment.",
@@ -814,7 +837,7 @@ const clusterFliesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -856,7 +879,7 @@ const clusterFliesTreatment = new ContentPaN(
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
-);
+); */
 
 const cockroachesTreatment = new ContentPaN(
   "cockroachesTreatment",
@@ -895,7 +918,7 @@ const cockroachesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -942,13 +965,18 @@ const cockroachesTreatment = new ContentPaN(
 const cricketsTreatment = new ContentPaN(
   "cricketsTreatment",
   "Crickets Treatment",
-  "Learn how to submit a sample for Cricket treatment, the treatment cost, discounted rates for those on eligible benefits, and the call-out fee for incomplete treatments.",
+  "Learn how to submit a sample for internal cricket treatment, request a quote, and understand the call-out fee for incomplete treatments.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for crickets in your domestic property, we
-        will need a sample of the pest.
+        Before we can provide treatment for crickets inside your domestic property,
+        we will need a sample of the pest.
+      </p>
+      <p>
+        Sheffield City Council only provides treatment for crickets found inside a
+        property. We do not provide treatment for crickets in gardens, yards or
+        other external areas.
       </p>
       <p>You can either bring your sample to:</p>
       <address>
@@ -973,17 +1001,21 @@ const cricketsTreatment = new ContentPaN(
         <li>Where in the property the insects have been found</li>
       </ul>
       <p>
-        If a sample has been provided and the pests have been confirmed, you can request a treatment.
+        If a sample has been provided, the pests have been confirmed and they are
+        present inside the property, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to:
+        <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
+
     <h3>Cost for Treatment</h3>
+    <br><br>
 
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
-       The treatment cost for crickets will be on request. We will send your 
+      The treatment cost for internal cricket infestations will be provided on request. We will send your
         <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/pest_control_technician?${
@@ -995,8 +1027,10 @@ const cricketsTreatment = new ContentPaN(
       </p>
     </section>
 
+    <br><br>
+
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1016,7 +1050,7 @@ const cricketsTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "18/09/2026", name: "Andy Walker" }
 );
 
 const dermestesBeetlesTreatment = new ContentPaN(
@@ -1056,7 +1090,7 @@ const dermestesBeetlesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -1133,68 +1167,87 @@ const fleasTreatment = new ContentPaN(
       the call out charge will be applied.
     </p>
     <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Do I need to provide a sample?</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
+      <summary class="accordion-header">
+        <h3>Do I need to provide a sample?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Normally, we don't require a sample of fleas before scheduling a
+          treatment, as they are small, elusive, and difficult to catch. <br>
+          <br>
+          However, some individuals may mistakenly believe they have a flea
+          infestation due to skin conditions or psychological issues.<br>
+          <br>
+          Find out if the customer has pets like cats or dogs, as fleas are commonly
+          associated with pets. Ask if they've noticed bites, especially on their
+          lower legs or ankles. Also, check if they’ve recently moved into a vacant
+          property, as fleas can linger in unoccupied homes, and the customer may
+          have seen small, dark insects jumping around.
+        </p>
+        <p>
+          Sometimes people can believe they have fleas because:
+        </p>
+        <ul>
+          <li>They feel something crawling on them</li>
+          <li>They are itching</li>
+          <li>They are covered in bites all over their body</li>
+          <li>They do not have pets</li>
+        </ul>
+        <p>
+          In these cases, we may request a sample or photo for identification.
+          Alternatively, we can monitor the property using traps and proceed with
+          treatment if fleas are confirmed.
+        </p>
+        <p>You can either bring your sample to:</p>
+        <address>
+          First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1
+          2SH
+        </address>
+        <p>Or you can post your sample to:</p>
+        <address>
+          Environmental Services<br />
+          Block B, Staniforth Road Depot<br />
+          Staniforth Road<br />
+          Sheffield, S9 3HD
+        </address>
+        <p>
+          Please ensure your sample is in a secure, crush-proof container, alive or
+          dead. Attach information detailing:
+        </p>
+        <ul>
+          <li>Your name</li>
+          <li>Your address</li>
+          <li>Your contact number and/or email</li>
+          <li>How long the insects have been present</li>
+          <li>Where in the property the insects have been found</li>
+        </ul>
+      </div>
+    </details>
+    <br><br>
+    <h3>Additional Information</h3>
     <p>
-      Normally, we don't require a sample of fleas before scheduling a
-      treatment, as they are small, elusive, and difficult to catch. <br>
+      If booking a treatment, advise the customer to have their pets treated at the vets just before Sheffield City Council attend to spray.
+    </p>
+    <p>
+      Ensure any domestic animals are treated separately. Further information can be found at:
+      <a href="https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/conditions/preventing-fleas-in-dogs-cats-and-rabbits" target="_blank" rel="noopener noreferrer">
+        https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/conditions/preventing-fleas-in-dogs-cats-and-rabbits
+      </a>
       <br>
-      However, some individuals may mistakenly believe they have a flea
-      infestation due to skin conditions or psychological issues.<br>
-    <br>
-      Find out if the customer has pets like cats or dogs, as fleas are commonly
-      associated with pets. Ask if they've noticed bites, especially on their
-      lower legs or ankles. Also, check if they’ve recently moved into a vacant
-      property, as fleas can linger in unoccupied homes, and the customer may
-      have seen small, dark insects jumping around.
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about preventing fleas in dogs, cats and rabbits"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Preventing%20Fleas%20in%20Animals\`
+        "
+      >
+        Send link to review further information
+      </button>
     </p>
-    <p>
-      Sometimes people can believe they have fleas because:
-    </p>
-    <ul>
-      <li>They feel something crawling on them</li>
-      <li>They are itching</li>
-      <li>They are covered in bites all over their body</li>
-      <li>They do not have pets</li>
-    </ul>
-    <p>
-      In these cases, we may request a sample or photo for identification.
-      Alternatively, we can monitor the property using traps and proceed with
-      treatment if fleas are confirmed.
-    </p>
-    <p>You can either bring your sample to:</p>
-    <address>
-      First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1
-      2SH
-    </address>
-    <p>Or you can post your sample to:</p>
-    <address>
-      Environmental Services<br />
-      Block B, Staniforth Road Depot<br />
-      Staniforth Road<br />
-      Sheffield, S9 3HD
-    </address>
-    <p>
-      Please ensure your sample is in a secure, crush-proof container, alive or
-      dead. Attach information detailing:
-    </p>
-    <ul>
-      <li>Your name</li>
-      <li>Your address</li>
-      <li>Your contact number and/or email</li>
-      <li>How long the insects have been present</li>
-      <li>Where in the property the insects have been found</li>
-    </ul>
-  </div>
-</details>
-
-<h3>Additional Information</h3>
-<p>
-  If booking a treatment, advise the customer to have their pets treated at the vets just before Sheffield City Council attend to spray.  
-</p>
   `,
   {
     buttonLabel: "Book treatment for Fleas",
@@ -1207,7 +1260,7 @@ const fleasTreatment = new ContentPaN(
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 const fliesTreatment = new ContentPaN(
@@ -1247,7 +1300,7 @@ const fliesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -1274,13 +1327,8 @@ const fliesTreatment = new ContentPaN(
 
     <h3>Additional Information</h3>
     <p>
-      <strong>Drain flies</strong> - once identified Sheffield City Council can treat drain flies, their presence indicate a plumbing issue and this needs resolving 
-      <em>before</em> booking the treatment.
-    </p>
-
-    <p>
-      <strong>Fruit flies</strong> - we do not usually treat for fruit flies, if confirmed that’s what they are. 
-      Advise the customer to dispose old of fruit and food from the area. 
+      Typical flies found within properties in Sheffield are, drain, fruit, blow, house
+      and cluster flies. To correctly identify please send us your sample.
     </p>
   `,
   {
@@ -1291,7 +1339,21 @@ const fliesTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Flies", "Treatment", "Pests", "Vermin"],
+  keywords: [
+    "Flies",
+    "Flys",
+    "Cluster Flies",
+    "Cluster Flys",
+    "Sewage Flies",
+    "Sewage Fly",
+    "Sewige Flies",
+    "Treatment",
+    "Pests",
+    "Pest",
+    "Pestss",
+    "Vermin",
+    "Verman"
+  ],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -1356,7 +1418,7 @@ const foxesInformation = new ContentPaN(
     <p>For advice/information on foxes, please visit 
     <a href="http://foxproject.org.uk" target="_blank" rel="noopener noreferrer">http://foxproject.org.uk</a>.
     <br>
- <button
+    <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
         aria-label="Send link to further information about the fox project"
@@ -1368,8 +1430,23 @@ const foxesInformation = new ContentPaN(
       >
         Send link to review further information
       </button>
-
     </p>
+    <p>
+      If the customer is a commercial business owner, please refer to a technician for advice.
+    </p>
+    <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+        The treatment cost will be on request. We will send your 
+          <a href="${window.location.protocol}//${
+      window.location.hostname
+    }/form/launch/pest_control_technician?${
+      KDF.getParams().customerid
+        ? `customerid=${KDF.getParams().customerid}&`
+        : ""
+    }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+          for survey and provide a quote. 
+        </p>
+      </section>
   `,
   {
     buttonLabel: "",
@@ -1387,7 +1464,7 @@ const foxesInformation = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 const frogsorFrogspawn = new ContentPaN(
@@ -1475,7 +1552,7 @@ const furBeetlesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -1523,7 +1600,8 @@ const gardenAntsTreatment = new ContentPaN(
   "Information on the treatment cost for garden ants, with details on available discounts for those receiving certain benefits.",
   `
     <p>
-      We treat around entry points, doors, windows and vents. We do not treat further than one flag away from the property and we treat internally.
+      We treat around entry points, doors, windows and vents.  We do not treat more than 1 
+      metre away from the property unless deemed a direct association to the internal issue
     </p>
 
     <h3>Cost for Treatment</h3>
@@ -1615,8 +1693,21 @@ const honeyBeeTreatment = new ContentPaN(
       will remove bees, which are nesting in a cavity, chimney etc.
       <br>
       <br>
-      You can call through to Environmental Services on <strong>30353</strong>
+      For further advice refer to a technician
     </p>
+      <section class="info-panel" role="region" aria-label="Information panel">
+          <p>
+          The treatment cost will be on request. We will send your 
+            <a href="${window.location.protocol}//${
+        window.location.hostname
+      }/form/launch/pest_control_technician?${
+        KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+      }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+            for survey and provide a quote. 
+          </p>
+      </section>    
     <details class="accordion">
     <summary class="accordion-header">
       <h3>Beekeepers List</h3>
@@ -1808,7 +1899,7 @@ const insectIdentification = new ContentPaN(
     </summary>
     <div class="accordion-content">
       <p>
-        A photo sample can be emailed directly to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed directly to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
       <p>
         Images must be clear digital photo(s) of the <strong>actual insect(s) present</strong> - not from the internet.
@@ -1851,6 +1942,39 @@ const ladyBirdsTreatment = new ContentPaN(
   "Ladybirds Treatment",
   "Details about ladybird treatment, including costs and available discounts for individuals receiving specific benefits.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for ladybirds in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
     <h3>Cost for Treatment</h3>
     
      <section class="info-panel" role="region" aria-label="Information panel">
@@ -2130,8 +2254,41 @@ const mitesTreatment = new ContentPaN(
   "Mites Treatment",
   "Details about mite treatment costs, benefit-related discounts, and the call-out fee.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for mites in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
-    
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
        The treatment cost will be on request. We will send your 
@@ -2159,7 +2316,20 @@ const mitesTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Mites", "Treatment", "Pests", "Vermin"],
+    keywords: [
+    "Mites",
+    "Mite",
+    "Mitess",
+    "Spider Mites",
+    "Spider Mite",
+    "Spidar Mites",
+    "Treatment",
+    "Treatmant",
+    "Pests",
+    "Pest",
+    "Pestss",
+    "Vermin"
+  ],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -2167,7 +2337,7 @@ const mitesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "21/09/2026", name: "Andy Walker" }
 );
 
 const mothsTreatment = new ContentPaN(
@@ -2207,7 +2377,7 @@ const mothsTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -2266,7 +2436,7 @@ const otherPests = new ContentPaN(
         Asian hornets do not come this far north; it is very unlikely that a caller has Asian hornets.
       </p>
       <p>
-        If the caller is persistent then request a photo(s) is sent to <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        If the caller is persistent then request a photo(s) is sent to <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </div>
   </details>
@@ -2427,8 +2597,41 @@ const pharoahAntsTreatment = new ContentPaN(
   "Pharoah Ants Treatment",
   "Details on Pharoah Ant treatment costs and available discounts for benefit recipients.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Pharoah Ants in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
-    
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
        The treatment cost will be on request. We will send your 
@@ -2504,7 +2707,8 @@ const psocidsTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@
+        sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -2562,7 +2766,7 @@ const ratTreatment = new ContentPaN(
       If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
-      All prices include a call-out fee of <strong>£40.00.</strong> This fee applies if our officer
+      All prices include a call-out fee of <strong>£40.80.</strong> This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <p>
@@ -2579,7 +2783,6 @@ const ratTreatment = new ContentPaN(
       Free treatments - there is no call out charge if the Technician is unable to gain access.
     </p>
 
-        
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Communal Areas</h3>
@@ -2741,7 +2944,7 @@ const ratTreatment = new ContentPaN(
   { date: "11/07/2025", name: "Joseph Coupland" }
 );
 
-const redSpiderMitesTreatment = new ContentPaN(
+/* const redSpiderMitesTreatment = new ContentPaN(
   "redSpiderMitesTreatment",
   "Red Spider Mites Treatment",
   "Information about Red Spider Mites treatment, including sample requirements, treatment costs, reduced prices for benefits recipients, and call-out fees.",
@@ -2782,7 +2985,7 @@ const redSpiderMitesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -2823,9 +3026,9 @@ const redSpiderMitesTreatment = new ContentPaN(
     ],
   },
 { date: "27/08/2026", name: "Liz Taster" }
-);
+); */
 
-const sewageFliesTreatment = new ContentPaN(
+/* const sewageFliesTreatment = new ContentPaN(
   "sewageFliesTreatment",
   "Sewage Flies Treatment",
   "Information on Sewage Flies treatment, including sample requirements, treatment costs, discounted prices for benefits recipients, and associated call-out fees.",
@@ -2862,7 +3065,7 @@ const sewageFliesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -2903,13 +3106,47 @@ const sewageFliesTreatment = new ContentPaN(
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
-);
+); */
 
 const silverFishTreatment = new ContentPaN(
   "silverFishTreatment",
   "Silver Fish Treatment",
   "Information on Silver Fish treatment, including treatment costs, discounted prices for benefits recipients, and associated call-out fees.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Silver Fish in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
     <p>
       The treatment cost for Silver Fish is <strong>£115.00.</strong> This is based on a standard size
@@ -2956,7 +3193,7 @@ const silverFishTreatment = new ContentPaN(
   { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
-const spiderBeetlesTreatment = new ContentPaN(
+/* const spiderBeetlesTreatment = new ContentPaN(
   "spiderBeetlesTreatment",
   "Spider Beetles Treatment",
   "Details on Spider Beetles treatment, including sample submission instructions, treatment cost, discounted prices for benefits recipients, and call-out fees.",
@@ -2993,7 +3230,7 @@ const spiderBeetlesTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -3039,7 +3276,7 @@ const spiderBeetlesTreatment = new ContentPaN(
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
-);
+); */
 
 const squirrelsTreatment = new ContentPaN(
   "squirrelsTreatment",
@@ -3047,7 +3284,10 @@ const squirrelsTreatment = new ContentPaN(
   "Details on Squirrel treatment, including costs, discounted rates for benefits recipients, and the included call-out fee.",
   `
   <p>
-    If the tenant can hear noises in the loft, ask if this is in the daytime or nighttime. Squirrels tend to sleep at night so noises at night are more likely to be a rat issue.
+    If the tenant can hear squirrels in the loft during the daytime, ask whether they 
+    are also seeing squirrels in the garden. If they are not seeing squirrels during 
+    the day and are only hearing noises at night, it is more likely to be a rat issue 
+    rather than squirrels.
   </p>
   <p>
     For advice on squirrel treatments, please contact the pest control back office at:
@@ -3126,7 +3366,23 @@ const waspsTreatment = new ContentPaN(
   <p>
     If the wasp nest is on Council land then it needs reporting to the relevant service, Housing, Schools, PFM etc. 
   </p>
-
+    <p>
+     If a wasp nest is on a public right of way, refer to technician
+  </p>
+   <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+    
   `,
   {
     buttonLabel: "Book treatment for Wasps",
@@ -3184,7 +3440,7 @@ const weevilsTreatment = new ContentPaN(
         If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
       </p>
           <h3>Cost for Treatment</h3>
     <p>
@@ -3218,8 +3474,41 @@ const woodliceTreatment = new ContentPaN(
   "Woodlice Treatment",
   "Information on the cost of treatment for woodlice, including benefits-related discounts, and the call-out fee.",
   `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Woodlice in your domestic property
+        such as Council House, Housing Association or Private Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>.
+      </p>
+    </section>
+
     <h3>Cost for Treatment</h3>
-    
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
        The treatment cost will be on request. We will send your 
@@ -3271,7 +3560,6 @@ const pestControl = new MenuPaN(
     biscuitBeetlesTreatment,
     bumbleBeesTreatment,
     carpetBeetlesTreatment,
-    clusterFliesTreatment,
     cockroachesTreatment,
     cricketsTreatment,
     dermestesBeetlesTreatment,
@@ -3293,10 +3581,7 @@ const pestControl = new MenuPaN(
     pharoahAntsTreatment,
     psocidsTreatment,
     ratTreatment,
-    redSpiderMitesTreatment,
-    sewageFliesTreatment,
     silverFishTreatment,
-    spiderBeetlesTreatment,
     squirrelsTreatment,
     waspsTreatment,
     weevilsTreatment,
@@ -3495,7 +3780,7 @@ const reportSmoke = new ContentPaN(
       Telephone:<a> href="tel: 0114 273 4651">0114 273 465</a>
        <a> href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4651')">0114 273 465</a>
       <br>
-      Email: <a> href="mailto:epsadmin@sheffield.gov.uk">epsadmin@sheffield.gov.uk</a>
+      Email: <a> href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>
     </p>
     
 
