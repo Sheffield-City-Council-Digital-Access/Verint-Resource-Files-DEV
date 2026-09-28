@@ -344,7 +344,7 @@ const bedBugTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
@@ -506,7 +506,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £40.800 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
@@ -593,7 +593,7 @@ const bumbleBeesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
         <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <h3>Nests Up High</h3>
@@ -725,7 +725,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
@@ -835,7 +835,7 @@ const clusterFliesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -996,7 +996,7 @@ const cricketsTreatment = new ContentPaN(
     </section>
 
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1076,7 +1076,7 @@ const dermestesBeetlesTreatment = new ContentPaN(
     </section>
 
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1494,7 +1494,7 @@ const furBeetlesTreatment = new ContentPaN(
       </p>
     </section>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1545,7 +1545,7 @@ const gardenAntsTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1868,7 +1868,7 @@ const ladyBirdsTreatment = new ContentPaN(
     </section>
 
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
 
@@ -2013,7 +2013,7 @@ const miceTreatment = new ContentPaN(
       each additional treatment will cost <strong>£58.00 (including VAT).</strong>
     </p>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
 
@@ -2147,7 +2147,7 @@ const mitesTreatment = new ContentPaN(
     </section>
     
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2228,7 +2228,7 @@ const mothsTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2444,7 +2444,7 @@ const pharoahAntsTreatment = new ContentPaN(
     </section>
 
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2524,7 +2524,7 @@ const psocidsTreatment = new ContentPaN(
     </section>
 
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2562,7 +2562,7 @@ const ratTreatment = new ContentPaN(
       If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
-      All prices include a call-out fee of <strong>£40.00.</strong> This fee applies if our officer
+      All prices include a call-out fee of <strong>£40.80.</strong> This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <p>
