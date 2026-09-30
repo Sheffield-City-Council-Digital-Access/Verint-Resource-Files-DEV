@@ -4054,6 +4054,173 @@ const abandonedVehicles = new ContentPaN(
   { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
+const bulkyWasteCollection = new ContentPaD(
+  "bulkyWasteCollection",
+  "Bulky Waste Collection",
+  "Information about booking a bulky waste collection, charges, free collections for eligible tenants and other disposal options.",
+  `
+  <p>
+    You can use the bulky waste collection service to dispose of large household items, such as furniture and electrical goods. You can also take bulky items to a household waste recycling centre.
+  </p>
+  <p>
+    For further information about the service, visit:
+    <a href="https://www.sheffield.gov.uk/bins-waste-recycling/other-services/bulky-waste-collection" target="_blank" rel="noopener noreferrer">
+      Bulky Waste Collection | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Bulky%20waste%20collection\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Bulky Waste Collections</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council can collect up to 12 bulky items from your home. Collections are normally completed within 7 working days after payment has been received.
+      </p>
+      <p>
+        The current charges, including VAT, are:
+      </p>
+      <ul>
+        <li>1 to 3 items: £40.25</li>
+        <li>4 to 6 items: £55.01</li>
+        <li>7 to 9 items: £75.59</li>
+        <li>10 to 12 items: £95.48</li>
+      </ul>
+      <p>
+        <strong>Book a bulky waste collection:</strong><br>
+        <a href="https://wasteservices.sheffield.gov.uk/?_dl=t&amp;l=bulky&amp;p=/" target="_blank" rel="noopener noreferrer">
+          Book a Bulky Waste Collection
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20bulky%20waste%20collection\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Free Collections for Eligible Tenants</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You may qualify for one free collection of up to 12 items in any rolling 12-month period if you are:
+      </p>
+      <ul>
+        <li>A Sheffield City Council tenant</li>
+        <li>An Acis tenant</li>
+        <li>An eligible Together Housing, Great Places or Sanctuary tenant living in a property transferred from Sheffield City Council</li>
+      </ul>
+      <p>
+        The 12-month period runs from the date of your previous free collection. Contact your landlord if you are unsure whether you qualify.
+      </p>
+      <p>
+        Additional collections can be booked and paid for using the bulky waste collection service.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>More Than 12 Items</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A separate chargeable service is available for collections of more than 12 items or non-domestic items, such as fixtures, fittings and baths.
+      </p>
+      <p>
+        The minimum charge is £129.70. A visit may be required before the full cost can be confirmed. Contact the Council to discuss this type of collection.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Other Disposal Options</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can take bulky household waste to a household waste recycling centre.
+      </p>
+      <p>
+        <strong>Household waste recycling centres:</strong><br>
+        <a href="https://www.sheffield.gov.uk/bins-recycling-services/household-waste-recycling-centres" target="_blank" rel="noopener noreferrer">
+          Household Waste Recycling Centres | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Household%20waste%20recycling%20centres\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        If your unwanted furniture or electrical items are in good condition, consider donating them to a charity so they can be reused.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>The standard service can collect up to <strong>12 bulky household items</strong></li>
+    <li>Collections are normally completed within <strong>7 working days after payment</strong></li>
+    <li>Eligible tenants may receive <strong>one free collection in a rolling 12-month period</strong></li>
+    <li>A separate chargeable service is available for more than 12 items or non-domestic items</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "bulky_waste_collection_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "bulky waste collection",
+      "book bulky waste",
+      "bulky household items",
+      "furniture collection",
+      "electrical goods collection",
+      "free bulky collection",
+      "Council tenant collection",
+      "large waste collection",
+      "recycling centre",
+      "bulky waste charges",
+      "bulky rubbish",
+      "bulk waste collection"
+    ],
+    categories: ["Environmental Regulations", "Waste and Recycling"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
 const reportWaterAndDrainage = new ContentPaN(
   "ReportWaterAndDrainage",
   "Report water and drainage issue",
@@ -4917,10 +5084,17 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaD(
         Where possible and safe to do so, you should speak to the neighbour or property owner first to try to resolve the problem.
       </p>
       <p>
-        If the issue cannot be resolved, or contacting them is not appropriate, you can report it to the Private Housing Standards team.
+        If the issue cannot be resolved, or direct contact with the occupier is not appropriate, 
+        where the property's tenure is known reports should be directed as follows:
       </p>
+        <ul>
+          <li>Sheffield City Council-owned properties - Local Area Housing Office</li>
+          <li>Housing association properties - relevant housing provider</li>
+          <li>Privately owned or privately rented properties - Environmental Protection via <a> href="mailto:epsadmin@sheffield.gov.uk">epsadmin@sheffield.gov.uk</a></li>
+        </ul>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Information You Will Need</h3>
@@ -4931,6 +5105,7 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaD(
       <ul>
         <li>The address of the property causing the problem</li>
         <li>Details of the issue and how it affects you</li>
+        <li>Your name, address, telephone number</li>
       </ul>
       <p>
         You will not be identified as the complainant, although the nature of the complaint may make it apparent who reported the issue.
@@ -4958,6 +5133,7 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaD(
       </button>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>How Complaints Are Investigated</h3>
@@ -4975,6 +5151,7 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>If a Statutory Nuisance Is Found</h3>
@@ -5290,6 +5467,7 @@ const burglarAlarmsAndCarAlarms = new ContentPaD(
     <li>A sounding car or burglar alarm can be reported if the owner is unavailable</li>
     <li>The Council may silence an alarm that continues to cause a noise nuisance</li>
     <li>The alarm owner may be charged for the cost of silencing it</li>
+    <li>There is no out of hours response for alarms</li>
     <li>If a fire alarm is sounding, call <strong>999</strong></li>
   </ul>
   `,
@@ -5931,6 +6109,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
       </button>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Using a Private Waste Collector</h3>
@@ -5971,6 +6150,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Reporting Fly-Tipping</h3>
@@ -5990,6 +6170,10 @@ const flyTippingAndWasteDisposal = new ContentPaD(
           Report Fly-Tipping | Sheffield City Council
         </a>
       </p>
+      <p>
+        Encourage customers to complate the 'About you' section of the form rather than submitting the report anonymously. 
+        This is so the council can contact them as witnesses may be asked to provide a statement if formal action is considered.
+      </p>
       <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
@@ -6004,6 +6188,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
       </button>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Fly-Tipping on Private Land</h3>
@@ -6011,7 +6196,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        Landowners are responsible for removing fly-tipped waste from their land. The Council can provide a chargeable clearance service.
+        If you are a landowner and would like a quote to remove flytipping/waste from your land, please contact the Council using:
       </p>
       <p>
         <strong>Email:</strong><br>
@@ -6021,10 +6206,13 @@ const flyTippingAndWasteDisposal = new ContentPaD(
       </p>
       <p>
         <strong>Telephone:</strong><br>
-        <a href="tel:0114 20374110">0114 20374110</a> 
+        <a href="tel:0114 2037410">0114 2037410</a> 
       </p>
       <p>
-        Where evidence is available, the Council may investigate and take enforcement action against those responsible.
+        Where evidence is available, the Council may investigate and take enforcement action against those responsible -
+        any evidence should be sent to <a href="mailto:eps.admin@sheffield.gov.uk">
+          eps.admin@sheffield.gov.uk
+        </a>
       </p>
     </div>
   </details>
@@ -6061,172 +6249,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const bulkyWasteCollection = new ContentPaD(
-  "bulkyWasteCollection",
-  "Bulky Waste Collection",
-  "Information about booking a bulky waste collection, charges, free collections for eligible tenants and other disposal options.",
-  `
-  <p>
-    You can use the bulky waste collection service to dispose of large household items, such as furniture and electrical goods. You can also take bulky items to a household waste recycling centre.
-  </p>
-  <p>
-    For further information about the service, visit:
-    <a href="https://www.sheffield.gov.uk/bins-waste-recycling/other-services/bulky-waste-collection" target="_blank" rel="noopener noreferrer">
-      Bulky Waste Collection | Sheffield City Council
-    </a>
-  </p>
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Bulky%20waste%20collection\`
-    "
-  >
-    Send link to review further information
-  </button>
 
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Bulky Waste Collections</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The Council can collect up to 12 bulky items from your home. Collections are normally completed within 7 working days after payment has been received.
-      </p>
-      <p>
-        The current charges, including VAT, are:
-      </p>
-      <ul>
-        <li>1 to 3 items: £40.25</li>
-        <li>4 to 6 items: £55.01</li>
-        <li>7 to 9 items: £75.59</li>
-        <li>10 to 12 items: £95.48</li>
-      </ul>
-      <p>
-        <strong>Book a bulky waste collection:</strong><br>
-        <a href="https://wasteservices.sheffield.gov.uk/?_dl=t&amp;l=bulky&amp;p=/" target="_blank" rel="noopener noreferrer">
-          Book a Bulky Waste Collection
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20bulky%20waste%20collection\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Free Collections for Eligible Tenants</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You may qualify for one free collection of up to 12 items in any rolling 12-month period if you are:
-      </p>
-      <ul>
-        <li>A Sheffield City Council tenant</li>
-        <li>An Acis tenant</li>
-        <li>An eligible Together Housing, Great Places or Sanctuary tenant living in a property transferred from Sheffield City Council</li>
-      </ul>
-      <p>
-        The 12-month period runs from the date of your previous free collection. Contact your landlord if you are unsure whether you qualify.
-      </p>
-      <p>
-        Additional collections can be booked and paid for using the bulky waste collection service.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>More Than 12 Items</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A separate chargeable service is available for collections of more than 12 items or non-domestic items, such as fixtures, fittings and baths.
-      </p>
-      <p>
-        The minimum charge is £129.70. A visit may be required before the full cost can be confirmed. Contact the Council to discuss this type of collection.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Other Disposal Options</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You can take bulky household waste to a household waste recycling centre.
-      </p>
-      <p>
-        <strong>Household waste recycling centres:</strong><br>
-        <a href="https://www.sheffield.gov.uk/bins-recycling-services/household-waste-recycling-centres" target="_blank" rel="noopener noreferrer">
-          Household Waste Recycling Centres | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Household%20waste%20recycling%20centres\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        If your unwanted furniture or electrical items are in good condition, consider donating them to a charity so they can be reused.
-      </p>
-    </div>
-  </details>
-
-  <h3>Key Information</h3>
-  <ul>
-    <li>The standard service can collect up to <strong>12 bulky household items</strong></li>
-    <li>Collections are normally completed within <strong>7 working days after payment</strong></li>
-    <li>Eligible tenants may receive <strong>one free collection in a rolling 12-month period</strong></li>
-    <li>A separate chargeable service is available for more than 12 items or non-domestic items</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "bulky_waste_collection_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "bulky waste collection",
-      "book bulky waste",
-      "bulky household items",
-      "furniture collection",
-      "electrical goods collection",
-      "free bulky collection",
-      "Council tenant collection",
-      "large waste collection",
-      "recycling centre",
-      "bulky waste charges",
-      "bulky rubbish",
-      "bulk waste collection"
-    ],
-    categories: ["Environmental Regulations", "Waste and Recycling"]
-  },
-  { date: "03/09/2026", name: "Andy Walker" }
-);
 
 
 const foodLawInspectionsAndHygieneRatings = new ContentPaD(
@@ -6275,6 +6298,7 @@ const foodLawInspectionsAndHygieneRatings = new ContentPaD(
       </ul>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Food Safety Management</h3>
@@ -6288,10 +6312,11 @@ const foodLawInspectionsAndHygieneRatings = new ContentPaD(
         You should also keep records of routine opening, closing and food safety checks.
       </p>
       <p>
-        The Food Standards Agency provides Safer Food Better Business packs to help businesses meet these requirements.
+        The Food Standards Agency provides Safer Food Better Business packs to help small catering establishments meet these requirements. 
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Inspection Results and Hygiene Ratings</h3>
@@ -6315,6 +6340,7 @@ const foodLawInspectionsAndHygieneRatings = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Low Hygiene Ratings</h3>
@@ -6322,13 +6348,14 @@ const foodLawInspectionsAndHygieneRatings = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        Businesses receiving a rating of 2 or below will be revisited in line with the Council's enforcement policy.
+        Businesses receiving a rating of 2 or below are deemed to be not broadly compliant and will be revisited in line with the Council's enforcement policy.
       </p>
       <p>
         Officers will work with the business to help it meet the required standards. Formal enforcement action may be taken if serious problems remain or the business continues to break food safety law.
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Request a Re-rating</h3>
@@ -6343,6 +6370,9 @@ const foodLawInspectionsAndHygieneRatings = new ContentPaD(
       </p>
       <p>
         The new rating will reflect the conditions found during the inspection. This means the rating could increase, remain the same or decrease.
+      </p>
+      <p>
+        Alternatively the business can wait until its next routine inspection to be reassessed.
       </p>
     </div>
   </details>
@@ -6413,6 +6443,7 @@ const registerAFoodBusiness = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>After Registration</h3>
@@ -6423,13 +6454,14 @@ const registerAFoodBusiness = new ContentPaD(
         Your business will be assessed according to the food safety risk it presents.
       </p>
       <p>
-        Higher-risk businesses are inspected regularly. Lower-risk businesses may be inspected less often or asked to complete a self-assessment.
+        All new establishments will receive an initial inspection, higher risk business are inspected more frequently than lower risk establishments. 
       </p>
       <p>
         You can begin trading from the opening date entered on your registration form, provided you applied at least 28 days beforehand.
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Changes to Your Business</h3>
@@ -6445,6 +6477,7 @@ const registerAFoodBusiness = new ContentPaD(
       </ul>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Apply Online</h3>
@@ -6882,6 +6915,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
       </ul>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Why We Use Your Information</h3>
@@ -6893,6 +6927,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>How Long We Keep Your Information</h3>
@@ -6904,6 +6939,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Who We May Share Your Information With</h3>
@@ -6917,9 +6953,11 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
         <li>General Practitioners</li>
         <li>Public health organisations</li>
         <li>Laboratories processing test results</li>
+        <li>UK Health Security Agency (UKHSA)</li>
       </ul>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Your Data Protection Rights</h3>
@@ -6940,6 +6978,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Contact the Data Protection Officer</h3>
@@ -7071,6 +7110,7 @@ const environmentalPermitsPartB = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Application Requirements</h3>
@@ -7108,6 +7148,7 @@ const environmentalPermitsPartB = new ContentPaD(
       </button>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>What Happens Next</h3>
@@ -7130,6 +7171,7 @@ const environmentalPermitsPartB = new ContentPaD(
       </p>
     </div>
   </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Existing Permits and Annual Charges</h3>
@@ -7145,6 +7187,29 @@ const environmentalPermitsPartB = new ContentPaD(
         <li>Apply to change an existing permit</li>
         <li>Pay the annual subsistence charge</li>
       </ul>
+      <p>
+        Further information and links to apply for or renew your permit can be found here:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/environmental-permit" target="_blank" rel="noopener noreferrer">
+        Environmental Permits | Sheffield City Council
+        </a>
+      </p>
+      <p>
+        Direct customers to the section towards the bottom of the page <em>'Apply for a new permit or manage your current permit'</em>.
+      </p>
+
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Environmental%20permits\`
+        "
+      >
+        Send link to review further information
+      </button>
+      
     </div>
   </details>
 
@@ -7196,7 +7261,6 @@ const environmentalRegulations = new MenuPaD(
     lostOrFoundDogs,
     temporaryCareOfAnimals,
     flyTippingAndWasteDisposal,
-    bulkyWasteCollection,
     foodLawInspectionsAndHygieneRatings,
     registerAFoodBusiness,
     skinPiercingRegistrationEnviro,
@@ -7217,6 +7281,7 @@ const pollutionAndNuisance = new ServicePaN(
   [
     abandonedVehicles,
     animalControl,
+    bulkyWasteCollection,
     cleanAirZone,
     handoverDogtoCouncil,
     pestControl,
