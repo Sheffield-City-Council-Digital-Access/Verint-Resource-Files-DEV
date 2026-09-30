@@ -4883,8 +4883,8 @@ const statutoryNuisanceFromDomesticProperties = new ContentN(
 
 //#region Environmental Services
 
-const animalWelfareLicenceEnviro = new ContentPaN(
-  "animalWelfareLicencesEnviro",
+const enviroAnimalWelfareLicence = new ContentPaN(
+  "enviroAnimalWelfareLicence",
   "Animal Welfare Licences",
   "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
   `
@@ -7282,7 +7282,7 @@ const environmentalRegulations = new MenuPaN(
   "Environmental Regulations",
   "Information regarding environmental regulations",
   [
-    animalWelfareLicenceEnviro,
+    enviroAnimalWelfareLicence,
     burglarAlarmsAndCarAlarms,
     contaminatedLand,
     coolingTowerRegistration,
