@@ -4883,8 +4883,8 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaN(
 
 //#region Environmental Services
 
-const enviroAnimalWelfareLicence = new ContentPaN(
-  "enviroAnimalWelfareLicence",
+const animalWelfareLicenceEnviro = new ContentPaN(
+  "animalWelfareLicenceEnviro",
   "Animal Welfare Licences",
   "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
   `
@@ -7014,8 +7014,8 @@ const registerAFoodBusiness = new ContentPaN(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const enviroSkinPiercingRegistration = new ContentPaN(
-  "enviroSkinPiercingRegistration",
+const skinPiercingRegistrationEnviro = new ContentPaN(
+  "skinPiercingRegistrationEnviro",
   "Skin Piercing Registration",
   "Information about registering skin piercing premises and operators, registration fees, inspections and hygiene requirements.",
   `
@@ -7282,7 +7282,7 @@ const environmentalRegulations = new MenuPaN(
   "Environmental Regulations",
   "Information regarding environmental regulations",
   [
-    enviroAnimalWelfareLicence,
+    animalWelfareLicenceEnviro,
     burglarAlarmsAndCarAlarms,
     contaminatedLand,
     coolingTowerRegistration,
@@ -7295,7 +7295,7 @@ const environmentalRegulations = new MenuPaN(
     landAndPropertySearches,
     lostOrFoundDogs,
     registerAFoodBusiness,
-    enviroSkinPiercingRegistration,
+    skinPiercingRegistrationEnviro,
     temporaryCareOfAnimals,
   ]
 );
