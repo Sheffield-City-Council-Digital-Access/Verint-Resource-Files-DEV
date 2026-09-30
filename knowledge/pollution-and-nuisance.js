@@ -6708,10 +6708,6 @@ const landAndPropertySearches = new ContentPaN(
 );
 
 
-
-
-
-
 const lostOrFoundDogs = new ContentPaN(
   "lostOrFoundDogs",
   "Lost or Found Dogs",
@@ -7018,8 +7014,8 @@ const registerAFoodBusiness = new ContentPaN(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const skinPiercingRegistrationEnviro = new ContentPaN(
-  "skinPiercingRegistrationEnviro",
+const enviroSkinPiercingRegistration = new ContentPaN(
+  "enviroSkinPiercingRegistration",
   "Skin Piercing Registration",
   "Information about registering skin piercing premises and operators, registration fees, inspections and hygiene requirements.",
   `
@@ -7299,7 +7295,7 @@ const environmentalRegulations = new MenuPaN(
     landAndPropertySearches,
     lostOrFoundDogs,
     registerAFoodBusiness,
-    skinPiercingRegistrationEnviro,
+    enviroSkinPiercingRegistration,
     temporaryCareOfAnimals,
   ]
 );
@@ -7336,7 +7332,7 @@ const pollutionAndNuisance = new ServicePaN(
     reportWaterAndDrainage,
     statutoryNuisanceFromCommercialPremises,
     statutoryNuisanceFromDomesticProperties,
-    environmentalRegulations
+    environmentalRegulations,
    
   ]
 );
