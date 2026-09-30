@@ -4740,7 +4740,7 @@ const statutoryNuisanceFromCommercialPremises = new ContentPaN(
 );
 
 
-const statutoryNuisanceFromDomesticProperties = new ContentN(
+const statutoryNuisanceFromDomesticProperties = new ContentPaN(
   "statutoryNuisanceFromDomesticProperties",
   "Statutory Nuisance from Domestic Properties",
   "Information about reporting a statutory nuisance from a domestic property, how complaints are investigated and the action the Council may take.",
