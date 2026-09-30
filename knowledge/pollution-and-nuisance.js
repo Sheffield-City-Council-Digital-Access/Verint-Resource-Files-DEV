@@ -54,6 +54,993 @@ class FormPaN extends CorePaN {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+
+const abandonedVehicles = new ContentPaN(
+  "abandonedVehicles",
+  "Abandoned vehicles",
+  "Learn how to report an abandoned vehicle and understand the responsibilities of the Council and police in its removal.",
+  `
+    <p>
+      We have a duty to remove abandoned vehicles.The decision as to whether
+      a vehicle is abandoned is taken by an authorised Council Officer. Abandoning
+      a vehicle is an offence under the Refuse disposal (Amenity) Act 1978 and 
+      carries a maximum fine of £2,500 and / or 3 months imprisonment.
+    </p>
+    <h3>Who is responsible for removing the abandoned vehicle</h3>
+    <p>
+      Removing an abandoned vehicle is a matter for us or the police.
+    </p>
+    <h3>Police responsibility</h3>
+    <p>
+      The police will be responsible for removing the vehicle if:
+      <ul>
+        <li>it's causing an obstruction on the highway</li>
+        <li>it's suspicious and may have been stolen</li>
+        <li>the vehicle has been burnt out</li>
+      </ul>
+    </p>
+    <p>
+      If this fits the description of the vehicle you think has been abandoned
+      then please call the police on 101 to report it.
+    </p>
+    <h3>Our responsibility</h3>
+    <p>
+      If the vehicle does not fall into any of the categories above and you
+      suspect it to be abandoned, please report it to us.
+    </p>
+    <p>
+      Signs that a vehicle has been abandoned include:
+      <ul>
+        <li>broken windows</li>
+        <li>missing number plates</li>
+        <li>flat or missing tyres</li>
+        <li>doesn't look roadworthy</li>
+        <li>looks damaged or run-down</li>
+      </ul>
+    </p>
+  `,
+  {
+    buttonLabel: "Report an abandoned vehicle",
+    formName: "report_abandoned_vehicle",
+  },
+  { typeKey: "" },
+  { typeKey: "abandoned_vehicle_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "Abandoned vehicles",
+      "abandned",
+      "abondened",
+      "abandonded",
+      "abondoned",
+      "vechicle",
+      "vehcile",
+      "vehical",
+      "vehilce"
+    ],
+    categories: ["Pollution and Nuisance", "Waste Management"],
+  },
+  { date: "05/09/2024", name: "Elliott Griffiths" }
+);
+
+
+const animalControl = new ContentPaN(
+  "animalControl",
+  "Animal Control",
+  "Animal control treatments, services and pricing",
+  `<p>Animal control deals with the following issues. To report these issue, use the from attached</p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Abandoned Pets</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Reports of this nature need to go to the RSPCA.</p>
+        <p>Please contact the RSPCA on 
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 1234999')">0300 1234999</a> or visit
+    <a href="https://www.rspca.org.uk" target="_blank" rel="noopener noreferrer">www.rspca.org.uk </a></p>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal Boarding Establishment</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal Noise</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal welfare on Farms</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dangerous Wild Animal License</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+</div>
+</details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Dog</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+
+  <div class="accordion-content">
+    <details class="details-accordion">
+      <summary>
+        Dog - Adoption
+      </summary>
+      <div class="details-accordion-content">
+        <p>
+          Our kennel staff are experienced in matching unwanted dogs with new owners. 
+          If you feel that you could give a home to a new pet they would like to hear from you. 
+          The staff will listen to your preferences and suggest the sort of pet that would suit you best.
+           If we have suitable dogs the staff can arrange for you to seem them. 
+           Please note that if you are visiting to adopt, you must make an appointment before you visit.
+        </p>
+        <p>
+          If you would like to make an enquiry, please call them on
+          
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>
+        </p>
+        <address>
+          <strong>Address:</strong><br>
+          RSPCA Animal Shelter <br>
+          2, Stadium Way <br> 
+          S9 3HN
+        </address>
+        <p>
+          <strong><i>Opening hours:</strong>10am to 3pm on Monday, Tuesday, Thursday, Friday and Saturday.</i>
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog - Micro-chipping
+      </summary>
+      <div class="details-accordion-content">
+        <p>
+          Our kennel staff are experienced in matching unwanted dogs with new owners. 
+          If you feel that you could give a home to a new pet they would like to hear from you. 
+          The staff will listen to your preferences and suggest the sort of pet that would suit you best.
+          If we have suitable dogs the staff can arrange for you to seem them. 
+          Please note that if you are visiting to adopt, you must make an appointment before you visit.
+        </p>
+        <p>
+          If you would like to take up this service, please call them on 
+          
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>.
+        </p>
+        <address>
+          <strong>Address:</strong><br>
+          RSPCA Animal Shelter <br>
+          2, Stadium Way <br> 
+          S9 3HN
+        </address>
+        <p>
+          <strong><i>Opening hours:</strong>10am to 3pm on Monday, Tuesday, Thursday, Friday and Saturday.</i>
+        </p>
+      </div>
+    </details>    
+
+    <details class="details-accordion">
+      <summary>
+        Dog - Breeding Information
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_animal_control?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Raise Animal Control report for Dog Breeding Information
+        </a>
+      </div>
+    </details>       
+
+    <details class="details-accordion">
+      <summary>
+        Deceased Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_animal_control?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Raise Animal Control report and provide us details
+        </a>
+      </div>
+    </details>     
+
+    <details class="details-accordion">
+      <summary>
+        Dangerous Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dangerous_dog?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a dangerous dog
+        </a>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog Fouling
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_fouling?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a dog fouling
+        </a>
+      </div>
+    </details>     
+
+    <details class="details-accordion">
+      <summary>
+        Handover Dog to Council
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_handover?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Handover Dog to Council
+        </a>
+      </div>
+    </details>       
+
+    <details class="details-accordion">
+      <summary>
+        Missing or Lost Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_as_lost?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a Lost or Missing Dog
+        </a>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog Straying
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_straying_dog?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a Straying Dog
+        </a>
+      </div>
+    </details>
+  </div>
+</details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Deceased Pet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Birds
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Mice
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                     We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Rats
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Cat
+            </summary>
+            <div class="details-accordion-content">
+                <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                None of above
+            </summary>
+            <div class="details-accordion-content">
+               <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+            </div>
+        </details>
+    </div>
+</details>    
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dumped Animal Bodies</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Keeping of Animals Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Riding Establishments</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+  <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Performing Animal Licence</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+     <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Pet Shops</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+
+  `,
+  {
+    buttonLabel: "Raise a Report",
+    formName: "report_animal_control",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Treatment","services and prices"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "21/10/2025", name: "Motolani Akinola" }
+);
+
+
+const bulkyWasteCollection = new ContentPaN(
+  "bulkyWasteCollection",
+  "Bulky Waste Collection",
+  "Information about booking a bulky waste collection, charges, free collections for eligible tenants and other disposal options.",
+  `
+  <p>
+    You can use the bulky waste collection service to dispose of large household items, such as furniture and electrical goods. You can also take bulky items to a household waste recycling centre.
+  </p>
+  <p>
+    For further information about the service, visit:
+    <a href="https://www.sheffield.gov.uk/bins-waste-recycling/other-services/bulky-waste-collection" target="_blank" rel="noopener noreferrer">
+      Bulky Waste Collection | Sheffield City Council
+    </a>
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Bulky%20waste%20collection\`
+    "
+  >
+    Send link to review further information
+  </button>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Bulky Waste Collections</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council can collect up to 12 bulky items from your home. Collections are normally completed within 7 working days after payment has been received.
+      </p>
+      <p>
+        The current charges, including VAT, are:
+      </p>
+      <ul>
+        <li>1 to 3 items: £40.25</li>
+        <li>4 to 6 items: £55.01</li>
+        <li>7 to 9 items: £75.59</li>
+        <li>10 to 12 items: £95.48</li>
+      </ul>
+      <p>
+        <strong>Book a bulky waste collection:</strong><br>
+        <a href="https://wasteservices.sheffield.gov.uk/?_dl=t&amp;l=bulky&amp;p=/" target="_blank" rel="noopener noreferrer">
+          Book a Bulky Waste Collection
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20bulky%20waste%20collection\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Free Collections for Eligible Tenants</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You may qualify for one free collection of up to 12 items in any rolling 12-month period if you are:
+      </p>
+      <ul>
+        <li>A Sheffield City Council tenant</li>
+        <li>An Acis tenant</li>
+        <li>An eligible Together Housing, Great Places or Sanctuary tenant living in a property transferred from Sheffield City Council</li>
+      </ul>
+      <p>
+        The 12-month period runs from the date of your previous free collection. Contact your landlord if you are unsure whether you qualify.
+      </p>
+      <p>
+        Additional collections can be booked and paid for using the bulky waste collection service.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>More Than 12 Items</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A separate chargeable service is available for collections of more than 12 items or non-domestic items, such as fixtures, fittings and baths.
+      </p>
+      <p>
+        The minimum charge is £129.70. A visit may be required before the full cost can be confirmed. Contact the Council to discuss this type of collection.
+      </p>
+    </div>
+  </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Other Disposal Options</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can take bulky household waste to a household waste recycling centre.
+      </p>
+      <p>
+        <strong>Household waste recycling centres:</strong><br>
+        <a href="https://www.sheffield.gov.uk/bins-recycling-services/household-waste-recycling-centres" target="_blank" rel="noopener noreferrer">
+          Household Waste Recycling Centres | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Household%20waste%20recycling%20centres\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        If your unwanted furniture or electrical items are in good condition, consider donating them to a charity so they can be reused.
+      </p>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>The standard service can collect up to <strong>12 bulky household items</strong></li>
+    <li>Collections are normally completed within <strong>7 working days after payment</strong></li>
+    <li>Eligible tenants may receive <strong>one free collection in a rolling 12-month period</strong></li>
+    <li>A separate chargeable service is available for more than 12 items or non-domestic items</li>
+  </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "bulky_waste_collection_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "bulky waste collection",
+      "book bulky waste",
+      "bulky household items",
+      "furniture collection",
+      "electrical goods collection",
+      "free bulky collection",
+      "Council tenant collection",
+      "large waste collection",
+      "recycling centre",
+      "bulky waste charges",
+      "bulky rubbish",
+      "bulk waste collection"
+    ],
+    categories: ["Environmental Regulations", "Waste and Recycling"]
+  },
+  { date: "03/09/2026", name: "Andy Walker" }
+);
+
+
+//#region Clean Air Zone
+
+const howAreChargesPaid = new ContentPaN(
+  "howAreChargesPaid",
+  "How are charges paid",
+  "Learn how to pay charges for entering the Clean Air Zone, including payment deadlines and responsibilities for drivers",
+  `
+<p>Charges will need to be paid online via central government’s online Clean Air Zone payment portal. Payment can be made ahead of entering the zone. Charges must be paid within 7 days of entering the Clean Air Zone. If payments are not made within 7 days additional penalty charges may apply. The link to the payment portal will not be live until the Clean Air Zone is launched.</p>
+<p>It will be the responsibility of drivers to go online and make payment. No notifications are issued to drivers.</p>
+`,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
+  "howLongWillTheCleanAirZoneBeInPlace",
+  "How long will the Clean Air Zone be in place",
+  "Find out how long the Clean Air Zone will be in place and the available financial support for businesses and residents to upgrade to cleaner vehicles.",
+  `
+<p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
+<h3>What support will there be for those affected</h3>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
+<br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information environment and countryside"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Environment%20and%20countryside\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+</p>
+`,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howMuchWillDriversBeCharged = new ContentPaN(
+  "howMuchWillDriversBeCharged",
+  "How much will drivers be charged",
+  "Learn about the daily charges for vehicles entering the Clean Air Zone that do not meet the required environmental standards.",
+
+  `
+<p>If your vehicle does not meet the minimum standard, you will have to pay the charge for every day you enter the zone. This would be:</p>
+  <ul>
+  <li>£10 per day for polluting vans/LGVs and Taxis</li>
+  <li>£50 per day for coaches, buses, and lorries/HGVs</li>
+  </ul>
+  `,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howWillDriversBeCharged = new ContentPaN(
+  "howWillDriversBeCharged",
+  "How will drivers be charged",
+  "Find out how drivers will be charged for entering the Clean Air Zone using ANPR cameras, with charges applied once per day regardless of exits and re-entries.",
+  `
+<p>Automatic Number Plate Recognition (ANPR) cameras installed across the city centre will detect non-compliant vehicles entering the Clean Air Zone boundary. Charges apply 24 hours a day, seven days a week. The Clean Air Zone charges at a daily rate, meaning drivers will only need to make one payment a day, regardless of how many times they exit and re-enter.</p>
+`,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whatIsACleanAirZone = new ContentPaN(
+  "whatIsACleanAirZone",
+  "What Is A Clean Air Zone",
+  "Learn what a Clean Air Zone is, its purpose in reducing air pollution, and which vehicles will be charged for entry in Sheffield.",
+  `
+<p>
+  A Clean Air Zone is a defined area of a town or city within which certain
+  vehicles with more polluting engine standards are charged for entering.
+</p>
+<p>
+  It is not a congestion charging zone and, unlike some other cities, privately
+  owned cars, motorbikes, and mopeds will not be charged.
+</p>
+<p>
+  The introduction of a Clean Air Zone aims to reduce exposure to nitrogen
+  dioxide produced by road traffic to protect public health in areas where
+  pollution levels exceed the maximum legal level. In Sheffield, this area
+  includes the inner ring road and everything inside it.
+</p>
+<p>
+  See the Clean Air Zone map which may help when explaining the scheme to
+  customers:
+</p>
+<iframe
+  src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=209bfe53e5b34c06878e0f0d6c39ee88"
+  style="height: 400px; width: 100%"
+>
+</iframe>
+`,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whatSupportWillThereBeForThoseAffected = new ContentPaN(
+  "whatSupportWillThereBeForThoseAffected",
+  "What support will there be for those affected",
+  "Discover the financial support available for businesses and residents to upgrade to cleaner vehicles, including grants and interest-subsidized loans.",
+  `
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
+<br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to Apply for financial support to upgrade or replace a polluting vehicle"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20financial%20support%20to%20upgrade%20or%20replace%20a%20polluting%20vehicle\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+</p>
+`,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whatVehiclesWillBeCharged = new ContentPaN(
+  "whatVehiclesWillBeCharged",
+  "What vehicles will be charged",
+  "Find out which vehicle types will be charged in Sheffield's Clean Air Zone, based on their engine standards, and how to check your vehicle’s eligibility.",
+
+  `
+<p>Only specific vehicle types with the most polluting engine standards will be charged for entering the Clean Air Zone. Private cars, motorbikes, or mopeds will not be charged for traveling in Sheffield.</p>
+<p>Charges apply to the following vehicle types that do not meet the minimum standards when entering the Clean Air Zone boundary:</p>
+  <ul>
+  <li>Taxis, including both hackney carriages and private hire vehicles, which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
+  <li>Light goods vehicles (LGVs) such as vans, campervans, pickup trucks, and minibuses which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
+  <li>Buses and coaches which are below Euro 6 Diesel standards</li>
+  <li>Heavy goods vehicles (HGVs) which are below Euro 6 Diesel standards</li>
+  </ul>
+  <p>
+    Vehicle owners can check whether they will be charged in Sheffield, and for other Clean Air Zones elsewhere, via the government’s online vehicle checker: Clean Air Zones.
+  </p>
+  `,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
+  "whyIsACleanAirZoneBeingIntroduced",
+  "Why Is A Clean Air Zone Being Introduced",
+  "Learn about the legal directive behind Sheffield's Category C Clean Air Zone, its aim to reduce Nitrogen Dioxide levels, and the health impacts of air pollution.",
+
+  `
+<p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
+<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.
+<br>
+
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about Health matters: air pollution"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Health%20matters%20air%20pollution\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+
+</p>
+<p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
+<p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
+`,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "caz_information_requested" },
+  { typeKey: "caz_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
+    categories: ["Parking", "Pollution and Nuisance"],
+  },
+  { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const cleanAirZone = new MenuPaN(
+  "cleanAirZone",
+  "Clean Air Zone",
+  "Information about the Clean Air Zone Scheme",
+  [
+    whatIsACleanAirZone,
+    whyIsACleanAirZoneBeingIntroduced,
+    whatVehiclesWillBeCharged,
+    howMuchWillDriversBeCharged,
+    howWillDriversBeCharged,
+    howAreChargesPaid,
+    howLongWillTheCleanAirZoneBeInPlace,
+    whatSupportWillThereBeForThoseAffected
+  ]
+);
+
+//#endregion Clean Air Zone
+
+const handoverDogtoCouncil = new FormPaN(
+  "handoverDogtoCouncil",
+  "Handover Dog to Council",
+  "Hand over a dog to the council",
+  "report_dog_handover",
+  {
+    type: "Report",
+    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health"
+    ],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
 //#region Pest Control
 
 const badgerProtection = new ContentPaN(
@@ -3306,6 +4293,81 @@ const pestControl = new MenuPaN(
 
 //#endregion Pest Control
 
+
+const reportAccumulations = new FormPaN(
+  "reportAccumulations",
+  "Accumulations",
+  "Report an accumulation of dog faeces, domestic waste, non domestic waste, or smoking waste.",
+  "report_accumulations",
+  {
+    type: "Report",
+    keywords: [
+      "accumulation",
+      "accumulations",
+      "acumulation",
+      "acumulations",
+      "dog faeces",
+      "dog poo",
+      "faeces",
+      "waste",
+      "smoking"
+    ],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "11/11/2025", name: "Liz Taster" }
+);
+
+
+const reportDangerousDog = new FormPaN(
+  "reportDangerousDog",
+  "Dangerous dog",
+  "Report a dog as dangerous",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "dangerous", "dangerous dog", "dog as dangerous"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+
+const reportDogAsLost = new FormPaN(
+  "reportDogAsLost",
+  "Lost dog",
+  "Report a lost dog",
+  "report_dog_as_lost",
+  {
+    type: "Report",
+    keywords: [
+      "Dog",
+      "missing",
+      "lost",
+      "missing dog",
+      "lost dog",
+      "dog as missing",
+      "dog as lost"
+    ],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+
+const reportDogFouling = new FormPaN(
+  "reportDogFouling",
+  "Dog fouling",
+  "Report dog fouling on the highway",
+  "report_dog_fouling",
+  {
+    type: "Report",
+    keywords: ["Dog", "fouling"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+
 const reportFilthyPremises = new FormPaN(
   "reportFilthyPremises",
   "Report Filthy Premises",
@@ -3323,44 +4385,6 @@ const reportFilthyPremises = new FormPaN(
   { date: "30/05/2025", name: "Gee Whitehouse" }
 );
 
-const reportNeedlesGlass = new FormPaN(
-  "reportNeedlesGlass",
-  "Needles or broken glass",
-  "Report problems with hazardous items",
-  "report_needles_glass",
-  {
-    type: "Report",
-    keywords: ["Needles", "glass"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
-const reportLitter = new FormPaN(
-  "reportLitter",
-  "Litter",
-  "Report problems such as litter or waste on the highway",
-  "report_litter",
-  {
-    type: "Report",
-    keywords: ["Litter"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
-const reportGraffiti = new FormPaN(
-  "reportGraffiti",
-  "Graffiti",
-  "Report problems such as offensive or non-offensive graffiti",
-  "report_graffiti",
-  {
-    type: "Report",
-    keywords: ["Graffiti"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
 
 const reportFlyPosting = new FormPaN(
   "reportFlyPosting",
@@ -3388,84 +4412,48 @@ const reportFlyTipping = new FormPaN(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const handoverDogtoCouncil = new FormPaN(
-  "handoverDogtoCouncil",
-  "Handover Dog to Council",
-  "Hand over a dog to the council",
-  "report_dog_handover",
-  {
-    type: "Report",
-    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Animal Control",
-      "Environmental Health"
-    ],
-  },
-  { date: "05/03/2025", name: "Sam Coupland" }
-);
 
-const reportDangerousDog = new FormPaN(
-  "reportDangerousDog",
-  "Dangerous dog",
-  "Report a dog as dangerous",
-  "report_dangerous_dog",
+const reportGraffiti = new FormPaN(
+  "reportGraffiti",
+  "Graffiti",
+  "Report problems such as offensive or non-offensive graffiti",
+  "report_graffiti",
   {
     type: "Report",
-    keywords: ["Dog", "dangerous", "dangerous dog", "dog as dangerous"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "05/03/2025", name: "Sam Coupland" }
-);
-
-const reportDogFouling = new FormPaN(
-  "reportDogFouling",
-  "Dog fouling",
-  "Report dog fouling on the highway",
-  "report_dog_fouling",
-  {
-    type: "Report",
-    keywords: ["Dog", "fouling"],
+    keywords: ["Graffiti"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const reportStrayingDog = new FormPaN(
-  "reportStrayingDog",
-  "Straying dog",
-  "Report straying dog on the highway",
-  "report_straying_dog",
+
+const reportLitter = new FormPaN(
+  "reportLitter",
+  "Litter",
+  "Report problems such as litter or waste on the highway",
+  "report_litter",
   {
     type: "Report",
-    keywords: ["Dog", "straying", "stray", "stray dog"],
+    keywords: ["Litter"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "05/03/2025", name: "Sam Coupland" }
+  { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const reportDogAsLost = new FormPaN(
-  "reportDogAsLost",
-  "Lost dog",
-  "Report a lost dog",
-  "report_dog_as_lost",
+
+const reportNeedlesGlass = new FormPaN(
+  "reportNeedlesGlass",
+  "Needles or broken glass",
+  "Report problems with hazardous items",
+  "report_needles_glass",
   {
     type: "Report",
-    keywords: [
-      "Dog",
-      "missing",
-      "lost",
-      "missing dog",
-      "lost dog",
-      "dog as missing",
-      "dog as lost"
-    ],
+    keywords: ["Needles", "glass"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "05/03/2025", name: "Sam Coupland" }
+  { date: "30/09/2024", name: "Elliott Griffiths" }
 );
+
 
 const reportNoise = new FormPaN(
   "reportNoise",
@@ -3479,6 +4467,7 @@ const reportNoise = new FormPaN(
   },
   { date: "05/03/2025", name: "Sam Coupland" }
 );
+
 
 const reportSmoke = new ContentPaN(
   "reportSmoke",
@@ -3537,689 +4526,20 @@ More information can be found at  <a href="https://www.gov.uk/garden-bonfires-ru
   { date: "13/06/2025", name: "Gee Whitehouse" }
 );
 
-const animalControl = new ContentPaN(
-  "animalControl",
-  "Animal Control",
-  "Animal control treatments, services and pricing",
-  `<p>Animal control deals with the following issues. To report these issue, use the from attached</p>
 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Abandoned Pets</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <p>Reports of this nature need to go to the RSPCA.</p>
-        <p>Please contact the RSPCA on 
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 1234999')">0300 1234999</a> or visit
-    <a href="https://www.rspca.org.uk" target="_blank" rel="noopener noreferrer">www.rspca.org.uk </a></p>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Animal Boarding Establishment</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Animal Noise</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Animal welfare on Farms</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Dangerous Wild Animal License</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-</div>
-</details>
-<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Dog</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-
-  <div class="accordion-content">
-    <details class="details-accordion">
-      <summary>
-        Dog - Adoption
-      </summary>
-      <div class="details-accordion-content">
-        <p>
-          Our kennel staff are experienced in matching unwanted dogs with new owners. 
-          If you feel that you could give a home to a new pet they would like to hear from you. 
-          The staff will listen to your preferences and suggest the sort of pet that would suit you best.
-           If we have suitable dogs the staff can arrange for you to seem them. 
-           Please note that if you are visiting to adopt, you must make an appointment before you visit.
-        </p>
-        <p>
-          If you would like to make an enquiry, please call them on
-          
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>
-        </p>
-        <address>
-          <strong>Address:</strong><br>
-          RSPCA Animal Shelter <br>
-          2, Stadium Way <br> 
-          S9 3HN
-        </address>
-        <p>
-          <strong><i>Opening hours:</strong>10am to 3pm on Monday, Tuesday, Thursday, Friday and Saturday.</i>
-        </p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>
-        Dog - Micro-chipping
-      </summary>
-      <div class="details-accordion-content">
-        <p>
-          Our kennel staff are experienced in matching unwanted dogs with new owners. 
-          If you feel that you could give a home to a new pet they would like to hear from you. 
-          The staff will listen to your preferences and suggest the sort of pet that would suit you best.
-          If we have suitable dogs the staff can arrange for you to seem them. 
-          Please note that if you are visiting to adopt, you must make an appointment before you visit.
-        </p>
-        <p>
-          If you would like to take up this service, please call them on 
-          
-          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>.
-        </p>
-        <address>
-          <strong>Address:</strong><br>
-          RSPCA Animal Shelter <br>
-          2, Stadium Way <br> 
-          S9 3HN
-        </address>
-        <p>
-          <strong><i>Opening hours:</strong>10am to 3pm on Monday, Tuesday, Thursday, Friday and Saturday.</i>
-        </p>
-      </div>
-    </details>    
-
-    <details class="details-accordion">
-      <summary>
-        Dog - Breeding Information
-      </summary>
-      <div class="details-accordion-content">
-        <a href="${window.location.protocol}//${
-          window.location.hostname
-        }/form/launch/report_animal_control?${
-          KDF.getParams().customerid
-          ? `customerid=${KDF.getParams().customerid}&`
-          : ""
-        }interactionid=${KDF.getParams().interactionid}">
-          Raise Animal Control report for Dog Breeding Information
-        </a>
-      </div>
-    </details>       
-
-    <details class="details-accordion">
-      <summary>
-        Deceased Dog
-      </summary>
-      <div class="details-accordion-content">
-        <a href="${window.location.protocol}//${
-          window.location.hostname
-        }/form/launch/report_animal_control?${
-          KDF.getParams().customerid
-          ? `customerid=${KDF.getParams().customerid}&`
-          : ""
-        }interactionid=${KDF.getParams().interactionid}">
-          Raise Animal Control report and provide us details
-        </a>
-      </div>
-    </details>     
-
-    <details class="details-accordion">
-      <summary>
-        Dangerous Dog
-      </summary>
-      <div class="details-accordion-content">
-        <a href="${window.location.protocol}//${
-          window.location.hostname
-        }/form/launch/report_dangerous_dog?${
-          KDF.getParams().customerid
-          ? `customerid=${KDF.getParams().customerid}&`
-          : ""
-        }interactionid=${KDF.getParams().interactionid}">
-          Report a dangerous dog
-        </a>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>
-        Dog Fouling
-      </summary>
-      <div class="details-accordion-content">
-        <a href="${window.location.protocol}//${
-          window.location.hostname
-        }/form/launch/report_dog_fouling?${
-          KDF.getParams().customerid
-          ? `customerid=${KDF.getParams().customerid}&`
-          : ""
-        }interactionid=${KDF.getParams().interactionid}">
-          Report a dog fouling
-        </a>
-      </div>
-    </details>     
-
-    <details class="details-accordion">
-      <summary>
-        Handover Dog to Council
-      </summary>
-      <div class="details-accordion-content">
-        <a href="${window.location.protocol}//${
-          window.location.hostname
-        }/form/launch/report_dog_handover?${
-          KDF.getParams().customerid
-          ? `customerid=${KDF.getParams().customerid}&`
-          : ""
-        }interactionid=${KDF.getParams().interactionid}">
-          Handover Dog to Council
-        </a>
-      </div>
-    </details>       
-
-    <details class="details-accordion">
-      <summary>
-        Missing or Lost Dog
-      </summary>
-      <div class="details-accordion-content">
-        <a href="${window.location.protocol}//${
-          window.location.hostname
-        }/form/launch/report_dog_as_lost?${
-          KDF.getParams().customerid
-          ? `customerid=${KDF.getParams().customerid}&`
-          : ""
-        }interactionid=${KDF.getParams().interactionid}">
-          Report a Lost or Missing Dog
-        </a>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>
-        Dog Straying
-      </summary>
-      <div class="details-accordion-content">
-        <a href="${window.location.protocol}//${
-          window.location.hostname
-        }/form/launch/report_straying_dog?${
-          KDF.getParams().customerid
-          ? `customerid=${KDF.getParams().customerid}&`
-          : ""
-        }interactionid=${KDF.getParams().interactionid}">
-          Report a Straying Dog
-        </a>
-      </div>
-    </details>
-  </div>
-</details>
-
-
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Deceased Pet</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Birds
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-                </p>
-            </div>
-        </details>
-<details class="details-accordion">
-            <summary>
-                Mice
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                     We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-                </p>
-            </div>
-        </details>
-<details class="details-accordion">
-            <summary>
-                Rats
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-                </p>
-            </div>
-        </details>
-<details class="details-accordion">
-            <summary>
-                Cat
-            </summary>
-            <div class="details-accordion-content">
-                <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-            </div>
-        </details>
-<details class="details-accordion">
-            <summary>
-                None of above
-            </summary>
-            <div class="details-accordion-content">
-               <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-            </div>
-        </details>
-    </div>
-</details>    
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Dumped Animal Bodies</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Keeping of Animals Advice</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Riding Establishments</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-  <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Performing Animal Licence</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-     <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Pet Shops</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-    </div>
-</details>
-
-  `,
-  {
-    buttonLabel: "Raise a Report",
-    formName: "report_animal_control",
-  },
-  { typeKey: "pest_control_transfer_to_service" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Treatment","services and prices"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Animal Control",
-      "Environmental Health",
-    ],
-  },
-  { date: "21/10/2025", name: "Motolani Akinola" }
-);
-
-const abandonedVehicles = new ContentPaN(
-  "abandonedVehicles",
-  "Abandoned vehicles",
-  "Learn how to report an abandoned vehicle and understand the responsibilities of the Council and police in its removal.",
-  `
-    <p>
-      We have a duty to remove abandoned vehicles.The decision as to whether
-      a vehicle is abandoned is taken by an authorised Council Officer. Abandoning
-      a vehicle is an offence under the Refuse disposal (Amenity) Act 1978 and 
-      carries a maximum fine of £2,500 and / or 3 months imprisonment.
-    </p>
-    <h3>Who is responsible for removing the abandoned vehicle</h3>
-    <p>
-      Removing an abandoned vehicle is a matter for us or the police.
-    </p>
-    <h3>Police responsibility</h3>
-    <p>
-      The police will be responsible for removing the vehicle if:
-      <ul>
-        <li>it's causing an obstruction on the highway</li>
-        <li>it's suspicious and may have been stolen</li>
-        <li>the vehicle has been burnt out</li>
-      </ul>
-    </p>
-    <p>
-      If this fits the description of the vehicle you think has been abandoned
-      then please call the police on 101 to report it.
-    </p>
-    <h3>Our responsibility</h3>
-    <p>
-      If the vehicle does not fall into any of the categories above and you
-      suspect it to be abandoned, please report it to us.
-    </p>
-    <p>
-      Signs that a vehicle has been abandoned include:
-      <ul>
-        <li>broken windows</li>
-        <li>missing number plates</li>
-        <li>flat or missing tyres</li>
-        <li>doesn't look roadworthy</li>
-        <li>looks damaged or run-down</li>
-      </ul>
-    </p>
-  `,
-  {
-    buttonLabel: "Report an abandoned vehicle",
-    formName: "report_abandoned_vehicle",
-  },
-  { typeKey: "" },
-  { typeKey: "abandoned_vehicle_information_provided" },
+const reportStrayingDog = new FormPaN(
+  "reportStrayingDog",
+  "Straying dog",
+  "Report straying dog on the highway",
+  "report_straying_dog",
   {
     type: "Report",
-    keywords: [
-      "Abandoned vehicles",
-      "abandned",
-      "abondened",
-      "abandonded",
-      "abondoned",
-      "vechicle",
-      "vehcile",
-      "vehical",
-      "vehilce"
-    ],
-    categories: ["Pollution and Nuisance", "Waste Management"],
+    keywords: ["Dog", "straying", "stray", "stray dog"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "05/09/2024", name: "Elliott Griffiths" }
+  { date: "05/03/2025", name: "Sam Coupland" }
 );
 
-const bulkyWasteCollection = new ContentPaD(
-  "bulkyWasteCollection",
-  "Bulky Waste Collection",
-  "Information about booking a bulky waste collection, charges, free collections for eligible tenants and other disposal options.",
-  `
-  <p>
-    You can use the bulky waste collection service to dispose of large household items, such as furniture and electrical goods. You can also take bulky items to a household waste recycling centre.
-  </p>
-  <p>
-    For further information about the service, visit:
-    <a href="https://www.sheffield.gov.uk/bins-waste-recycling/other-services/bulky-waste-collection" target="_blank" rel="noopener noreferrer">
-      Bulky Waste Collection | Sheffield City Council
-    </a>
-  </p>
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Bulky%20waste%20collection\`
-    "
-  >
-    Send link to review further information
-  </button>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Bulky Waste Collections</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The Council can collect up to 12 bulky items from your home. Collections are normally completed within 7 working days after payment has been received.
-      </p>
-      <p>
-        The current charges, including VAT, are:
-      </p>
-      <ul>
-        <li>1 to 3 items: £40.25</li>
-        <li>4 to 6 items: £55.01</li>
-        <li>7 to 9 items: £75.59</li>
-        <li>10 to 12 items: £95.48</li>
-      </ul>
-      <p>
-        <strong>Book a bulky waste collection:</strong><br>
-        <a href="https://wasteservices.sheffield.gov.uk/?_dl=t&amp;l=bulky&amp;p=/" target="_blank" rel="noopener noreferrer">
-          Book a Bulky Waste Collection
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20bulky%20waste%20collection\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Free Collections for Eligible Tenants</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You may qualify for one free collection of up to 12 items in any rolling 12-month period if you are:
-      </p>
-      <ul>
-        <li>A Sheffield City Council tenant</li>
-        <li>An Acis tenant</li>
-        <li>An eligible Together Housing, Great Places or Sanctuary tenant living in a property transferred from Sheffield City Council</li>
-      </ul>
-      <p>
-        The 12-month period runs from the date of your previous free collection. Contact your landlord if you are unsure whether you qualify.
-      </p>
-      <p>
-        Additional collections can be booked and paid for using the bulky waste collection service.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>More Than 12 Items</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A separate chargeable service is available for collections of more than 12 items or non-domestic items, such as fixtures, fittings and baths.
-      </p>
-      <p>
-        The minimum charge is £129.70. A visit may be required before the full cost can be confirmed. Contact the Council to discuss this type of collection.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Other Disposal Options</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You can take bulky household waste to a household waste recycling centre.
-      </p>
-      <p>
-        <strong>Household waste recycling centres:</strong><br>
-        <a href="https://www.sheffield.gov.uk/bins-recycling-services/household-waste-recycling-centres" target="_blank" rel="noopener noreferrer">
-          Household Waste Recycling Centres | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Household%20waste%20recycling%20centres\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        If your unwanted furniture or electrical items are in good condition, consider donating them to a charity so they can be reused.
-      </p>
-    </div>
-  </details>
-
-  <h3>Key Information</h3>
-  <ul>
-    <li>The standard service can collect up to <strong>12 bulky household items</strong></li>
-    <li>Collections are normally completed within <strong>7 working days after payment</strong></li>
-    <li>Eligible tenants may receive <strong>one free collection in a rolling 12-month period</strong></li>
-    <li>A separate chargeable service is available for more than 12 items or non-domestic items</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "bulky_waste_collection_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "bulky waste collection",
-      "book bulky waste",
-      "bulky household items",
-      "furniture collection",
-      "electrical goods collection",
-      "free bulky collection",
-      "Council tenant collection",
-      "large waste collection",
-      "recycling centre",
-      "bulky waste charges",
-      "bulky rubbish",
-      "bulk waste collection"
-    ],
-    categories: ["Environmental Regulations", "Waste and Recycling"]
-  },
-  { date: "03/09/2026", name: "Andy Walker" }
-);
 
 const reportWaterAndDrainage = new ContentPaN(
   "ReportWaterAndDrainage",
@@ -4271,31 +4591,9 @@ const reportWaterAndDrainage = new ContentPaN(
   { date: "05/08/2025", name: "Andy Walker" }
 );
 
-const reportAccumulations = new FormPaN(
-  "reportAccumulations",
-  "Accumulations",
-  "Report an accumulation of dog faeces, domestic waste, non domestic waste, or smoking waste.",
-  "report_accumulations",
-  {
-    type: "Report",
-    keywords: [
-      "accumulation",
-      "accumulations",
-      "acumulation",
-      "acumulations",
-      "dog faeces",
-      "dog poo",
-      "faeces",
-      "waste",
-      "smoking"
-    ],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "11/11/2025", name: "Liz Taster" }
-);
 
 
-const statutoryNuisanceFromCommercialPremises = new ContentPaD(
+const statutoryNuisanceFromCommercialPremises = new ContentPaN(
   "statutoryNuisanceFromCommercialPremises",
   "Statutory Nuisance from Commercial Premises",
   "Information about statutory nuisance complaints involving businesses and commercial premises, including how complaints are assessed and investigated.",
@@ -4442,7 +4740,7 @@ const statutoryNuisanceFromCommercialPremises = new ContentPaD(
 );
 
 
-const statutoryNuisanceFromDomesticProperties = new ContentPaD(
+const statutoryNuisanceFromDomesticProperties = new ContentN(
   "statutoryNuisanceFromDomesticProperties",
   "Statutory Nuisance from Domestic Properties",
   "Information about reporting a statutory nuisance from a domestic property, how complaints are investigated and the action the Council may take.",
@@ -4583,289 +4881,9 @@ const statutoryNuisanceFromDomesticProperties = new ContentPaD(
 );
 
 
-//#region Clean Air Zone
-
-const howAreChargesPaid = new ContentPaN(
-  "howAreChargesPaid",
-  "How are charges paid",
-  "Learn how to pay charges for entering the Clean Air Zone, including payment deadlines and responsibilities for drivers",
-  `
-<p>Charges will need to be paid online via central government’s online Clean Air Zone payment portal. Payment can be made ahead of entering the zone. Charges must be paid within 7 days of entering the Clean Air Zone. If payments are not made within 7 days additional penalty charges may apply. The link to the payment portal will not be live until the Clean Air Zone is launched.</p>
-<p>It will be the responsibility of drivers to go online and make payment. No notifications are issued to drivers.</p>
-`,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
-  "howLongWillTheCleanAirZoneBeInPlace",
-  "How long will the Clean Air Zone be in place",
-  "Find out how long the Clean Air Zone will be in place and the available financial support for businesses and residents to upgrade to cleaner vehicles.",
-  `
-<p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
-<h3>What support will there be for those affected</h3>
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
-<br>
- <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Send link to further information environment and countryside"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Environment%20and%20countryside\`
-            "
-      >
-        Send link to review further information
-      </button>
-
-</p>
-`,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howMuchWillDriversBeCharged = new ContentPaN(
-  "howMuchWillDriversBeCharged",
-  "How much will drivers be charged",
-  "Learn about the daily charges for vehicles entering the Clean Air Zone that do not meet the required environmental standards.",
-
-  `
-<p>If your vehicle does not meet the minimum standard, you will have to pay the charge for every day you enter the zone. This would be:</p>
-  <ul>
-  <li>£10 per day for polluting vans/LGVs and Taxis</li>
-  <li>£50 per day for coaches, buses, and lorries/HGVs</li>
-  </ul>
-  `,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howWillDriversBeCharged = new ContentPaN(
-  "howWillDriversBeCharged",
-  "How will drivers be charged",
-  "Find out how drivers will be charged for entering the Clean Air Zone using ANPR cameras, with charges applied once per day regardless of exits and re-entries.",
-  `
-<p>Automatic Number Plate Recognition (ANPR) cameras installed across the city centre will detect non-compliant vehicles entering the Clean Air Zone boundary. Charges apply 24 hours a day, seven days a week. The Clean Air Zone charges at a daily rate, meaning drivers will only need to make one payment a day, regardless of how many times they exit and re-enter.</p>
-`,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whatIsACleanAirZone = new ContentPaN(
-  "whatIsACleanAirZone",
-  "What Is A Clean Air Zone",
-  "Learn what a Clean Air Zone is, its purpose in reducing air pollution, and which vehicles will be charged for entry in Sheffield.",
-  `
-<p>
-  A Clean Air Zone is a defined area of a town or city within which certain
-  vehicles with more polluting engine standards are charged for entering.
-</p>
-<p>
-  It is not a congestion charging zone and, unlike some other cities, privately
-  owned cars, motorbikes, and mopeds will not be charged.
-</p>
-<p>
-  The introduction of a Clean Air Zone aims to reduce exposure to nitrogen
-  dioxide produced by road traffic to protect public health in areas where
-  pollution levels exceed the maximum legal level. In Sheffield, this area
-  includes the inner ring road and everything inside it.
-</p>
-<p>
-  See the Clean Air Zone map which may help when explaining the scheme to
-  customers:
-</p>
-<iframe
-  src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=209bfe53e5b34c06878e0f0d6c39ee88"
-  style="height: 400px; width: 100%"
->
-</iframe>
-`,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whatSupportWillThereBeForThoseAffected = new ContentPaN(
-  "whatSupportWillThereBeForThoseAffected",
-  "What support will there be for those affected",
-  "Discover the financial support available for businesses and residents to upgrade to cleaner vehicles, including grants and interest-subsidized loans.",
-  `
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
-<br>
- <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Send link to Apply for financial support to upgrade or replace a polluting vehicle"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20financial%20support%20to%20upgrade%20or%20replace%20a%20polluting%20vehicle\`
-            "
-      >
-        Send link to review further information
-      </button>
-
-</p>
-`,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whatVehiclesWillBeCharged = new ContentPaN(
-  "whatVehiclesWillBeCharged",
-  "What vehicles will be charged",
-  "Find out which vehicle types will be charged in Sheffield's Clean Air Zone, based on their engine standards, and how to check your vehicle’s eligibility.",
-
-  `
-<p>Only specific vehicle types with the most polluting engine standards will be charged for entering the Clean Air Zone. Private cars, motorbikes, or mopeds will not be charged for traveling in Sheffield.</p>
-<p>Charges apply to the following vehicle types that do not meet the minimum standards when entering the Clean Air Zone boundary:</p>
-  <ul>
-  <li>Taxis, including both hackney carriages and private hire vehicles, which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
-  <li>Light goods vehicles (LGVs) such as vans, campervans, pickup trucks, and minibuses which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
-  <li>Buses and coaches which are below Euro 6 Diesel standards</li>
-  <li>Heavy goods vehicles (HGVs) which are below Euro 6 Diesel standards</li>
-  </ul>
-  <p>
-    Vehicle owners can check whether they will be charged in Sheffield, and for other Clean Air Zones elsewhere, via the government’s online vehicle checker: Clean Air Zones.
-  </p>
-  `,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
-  "whyIsACleanAirZoneBeingIntroduced",
-  "Why Is A Clean Air Zone Being Introduced",
-  "Learn about the legal directive behind Sheffield's Category C Clean Air Zone, its aim to reduce Nitrogen Dioxide levels, and the health impacts of air pollution.",
-
-  `
-<p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
-<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.
-<br>
-
- <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Send link to further information about Health matters: air pollution"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Health%20matters%20air%20pollution\`
-            "
-      >
-        Send link to review further information
-      </button>
-
-
-</p>
-<p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
-<p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
-`,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "caz_information_requested" },
-  { typeKey: "caz_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Clean Air Zone", "caz", "cean air zone", "zon", "cza"],
-    categories: ["Parking", "Pollution and Nuisance"],
-  },
-  { date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const cleanAirZone = new MenuPaN(
-  "cleanAirZone",
-  "Clean Air Zone",
-  "Information about the Clean Air Zone Scheme",
-  [
-    whatIsACleanAirZone,
-    whyIsACleanAirZoneBeingIntroduced,
-    whatVehiclesWillBeCharged,
-    howMuchWillDriversBeCharged,
-    howWillDriversBeCharged,
-    howAreChargesPaid,
-    howLongWillTheCleanAirZoneBeInPlace,
-    whatSupportWillThereBeForThoseAffected
-  ]
-);
-
-//#endregion Clean Air Zone
-
 //#region Environmental Services
 
-const animalWelfareLicenceEnviro = new ContentPaD(
+const animalWelfareLicenceEnviro = new ContentPaN(
   "animalWelfareLicencesEnviro",
   "Animal Welfare Licences",
   "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
@@ -5023,7 +5041,7 @@ const animalWelfareLicenceEnviro = new ContentPaD(
 );
 
 
-const burglarAlarmsAndCarAlarms = new ContentPaD(
+const burglarAlarmsAndCarAlarms = new ContentPaN(
   "burglarAlarmsAndCarAlarms",
   "Burglar Alarms and Car Alarms",
   "Information about reporting noisy burglar and car alarms, registering a key-holder and what to do if a fire alarm is sounding.",
@@ -5139,7 +5157,7 @@ const burglarAlarmsAndCarAlarms = new ContentPaD(
 );
 
 
-const contaminatedLand = new ContentPaD(
+const contaminatedLand = new ContentPaN(
   "contaminatedLand",
   "Contaminated Land",
   "Information about contaminated land, developing affected sites, planning application requirements, environmental searches and the contaminated land register.",
@@ -5308,7 +5326,7 @@ const contaminatedLand = new ContentPaD(
 );
 
 
-const coolingTowerRegistration = new ContentPaD(
+const coolingTowerRegistration = new ContentPaN(
   "coolingTowerRegistration",
   "Cooling Tower Registration",
   "Information about registering a cooling tower or evaporative condenser, updating an existing registration and registration requirements.",
@@ -5461,7 +5479,7 @@ const coolingTowerRegistration = new ContentPaD(
 );
 
 
-const dogFoulEnviroReg = new ContentPaD(
+const dogFoulEnviroReg = new ContentPaN(
   "dogFoulEnviroReg",
   "Dog Fouling",
   "Information about reporting dog fouling, the details required, possible penalties and helping to keep Sheffield clean.",
@@ -5624,7 +5642,7 @@ const dogFoulEnviroReg = new ContentPaD(
 );
 
 
-const environmentalPermitsPartB = new ContentPaD(
+const environmentalPermitsPartB = new ContentPaN(
   "environmentalPermitsPartB",
   "Environmental Permits (Part B)",
   "Information about applying for a Part B environmental permit, application requirements, decision timescales and annual charges.",
@@ -5808,7 +5826,7 @@ const environmentalPermitsPartB = new ContentPaD(
 );
 
 
-const foodLawInspectionsAndHygieneRatings = new ContentPaD(
+const foodLawInspectionsAndHygieneRatings = new ContentPaN(
   "foodLawInspectionsAndHygieneRatings",
   "Food Law Inspections and Hygiene Ratings",
   "Information about food business inspections, food safety management, hygiene ratings, follow-up visits and requesting a re-rating.",
@@ -5966,7 +5984,7 @@ const foodLawInspectionsAndHygieneRatings = new ContentPaD(
 );
 
 
-const flyTippingAndWasteDisposal = new ContentPaD(
+const flyTippingAndWasteDisposal = new ContentPaN(
   "flyTippingAndWasteDisposal",
   "Fly-Tipping and Waste Disposal",
   "Information about disposing of household waste legally, using registered waste carriers, reporting fly-tipping and clearing waste from private land.",
@@ -6163,7 +6181,7 @@ const flyTippingAndWasteDisposal = new ContentPaD(
 );
 
 
-const highHedges = new ContentPaD(
+const highHedges = new ContentPaN(
   "highHedges",
   "High Hedges",
   "Information about resolving high hedge disputes, making a complaint, fees, Council action and appealing a decision.",
@@ -6336,7 +6354,7 @@ const highHedges = new ContentPaD(
 );
 
 
-const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
+const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaN(
   "infectiousDiseasesAndFoodPoisoningPrivacyNotice",
   "Infectious Diseases and Food Poisoning Investigations Privacy Notice",
   "Information about how personal and medical information is collected, used, retained and shared during infectious disease and food poisoning investigations.",
@@ -6511,7 +6529,7 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaD(
 );
 
 
-const landAndPropertySearches = new ContentPaD(
+const landAndPropertySearches = new ContentPaN(
   "landAndPropertySearches",
   "Land and Property Searches",
   "Information about Local Land Charges and Local Authority Searches, including what searches contain, how to request a search and applicable fees.",
@@ -6694,7 +6712,7 @@ const landAndPropertySearches = new ContentPaD(
 
 
 
-const lostOrFoundDogs = new ContentPaD(
+const lostOrFoundDogs = new ContentPaN(
   "lostOrFoundDogs",
   "Lost or Found Dogs",
   "Information about reporting a lost or found dog, contacting the Council kennels and reclaiming an impounded dog.",
@@ -6850,7 +6868,7 @@ const lostOrFoundDogs = new ContentPaD(
 );
 
 
-const registerAFoodBusiness = new ContentPaD(
+const registerAFoodBusiness = new ContentPaN(
   "registerAFoodBusiness",
   "Register a Food Business",
   "Information about registering a food business, who needs to register, inspections and reporting changes to a business.",
@@ -7000,7 +7018,7 @@ const registerAFoodBusiness = new ContentPaD(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const skinPiercingRegistrationEnviro = new ContentPaD(
+const skinPiercingRegistrationEnviro = new ContentPaN(
   "skinPiercingRegistrationEnviro",
   "Skin Piercing Registration",
   "Information about registering skin piercing premises and operators, registration fees, inspections and hygiene requirements.",
@@ -7178,7 +7196,7 @@ const skinPiercingRegistrationEnviro = new ContentPaD(
 );
 
 
-const temporaryCareOfAnimals = new ContentPaD(
+const temporaryCareOfAnimals = new ContentPaN(
   "temporaryCareOfAnimals",
   "Temporary Care of Animals",
   "Information about temporary care for pets when their owner is admitted to hospital or moves into residential care and cannot make other suitable arrangements.",
@@ -7286,6 +7304,8 @@ const environmentalRegulations = new MenuPaN(
   ]
 );
 
+//#endregion Environmental Services
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -7302,17 +7322,17 @@ const pollutionAndNuisance = new ServicePaN(
     pestControl,
     reportAccumulations,
     reportDangerousDog,
+    reportDogAsLost,
     reportDogFouling,
     reportFilthyPremises,
-    reportStrayingDog,
-    reportDogAsLost,
-    reportLitter,
-    reportGraffiti,
     reportFlyPosting,
     reportFlyTipping,
+    reportGraffiti,
+    reportLitter,
     reportNeedlesGlass,
-    reportSmoke,
     reportNoise,
+    reportSmoke,
+    reportStrayingDog,
     reportWaterAndDrainage,
     statutoryNuisanceFromCommercialPremises,
     statutoryNuisanceFromDomesticProperties,
