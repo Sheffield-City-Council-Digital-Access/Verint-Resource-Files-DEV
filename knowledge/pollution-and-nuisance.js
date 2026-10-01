@@ -6452,27 +6452,20 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaN(
     </summary>
     <div class="accordion-content">
       <p>
-        If you have a question or complaint about how your personal information has been handled, contact:
+        If you have a question or complaint about how your personal information has been handled, contact our 
+        Information Management Team:
       </p>
       <p>
         <strong>Email:</strong><br>
-        <a href="mailto:dataprotectionofficer@sheffield.gov.uk">
-          dataprotectionofficer@sheffield.gov.uk
+        <a href="mailto:informationmanagement@sheffield.gov.uk">
+          informationmanagement@sheffield.gov.uk
         </a>
       </p>
       <p>
         <strong>Telephone:</strong><br>
-       <a href="tel:0114 2052315">0114 2052315</a>
+       <a href="tel:01142734567">0114 2734567</a>
       </p>
-      <p>
-        <strong>Address:</strong><br>
-        Data Protection Officer<br>
-        Sheffield City Council<br>
-        Town Hall<br>
-        Pinstone Street<br>
-        Sheffield<br>
-        S1 2HH
-      </p>
+
       <p>
         You can also raise concerns with the Information Commissioner's Office.
       </p>
@@ -7200,6 +7193,10 @@ const temporaryCareOfAnimals = new ContentPaN(
   <p>
     Sheffield City Council may arrange temporary care for pets when their owner is admitted to hospital or moves into residential care and cannot make other suitable arrangements.
   </p>
+  <p>
+    <strong>This support is only available where the pet owner is already in contact with our Adult Social Care Services</strong> and 
+    should be requested through Adult Social Care.
+  </p>
 
   <h3>Support Available</h3>
   <p>
@@ -7210,11 +7207,12 @@ const temporaryCareOfAnimals = new ContentPaN(
     <li>Arranging temporary accommodation until the pet can safely return home</li>
     <li>Managing stray animals and providing dog warden services</li>
   </ul>
-  <p>
-    Care may be provided through the RSPCA Sheffield Animal Shelter.
-  </p>
+
 
   <h3>Location</h3>
+  <p>
+    Where provided, care is in association with the RSPCA Sheffield Animal Shelter.
+  </p>
   <p>
     <strong>RSPCA Sheffield Animal Shelter</strong><br>
     2 Stadium Way<br>
@@ -7222,34 +7220,12 @@ const temporaryCareOfAnimals = new ContentPaN(
     Sheffield
   </p>
 
-  <h3>Request Support</h3>
-  <p>
-    Contact Sheffield City Council if you need temporary care for a pet or advice about animal welfare services.
-  </p>
-  <p>
-    <strong>Animal services:</strong><br>
-    <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals" target="_blank" rel="noopener noreferrer">
-      Animal Services | Sheffield City Council
-    </a>
-  </p>
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20services\`
-    "
-  >
-    Send link to review further information
-  </button>
 
   <h3>Key Information for Call Centre Staff</h3>
   <ul>
     <li>Temporary care may be available when a pet owner is <strong>admitted to hospital or moves into residential care</strong>.</li>
-    <li>Support applies when the owner <strong>cannot make other suitable arrangements</strong> for their pet.</li>
-    <li>Customers should contact <strong>Animal Services</strong> to request support or advice.</li>
+    <li>Support is only available where the pet owner is already in contact with our Adult Social Care Service, and 
+        when the owner cannot make other suitable arrangements for their pet.</li>
   </ul>
   `,
   { buttonLabel: "", formName: "" },
