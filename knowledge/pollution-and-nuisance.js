@@ -7205,7 +7205,6 @@ const temporaryCareOfAnimals = new ContentPaN(
   <ul>
     <li>Caring for a pet while its owner is in hospital or residential care</li>
     <li>Arranging temporary accommodation until the pet can safely return home</li>
-    <li>Managing stray animals and providing dog warden services</li>
   </ul>
 
 
@@ -7249,7 +7248,7 @@ const temporaryCareOfAnimals = new ContentPaN(
     ],
     categories: ["Environmental Regulations", "Animals"]
   },
-  { date: "03/09/2026", name: "Andy Walker" }
+  { date: "01/10/2026", name: "Liz Taster" }
 );
 
 
