@@ -7198,7 +7198,7 @@ const temporaryCareOfAnimals = new ContentPaN(
     should be requested through Adult Social Care.
   </p>
 
-  <h3>Support Available</h3>
+  <br>
   <p>
     Temporary support may include:
   </p>
@@ -7207,8 +7207,7 @@ const temporaryCareOfAnimals = new ContentPaN(
     <li>Arranging temporary accommodation until the pet can safely return home</li>
   </ul>
 
-
-  <h3>Location</h3>
+  <br>
   <p>
     Where provided, care is in association with the RSPCA Sheffield Animal Shelter.
   </p>
