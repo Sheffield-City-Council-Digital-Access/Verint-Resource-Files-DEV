@@ -7221,7 +7221,7 @@ const temporaryCareOfAnimals = new ContentPaN(
 
   <h3>Key Information for Call Centre Staff</h3>
   <ul>
-    <li>Temporary care may be available when a pet owner is <strong>admitted to hospital or moves into residential care</strong>.</li>
+    <li>Temporary care may be available when a pet owner is admitted to hospital or moves into residential care.</li>
     <li>Support is only available where the pet owner is already in contact with our Adult Social Care Service, and 
         when the owner cannot make other suitable arrangements for their pet.</li>
   </ul>
