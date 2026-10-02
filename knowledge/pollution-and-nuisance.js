@@ -5083,7 +5083,7 @@ const otherPests = new ContentPaN(
     </summary>
     <div class="accordion-content">
       <p>
-        We do not treat crickets.
+        Sheffield City Council do not treat crickets.
       </p>
     </div>
   </details>
