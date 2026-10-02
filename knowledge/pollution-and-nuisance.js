@@ -1026,163 +1026,6 @@ const cleanAirZone = new MenuPaN(
 
 //#region Environmental Services
 
-const animalWelfareLicenceEnviro = new ContentPaN(
-  "animalWelfareLicenceEnviro",
-  "Animal Welfare Licences",
-  "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
-  `
-  <p>
-    You need an animal welfare licence if you operate any of the following activities as a business in Sheffield:
-  </p>
-  <ul>
-    <li>Boarding or providing day care for cats or dogs</li>
-    <li>Breeding dogs</li>
-    <li>Hiring out horses or other animals for riding</li>
-    <li>Keeping or training animals for exhibition</li>
-    <li>Selling animals as pets</li>
-  </ul>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Applying for a Licence</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        After you apply, the Environmental Protection Service will arrange an inspection of the premises to check that the relevant licence conditions and animal welfare standards are met.
-      </p>
-      <p>
-        Operating without the required licence or failing to meet licence conditions may result in enforcement action.
-      </p>
-      <p>
-        <strong>Apply for an animal welfare licence:</strong><br>
-        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
-          Animal Welfare Licences | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Licences\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Licence Ratings</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Most licensed premises receive a star rating from 1 to 5 following inspection. The rating reflects welfare standards and risk and may affect the length of the licence and how frequently inspections are carried out.
-      </p>
-      <p>
-        Licences for keeping or training animals for exhibition are normally issued for three years.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Fees</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Application fees vary depending on the type and scale of the activity.
-      </p>
-      <p>
-        The relevant fee will be confirmed when you apply and covers application processing, inspections, issuing the licence and enforcement.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Further Guidance</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You should review the licensing guidance and regulations before applying to ensure your business can meet the required standards.
-      </p>
-      <p>
-        <strong>Animal activities licensing guidance:</strong><br>
-        <a href="https://www.gov.uk/government/publications/animal-activities-licensing-guidance-for-local-authorities" target="_blank" rel="noopener noreferrer">
-          Animal Activities Licensing Guidance | GOV.UK
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20activities%20licensing\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        <strong>Animal Welfare Regulations:</strong><br>
-        <a href="https://www.legislation.gov.uk/ukdsi/2018/9780111165485" target="_blank" rel="noopener noreferrer">
-          Animal Welfare Regulations | Legislation.gov.uk
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Regulations\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information</h3>
-  <ul>
-    <li>Both the business activity and premises must meet the relevant animal welfare standards</li>
-    <li>An inspection will be arranged after an application is submitted</li>
-    <li>Fees vary depending on the type and scale of the activity</li>
-    <li>Operating without the required licence may result in enforcement action</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "animal_licence_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "animal welfare licence",
-      "animal boarding licence",
-      "dog day care licence",
-      "dog breeding licence",
-      "selling animals as pets",
-      "hiring out horses",
-      "animals for exhibition",
-      "animal licence inspection",
-      "animal licence rating",
-      "animal licensing fees",
-      "animal welfare regulations",
-      "animal welfare license"
-    ],
-    categories: ["Environmental Regulations", "Animal Welfare"]
-  },
-  { date: "03/09/2026", name: "Andy Walker" }
-);
-
 
 const burglarAlarmsAndCarAlarms = new ContentPaN(
   "burglarAlarmsAndCarAlarms",
@@ -2665,185 +2508,6 @@ const infectiousDiseasesAndFoodPoisoningPrivacyNotice = new ContentPaN(
 );
 
 
-const landAndPropertySearches = new ContentPaN(
-  "landAndPropertySearches",
-  "Land and Property Searches",
-  "Information about Local Land Charges and Local Authority Searches, including what searches contain, how to request a search and applicable fees.",
-  `
-  <p>
-    A Local Land Charge is a restriction or legal obligation affecting a particular piece of land or property. Local Authority Searches are commonly required when buying or selling property as part of the conveyancing process.
-  </p>
-  <p>
-    For further information about Land and Property Searches, visit:
-    <a href="https://www.sheffield.gov.uk/your-city-council/legal-services/local-land-charges" target="_blank" rel="noopener noreferrer">
-      Land and Property Searches | Sheffield City Council
-    </a>
-  </p>
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Land%20and%20property%20searches\`
-    "
-  >
-    Send link to review further information
-  </button>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What a Local Authority Search Includes</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A search can identify matters affecting a property or piece of land, including:
-      </p>
-      <ul>
-        <li>Charges relating to services such as roads</li>
-        <li>Tree Preservation Orders</li>
-        <li>Planning permissions and conditions</li>
-        <li>Conservation area restrictions</li>
-        <li>Legal agreements</li>
-        <li>Listed building status</li>
-      </ul>
-      <p>
-        This information helps buyers and their solicitors understand any restrictions, responsibilities or financial obligations before completing a purchase.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Requesting a Search</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A Local Authority Search can be requested:
-      </p>
-      <ul>
-        <li>By email</li>
-        <li>By post</li>
-        <li>Through a solicitor or another search provider</li>
-      </ul>
-      <p>
-        You can also carry out your own enquiries using the questions on the standard CON29 form.
-      </p>
-      <p>
-        For information about carrying out your own enquiries, contact:
-      </p>
-      <p>
-        <strong>Email:</strong><br>
-        <a href="mailto:foi@sheffield.gov.uk">
-          foi@sheffield.gov.uk
-        </a>
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Fees</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The current fees are:
-      </p>
-      <ul>
-        <li>LLC1: £45.10, plus £1.40 for each additional parcel</li>
-        <li>Personal search: free</li>
-        <li>CON29R component data: minimum administration charge of £16.62, plus the cost of individual questions and VAT</li>
-        <li>CON29O: £11.75 plus VAT, £14.10 in total</li>
-        <li>Full CON29R: £78.10, plus £14.25 for each additional parcel and VAT</li>
-      </ul>
-      <p>
-        Annual information about Local Land Charges fees and finances is published by the Council.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Other Search Providers</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Property searches can also be obtained through third-party providers.
-      </p>
-      <p>
-        <strong>National Land Information Service:</strong><br>
-        <a href="https://www.nlis.org.uk/buying-nlis-searches" target="_blank" rel="noopener noreferrer">
-          Buy an NLIS Search | National Land Information Service
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=National%20Land%20Information%20Service\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        <strong>Commercial land and estate searches:</strong><br>
-        <a href="https://www.tmgroup.co.uk/commercial/searches-property-data/commercial-land-and-estate-searches/" target="_blank" rel="noopener noreferrer">
-          Commercial Land and Estate Searches | TM Group
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Commercial%20land%20and%20estate%20searches\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information for Call Centre Staff</h3>
-  <ul>
-    <li>Local Authority Searches are commonly required when <strong>buying or selling a property</strong>.</li>
-    <li>Searches can identify <strong>restrictions, responsibilities and financial obligations</strong> affecting land or property.</li>
-    <li>Customers can request a search directly or through a <strong>solicitor or search provider</strong>.</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "land_and_property_searches_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "land and property searches",
-      "Local Land Charges",
-      "Local Authority Search",
-      "property search",
-      "land search",
-      "conveyancing search",
-      "LLC1",
-      "CON29R",
-      "CON29O",
-      "personal search",
-      "property purchase",
-      "land serch"
-    ],
-    categories: ["Environmental Regulations", "Land and Property Searches"]
-  },
-  { date: "03/09/2026", name: "Andy Walker" }
-);
-
-
 const lostOrFoundDogs = new ContentPaN(
   "lostOrFoundDogs",
   "Lost or Found Dogs",
@@ -3150,183 +2814,6 @@ const registerAFoodBusiness = new ContentPaN(
   { date: "03/09/2026", name: "Andy Walker" }
 );
 
-const skinPiercingRegistrationEnviro = new ContentPaN(
-  "skinPiercingRegistrationEnviro",
-  "Skin Piercing Registration",
-  "Information about registering skin piercing premises and operators, registration fees, inspections and hygiene requirements.",
-  `
-  <p>
-    You must register with Sheffield City Council if you operate a skin piercing business or carry out skin piercing treatments.
-  </p>
-  <p>
-    Both the premises and each person carrying out treatments must be registered. Acupuncture must be registered separately from other skin piercing activities.
-  </p>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Activities That Require Registration</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Registration is required for:</p>
-      <ul>
-        <li>Tattooing</li>
-        <li>Electrolysis</li>
-        <li>Acupuncture</li>
-        <li>Semi-permanent skin colouring</li>
-        <li>Ear piercing</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Registration Fees</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <ul>
-        <li>Premises registration: £322</li>
-        <li>Individual operator registration: £61</li>
-        <li>Adding or removing an operator from registered premises: £15</li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What You Need to Provide</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>You will need to provide:</p>
-      <ul>
-        <li>A completed application</li>
-        <li>The required fee or payment reference</li>
-        <li>A privacy statement if applying by post</li>
-      </ul>
-      <p>
-        You can apply online to register premises or an operator.
-      </p>
-      <p>
-        <strong>Apply for skin piercing registration:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
-          Apply for Skin Piercing Registration
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20skin%20piercing%20registration\`
-        "
-      >
-        Send link to review further information
-      </button>
-
-      <p>
-        You can also apply to change an existing registration, including adding or removing an operator.
-      </p>
-      <p>
-        <strong>Change a skin piercing registration:</strong><br>
-        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
-          Change a Skin Piercing Registration
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20skin%20piercing%20registration\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What Happens Next</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The premises will normally be inspected within 28 days to check compliance with skin piercing byelaws and health and safety requirements.
-      </p>
-      <p>
-        If the premises meet the required standards, a registration certificate will be issued. If any issues are found, you will be contacted and asked to resolve them.
-      </p>
-      <p>
-        You must not assume that registration has been granted if you have not received a decision. Contact the Council if you have not received an update within 28 days.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Hygiene and Safety</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You must comply with the Council's skin piercing byelaws and follow appropriate infection prevention and hygiene procedures when providing treatments.
-      </p>
-      <p>
-        <strong>Further information:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
-          Skin Piercing Registration | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
-
-  <h3>Key Information</h3>
-  <ul>
-    <li>Both the premises and each person carrying out treatments must be registered</li>
-    <li>Acupuncture must be registered separately from other skin piercing activities</li>
-    <li>The premises will normally be inspected within 28 days</li>
-    <li>Registration must be confirmed before treatments are provided</li>
-  </ul>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "skin_piercing_information_provided" },
-  {
-    type: "Application",
-    keywords: [
-      "skin piercing registration",
-      "tattoo registration",
-      "tattoo licence",
-      "piercing licence",
-      "ear piercing",
-      "acupuncture registration",
-      "electrolysis registration",
-      "skin piercing premises",
-      "skin piercing operator",
-      "registration fees",
-      "piercing inspection",
-      "skin peircing"
-    ],
-    categories: ["Environmental Regulations", "Business Registrations"]
-  },
-  { date: "03/09/2026", name: "Andy Walker" }
-);
-
 
 const temporaryCareOfAnimals = new ContentPaN(
   "temporaryCareOfAnimals",
@@ -3399,7 +2886,6 @@ const environmentalRegulations = new MenuPaN(
   "Environmental Regulations",
   "Information regarding environmental regulations",
   [
-    animalWelfareLicenceEnviro,
     burglarAlarmsAndCarAlarms,
     contaminatedLand,
     coolingTowerRegistration,
@@ -3409,10 +2895,8 @@ const environmentalRegulations = new MenuPaN(
     flyTippingAndWasteDisposal,
     highHedges,
     infectiousDiseasesAndFoodPoisoningPrivacyNotice,
-    landAndPropertySearches,
     lostOrFoundDogs,
     registerAFoodBusiness,
-    skinPiercingRegistrationEnviro,
     temporaryCareOfAnimals,
   ]
 );
@@ -4325,85 +3809,6 @@ const cockroachesTreatment = new ContentPaN(
   { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
-const cricketsTreatment = new ContentPaN(
-  "cricketsTreatment",
-  "Crickets Treatment",
-  "Learn how to submit a sample for Cricket treatment, the treatment cost, discounted rates for those on eligible benefits, and the call-out fee for incomplete treatments.",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>Sample Required</h3>
-      <p>
-        Before we can provide treatment for crickets in your domestic property, we
-        will need a sample of the pest.
-      </p>
-      <p>You can either bring your sample to:</p>
-      <address>
-        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
-      </address>
-      <p>Or you can post your sample to:</p>
-      <address>
-        Environmental Services<br />
-        Block B, Staniforth Road Depot<br />
-        Staniforth Road<br />
-        Sheffield, S9 3HD
-      </address>
-      <p>
-        Please ensure your sample is in a secure, crush-proof container, alive or
-        dead. Attach information detailing:
-      </p>
-      <ul>
-        <li>Your name</li>
-        <li>Your address</li>
-        <li>Your contact number and/or email</li>
-        <li>How long the insects have been present</li>
-        <li>Where in the property the insects have been found</li>
-      </ul>
-      <p>
-        If a sample has been provided and the pests have been confirmed, you can request a treatment.
-      </p>
-      <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
-      </p>
-    </section>
-    <h3>Cost for Treatment</h3>
-
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <p>
-       The treatment cost for crickets will be on request. We will send your 
-        <a href="${window.location.protocol}//${
-    window.location.hostname
-  }/form/launch/pest_control_technician?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
-  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
-        for survery and provide a quote. 
-      </p>
-    </section>
-
-    <p>
-      All prices include a call-out fee of £40.80. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
-  `,
-  {
-    buttonLabel: "Book treatment for Crickets",
-    formName: "pest_control_treatment",
-  },
-  { typeKey: "" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Crickets", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Environmental Health"
-    ],
-  },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
-);
 
 const dermestesBeetlesTreatment = new ContentPaN(
   "dermestesBeetlesTreatment",
@@ -5671,6 +5076,18 @@ const otherPests = new ContentPaN(
     </div>
   </details>
 
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Crickets</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We do not treat crickets.
+      </p>
+    </div>
+  </details>
+
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Earwigs</h3>
@@ -6659,7 +6076,6 @@ const pestControl = new MenuPaN(
     carpetBeetlesTreatment,
     clusterFliesTreatment,
     cockroachesTreatment,
-    cricketsTreatment,
     dermestesBeetlesTreatment,
     fliesTreatment,
     fleasTreatment,
