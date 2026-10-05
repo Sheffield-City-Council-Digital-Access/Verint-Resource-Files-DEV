@@ -3814,7 +3814,7 @@ const animalWelfareLicences = new ContentBusiness(
         This includes costs for processing applications, issuing licences, inspecting premises, and enforcement.
       </p>
       <p>
-        Current costs range from £465 to £628 depending on the type of licence required.
+        Licence fees vary depending on the type of licence required. Check the current fees when applying.
       <p>
       <p>
         Full details of costs can be found on the website
@@ -3928,21 +3928,32 @@ const applyForAClubPremisesCertificate = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        The application fee is based on the premises' rateable value:
+      Fees apply and vary depending on the type of licence required.
       </p>
-      <ul>
-        <li>Band A: £100</li>
-        <li>Band B: £190</li>
-        <li>Band C: £315</li>
-        <li>Band D: £450</li>
-        <li>Band E: £635</li>
-      </ul>
       <p>
         An annual fee must also be paid on the anniversary of the date the certificate was granted.
       </p>
       <p>
         Current annual fees and payment links are available on the Council webpage.
       </p>
+            <p>
+        <strong>Full eligibility, premises plan, advertising and fee requirements:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/apply-club-premises-certificate" target="_blank" rel="noopener noreferrer">
+          Apply for a Club Premises Certificate | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20club%20premises%20certificate\`
+        "
+      >
+        Send link to review further information
+      </button>
     </div>
   </details>
   <details class="accordion">
