@@ -570,7 +570,7 @@ const bookingBuildingSiteInspections = new ContentPaD(
         A completion inspection is required at the end of a project. 
       </p>
       <p>
-        A Notice of Completion will need to be completed and submitted prior to booking the completion visit
+        A Notice of Completion will need to be completed and submitted prior to booking the completion visit.
       </p>
       <p>
         Please see the knowledge tile <strong>Request a Completion Certificate</strong> for further information.
@@ -2176,7 +2176,7 @@ const applyForPreApplicationAdvice = new ContentPaD(
       </p>
       <p>
         <strong>Telephone:</strong><br>
-        <a href="tel:0114 2734218">0114 2734218</a> 
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734218')">0114 2734218</a>
       </p>
       <p>
         <strong>Email:</strong><br>
