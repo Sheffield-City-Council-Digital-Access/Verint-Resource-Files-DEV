@@ -1011,8 +1011,6 @@ const cricketsTreatment = new ContentPaN(
     </section>
 
     <h3>Cost for Treatment</h3>
-    <br><br>
-
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
       The treatment cost for internal cricket infestations will be provided on request. We will send your
@@ -1026,8 +1024,7 @@ const cricketsTreatment = new ContentPaN(
         for survery and provide a quote. 
       </p>
     </section>
-
-    <br><br>
+    <br>
 
     <p>
       All prices include a call-out fee of £40.80. This fee applies if our officer
@@ -1224,7 +1221,7 @@ const fleasTreatment = new ContentPaN(
         </ul>
       </div>
     </details>
-    <br><br>
+    <br>
     <h3>Additional Information</h3>
     <p>
       If booking a treatment, advise the customer to have their pets treated at the vets just before Sheffield City Council attend to spray.
