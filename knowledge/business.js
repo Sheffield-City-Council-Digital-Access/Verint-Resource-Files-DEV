@@ -4160,16 +4160,28 @@ const changeAClubPremisesCertificate = new ContentBusiness(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        The application fee depends on the premises' rateable value:
+    <p>
+      The application fee depends on the premises' rateable value. Details of the 
+      current fees can be found on the Sheffield City Council website.
+    </p>
+         <p>
+        <strong>Full application, premises plan and fees can be found here:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-club-premises-certificate" target="_blank" rel="noopener noreferrer">
+          Change a Club Premises Certificate | Sheffield City Council
+        </a>
       </p>
-      <ul>
-        <li>Band A: £100</li>
-        <li>Band B: £190</li>
-        <li>Band C: £315</li>
-        <li>Band D: £450</li>
-        <li>Band E: £635</li>
-      </ul>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20club%20premises%20certificate\`
+        "
+      >
+        Send link to review further information
+      </button>
     </div>
   </details>
   <details class="accordion">
