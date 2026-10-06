@@ -2265,7 +2265,7 @@ const donatingToParks = new ContentPSaR(
 
   <p>
     Further information and a link to the online form to donate to parks can be found here:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/9526/c5f16f76-97fb-4bfe-addb-4b1352231fb6" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces" target="_blank" rel="noopener noreferrer">
     Donate to a park | Sheffield City Council</a>
   </p>
     <button
@@ -2860,7 +2860,7 @@ const gravesPark = new ContentPSaR(
       </p>
       <p>
         Further details about donating to parks, including a link to the online form to make a donation, is available here:
-        <a href="https://cms.sheffield.gov.uk/preview-link/node/9526/c5f16f76-97fb-4bfe-addb-4b1352231fb6" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces">
         Donate to a park | Sheffield City Council</a>
       </p>
 
@@ -3626,8 +3626,8 @@ const dogBins = new ContentPSaR(
   </p>
   <p>
     To report an issue with a dog waste bin, use the online form available here:
-    <a href="https://cms.sheffield.gov.uk/REPLACE-ME" target="_blank" rel="noopener noreferrer">
-    https://cms.sheffield.gov.uk/REPLACE-ME</a>
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling</a>
   </p>
 
 `,
@@ -4301,7 +4301,7 @@ const playgrounds = new ContentPSaR(
   </p>
   <p>
     Further information about playgrounds can be found here - there is a link to report an issue with a playground halfway down the page:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/18/e9a6d49d-14f6-4da7-9311-0f1b58117102" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces?" target="_blank" rel="noopener noreferrer">
     Parks and green spaces | Sheffield City Council</a>
 
     <button
@@ -4555,7 +4555,7 @@ const memorialsInParks = new ContentPSaR(
   <p>
     Applications for a bench can be made by completing the online form available here - the page has details about multiple types of 
     memorial, and the link to the form is towards the bottom of the page:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/2501/1a8121eb-40a4-4ef8-9060-8abd87d2f615" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/deaths/commemorative-memorials" target="_blank" rel="noopener noreferrer">
     Commemorative memorials | Sheffield City Council</a>
   </p>
 
