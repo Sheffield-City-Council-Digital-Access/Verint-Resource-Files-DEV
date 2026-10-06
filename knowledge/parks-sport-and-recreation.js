@@ -1682,7 +1682,7 @@ const bookRoomOrParkBuilding = new ContentPSaR(
 
   <p>
     A link to the online booking form can be found here - please note these rooms are booked with the same form used to book events in parks:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
     Events in parks | Sheffield City Council</a>
   </p>
 
@@ -2180,7 +2180,7 @@ const weddingsInParks = new ContentPSaR(
     Those making a booking will need to book the registrar separately through the Ceremonies team.
   </p>
   <p>
-    To enquire about a wedding ceremony please complete the online form available here: <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    To enquire about a wedding ceremony please complete the online form available here: <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
     Events in parks | Sheffield City Council</a> please note, wedding enquiries are made with the same form used to book events in parks.
   </p>
 
@@ -2931,7 +2931,7 @@ const gravesPark = new ContentPSaR(
       <p>
         To request a booking, the customer should complete the online form. 
         A link to the form can be found here:
-        <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
         Events in parks | Sheffield City Council</a>
       </p>
 
