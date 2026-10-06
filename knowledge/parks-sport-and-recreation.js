@@ -1674,15 +1674,15 @@ const bookRoomOrParkBuilding = new ContentPSaR(
   
   <p>The following venues can be booked by submitting an enquiry using our online form:</p>
     <ul>
-      <li>Dorothy Fox Centre (Botanical Gardens) - Weddings</li>
-      <li>Woodland Discovery Centre (Ecclesall Woods) - Weddings</li>
+      <li>Dorothy Fox Centre (Botanical Gardens) - Events, including weddings</li>
+      <li>Woodland Discovery Centre (Ecclesall Woods) - Events, including weddings</li>
       <li>Shire Brook Valley Visitor Centre</li>
       <li>Graves Park Animal Farm</li>
     </ul>
 
   <p>
     A link to the online booking form can be found here - please note these rooms are booked with the same form used to book events in parks:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
     Events in parks | Sheffield City Council</a>
   </p>
 
@@ -1704,7 +1704,8 @@ const bookRoomOrParkBuilding = new ContentPSaR(
     <strong>the form must not be completed by customer service staff on their behalf</strong>.
   </p>  
   <p>
-    Once a completed form is received, we will contact the customer to discuss the requirements further.
+    Submitting the request form does not confirm the booking; once a completed form is 
+    received, we will contact the customer to discuss the requirements further.
   </p>
   
   `,
@@ -2179,7 +2180,7 @@ const weddingsInParks = new ContentPSaR(
     Those making a booking will need to book the registrar separately through the Ceremonies team.
   </p>
   <p>
-    To enquire about a wedding ceremony please complete the online form available here: <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+    To enquire about a wedding ceremony please complete the online form available here: <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
     Events in parks | Sheffield City Council</a> please note, wedding enquiries are made with the same form used to book events in parks.
   </p>
 
@@ -2264,7 +2265,7 @@ const donatingToParks = new ContentPSaR(
 
   <p>
     Further information and a link to the online form to donate to parks can be found here:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/9526/c5f16f76-97fb-4bfe-addb-4b1352231fb6" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces" target="_blank" rel="noopener noreferrer">
     Donate to a park | Sheffield City Council</a>
   </p>
     <button
@@ -2478,10 +2479,10 @@ const activitiesInParks = new ContentPSaR(
     </summary>
     <div class="accordion-content">
         <section class="alert-panel" role="alert" aria-label="Alert panel">
-          </p>
-            <strong>Barbecues are currently not permitted</strong> in our parks, woodlands and green spaces due to hot and dry weather conditions. 
-            This restriction will remain in place throughout the summer period.      
-          </p>
+        </p>
+        <strong>Barbecues are currently not permitted</strong> in our parks, woodlands and green spaces.
+        This restriction will remain in place until further notice.
+        </p>
         </section>
       <p>
         BBQs are allowed in parks, but customers are asked to following these rules:
@@ -2859,7 +2860,7 @@ const gravesPark = new ContentPSaR(
       </p>
       <p>
         Further details about donating to parks, including a link to the online form to make a donation, is available here:
-        <a href="https://cms.sheffield.gov.uk/preview-link/node/9526/c5f16f76-97fb-4bfe-addb-4b1352231fb6" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces">
         Donate to a park | Sheffield City Council</a>
       </p>
 
@@ -2930,7 +2931,7 @@ const gravesPark = new ContentPSaR(
       <p>
         To request a booking, the customer should complete the online form. 
         A link to the form can be found here:
-        <a href="https://cms.sheffield.gov.uk/preview-link/node/9/f35b503e-2c74-4e02-8e03-37dbaa3fa829" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/book-park-community-building" target="_blank" rel="noopener noreferrer">
         Events in parks | Sheffield City Council</a>
       </p>
 
@@ -3060,98 +3061,6 @@ const gravesPark = new ContentPSaR(
   },
   { date: "14/08/2026", name: "Liz Taster" }
 );
-
-
-const playgrounds = new ContentPSaR(
-  "playgrounds",
-  "Playgrounds",
-  "Information about children's playgrounds in Sheffield parks and open spaces, inspections, maintenance, and reporting damage.",
-  `
-  <p>
-    There are over 150 children's playgrounds in Sheffield’s parks and open spaces.
-  </p>
-  <p>
-    All the playgrounds in Sheffield's parks and open spaces are checked on a regular basis, in addition to quarterly and annual routine inspections.
-  </p>
-  <p>
-    Sheffield City Council are responsible for the maintenance of all the equipment and facilities provided. 
-    All new playground equipment complies with European Standard EN1176/7.
-  </p>
-  <p>
-    A map of all playgrounds in Sheffield can be found here: 
-    <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5dbfc04cd9564cb3a10a2af4d4c81796" target="_blank" rel="noopener noreferrer">
-    Parks Playgrounds</a>.
-  </p>
-
-	      <button
-            type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Playgrounds%20Map\`
-            "
-        >
-            Send link to review further information
-        </button>
-
-  <p>
-    Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
-    form.
-  </p>
-  <p>
-    Further information about playgrounds can be found here - there is a link to report an issue with a playground halfway down the page:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/18/e9a6d49d-14f6-4da7-9311-0f1b58117102" target="_blank" rel="noopener noreferrer">
-    Parks and green spaces | Sheffield City Council</a>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information send link"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20and%20green%20spaces\`
-        "
-      >
-            Send link to review further information
-    </button>
-
-  <p>
-    Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
-    Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
-    Delays may occur over the weekend due to staffing limitations.
-  </p>
-
-  <p>
-    If a customer is wanting to report an injury in a playground, please refer to the ‘<em>Insurance or Personal Injury or Compensation</em>’ knowledge tile.
-  </p>
-  
-  `,
-  { buttonLabel: "Report playground issue", formName: "report_playground" },
-  { typeKey: "" },
-  { typeKey: "parks_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "playground",
-      "playgrounds",
-      "play",
-      "area",
-      "areas",
-      "children's",
-      "childrens",
-      "equipment",
-      "playgroud",
-      "playgrond",
-      "playgraound"
-    ],
-    categories: ["Parks and Countryside", "Events and Activities"]
-  },
-  { date: "13/08/2026", name: "Liz Taster" }
-);
-
 
 const rivelinValleyWaterPlay = new ContentPSaR(
   "rivelinValleyWaterPlay",
@@ -3308,7 +3217,6 @@ const eventsAndActivities = new MenuPSaR(
     activitiesInParks,
     eventsInParks,
     gravesPark,
-    playgrounds,
     rivelinValleyWaterPlay,
     sheffieldRoundWalk,
   ]
@@ -3408,7 +3316,6 @@ const antiSocialBehaviourParks = new ContentPSaR(
     name: "Liz Taster"
   }
 );
-
 
 const cctvParks = new ContentPSaR(
   "cctvParks",
@@ -3626,10 +3533,6 @@ const dogCatWasteCommercial = new ContentPSaR(
   </p>
 
   <p>
-    <strong><em>This is an internal only form - an advisor needs to fill out the request over the phone with the customer.</em></strong>
-  </p>
-
-  <p>
     The request form includes a link for immediate payment on the request confirmation screen. If a customer reports an issue with payment, it can be made using the following link
     <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank" rel="noopener noreferrer">
     https://ip.e-paycapita.com/Grit/Salt Requests</a>
@@ -3723,8 +3626,8 @@ const dogBins = new ContentPSaR(
   </p>
   <p>
     To report an issue with a dog waste bin, use the online form available here:
-    <a href="https://cms.sheffield.gov.uk/REPLACE-ME" target="_blank" rel="noopener noreferrer">
-    https://cms.sheffield.gov.uk/REPLACE-ME</a>
+    <a href="https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling" target="_blank" rel="noopener noreferrer">
+    https://www.sheffield.gov.uk/pollution-nuisance/animals/dog-fouling</a>
   </p>
 
 `,
@@ -4127,10 +4030,6 @@ const gritSaltCommercial = new ContentPSaR(
   </details>
 
   <p>
-    <strong><em>This is an internal only form - an advisor needs to fill out the request over the phone with the customer.</em></strong>
-  </p>
-
-  <p>
     If there has been an issue with payment, it can be made using the following link 
     <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fip.e-paycapita.com%2FAIP%2FitemSelectionPage.do%3Flink%3DshowItemSelectionPage%26siteId%3D266%26languageCode%3DEN%26source%3DAIP%26fc%3D30%26sc%3DPACO%26ic%3DGSR&data=05%7C02%7CRichard.Biddulph%40sheffield.gov.uk%7Cb516f156c82645592a5f08dee985dc28%7Ca1ba59b9720448d8a3607770245ad4a9%7C0%7C0%7C639204958298646457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Fo13W6G60PFuAGSGOBGbJYV44swgNQLDcy8A2k5JuwE%3D&reserved=0" target="_blank" rel="noopener noreferrer">
     https://ip.e-paycapita.com/Grit/Salt Requests</a>
@@ -4314,7 +4213,27 @@ const lostFoundProperty = new ContentPSaR(
   <p>
     Once informed about lost property we will only contact the reporter if the item is found.
   </p>
-  
+  <p>
+    Further information is available on the council website:
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation" target="_blank" rel="noopener noreferrer">
+      Parks, sport and recreation | Sheffield City Council
+    </a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid
+          ? \`customerid=\${KDF.getParams().customerid}&\`
+          : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20sport%20and%20recreation\`
+    "
+  >
+    Send link to review further information
+  </button>
   `,
   { buttonLabel: "Report lost or found property", formName: "report_lost_prop_parks" },
   { typeKey: "" },
@@ -4337,11 +4256,100 @@ const lostFoundProperty = new ContentPSaR(
     categories: ["Parks and Countryside", "Maintenance and Issues"]
   },
   {
-    date: "13/08/2026",
-    name: "Liz Taster"
+    date: "05/10/2026",
+    name: "Andy Walker"
   }
 );
 
+const playgrounds = new ContentPSaR(
+  "playgrounds",
+  "Playgrounds",
+  "Information about children's playgrounds in Sheffield parks and open spaces, inspections, maintenance, and reporting damage.",
+  `
+  <p>
+    There are over 150 children's playgrounds in Sheffield’s parks and open spaces.
+  </p>
+  <p>
+    All the playgrounds in Sheffield's parks and open spaces are checked on a regular basis, in addition to quarterly and annual routine inspections.
+  </p>
+  <p>
+    Sheffield City Council are responsible for the maintenance of all the equipment and facilities provided. 
+    All new playground equipment complies with European Standard EN1176/7.
+  </p>
+  <p>
+    A map of all playgrounds in Sheffield can be found here: 
+    <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5dbfc04cd9564cb3a10a2af4d4c81796" target="_blank" rel="noopener noreferrer">
+    Parks Playgrounds</a>.
+  </p>
+
+	      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20Playgrounds%20Map\`
+            "
+        >
+            Send link to review further information
+        </button>
+
+  <p>
+    Occasionally, playgrounds may become damaged. To report an issue with playground equipment or facilities please complete the online 
+    form.
+  </p>
+  <p>
+    Further information about playgrounds can be found here - there is a link to report an issue with a playground halfway down the page:
+    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces?" target="_blank" rel="noopener noreferrer">
+    Parks and green spaces | Sheffield City Council</a>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Parks%20and%20green%20spaces\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+  <p>
+    Once a report has been received an assessment will be undertaken to document the extent of the damage and the repairs required. 
+    Where there is a risk of injury the inspection will be carried out within 24 hours, and the equipment will be made safe. 
+    Delays may occur over the weekend due to staffing limitations.
+  </p>
+
+  <p>
+    If a customer is wanting to report an injury in a playground, please refer to the ‘<em>Insurance or Personal Injury or Compensation</em>’ knowledge tile.
+  </p>
+  
+  `,
+  { buttonLabel: "Report playground issue", formName: "report_playground" },
+  { typeKey: "" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "playground",
+      "playgrounds",
+      "play",
+      "area",
+      "areas",
+      "children's",
+      "childrens",
+      "equipment",
+      "playgroud",
+      "playgrond",
+      "playgraound"
+    ],
+    categories: ["Parks and Countryside", "Events and Activities"]
+  },
+  { date: "13/08/2026", name: "Liz Taster" }
+);
 
 const reportTreePark = new ContentPSaR(
   "reportTreePark",
@@ -4520,6 +4528,7 @@ const maintenanceAndIssues = new MenuPSaR(
     insurancePersonalInjuryCompensation,
     litterAndLitterBins,
     lostFoundProperty,
+    playgrounds,
     reportTreePark,
   ]
 );
@@ -4546,7 +4555,7 @@ const memorialsInParks = new ContentPSaR(
   <p>
     Applications for a bench can be made by completing the online form available here - the page has details about multiple types of 
     memorial, and the link to the form is towards the bottom of the page:
-    <a href="https://cms.sheffield.gov.uk/preview-link/node/2501/1a8121eb-40a4-4ef8-9060-8abd87d2f615" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/deaths/commemorative-memorials" target="_blank" rel="noopener noreferrer">
     Commemorative memorials | Sheffield City Council</a>
   </p>
 
@@ -5069,7 +5078,7 @@ const volunteeringWorkExperienceInParks = new ContentPSaR(
 
   <p>
     <br>
-    Group, educational, or corporate volunteering enquiries should be directed to <a href="mailto:ParksBusinessPartnership@sheffield.gov.uk">ParksBusinessPartnership@sheffield.gov.uk</a> 
+    Group, educational, or corporate volunteering enquiries should be directed to <a href="mailto:ParksVolunteering@sheffield.gov.uk">ParksVolunteering@sheffield.gov.uk</a> 
     and include the following information:
   </p>
     <ul>
