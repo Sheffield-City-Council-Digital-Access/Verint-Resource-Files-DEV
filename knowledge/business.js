@@ -3845,11 +3845,16 @@ const animalWelfareLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        Application forms for each type of licence can be found on the council website (link below).
+        Application forms for each type of licence can be found at 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+        Animal welfare licences | Sheffield City Council</a>.
+      </p>
+      <p>
         Completed application forms should be submitted by email to <a href="mailto:licensingservice@sheffield.gov.uk">licensingservice@sheffield.gov.uk</a>
       </p>
       <p>
-        After you apply, the Environmental Protection Service will arrange an inspection of the premises to check that the relevant licence conditions and animal welfare standards are met.
+        After an application is submitted, the Environmental Protection Service will arrange an inspection of the premises to check that the relevant 
+        licence conditions and animal welfare standards are met.
       </p>
       <p>
         Most licensed premises receive a star rating from 1 to 5 following inspection. 
