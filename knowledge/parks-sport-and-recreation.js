@@ -3541,6 +3541,7 @@ const dogCatWasteCommercial = new ContentPSaR(
   <p>
     Once an enquiry has been submitted, the customer will be contacted by a member of the Parks &amp; Countryside service to discuss the request.
   </p>
+  <strong>This is an internal only form - an advisor needs to fill out the request over the phone with the customer</strong>
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -3998,6 +3999,7 @@ const gritSaltCommercial = new ContentPSaR(
   <p>
     For amounts of 2 tonne or greater, the cost is £180 per tonne. The cost per tonne is higher for 0.5/1tonne due to the delivery.
   </p>
+  <strong>This is an internal only form - an advisor needs to fill out the request over the phone with the customer</strong>
 
   <details class="accordion">
     <summary class="accordion-header">
