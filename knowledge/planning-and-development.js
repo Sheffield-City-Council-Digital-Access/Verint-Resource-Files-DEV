@@ -1064,7 +1064,7 @@ const localActsSYMiscellaneousProvisions = new ContentPaD(
 const localLandCharges = new ContentPaD(
   "localLandCharges",
   "Local Land Charges",
-  "Information and guidance for requesting Local Land Charges and Local Authority Searches.",
+  "Information and guidance for requesting Local Land Charges and Local Authority Land and Property Searches.",
   `
     <p>
       Local Land Charges are <strong>restrictions</strong> or <strong>legal obligations</strong> placed on <strong>land or property</strong>. These are recorded by 
@@ -1073,6 +1073,7 @@ const localLandCharges = new ContentPaD(
     <p>
       The Local Land Charges service provides official information to support property transactions such as 
       buying or selling land. The service has a statutory duty to supply accurate information when requested.
+      These searches may be referred to as 'Land and Property Searches'.
     </p>
     <p>
       More detailed information can be found here: 
@@ -1153,8 +1154,58 @@ const localLandCharges = new ContentPaD(
         <a href="mailto:foi@sheffield.gov.uk">foi@sheffield.gov.uk</a>.
       </p>
       <p>
-        Fees vary depending on the type of search and any additional information requested.
+        Fees vary depending on the type of search and any additional information requested. 
+        Annual information about Local Land Charges fees and finances is published by the Council.
       </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Other Search Providers</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Property searches can also be obtained through third-party providers.
+      </p>
+      <p>
+        <strong>National Land Information Service:</strong><br>
+        <a href="https://www.nlis.org.uk/buying-nlis-searches" target="_blank" rel="noopener noreferrer">
+          Buy an NLIS Search | National Land Information Service
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=National%20Land%20Information%20Service\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Commercial land and estate searches:</strong><br>
+        <a href="https://www.tmgroup.co.uk/commercial/searches-property-data/commercial-land-and-estate-searches/" target="_blank" rel="noopener noreferrer">
+          Commercial Land and Estate Searches | TM Group
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Commercial%20land%20and%20estate%20searches\`
+        "
+      >
+        Send link to review further information
+      </button>
     </div>
   </details>
 
@@ -1181,18 +1232,23 @@ const localLandCharges = new ContentPaD(
       "charge",
       "local authority",
       "search",
+      "searches",
       "property",
       "conveyancing",
-      "property",
+      "purchase",
       "restrictions",
       "legal obligations",
       "land restrictions",
       "planning conditions",
       "liabilities",
+      "LLC1",
+      "CON29R",
+      "CON29O",
       "landcharges",
       "chargs",
       "charjes",
       "conveyncing",
+      "land serch"
     ],
     categories: ["Planning and Development", "Building Control"]
   },
