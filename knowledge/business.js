@@ -3711,7 +3711,7 @@ const taxiVehicleInspections = new ContentBusiness(
 const animalWelfareLicences = new ContentBusiness(
   "animalWelfareLicences",
   "Animal Welfare Licences",
-  "Information about businesses that need an animal welfare licence and how to apply.",
+  "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
   `
     <p>
       Residents and businesses can apply for animal welfare licences through Sheffield City Council. 
@@ -3835,6 +3835,39 @@ const animalWelfareLicences = new ContentBusiness(
             Send link to review further information
     </button>
 
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Applying for a Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        After you apply, the Environmental Protection Service will arrange an inspection of the premises to check that the relevant licence conditions and animal welfare standards are met.
+      </p>
+      <p>
+        Operating without the required licence or failing to meet licence conditions may result in enforcement action.
+      </p>
+      <p>
+        <strong>Apply for an animal welfare licence:</strong><br>
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+          Animal Welfare Licences | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Licences\`
+        "
+      >
+        Send link to review further information
+      </button>
     </div>
   </details>
  
