@@ -1063,7 +1063,7 @@ const localActsSYMiscellaneousProvisions = new ContentPaD(
 
 const localLandCharges = new ContentPaD(
   "localLandCharges",
-  "Local Land Charges",
+  "Local Land Charges (Land and Property Searches)",
   "Information and guidance for requesting Local Land Charges and Local Authority Land and Property Searches.",
   `
     <p>
@@ -1252,7 +1252,7 @@ const localLandCharges = new ContentPaD(
     ],
     categories: ["Planning and Development", "Building Control"]
   },
-  { date: "15/07/2026", name: "Liz Taster" }
+  { date: "07/10/2026", name: "Liz Taster" }
 );
 
 const partnerAuthoritySchemeApplications = new ContentPaD(
