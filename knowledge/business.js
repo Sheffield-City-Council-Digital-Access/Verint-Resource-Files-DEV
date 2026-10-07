@@ -8137,6 +8137,8 @@ const skinPiercingRegistration = new ContentBusiness(
     </div>
   </details>
 
+    <details class="accordion">
+    <summary class="accordion-header">
         <h3>Hygiene and Safety</h3>
       <div class="accordion-icon"></div>
     </summary>
