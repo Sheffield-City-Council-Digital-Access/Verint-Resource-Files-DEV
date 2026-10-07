@@ -8033,9 +8033,12 @@ const skinPiercingRegistration = new ContentBusiness(
       <p>
         Different details are required depending on the type of application - premises, individual or amendment.
       </p>
-      <p>
-        The premises application required details around cleaning and steralisation methods, and also the equipment to be used.
-      </p>
+      <p>The applicant needs to provide:</p>
+      <ul>
+        <li>A completed application</li>
+        <li>The required fee or payment reference</li>
+        <li>A privacy statement if applying by post</li>
+      </ul>
       <p>
         Details of both routes of application can be found here: 
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
@@ -8055,26 +8058,9 @@ const skinPiercingRegistration = new ContentBusiness(
             Send link to review further information
     </button>
 
-    </div>
-  </details>
 
-      <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What You Need to Provide</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>You will need to provide:</p>
-      <ul>
-        <li>A completed application</li>
-        <li>The required fee or payment reference</li>
-        <li>A privacy statement if applying by post</li>
-      </ul>
       <p>
-        You can apply online to register premises or an operator.
-      </p>
-      <p>
-        <strong>Apply for skin piercing registration:</strong><br>
+        The follow link can be used to apply online to register premises or an operator:
         <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
           Apply for Skin Piercing Registration
         </a>
@@ -8093,10 +8079,7 @@ const skinPiercingRegistration = new ContentBusiness(
       </button>
 
       <p>
-        You can also apply to change an existing registration, including adding or removing an operator.
-      </p>
-      <p>
-        <strong>Change a skin piercing registration:</strong><br>
+        The follow link can be used to apply online to change an existing registration, including adding or removing an operator.
         <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
           Change a Skin Piercing Registration
         </a>
