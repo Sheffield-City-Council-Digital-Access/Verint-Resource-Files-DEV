@@ -7990,11 +7990,11 @@ const skinPiercingRegistration = new ContentBusiness(
       </ul>
 
     <p>
-      Both the <strong>premises</strong> and the <strong>person(s))</strong> carrying out skin piercing need to be registered.
+      Both the <strong>premises</strong> and the <strong>person(s)</strong> carrying out skin piercing need to be registered.
     </p>
 
     <p>
-      Application <strong>costs</strong> vary depending on the type of registration or change required. Please check the council website for current fees and charges.
+      Application <strong>costs</strong> vary depending on the type of registration or change required. Please check the council website for current fees and charges to:
     </p>
     <ul>
       <li>Register a <strong>premises</strong></li>
@@ -8041,6 +8041,64 @@ const skinPiercingRegistration = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
         Skin piercing registration | Sheffield City Council</a>
     </p>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What You Need to Provide</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You will need to provide:</p>
+      <ul>
+        <li>A completed application</li>
+        <li>The required fee or payment reference</li>
+        <li>A privacy statement if applying by post</li>
+      </ul>
+      <p>
+        You can apply online to register premises or an operator.
+      </p>
+      <p>
+        <strong>Apply for skin piercing registration:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
+          Apply for Skin Piercing Registration
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        You can also apply to change an existing registration, including adding or removing an operator.
+      </p>
+      <p>
+        <strong>Change a skin piercing registration:</strong><br>
+        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
+          Change a Skin Piercing Registration
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
   	
     <button
       type="button"
@@ -8070,7 +8128,7 @@ const skinPiercingRegistration = new ContentBusiness(
         our skin piercing byelaws and health and safety requirements are being complied with.
       </p>
       <p>
-        If there are no issues, a registration certificate will be issued. 
+        If the premises meet the required standards, a registration certificate will be issued. 
         If there are issues with an application, the customer will be notified as soon as possible to resolve them.
       </p>
       <p>
@@ -8078,6 +8136,42 @@ const skinPiercingRegistration = new ContentBusiness(
       </p>
     </div>
   </details>
+
+        <h3>Hygiene and Safety</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Businesses must comply with the Council's skin piercing byelaws and follow appropriate infection prevention and hygiene procedures when providing treatments.
+      </p>
+      <p>
+        <strong>Further information:</strong><br>
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
+          Skin Piercing Registration | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Both the premises and each person carrying out treatments must be registered</li>
+    <li>Acupuncture must be registered separately from other skin piercing activities</li>
+    <li>The premises will normally be inspected within 28 days</li>
+    <li>Registration must be confirmed before treatments are provided</li>
+  </ul>
  
   `,
  
@@ -8087,6 +8181,8 @@ const skinPiercingRegistration = new ContentBusiness(
   {
     type: "Information",
     keywords: [
+      "registration",
+      "licence",
       "skin",
       "piercing",
       "tattoo",
@@ -8097,13 +8193,20 @@ const skinPiercingRegistration = new ContentBusiness(
       "semi-permanent",
       "make up",
       "makeup",
+      "make-up",
       "ear",
+      "premises",
+      "operator",
+      "inspection",
       "tatoo",
-      "peircing",
       "electrolisis",
       "accupuncture",
       "acupunture",
       "piecing",
+      "peircing",
+      "peercing",
+      "license",
+      "operater",
     ],
     categories: ["Business", "General Licensing"]
   },
