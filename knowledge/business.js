@@ -3711,7 +3711,7 @@ const taxiVehicleInspections = new ContentBusiness(
 const animalWelfareLicences = new ContentBusiness(
   "animalWelfareLicences",
   "Animal Welfare Licences",
-  "Information about businesses that need an animal welfare licence and how to apply.",
+  "Information about animal welfare licensing requirements, applications, inspections, licence ratings, fees and relevant guidance.",
   `
     <p>
       Residents and businesses can apply for animal welfare licences through Sheffield City Council. 
@@ -3837,6 +3837,110 @@ const animalWelfareLicences = new ContentBusiness(
 
     </div>
   </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Applying for a Licence</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Application forms for each type of licence can be found at 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+        Animal welfare licences | Sheffield City Council</a>.
+      </p>
+      <p>
+        Completed application forms should be submitted by email to <a href="mailto:licensingservice@sheffield.gov.uk">licensingservice@sheffield.gov.uk</a>
+      </p>
+      <p>
+        After an application is submitted, the Environmental Protection Service will arrange an inspection of the premises to check that the relevant 
+        licence conditions and animal welfare standards are met.
+      </p>
+      <p>
+        Most licensed premises receive a star rating from 1 to 5 following inspection. 
+        The rating reflects welfare standards and risk and may affect the length of the licence and how frequently inspections are carried out.
+      </p>
+      <p>
+        Operating without the required licence or failing to meet licence conditions may result in enforcement action.
+      </p>
+      <p>
+        <strong>Apply for an animal welfare licence:</strong><br>
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/animal-welfare-licencing/animal-welfare-licences" target="_blank" rel="noopener noreferrer">
+          Animal Welfare Licences | Sheffield City Council
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Licences\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Further Guidance</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You should review the licensing guidance and regulations before applying to ensure your business can meet the required standards.
+      </p>
+      <p>
+        <strong>Animal activities licensing guidance:</strong><br>
+        <a href="https://www.gov.uk/government/publications/animal-activities-licensing-guidance-for-local-authorities" target="_blank" rel="noopener noreferrer">
+          Animal Activities Licensing Guidance | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20activities%20licensing\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Animal Welfare Regulations:</strong><br>
+        <a href="https://www.legislation.gov.uk/ukdsi/2018/9780111165485" target="_blank" rel="noopener noreferrer">
+          Animal Welfare Regulations | Legislation.gov.uk
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Regulations\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Five different types of animal welfare licences are available - customers should complete the relevant application form for their business activity</li>
+    <li>Both the business activity and premises must meet the relevant animal welfare standards</li>
+    <li>An inspection will be arranged after an application is submitted</li>
+    <li>Fees vary depending on the type and scale of the activity</li>
+    <li>Operating without the required licence may result in enforcement action</li>
+  </ul>
  
   `,
  
@@ -3850,6 +3954,7 @@ const animalWelfareLicences = new ContentBusiness(
       "animals",
       "welfare",
       "licence",
+      "licences",
       "pet",
       "pets",
       "shop",
@@ -3858,6 +3963,10 @@ const animalWelfareLicences = new ContentBusiness(
       "kennels",
       "cattery",
       "breeding",
+      "selling",
+      "hiring",
+      "day care",
+      "exhibition",
       "horse",
       "riding",
       "dog",
@@ -3865,17 +3974,26 @@ const animalWelfareLicences = new ContentBusiness(
       "cat",
       "cats",
       "boarding",
+      "inspection",
+      "rating",
+      "regulation",
+      "regulations",
       "anmal",
       "animl",
       "welfair",
       "wellfare",
       "welfar",
       "catery",
+      "kenel",
       "bording",
+      "ehibition",
+      "inspction",
+      "license",
+      "licenses",
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "02/09/2026", name: "Liz Taster" }
+  { date: "07/10/2026", name: "Liz Taster" }
 );
 
 
@@ -4399,8 +4517,23 @@ const changeAPremisesLicence = new ContentBusiness(
         <li>The premises can accommodate more than 5,000 people</li>
       </ul>
       <p>
-        Detailed fee information is available on the Council webpage.
+        Detailed fee information is available on the Council webpage: 
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-premises-licence" target="_blank" rel="noopener noreferrer">
+          Change a Premises Licence | Sheffield City Council
+        </a>
       </p>
+            <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
     </div>
   </details>
   <details class="accordion">
@@ -5708,7 +5841,10 @@ const interimAuthorityNotice = new ContentBusiness(
     <div class="accordion-content">
     <p>
       A fee is payable for this application. Details of the current fee can be found 
-      on the Sheffield City Council website.
+      on the Sheffield City Council website:         
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/interim-authority-notice" target="_blank" rel="noopener noreferrer">
+      Interim Authority Notice | Sheffield City Council
+      </a>
     </p>
       <p>You will need to provide:</p>
       <ul>
@@ -5831,7 +5967,7 @@ const marriagePremisesApproval = new ContentBusiness(
       Ceremonies must take place in an identifiable and distinct part of those premises.
     </p>
     <p>
-      The application <strong>cost is £998</strong> and if granted approval lasts for <strong>three years</strong>.
+      The current <strong>application cost</strong> can be found on the council website. If granted approval lasts for <strong>three years</strong>.
     </p>
     <p>
       Full details of the eligibility requirements of different premises types and application forms can be found here:
@@ -6280,7 +6416,10 @@ const notificationOfAnInterest = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <ul>
-        <li>A fee is payable for this application. Details of the current fee can be found on the Sheffield City Council website.</li>
+        <li>A fee is payable for this application. Details of the current fee can be found on the Sheffield City Council website:
+            <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/notification-interest" target="_blank" rel="noopener noreferrer">
+            Notification of an Interest | Sheffield City Council
+            </a></li>
         <li>The notice lasts for 12 months</li>
         <li>You must submit a new application when the notice expires</li>
       </ul>
@@ -6474,7 +6613,7 @@ const personalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        A fee is payable for this application. Details of the current fee can be found on 
+        A fee is payable for this application. Details of the <strong>current fee</strong> can be found on 
         the Sheffield City Council website. A payment link will be sent after the application 
         form has been received. Cash and cheque payments are not accepted.
       </p>
@@ -6615,7 +6754,7 @@ const personalLicences = new ContentBusiness(
   <ul>
     <li>Sheffield residents must apply to <strong>Sheffield City Council</strong> for a personal licence.</li>
     <li>Personal licences normally remain valid <strong>indefinitely</strong>.</li>
-    <li>Changes and replacement licences cost <strong>£10.50</strong>.</li>
+    <li>Changes and replacement licences incur a fee.</li>
   </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -6743,7 +6882,10 @@ const premisesLicence = new ContentBusiness(
         An annual fee must be paid on the anniversary of the date the licence was granted.
       </p>
       <p>
-        Current fees and payment links are available on the Council's premises licence webpage linked above.
+        Current fees and payment links are available on the Council website:         
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/alcohol/premises-licence" target="_blank" rel="noopener noreferrer">
+        Premises Licence | Sheffield City Council
+        </a>.
       </p>
     </div>
   </details>
@@ -7339,7 +7481,12 @@ const scrapMetalLicences = new ContentBusiness(
         A fee is payable for a <strong>new site licence</strong> or to <strong>renew</strong> an existing site licence.
       </p>
       <p>
-        A fee is also charged for a copy of a licence. Details of current fees can be found on the Sheffield City Council website.
+        A fee is also charged for a <strong>copy</strong> of a licence. 
+      </p>
+      <p>
+        Details of current fees can be found on the Sheffield City Council website:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
+        Scrap metal dealers licence | Sheffield City Council</a>
       </p>
     </div>
   </details>
@@ -7370,10 +7517,15 @@ const scrapMetalLicences = new ContentBusiness(
 
       <h4>Costs</h4>
         <p>
-          A fee is payable for a new collector's licence or to renew an existing collector's licence.
+          A fee is payable for a <strong>new collector's licence</strong> or to <strong>renew</strong> an existing collector's licence.
         </p>
         <p>
-          A fee is also charged for a copy of a licence. Current fees can be found on the Sheffield City Council website.
+          A fee is also charged for a <strong>copy</strong> of a licence. 
+        </p>
+        <p>
+          Current fees can be found on the Sheffield City Council website
+          <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
+          Scrap metal dealers licence | Sheffield City Council</a>
         </p>
     </div>
   </details>
@@ -7644,7 +7796,12 @@ const sexShopSexCinemaLicence = new ContentBusiness(
         <li><strong>changes to an existing licence</strong></li>
       </ul>
       <p>
-        Different fees apply depending on the type of application being made. Details of all current fees can be found on the Sheffield City Council website.
+        Different fees apply depending on the type of application being made.
+      </p>
+      <p>
+        Details of all current fees can be found on the Sheffield City Council website:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
+        Sex shop and sex cinema licence | Sheffield City Council</a>
       </p>
     </div>
   </details>
@@ -7872,11 +8029,11 @@ const skinPiercingRegistration = new ContentBusiness(
       </ul>
 
     <p>
-      Both the <strong>premises</strong> and the <strong>person(s))</strong> carrying out skin piercing need to be registered.
+      Both the <strong>premises</strong> and the <strong>person(s)</strong> carrying out skin piercing need to be registered.
     </p>
 
     <p>
-      Application <strong>costs</strong> vary depending on the type of registration or change required. Please check the council website for current fees and charges.
+      Application <strong>costs</strong> vary depending on the type of registration or change required. Please check the council website for current fees and charges to:
     </p>
     <ul>
       <li>Register a <strong>premises</strong></li>
@@ -7915,16 +8072,19 @@ const skinPiercingRegistration = new ContentBusiness(
       <p>
         Different details are required depending on the type of application - premises, individual or amendment.
       </p>
-      <p>
-        The premises application required details around cleaning and steralisation methods, and also the equipment to be used.
-      </p>
+      <p>The applicant needs to provide:</p>
+      <ul>
+        <li>A completed application</li>
+        <li>The required fee or payment reference</li>
+        <li>A signed privacy statement if applying by post</li>
+      </ul>
       <p>
         Details of both routes of application can be found here: 
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
         Skin piercing registration | Sheffield City Council</a>
-    </p>
-  	
-    <button
+      </p>
+
+        <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
       aria-label="For further information send link"
@@ -7937,9 +8097,47 @@ const skinPiercingRegistration = new ContentBusiness(
             Send link to review further information
     </button>
 
+      <br>
+      <p>
+        The follow link can be used to <strong>apply online to register premises or an operator</strong>:
+        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
+          Apply for Skin Piercing Registration
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        The follow link can be used to <strong>apply online to change an existing registration</strong>, including adding or removing an operator:
+        <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
+          Change a Skin Piercing Registration
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20skin%20piercing%20registration\`
+        "
+      >
+        Send link to review further information
+      </button>
     </div>
   </details>
-
+  	
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -7952,7 +8150,7 @@ const skinPiercingRegistration = new ContentBusiness(
         our skin piercing byelaws and health and safety requirements are being complied with.
       </p>
       <p>
-        If there are no issues, a registration certificate will be issued. 
+        If the premises meet the required standards, a registration certificate will be issued. 
         If there are issues with an application, the customer will be notified as soon as possible to resolve them.
       </p>
       <p>
@@ -7960,6 +8158,15 @@ const skinPiercingRegistration = new ContentBusiness(
       </p>
     </div>
   </details>
+
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Both the premises and each person carrying out treatments must be registered</li>
+    <li>Acupuncture must be registered separately from other skin piercing activities</li>
+    <li>The premises will normally be inspected within 28 days</li>
+    <li>Registration must be confirmed before treatments are provided</li>
+  </ul>
  
   `,
  
@@ -7969,6 +8176,8 @@ const skinPiercingRegistration = new ContentBusiness(
   {
     type: "Information",
     keywords: [
+      "registration",
+      "licence",
       "skin",
       "piercing",
       "tattoo",
@@ -7979,17 +8188,24 @@ const skinPiercingRegistration = new ContentBusiness(
       "semi-permanent",
       "make up",
       "makeup",
+      "make-up",
       "ear",
+      "premises",
+      "operator",
+      "inspection",
       "tatoo",
-      "peircing",
       "electrolisis",
       "accupuncture",
       "acupunture",
       "piecing",
+      "peircing",
+      "peercing",
+      "license",
+      "operater",
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "03/09/2026", name: "Liz Taster" }
+  { date: "07/10/2026", name: "Liz Taster" }
 );
 
 
