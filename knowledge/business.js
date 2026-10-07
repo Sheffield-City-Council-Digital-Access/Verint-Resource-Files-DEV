@@ -4517,8 +4517,23 @@ const changeAPremisesLicence = new ContentBusiness(
         <li>The premises can accommodate more than 5,000 people</li>
       </ul>
       <p>
-        Detailed fee information is available on the Council webpage.
+        Detailed fee information is available on the Council webpage: 
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/change-premises-licence" target="_blank" rel="noopener noreferrer">
+          Change a Premises Licence | Sheffield City Council
+        </a>
       </p>
+            <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20a%20premises%20licence\`
+        "
+      >
+        Send link to review further information
+      </button>
     </div>
   </details>
   <details class="accordion">
@@ -5826,7 +5841,10 @@ const interimAuthorityNotice = new ContentBusiness(
     <div class="accordion-content">
     <p>
       A fee is payable for this application. Details of the current fee can be found 
-      on the Sheffield City Council website.
+      on the Sheffield City Council website:         
+      <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/interim-authority-notice" target="_blank" rel="noopener noreferrer">
+      Interim Authority Notice | Sheffield City Council
+      </a>
     </p>
       <p>You will need to provide:</p>
       <ul>
@@ -5949,7 +5967,7 @@ const marriagePremisesApproval = new ContentBusiness(
       Ceremonies must take place in an identifiable and distinct part of those premises.
     </p>
     <p>
-      The application <strong>cost is £998</strong> and if granted approval lasts for <strong>three years</strong>.
+      The current <strong>application cost</strong> can be found on the council website. If granted approval lasts for <strong>three years</strong>.
     </p>
     <p>
       Full details of the eligibility requirements of different premises types and application forms can be found here:
@@ -6398,7 +6416,10 @@ const notificationOfAnInterest = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <ul>
-        <li>A fee is payable for this application. Details of the current fee can be found on the Sheffield City Council website.</li>
+        <li>A fee is payable for this application. Details of the current fee can be found on the Sheffield City Council website:
+            <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/notification-interest" target="_blank" rel="noopener noreferrer">
+            Notification of an Interest | Sheffield City Council
+            </a></li>
         <li>The notice lasts for 12 months</li>
         <li>You must submit a new application when the notice expires</li>
       </ul>
@@ -6592,7 +6613,7 @@ const personalLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
-        A fee is payable for this application. Details of the current fee can be found on 
+        A fee is payable for this application. Details of the <strong>current fee</strong> can be found on 
         the Sheffield City Council website. A payment link will be sent after the application 
         form has been received. Cash and cheque payments are not accepted.
       </p>
@@ -6733,7 +6754,7 @@ const personalLicences = new ContentBusiness(
   <ul>
     <li>Sheffield residents must apply to <strong>Sheffield City Council</strong> for a personal licence.</li>
     <li>Personal licences normally remain valid <strong>indefinitely</strong>.</li>
-    <li>Changes and replacement licences cost <strong>£10.50</strong>.</li>
+    <li>Changes and replacement licences incur a fee.</li>
   </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -6861,7 +6882,10 @@ const premisesLicence = new ContentBusiness(
         An annual fee must be paid on the anniversary of the date the licence was granted.
       </p>
       <p>
-        Current fees and payment links are available on the Council's premises licence webpage linked above.
+        Current fees and payment links are available on the Council website:         
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/alcohol/premises-licence" target="_blank" rel="noopener noreferrer">
+        Premises Licence | Sheffield City Council
+        </a>.
       </p>
     </div>
   </details>
@@ -7457,7 +7481,12 @@ const scrapMetalLicences = new ContentBusiness(
         A fee is payable for a <strong>new site licence</strong> or to <strong>renew</strong> an existing site licence.
       </p>
       <p>
-        A fee is also charged for a copy of a licence. Details of current fees can be found on the Sheffield City Council website.
+        A fee is also charged for a <strong>copy</strong> of a licence. 
+      </p>
+      <p>
+        Details of current fees can be found on the Sheffield City Council website:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
+        Scrap metal dealers licence | Sheffield City Council</a>
       </p>
     </div>
   </details>
@@ -7488,10 +7517,15 @@ const scrapMetalLicences = new ContentBusiness(
 
       <h4>Costs</h4>
         <p>
-          A fee is payable for a new collector's licence or to renew an existing collector's licence.
+          A fee is payable for a <strong>new collector's licence</strong> or to <strong>renew</strong> an existing collector's licence.
         </p>
         <p>
-          A fee is also charged for a copy of a licence. Current fees can be found on the Sheffield City Council website.
+          A fee is also charged for a <strong>copy</strong> of a licence. 
+        </p>
+        <p>
+          Current fees can be found on the Sheffield City Council website
+          <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/scrap-metal-dealers-licence" target="_blank" rel="noopener noreferrer">
+          Scrap metal dealers licence | Sheffield City Council</a>
         </p>
     </div>
   </details>
@@ -7762,7 +7796,12 @@ const sexShopSexCinemaLicence = new ContentBusiness(
         <li><strong>changes to an existing licence</strong></li>
       </ul>
       <p>
-        Different fees apply depending on the type of application being made. Details of all current fees can be found on the Sheffield City Council website.
+        Different fees apply depending on the type of application being made.
+      </p>
+      <p>
+        Details of all current fees can be found on the Sheffield City Council website:
+        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/sex-shop-sex-cinema-licence" target="_blank" rel="noopener noreferrer">
+        Sex shop and sex cinema licence | Sheffield City Council</a>
       </p>
     </div>
   </details>
@@ -8079,7 +8118,7 @@ const skinPiercingRegistration = new ContentBusiness(
       </button>
 
       <p>
-        The follow link can be used to <strong>apply online to change an existing registration</strong>, including adding or removing an operator.
+        The follow link can be used to <strong>apply online to change an existing registration</strong>, including adding or removing an operator:
         <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
           Change a Skin Piercing Registration
         </a>
