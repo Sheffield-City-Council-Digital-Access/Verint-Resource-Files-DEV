@@ -8042,6 +8042,22 @@ const skinPiercingRegistration = new ContentBusiness(
         Skin piercing registration | Sheffield City Council</a>
     </p>
 
+        <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
+        "
+      >
+            Send link to review further information
+    </button>
+
+    </div>
+  </details>
+
       <details class="accordion">
     <summary class="accordion-header">
       <h3>What You Need to Provide</h3>
@@ -8100,22 +8116,6 @@ const skinPiercingRegistration = new ContentBusiness(
     </div>
   </details>
   	
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information send link"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
-        "
-      >
-            Send link to review further information
-    </button>
-
-    </div>
-  </details>
-
 
   <details class="accordion">
     <summary class="accordion-header">
