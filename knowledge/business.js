@@ -3845,7 +3845,15 @@ const animalWelfareLicences = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>
+        Application forms for each type of licence can be found on the council website (link below).
+        Completed application forms should be submitted by email to <a href="mailto:licensingservice@sheffield.gov.uk">licensingservice@sheffield.gov.uk</a>
+      </p>
+      <p>
         After you apply, the Environmental Protection Service will arrange an inspection of the premises to check that the relevant licence conditions and animal welfare standards are met.
+      </p>
+      <p>
+        Most licensed premises receive a star rating from 1 to 5 following inspection. 
+        The rating reflects welfare standards and risk and may affect the length of the licence and how frequently inspections are carried out.
       </p>
       <p>
         Operating without the required licence or failing to meet licence conditions may result in enforcement action.
@@ -3870,6 +3878,64 @@ const animalWelfareLicences = new ContentBusiness(
       </button>
     </div>
   </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Further Guidance</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You should review the licensing guidance and regulations before applying to ensure your business can meet the required standards.
+      </p>
+      <p>
+        <strong>Animal activities licensing guidance:</strong><br>
+        <a href="https://www.gov.uk/government/publications/animal-activities-licensing-guidance-for-local-authorities" target="_blank" rel="noopener noreferrer">
+          Animal Activities Licensing Guidance | GOV.UK
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20activities%20licensing\`
+        "
+      >
+        Send link to review further information
+      </button>
+
+      <p>
+        <strong>Animal Welfare Regulations:</strong><br>
+        <a href="https://www.legislation.gov.uk/ukdsi/2018/9780111165485" target="_blank" rel="noopener noreferrer">
+          Animal Welfare Regulations | Legislation.gov.uk
+        </a>
+      </p>
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Animal%20Welfare%20Regulations\`
+        "
+      >
+        Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <h3>Key Information</h3>
+  <ul>
+    <li>Five different types of animal welfare licences are available - customers should complete the relevant application form for their business activity</li>
+    <li>Both the business activity and premises must meet the relevant animal welfare standards</li>
+    <li>An inspection will be arranged after an application is submitted</li>
+    <li>Fees vary depending on the type and scale of the activity</li>
+    <li>Operating without the required licence may result in enforcement action</li>
+  </ul>
  
   `,
  
@@ -3883,6 +3949,7 @@ const animalWelfareLicences = new ContentBusiness(
       "animals",
       "welfare",
       "licence",
+      "licences",
       "pet",
       "pets",
       "shop",
@@ -3891,6 +3958,10 @@ const animalWelfareLicences = new ContentBusiness(
       "kennels",
       "cattery",
       "breeding",
+      "selling",
+      "hiring",
+      "day care",
+      "exhibition",
       "horse",
       "riding",
       "dog",
@@ -3898,17 +3969,26 @@ const animalWelfareLicences = new ContentBusiness(
       "cat",
       "cats",
       "boarding",
+      "inspection",
+      "rating",
+      "regulation",
+      "regulations",
       "anmal",
       "animl",
       "welfair",
       "wellfare",
       "welfar",
       "catery",
+      "kenel",
       "bording",
+      "ehibition",
+      "inspction",
+      "license",
+      "licenses",
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "02/09/2026", name: "Liz Taster" }
+  { date: "07/10/2026", name: "Liz Taster" }
 );
 
 
