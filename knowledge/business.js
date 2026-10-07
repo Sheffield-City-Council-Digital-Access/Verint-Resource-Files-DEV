@@ -8037,13 +8037,13 @@ const skinPiercingRegistration = new ContentBusiness(
       <ul>
         <li>A completed application</li>
         <li>The required fee or payment reference</li>
-        <li>A privacy statement if applying by post</li>
+        <li>A signed privacy statement if applying by post</li>
       </ul>
       <p>
         Details of both routes of application can be found here: 
         <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
         Skin piercing registration | Sheffield City Council</a>
-    </p>
+      </p>
 
         <button
       type="button"
@@ -8058,9 +8058,9 @@ const skinPiercingRegistration = new ContentBusiness(
             Send link to review further information
     </button>
 
-
+      <br>
       <p>
-        The follow link can be used to apply online to register premises or an operator:
+        The follow link can be used to <strong>apply online to register premises or an operator</strong>:
         <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/apply-1" target="_blank" rel="noopener noreferrer">
           Apply for Skin Piercing Registration
         </a>
@@ -8079,7 +8079,7 @@ const skinPiercingRegistration = new ContentBusiness(
       </button>
 
       <p>
-        The follow link can be used to apply online to change an existing registration, including adding or removing an operator.
+        The follow link can be used to <strong>apply online to change an existing registration</strong>, including adding or removing an operator.
         <a href="https://www.gov.uk/apply-for-a-licence/tattooists-piercing-and-electrolysis-licence/sheffield/change-1" target="_blank" rel="noopener noreferrer">
           Change a Skin Piercing Registration
         </a>
@@ -8120,35 +8120,6 @@ const skinPiercingRegistration = new ContentBusiness(
     </div>
   </details>
 
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Hygiene and Safety</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Businesses must comply with the Council's skin piercing byelaws and follow appropriate infection prevention and hygiene procedures when providing treatments.
-      </p>
-      <p>
-        <strong>Further information:</strong><br>
-        <a href="https://www.sheffield.gov.uk/business/licences-permits-registrations/other-business-licences-and-certificates/skin-piercing-registration" target="_blank" rel="noopener noreferrer">
-          Skin Piercing Registration | Sheffield City Council
-        </a>
-      </p>
-      <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Skin%20piercing%20registration\`
-        "
-      >
-        Send link to review further information
-      </button>
-    </div>
-  </details>
 
   <h3>Key Information</h3>
   <ul>
@@ -8195,7 +8166,7 @@ const skinPiercingRegistration = new ContentBusiness(
     ],
     categories: ["Business", "General Licensing"]
   },
-  { date: "03/09/2026", name: "Liz Taster" }
+  { date: "07/10/2026", name: "Liz Taster" }
 );
 
 
