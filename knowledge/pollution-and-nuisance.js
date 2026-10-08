@@ -3712,12 +3712,12 @@ const animalControl = new ContentPaN(
       <div class="details-accordion-content">
         <a href="${window.location.protocol}//${
           window.location.hostname
-        }/form/launch/report_animal_control?${
+        }/form/launch/collect_deceased_pet?${
           KDF.getParams().customerid
           ? `customerid=${KDF.getParams().customerid}&`
           : ""
         }interactionid=${KDF.getParams().interactionid}">
-          Raise Animal Control report and provide us details
+          Raise Deceased Pet report and provide us details
         </a>
       </div>
     </details>     
@@ -3853,13 +3853,13 @@ const animalControl = new ContentPaN(
             <div class="details-accordion-content">
                 <a href="${window.location.protocol}//${
                     window.location.hostname
-                    }/form/launch/report_animal_control?${
+                    }/form/launch/collect_deceased_pet?${
                     KDF.getParams().customerid
                     ? `customerid=${KDF.getParams().customerid}&`
                      : ""
                     }interactionid=${
                     KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
+                    }">Raise Deceased Pet report and provide us details</a>
             </div>
         </details>
 <details class="details-accordion">
@@ -3983,7 +3983,7 @@ const animalControl = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "21/10/2025", name: "Motolani Akinola" }
+  { date: "08/10/2026", name: "Shaz Athar" }
 );
 
 const abandonedVehicles = new ContentPaN(
