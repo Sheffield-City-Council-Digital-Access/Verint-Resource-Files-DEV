@@ -1390,7 +1390,7 @@ const residentsCarer = new ContentP(
 
 const greenParkingPermit = new ContentP(
   "greenParkingPermit",
-  "Green Parking Permit (no longer available)",
+  "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
   <section class="alert-panel" role="alert" aria-label="Alert panel">
