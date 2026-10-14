@@ -1390,10 +1390,16 @@ const residentsCarer = new ContentP(
 
 const greenParkingPermit = new ContentP(
   "greenParkingPermit",
-  "Green Parking Permit",
+  "Green Parking Permit (no longer available)",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
-
+  <section class="alert-panel" role="alert" aria-label="Alert panel">
+    <h3>Green Parking Permits are no longer available</h3>
+      <p>
+        Green parking permits have been discontinued and can no longer be applied for. Any remaining Green Parking Permits expired by 31st July 2026. 
+        The information below is available for reference only.
+      </p>
+  </section>
 
 	<p>
 	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
