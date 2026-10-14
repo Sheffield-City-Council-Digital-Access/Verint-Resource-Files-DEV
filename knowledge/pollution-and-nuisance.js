@@ -6471,13 +6471,28 @@ const reportFlyTipping = new FormPaN(
   "reportFlyTipping",
   "Fly-tipping",
   "Report issues of illegal dumping",
-  "report_fly_tipping",
+`
+<p> 
+  We can take into consideration, if anyone asks about the potential for CCTV to be put in place to monitor fly tipping activities.
+</p>
+<p>
+  All requests for CCTV are considered by the Environmental Enforcement team and as such this request will be forwarded to that team. 
+  Requests can be sent to <a href="mailto:eps.admin@sheffield.gov.uk">eps.admin@sheffield.gov.uk</a>
+</p>
+
+  `,
+  {
+    buttonLabel: "Report Fly Tipping",
+    formName: "report_fly_tipping",
+  },
+  { typeKey: "" },
+  { typeKey: "fly_tipping_information_provided" },
   {
     type: "Report",
     keywords: ["Fly", "tipping"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "14/10/2026", name: "Shaz Athar" }
 );
 
 const reportGraffiti = new FormPaN(
