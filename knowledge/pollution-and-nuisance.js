@@ -6480,7 +6480,6 @@ const reportFlyTipping = new FormPaN(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-
 const reportGraffiti = new FormPaN(
   "reportGraffiti",
   "Graffiti",
