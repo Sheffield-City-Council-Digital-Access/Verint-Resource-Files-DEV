@@ -653,10 +653,10 @@ const baySuspensions = new ContentP(
       You can pay by credit card, debit card, or BACS.
     </p>
     <p>
-      The daily charge per 5m section of bay is £17.90 for City Centre controlled
-      parking zone, with a non-refundable administration fee of £29.85. The daily
-      charge per 5m section of bay is £5 for all other areas, with a non-refundable
-      administration fee of £29.85.
+      The daily charge per 5m section of bay is £18.95 for City Centre controlled
+      parking zone, with a non-refundable administration fee of £31.60. The daily
+      charge per 5m section of bay is £6.45 for all other areas, with a non-refundable
+      administration fee of £31.60.
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -949,7 +949,7 @@ const yellowLineDispensations = new ContentP(
     </p>
     <p>
       Full payment is required before dispensation can be granted. There is a charge
-      of £17.90 per vehicle per day for a dispensation as well as a £29.85 non-refundable
+      of £18.95 per vehicle per day for a dispensation as well as a £31.60 non-refundable
       administration fee.
     </p>
 	`,
@@ -979,7 +979,7 @@ const yellowLineDispensations = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2026", name: "Liz Taster" }
 );
 
 const parkingIssues = new MenuP(
@@ -1021,8 +1021,8 @@ const businessPermit = new ContentP(
 
 <h3>Cost</h3>
 <ul>
-  <li>The first permit costs £111.60</li>
-  <li>A second permit costs £223.20</li>
+  <li>The first permit costs £118.25</li>
+  <li>A second permit costs £236.55</li>
 </ul>
 
 <details class="accordion">
@@ -1201,7 +1201,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "14/10/2026", name: "Liz Taster" }
 );
 
 const residentsCarer = new ContentP(
@@ -1391,9 +1391,15 @@ const residentsCarer = new ContentP(
 const greenParkingPermit = new ContentP(
   "greenParkingPermit",
   "Green Parking Permit",
-  "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
+  "NO LONGER AVAILABLE - Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
-
+  <section class="alert-panel" role="alert" aria-label="Alert panel">
+    <h3>Green Parking Permits are no longer available</h3>
+      <p>
+        Green parking permits have been discontinued and can no longer be applied for. Any remaining Green Parking Permits expired by 31st July 2026. 
+        The information below is available for reference only.
+      </p>
+  </section>
 
 	<p>
 	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
@@ -1761,7 +1767,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
       an occasional longer visit may provide a visitor permit.
     </p>
     <h3>Cost</h3>
-    <p>£10 each for 12 months.</p>
+    <p>£10.60 each for 12 months.</p>
     <h3>Evidence Required</h3>
     <p>
       The organisation should apply not for an individual and provide the following
@@ -1840,7 +1846,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "14/10/2026", name: "Liz Taster" }
 );
 
 const organisationCarer = new ContentP(
@@ -1880,7 +1886,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 </section>
 
 <h3>Cost</h3>
-<p>£10 each for 12 months.</p>
+<p>£10.60 each for 12 months.</p>
 
 <details class="accordion">
  <summary class="accordion-header">
@@ -1977,7 +1983,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "14/10/2026", name: "Liz Taster" }
 );
 
 const residentsPermit = new ContentP(
@@ -2007,13 +2013,13 @@ Once your licence plate is registered as holding a permit you can use on street 
   <h4>Cost</h4>
   <p>The costs to apply for a permit are: </p>
      <ul>
-          <li>standard first permit £55.80</li>
-          <li>standard second permit £111.60</li>
-          <li>city centre inner residents permit £310.00</li>
-          <li>city centre outer residents permit £155.00</li>
-          <li>Hawley Street Car Park residents permit £55.80</li>
-          <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
-          <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
+          <li>standard first permit £59.15</li>
+          <li>standard second permit £118.25</li>
+          <li>city centre inner residents permit £328.50</li>
+          <li>city centre outer residents permit £164.30</li>
+          <li>Hawley Street Car Park residents permit £59.15</li>
+          <li>Kelham Island and Neepsend Parking Scheme - first permit £118.25</li>
+          <li>Kelham Island and Neepsend Parking Scheme - second permit £236.55</li>
     </ul>
 
 <details class="accordion">
@@ -2154,7 +2160,7 @@ Get in touch with us for any other problems regarding parking permit application
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "14/10/2026", name: "Liz Taster" }
 );
 
 const staffPermit = new ContentP(
@@ -2232,7 +2238,7 @@ const tradePermit = new ContentP(
 <p>They do not entitle you to park at a specific address, but they allow you to park in any on street parking space signposted for permit users in any eligible zone. </p>
 
 <h4>Cost</h4>
-		<p>Trade permits costs £96.85 for a batch of 25 daily permits. They cannot be refunded or exchanged.</p>
+		<p>Trade permits costs £102.65 for a batch of 25 daily permits. They cannot be refunded or exchanged.</p>
 		<p>
 			Permits should be validated and displayed in the vehicle promptly after
 			parking. They are valid until midnight on the day of use.
@@ -2378,7 +2384,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "14/10/2026", name: "Liz Taster" }
 );
 
 const utilityPermit = new ContentP(
@@ -2400,7 +2406,7 @@ const utilityPermit = new ContentP(
 
 <h4>Costs</h4>
 
-<p class="cost">£193.75 for a book of 25 half day passes.</p>
+<p class="cost">£205.35 for a book of 25 half day passes.</p>
 
 <p> For further information or to order a Utility Permit please email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> </p>
   
@@ -2460,7 +2466,7 @@ Contractors needing more time to work at a property will need to apply for trade
 
 <h4>Cost</h4>
 
-<p>One book of 25 permits costs £19.35.</p>
+<p>One book of 25 permits costs £20.50.</p>
 
 <details class="accordion">
  <summary class="accordion-header">
@@ -2468,7 +2474,7 @@ Contractors needing more time to work at a property will need to apply for trade
    <div class="accordion-icon"></div>
  </summary>
  <div class="accordion-content">
-    <p>One book of 25 permits costs £19.35.</p>
+    <p>One book of 25 permits costs £20.50.</p>
       <ul>
         <li>city centre</li>
         <li>Falding Street</li>
@@ -2612,7 +2618,7 @@ Contractors needing more time to work at a property will need to apply for trade
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "14/10/2026", name: "Liz Taster" }
 );
 
 const parkingPermits = new MenuP(
