@@ -99,41 +99,6 @@ class FormDaMH extends CoreDaMH {
        Household income is the total income of all people sharing a household.
       </p>
       <p>
-        The easiest way for us to tell if you are eligible to apply is to look if you
-        are entitled to free school meals. This does not show us your income, but if a
-        family is eligible for free school meals it usually means that they are in
-        receipt of certain benefits.
-      </p>
-      <p>
-       If you are not eligible for free school meals, we will ask for evidence of other means-tested benefits (listed below):
-      </p>
-      <ul>
-        <li>Income-based Free School Meals</li>
-        <li>Income-based Jobseekers Allowance (JSA)</li>
-        <li>Income-related Employment and Support Allowance (ESA)</li>
-        <li>Income Support</li>
-        <li>Pension Credit</li>
-        <li>Both Tax Credits (Both Child Tax Credit and Working Tax Credit)</li>
-        <li>Housing Benefit</li>
-        <li>Council Tax Support</li>
-        <li>Universal Credit</li>
-        <li>Social Fund (Sure Start Maternity Grant, Funeral Payment, Cold Weather Payment)
-        </li>
-      </ul>
-      <p>
-        If you are not receiving any of the benefits listed, we will ask for evidence
-        of your family income. The types of income taken into account are:
-      </p>
-      <ul>
-        <li>PAYE-including commission, bonuses, overtime</li>
-        <li>Self-employed income (taxable profit for financial year ending between 6 April 2015 and 5 April 2016)</li>
-        <li>Income from property</li>
-        <li>Pension income</li>
-        <li>Other benefits and other income including maintenance payments</li>
-        <li>Interest from bonds, trusts, bank/building society and any investments</li>
-        <li>Dividends</li>
-      </ul>
-      <p>
         Please note that Disability Living Allowance (DLA) and Personal Independence
         Payment (PIP) are non-taxable and therefore not counted as income for
         means-tested benefits. DLA and PIP does not count as part of your household
