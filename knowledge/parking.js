@@ -1252,21 +1252,12 @@ const residentsCarer = new ContentP(
 </details>
 
 <details class="accordion">
- <summary class="accordion-header">
-   <h3>Number of permits</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-<p>These permits are not available for:</p>
-            <ul>
-                <li>City centre</li>
-                <li>Hawley Street Car Park</li>
-                <li>Holme Lane</li>
-                <li>Loxley New Road</li>
-                <li>Vaughton Hill schemes</li>
-                <li>Developments within parking permit zones that are car-free. 
-                    You should check with your landlord, letting agent, or solicitor if your property is car-free.</li>
-            </ul> 
+    <summary class="accordion-header">
+        <h3>Number of permits</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>You can apply for one permit per household. Contact us if you feel there is a requirement for you to have more than one.</p>
     </div>
 </details>
 
@@ -1381,7 +1372,7 @@ const residentsCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "26/10/2026", name: "Andy Walker" }
 );
 
 //
