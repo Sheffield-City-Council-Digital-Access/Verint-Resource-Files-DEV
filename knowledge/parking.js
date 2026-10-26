@@ -1372,7 +1372,7 @@ const residentsCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "26/10/2026", name: "Andy Walker" }
 );
 
 //
