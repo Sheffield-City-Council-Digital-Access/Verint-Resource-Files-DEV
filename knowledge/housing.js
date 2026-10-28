@@ -3682,8 +3682,19 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            If you are in Priority band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-            despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+          If you are in one of our priority bands (Bands 1 to 5), it is likely that the property has been offered to an applicant in a higher 
+          priority band for example band 1- Emergency need. 
+        </p>
+        <p>
+          Applicants on priority can only bid for properties advertised to their band, which means applicants in priority band 1 will be 
+          considered first before any other applicants in priority bands 2,3,4 and 5. 
+        </p>
+        <p>
+          Within each priority band, applicant’s bids are ranked by their effective date. For priority your band effective date starts from 
+          the date your priority was agreed this helps us to decide who will be offered the property first. 
+        </p>
+        <p>
+          If two applicants have the same effective date, the housing registration date will be used to decide who is ranked first.
         </p>
     </div>
 </details>
@@ -3695,8 +3706,19 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            A band is where an applicant is placed based on their needs and/or circumstances. 
-            A band is used to determine the priority of an application. Band 'A' is the highest and band 'E' is the lowest.
+          A band helps us to decide between an applicant’s housing need and where they are placed on our Housing Register. 
+          This is dependent upon there circumstances and if they have an assessed housing need or not.
+        </p>
+        <p>
+          Our Housing Register is divided into <strong>7 bands</strong>:
+        </p>
+          <ul>
+            <li><strong>Bands 1–5:</strong> Priority bands (based on level of assessed housing need)</li>
+            <li><strong>Band 6:</strong> General needs (no assessed housing need)</li>
+            <li><strong>Band 7:</strong> Reduced preference</li>
+          </ul>
+        <p>
+          Band 1 is the highest priority we award and Band 7 is the lowest.
         </p>
     </div>
 </details>
@@ -3708,7 +3730,7 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Advisor Note - Check Housing Registration Application on My Housing – this will show the applicant’s band.
+          Advisor Note – Check the Housing Registration Application on My Housing. This will show the applicant’s band.
         </p>
     </div>
 </details>
@@ -3720,89 +3742,48 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
-            for your needs, based on the information you have provided.
+          Your band is either based on your assessment of your housing need and personal circumstances,
+           or we may use the information provided in your housing application to determine your band.
         </p>
         <p>
-            <strong>If you do not agree</strong> with your banding, or circumstances have changed, we can review your application or we re-assess your housing need.
+          Bands reflect the urgency and type of housing need, with priority bands awarded to applicants with more urgent or severe circumstances.
         </p>
         <p>
-            Current council tenants need to contact their Neighbourhood Officer for assessment. Either at their local housing office or on the freephone in Howden House.
-        </p>
-        <p>
-            <strong>If your banding has been reduced</strong> due to arrears, application can be reviewed by Registration Team and customer will be advised to 
-            contact Income Management if arrears are impacting banding. 
-            <br>
-            The customer may also find the information in the knowledge area <strong>Money Support</strong> helpful.
-            This is the top result if you enter <strong>Money Support</strong> in the Knowledge search above. 
-            The page provides information about support options for managing housing, bills, benefits, and financial hardships in Sheffield.
-            <br>
-            The customer can also visit their local Neighbourhood Office where staff can provide advice and information.
-        </p>
-
-        <p>
-            <strong>If your banding has been reduced</strong> due to 3 or more refusals in 12 months an officer would need to check if this is still the case or if it has expired. 
-        </p>
-        <p>
-            <strong>If your banding has been reduced</strong> due to no local connection, proof of this can be uploaded to the My Housing account and will be reviewed. 
-            <br>
-            The following proof is acceptable:
-        </p>
-
-        <table>
-          <tr>
-            <th>Local Connection Type</th>
-            <th>Evidence Required</th>
-          </tr>
-          <tr>
-            <td>No Local Connection</td>
-            <td>NA</td>
-          </tr>
-          <tr>
-            <td>Family lives in area</td>
-            <td>
-              My Housing check 
-              <br>Phone call to a family member 
-              <br>Signed declaration from family member
-            </td>
-          </tr>
-          <tr>
-            <td>Employed/Study in area</td>
-            <td>
-              Contract of employment (if recently started)
-              <br>Letter from Employer
-              <br>ID card
-              <br>College/University card
-            </td>
-          </tr>
-          <tr>
-            <td>Live in Area</td>
-            <td>Proof of address</td>
-          </tr>
-          <tr>
-            <td>Used to live in Area</td>
-            <td>Ohms/Abritas utility bills from previous address – within 6 months </td>
-          </tr>
-          <tr>
-            <td>To give or receive Care</td>
-            <td>Letter/confirmation from support service and/or GP etc.</td>
-          </tr>
-          <tr>
-            <td>Offered employment in area</td>
-            <td>Job Offer letter</td>
-          </tr>
-        </table>
-
-        <p>
-          Local connection banding rule exceptions:
+          If you think your band is incorrect, your circumstances have changed and feel you may have an assessed housing need, 
+          you can request a review, and we will consider the information you have provided:
         </p>
           <ul>
-            <li><strong>Fleeing Domestic Violence</strong> from outside Sheffield will be classed as having local connection regardless of what their address is;</li>
-            <li><strong>Care leaver customers</strong> customers who are either care leavers for a minimum of one day;</li>
-            <li><strong>People from or were in the regular armed forces</strong> – will be classed as having local connection regardless of what their address is.</li>
+            <li>Council tenants should contact their Neighbourhood Officer for an assessment or advice and support.</li>
+            <li>If your priority has been reduced due housing-related debt including rent arrears, this can be reviewed 
+                by your priority officer, and you may be advised to contact our Income Management Team.</li>
+            <li>If your priority has been reduced due to unacceptable behaviour, this can be reviewed by your priority officer, 
+                your priority officer may contact other teams and support services to see if you have demonstrated a change 
+                in behaviour or engaging with support services.</li>
+            <li>If your priority has been reduced due to a failed pre-tenancy inspection during your priority. You may be advised 
+                to contact your Neighbourhood officer or you current landlord if it is a (Registered Provider property). </li>
+            <li>You may also find support through the council’s Money Support services, which provide advice on managing 
+                housing costs, benefits, financial difficulties, cost of living (managing expenses). </li>
           </ul>
+
         <p>
-        <strong>For more info about support for our armed forces visit <a href="https://www.sheffield.gov.uk/your-city-council/armed-forces" target="_blank">Armed Forces Covenant | Sheffield City Council</a> </strong>
+          For more information visit <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank" rel="noopener noreferrer">
+          Cost of living | Sheffield City Council</a> 
+        </p>
+
+        <button type="button"
+          class="dform_widget email-btn dform_widget_type_button"
+          aria-label="For further information send link"
+          onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20support\`"
+        >
+            Send link to review further information
+        </button>
+
+        <p>
+          For more info about support for our armed forces visit <a href="https://www.sheffield.gov.uk/your-city-council/armed-forces" target="_blank" rel="noopener noreferrer">
+          Armed Forces Covenant | Sheffield City Council</a> 
         </p>
 
         <button type="button"
@@ -3812,41 +3793,51 @@ const allocationsPolicy = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Armed%20Forces%20Covenant\`"
->
+        >
             Send link to review further information
-    </button>
+        </button>
     </div>
 </details>
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Band 'E' FAQs</h3>
+        <h3>Why am I in Band 5 and not Band 7?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          Band 5 is the reduced priority band for applicants who have an assessed housing need. This means they may be in our priority 
+          bands 1-4, but the priority has been reduced to 5 because of factors such as housing-related debt, unacceptable behaviour, 
+          deliberately worsening circumstances, or tenancy-related concerns.
+        </p>
+        <p>
+          Band 7 is used where the applicant has no assessed housing need (no priority) and we may place them in the reduced preference 
+          band for similar reasoning such as; housing related debt, unacceptable behaviour or refusal of 2 offers. Sometimes, once an 
+          applicant qualifies and is eligible to join our Housing Register they maybe placed in band 7 straightaway. 
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Band '7' (Reduced Preference) – FAQs</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <details class="details-accordion">
             <summary>
-                Why am I in band E?
+                Why am I in Band 7?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                    You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
-                    For example: out of town and no local connection; rent arrears etc.
+                  Band 7 is the <strong>reduced preference band</strong>. This means either:
                 </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                Owner Occupier in band D/E - why can't I bid?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
-                    Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
-                    unless they have been assessed and given a priority. 
-                    In this case proof of sale would need to be produced at a later date.
-                </p>
+                  <ul>
+                    <li>You do not have an assessed housing need, <strong>and</strong></li>
+                    <li>Your preference has been reduced in line with the Allocations Policy. This may be due to factors such as 
+                        housing-related debt, unacceptable behaviour, deliberately worsening your circumstances, tenancy-related 
+                        issues, or refusing 2 suitable offers.</li>
+                  </ul>
             </div>
         </details>
 
@@ -3856,23 +3847,31 @@ const allocationsPolicy = new ContentH(
             </summary>
             <div class="details-accordion-content">
                 <p>
-                    A local connection means within the Sheffield city boundary. 
-                    Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
+                  A local connection is defined as living within the <strong>Sheffield City boundary</strong>, not just having a Sheffield postcode.
+                </p>
+                <p>
+                  Some addresses use a Sheffield postcode but are outside the city boundary and therefore do not meet the local connection criteria.
                 </p>
             </div>
         </details>
 
         <details class="details-accordion">
             <summary>
-                I'm in band E, but have a longer waiting time than someone who was offered a property?
+                I am in Band 7, but have been waiting longer than someone who was offered a property
             </summary>
             <div class="details-accordion-content">
                 <p>
-                    You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
-                    This is because band E is classed as having reduced preference. 
-                    Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
-                    For example, if you have arrears, you will be considered after someone living outside of Sheffield.
+                  Band 7 is the lowest band and is considered <strong>after all other bands (1–6)</strong>.
                 </p>
+                <p>
+                  This means:
+                </p>
+                  <ul>
+                    <li>Applicants in higher bands will always be prioritised ahead of you, regardless of waiting time that you have.</li>
+                    <li>Applicants in Band 7 are not always prioritised solely by waiting time. 
+                        The way bids are ranked within Band 7 depends on the reason the applicant has been placed in Band 7. 
+                        For further information on how Band 7 applicants on how our band 7 works please refer to section 5 of our Housing Allocations Policy.</li>
+                  </ul>
             </div>
         </details>
     </div>
