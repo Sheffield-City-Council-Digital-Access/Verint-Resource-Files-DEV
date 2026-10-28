@@ -3903,7 +3903,7 @@ const allocationsPolicy = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "06/05/2026", name: "Liz Taster" }
+  { date: "28/10/2026", name: "Liz Taster" }
 );
 
 const asbHomeless = new ContentH(
@@ -4278,36 +4278,65 @@ const applicationChanges = new ContentH(
   "Understand the process for updating your housing application, including submitting changes, providing ID, and renewing your application annually.",
   `
     <p>
-      Change of circumstances is now online. When you are making changes, remember
-      to click 'Submit'. ID/References may also need to be submitted before any
-      changes are accepted.
+      Changes to your housing application must now be made online through your <strong>My Housing account</strong>.
     </p>
     <p>
-      It is very important that you notify us of any changes in your circumstances
-      so that we can amend your application. We will inform you if this results in
-      your application moving to a different band. Depending on the change you have
-      made, you may be required to resubmit your identification/reference before
-      changes are accepted. We will notify you if this is necessary.
+      It is your responsibility to notify us of any changes in your circumstances as soon as possible so that we can update your housing application.  
+      If you are on priority you need to notify your priority officer as well. This is important because your circumstances may affect your banding 
+      or whether you still are eligible or qualify to remain on our Housing Register.
     </p>
     <p>
-      If the customer has made recent changes, the changes are likely to be awaiting
-      approval, and no further changes can be made until they are approved.
+      When making changes, you must click ‘Submit’ to confirm them. Once submitted, your application will be reviewed and, depending on the change, 
+      you may be asked to provide supporting documents before the changes can be approved.
     </p>
+    <p>
+      If you have made recent changes, these are likely to be awaiting approval, and you may not be able to make further changes until they have been 
+      reviewed. You may need to log in regularly to check on the status of your registration.   
+    </p>
+    <p>
+      Once your changes have been assessed, we will notify you if this results in:
+    </p>
+      <ul>
+        <li>A change to your housing band</li>
+        <li>Further information is required</li>
+        <li>No change to your application</li>
+        <li>Or in some cases, you no longer qualifying for the Housing Register</li>
+      </ul>
+
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Accepted ID</h3>
+        <h3>Accepted ID and Supporting Documents</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          You must provide two forms of identification to prove changes to your
-          application. One must be from the Proof of ID documents list, while the
-          second must provide proof of your current UK address. Photo ID is also
-          required to prove your identity. If you do not have photo ID, you must
-          provide a passport-sized photo accompanied by a birth certificate. Proof
-          of child benefit is only required where children under 16 years of age are
-          being rehoused with you.
+          You will need to provide:
         </p>
+          <ul>
+            <li>Two forms of ID one including a current proof of address (for each named applicant on the housing application, 
+                i.e. for joint applicants each applicant will need to provide this). </li>
+            <li>Two forms of ID for any household member over the age of 16, one of which includes a proof of address.</li>
+            <li>One form of ID for household members under the age of 16.</li>
+          </ul>
+        <p>
+          <strong>Additional documents may also include</strong>: 
+        </p> 
+          <ul>
+            <li>Proof of three-year continuous local connection unless an exemption applies </li>
+            <li>Proof of income and savings (some payments maybe disregarded) </li>
+            <li>Reference</li>
+            <li>Proof of child benefit (where applicable)</li>
+          </ul>
+        <p>
+          Depending on your circumstances or if evidence is insufficient, we may contact you for further documentation or proofs. 
+        </p>
+        <p>
+          If you do not have photo ID, you may provide a passport-sized photograph together with a birth certificate.
+        </p>
+        <p>
+          Proof of child benefit may be required where applicable, for example where children are included on your application and you are in receipt of this. 
+        </p>
+
         <h3>Proof of ID documents</h3>
         <ul>
           <li>Marriage certificate</li>
@@ -4332,6 +4361,7 @@ const applicationChanges = new ContentH(
           <li>Letter from Social Worker/Probation Officer/Solicitor</li>
           <li>Driving licence</li>
         </ul>
+
         <h3>Proof of Address</h3>
         <ul>
           <li>Recent utility bill paid in that person’s name (last quarter)</li>
@@ -4344,6 +4374,53 @@ const applicationChanges = new ContentH(
           <li>Life assurance/Insurance policies</li>
           <li>Proof of all other benefits</li>
         </ul>
+
+        <h3>Proof of Local Connection (if requested)</h3>
+        <p>
+          To qualify for our Housing Register, you will need a continuous three-year local connection to Sheffield through residency, 
+          employment, close family connections including a primary carer. You may be asked for evidence of local connection which could include:
+        </p>
+          <ul>
+            <li>Proof that you have lived in Sheffield for the required period (e.g. tenancy agreements, utility bills, council tax statements 
+                covering the last three years)</li>
+            <li>Proof of employment in Sheffield (e.g. employment contract, payslips, or a letter from your employer confirming your place of 
+                work and length of employment)</li>
+            <li>Proof of close family living in Sheffield (e.g. confirmation of their address and relationship to you)</li>
+            <li>Primary carer - Proof that the person provides you with significant day-to-day care and support to the applicant) and who lives 
+                in Sheffield and has done so for the last three years. This may include Supporting letters from relevant professionals or agencies 
+                confirming your circumstances (where applicable)</li>
+          </ul>
+        <p>
+          We may also request further information depending on your individual situation to help determine your qualification on our Housing Register.
+        </p>
+
+        <h3>Proof of Income and Savings (Financial Resources and household income limit)</h3>
+        <p>
+          To assess your application, we will ask for evidence of your household’s income, savings, and financial circumstances. This could include:
+        </p>
+        <ul>
+          <li>Recent payslips from employment</li>
+          <li>Benefit award letters (e.g. Universal Credit, Tax Credits, Pension Credit)</li>
+          <li>Bank statements (usually the last 3 months for all accounts)</li>
+          <li>Evidence of savings or investments (e.g. savings accounts, ISAs, shares)</li>
+          <li>Evidence of any property ownership or financial interest in a property</li>
+          <li>Information about income and expenditure for all adult household members</li>
+        </ul>
+
+        <p>
+          We will use this information to assess whether you meet the financial criteria for joining or remaining on the Housing Register, which are:
+        </p>
+        <ul>
+          <li>Savings, assets or financial resources of £120,000 or more; or </li>
+          <li>A combined gross household income of £60,000 or more </li>
+        </ul>
+        <p>
+          These checks will apply at different points where there is a change of circumstances, annual renewal, matching and when an offer of accommodation is made.
+        </p>
+        <p>
+          In some cases we may ask for proof of exemptions where they may apply.
+        </p>
+
         <h3>Proof of Child Benefit</h3>
         <ul>
           <li>Child benefit award letter</li>
