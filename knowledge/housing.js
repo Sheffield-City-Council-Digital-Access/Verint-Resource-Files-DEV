@@ -4443,20 +4443,15 @@ const applicationChanges = new ContentH(
           You may not always need to provide ID for every renewal or change, but we may request updated documents depending on your circumstances.
         </p>
       
-
-        <details class="details-accordion">
-          <summary>
-            How to Renwe Your Application
-          </summary>
-          <div class="details-accordion-content">
-            <ol>
-              <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
-              <li>Click ‘<strong>Log into my account</strong>’ </li>
-              <li>Enter your details (reference number, memorable date, password) </li>
-              <li>Click ‘<strong>Update my details</strong>’ under ‘Application renewal required’ </li>
-              <li>Check your information carefully </li>
-              <li>Submit the form (even if no changes are needed</li>
-            </ol>
+        <h4>How to Renew Your Application</h4>
+          <ol>
+            <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
+            <li>Click ‘<strong>Log into my account</strong>’ </li>
+            <li>Enter your details (reference number, memorable date, password) </li>
+            <li>Click ‘<strong>Update my details</strong>’ under ‘Application renewal required’ </li>
+            <li>Check your information carefully </li>
+            <li>Submit the form (even if no changes are needed</li>
+          </ol>
                        
       <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
@@ -4469,8 +4464,6 @@ const applicationChanges = new ContentH(
             Send link to review further information
       </button>
             
-          </div>
-        </details>
       </div>
     </details>
     <details class="accordion">
@@ -4496,8 +4489,7 @@ const applicationChanges = new ContentH(
             <li>Providing false information</li>
           </ul>
         <p>
-          In some cases:
-          <br/>Where behaviour or housing-related debt is not serious enough to disqualify an applicant, we may reduce your preference or priority:
+          In some cases, where behaviour or housing-related debt is not serious enough to disqualify an applicant, we may reduce your preference or priority:
         </p>
           <ul>
             <li>Band 5 (Reduced Priority) where you have an assessed housing need.</li>
