@@ -4639,6 +4639,17 @@ const applicationChanges = new ContentH(
         <p>
           Your application or change request cannot normally be fully assessed until the required supporting documents have been received.
         </p>
+        <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"  
+        >
+            Send link to review further information
+        </button>
       </div>
     </details>
 
