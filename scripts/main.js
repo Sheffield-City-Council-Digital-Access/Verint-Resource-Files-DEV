@@ -7754,3 +7754,61 @@ function populateNotesTable(data) {
     notesSorter,
   );
 }
+
+
+//#region    Multicheckbox Disables
+
+function disableMultiCheckBox(mchk_field) 
+{
+    // Removes the [] from the field name
+    const fieldName = mchk_field.replace('[]', '');
+
+    // Builds the multicheck for the field
+    const mchkField = 'input[id^="dform_widget_' + fieldName + '"]';
+    const noneOfAboveChecked = $(mchkField + ':last').is(':checked');
+
+    if (noneOfAboveChecked) 
+    {
+        $(mchkField).not(':last').each(function() 
+        {
+            $(this).prop('checked', false);
+            $(this).prop('disabled', true);
+        });
+    } 
+    else 
+    {
+        $(mchkField).not(':last').each(function() 
+        {
+            $(this).prop('disabled', false);
+        });
+    }
+}
+
+//Below version does not require none of the above to be unchecked, this is not the preferred option and is here for instances such as internal forms where it may be requested
+
+//No disables, just toggles checks to unchecked
+function uncheckMultiCheckBox(mchk_field) 
+{
+    // Removes the [] from the field name
+    const fieldName = mchk_field.replace('[]', '');
+
+    // Builds the multicheck for the field
+    const mchkField = 'input[id^="dform_widget_' + fieldName + '"]';
+
+    $(mchkField).on('change', function() 
+    {
+        if ($(this).is(':checked')) //for performance unchecking doesn't make a difference so skips below checks
+        {
+            if (this === $(mchkField).last()[0]) 
+            {
+                $(mchkField).not(':last').prop('checked', false);
+            } 
+            else 
+            {
+                $(mchkField).last().prop('checked', false);
+            }
+        }
+    });
+}
+
+//#endregion Multicheckbox Disables
