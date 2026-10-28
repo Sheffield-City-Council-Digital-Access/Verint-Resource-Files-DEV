@@ -3825,7 +3825,6 @@ const allocationsPolicy = new ContentH(
     </summary>
       <p>
         <strong><em>Why am I in Band 7?</em></strong>
-        <br/>
         <br/>Band 7 is the <strong>reduced preference band</strong>. This means either:
       </p>
         <ul>
@@ -3834,17 +3833,17 @@ const allocationsPolicy = new ContentH(
               housing-related debt, unacceptable behaviour, deliberately worsening your circumstances, tenancy-related 
                issues, or refusing 2 suitable offers.</li>
         </ul>
+      <br/>
       <p>
         <strong><em>Why am I classed as no local connection but have a Sheffield postcode?</em></strong>
-        <br/>
         <br/>A local connection is defined as living within the <strong>Sheffield City boundary</strong>, not just having a Sheffield postcode.
       </p>
       <p>
       Some addresses use a Sheffield postcode but are outside the city boundary and therefore do not meet the local connection criteria.
       </p>
+      <br/>
       <p>
         <strong><em>I am in Band 7, but have been waiting longer than someone who was offered a property</em></strong>
-        <br/>
         <br/>Band 7 is the lowest band and is considered <strong>after all other bands (1–6)</strong>.
       </p>
       <p>
