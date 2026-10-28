@@ -6694,23 +6694,49 @@ const fosteringAndAdoption = new ContentH(
   "Fostering and Adoption",
   "Details on the processes for amending bedroom eligibility for foster and adoptive applicants, including the need for confirmation from Social Services and the potential benefit implications.",
   `
-   
   <h3>Adoption</h3>
+    <p>
+      Children's Services will assess your circumstances and provide information about the accommodation requirements needed to support an adoption.
+    </p>
+    <p>
+      When assessing your bedroom eligibility, we will take account of the Children's Services assessment and any supporting information they provide.
+    </p>
+    <p>
+      Once the necessary confirmation has been received, your bedroom eligibility will be assessed in line with the Housing Allocations Policy.
+    </p>
+    <p>
+      Please note that being approved to adopt does not automatically result in additional priority for overcrowding. 
+    </p>
   
-  <p> Social Services will undertake an initial visit to assess the size of the applicant’s current accommodation. 
-  Bedroom eligibility in these situations will only be amended once we have received confirmation to go ahead from Social Services. Upon receipt of confirmation, the bedroom eligibility can be amended. 
-  An e-mail from Social Services will be the normal route to receive confirmation. </p>
-  
-     <h3>Fostering</h3>
-  
-     <p>Fostering has a different process. 
-     Until an applicant is suitably housed an assessment cannot begin. 
-     Confirmation from Social Services in the form of an email stating the applicant has made an application to foster is the requirement 
-     to change bedroom eligibility. Upon receipt of confirmation, the bedroom eligibility can be amended. 
-     An e-mail from Social Services will be the normal route to receive confirmation. 
-     However staff advising potential foster carers must advise the applicant of the benefit implications of moving to a 
-     larger property if the child / children are not placed with them immediately after they move or they do not proceed with the 
-     application to foster after they are rehoused.</p>
+  <h3>Fostering</h3>
+    <p>
+      When assessing bedroom eligibility, we will take account of the Children's Services assessment of the requirements of approved foster carers.
+    </p>
+    <p>
+      If you are applying to become a foster carer, you will need to provide supporting information from Children's Services confirming your approval 
+      status or accommodation requirements.
+    </p>
+    <p>
+      Once this information has been received, your bedroom eligibility will be assessed in line with the Housing Allocations Policy.
+    </p>
+    <p>
+      Please note that approval as a foster carer does not automatically result in additional priority for overcrowding.
+    </p>
+
+  <h3>Financial Implications</h3>
+    <p>
+      If you are considering fostering or adopting and require a larger property, it is important to consider the affordability of any future accommodation.
+    </p>
+    <p>
+      For example, if a placement is delayed, changes, or does not proceed as expected, you may still be responsible for the rent and other housing 
+      costs associated with the larger property.
+    </p>
+    <p>
+      Applicants should consider their individual financial circumstances before moving to a larger home.
+    </p>
+    <p>
+      Any additional bedroom is subject to affordability and all necessary health and safety requirements being satisfied.
+    </p>
   
     `,
   {
@@ -6732,7 +6758,7 @@ const fosteringAndAdoption = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "28/10/2026", name: "Liz Taster" }
 );
 
 
