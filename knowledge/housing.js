@@ -3825,7 +3825,6 @@ const allocationsPolicy = new ContentH(
     </summary>
       <p>
         <strong><em>Why am I in Band 7?</em></strong>
-        <br/>
         <br/>Band 7 is the <strong>reduced preference band</strong>. This means either:
       </p>
         <ul>
@@ -3837,7 +3836,6 @@ const allocationsPolicy = new ContentH(
       <br/>
       <p>
         <strong><em>Why am I classed as no local connection but have a Sheffield postcode?</em></strong>
-        <br/>
         <br/>A local connection is defined as living within the <strong>Sheffield City boundary</strong>, not just having a Sheffield postcode.
       </p>
       <p>
@@ -3846,7 +3844,6 @@ const allocationsPolicy = new ContentH(
       <br/>
       <p>
         <strong><em>I am in Band 7, but have been waiting longer than someone who was offered a property</em></strong>
-        <br/>
         <br/>Band 7 is the lowest band and is considered <strong>after all other bands (1–6)</strong>.
       </p>
       <p>
@@ -4418,6 +4415,7 @@ const applicationChanges = new ContentH(
         </ul>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Annual Renewal</h3>
@@ -4425,27 +4423,41 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
         <p>
-          Under the Allocation Policy, customers will be required to update their
-          application on the anniversary of the date they registered.
+          You must renew your housing application annually by updating it online through your <strong>My Housing account</strong>, around the 
+          anniversary date of when you registered.
         </p>
         <p>
-          If applications are not renewed within 42 days when requested, the
-          application may be cancelled.
+          You must complete the renewal even if your circumstances have not changed to confirm that you would still like to remain on our 
+          Housing Register.
         </p>
         <p>
-          Customers won’t need to submit ID for any changes they make, and this will
-          continue for the time being. This will change in the future.
+          If you do not renew your application annually, your application may be removed from our Housing Register. If we are aware of any 
+          vulnerabilities, extra effort will be made to contact and support you to help with this process. You can visit your local area housing 
+          office or Howden House First Point where officers can assist you.
         </p>
+        <p>
+          In some cases we may send a letter or an email to make you aware of the renewals, if you fail to update or respond we may decide to 
+          cancel your application. 
+        </p>
+        <p>
+          You may not always need to provide ID for every renewal or change, but we may request updated documents depending on your circumstances.
+        </p>
+      
+
         <details class="details-accordion">
           <summary>
-            Instructions for completing the renewal of your Housing Application
-            online
+            How to Renwe Your Application
           </summary>
           <div class="details-accordion-content">
-            <p>
-              Log onto our website at <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> and follow
-              the links from the homepage.<br> 
-              
+            <ol>
+              <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
+              <li>Click ‘<strong>Log into my account</strong>’ </li>
+              <li>Enter your details (reference number, memorable date, password) </li>
+              <li>Click ‘<strong>Update my details</strong>’ under ‘Application renewal required’ </li>
+              <li>Check your information carefully </li>
+              <li>Submit the form (even if no changes are needed</li>
+            </ol>
+                       
       <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -4453,74 +4465,95 @@ const applicationChanges = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-  
->
+      >
             Send link to review further information
-    </button>
+      </button>
             
-            </p>
-            <p>Click ‘Log into my account’.</p>
-            <p>
-              Enter your login details: Your unique reference number (found on the
-              enclosed letter), your memorable date, and your password. Contact us
-              if you need these.
-            </p>
-            <p>
-              Once logged in, click ‘Update my details’ under the ‘Application
-              renewal required’ heading. Check your information carefully, confirm
-              that the details are correct, and submit the form. You must submit the
-              form even if there are no changes.
-            </p>
           </div>
         </details>
       </div>
     </details>
     <details class="accordion">
+
       <summary class="accordion-header">
-        <h3>Disqualification/Restriction</h3>
+        <h3>Disqualification and Restrictions</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          The Allocations Policy advises of various circumstances where we will
-          reduce the preference given to applicants on the Housing Register or
-          prevent them from joining the register. These include circumstances such
-          as rent arrears or past/current anti-social behaviour.
+          The Allocations Policy explains that in some situations we may:
         </p>
+          <ul>
+            <li>Reduce your priority on our Housing Register, or</li>
+            <li>Decide that you do not qualify to be on our Housing Register</li>
+          </ul>
         <p>
-          In the most serious debt cases, the Allocations Policy allows us to place
-          applicants into band E or disqualify a customer from the Housing Register
-          for an initial period of 12 months.
+          This may happen for reasons such as:
         </p>
-        <p>A customer can apply for a restriction to be removed if:</p>
-        <ul>
-          <li>
-            They are able to evidence that their behaviour has significantly improved
-            (e.g., paying off arrears in full)
-          </li>
-          <li>They appeal the restriction (disqualification) within 21 days</li>
-          <li>They have exceptional circumstances</li>
-          <li>They need a priority</li>
-        </ul>
+          <ul>
+            <li>Housing-related debt including rent arrears</li>
+            <li>Anti-social behaviour</li>
+            <li>Providing false information</li>
+          </ul>
         <p>
-          If an applicant is allowed back on the housing register, they will have to
-          re-register. ID and references will be required unless recently submitted.
-          Usual checks will be carried out and the appropriate band chosen.
-          Applicants will lose their original waiting time.
+          In some cases:
+          <br/>Where behaviour or housing-related debt is not serious enough to disqualify an applicant, we may reduce your preference or priority:
+        </p>
+          <ul>
+            <li>Band 5 (Reduced Priority) where you have an assessed housing need.</li>
+            <li>Band 7 (Reduced Preference) where there is no assessed priority housing need.</li>
+          </ul>
+        <p>
+          More serious cases may result in disqualification from our Housing Register. Applicants will normally have the right to request 
+          a review within 21 days of the original decision.
         </p>
       </div>
     </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Requesting a Review or Removal of a Restriction</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can ask us to <strong>request a review within 21 days of the original decision</strong> if you are not satisfied with the outcome.
+      </p>
+      <p>
+        The decision letter will advise you of the information which should accompany a request for a review. You can give your consent for 
+        someone to request a review on your behalf, but we will require your permission to discuss your review with them.
+      </p>
+      <p>
+        You may also ask for a restriction to be reconsidered if:
+      </p>
+        <ul>
+          <li>You can provide evidence that your behaviour has improved</li>
+          <li>You have evidenced that you have reduced or cleared any housing-related debt</li>
+          <li>You can demonstrate exceptional circumstances</li>
+        </ul>
+      <p>
+        Each case is considered individually, and you will need to provide supporting evidence to demonstrate your improvement in behaviour.
+      </p>
+
+      <h4>Re-joining our Housing Register</h4>
+      <p>
+        If you are allowed to re-join our Housing Register, you must submit a new application. The application will be assessed using the 
+        criteria set out in the our Housing Allocations Policy and if accepted, you will receive a new registration date and effective date.
+      </p>
+    </div>
+  </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Assistance with Change of Circumstances</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-  <p>
-    Change of circumstances are now online on <strong>My Housing</strong> website and will need to log in to make changes.
-  </p>
+        <p>
+          Change of circumstances are now online on <strong>My Housing</strong> website and will need to log in to make changes.
+        </p>
 
-  <p>
+        <p>
       Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
     </p>
 
