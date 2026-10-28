@@ -4443,7 +4443,7 @@ const applicationChanges = new ContentH(
           You may not always need to provide ID for every renewal or change, but we may request updated documents depending on your circumstances.
         </p>
       
-        <h4>How to Renew Your Application</h4>
+        <h3>How to Renew Your Application</h3>
           <ol>
             <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
             <li>Click ‘<strong>Log into my account</strong>’ </li>
@@ -4542,72 +4542,73 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
         <p>
-          Change of circumstances are now online on <strong>My Housing</strong> website and will need to log in to make changes.
+          Changes must be made online through your <strong>My Housing account</strong>. 
         </p>
-
         <p>
-      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
-    </p>
-
-  <p>
-    Once logged in to make changes, the customer will need to click on the <strong>“update my housing application”</strong> tile. 
-    On the next page, the customer will need to click the small action tile on the right-hand side of the screen.
-  </p>
-
-  <p>
-    They will then be able to view application addresses or view application people. Customers can then 
-    <strong>“add new address or add new person”</strong> or make edits to existing addresses or household members on their application. 
-    Once you have made your changes, click on the <strong>“back to application summary”</strong> tile.
-  </p>
-
-  <p>
-    You will then need to click on the action tile and scroll down to <strong>“upload documents and files”</strong>.
-  </p>
-
-  <p>
-    Please click the <strong>“list of acceptable ID”</strong> link to ensure your document is suitable, 
-    and then upload your documents separately so we can process your changes.
-  </p>
-
-  <p>
-    If a customer changes their name, adds a household member, or changes their address, they must provide ID 
-    at the time of the change by uploading it onto <strong>My Housing Sheffield</strong>. Their application 
-    will then go under entry <strong>“UE”</strong> in the list entries section of the system.
-  </p>
-
-  <p>
-    It is very important that you notify us of any changes in your circumstances so that we can amend your application. 
-    We will inform you if this results in your application moving to a different band.
-  </p>
-
+          Once logged on:
+        </p>
+          <ol>
+            <li>Select “<strong>Update my housing application</strong>”</li>
+            <li>Use the action tile to: </li>
+              <ul>
+                <li>View or update addresses</li>
+                <li>Add or remove household members</li>
+              </ul>
+            <li>After making changes, select “<strong>Back to application summary</strong>”</li>
+            <li>e the action tile again to go to “<strong>Upload documents and files</strong>”</li>
+          </ol>
+        <p>
+          You must upload supporting documents where required. 
+          Please click the “<strong>list of acceptable ID</strong>” link to ensure your document is suitable. 
+          These should be uploaded separately so they can be processed.
+        </p>
+        <p>
+          The changes below will usually require supporting documents before they can be approved:
+        </p>
+          <ul>
+            <li>Name changes</li>
+            <li>Adding a household member</li>
+            <li>Changing address</li>
+          </ul>
+        <p>
+          Your application will then be reviewed before the changes are confirmed. Your application will be listed as under entry “<strong>UE</strong>”
+        </p>
+        <p>
+          It is very important that you notify us of any changes in your circumstances so that we can amend your application. 
+          Following a reassessment, you may move to a higher band, move to a lower band, remain in the same band, or no longer qualify 
+          for our Housing Register. We will write to you to explain the outcome and provide details of any review rights you may have.
+        </p>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Exceptions</h3>
+        <h3>Discretionary behaviour or debt application</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          The Allocations Policy advises various circumstances in which we will
-          reduce the preference given to applicants on the Housing Register or
-          prevent them from joining the register. These include circumstances such
-          as rent arrears or past/current anti-social behaviour.
+          In exceptional circumstances, we may decide to:
         </p>
+          <ul>
+            <li>Remove a restriction</li>
+            <li>Allow you to join our Housing Register</li>
+            <li>Or award priority outside of usual rules</li>
+          </ul>
         <p>
-          An Exception Request allows us to make decisions on whether it is
-          appropriate to waive these restrictions in exceptional circumstances, such
-          as awarding a priority or when an applicant wishes to move to more
-          suitable accommodation using their waiting time due to a change in
-          circumstances.
+          You must:
         </p>
+          <ul>
+            <li>Demonstrate exceptional circumstances</li>
+            <li>Provide evidence</li>
+            <li>Show that you have taken steps to address any outstanding issues</li>
+          </ul>
         <p>
-          Applicants must demonstrate exceptional circumstances and prove that they
-          have taken action to rectify issues that led to reduced preference or
-          disqualification.
+          Each decision is made on a case-by-case basis.
         </p>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Name Changes</h3>
@@ -4615,7 +4616,7 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
 
-      <h2>How to Change Your Details</h2>
+      <h3>How to Change Your Details</h3>
 
     <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
 
