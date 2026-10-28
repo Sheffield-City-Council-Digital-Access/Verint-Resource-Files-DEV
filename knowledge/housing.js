@@ -3823,36 +3823,36 @@ const allocationsPolicy = new ContentH(
         <h3>Band '7' (Reduced Preference) – FAQs</h3>
         <div class="accordion-icon"></div>
     </summary>
-      <h4>Why am I in Band 7?</h4>
-        <p>
-          Band 7 is the <strong>reduced preference band</strong>. This means either:
-        </p>
-          <ul>
-            <li>You do not have an assessed housing need, <strong>and</strong></li>
-            <li>Your preference has been reduced in line with the Allocations Policy. This may be due to factors such as 
-                housing-related debt, unacceptable behaviour, deliberately worsening your circumstances, tenancy-related 
-                issues, or refusing 2 suitable offers.</li>
-          </ul>
-      <h4>Why am I classed as no local connection but have a Sheffield postcode?</h4>
-        <p>
-          A local connection is defined as living within the <strong>Sheffield City boundary</strong>, not just having a Sheffield postcode.
-        </p>
-        <p>
-          Some addresses use a Sheffield postcode but are outside the city boundary and therefore do not meet the local connection criteria.
-        </p>
-      <h4>I am in Band 7, but have been waiting longer than someone who was offered a property</h4>
-        <p>
-          Band 7 is the lowest band and is considered <strong>after all other bands (1–6)</strong>.
-        </p>
-        <p>
-          This means:
-        </p>
-          <ul>
-            <li>Applicants in higher bands will always be prioritised ahead of you, regardless of waiting time that you have.</li>
-            <li>Applicants in Band 7 are not always prioritised solely by waiting time. 
-                The way bids are ranked within Band 7 depends on the reason the applicant has been placed in Band 7. 
-                For further information on how Band 7 applicants on how our band 7 works please refer to section 5 of our Housing Allocations Policy.</li>
-          </ul>
+      <p>
+        <strong><em>Why am I in Band 7?</em></strong>
+        <br/>Band 7 is the <strong>reduced preference band</strong>. This means either:
+      </p>
+        <ul>
+          <li>You do not have an assessed housing need, <strong>and</strong></li>
+          <li>Your preference has been reduced in line with the Allocations Policy. This may be due to factors such as 
+              housing-related debt, unacceptable behaviour, deliberately worsening your circumstances, tenancy-related 
+               issues, or refusing 2 suitable offers.</li>
+        </ul>
+      <p>
+        <strong><em>Why am I classed as no local connection but have a Sheffield postcode?</em></strong>
+        <br/>A local connection is defined as living within the <strong>Sheffield City boundary</strong>, not just having a Sheffield postcode.
+      </p>
+      <p>
+      Some addresses use a Sheffield postcode but are outside the city boundary and therefore do not meet the local connection criteria.
+      </p>
+      <p>
+        <strong><em>I am in Band 7, but have been waiting longer than someone who was offered a property</em></strong>
+        <br/>Band 7 is the lowest band and is considered <strong>after all other bands (1–6)</strong>.
+      </p>
+      <p>
+        This means:
+      </p>
+        <ul>
+          <li>Applicants in higher bands will always be prioritised ahead of you, regardless of waiting time that you have.</li>
+          <li>Applicants in Band 7 are not always prioritised solely by waiting time. 
+              The way bids are ranked within Band 7 depends on the reason the applicant has been placed in Band 7. 
+              For further information on how Band 7 applicants on how our band 7 works please refer to section 5 of our Housing Allocations Policy.</li>
+        </ul>
     </div>
 </details>
   `,
