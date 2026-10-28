@@ -4545,7 +4545,7 @@ const applicationChanges = new ContentH(
           Changes must be made online through your <strong>My Housing account</strong>. 
         </p>
         <p>
-          Once logged on:
+          Once logged in:
         </p>
           <ol>
             <li>Select “<strong>Update my housing application</strong>”</li>
@@ -4555,7 +4555,7 @@ const applicationChanges = new ContentH(
                 <li>Add or remove household members</li>
               </ul>
             <li>After making changes, select “<strong>Back to application summary</strong>”</li>
-            <li>e the action tile again to go to “<strong>Upload documents and files</strong>”</li>
+            <li>Use the action tile again to go to “<strong>Upload documents and files</strong>”</li>
           </ol>
         <p>
           You must upload supporting documents where required. 
@@ -4617,49 +4617,31 @@ const applicationChanges = new ContentH(
       <div class="accordion-content">
 
       <h3>How to Change Your Details</h3>
-
-    <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
-
-    <ol>
-      <li>
-        <strong>Open the website:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">https://housing.sheffield.gov.uk/</a>
-      </li>
-
-      <li>
-        <strong>Log in:</strong>
-        Click the <em>Log in</em> button and enter your username and password.
-       </li>
-
-      <li>
-        <strong>Locate the dashboard tiles:</strong>
-        After logging in you'll see a grid of tiles/cards .
-      </li>
-
-      <li>
-        <strong>Click the correct tile:</strong>
-        Click the tile labelled <em>Change my details</em> .
-      </li>
-
-      <li>
-        <strong>Complete the form:</strong>
-        Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
-      </li>
-
-      
-    </ol>
-
         <p>
-          Present three proof documents to a housing office or First Point, where ID
-          will be copied and saved. The name will be updated in our system. See above within the "Accepted ID" section
-          for valid options of ID that can be used.
+          Follow these steps to update your contact information on the My Housing Sheffield site.
+        </p>
+          <ol>
+            <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
+            <li>Log in to your <strong>My Housing account</strong> </li>
+            <li>Click ‘<strong>Change my details</strong>’</li>
+            <li>Complete the form and submit</li>
+          </ol>
+        <p>
+          You will need to upload supporting documents through your <strong>My Housing account</strong>.
         </p>
         <p>
-          Alternatively, send the name change in writing along with proof
-          (originals, not photocopies) to <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
+          If you are unable to upload your documents through My Housing or provide them in person within 28 days of the date you completed your 
+          application online.
+        </p>
+        <p>
+          See the <strong>Accepted ID and Supporting Documents</strong> section for examples of the identification that may be accepted.
+        </p>
+        <p>
+          Your application or change request cannot normally be fully assessed until the required supporting documents have been received.
         </p>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Split Applications</h3>
@@ -4668,11 +4650,11 @@ const applicationChanges = new ContentH(
       <div class="accordion-content">
         <h3>Main Applicant</h3>
           <p>
-            To remove a joint applicant, you must do this online at the Housing Online
-            website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
+            To remove a joint applicant, this must be completed online through your <strong>My Housing account</strong>.
+            Website: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a>
           <br>
 
-     <button 
+        <button 
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -4681,17 +4663,20 @@ const applicationChanges = new ContentH(
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
     
->
+        >
             Send link to review further information
-     </button>
+        </button>
 
           <br>
           <h3>Joint Applicant</h3>
-          
-            Speak to the Registration team to remove your National Insurance Number.
-            You will need to submit a new application and confirm the removal from the
-            previous application.
+          <p>
+            The joint applicant must:
           </p>
+            <ul>
+              <li>Contact the Registration team to remove their details</li>
+              <li>Submit a new application if required</li>
+              <li>Confirm removal from the previous application</li>
+            </ul>
       </div>
     </details>
   `,
@@ -4716,7 +4701,7 @@ const applicationChanges = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "08/05/2026", name: "Liz Taster" }
+  { date: "28/10/2026", name: "Liz Taster" }
 );
 
 const applyForRehousing = new ContentH(
