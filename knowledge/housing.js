@@ -7840,6 +7840,7 @@ const idFaq = new ContentH(
         Customers must provide the required supporting documents for themselves, and all household members included on the application.
       </p>
 
+      <br/>
       <h4>Customer advising ID/proofs have been posted to us</h4>
       <p> 
         Customers should upload documents through <strong>My Housing</strong> wherever possible.
@@ -7850,6 +7851,7 @@ const idFaq = new ContentH(
       </p>
       <p>
         If documents have already been posted:
+        <br/>
         <br/><strong>Advisor Note</strong>
       </p>
         <ul>
@@ -7859,6 +7861,7 @@ const idFaq = new ContentH(
           <li>Advise the customer that original documents may take up to one month to be returned</li>
         </ul>
 
+      <br/>
       <h4>Customer submitted application but did not provide ID within 28 days</h4>
       <p> 
         If the required documents are not provided within 28 days, the application cannot normally be assessed or accepted. 
