@@ -6493,80 +6493,137 @@ const eligibility = new ContentH(
   "Eligibility",
   "Check eligibility for Sheffield's Housing Register, including age, immigration status, and documentation requirements for application.",
   `
-      <p>
-        Sheffield City Council operates an open register and therefore any person over
-        the age of 16 can apply to join the Housing Register. However, generally you
-        will not be made an offer of a property until you are at least 18 years old.
-      </p>
-      <p>
-        The Housing Act 1996 prevents Local Authorities from offering a property to
-        some people because of their immigration status. We will let you know if this
-        applies to you after you register.
-      </p>
-      <p>
-        If you are eligible to register you may do so by completing the online
-        application form. Following this, you will be provided with a login reference
-        number and required to provide a memorable date which will act as your
-        password for logging in to the website in the future.
-      </p>
-      <p>
-        There are some people who are not eligible to be included on the Housing
-        Register. These are:
-      </p>
-      <p>
-        Certain people who are subject to Immigration Control under the 1996 Asylum
-        and Immigration Act.
-        <br />
-        Certain people from abroad who are not subject to immigration control but who
-        are not habitually resident in the UK, the Channel Islands, the Isle of Man or
-        the Republic of Ireland.
-        <br />
-        People (including members of their household) who have been guilty of
-        unacceptable behaviour that makes them unsuitable to be a tenant.
-      </p>
-      <h3>After submitting your application</h3>
-      <p>
-        After submitting your application online you will be asked to provide us with
-        various documentation such as identification and a reference. You may also be
-        asked to provide evidence of your immigration status where relevant. You
-        should make sure that all of this documentation is available to you before
-        completing your online application as you need to submit this
-        documentation immediately. Failure to provide this within the given timescales
-        will mean you will need to restart the process from the beginning by
-        submitting a further online application.
-      </p>
-      <h3>Eligibility Table</h3>
-      <p>
-        A copy of the eligibility table can be found 
-        <a href="https://sccextranet.sharepoint.com/:w:/s/CustomerServiceKnowledgeCouncilHousing/EbdSLAAvW9JGiy9NqU1kK10B4dnbAzvX4hi3YjglwR3TDQ?e=Nicw6D&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">here</a>.
-      </p>
-      <!-- The following section on relaxed eligibility is to be hidden from customers -->
+  <p>
+    Sheffield City Council operates a Housing Register for people who want to apply for social housing.
+  </p>
 
-      <div hidden>
-      <h3>Relaxed eligibility</h3>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
       <p>
-        Relaxed eligibility criteria is uncommon, but has sometimes been applied in
-        the past to properties that receive no bids and/or have a known low demand.
-        The majority of these properties were maisonettes.
+        Before you can join our Housing Register, we must assess whether you are eligible for social housing under the law. 
+        Eligibility is mainly determined by your immigration status or whether you meet the Government's rules on who can access social housing. 
       </p>
       <p>
-        Properties where relaxed eligibility has been applied will have a message in
-        the 'Show full details>>Further information' box of the property advert.
+        Some people are not eligible to join our Housing Register. This includes:
+      </p>
+        <ul>
+          <li>People who are subject to immigration control and do not meet the required legal criteria.</li>
+          <li>People from abroad who are not subject to immigration control but are not habitually resident in the Common Travel Area, 
+              which includes the UK, Channel Islands, Isle of Man and Republic of Ireland. </li>
+        </ul>
+      <p>
+        If you are not eligible, we will write to you explaining the decision and your right to request a review. 
+        If your immigration status changes in the future, you can make a new application and provide evidence of the change.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Qualification</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are legally eligible, you must also qualify to join our Housing Register.
       </p>
       <p>
-        For Example: A 3 bed maisonette with relaxed eligibility will have a message
-        similar to this:
+        Qualification criteria are set by Sheffield City Council through the Housing Allocations Policy and determine who can join the Housing Register.
       </p>
       <p>
-        Households eligible for 2 bed properties can bid and a financial assessment
-        will be carried out to check that the property is affordable.
+        If you do not qualify, we will write to you explaining the reasons and your right to request a review.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are eligible and qualify, you can apply by completing an online application through <strong>My Housing</strong>.
       </p>
       <p>
-        If a customer then places a bid for the property and comes first, IMFIT
-        (Rents) will contact the customer prior to any offer to ensure that the
-        customer is able to afford the property.
+        You should complete the application yourself, but support is available if you need help.
       </p>
-      </div>
+      <p>
+        Once you have registered, you will be given login details so you can access and manage your application online.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After submitting your application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        After submitting your application through <strong>My Housing</strong> you will need to provide documents so we can assess your application.
+      </p>
+      <p>
+        You must provide the required documents <strong>within 28 days</strong> of completing your application.
+        <br/>These may include:
+      </p>
+        <ul>
+          <li>Two forms of ID for each applicant, including one showing the current address</li>
+          <li>Two forms of ID for household members over 16, including one showing the current address</li>
+          <li>One form of ID for household members under 16</li>
+          <li>Proof of local connection to Sheffield or proof of exemption</li>
+          <li>Proof of Child Benefit where applicable</li>
+          <li>Evidence of income, savings, assets or property ownership</li>
+          <li>Evidence of British nationality or immigration status</li>
+          <li>A landlord reference (usually from your current or most recent landlord)</li>
+          <li>Details of any unspent convictions</li>
+        </ul>
+      <p>
+        We will not fully assess your application until all required documentation has been received.
+      </p>
+      <p>
+        If you do not provide the documents within the required timescale, <strong>your application may not be progressed or may need to 
+        be completed again</strong>.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Bedroom Eligibility Calculator</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Please note:</strong>
+      </p>
+        <ul>
+          <li>Bedroom eligibility is assessed in line with the bedroom standard Recommended by the Government’s Statutory Guidance, 
+              as set out in the Housing Allocations Policy.</li>
+          <li>A pregnancy can be taken into account within the last 3 months before the expected date of delivery, and the unborn 
+              child may be included in the bedroom calculation at that stage. </li>
+          <li>Bedrooms are allocated based on household composition, including:</li>
+            <ul>
+              <li>Married or cohabiting couple</li>
+              <li>Adult aged 21 years or more</li>
+              <li>Pair of adolescents aged 10-20 years of the same sex</li>
+              <li>Pair of children aged under 10 years regardless of sex</li>
+              <li>Consideration of individual circumstances where appropriate where we may allow additional bedrooms above the bedroom 
+                  standard such as; Gender re-assignment or safeguarding concerns.</li>
+            </ul>
+          <li>Bedroom eligibility will reflect the household’s circumstances/number at the point of assessment and may change if circumstances change.</li>
+        </ul>
+      <p>
+        A link to the bedroom eligibility calculator can be found 
+        <a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServices/IQA_cLRDXphpRq3BvhPLtvT3AXqdzbHttLKVsr5HE-JiN9w?e=4JwOm8" target="_blank">here</a>.
+      </p>
+    </div>
+  </details>
+
     `,
   {
     buttonLabel: "Report Housing Enquiry",
@@ -6588,7 +6645,7 @@ const eligibility = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const endofHomeOffice = new ContentH(
