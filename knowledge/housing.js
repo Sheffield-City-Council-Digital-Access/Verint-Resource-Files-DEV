@@ -5752,7 +5752,7 @@ const demotedOrDisqualified = new ContentH(
       <div class="accordion-content">
         <p>
           If you refuse 2 suitable offers of accommodation (unless where the council owes a full homeless duty 
-          then it is 1 suitable offer. This could be either a social housing property or a private rented property) 
+          then it is 1 suitable offer - this could be either a social housing property or a private rented property) 
           in a 12 month period, this may affect your housing application.
         </p>
         <p>
@@ -5861,7 +5861,9 @@ const demotedOrDisqualified = new ContentH(
             <li>References from landlords</li>
             <li>Evidence of improved behaviour</li>
           </ul>
-        <h4>Requesting a Review</h4>
+        <p>
+          <strong>Requesting a Review</strong>
+        </p>
         <p>
           If you disagree with a decision (for example disqualification or reduced priority):
         </p>
