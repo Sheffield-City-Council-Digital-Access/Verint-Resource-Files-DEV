@@ -5409,6 +5409,37 @@ const bidding = new ContentH(
         </div>
       </details>
 
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Offers and Refusals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are successful, you will be contacted about the property and invited to view it.
+      </p>
+      <p>
+        If you refuse 2 suitable offers, this may affect your application. For example:
+      </p>
+        <ul>
+          <li>You may be moved to a lower band</li>
+          <li>Lose your priority or discharge of the council’s homeless duty owed to you.</li>
+          <li>In some cases, your application may be cancelled</li>
+        </ul>
+      <p>
+        The outcome depends on:
+      </p>
+        <ul>
+          <li>Your current band</li>
+          <li>The number of reasonable offers refused </li>
+          <li>Whether you have a priority housing need</li>
+        </ul>
+      <p>
+        Different refusal rules apply to Bands 1-5, Band 6 and Band 7 applicants.
+      </p>
+    </div>
+  </details>
+
 
 
       <details class="accordion">
@@ -5418,33 +5449,50 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            The Allocations Policy advises of various circumstances where we will
-            reduce the preference given to applicants on the Housing Register or
-            prevent them from joining the register. These include circumstances such
-            as rent arrears or past/current anti-social behaviour.
-          <br>
-          <br>
-            In the most serious debt cases, the Allocations Policy allows us to place
-            applicants into band E or disqualify a customer from the Housing Register
-            for an initial period of 12 months.
-          <br>
-          <br>
-            A customer can apply for a restriction to be removed if:
-          <br>
-          <br>
-            <ul>
-              <li>They are able to evidence that their behaviour has significantly improved (e.g., paying off arrears in full)</li>
-              <li>They appeal the restriction (disqualification) within 21 days</li>
-              <li>They have exceptional circumstances</li>
-              <li>They need a priority</li>
-            </ul>
-          <br>
-          <br>
-            If an applicant is allowed back on the housing register, they will have to
-            re-register. ID and references will be required unless recently submitted.
-            Usual checks will be carried out and the appropriate band chosen.
-            Applicants will lose their original waiting time.
+            The Allocations Policy explains that in some situations we may:
           </p>
+            <ul>
+              <li>Reduce your priority on our Housing Register</li>
+              <li>Or decide that you do not qualify to remain on our Housing Register</li>
+            </ul>
+          <p>
+            This may happen for reasons such as:
+          </p>
+            <ul>
+              <li>Housing-related debt including rent arrears</li>
+              <li>Anti-social behaviour</li>
+              <li>Unsatisfactory reference</li>
+              <li>Providing false or misleading information</li>
+            </ul>
+        <p>
+          In some circumstances, behaviour or housing-related debt may result in:
+        </p>
+          <ul>
+            <li>Placement into <strong>Band 5 (Reduced Priority)</strong> where an assessed housing need exists</li>
+            <li>Placement into <strong>Band 7 (Reduced Preference)</strong> where there is no assessed housing need</li>
+            <li>Disqualification from our Housing Register, normally for at least 12 months</li>
+          </ul>
+        <p>
+          Each case is considered individually and applicants have the right to request a review within 21 days of the decision.
+        </p>
+
+        <h4>Requesting a Review or Removal of a Restriction</h4>
+        <p>
+          You have the right to <strong>request a review</strong> within <strong>21 days</strong> of a decision. 
+          All requests for a review must be made in writing, either by letter or by email, and must be sent to the officer or 
+          team detailed in your decision letter.
+        </p>
+        <p>
+          You may also ask for a restriction to be reconsidered if:
+        </p>
+          <ul>
+            <li>You can evidence improved behaviour</li>
+            <li>You have reduced or cleared housing-related debt</li>
+            <li>You can demonstrate exceptional circumstances</li>
+          </ul>
+        <p>
+          Each case will be considered on an individual basis and supporting evidence will be required.
+        </p>
         </div>
       </details>
 
@@ -5458,7 +5506,7 @@ const bidding = new ContentH(
       Login
     </h3>
     <p>
-      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
+      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access My Housing.
     </p>
     <p>
       Use the following login details to access the system:
@@ -5488,79 +5536,69 @@ const bidding = new ContentH(
 
       <details class="accordion">
         <summary class="accordion-header">
-          <h3>Exceptions</h3>
+          <h3>Discretionary behaviour or debt applications</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
           <p>
-            The Allocations Policy advises various circumstances in which we will
-            reduce the preference given to applicants on the Housing Register or
-            prevent them from joining the register. These include circumstances such
-            as rent arrears or past/current anti-social behaviour.
-            <br>
-            <br>
-            An Exception Request allows us to make decisions on whether it is
-            appropriate to waive these restrictions in exceptional circumstances, such
-            as awarding a priority or when an applicant wishes to move to more
-            suitable accommodation using their waiting time due to a change in
-            circumstances.
-            <br>
-            <br>
-            Applicants must demonstrate exceptional circumstances and prove that they
-            have taken action to rectify issues that led to reduced preference or
-            disqualification.
+            In exceptional circumstances, we may:
           </p>
+            <ul>
+              <li>Waive certain restrictions</li>
+              <li>Allow access to our Housing Register</li>
+              <li>Or award priority outside the normal rules</li>
+            </ul>
+          <p>
+            You must:
+          </p>
+            <ul>
+              <li>Provide evidence of exceptional circumstances</li>
+              <li>Demonstrate that you have taken steps to address any issues</li>
+            </ul>
         </div>
       </details>
 
       <details class="accordion">
-        <summary class="accordion-header">
-          <h3>Name Changes</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <h2>How to Change Your Details</h2>
+      <summary class="accordion-header">
+        <h3>Name Changes</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
 
-    <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
+      <h3>How to Change Your Details</h3>
+        <p>
+          To update your details:
+        </p>
+          <ol>
+            <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
+            <li>Log in to your <strong>My Housing account</strong></li>
+            <li>Click ‘<strong>Change my details</strong>’</li>
+            <li>Complete the form and submit</li>
+          </ol>
+        <p>
+          You will be required to provide supporting documents through your <strong>My Housing account</strong>.
+        </p>
+        <p>
+          If you are unable to upload the documents through My Housing you can provide them in person within 28 days of the date you 
+          completed your application online.
+        </p>
+        <p>
+          Your request cannot normally be fully assessed until the required supporting documents have been received.
+        </p>
 
-    <ol>
-      <li>
-        <strong>Open the website:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">https://housing.sheffield.gov.uk/</a>
-      </li>
-
-      <li>
-        <strong>Log in:</strong>
-        Click the <em>Log in</em> button and enter your username and password.
-       </li>
-
-      <li>
-        <strong>Locate the dashboard tiles:</strong>
-        After logging in you'll see a grid of tiles/cards .
-      </li>
-
-      <li>
-        <strong>Click the correct tile:</strong>
-        Click the tile labelled <em>Change my details</em> .
-      </li>
-
-      <li>
-        <strong>Complete the form:</strong>
-        Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
-      </li>
-
-      
-    </ol>
-          <p>
-            Present three proof documents to a housing office or First Point, where ID
-            will be copied and saved. The name will be updated in our system.
-          <br>
-          <br>
-            Alternatively, send the name change in writing along with proof
-            (originals, not photocopies) to <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
-          </p>
-        </div>
-      </details>
+        <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"  
+        >
+            Send link to review further information
+        </button>
+      </div>
+    </details>
 
       <details class="accordion">
         <summary class="accordion-header">
@@ -5570,12 +5608,21 @@ const bidding = new ContentH(
         <div class="accordion-content">
           <h3>Main Applicant</h3>
           <p>
-            To remove a joint applicant, you must do this online at the Housing Online
-            website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
-          <br>
+            To remove a joint applicant, this must be done through your <strong>My Housing account</strong>. 
+            Online website: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
           </p>
+          
+          <h3>Joint Applicant</h3>
+          <p>
+            The joint applicant must:
+          </p>
+            <ul>
+              <li>Contact the Registration team</li>
+              <li>Confirm removal from the existing application</li>
+              <li>Submit a new application if needed></li>
+            </ul>
 
-     <button 
+      <button 
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -5584,17 +5631,9 @@ const bidding = new ContentH(
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
     
->
+      >
             Send link to review further information
-     </button>
-
-          <br>
-          <h3>Joint Applicant</h3>
-          <p>
-            Speak to the Registration team to remove your National Insurance Number.
-            You will need to submit a new application and confirm the removal from the
-            previous application.
-          </p>
+      </button>
         </div>
       </details>
     `,
