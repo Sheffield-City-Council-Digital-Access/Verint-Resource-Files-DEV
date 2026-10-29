@@ -5502,32 +5502,26 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <h3>
-      Login
-    </h3>
-    <p>
-      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access My Housing.
-    </p>
-    <p>
-      Use the following login details to access the system:
-    </p>
-    <p>
-      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
-      Password: <strong>StatusPoppyGlove1*</strong>
-    </p>
-            <br>
-            <br>
+          <h3>Login</h3>
+          <p>
+            Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access My Housing.
+          </p>
+          <p>
+            Use the following login details to access the system:
+          </p>
+          <p>
+            Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
+            Password: <strong>StatusPoppyGlove1*</strong>
+          </p>
+          <p>
             Advisor note: You have logged in using dummy login details. Please do not
             amend anything on screen. Log in if required using the login details above
             and follow the instructions:
             <br>
-            <br>
             Select "My Social Housing" on the left-hand side.
-            <br>
             <br>
             Click "Update your details" and navigate through the form using the "Next
             section" buttons.
-            <br>
             <br>
             Please do not submit the application.
           </p>
@@ -5660,7 +5654,7 @@ const bidding = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const demotedOrDisqualified = new ContentH(
