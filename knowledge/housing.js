@@ -7875,61 +7875,128 @@ const idReferences = new ContentH(
   "ID / References",
   "Details on the required identification and references needed for the rehousing process, including verification procedures.",
   `
-      <p>
-        For current SCC tenants, ID is required for new rehousing applications.<br>
-        For non SCC tenants, ID and a Reference are required for new rehousing applications.<br><br>
+    <p>
+      To verify the information provided in your housing application, we will need supporting documents for everyone included on the application.
+    </p>
+    <p>
+      <strong>Current Sheffield City Council tenants</strong>
+    </p>
+      <ul>
+        <li>Current SCC tenants must provide the required ID</li>
+        <li>You do not need to provide a landlord reference because we already have access to your tenancy information</li>
+      </ul>
+    <p>
+      <strong>All other applicants</strong>
+    </p>
+      <ul>
+        <li>You must provide the required ID and a completed landlord or professional reference form</li>
+      </ul>
+    <p>
+      <strong>Identification requirements</strong>
+    </p>
+      <ul>
+        <li>Each applicant must provide two forms of identification, including one showing their current address</li>
+        <li>Household members under the age of 16 must provide one form of identification</li>
+        <li>The same document cannot be used twice to meet different requirements. 
+            For example, if a driving licence is used as proof of identity, another document must be provided as proof of address</li>
+      </ul>
+    <p>
+      Depending on your circumstances, you will also be required to provide some or all of the following:
+    </p>
+      <ul>
+        <li>Proof of your three-year continuous local connection to Sheffield, or evidence that you are exempt from this requirement</li>
+        <li>Proof of Child Benefit where children under 16 are included on your application. This can be a Child Benefit award letter or, 
+            where this is unavailable, the last three months of consecutive bank statements showing the payments</li>
+        <li>Evidence of your nationality or immigration status</li>
+        <li>Details of any financial assets, savings, investments or property ownership, including bank statements where required</li>
+        <li>Details of any unspent criminal convictions</li>
+      </ul>
+    <p>
+      <strong>References</strong>
+    </p>
+      <ul>
+        <li>Most applicants must provide a completed Sheffield City Council reference form from their current or most recent landlord or accommodation provider</li>
+        <li>If you are unable to obtain a landlord reference, please contact the Housing Service so alternative arrangements can be considered</li>
+      </ul>
+    <p>
+      <strong>Submitting your documents</strong>
+    </p>
+      <ul>
+        <li>Documents should be uploaded through your My Housing account in the first instance, you can upload your original ID documents or 
+            provide them in person within 28 days of the date you completed your application online</li>
+        <li>Your housing application cannot be processed until all required information and supporting documents have been received</li>
+        <li>We may contact you to request additional information if further checks are required</li>
+        <li>Your application will not normally be accepted until all required supporting information has been received. 
+            If the required documents are not provided within the requested timescale, your application may be cancelled and you may need to 
+            submit a new application</li>
+      </ul>
   
-        You must provide two forms of identification (do not post original documents to us). <br>
-        One must be from the Proof of ID documents list <br>
-        (see Acceptable ID below) whilst the second must provide proof of your current UK address.<br><br>
-  
-        Photo ID is also required to prove your identity. <br>
-        If you do not have photo ID, you must provide a passport-sized photo.  <br>
-        A <strong> landlord Reference</strong>  is also required. <br><br>
-  
-        The same document cannot be used more than once e.g. <br>
-        driving licence as primary evidence and proof of address. <br>
-        Proof of child benefit receipt is required where children under 16 years of age are 
-        being rehoused with you.<br><br>
-  
-        <strong> You can upload your documents via the website (including reference if appropriate) </strong><br><br>
-  
-        Failure to submit all required ID and references at the same time, 
-        may mean that you will need to restart the application process from the beginning by 
-        submitting a further online application. <br><br>
-      </p>
+  <details class="accordion">
+    <summary class="accordion-header">
       <h3>Acceptable ID</h3>
-  
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+      <h3>Proof of Identity</h3>
         <ul>
-          <li>Proof of ID documents	Proof of address	Proof of Child Benefit</li>
           <li>Marriage certificate</li>
-          <li>Divorce/Annulment papers</li>
-          <li>Divorce/Annulment papers</li>
-          <li>Passport (this can be expired but if the customer is an adult an adult passport must be produced)</li>
-          <li>passport must be produced)</li>
-          <li>Deed poll documentation for change of name (to accompany details of former name if applicable)</li>
-          <li>Current bus passes with photograph</li>
-          <li>UK resident permit</li>
-          <li>ID card issued by EEA/EU countries</li>
-          <li>Home Office standard acceptance letter</li>
+          <li>Divorce orannulment papers</li>
+          <li>Passport (adult applicants must provide an adult passport)</li>
+          <li>Deed poll documentation for a change of name</li>
+          <li>Current bus pass with photograph</li>
+          <li>UK residence permit</li>
+          <li>ID card issued by an EEA/EU country</li>
+          <li>Home Office acceptance letter</li>
           <li>Immigration status document</li>
           <li>NASS 35</li>
-          <li>Citizenship card (with hologram and photo to prove age)</li>
+          <li>Citizenship card (with hologram and photograph)</li>
           <li>Medical card</li>
-          <li>Birth certificate/Adoption certificate</li>
-          <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-          <li>Driving licence</li>
-          <li>Recent utility bill paid in that person’s name (last quarter)</li>
-          <li>Most recent council tax statement</li>
-          <li>Home Office standard acceptance letter</li>
-          <li>Letter from DWP for tax credits</li>
-          <li>Bank statement from within the last 3 months</li>
-          <li>Wage slip from current employer</li>
-          <li>Life assurance/Insurance policies</li>
-          <li>Proof of all other benefits</li>
-          <li>Child benefit award letter</li>
-          <li>The last 3 consecutive months bank statements (Only where award letter is not available).</li>
+          <li>Birth certificate or adoption certificate</li>
+          <li>Letter from Social Worker, Probation Officer or Solicitor</li>
         </ul>
+
+      <h3>Proof of Address</h3>
+        <ul>
+          <li>Driving licence</li>
+          <li>Utility bill dated within the last three months</li>
+          <li>Most recent Council Tax bill</li>    
+          <li>Home Office acceptance letter</li>
+          <li>Department for Work and Pensions correspondence</li>
+          <li>Bank statement dated within the last three months</li>
+          <li>Current wage slip</li>
+          <li>Life assurance or insurance policy documents</li>
+          <li>Evidence of benefit payments</li>
+        </ul>
+
+      <h3>Proof of Child Benefit</h3>
+        <ul>
+          <li>Child benefit award letter</li>
+          <li>If no award letter is available, the last three consecutive months of bank statements showing Child Benefit payments</li>
+        </ul>
+
+      <h3>Proof of Local Connection (if requested)</h3>
+        <p>
+          You may be asked to provide evidence of your local connection. This could include:
+        </p>
+          <ul>
+            <li>Proof that you have lived in Sheffield continuously for the last three years:</li>
+              <ul>
+                <li>Tenancy agreements</li>
+                <li>Council Tax bills</li>
+                <li>Utility bills</li>
+                <li>Other official correspondence</li>
+              </ul>
+            <li>Proof that you have worked in Sheffield continuously for the last three years:</li>
+              <ul>
+                <li>Payslips</li>
+                <li>Employment contracts</li>
+                <li>Letter from your employer</li>
+              </ul>
+            <li>Proof that an immediate family member or primary carer has lived in Sheffield continuously for the last three years, 
+                together with evidence of your relationship to them</li>
+    </div>
+  </details>
     `,
   {
     buttonLabel: "Report Housing Enquiry",
@@ -7954,7 +8021,7 @@ const idReferences = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "01/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 
