@@ -8109,6 +8109,7 @@ const movingIn = new ContentH(
         Your move-in date will be agreed once the property is ready.
       </p>
   
+      <br/>
       <h4>Standard of property when moving in</h4>
       <p>
         Before you move into your new home, we will make sure it is safe and secure. 
@@ -8128,6 +8129,7 @@ const movingIn = new ContentH(
         property from being occupied safely.
       </p>
   
+      <br/>
       <h4>Gas / Electricity supplier</h4>
       <p>
         Where known, utility supplier information will be provided during the tenancy sign-up process.
@@ -8141,14 +8143,15 @@ const movingIn = new ContentH(
         setting up your account.
       </p>
       <p>  
-        <strong>Gas</strong> - Call the M Number Enquiry Line on <a href="tel:0870 6081524">0870 6081524</a>, provided by xoserve Ltd. 
+        <strong>Gas</strong> - Call the M Number Enquiry Line on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0870 6081524')">0870 6081524</a>, provided by xoserve Ltd. 
         They will tell you the supplier and give you your Meter Point Reference Number (MPRN).
       </p>
       <p>  
         <strong>Electricity</strong> - Call your local electricity distribution company and ask for their Meter 
-        Point Administration Service (MPAS). Alternatively, contact <a href="tel:0845 0707172">0845 0707172</a>.
+        Point Administration Service (MPAS). Alternatively, contact <a href="#" class="telephoneNumber" onclick="copyToClipboard('0845 0707172')">0845 0707172</a>.
       </p>
   
+      <br/>
       <h4>Meter Readings</h4>
       <p>
         The opening meter readings will be recorded when the tenancy starts and provided as part of your sign-up information.
