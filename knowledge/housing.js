@@ -5670,207 +5670,251 @@ const demotedOrDisqualified = new ContentH(
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-
         <p>
-            Sheffield City Council operates an open housing register. Any person aged 16 or over
-            can apply to join the Housing Register, although offers of accommodation are generally
-            not made until the applicant is at least 18 years old.
+            Sheffield City Council operates a Housing Register for applicants who are eligible for social housing and who meet our 
+            qualification criteria stated in our Housing Allocations policy.
+            <br/>You must:
         </p>
-
-        <p>
-            The Housing Act 1996 prevents some people from being offered accommodation due to
-            immigration status. Applicants will be advised if this applies after registration
-            and provision of the required evidence.
-        </p>
-
-        <p><strong>The following groups may not be eligible:</strong></p>
-
-        <ul>
-            <li>Certain people who are subject to immigration control under asylum and immigration legislation.</li>
-            <li>Certain people from abroad who are not subject to immigration control but are not habitually resident in the UK, Channel Islands, Isle of Man, or Republic of Ireland.</li>
-        </ul>
-
+          <ul>
+              <li>Be aged 18 or over to join our Housing Register</li>
+              <li>Be eligible for social housing by law</li>
+              <li>Meet our qualification criteria stated in our allocation policy set by the council</li>
+          </ul>
         </div>
     </details>
 
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Reduced Preference (Demotion) Following Refusal of Three Reasonable Offers</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                If a customer in Band D refuses three reasonable offers within a 12-month period,
-                the Allocations Policy allows the application to be demoted.
-            </p>
-
-            <ul>
-                <li>Refusing an offer may result in a lower band or cancellation of the application.</li>
-                <li>Failure to respond to an offer within the required timescales may be treated as a refusal.</li>
-                <li>Failure to attend a viewing without good reason may also be treated as a refusal.</li>
-            </ul>
-
-            <p>
-                Customers will receive written warning 21 days before demotion.
-                If no response is received, the application will be moved to Band E for 12 months.
-            </p>
-
-            <p>
-                After 12 months, the customer can ask for their application to return to Band D.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Disqualification Following Refusal of Three Reasonable Offers</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Customers already in Band E who refuse three reasonable offers may be
-                disqualified from the Housing Register.
-            </p>
-
-            <ul>
-                <li>The customer will be notified in writing.</li>
-                <li>The customer has 21 days to appeal the decision.</li>
-                <li>If no appeal is received, the housing application will be cancelled.</li>
-                <li>The applicant will be disqualified from the Housing Register for 12 months.</li>
-            </ul>
-
-            <p>
-                After 12 months, a new online application can be submitted to rejoin the Housing Register.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
+  <details class="accordion">
     <summary class="accordion-header">
-        <h3>Disqualified for Unacceptable Behaviour</h3>
-        <div class="accordion-icon"></div>
+      <h3>Immigration Status</h3>
+      <div class="accordion-icon"></div>
     </summary>
-    <p>
-        Applications rejected because of unacceptable behaviour will receive a letter
-        explaining the decision, the 12-month restriction period, and available review rights.
-    </p>
-
-    <p>
-        The customer may request a review by a senior officer within 21 days of the decision letter.
-        Any request should include new information that was not considered during the original assessment.
-    </p>
-
     <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>What Counts as Unacceptable Behaviour?</summary>
-            <div class="details-accordion-content">
-                <p>
-                Some applicants may not be allowed to join the Housing Register because of past behaviour
-                by themselves or members of their household.
-            </p>
-
-            <p><strong>Examples include:</strong></p>
-
-            <ul>
-                <li>Persistent rent arrears without attempts to repay them.</li>
-                <li>Serious damage caused to a property.</li>
-                <li>Anti-social behaviour that resulted in the loss of previous accommodation.</li>
-                <li>Convictions relating to domestic abuse or certain serious offences.</li>
-                <li>Unauthorised subletting of a council property.</li>
-                <li>Providing false or misleading information in a housing application.</li>
-            </ul>
-
-            <p>
-                Behaviour by household members who lived with the applicant at the time of the incident
-                may also be considered.
-            </p>
-            </div>
-        </details>
-        <details class="details-accordion">
-            <summary>If This Applies to You</summary>
-            <div class="details-accordion-content">
-                <p>
-                Customers may be unable to join the register immediately where unacceptable behaviour applies.
-            </p>
-
-            <p>
-                Applications may be considered again in the future if circumstances have changed
-                and behaviour has improved.
-            </p>
-
-            <p><strong>Evidence may include:</strong></p>
-
-            <ul>
-                <li>References from landlords or support agencies.</li>
-                <li>Evidence of rent repayment arrangements.</li>
-                <li>Changes in personal circumstances.</li>
-                <li>Evidence demonstrating improved behaviour.</li>
-            </ul>
-            </div>
-        </details>
+      <p>
+        The Housing Act 1996 means that some people cannot join our Housing Register due to their immigration status.
+      </p>
+      <p>
+        We will assess your eligibility after you have submitted an application and will let you know if this applies to you. 
+        You may be asked to provide documents to confirm your immigration status.
+      </p>
     </div>
-</details>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who Is Not Eligible</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You will not be able to join our Housing Register if you are:
+      </p>
+        <ul>
+          <li>A person subject to immigration control who is not eligible under the relevant legislation</li>
+          <li>A person from abroad who is not subject to immigration control but is not habitually resident in: </li>
+            <ul>
+              <li>The UK</li>
+              <li>The Channel Islands</li>
+              <li>The Isle of Man</li>
+              <li>The Republic of Ireland</li>
+            </ul>
+        </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Reduced Preference (Demotion)</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        In some situations, your preference may be reduced.
+      </p>
+      <p>
+        This could result in you being placed in:
+      </p>
+        <ul>
+          <li><strong>Band 5 (Reduced Priority)</strong> if you have an assessed housing need </li>
+          <li><strong>Band 7 (Reduced Preference)</strong> if you do not have an assessed housing need</li>
+        </ul>
+      <p>
+        Examples may include housing-related debt, tenancy breaches, anti-social behaviour, or deliberately 
+        worsening your circumstances. Each case is considered individually.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Refusal of Offers</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <div class="accordion-content">
+        <p>
+          If you refuse 2 suitable offers of accommodation (unless where the council owes a full homeless duty 
+          then it is 1 suitable offer. This could be either a social housing property or a private rented property) 
+          in a 12 month period, this may affect your housing application.
+        </p>
+        <p>
+          This includes where:
+        </p>
+          <ul>
+            <li>You refuse an offer of a suitable property</li>
+            <li>You fail to respond to an offer of a property made to you within 3 working days and do not have a suitable reason</li>
+            <li>You fail to attend a viewing of a property offered to you within 3 working days and do not have a suitable reason.</li>
+          </ul>
+        <p>
+          Depending on your application, you may:
+        </p>
+          <ul>
+            <li>Lose an existing priority award</li>
+            <li>Be moved to a lower band</li>
+            <li>Be placed into Band 7</li>
+            <li>Have your application cancelled</li>
+          </ul>
+        <p>
+          Different refusal rules apply to applicants in Bands 1–5, Band 6 and Band 7.
+        </p>
+      </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Disqualification from our Housing Register</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <p>
+        In more serious cases, you may be <strong>disqualified</strong> from our Housing Register.
+      </p>
+      <p>
+        This may happen if:
+      </p>
+        <ul>
+          <li>You have serious housing-related debt (such as rent arrears)</li>
+          <li>You have demonstrated unacceptable behaviour</li>
+          <li>You no longer meet the qualification criteria</li>
+          <li>You are no longer eligible to join</li>
+        </ul>
+      <p>
+        You may also be disqualified if:
+      </p>
+        <ul>
+          <li>You no longer have a qualifying 3 year continuous local connection to Sheffield</li>
+          <li>Your household income or financial resources exceed the thresholds in our Allocations policy</li>
+          <li>You or a household member have a residential property in the UK or anywhere in the world including having a 
+              partial or shared financial interest in one (this will be assessed on an individual basis)</li>
+          <li>You fail to maintain the qualification criteria after joining our Housing Register</li>
+        </ul>
+      <h4>If You Are Disqualified</h4>
+        <ul>
+          <li>You will be notified in writing with the reasons for the decision</li>
+          <li>You have the right to <strong>request a review within 21 days of the original decision</strong> which must be made 
+              in writing, either by letter or by email, and must be sent to the officer or team detailed in your decision letter</li>
+        </ul>
+      <p>
+        Where disqualification relates to unacceptable behaviour or housing-related debt, applications will not normally be reconsidered 
+        until at least 12 months have passed, unless exceptional circumstances apply.
+        <br/>After this period:
+      </p>
+        <ul>
+          <li>You can submit a new application through your <strong>My Housing account</strong></li>
+          <li>Your application will be reassessed in line with the Allocations Policy</li>
+        </ul>
+    </div>
+  </details>
    
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Exception Requests</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Unacceptable Behaviour</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <div class="accordion-content">
+        <p>
+          You may not qualify to join or remain on our Housing Register if you, or a member of your household, has demonstrated unacceptable behaviour.
+        </p>
+        <p>
+          This may include:
+        </p>
+          <ul>
+            <li>Nonpayment or persistent rent arrears without making reasonable efforts to repay this include rent or mortgage arrears</li>
+            <li>Causing serious damage to a property</li>
+            <li>Anti-social behaviour leading to eviction</li>
+            <li>Convictions for serious criminal offences (including domestic abuse)</li>
+            <li>Unlawfully subletting a council property</li>
+            <li>Providing false or misleading information on a housing application</li>
+          </ul>
+        <p>
+          We will also consider behaviour from household members if they live or lived with you during or at the time.
+        </p>
+        <p>
+          <strong>If this applies to you</strong>
+        </p>
+          <ul>
+            <li>You may not be able to join our Housing Register at this time</li>
+            <li>You can apply again in the future if your circumstances have improved</li>
+          </ul>
+        <p>
+          We may ask for evidence such as:
+        </p>
+          <ul>
+            <li>Proof of repayment of debts</li>
+            <li>References from landlords</li>
+            <li>Evidence of improved behaviour</li>
+          </ul>
+        <h4>Requesting a Review</h4>
+        <p>
+          If you disagree with a decision (for example disqualification or reduced priority):
+        </p>
+          <ul>
+            <li>You have the right to <strong>request a review within 21 days</strong></li>
+            <li>You should provide any additional information or evidence that was not previously considered</li>
+          </ul>
+        <p>
+          A senior officer who was not involved in the original decision will review your case.
+        </p>    
+      </div>
+  </details>
 
-            <p>
-                The Allocations Policy includes circumstances where housing preference may be reduced
-                or applicants may be prevented from joining the Housing Register.
-            </p>
-
-            <p>
-                Common reasons include rent arrears, anti-social behaviour, or previous housing-related issues.
-            </p>
-
-            <p>
-                An Exception Request allows consideration of whether those restrictions should be waived
-                in exceptional circumstances.
-            </p>
-
-            <p><strong>Applicants must demonstrate:</strong></p>
-
-            <ul>
-                <li>Exceptional circumstances.</li>
-                <li>Evidence that issues leading to demotion or disqualification have been addressed.</li>
-                <li>Why the restriction should be reviewed or removed.</li>
-            </ul>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Submitting an Exception Request</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Customers should contact their Neighbourhood Officer for support in completing
-                an Exception Request.
-            </p>
-
-            <ul>
-                <li>Complete the Exception Request form.</li>
-                <li>Provide supporting evidence.</li>
-                <li>Explain the exceptional circumstances being relied upon.</li>
-            </ul>
-
-            <p>
-                All evidence should be submitted alongside the request to support decision making.
-            </p>
-
-        </div>
-    </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Submitting an Exception Request</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <div class="accordion-content">
+        <p>
+          In exceptional circumstances, you may request a discretionary behaviour or debt application if:
+        </p>
+          <ul>
+            <li>You have been disqualified from our Housing Register</li>
+            <li>You have been placed in Band 5 (Reduced Priority)</li>
+            <li>You have been placed in Band 7 (Reduced Preference)</li>
+          </ul>
+        <p>
+          This may result in:
+        </p>
+          <ul>
+            <li>You being allowed to join our Housing Register when you would not normally qualify</li>
+            <li>Your priority not being reduced</li>
+            <li>Your reduced preference or reduced priority being removed</li>
+          </ul>
+        <p>
+          You must:
+        </p>
+          <ul>
+            <li>Demonstrate exceptional circumstances</li>
+            <li>Provide supporting evidence</li>
+            <li>Show that you have taken reasonable steps to address any housing-related debt or unacceptable behaviour</li>
+          </ul>
+        <p>
+          Each request is considered individually and may include assessment of repayment arrangements, affordability, 
+          landlord references, behaviour improvements and other supporting evidence.
+        </p>
+        <p>
+          In some cases the discretionary behaviour or debt application will be considered jointly by appropriately authorised 
+          senior officers including the Income Management and Tenancy enforcement team. 
+        </p>
+      </div>
+  </details>
     `,
   {
     buttonLabel: "",
@@ -5897,7 +5941,7 @@ const demotedOrDisqualified = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "07/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 
