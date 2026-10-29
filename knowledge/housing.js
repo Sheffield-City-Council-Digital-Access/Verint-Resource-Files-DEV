@@ -4721,10 +4721,10 @@ const applyForRehousing = new ContentH(
   "Learn how to apply for rehousing in Sheffield by registering online and submitting required documents like ID and landlord references.",
   `
     <p>
-      To apply for Social Housing you need to do so via the Housing Online website.
-      There are no paper application forms.
+      To apply join our Housing Register, you must do so online through your <strong>My Housing account</strong>. 
+      Unfortunately, there are no paper application forms.
     </p>
-    <p>Go online and register on <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a><br> 
+    <p>To get started, visit: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a><br> 
     
     <button type="button" class="dform_widget email-btn dform_widget_type_button"
       aria-label="Send link to housing online website"
@@ -4738,30 +4738,67 @@ const applyForRehousing = new ContentH(
 
     </p>
     <p>
-      Before you can complete an application to join the Housing Register you will
-      need to register yourself as a new household on the system.
+      Before you can complete an application to join our Housing Register, 
+      you will need to register yourself as a new household on the system.
     </p>
     <p>
-      Once registered you will be able to complete an application form to join the
-      Housing Register.
+      Once you have registered, you will be able to complete an online housing application form.
+    </p>
+    <h4>Providing Documents</h4>
+    <p>
+      You will need to provide supporting documents so we can assess and validate your application.
     </p>
     <p>
-      You must produce proof of ID (and Child Benefit if appropriate) and a landlord
-      reference (if you are not already a Council tenant) at the same time,
-      documents can be uploaded via the website or at your local housing office or
-      First Point before your application will be validated.
+      This usually includes:
+    </p>
+      <ul>
+        <li>Proof of ID (for all applicants)</li>
+        <li>Proof of current address</li>
+        <li>Proof of 3 year continuous local connection (or proof of exemption, where applicable)</li>
+        <li>Proof of income, savings and financial assets</li>
+        <li>Proof of child benefit (if applicable)</li>
+        <li>Immigration or nationality documents where required</li>
+        <li>A landlord reference (if you are not a current Council tenant)</li>
+      </ul>
+    <p>
+      You should upload your supporting documents through your <strong>My Housing account</strong>.
+    </p>
+    <p>
+      If you are unable to upload your documents through My Housing or provide them in person within 
+      28 days of the date you completed your application online.
+    </p>
+    <p>
+      Your application cannot normally be fully assessed until all required information and supporting 
+      documents have been received, in which case your application may be rejected as incomplete, and 
+      you may need to re-submit.
     </p>
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Other Housing Options</h3>
+        <h3>Other Rehousing Options</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>
-            There are other housing options customers can consider for finding a home in Sheffield that might work better for your situation. 
-            Details around mutual exchanges (for current council tenants), renting privately and housing associations can be found here:
-            <a href="https://www.sheffield.gov.uk/housing/housing-options/other-housing-options" target="_blank">Other housing options | Sheffield City Council</a>
+          There are other rehousing housing options you can consider when looking for a home in Sheffield. 
+          Social housing is an option for many but not the only one available. 
+          Where possible, we will discuss with you other rehousing options available to help you.
+          <br/>These include: 
+        </p>
+          <ul>
+            <li>Mutual exchanges- If you are a secure council tenant or an assured tenant of a registered social 
+                landlord, you may be able to exchange properties with another secure or assured tenant as long as the 
+                landlord(s) agree in writing</li>
+            <li>Renting privately - The Private Rented Solutions team can help with securing private rented accommodation 
+                through Find Your Let</li>
+            <li>Share ownership scheme- Shared ownership is a Help to Buy scheme that allows first time buyers and 
+                those who do not currently own a home to buy a share of a property</li>
+            <li>Housing association properties</li>
+          </ul>
+
+        <p>
+          You can find more information here: <a href="https://www.sheffield.gov.uk/housing/housing-options/other-housing-options" 
+          target="_blank" rel="noopener noreferrer">Other housing options | Sheffield City Council</a>
         </p>
 
         <button type="button"
@@ -4774,6 +4811,20 @@ const applyForRehousing = new ContentH(
         >
             Send link to review further information
         </button>
+
+        <p>
+          <strong>Mutual exchanges</strong> can be arranged locally, regionally or nationally and are done through subscribing to the 
+          service online on the HomeSwapper website: <a href="http://www.homeswapper.co.uk/" target="_blank" rel="noopener noreferrer">
+          http://www.homeswapper.co.uk/</a> 
+        </p>
+
+        <p>
+          <strong>Shared Ownership Scheme</strong> - operated by the Council, a number of Private Registered Providers of social housing 
+          also run Shared Ownership and other low-cost housing schemes within the city. Website: 
+          <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" 
+          target="_blank" rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>
+        </p>
+
     </div>
 </details>
 
@@ -4784,8 +4835,9 @@ const applyForRehousing = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Details of housing associations can be found through the Sheffield Directory. This link is pre-filtered to Housing Associations:
-            <a href="https://www.sheffielddirectory.org.uk/directory/?searchTab=servicesSearchTab&templateId=D770A514-E446-440B-A074-B0C8010100A3&searchText=housing%20associations&sortOption=Rank%3Basc&pageNumber=1&pageSize=15&distance=1609" target="_blank">Directory | Sheffield</a>
+            Details of housing associations in Sheffield can be found through the Sheffield Directory:
+            <a href="https://www.sheffielddirectory.org.uk/directory/?searchTab=servicesSearchTab&templateId=D770A514-E446-440B-A074-B0C8010100A3&searchText=housing%20associations&sortOption=Rank%3Basc&pageNumber=1&pageSize=15&distance=1609" 
+            target="_blank" rel="noopener noreferrer">Directory | Sheffield</a>
         </p>
 
         <button type="button"
@@ -4798,6 +4850,11 @@ const applyForRehousing = new ContentH(
         >
             Send link to review further information
         </button>
+
+        <p>
+          Some Registered Providers also advertise through <a href="https://www.b-with-us.co.uk/" 
+          target="_blank" rel="noopener noreferrer">Home - B-with-us</a>.
+        </p>
     </div>
 </details>
 
@@ -4808,8 +4865,9 @@ const applyForRehousing = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            A large amount of information about getting a council home can be found through the Sheffield Council website here:
-            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home" target="_blank">Getting a council home | Sheffield City Council</a>
+            Further information about how our Housing Register and allocation process works can be found here: 
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home" target="_blank" rel="noopener noreferrer">
+            Getting a council home | Sheffield City Council</a>
         </p>
 
         <button type="button"
@@ -4832,8 +4890,9 @@ const applyForRehousing = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Guidance on becoming and being a council tenant can be found here:
-            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-house/becoming-tenant" target="_blank">Becoming a tenant | Sheffield City Council</a>
+            Guidance on becoming and managing a council tenancy can be found here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-house/becoming-tenant" 
+            target="_blank" rel="noopener noreferrer">Becoming a tenant | Sheffield City Council</a>
         </p>
 
         <button type="button"
@@ -4868,7 +4927,7 @@ const applyForRehousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 
@@ -6694,7 +6753,7 @@ const fosteringAndAdoption = new ContentH(
   "Fostering and Adoption",
   "Details on the processes for amending bedroom eligibility for foster and adoptive applicants, including the need for confirmation from Social Services and the potential benefit implications.",
   `
-  <h3>Adoption</h3>
+  <h4>Adoption</h4>
     <p>
       Children's Services will assess your circumstances and provide information about the accommodation requirements needed to support an adoption.
       <br/>
@@ -6705,7 +6764,7 @@ const fosteringAndAdoption = new ContentH(
       Please note that being approved to adopt does not automatically result in additional priority for overcrowding. 
     </p>
   
-  <h3>Fostering</h3>
+  <h4>Fostering</h4>
     <p>
       When assessing bedroom eligibility, we will take account of the Children's Services assessment of the requirements of approved foster carers.
       <br/>
@@ -6717,7 +6776,7 @@ const fosteringAndAdoption = new ContentH(
       Please note that approval as a foster carer does not automatically result in additional priority for overcrowding.
     </p>
 
-  <h3>Financial Implications</h3>
+  <h4>Financial Implications</h4>
     <p>
       If you are considering fostering or adopting and require a larger property, it is important to consider the affordability of any future accommodation.
       <br/>
