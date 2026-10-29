@@ -8102,56 +8102,59 @@ const movingIn = new ContentH(
   `
       <h4>When can I move in once offered a property?</h4>
       <p>
-        You can arrange your moving in date as part of the viewing and Sign Up process 
-        with the <strong>Voids</strong> Officer.
+        After you accept an offer, the landlord will arrange a viewing and tenancy sign-up. 
+        Your move-in date will be agreed once the property is ready.
       </p>
   
       <h4>Standard of property when moving in</h4>
       <p>
-        Before you move into your new home we will check to make sure it is safe and secure. 
-        Where necessary we get qualified and skilled trades people to test electrical, gas, 
-        water and waste services. Our priority is to provide you with a safe living environment. 
-        We will ensure that:<br><br>
-  
-        Sometimes delays may occur due to unforeseen work that is required to bring the property up
-        to a standard that meets our Vacant Charter.  
-        When the property is ready, we will contact you to arrange an appointment to view the property 
-        and then to sign for your new tenancy, should you choose to accept. In some circumstances 
-        we may arrange a ‘work in progress’ viewing.<br><br>
-  
-        Generally, if repairs are left outstanding at the start of a tenancy, these would be minor ones 
-        not seriously affecting the use of the property and would require a small amount of work to rectify 
-        the given problems. To have completed these within the prior repairs programme/work schedule 
-        would have unnecessarily held up the letting, leaving a property standing ‘idle’ whilst there were 
-        people needing re-housing. The ‘on-tenancy’ repairs can be completed once you have moved in 
-        and will cause very little in the way of disruption, mess or upheaval.
+        Before you move into your new home, we will make sure it is safe and secure. 
+        Where required, essential checks will be completed on services such as gas, electricity and water supplies.
+      </p>
+      <p>
+        Some properties may be advertised before all works have been completed. Property adverts may include details of 
+        any known repairs, improvement works or restrictions that are still outstanding at the time of advertising.
+      </p>
+      <p>
+        If additional work is required before the property is ready, there may be a delay to the tenancy start date. 
+        We will keep you informed and arrange a viewing appointment when the property is available. In some cases, 
+        viewings may take place while works are still being completed.
+      </p>
+      <p>
+        Any outstanding works at the point of tenancy sign-up will normally be minor works that do not prevent the 
+        property from being occupied safely.
       </p>
   
       <h4>Gas / Electricity supplier</h4>
       <p>
-        Any known utilities suppliers information will be provided in the Sign-up pack.
-  
-        The responsibility/contractual agreement for arranging the supply 
-        (and the utility meter installation if necessary) is with the customer and 
-        the utility provider e.g. British Gas, Powergen etc.<br><br>
-  
-        If the supplier is not known, the customer will need to contact one of the numbers below, 
-        and then contact the utility supplier themselves:<br><br>
-  
+        Where known, utility supplier information will be provided during the tenancy sign-up process.
+      </p>
+      <p>
+        It is the tenant's responsibility to contact the supplier and arrange their gas and electricity accounts from the 
+        tenancy start date.
+      </p>
+      <p>
+        If you do not know who supplies the property, you will need to contact the relevant service to identify the supplier before 
+        setting up your account.
+      </p>
+      <p>  
         <strong>Gas</strong> - Call the M Number Enquiry Line on <a href="tel:0870 6081524">0870 6081524</a>, provided by xoserve Ltd. 
-        They will tell you the supplier and give you your Meter Point Reference Number (MPRN).<br><br>
-  
+        They will tell you the supplier and give you your Meter Point Reference Number (MPRN).
+      </p>
+      <p>  
         <strong>Electricity</strong> - Call your local electricity distribution company and ask for their Meter 
         Point Administration Service (MPAS). Alternatively, contact <a href="tel:0845 0707172">0845 0707172</a>.
       </p>
   
       <h4>Meter Readings</h4>
       <p>
-        The meter reading before they moved in - you will have been advised of this at sign up 
-        and the information will have been provided in their sign up pack. (We also advise Customers 
-        to take their own meter readings and contact the utility company themselves.)<br><br>
-  
-        The meter reading when they move out - you should contact the utility company themselves.
+        The opening meter readings will be recorded when the tenancy starts and provided as part of your sign-up information.
+      </p>
+      <p>
+        We also recommend that tenants take their own meter readings when they move in and provide these directly to their utility supplier.
+      </p>
+      <p>
+        When moving out of a property, tenants should take final meter readings and contact their utility suppliers to close their accounts.
       </p>
     `,
   {
@@ -8173,7 +8176,7 @@ const movingIn = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/11/2024", name: "George Whitehouse" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const mutualExchanges = new ContentH(
