@@ -8911,25 +8911,45 @@ const priorities = new ContentH(
   `
     <h3>Customers who have a priority</h3>  
     <p>
-      After completing security checks with the applicant, check NEC for priority banding and ‘Actions’ for who is managing the case. 
-      The Priorities Team have a public phone number <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736970')">0114 2736970</a>  and email address for enquiries 
-      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a> 
-      or if in person at Howden House the customer can be seen without an appointment.
+      After completing security checks with the applicant, check NEC for the applicant's priority band and review 
+      the Actions section to identify which officer or team is managing the case.
     </p>
-
+    <p>
+      If the customer has questions about their priority assessment, priority review, priority banding, or an active 
+      priority case, they can contact the relevant Casework Officer / Team or email 
+      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a>.
+    </p>
+    <p>
+      If the customer attends Howden House in person, they can request to speak to a Casework Officer without an 
+      appointment, subject to officer availability or a housing advice assistant who may be able to provide some advice 
+      and support relating to your priority.
+    </p>
 
     <h3>General information about housing priorities</h3>  
     <p>
-      Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
-  
-      In some cases we will make you an offer of a property that we feel meets your needs. If we are unable to contact you due to changes not notified to us, your registration may be suspended or cancelled.<br><br>
-  
-      If you may be eligible for a priority you will be asked to provide us with further information. Once you have been assessed, we will write to you and explain whether you have been given priority. If you are given priority the letter will explain what sort of properties you can bid for with the priority and when the priority will be reviewed.<br><br>
-  
-      We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.<br><br>
-  
-      A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.<br>
-     </p> 
+      Priority may be awarded where there is an assessed housing need that requires a move more urgently than would normally be 
+      achieved through Band 6 and 7. If you may be eligible for a priority, we will ask for further information and assess your 
+      circumstances. We will then write to you explaining our decision and your right to request a review if you disagree with it.
+    </p>
+    <p>
+      If a priority is awarded, we will explain the reason for the award, the type of properties you can bid for and when the 
+      priority will be reviewed. If a priority is not awarded, we will explain why and provide details of any review rights. 
+      We may also work with you, your advocates and partner agencies to provide further advice and support where appropriate.
+    </p>
+    <p>
+      Priority applicants are expected to actively bid for suitable properties and priority awards are reviewed regularly. 
+      In some circumstances, we may make a direct offer of accommodation where this is appropriate to meet the applicant's 
+      housing need.
+    </p>
+    <p>
+      Having a priority does not guarantee an immediate offer of housing. Most properties are advertised with preference to 
+      applicants in priority bands, but some properties are advertised to Band 6 applicants based on waiting time. 
+      The advertising criteria will be clearly shown in the property advert.
+    </p>
+    <p>
+      Customers should keep their housing application up to date and tell us immediately about any change in circumstances, 
+      as this may affect their application, banding or priority award.
+    </p> 
     `,
   {
     buttonLabel: "Raise Enquiry ",
@@ -8951,7 +8971,7 @@ const priorities = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 
