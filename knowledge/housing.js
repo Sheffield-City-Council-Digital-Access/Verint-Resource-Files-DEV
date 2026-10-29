@@ -7818,31 +7818,61 @@ const idFaq = new ContentH(
   "Review frequently asked questions about ID requirements for rehousing applications, including document submission and validation processes.",
   `
       <p>
-        Customers who have submitted an online application for rehousing, 
-        or have made a change to an existing Application, need to provide ID, 
-        references and proof of Child Benefit (if appropriate) in order for their application to be accepted 
-        and validated.<br><br>
-  
-        ID is required for all Household Members and should be submitted within 28 days of filling-in 
-        the Application.<br><br>
-  
-        Applicants should upload all the required documents for themselves and household members via the My Housing Portal<br><br>
+        Customers who submit a new rehousing application, or update an application where supporting documents are required, 
+        must provide the relevant ID and supporting evidence before their application can be assessed.
       </p>
+      <p>
+        Depending on their circumstances, this may include:
+      </p>
+        <ul>
+          <li>Identification documents</li>
+          <li>Landlord references</li>
+          <li>Proof of Child Benefit (where applicable)</li>
+          <li>Proof of local connection or exemption</li>
+          <li>Evidence of income, savings and financial assets</li>
+          <li>Evidence of nationality or immigration status</li>
+          <li>Details of any unspent convictions. </li>
+        </ul>
+      <p>
+        All required documents should be uploaded through My Housing within 28 days of submitting the application. 
+      </p>
+      <p>
+        Customers must provide the required supporting documents for themselves, and all household members included on the application.
+      </p>
+
       <h4>Customer advising ID/proofs have been posted to us</h4>
       <p> 
-        Customers should not post original documents to us, but when a customer has posted their documents to us,
-        they should call to advise us of this. Advisor Note: The Registrations Team need to be advised so they
-        can check DMS in the next couple of days and subsequently validate the application. <br>
-        Remember to take a note of the names and dates of birth of all household members and include them 
-        in any email or case that you send to the Registration Team.<br><br>
-  
-        Advise the customer that it can take up to a month for their documents to be returned.
+        Customers should upload documents through <strong>My Housing</strong> wherever possible.
       </p>
+      <p>
+        If a customer is unable to upload documents through My Housing in the first instance, they can provide them in person 
+        within 28 days of the date they completed the application online.
+      </p>
+      <p>
+        If documents have already been posted:
+        <br/><strong>Advisor Note</strong>
+      </p>
+        <ul>
+          <li>Notify the Housing Information and Registration Teamto check DMS</li>
+          <li>Record the names and dates of birth of all household members</li>
+          <li>Include these details in the email or case sent to the Housing Information and Registration Team</li>
+          <li>Advise the customer that original documents may take up to one month to be returned</li>
+        </ul>
+
       <h4>Customer submitted application but did not provide ID within 28 days</h4>
       <p> 
-        We will not re-instate your Application and you should 
-        submit a new Application and provide the relevant ID.
+        If the required documents are not provided within 28 days, the application cannot normally be assessed or accepted. 
       </p>
+      <p>
+        Your housing application will not normally be accepted until all required supporting information has been received and 
+        maybe rejected as incomplete.
+      </p>
+      <p>
+        If the application has been closed or cancelled because the required documents were not received, the customer will need 
+        to submit a new application through <strong>My Housing</strong> and provide all required supporting documents for themselves 
+        and any household members.
+      </p>
+
     `,
   {
     buttonLabel: "Report Housing Enquiry",
@@ -7867,7 +7897,7 @@ const idFaq = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "01/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const idReferences = new ContentH(
