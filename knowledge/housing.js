@@ -7909,20 +7909,20 @@ const idReferences = new ContentH(
       To verify the information provided in your housing application, we will need supporting documents for everyone included on the application.
     </p>
     <p>
-      <strong>Current Sheffield City Council tenants</strong>
+      <br/><strong>Current Sheffield City Council tenants</strong>
     </p>
       <ul>
         <li>Current SCC tenants must provide the required ID</li>
         <li>You do not need to provide a landlord reference because we already have access to your tenancy information</li>
       </ul>
     <p>
-      <strong>All other applicants</strong>
+      <br/><strong>All other applicants</strong>
     </p>
       <ul>
         <li>You must provide the required ID and a completed landlord or professional reference form</li>
       </ul>
     <p>
-      <strong>Identification requirements</strong>
+      <br/><strong>Identification requirements</strong>
     </p>
       <ul>
         <li>Each applicant must provide two forms of identification, including one showing their current address</li>
@@ -7942,14 +7942,14 @@ const idReferences = new ContentH(
         <li>Details of any unspent criminal convictions</li>
       </ul>
     <p>
-      <strong>References</strong>
+      <br/><strong>References</strong>
     </p>
       <ul>
         <li>Most applicants must provide a completed Sheffield City Council reference form from their current or most recent landlord or accommodation provider</li>
         <li>If you are unable to obtain a landlord reference, please contact the Housing Service so alternative arrangements can be considered</li>
       </ul>
     <p>
-      <strong>Submitting your documents</strong>
+      <br/><strong>Submitting your documents</strong>
     </p>
       <ul>
         <li>Documents should be uploaded through your My Housing account in the first instance, you can upload your original ID documents or 
@@ -7968,7 +7968,7 @@ const idReferences = new ContentH(
     </summary>
     <div class="accordion-content">
 
-      <h3>Proof of Identity</h3>
+      <h4>Proof of Identity</h4>
         <ul>
           <li>Marriage certificate</li>
           <li>Divorce orannulment papers</li>
@@ -7986,7 +7986,7 @@ const idReferences = new ContentH(
           <li>Letter from Social Worker, Probation Officer or Solicitor</li>
         </ul>
 
-      <h3>Proof of Address</h3>
+      <h4>Proof of Address</h4>
         <ul>
           <li>Driving licence</li>
           <li>Utility bill dated within the last three months</li>
@@ -7999,13 +7999,13 @@ const idReferences = new ContentH(
           <li>Evidence of benefit payments</li>
         </ul>
 
-      <h3>Proof of Child Benefit</h3>
+      <h4>Proof of Child Benefit</h4>
         <ul>
           <li>Child benefit award letter</li>
           <li>If no award letter is available, the last three consecutive months of bank statements showing Child Benefit payments</li>
         </ul>
 
-      <h3>Proof of Local Connection (if requested)</h3>
+      <h4>Proof of Local Connection (if requested)</h4>
         <p>
           You may be asked to provide evidence of your local connection. This could include:
         </p>
