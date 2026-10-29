@@ -5579,6 +5579,7 @@ const bidding = new ContentH(
         <p>
           Your request cannot normally be fully assessed until the required supporting documents have been received.
         </p>
+        <br>
 
         <button 
             type="button"
@@ -5615,6 +5616,7 @@ const bidding = new ContentH(
               <li>Confirm removal from the existing application</li>
               <li>Submit a new application if needed></li>
             </ul>
+          <br>
 
       <button 
             type="button"
