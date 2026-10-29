@@ -4853,7 +4853,7 @@ const applyForRehousing = new ContentH(
 
         <p>
           Some Registered Providers also advertise through <a href="https://www.b-with-us.co.uk/" 
-          target="_blank" rel="noopener noreferrer">Home - B-with-us</a>.
+          target="_blank" rel="noopener noreferrer">B-with-us</a>.
         </p>
     </div>
 </details>
@@ -5218,27 +5218,96 @@ const bidding = new ContentH(
   "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
   `
     <p>
-        After you have registered for housing, you express your interest in renting a
-        property by making a bid. You only have to bid once per property. You make
-        bids online at the Housing Online website
-        <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> <br> 
+      After you have registered for housing, you can express your interest in a property by placing a <strong>bid</strong> or <strong>bids</strong>.
     </p>
-    
     <p>
-      You will only be able to bid on properties once your application is active and only for properties you are eligible for. The properties you 
-      see to bid on is determined by the information you have provided on your application form. You will only be able to bid for the size and type 
-      of property that is suitable to meet your household needs. 
+      In Sheffield, bidding means you are showing an interest in a property – it does not involve any money.
     </p>
+    <p>
+        You can place bids through your <strong>My Housing account</strong> by visiting: 
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> <br> 
+    </p>
+    <p>
+       You will only be able to bid once:
+    </p>
+      <ul>
+        <li>Your application is <strong>active</strong>, and</li>
+        <li>You have been placed in a band</li>
+      </ul>
+    <p>
+      You will only be able to bid for properties:
+    </p>
+      <ul>
+        <li>You are <strong>eligible for</strong>, and</li>
+        <li>That matches your <strong>household size</strong></li>
+        <li>Is advertised to your band</li>
+      </ul>
 
     <p>
-      Please check the additional information on the property advert, before placing a bid to check it is suitable. Refusing a property that has 
-      been offered to you could affect your banding or the position of your application on the housing register.
+      The properties you can see and bid for are based on the information provided in your housing application.
+      <br/>This includes:
     </p>
+      <ul>
+        <li>Your household members</li>
+        <li>Your bedroom entitlement</li>
+        <li>Any specific restrictions including areas</li>
+        <li>Medical/mobility needs</li>
+        <li>Requirement and need of specific adaptions</li>
+      </ul>
 
     <p>
-      Guidance on applying for a council home, becoming a tenant and exploring your housing choices can be found at 
-      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" target="_blank" rel="noopener">
-      Registering for a council home | Sheffield City Council </a>
+      <strong>Priority applicants and bidding:</strong>
+    </p>
+    <p>
+      If you have been awarded priority an officer will support, you with your bidding through assisted bidding. 
+    </p>
+    <p>
+      Before they do this, they will explain the:
+    </p>
+      <ul>
+        <li>terms and conditions of your priority including any restrictions such as locations or property types they have agreed</li>
+        <li>the reasons as to why they are placing assisted bids</li>
+      </ul>
+    <p>
+      Once you have been awarded priority, we expect you to place 3 bids for any suitable properties advertised during that cycle. 
+    </p>
+    <p>
+      Your priority officer will provide you with advice to help you bid for suitable properties to help resolve your housing need as soon as possible.  
+    </p>
+    <p>
+      Sometimes you may need to compromise on your ideal choice of housing to achieve the move you need. It will not always be possible to 
+      meet all your aspirations, but your priority officer will support you as best as he/she can and discuss this with you.
+    </p>
+
+    <h4>Checking Property Adverts</h4>
+    <p>
+      Before placing a bid, you must carefully check the property advert to make sure it is suitable.
+    </p>
+    <p>
+      Adverts will include important information such as:
+    </p>
+      <ul>
+        <li>Property type and size</li>
+        <li>Location</li>
+        <li>Any age restrictions</li>
+        <li>Adaptations or special requirements</li>
+        <li>Any Local Lettings criteria</li>
+        <li>Information on any repairs or works pending, along with an estimated date of availability</li>
+        <li>Where a property is not immediately available due to repairs or works, this will be clearly stated in the advert</li>
+      </ul>
+    <p>
+      If you are offered a property and refuse it without good reason, this may:
+    </p>
+      <ul>
+        <li>Affect your housing band</li>
+        <li>Reduce your priority</li>
+        <li>Or affect your position on our Housing Register</li>
+      </ul>
+
+    <p>
+      Further information about joining our Housing Register, bidding for properties and other housing options can be found on the Sheffield City 
+      Council website. Please visit: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" 
+      target="_blank" rel="noopener">Registering for a council home | Sheffield City Council</a>
     </p>
 
     <button type="button"
@@ -5253,40 +5322,37 @@ const bidding = new ContentH(
     </button>
         
 
-    <h3>How to View Available Properties and Bidding Periods</h3>
+    <h3>Bidding Cycles and Available Properties</h3>
+    <p>
+      Properties are advertised through the Choice Based Lettings system. 
+    </p>
+      <ul>
+        <li>Properties are advertised for <strong>7 days</strong></li>
+        <li>There will be up to <strong>5 cycles</strong> per week – there may be days that there are no properties advertised. 
+        A new cycle will start each working day (Monday to Friday) </li>
+        <li>New properties can be added on any working day, so you should check your account regularly</li>
+      </ul>
+    <p>
+      You can place up to 3 bids per cycle on suitable properties advertised each day. Once the cycle closes, bids cannot be changed or withdrawn.
+    </p>
 
-    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
-
-    <ol>
-      <li>
-        <strong>Go to:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
-          https://housing.sheffield.gov.uk/
-        </a>
-      </li>
-
-      <li>
-        <strong>Log in</strong> with your username and password.
-      </li>
-
-      <li>
-        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
-      </li>
-
-      <li>
-        At the top right of the page, click the <strong>Actions</strong> button.
-      </li>
-
-      <li>
-        From the drop-down menu, select <strong>All Available Properties</strong>.
-      </li>
-
-      <li>
-        A list of properties will appear along with their <strong>bidding periods</strong>.
-       </li>
-    </ol>
-
-
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to View and Bid for Properties</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <ol>
+          <li><strong>Go to:</strong> <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+          https://housing.sheffield.gov.uk/</a></li>
+          <li> Log in to your My Housing account</li>
+          <li>Click "Search and bid for a property"</li>
+          <li>Click "Actions" and select "All Available Properties"</li>
+          <li>Select a property and place your bid</li>
+        </ol>
+      <p>
+        A list of available properties and their closing dates will be shown.
+      </p>
         <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -5294,26 +5360,11 @@ const bidding = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
->
+        >
             Send link to review further information
-    </button>
-
-        <br>You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
-        to Tuesday).
-      </p>
-
-      <details class="accordion">
-        <summary class="accordion-header">
-          <h3>Why can't you bid for me?</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-          <p>
-            If you need assistance placing a bid, you can visit Howden House on Union Street, Sheffield, or your nearest
-            neighbourhood housing office.
-          </p>        
-        </div>
-      </details>
+        </button>
+    </div>
+  </details>
 
       <details class="accordion">
         <summary class="accordion-header">
@@ -5322,38 +5373,43 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
-            the links from the homepage.
-            <br>
-
-    <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-    
->
-            Send link to review further information
-    </button>
-            <br>
-            <br>
-              Click ‘Log into my account’.
-            <br>
-            <br>
-              Enter your login details: Your unique reference number (found on the
-              enclosed letter), your memorable date, and your password. Contact us
-              if you need these.
-            <br>
-            <br>
-              Once logged in, click ‘Update my details’ under the ‘Application
-              renewal required’ heading. Check your information carefully, confirm
-              that the details are correct, and submit the form. You must submit the
-              form even if there are no changes.
+            Some properties may be advertised on a <strong>first come first served basis</strong>.
+            <br/>This means:
+          </p>
+            <ul>
+              <li>The first eligible applicant to place a bid will be considered for the property (subject to checks).</li>
+              <li>Once a bid has been made the property advert will close. </li>
+            </ul>
+          <p>
+            First come First Served properties will be clearly labelled when advertised.
           </p>
         </div>
       </details>
+
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Why can't you bid for me?</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            If you need help placing a bid, support will be available.
+            <br/>
+          </p>
+            <ul>
+              <li>Contact the Housing Service by telephone</li>
+              <li>Visit a local housing office</li>
+              <li>Ask an advocate, family member or support worker to assist you</li>
+              <li>Receive support from Council staff where appropriate</li>
+              <li>Contact your priority officer</li>
+            </ul>
+          <p>
+            Bids can be placed online, by telephone or in person where available.
+          </p>        
+        </div>
+      </details>
+
+
 
       <details class="accordion">
         <summary class="accordion-header">
