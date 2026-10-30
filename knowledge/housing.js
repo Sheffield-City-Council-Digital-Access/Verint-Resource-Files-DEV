@@ -8263,11 +8263,13 @@ const mutualExchanges = new ContentH(
           <div class="details-accordion-content">
             <p>
               Before you can access all HomeSwapper features, your registration must be approved.
+            </p>
               <ul>
                 <li>New registrations are usually approved within 1 working day</li>
                 <li>Registrations submitted on a Friday or over a weekend are normally approved on Monday</li>
                 <li>Registrations submitted on a Bank Holiday will be approved on the next working day</li>
               </ul>
+            <p>
               Once approved, you will be able to view full property details and start looking for exchange matches.
             </p>
           </div>
@@ -8313,11 +8315,13 @@ const mutualExchanges = new ContentH(
                 <br/>
                 <br/>
                 Do not move until permission has been granted and a move date has been agreed. Before we can agree, we will check that:
+              </p>
               <ul>
                 <li>You have a clear current rent account</li>
                 <li>There is no possession order on your home</li>
                 <li>Your home is in satisfactory condition</li>
               </ul>
+              <p>
                 There are also rules that apply in terms of eligibility for different sizes and types of property. 
               </p>
             </div>
@@ -8349,12 +8353,14 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 It depends on the type of arrears. 
+              </p>
                 <ul>
                   <li>Only current rent arrears are taken into consideration.</li>
                   <li>You must have a clear current rent account before full consent can be given for a Mutual Exchange.</li>
                   <li>You will not be able to move if you have current rent arrears, even if you are making payments under a repayment agreement.</li>
                   <li>Former tenancy arrears, recharges and other historic housing debts will not normally prevent a Mutual Exchange from taking place.</li>
                 </ul>
+              <p>
                 If there are current rent arrears on the account, you may be given conditional consent. 
                 This means the exchange cannot proceed until the arrears have been cleared and all other requirements have been met.
               </p>
