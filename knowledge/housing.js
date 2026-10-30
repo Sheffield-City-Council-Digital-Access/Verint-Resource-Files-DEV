@@ -7390,8 +7390,8 @@ const housingAssociations = new ContentH(
                 DN21 1GG<br><br>
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 027 2057')">0800 027 2057</a>
-                Email: <a href="mailto:info@acisgroup.co.uk">info@acisgroup.co.uk</a>
-                <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br></em>
+                <br>Email: <a href="mailto:info@acisgroup.co.uk">info@acisgroup.co.uk</a>
+                <br><a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br></em>
                 </p>
 
      <button type="button"
@@ -7417,39 +7417,77 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
+
+        <details class="accordion">
+          <summary class="accordion-header">
+            <h3>Alpha Living</h3>
+            <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+            <p>
+              <em>Alpha (R.S.L.) Limited<br>
+              Greenside House<br>
+              260 St Aidan’s Drive<br>
+              Sheffield<br>
+              S2 2ND<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 460 9870')">0330 460 9870</a>
+              <br>Email: <a href="enquiries@alpha-living.co.uk">enquiries@alpha-living.co.uk</a>
+              <br><a href="https://www.alpha-living.co.uk/" target="_blank">https://www.alpha-living.co.uk/</a> <br></em>
+            </p>
+
+            <p>[Insert Send Link]</p>
+            <p>
+              Specialist Housing Association providing housing for over 55’s. They have apartments to provide 
+              independent living with Development Managers and Housekeepers close by if assistance is needed.
+            </p>
+        </div>
+      </details>      
+
+      
           <details class="accordion">
             <summary class="accordion-header"><h3>Anchor Trust</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a><br>
-                Customer Centre<br>
-                2 Godwin Street,<br>
-                Bradford,<br>
-                BD1 2ST<br>
-                GEN EMAIL: <a href="mailto:contact@anchor.org.uk">contact@anchor.org.uk</a>
-              </address>
-              <p>
-                Sheltered housing for the elderly. Applicants need to be 55+.
-                Waiting list, priority awarded to the following groups: homeless, fleeing harassment, and leaving hospital with nowhere else to go.
-              </p>
+            <p>
+              <em>Anchor Trust<br>
+              Customer Centre<br>
+              2 Godwin Street<br>
+              Bradford<br>
+              BD1 2ST<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 731 2020')">0800 731 2020</a>
+              <br>Email: <a href="contact@anchor.org.uk">contact@anchor.org.uk</a>
+              <br><a href="https://www.anchor.org.uk/" target="_blank">https://www.anchor.org.uk/</a> <br></em>
+            </p>
+
+            <p>[Insert Send Link]</p>
+
+            <p>
+              Sheltered housing for the elderly. Applicants need to be 55+. 
+              Waiting list, priority awarded to the following groups: homeless, 
+              fleeing harassment, and leaving hospital with nowhere else to go.
+            </p>
             </div>
           </details>
   
+
           <details class="accordion">
             <summary class="accordion-header"><h3>Arches Housing Association</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Arches Housing Limited, tel <a href="tel:0114 2288100">0114 2288100</a><br>
-                122 Burngreave Road<br>
-                Sheffield<br>
-                S3 9DE<br>
-                Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a><br>
-                Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a>
-                <br>
+              <p>
+              <em>Arches Housing Limited<br>
+              122 Burngreave Road<br>
+              Sheffield<br>
+              S3 9DE<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 228 8100')">0114 228 8100</a>
+              <br>Email: <a href="info@archeshousing.org.uk">info@archeshousing.org.uk</a>
+              <br><a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a> <br></em>
+            </p>
       <button
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
@@ -7464,8 +7502,9 @@ const housingAssociations = new ContentH(
        </button>
               </address>
               <p>
-                Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a> 
-                <br>
+                Mutual exchanges advertised and managed through home swapper: register on 
+                <a href="https://www.homeswapper.co.uk" target="_blank" rel="noopener noreferrer">https://www.homeswapper.co.uk</a> 
+              </p>
                 
        <button type="button"
                 class="dform_widget email-btn dform_widget_type_button"
@@ -7474,78 +7513,62 @@ const housingAssociations = new ContentH(
                 window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
                 }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`
-    "
->
+                "
+      >
                 Send link to review further information
        </button>
 
-                Information on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
-                An affordability and risk assessment will be carried out, and a previous landlord reference requested for all nominees.
-                We do not hold a waiting list for the general public.
+              <p>
+                Information on lettings: Flats and houses available, including some over 60s independent living accommodation 
+                (no warden on site). Must be 18+ and eligible for benefits if not working. An affordability and risk assessment 
+                will be carried out, and a previous landlord reference requested for all nominees. 
+                We do not hold a waiting list for the general public..
               </p>
             </div>
           </details>
   
+
           <details class="accordion">
             <summary class="accordion-header"><h3>Clarion Housing Group</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <p>
-                Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a><br>
-                Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
-              </p>
+            <p>
+              <em>Clarion Housing Group<br>
+              Reed House<br>
+              Peachman Way<br>
+              Broadland Business Park<br>
+              Norwich<br>
+              NR7 0WF<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 500 8000')">0330 500 8000</a>
+              <br><a href="https://www.myclarionhousing.com/" target="_blank">https://www.myclarionhousing.com/</a> <br></em>
+            </p>
+
+            <p>[Insert Send Link]</p>
+            
+            <p>
+              Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
+            </p>
             </div>
           </details>
   
-          <details class="accordion">
-            <summary class="accordion-header"><h3>Together Group with Pennine</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-            <div class="accordion-content">
-              <address>
-                Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a><br>
-                Harrison Street<br>
-                Wakefield<br>
-                WF1 1PS
-              </address>
-              <p>
-                1 & 2 bed flats. Two, three, and four bedroom houses. Points system - based on housing need. Small, scattered developments. Need to be aged 18+, but in some cases will take 16+.
-              </p>
-            </div>
-          </details>
-  
-          <details class="accordion">
-            <summary class="accordion-header"><h3>English Churches Housing Group / The Riverside Group</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-            <div class="accordion-content">
-              <address>
-                English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1559002">0345 1559002</a><br>
-                2 Estuary Boulevard<br>
-                Estuary Commerce Park<br>
-                Liverpool<br>
-                L24 8RF
-              </address>
-              <p>
-                Since English Churches Housing Group merged with The Riverside Group in March 2007, their waiting list has been closed.
-                Some of their properties are still being offered through the Choice Based Letting System. To register, complete a Council Housing Service rehousing registration form.
-              </p>
-            </div>
-          </details>
-  
+
           <details class="accordion">
             <summary class="accordion-header"><h3>Great Places Housing Group</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a><br>
-                2a Derwent Avenue<br>
-                Manchester<br>
-                M21 7QP<br>
-                <a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a> 
-                <br>
+            <p>
+              <em>Great Places Housing Group<br>
+              2A Derwent Avenue<br>
+              Manchester<br>
+              M21 7QP<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 123 1966')">0300 123 1966</a>
+              <br>Email: <a href="customerhub@greatplaces.org.uk">customerhub@greatplaces.org.uk</a>
+              <br><a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a> <br></em>
+            </p>
                 
        <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
@@ -7554,129 +7577,69 @@ const housingAssociations = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Great%20Places\`
-    "
->
+        "
+      >
             Send link to review further information
        </button>
 
-              </address>
               <p>
-                Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). To register, a Council Housing Service rehousing registration form needs to be completed.
-                Properties are advertised through the Choice Based Letting System and a local lettings policy.
+                Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). 
+                To register, a Council Housing Service rehousing registration form needs to be completed. 
+                Properties are advertised through the Choice Based Letting System and a local lettings policy. 
                 Some properties are advertised to existing Great Places tenants under their Local Lettings Policy.
               </p>
             </div>
           </details>
   
-          <details class="accordion">
-            <summary class="accordion-header"><h3>Guinness Northern Counties</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-            <div class="accordion-content">
-              <address>
-                Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
-                St Helens Court,<br>
-                Stirling Cl,<br>
-                Elsecar,<br>
-                Barnsley<br>
-                S74 8DY<br>
-                <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
-                <br> 
-
-      <button type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information send link"
-        onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Guinness%20Partnership\`
-    "
->
-    Send link to review further information
-     </button>
-              </address>
-              <p>
-                Available properties are either advertised through the Council’s Housing Online and Housing Online website or are allocated from Guinness Northern Counties’ own waiting list.
-                You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
-              </p>
-            </div>
-          </details>
   
           <details class="accordion">
             <summary class="accordion-header"><h3>Home Group</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Home Group, tel <a href="tel:0345 1414663">0345 1414663</a><br>
+              <p>
+                <em>Home Group<br>
                 Home Group Ltd<br>
-                2nd Floor, 20 Westfield Terrace<br>
+                2nd Floor<br>
+                20 Westfield Terrace<br>
                 Sheffield<br>
-                S1 4GH<br>
-                <a href="mailto:contactus@homegroup.org.uk" target="_blank">contactus@homegroup.org.uk</a> 
-              </address>
-              <p>
-                2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, and any properties becoming available will be advertised through the Choice Based Lettings system.
+                S1 4GH<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 141 4663')">0345 141 4663</a>
+                <br>Email: <a href="contactus@homegroup.org.uk">contactus@homegroup.org.uk</a>
+                <br><a href="https://www.homegroup.org.uk/" target="_blank">https://www.homegroup.org.uk/</a> <br></em>
               </p>
+              <p>[Insert Send Link]</p>
+              <p>
+                2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, 
+                and any properties becoming available will be advertised through the Choice Based Lettings system.
+              </p>  
             </div>
           </details>
-  
+
+
           <details class="accordion">
-            <summary class="accordion-header"><h3>Housing 21</h3>
+            <summary class="accordion-header"><h3>Incommunities Ltd</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Housing 21, tel <a href="tel:0370 192 4000">0370 192 4000</a><br>
-                Tricorn House<br>
-                51–53 Hagley Road<br>
-                Birmingham<br>
-                B16 8TP<br>
-                <a href="mailto:enquiries@housing21.org.uk" target="_blank">enquiries@housing21.org.uk</a> 
-              </address>
               <p>
-                Flats and bedsits for 60+. If registered disabled, 55+. Allocation system based on waiting time.
-              </p>
+              <em>Incommunities Ltd<br>
+              The Quays<br>
+              Victori Street<br>
+              Shipley<br>
+              BD17 7BN<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 175 9540')">0330 175 9540</a>
+              <br>Email: <a href="enquiry@incommunities.co.uk">enquiry@incommunities.co.uk</a>
+              <br><a href="https://www.incommunities.co.uk/" target="_blank">https://www.incommunities.co.uk/</a> <br></em>
+            </p>
+            <p>[Insert Send Link]</p>
             </div>
           </details>
   
-          <details class="accordion">
-            <summary class="accordion-header"><h3>Johnnie Johnson Housing Trust Ltd</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-            <div class="accordion-content">
-              <address>
-                Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a><br>
-                Eden Point,<br>
-                Three Acres Lane,<br>
-                Cheadle Hulme,<br>
-                Cheadle,<br>
-                SK8 6RL<br>
-                <a href="mailto:talktous@jjhousing.co.uk" target="_blank">talktous@jjhousing.co.uk</a>  
-              </address>
-              <p>
-                Bedsits, 1 & 2 bed flats, 2 + 3 bed houses. Need to be aged 18+, but some age-banded schemes. Allocation based on waiting time.
-              </p>
-            </div>
-          </details>
   
-          <details class="accordion">
-            <summary class="accordion-header"><h3>Padley</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-            <div class="accordion-content">
-              <address>
-                Padley, tel <a href="tel:0114 2666626">0114 2666626</a><br>
-                208 Crookes<br>
-                S10 1TG<br>
-                <a href="mailto:sheffieldcrookeslettings@hunters.com" target="_blank">sheffieldcrookeslettings@hunters.com</a>
-              </address>
-              <p>
-                Sheltered accommodation and 1-bed flats mainly for the elderly. Point system based on personal circumstances.
-              </p>
-            </div>
-          </details>
-  
+
           <details class="accordion">
             <summary class="accordion-header"><h3>Places for People</h3>
           <div class="accordion-icon"></div>
@@ -7739,22 +7702,6 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="accordion">
-            <summary class="accordion-header"><h3>Sheffield Jewish Housing Association</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-            <div class="accordion-content">
-              <address>
-                Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a><br>
-                22 Kingfield Road<br>
-                Sheffield<br>
-                S11 9AS
-              </address>
-              <p>
-                Accommodation for over 60’s, Jewish and non-Jewish members of the community. 1-bed flats, waiting list system.
-              </p>
-            </div>
-          </details>
   
           <details class="accordion">
             <summary class="accordion-header"><h3>South Yorkshire Housing Association</h3>
@@ -7776,6 +7723,43 @@ const housingAssociations = new ContentH(
               </p>
             </div>
           </details>
+          
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Guinness Northern Counties</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <address>
+                Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
+                St Helens Court,<br>
+                Stirling Cl,<br>
+                Elsecar,<br>
+                Barnsley<br>
+                S74 8DY<br>
+                <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
+                <br> 
+
+      <button type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Guinness%20Partnership\`
+    "
+>
+    Send link to review further information
+     </button>
+              </address>
+              <p>
+                Available properties are either advertised through the Council’s Housing Online and Housing Online website or are allocated from Guinness Northern Counties’ own waiting list.
+                You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
+              </p>
+            </div>
+          </details>
+
+
   
           <details class="accordion">
             <summary class="accordion-header"><h3>Together Housing Group</h3>
