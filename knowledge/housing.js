@@ -8258,7 +8258,7 @@ const mutualExchanges = new ContentH(
             </div>
           </details>
 
-        <details class="accordion">
+        <details class="details-accordion">
           <summary>How long will it take for my HomeSwapper registration to be approved?</summary>
           <div class="details-accordion-content">
             <p>
@@ -16892,7 +16892,7 @@ const olderPersonsIndependentLiving = new ContentH(
       You will receive help and advice on claiming Welfare and/or Housing Benefit at the start of your tenancy.
     </p>
 
-    <h3>What are the benefits of OPIL Accommodationn</h3>
+    <h3>What are the benefits of OPIL Accommodation</h3>
     <p>
       OPIL can offer:
     </p>
