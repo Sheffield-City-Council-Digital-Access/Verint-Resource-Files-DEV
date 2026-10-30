@@ -7367,11 +7367,10 @@ const housingAssociations = new ContentH(
   "Explore various housing associations in Sheffield, offering a range of properties and eligibility criteria for different housing needs.",
   `
       <p>
-        Housing Associations and Housing Trusts are non-profit making, independent organisations.
-        They vary widely in the types of people they house.
-        Some cater for all groups giving priority for those with the most urgent housing need.
-        Others specialise in helping particular groups of people, e.g. the elderly, disabled or those with other specific needs.
-        Public numbers cannot be used on freephone.
+        Housing Associations and Housing Trusts are non-profit making, independent organisations. 
+        They vary widely in the types of people they house. Some cater for all groups giving priority for those 
+        with the most urgent housing need. Others specialise in helping particular groups of people, e.g. the 
+        elderly, disabled or those with other specific needs. Public numbers cannot be used on freephone.
       </p>
   
       <details class="accordion">
@@ -8206,12 +8205,25 @@ const mutualExchanges = new ContentH(
   "Details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, including required documentation, restrictions, and steps to complete an exchange.",
   `
       <p>
-        A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
-        their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
-  
-        To apply for a Mutual Exchange you need to fill in an online application form. Go to the HomeSwapper website at: <a href="https://www.homeswapper.co.uk/" target="_blank">https://www.homeswapper.co.uk/</a> <br>
-        You will need to create an account if you do not already have one. It is free to register for Sheffield City Council tenants. <br>
-        More information on Mutual Exchanges and how to apply can be found on the SCC website here: <a href="https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else" target="_blank">https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else</a>.
+        A Mutual Exchange is when a secure council tenant or an assured tenant of a Housing Association exchanges 
+        homes with another secure or assured tenant, with permission from their landlord.
+      </p>
+      <p>
+        Council tenants with an introductory tenancy do not have the legal right to mutually exchange until their 
+        tenancy becomes a secure tenancy.
+      </p>
+      <p> 
+        To register for a Mutual Exchange, customers can use HomeSwapper: 
+        <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">https://www.homeswapper.co.uk/</a>
+      </p>
+      <p>
+        Registration is free for Sheffield City Council tenants
+      </p>
+      <p>
+        More information can be found on the Sheffield City Council website: 
+        <a href="https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else" target="_blank" rel="noopener noreferrer">
+        Exchange your property with someone else | Sheffield City Council</a>.
+      </p>
         <br>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
@@ -8222,73 +8234,61 @@ const mutualExchanges = new ContentH(
         >
         Send link to register online
         </button>
-        
-        <br>
-        <br>
-  
-        Advisor Note: Check for updates on the progress of a customer's mutual exchange on NECH.
+      <p>
+        Advisor Note: Check NEC for updates on the progress of a customer's mutual exchange..
       </p>
   
+
       <details class="accordion">
         <summary class="accordion-header">
           <h3>FAQs</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <details class="details-accordion">
+        
+        <details class="details-accordion">
             <summary>How long do I have to live in a Council tenancy before I can have an exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                You can Mutually Exchange as soon as you have a <strong>secure</strong> Council Tenancy except if you have one 
-                of the criteria set out below.
+                You can apply for a Mutual Exchange as soon as you have a secure tenancy.
               </p>
               <p>
-                Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
+                If you have an introductory tenancy, you must wait until your tenancy becomes secure before you can exchange.
               </p>
-              <ul>
-                <li>You have an introductory tenancy or another type of tenancy that is not Secure or Assured.</li>
-                <li>The tenancy is subject to a court order for possession.</li>
-                <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
-                <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
-                <li>The property is substantially larger than you and your family need.</li>
-                <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
-                <li>The property has been let as a service tenancy.</li>
-                <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
-                <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
-                <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
-              </ul>
             </div>
           </details>
+
+        <details class="accordion">
+          <summary class="accordion-header">
+            <h3>How long will it take for my HomeSwapper registration to be approved?</h3>
+          <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+            <p>
+              Before you can access all HomeSwapper features, your registration must be approved.
+            </p>
+              <ul>
+                <li>New registrations are usually approved within 1 working day</li>
+                <li>Registrations submitted on a Friday or over a weekend are normally approved on Monday</li>
+                <li>Registrations submitted on a Bank Holiday will be approved on the next working day</li>
+              </ul>
+            <p>
+              Once approved, you will be able to view full property details and start looking for exchange matches.
+            </p>
+          </div>
+        </details>
   
           <details class="details-accordion">
-            <summary>How do I find someone to exchange with? (Homeswapper)</summary>
+            <summary>How do I find someone to exchange with?</summary>
             <div class="details-accordion-content">
               <p>
-                HomeSwapper is an independent nationwide service for social housing tenants who want to exchange their property. 
-                As a Sheffield City Council tenant, you can register for free and this will allow you to search for properties anywhere in the UK.<br><br>
-   
-                HomeSwapper offers a matching service and will send you details of suitable exchanges via email or text. 
-                The HomeSwapper website is <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>.
-                <br>          
-                <button type="button"
-                class="dform_widget email-btn dform_widget_type_button"
-                aria-label="For further information send link"
-                onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`
-    "
->
-    Send link to review further information
- </button>
-                <br>
-                <br>
-                Before you get full access to the website, your registration will need to be approved. 
-                New submissions are approved daily, so except for weekends, it would be a maximum of 24 hours before you can view full details.<br><br>
-  
-                Any registrations submitted on a Friday or over the weekend will be approved on Monday morning, and for Bank Holidays, 
-                it will be the next working day.
+                HomeSwapper is a free nationwide exchange service for social housing tenants.
               </p>
+              <p>
+                As a Sheffield City Council tenant, you can register free of charge and search for exchange 
+                opportunities across the UK. HomeSwapper also provides match suggestions by email and text.
+              </p>
+
             </div>
           </details>
   
@@ -8296,11 +8296,13 @@ const mutualExchanges = new ContentH(
             <summary>What happens when I have someone to exchange with?</summary>
             <div class="details-accordion-content">
               <p>
-                Once you have found a suitable Mutual Exchange, all parties involved will need to complete a Mutual Exchange application form (this includes anyone involved who is not a Council tenant). 
-                Please see the website for further information on how to apply.<br><br>
-  
-                The forms will then be processed by staff within the Mutual Exchange Team, who will contact you directly. 
-                If anyone involved is not a Sheffield City Council tenant, paperwork will also need to be completed and returned to the other housing provider(s).
+                Once a suitable exchange has been identified, all parties involved must complete the Mutual Exchange application process.
+              </p>
+              <p>
+                Applications will be assessed by the Mutual Exchange Team. Where another landlord is involved, they will also carry out their own checks and approval process.
+              </p>
+              <p>
+                You should not make any arrangements to move until written permission has been granted by all landlords involved.
               </p>
             </div>
           </details>
@@ -8309,7 +8311,13 @@ const mutualExchanges = new ContentH(
             <summary>Do I need permission to do a Mutual Exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                Yes. The landlord of everyone involved in the exchange must agree to it. Before we can agree, we will check that:
+                Yes.
+              </p>
+              <p>
+                All landlords involved must give written permission before an exchange can take place.
+              </p>
+              <p>
+                Do not move until permission has been granted and a move date has been agreed. Before we can agree, we will check that:
               </p>
               <ul>
                 <li>You have a clear current rent account</li>
@@ -8318,7 +8326,6 @@ const mutualExchanges = new ContentH(
               </ul>
               <p>
                 There are also rules that apply in terms of eligibility for different sizes and types of property. 
-                Remember that you should not move until you have written permission from us and a move date has been agreed.
               </p>
             </div>
           </details>
@@ -8327,18 +8334,19 @@ const mutualExchanges = new ContentH(
             <summary>Can a Mutual Exchange be refused?</summary>
             <div class="details-accordion-content">
               <p>
-                Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
+                Mutual Exchanges are normally allowed, but permission may be refused if:
               </p>
               <ul>
                 <li>The tenancy is subject to a court order for possession.</li>
                 <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
-                <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
-                <li>The property is substantially larger than you and your family need.</li>
-                <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
-                <li>The property has been let as a service tenancy.</li>
-                <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
-                <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
-                <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
+                <li>The tenant or a household member is subject to a court order or proceedings relating to antisocial behaviour.</li>
+                <li>The property is substantially larger than the household requires.</li>
+                <li>The property is too small and would result in overcrowding.</li>
+                <li>The property is a service tenancy.</li>
+                <li>The property has been adapted for a disabled person and the exchange would mean a disabled person no longer occupies the home.</li>
+                <li>The property is part of a group of homes for people with special needs and an eligible person would no longer occupy it. 
+                    This includes OPIL or supported housing schemes and properties normally offered to people with mobility needs.</li>
+                <li>The property is subject to a management agreement with a Housing Association and the tenant is unwilling to become a member where required.</li>
               </ul>
             </div>
           </details>
@@ -8347,10 +8355,17 @@ const mutualExchanges = new ContentH(
             <summary>I have rent arrears, can I move?</summary>
             <div class="details-accordion-content">
               <p>
-                It depends on the type of arrears. Only current arrears are taken into consideration. <br>
-                You must have a completely clear current rent account before full consent will be given (See conditional consent above). <br>
-                You will not be able to move with current arrears, even if you have been sticking to a repayment plan. <br>
-                Any other types of arrears, including former tenancy arrears, recharges, etc., will be disregarded and will not prevent an exchange from taking place.<br>
+                It depends on the type of arrears. 
+              </p>
+                <ul>
+                  <li>Only current rent arrears are taken into consideration.</li>
+                  <li>You must have a clear current rent account before full consent can be given for a Mutual Exchange.</li>
+                  <li>You will not be able to move if you have current rent arrears, even if you are making payments under a repayment agreement.</li>
+                  <li>Former tenancy arrears, recharges and other historic housing debts will not normally prevent a Mutual Exchange from taking place.</li>
+                </ul>
+              <p>
+                If there are current rent arrears on the account, you may be given conditional consent. 
+                This means the exchange cannot proceed until the arrears have been cleared and all other requirements have been met.
               </p>
             </div>
           </details>
@@ -8359,7 +8374,10 @@ const mutualExchanges = new ContentH(
             <summary>If I Mutually Exchange, will I keep my waiting time?</summary>
             <div class="details-accordion-content">
               <p>
-                Yes. A Mutual Exchange is not linked to your rehousing application and will not affect your waiting time.
+                Yes. 
+              </p>
+              <p>
+                A Mutual Exchange is separate from a Housing Register application and does not affect any waiting time already accrued.
               </p>
             </div>
           </details>
@@ -8368,39 +8386,50 @@ const mutualExchanges = new ContentH(
             <summary>Is it illegal to pay someone to do a Mutual Exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                It may be illegal in some circumstances. We would advise that you should never offer or receive money to carry out a Mutual Exchange, 
-                including paying off rent arrears. There is no guarantee that the Mutual Exchange will take place and Sheffield City Council will not get involved 
-                in any disputes related to such matters.
+                It may be illegal in some circumstances. You should never offer, accept or exchange money as part of a Mutual Exchange arrangement.
+              </p>
+              <p>
+                Sheffield City Council will not become involved in disputes relating to any payments made between tenants.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>What if HomeSwapper site asks me for a fee?</summary>
+            <summary>HomeSwapper is asking me for payment?</summary>
             <div class="details-accordion-content">
               <p>
-                When registering, you need to ensure that you have selected Sheffield City Council as your landlord. <br>
-                This is within Section 3 of the registration. If the site asks for payment, the customer should not go any further. 
-                HomeSwapper is a free site for all SCC tenants.
+                When registering, customers should make sure they select Sheffield City Council as their landlord.
+              </p>
+              <p>
+                HomeSwapper is free for Sheffield City Council tenants.
+              </p>
+              <p>
+                If the site asks for payment, the customer should stop and check that the correct landlord has been selected.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>Will I be able to monitor my progress online?</summary>
+            <summary>Can I track my progress of my exchange? </summary>
             <div class="details-accordion-content">
               <p>
-                Yes, you can monitor the progress of your exchange online via your HomeSwapper account.
+                Yes.
+              </p>
+              <p>
+                Customers can monitor progress through their HomeSwapper account.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>My property has passed the inspection, what happens next?</summary>
+            <summary>My property inspection has been completed. What happens next?</summary>
             <div class="details-accordion-content">
               <p>
-                Once your property has passed an inspection, a report will be sent to the Mutual Exchange Team. <br>
-                Subject to other tenancy checks, once the report is received, you will be contacted with an appointment to sign the paperwork.<br>
+                Once your property has passed inspection, a report will be sent to the Mutual Exchange Team.
+              </p>
+              <p>
+                Subject to any outstanding tenancy checks, once the report has been received, you will be contacted to 
+                arrange an appointment to sign the paperwork and complete the exchange.
               </p>
             </div>
           </details>
@@ -8409,7 +8438,7 @@ const mutualExchanges = new ContentH(
             <summary>Who needs to attend the sign up for my Mutual Exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                All tenants involved in the sign-up, including any joint tenants, must attend.
+                All tenants involved in the exchange, including any joint tenants, must attend.
               </p>
             </div>
           </details>
@@ -8418,8 +8447,10 @@ const mutualExchanges = new ContentH(
             <summary>I have signed up but no longer wish to move</summary>
             <div class="details-accordion-content">
               <p>
-                Once you have signed the Deeds of Assignment, the exchange becomes legally binding and you must move by the tenancy commencement date. <br>
-                If you fail to do so, the Council can serve a Notice to Quit and take possession proceedings for unauthorized occupation of the property.<br>
+                Once the Deed of Assignment has been signed, the exchange becomes legally binding.
+              </p>
+              <p>
+                Customers are expected to move on the agreed date. Failure to do so may result in legal action regarding occupation of the property.
               </p>
             </div>
           </details>
@@ -8428,20 +8459,28 @@ const mutualExchanges = new ContentH(
             <summary>What is conditional consent?</summary>
             <div class="details-accordion-content">
               <p>
-                Conditional consent is when we are unable to agree to the exchange immediately but, providing the problem is resolved, we may allow the exchange to go ahead. <br>
-                For example, in the case of current rent arrears, we may agree that once the arrears have been cleared in full, the exchange can take place. <br>
-                If we give conditional consent, we will write to you explaining what the delays are and what you need to do before we arrange for the properties to be exchanged.<br>
+                Conditional consent means we cannot approve the exchange straight away, but it may be allowed once certain issues have been resolved.
+              </p>
+              <p>
+                For example, if there are current rent arrears, we may agree to the exchange going ahead once the arrears have been cleared in full.
+              </p>
+              <p>
+                If conditional consent is given, we will write to you explaining what needs to be resolved before the exchange can proceed.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>There is a problem with the tenancy I want to exchange into and I have been given conditional consent, what can I do?</summary>
+            <summary>There is a problem with the tenancy I want to exchange into and I have been given conditional consent. What can I do?</summary>
             <div class="details-accordion-content">
               <p>
-                As you have been advised in your Conditional Consent letter, under the Data Protection Act we are unable to give you any further information. <br>
-                We will have also written to the other party advising them on what action they need to take to resolve the situation. <br>
-                Once the problem has been resolved, we will be happy to make arrangements for both parties to come and sign the Deed of Assignment document.<br>
+                If you have received a conditional consent letter, we may not be able to provide more information about the other tenancy due to data protection requirements.
+              </p>
+              <p>
+                We will contact the other party directly to explain what action they need to take.
+              </p>
+              <p>
+                Once the issue has been resolved and all requirements have been met, we will arrange for both parties to sign the Deed of Assignment and complete the exchange.
               </p>
             </div>
           </details>
@@ -8470,7 +8509,7 @@ const mutualExchanges = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "27/03/2026", name: "Shaz Athar" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const overcrowding = new ContentH(
