@@ -7368,30 +7368,32 @@ const housingAssociations = new ContentH(
   "Explore various housing associations in Sheffield, offering a range of properties and eligibility criteria for different housing needs.",
   `
       <p>
-        Housing Associations and Housing Trusts are non-profit making, independent organisations. 
-        They vary widely in the types of people they house. Some cater for all groups giving priority for those 
-        with the most urgent housing need. Others specialise in helping particular groups of people, e.g. the 
-        elderly, disabled or those with other specific needs. Public numbers cannot be used on freephone.
+        Housing Associations and Housing Trusts are non-profit making, independent organisations. They vary widely in the 
+        types of people they house. Some cater for all groups giving priority for those with the most urgent housing need. 
+        Others specialise in helping particular groups of people, e.g. the elderly, disabled or those with other specific needs. 
+        Public numbers cannot be used on freephone.
       </p>
 
       <h3>List of Housing Associations and their details</h3>
-  
                 
           <details class="accordion">
-            <summary class="accordion-header"><h3>Acis Group Ltd</h3>
+            <summary class="accordion-header"><h3>Acis Group</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a><br>
-                Acis Group Limited<br>
+              <p>                
+                <em>Acis Group Limited<br>
                 Acis House<br>
                 Bridge Street<br>
                 Gainsborough<br>
                 Lincolnshire<br>
-                DN21 1GG<br>
-                <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br>
-                
+                DN21 1GG<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 027 2057')">0800 027 2057</a>
+                Email: <a href="mailto:info@acisgroup.co.uk">info@acisgroup.co.uk</a>
+                <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br></em>
+                </p>
+
      <button type="button"
         class="dform_widget email-btn dform_widget_type_button"
         aria-label="For further information send link"
@@ -7399,16 +7401,18 @@ const housingAssociations = new ContentH(
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
         }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment\`
-    "
->
+        "
+      >
         Send link to review further information
      </button>
-              </address>
+              
               <p>
-                Variety of properties across Woodthorpe and Lower Manor. Stock transfer from the Council Housing Service.
-                To register, a Council Housing Service rehousing registration form needs to be completed.
-                Properties are advertised through the Choice Based Letting System.
-                The only properties not advertised through the Sheffield Housing Online are those where Acis have agreed a management transfer for current tenants or mutual exchange.
+                Acis Group offers a variety of properties in the Woodthorpe and Lower Manor areas. These homes transferred from 
+                Sheffield City Council's housing stock. Customers who wish to be considered for an Acis property must have an 
+                active housing application with Sheffield City Council through Sheffield My Housing. Available properties are 
+                normally advertised through the Choice Based Lettings system. The main exceptions are management transfers for 
+                existing Acis tenants and mutual exchanges, which are arranged directly by Acis and are not advertised through 
+                Sheffield My Housing.
               </p>
             </div>
           </details>
