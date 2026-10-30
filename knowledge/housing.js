@@ -9254,8 +9254,7 @@ const priorityBandingTable = new ContentH(
                   <td style="width:189px"><p>Reduced Preference</p></td>
                   <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
                 </tr>
-                <tr>
-                  {background-color: #f3cb8f;}
+                <tr bgcolor="#f3cb8f>
                   <td style="width:225px"><p>Discretionary Decision</p></td>
                   <td style="width:189px"><p>Non-Reasonable Preference Priority, Homeless (non-statutory duty)</p></td>
                   <td style="width:217px"><p> </p></td>
