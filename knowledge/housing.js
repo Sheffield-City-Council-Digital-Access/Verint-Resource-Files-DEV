@@ -3635,16 +3635,6 @@ const accommodationNotSuitable = new ContentH(
 
           </div>
       </details>
-      <p>
-      For other enquires, please complete the
-        <a href="${window.location.protocol}//${
-    window.location.hostname
-  }/form/launch/hou_advice_service?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
-  }interactionid=${KDF.getParams().interactionid}&txt_routing=Enquiry%20Counter\">Homelessness enquiry counter</a>. 
-      </p>
   `,
 
   {
@@ -7374,7 +7364,7 @@ const housingAssociations = new ContentH(
         Public numbers cannot be used on freephone.
       </p>
 
-      <h3>List of Housing Associations and their details</h3>
+      <h2>List of Housing Associations and their details</h2>
                 
           <details class="accordion">
             <summary class="accordion-header"><h3>Acis Group</h3>
@@ -7626,7 +7616,7 @@ const housingAssociations = new ContentH(
               <p>
               <em>Incommunities Ltd<br>
               The Quays<br>
-              Victori Street<br>
+              Victoria Street<br>
               Shipley<br>
               BD17 7BN<br><br>
 
@@ -7646,40 +7636,57 @@ const housingAssociations = new ContentH(
         </summary>
             <div class="accordion-content">
               <p>
-                Places for People, tel <a href="tel:0113 2858923">0113 2858923</a><br>
+                <em>Places for People<br>
+                Stanley House<br>
+                The Boulevard<br>
+                Leeds<br>
+                LS10 1PZ<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('01772 667 002')">01772 667 002</a>
+                <br>Email: <a href="CSC.General@placesforpeople.co.uk">CSC.General@placesforpeople.co.uk</a>
+                <br><a href="https://www.placesforpeople.co.uk/" target="_blank">https://www.placesforpeople.co.uk/</a> <br></em>
+              </p>
+
+              <p>[Insert Send Link]</p>
+              
+              <p>
                 Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
               </p>
               <ul>
-                <li>Economic – people not receiving Housing Benefit/LHA and paying full rent.</li>
+                <li>Economic – people not receiving Housing Benefit/LHA and paying full rent</li>
                 <li>General waiting list</li>
                 <li>Community – people needing to move to a property in a specific area (e.g., to care for a relative)</li>
               </ul>
             </div>
           </details>
   
+
           <details class="accordion">
             <summary class="accordion-header"><h3>Sanctuary</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a><br>
+              <p>
                 In Person:<br>
-                Sanctuary Housing Association<br>
+                <em>Sanctuary Housing Association<br>
                 36a Beck Road<br>
                 Shiregreen<br>
                 Sheffield<br>
-                S5 0GB<br>
+                S5 0GB</em><br>
+                <br>
                 By mail:<br>
-                Sanctuary Housing Association<br>
+                <em>Sanctuary Housing Association<br>
                 Marybone House<br>
                 2 Marybone<br>
                 Liverpool<br>
                 Mersey<br>
-                L3 2BY<br>
-                Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a><br>
-                <a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a>
-                <br>
+                L3 2BY<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 131 3348')">0800 131 3348</a>
+                <br>Email: <a href="contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a>
+                <br><a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a> <br></em>
+              </p>
+
         <button
               type="button"
               class="dform_widget email-btn dform_widget_type_button"
@@ -7688,16 +7695,17 @@ const housingAssociations = new ContentH(
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
               KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
               }interactionid=\${KDF.getParams().interactionid}&sel_service=Sanctuary%20Housing\`
-    "
->
+          "
+        >
                Send link to review further information
         </button>
      
-              </address>
               <p>
-                Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed.
-                Properties are advertised through the Choice Based Letting System and a local lettings policy.
-                The only properties not advertised through the Sheffield Housing Online are those where Sanctuary has agreed a management transfer for current tenants or mutual exchange.
+                Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. 
+                To register, a Council Housing Service rehousing registration form needs to be completed. 
+                Properties are advertised through the Choice Based Letting System and a local lettings policy. 
+                The only properties not advertised through the Sheffield Housing Online are those where Sanctuary has 
+                agreed a management transfer for current tenants or mutual exchange.
               </p>
             </div>
           </details>
@@ -7708,37 +7716,47 @@ const housingAssociations = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                South Yorkshire Housing Association<br>
-                tel <a href="tel:0114 2900200">0114 2900200</a> / <a href="tel:0800 1380380">0800 1380380</a><br>
-                152 Rockingham Street,<br>
+              <p>
+                <em>South Yorkshire Housing Association<br>
+                152 Rockingham Street<br>
                 Sheffield<br>
-                S1 4EB
-              </address>
+                S1 4EB<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 290 0200')">0114 290 0200</a>
+                / <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 138 0380')">0800 138 0380</a>
+                <br>Email: <a href="enquiries@syha.co.uk">CSC.enquiries@syha.co.uk</a>
+                <br><a href="https://www.syha.co.uk/" target="_blank">https://www.syha.co.uk/</a> <br></em>
+              </p>
+              <p>[Insert Send Link]</p>
               <p>
                 We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
                 People can apply directly to the services if they don’t need care.
-                The PL for both these schemes is Chris Dearnley:<a href="c.dearnely@syha.co.uk" target="_blank">c.dearnely@syha.co.uk</a>  (0114 244 4978).
-                If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows (<a href="mailto:jean.peachey@sheffield.gov.uk">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows (<a href="mailto:Jacqueline.bradshaw@sheffield.gov.uk">Jacqueline.bradshaw@sheffield.gov.uk</a>).
+                The PL for both these schemes is Chris Dearnley:<a href="c.dearnely@syha.co.uk" target="_blank">c.dearnely@syha.co.uk</a>  
+                (<a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 244 4978')">0114 244 4978</a>).
+                If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows 
+                (<a href="mailto:jean.peachey@sheffield.gov.uk">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows 
+                (<a href="mailto:Jacqueline.bradshaw@sheffield.gov.uk">Jacqueline.bradshaw@sheffield.gov.uk</a>).
               </p>
             </div>
           </details>
           
 
           <details class="accordion">
-            <summary class="accordion-header"><h3>Guinness Northern Counties</h3>
+            <summary class="accordion-header"><h3>The Guinness Partnership</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
-                St Helens Court,<br>
-                Stirling Cl,<br>
-                Elsecar,<br>
-                Barnsley<br>
-                S74 8DY<br>
-                <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
-                <br> 
+              <p>
+                <em>The Guinness Partnership<br>
+                7th Floor<br>
+                350 Euston Road<br>
+                Regents Place<br>
+                London<br>
+                NW1 3AX<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0303 123 1890')">0303 123 1890</a>
+                <br><a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a> <br></em>
+              </p>                
 
       <button type="button"
         class="dform_widget email-btn dform_widget_type_button"
@@ -7753,12 +7771,12 @@ const housingAssociations = new ContentH(
      </button>
               </address>
               <p>
-                Available properties are either advertised through the Council’s Housing Online and Housing Online website or are allocated from Guinness Northern Counties’ own waiting list.
-                You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
+                Available properties are either advertised through the Council’s Housing Online and Housing Online website 
+                or are allocated from Guinness Northern Counties’ own waiting list. You need to join Guinness Northern Counties’ 
+                waiting list as well as the Council’s Housing Register in order to bid for properties.
               </p>
             </div>
           </details>
-
 
   
           <details class="accordion">
@@ -7766,30 +7784,60 @@ const housingAssociations = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Together Housing Group<br>
-                Tel: <a href="tel:0142 2284500">0142 2284500</a><br>
-                Bull Green House<br>
-                Bull Green<br>
-                Halifax<br>
-                HX1 2EB
-              </address>
+              <p>
+                <em>Together Housing Association <br>
+                Prospect House<br>
+                Wharf Street<br>
+                Blackburn<br>
+                BB1 1JD<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 555 5560')">0300 555 5560</a>
+                <br>Email: <a href="mailto:enquiries@togetherhousing.co.uk">enquiries@togetherhousing.co.uk</a>
+                <br><a href="https://www.togetherhousing.group/" target="_blank">https://www.togetherhousing.group/</a> <br></em>
+              </p> 
+              <p>[Insert Send Link]</p>
             </div>
           </details>
+
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Vico Homes</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+                <em>Vico Homes<br>
+                Merefield House<br>
+                Whistler Drive<br>
+                Castleford<br>
+                WF10 5HX<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 850 7507')">0345 850 7507</a>
+                <br>Email: <a href="homesearch@vicohomes.co.uk">homesearch@vicohomes.co.uk</a>
+                <br><a href="https://www.vicohomes.co.uk" target="_blank">https://www.vicohomes.co.uk</a> <br></em>
+              </p> 
+              <p>[Insert Send Link]</p>
+            </div>
+          </details>
+
+
   
           <details class="accordion">
             <summary class="accordion-header"><h3>Yorkshire Housing</h3>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
-              <address>
-                Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a><br>
+              <p>
+                <em>Yorkshire Housing<br>
                 The Place<br>
                 2 Central Place<br>
                 Leeds<br>
-                LS10 1FB<br>
-                <a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a>
-                <br>
+                LS10 1FB<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 366 4404)">0345 366 4404</a>
+                <br>Email: <a href="customerservices@yorkshirehousing.co.uk">customerservices@yorkshirehousing.co.uk</a>
+                <br><a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a> <br></em>
+              </p>
                 
       <button type="button"
                  class="dform_widget email-btn dform_widget_type_button"
@@ -7803,10 +7851,10 @@ const housingAssociations = new ContentH(
                  Send link to review further information
       </button>
 
-              </address>
               <p>
-                Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+, but in some cases will take 16+.
-                NB: These contact details give a summary only; if further details are needed, please contact the Housing Association directly.
+                Mix of housing types including some sheltered schemes. Points system - based on housing need. 
+                Generally need to be 18+, but in some cases will take 16+. NB: These contact details give a summary only; 
+                if further details are needed, please contact the Housing Association directly.
               </p>
             </div>
           </details>
