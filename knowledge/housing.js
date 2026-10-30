@@ -9845,7 +9845,6 @@ const referencesFAQs = new ContentH(
 );
 
 
-
 const relationship = new ContentH(
   "relationship",
   "Relationship Breakdown and Loss of Accommodation",
@@ -16772,142 +16771,10 @@ const olderPersonsIndependentLiving = new ContentH(
   "Explore Sheltered Housing for older people in Sheffield, offering independent living with support services, security, and communal facilities.",
   `
   <p>
-      A list of our Our sheltered housing schemes can be found at <a href="https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes" target="_blank">https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes</a>
-
-      <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheltered%20Housing%20Schemes\`
-    "
->
-    Send link to review further information
-</button>
-
+    A list of our sheltered housing schemes can be found on the Council website: 
+    <a href="https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes" target="_blank" rel="noopener noreferrer">
+    Our sheltered housing schemes | Sheffield City Council</a>
   </p>
-  <p>
-      Sheltered housing is rented accommodation that is specially designed for older
-      people who are able to live independently.
-    </p>
-    <p>
-      It aims to provide comfortable accommodation with added security, in an
-      environment where customers can come and go as they please.
-    </p>
-    <p>
-      Enquiries that are specifically regarding the information in this form can be
-      sent to OPIL using the links at the bottom of the form. If the enquiry is
-      related to other matters, for instance, Estate Management, Tenancy Management
-      or Anti-social behaviour (ASB), then the appropriate form should be used to process that enquiry.
-    </p>
-    <h3>Where are the properties?</h3>
-    <p>
-      Schemes are scattered all over the city. A comprehensive list of properties
-      can be found on the council website or in the Older Persons Independent Living
-      Service leaflet.
-    </p>
-    <h3>
-      What does the Sheltered Neighbourhood Officer do and New Tenancy Support
-    </h3>
-    <p>
-      The Neighbourhood Officers will complete a support plan with the tenant when
-      they move in. This replaces the standard 'New Tenancy Visit' that
-      non-Sheltered tenants receive.
-    </p>
-    <p>
-      The plan is reviewed every six months or when there is a change in
-      circumstances. We will agree with the customer the type and frequency of
-      contact they require based on the customers needs. The Neighbourhood Officer
-      will manage a Sheltered tenancy in the same way that a Neighbourhood Officer
-      based in an area team would manage a standard tenancy, but will also include
-      any support agreed in the support plan.
-    </p>
-    <p>
-      The Neighbourhood Officers will help and support the customer to access any
-      services they may need to help them live independently. The Neighbourhood
-      Officers wardens will also contact relatives, call a doctor or an ambulance in
-      an emergency.
-    </p>
-    <h3>What does OPIL provide</h3>
-    <p>
-      Convenient and comfortable accommodation with added security, in an
-      environment where residents have their own front door and can come and go as
-      they please. We can usually provide the following accommodation and
-      facilities:
-    </p>
-    <ul>
-      <li>Self contained flats/Studio apartments/Bungalows</li>
-      <li>Communal Facilities such as:
-        <ul>
-          <li>Caretaking service for the communal areas</li>
-          <li>City Wide Care Alarm (24 hour emergency response)</li>
-          <li>Gardens</li>
-          <li>Guest room</li>
-          <li>Kitchen</li>
-          <li>Laundry</li>
-          <li>Lounge for social activities</li>
-          <li>Neighbourhood Officer Warden</li>
-          <li>Security and Safety features</li>
-        </ul>
-      </li>    
-    </ul>
-    <h3>Who is eligible for OPIL accommodation</h3>
-    <p>
-      Anyone aged over 60 and is registered for rehousing. In the case of a couple,
-      at least one person must fit the age requirement.
-    </p>
-    <p>
-      Before offering a property we will check to make sure it meets all your
-      housing needs. You will also be invited to an accompanied viewing of the
-      building without any commitment.
-    </p>
-    <h3>What are the costs of OPIL Accommodation</h3>
-    <p>
-      The cost of living in Sheltered Housing is very competitive when compared with
-      other social housing providers.
-    </p>
-    <p>
-      You pay weekly rent and a service charge (where applicable) for the heating
-      and hot water in your property and/or towards the heating in communal areas of
-      the scheme.
-    </p>
-    <p>
-      There is an added support charge to cover the Neighbourhood Officer service
-      and City Wide Alarm. If you are already in receipt of Housing Benefit you will
-      not have to pay this charge.
-    </p>
-    <p>
-      If you are on a low income you can apply to have an assessment to see if you
-      are entitled to any assistance.
-    </p>
-    <p>
-      You will receive help and advice on claiming Welfare and/or Housing Benefit at
-      the start of your tenancy.
-    </p>
-    <h3>What are the benefits of OPIL Accommodation</h3>
-    <ul>
-      <li>Good quality housing</li>
-      <li>Security</li>
-      <li>Independence</li>
-      <li>Your own front door</li>
-      <li>Peace of mind, with help on hand in emergencies</li>
-      <li>
-        Neighbourhood Officer Warden support service and a 24 hr emergency response
-        system connected to each flat (City Wide Care Alarms)
-      </li>
-      <li>
-        A support plan - agreed with the Neighbourhood Officer - to meet individual
-        needs
-      </li>
-      <li>Being part of the community</li>
-    </ul>
-    <h3>Register for OPIL Accommodation</h3>
-    <p>Applicants should be registered for rehousing.</p>
-    <p>
-      You can access OPIL accommodation through the Sheffield Housing Online at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> or call
-      in at any of the local Area Housing Offices.
 
   <button
     type="button"
@@ -16916,26 +16783,183 @@ const olderPersonsIndependentLiving = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-    
->
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheltered%20Housing%20Schemes\`
+    "
+  >
     Send link to review further information
- </button>
+  </button>
 
+    <p>
+      Older Persons Independent Living (OPIL) is accommodation designed for older people who are able to live 
+      independently but may benefit from living in specialist, safe, secure and self-contained accommodation.
+    </p>
+    <p>
+      The Allocations Policy explains that OPIL accommodation forms part of a Local Lettings Policy and is intended 
+      to support older people to live independently for longer in accommodation that takes account of their housing, 
+      care and support needs. OPIL schemes generally consist of one and two-bedroom properties for older applicants. 
+    </p>
+    <p>
+      Because OPIL accommodation is let under a Local Lettings Policy, applicants must meet both the Housing Register 
+      requirements and any additional criteria applicable to the individual scheme. Properties subject to a Local 
+      Lettings Policy will be clearly identified when advertised through the Choice Based Lettings scheme.
+    </p>
+
+
+    <h3>Where are the properties?</h3>
+    <p>
+      OPIL schemes are located across Sheffield.
+    </p>
+    <p>
+      Customers can view information about individual schemes on the Council website.
+    </p>
+    <p>
+      Further information about OPIL and Extra Care accommodation is included within Appendix B of the Allocations Policy.
+    </p>
+
+    <h3>What does OPIL provide</h3>
+    <p>
+      Older Persons Independent Living accommodation provides safe, secure and self-contained housing designed to support independent living.
+    </p>
+    <p>
+      Residents have their own front door and can live independently while benefiting from specialist accommodation designed for older people.
+    </p>
+    <p>
+      Depending on the scheme, accommodation may include:
+    </p>
+      <ul>
+        <li>Self-contained flats</li>
+        <li>Studio apartments</li>
+        <li>Bungalows</li>
+      </ul>
+    <p>
+      Many schemes also offer communal facilities and services such as:
+    </p>
+      <ul>
+        <li>Caretaking services for communal areas</li>
+        <li>City Wide Care Alarm (24-hour emergency response service)</li>
+        <li>Communal gardens</li>
+        <li>Guest rooms</li>
+        <li>Communal kitchens</li>
+        <li>Laundry facilities</li>
+        <li>Lounges and communal areas for social activities</li>
+        <li>Support from a Sheltered Neighbourhood Officer</li>
+        <li>Security and safety features</li>
+        <li>Facilities vary between schemes and customers should check the individual scheme information and property 
+            advert for details of what is available at a specific location. The Allocations Policy explains that OPIL 
+            schemes are intended to provide specialist accommodation for older people and create vibrant communities that 
+            support independent living.</li>
+      </ul>
+
+    <h3>What does the Sheltered Neighbourhood Officer do and New Tenancy Support</h3>
+    <p>
+      A Sheltered Neighbourhood Officer can work with residents to identify any support needs and help them access 
+      services that support independent living.
+    </p>
+    <p>
+      Support arrangements will be based on individual circumstances and may be reviewed when circumstances change.
+    </p>
+    <p>
+      The Sheltered Neighbourhood Officer also manages the tenancy in a similar way to other tenancy management 
+      services and can provide advice and assistance relating to independent living and wellbeing.
+    </p>
+    <p>
+      In an emergency, staff can help arrange appropriate assistance in line with local procedures.
+    </p>
+
+    <h3>Who is eligible for OPIL accommodation</h3>
+    <p>
+      OPIL schemes are designed for people aged 60 and over. Under the policy, all household members included on the 
+      housing registration must be aged over 60 to bid for OPIL schemes.
+    </p>
+    <p>
+      Applicants must also be accepted onto the Housing Register and meet the eligibility and qualification criteria 
+      in the Allocations Policy. This includes meeting the general Housing Register requirements, any relevant qualification 
+      criteria, and the criteria shown on the individual property advert.
+    </p>
+    <p>
+      Before an offer is confirmed, final checks will be completed. These checks confirm that the applicant is in the correct 
+      band, has the correct effective date, is eligible for the size and type of property, and meets any other specified criteria. 
+      If the checks are not passed, the property will not be offered.
+    </p>
+
+    <h3>What are the costs of OPIL Accommodation</h3>
+    <p>
+      The cost of living in Sheltered Housing is very competitive when compared with other social housing providers.
+    </p>
+    <p>
+      You pay weekly rent and a service charge (where applicable) for the heating and hot water in your property 
+      and/or towards the heating in communal areas of the scheme.
+    </p>
+    <p>
+      There is an added support charge to cover the Neighbourhood Officer service and City Wide Alarm. 
+      If you are already in receipt of Housing Benefit you will not have to pay this charge.
+    </p>
+    <p>
+      If you are on a low income you can apply to have an assessment to see if you are entitled to any assistance.
+    </p>
+    <p>
+      You will receive help and advice on claiming Welfare and/or Housing Benefit at the start of your tenancy.
+    </p>
+
+    <h3>What are the benefits of OPIL Accommodationn</h3>
+    <p>
+      OPIL can offer:
+    </p>
+    <ul>
+      <li>Good quality housing</li>
+      <li>Security</li>
+      <li>Independence</li>
+      <li>Your own front door</li>
+      <li>Peace of mind, with help on hand in emergencies</li>
+      <li> Neighbourhood Officer Warden support service and a 24 hr emergency response system 
+          connected to each flat (City Wide Care Alarms)</li>
+      <li>A support plan - agreed with the Neighbourhood Officer - to meet individual needs</li>
+      <li>Being part of the community</li>
+    </ul>
+
+    <h3>Register for OPIL Accommodation</h3>
+    <p>
+      To be considered for OPIL accommodation, customers must be registered on the Housing Register through My Housing 
+      and meet the eligibility criteria for OPIL schemes. The My Housing website can be found here: 
+      <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a>
+    </p>
+
+      <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+      >
+            Send link to review further information
+      </button>
+
+    <p>
+      OPIL properties are generally available to applicants aged 60 and over, with all household members on the 
+      application needing to meet the age requirement.
+    </p>
+    <p>
+      Customers can register and manage their housing application through My Housing. Support is available through 
+      local housing offices if required.
     </p>
     <p>You can also be referred through:</p>
-    <ul>
-      <li>Health and Housing</li>
-      <li>Social Services</li>
-      <li>Health Service</li>
-    </ul>
+      <ul>
+        <li>Health and Housing</li>
+        <li>Adult Social Services</li>
+        <li>Health Service</li>
+      </ul>
 
     <h3>Contact Details</h3>
     <p>
-      Sheltered Housing can be contact on <a href="tel:0114 2037030">0114 2037030</a> <a href="mailto:HomesAreaSheltered@sheffield.gov.uk">HomesAreaSheltered@sheffield.gov.uk</a> 
+      Sheltered Housing can be contact on 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2037030')">0114 2037030</a> 
+      <a href="mailto:HomesAreaSheltered@sheffield.gov.uk">HomesAreaSheltered@sheffield.gov.uk</a> 
     </p>
     <p>
-      Temporary Accommodation can be contact on <a href="tel:0114 2053171">0114 2053171</a> or <a href="tel:0114 2930832">0114 2930832</a> 
+      Temporary Accommodation can be contact on 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2053171')">0114 2053171</a>
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
 
   `,
@@ -16953,7 +16977,7 @@ const olderPersonsIndependentLiving = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "15/10/2024", name: "Joe Nixon" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 //It might be worth updating the below to instead be a function that populates to use less code, this would add some complexity however.
