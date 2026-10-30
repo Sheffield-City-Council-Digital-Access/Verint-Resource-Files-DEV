@@ -7374,15 +7374,12 @@ const housingAssociations = new ContentH(
         elderly, disabled or those with other specific needs. Public numbers cannot be used on freephone.
       </p>
   
-      <details class="accordion">
-        <summary class="accordion-header">
-          <h3> List of Housing Associations and Their Details</h3>
+                
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Acis Group Ltd</h3>
           <div class="accordion-icon"></div>
         </summary>
-        <div class="accordion-content">
-          <details class="details-accordion">
-            <summary>Acis Group Ltd</summary>
-            <div class="details-accordion-content">
+            <div class="accordion-content">
               <address>
                 Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a><br>
                 Acis Group Limited<br>
@@ -7414,9 +7411,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Anchor Trust</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Anchor Trust</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a><br>
                 Customer Centre<br>
@@ -7432,9 +7431,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Arches Housing Association</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Arches Housing Association</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Arches Housing Limited, tel <a href="tel:0114 2288100">0114 2288100</a><br>
                 122 Burngreave Road<br>
@@ -7479,9 +7480,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Clarion Housing Group</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Clarion Housing Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <p>
                 Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a><br>
                 Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
@@ -7489,9 +7492,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Together Group with Pennine</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Together Group with Pennine</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a><br>
                 Harrison Street<br>
@@ -7504,9 +7509,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>English Churches Housing Group / The Riverside Group</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>English Churches Housing Group / The Riverside Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1559002">0345 1559002</a><br>
                 2 Estuary Boulevard<br>
@@ -7521,9 +7528,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Great Places Housing Group</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Great Places Housing Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a><br>
                 2a Derwent Avenue<br>
@@ -7553,9 +7562,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Guinness Northern Counties</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Guinness Northern Counties</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
                 St Helens Court,<br>
@@ -7585,9 +7596,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Home Group</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Home Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Home Group, tel <a href="tel:0345 1414663">0345 1414663</a><br>
                 Home Group Ltd<br>
@@ -7602,9 +7615,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Housing 21</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Housing 21</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Housing 21, tel <a href="tel:0370 192 4000">0370 192 4000</a><br>
                 Tricorn House<br>
@@ -7619,9 +7634,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Johnnie Johnson Housing Trust Ltd</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Johnnie Johnson Housing Trust Ltd</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a><br>
                 Eden Point,<br>
@@ -7637,9 +7654,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Padley</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Padley</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Padley, tel <a href="tel:0114 2666626">0114 2666626</a><br>
                 208 Crookes<br>
@@ -7652,9 +7671,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Places for People</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Places for People</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <p>
                 Places for People, tel <a href="tel:0113 2858923">0113 2858923</a><br>
                 Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
@@ -7667,9 +7688,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Sanctuary</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Sanctuary</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a><br>
                 In Person:<br>
@@ -7710,9 +7733,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Sheffield Jewish Housing Association</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Sheffield Jewish Housing Association</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a><br>
                 22 Kingfield Road<br>
@@ -7725,9 +7750,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>South Yorkshire Housing Association</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>South Yorkshire Housing Association</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 South Yorkshire Housing Association<br>
                 tel <a href="tel:0114 2900200">0114 2900200</a> / <a href="tel:0800 1380380">0800 1380380</a><br>
@@ -7744,9 +7771,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Together Housing Group</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Together Housing Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Together Housing Group<br>
                 Tel: <a href="tel:0142 2284500">0142 2284500</a><br>
@@ -7758,9 +7787,11 @@ const housingAssociations = new ContentH(
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Yorkshire Housing</summary>
-            <div class="details-accordion-content">
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Yorkshire Housing</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <address>
                 Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a><br>
                 The Place<br>
@@ -7789,8 +7820,6 @@ const housingAssociations = new ContentH(
               </p>
             </div>
           </details>
-        </div>
-      </details>
     `,
   {
     buttonLabel: "Report Housing Enquiry",
