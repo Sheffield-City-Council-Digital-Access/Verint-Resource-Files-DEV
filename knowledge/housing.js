@@ -7018,7 +7018,7 @@ const healthAndHousing = new ContentH(
       If you are disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
     </p> 
     <p>
-      Before considering major adaptations, we recommend looking at whether smaller equipment or minor changes could meet your needs. 
+      Before considering major adaptations, we recommend looking at whether <strong>smaller equipment or minor changes</strong> could meet your needs. 
       These options are often quicker to put in place and more straightforward to arrange.
       <br/>For example:
     </p>
@@ -7062,8 +7062,9 @@ const healthAndHousing = new ContentH(
 
     <h3>Financial help for major adaptations</h3>
     <p>
-      If your assessment recommends a major adaptation (for example a stairlift or ramp), you may be eligible for a <strong>Disabled 
-      Facilities Grant</strong>. More Information is available here: <a href="https://www.gov.uk/disabled-facilities-grants" 
+      If your assessment recommends a major adaptation (for example a stairlift or ramp), you may be eligible for a 
+      <strong>Disabled Facilities Grant</strong>. 
+      <br/>More Information is available here: <a href="https://www.gov.uk/disabled-facilities-grants" 
       target="_blank" rel="noopener noreferrer">https://www.gov.uk/disabled-facilities-grants</a>
     </p>
 
@@ -7118,7 +7119,7 @@ const healthAndHousing = new ContentH(
     <p>
       If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
       The quickest way to send your application is to scan and return to 
-      <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a> 
+      <a href="mailto:healthandhousingneeds@sheffield.gov.uk">healthandhousingneeds@sheffield.gov.uk</a> 
       This will minimise delays in considering your application.
     </p>
     <p>
@@ -7281,7 +7282,7 @@ const homelessPrevention = new ContentH(
 
     <p>
       If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
-      The quickest way to send your application is to scan and return to <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a>  
+      The quickest way to send your application is to scan and return to <a href="mailto:healthandhousingneeds@sheffield.gov.uk">healthandhousingneeds@sheffield.gov.uk</a>  
       This will minimise delays in considering your application.
     </p>
 
@@ -7738,7 +7739,7 @@ const housingAssociations = new ContentH(
                 We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
                 People can apply directly to the services if they don’t need care.
                 The PL for both these schemes is Chris Dearnley:<a href="c.dearnely@syha.co.uk" target="_blank">c.dearnely@syha.co.uk</a>  (0114 244 4978).
-                If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows (<a href="jean.peachey@sheffield.gov.uk" target="_blank">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows (<a href="Jacqueline.bradshaw@sheffield.gov.uk" target="_blank">Jacqueline.bradshaw@sheffield.gov.uk</a>).
+                If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows (<a href="mailto:jean.peachey@sheffield.gov.uk">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows (<a href="mailto:Jacqueline.bradshaw@sheffield.gov.uk">Jacqueline.bradshaw@sheffield.gov.uk</a>).
               </p>
             </div>
           </details>
@@ -8224,7 +8225,6 @@ const mutualExchanges = new ContentH(
         <a href="https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else" target="_blank" rel="noopener noreferrer">
         Exchange your property with someone else | Sheffield City Council</a>.
       </p>
-        <br>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
           onclick="
@@ -8251,28 +8251,23 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 You can apply for a Mutual Exchange as soon as you have a secure tenancy.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 If you have an introductory tenancy, you must wait until your tenancy becomes secure before you can exchange.
               </p>
             </div>
           </details>
 
         <details class="accordion">
-          <summary class="accordion-header">
-            <h3>How long will it take for my HomeSwapper registration to be approved?</h3>
-          <div class="accordion-icon"></div>
-          </summary>
-          <div class="accordion-content">
+          <summary>How long will it take for my HomeSwapper registration to be approved?</summary>
+          <div class="details-accordion-content">
             <p>
               Before you can access all HomeSwapper features, your registration must be approved.
-            </p>
               <ul>
                 <li>New registrations are usually approved within 1 working day</li>
                 <li>Registrations submitted on a Friday or over a weekend are normally approved on Monday</li>
                 <li>Registrations submitted on a Bank Holiday will be approved on the next working day</li>
               </ul>
-            <p>
               Once approved, you will be able to view full property details and start looking for exchange matches.
             </p>
           </div>
@@ -8283,8 +8278,8 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 HomeSwapper is a free nationwide exchange service for social housing tenants.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 As a Sheffield City Council tenant, you can register free of charge and search for exchange 
                 opportunities across the UK. HomeSwapper also provides match suggestions by email and text.
               </p>
@@ -8297,11 +8292,11 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 Once a suitable exchange has been identified, all parties involved must complete the Mutual Exchange application process.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 Applications will be assessed by the Mutual Exchange Team. Where another landlord is involved, they will also carry out their own checks and approval process.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 You should not make any arrangements to move until written permission has been granted by all landlords involved.
               </p>
             </div>
@@ -8312,19 +8307,17 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 Yes.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 All landlords involved must give written permission before an exchange can take place.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 Do not move until permission has been granted and a move date has been agreed. Before we can agree, we will check that:
-              </p>
               <ul>
                 <li>You have a clear current rent account</li>
                 <li>There is no possession order on your home</li>
                 <li>Your home is in satisfactory condition</li>
               </ul>
-              <p>
                 There are also rules that apply in terms of eligibility for different sizes and types of property. 
               </p>
             </div>
@@ -8356,14 +8349,12 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 It depends on the type of arrears. 
-              </p>
                 <ul>
                   <li>Only current rent arrears are taken into consideration.</li>
                   <li>You must have a clear current rent account before full consent can be given for a Mutual Exchange.</li>
                   <li>You will not be able to move if you have current rent arrears, even if you are making payments under a repayment agreement.</li>
                   <li>Former tenancy arrears, recharges and other historic housing debts will not normally prevent a Mutual Exchange from taking place.</li>
                 </ul>
-              <p>
                 If there are current rent arrears on the account, you may be given conditional consent. 
                 This means the exchange cannot proceed until the arrears have been cleared and all other requirements have been met.
               </p>
@@ -8375,8 +8366,8 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 Yes. 
-              </p>
-              <p>
+                <br/>
+                <br/>
                 A Mutual Exchange is separate from a Housing Register application and does not affect any waiting time already accrued.
               </p>
             </div>
@@ -8387,8 +8378,8 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 It may be illegal in some circumstances. You should never offer, accept or exchange money as part of a Mutual Exchange arrangement.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 Sheffield City Council will not become involved in disputes relating to any payments made between tenants.
               </p>
             </div>
@@ -8399,11 +8390,11 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 When registering, customers should make sure they select Sheffield City Council as their landlord.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 HomeSwapper is free for Sheffield City Council tenants.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 If the site asks for payment, the customer should stop and check that the correct landlord has been selected.
               </p>
             </div>
@@ -8414,8 +8405,8 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 Yes.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 Customers can monitor progress through their HomeSwapper account.
               </p>
             </div>
@@ -8426,8 +8417,8 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 Once your property has passed inspection, a report will be sent to the Mutual Exchange Team.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 Subject to any outstanding tenancy checks, once the report has been received, you will be contacted to 
                 arrange an appointment to sign the paperwork and complete the exchange.
               </p>
@@ -8448,8 +8439,8 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 Once the Deed of Assignment has been signed, the exchange becomes legally binding.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 Customers are expected to move on the agreed date. Failure to do so may result in legal action regarding occupation of the property.
               </p>
             </div>
@@ -8460,11 +8451,11 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 Conditional consent means we cannot approve the exchange straight away, but it may be allowed once certain issues have been resolved.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 For example, if there are current rent arrears, we may agree to the exchange going ahead once the arrears have been cleared in full.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 If conditional consent is given, we will write to you explaining what needs to be resolved before the exchange can proceed.
               </p>
             </div>
@@ -8475,11 +8466,11 @@ const mutualExchanges = new ContentH(
             <div class="details-accordion-content">
               <p>
                 If you have received a conditional consent letter, we may not be able to provide more information about the other tenancy due to data protection requirements.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 We will contact the other party directly to explain what action they need to take.
-              </p>
-              <p>
+                <br/>
+                <br/>
                 Once the issue has been resolved and all requirements have been met, we will arrange for both parties to sign the Deed of Assignment and complete the exchange.
               </p>
             </div>
@@ -16953,12 +16944,12 @@ const olderPersonsIndependentLiving = new ContentH(
     <h3>Contact Details</h3>
     <p>
       Sheltered Housing can be contact on 
-      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2037030')">0114 2037030</a> 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2037030')">0114 2037030</a> or by email
       <a href="mailto:HomesAreaSheltered@sheffield.gov.uk">HomesAreaSheltered@sheffield.gov.uk</a> 
     </p>
     <p>
       Temporary Accommodation can be contact on 
-      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2053171')">0114 2053171</a>
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2053171')">0114 2053171</a> or
       <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
 
