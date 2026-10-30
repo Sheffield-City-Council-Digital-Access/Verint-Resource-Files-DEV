@@ -7373,10 +7373,12 @@ const housingAssociations = new ContentH(
         with the most urgent housing need. Others specialise in helping particular groups of people, e.g. the 
         elderly, disabled or those with other specific needs. Public numbers cannot be used on freephone.
       </p>
+
+      <h3>List of Housing Associations and their details</h3>
   
                 
           <details class="accordion">
-            <summary class="accordion-header"><h3>Acis Group Ltd</h3>
+            <summary class="accordion-header"><h4>Acis Group Ltd</h4>
           <div class="accordion-icon"></div>
         </summary>
             <div class="accordion-content">
