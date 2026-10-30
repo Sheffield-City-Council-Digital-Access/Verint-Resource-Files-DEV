@@ -7015,22 +7015,21 @@ const healthAndHousing = new ContentH(
     <h3>Adaptations</h3>
     
     <p>
-      If you're disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
+      If you are disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
     </p> 
-
     <p>
-      Before you consider adapting your home, we recommend checking whether equipment or technology could meet your needs. 
-      These can often be quicker and more affordable solutions. For example:
+      Before considering major adaptations, we recommend looking at whether smaller equipment or minor changes could meet your needs. 
+      These options are often quicker to put in place and more straightforward to arrange.
+      <br/>For example:
     </p>
-
-    <ul>
-      <li>using a commode during the day may help you avoid using the stairs</li>
-      <li>grab rails or a shower seat can help in the bathroom</li>
-    </ul>
-
+      <ul>
+        <li>Using a commode to reduce the need to use the stairs</li>
+        <li>Installing grab rails to support movement around your home</li>
+        <li>Using a shower seat to make washing safer</li>
+      </ul>
     <p>
-      Details of different potential equipment and adaptations can be found at the following link:<br>
-      <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank">Equipment House | Sheffield</a>
+      You can find more information about different types of equipment and adaptations here:
+      <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank" rel="noopener noreferrer">Equipment House | Sheffield</a>
     </p>
 
     <button type="button"
@@ -7046,7 +7045,8 @@ const healthAndHousing = new ContentH(
 
     <p>
       Further information and the online form to request a home adaptation can be found at the following link:
-      <a href="https://www.sheffield.gov.uk/social-care/adults/how-we-can-help/daily-tasks/request-home-adaptation" target="_blank">Request a home adaptation | Sheffield City Council</a>
+      <a href="https://www.sheffield.gov.uk/social-care/adults/how-we-can-help/daily-tasks/request-home-adaptation" 
+      target="_blank" rel="noopener noreferrer">Request a home adaptation | Sheffield City Council</a>
     </p>
 
     <button type="button"
@@ -7061,10 +7061,10 @@ const healthAndHousing = new ContentH(
     </button>
 
     <h3>Financial help for major adaptations</h3>
-
     <p>
-    If your assessment recommends a major adaptation such as a stair lift or ramp you may be eligible for a Disabled Facilities Grant. 
-    Information can be found at <a href="https://www.gov.uk/disabled-facilities-grants" target="_blank">https://www.gov.uk/disabled-facilities-grants</a>
+      If your assessment recommends a major adaptation (for example a stairlift or ramp), you may be eligible for a <strong>Disabled 
+      Facilities Grant</strong>. More Information is available here: <a href="https://www.gov.uk/disabled-facilities-grants" 
+      target="_blank" rel="noopener noreferrer">https://www.gov.uk/disabled-facilities-grants</a>
     </p>
 
     <button type="button"
@@ -7079,45 +7079,57 @@ const healthAndHousing = new ContentH(
     </button>
 
     <h3>Rehousing due to medical or mobility needs</h3>
-
     <p>
-      If your primary reason for requesting rehousing is identified as any of the following your referral will not be accepted. 
-      Please contact the relevant team on the details below.
+      If your housing issue relates primarily to one of the circumstances below, there may be a more appropriate service that 
+      can assist you before a Health and Housing assessment is considered.
     </p>
-
     <ul>
       <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
-      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
-      <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
+      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 5555')">0114 273 5555</a> or online at 
+          <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
       <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
-      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at 
-      <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
-    </ul>
-
+      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 293 0000')">0114 293 0000</a> or 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 205 3333')">0114 205 3333</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Suffering domestic abuse</strong> - contact Housing Advice on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736306')">0114 2736306</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4680')">0114 273 4680</a> or online at 
+          <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
+    </ul>  
     <p>
-      You will not be awarded medical priority if your current property can be adapted to meet your needs. 
-      If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. 
-      <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
+      Medical priority is generally considered where your accommodation is unsuitable for your health or disability-related 
+      needs and the difficulties cannot reasonably be resolved through adaptation, equipment, support, or other housing solutions. 
+      Whether adaptation is a suitable solution will be considered as part of the assessment process. 
     </p>
-
     <p>
-      If following assessment, it is determined that your property cannot be adapted the assessing officer will advise you to complete the 
-      medical priority rehousing application
+      If adaptations may help you remain in your current home, you may be referred to our Occupational Therapy service. Visit:  
+      <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank" rel="noopener noreferrer">
+      https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
     </p>
-
+    <p>
+      If assessment identifies that your housing needs cannot reasonably be met through adaptation or support, you may be advised 
+      to submit a Health and Housing application for consideration under the Housing Allocations Policy. 
+    </p>
     <p>
       If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
-      The quickest way to send your application is to scan and return to <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a>  
+      The quickest way to send your application is to scan and return to 
+      <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a> 
       This will minimise delays in considering your application.
     </p>
-
     <p>
-      Further details of support available for a variety of issues causing Housing Problems (including overcrowding, family problens, 
-      domestic abuse and relationship breakdown) can be found at <a href="https://www.sheffield.gov.uk/housing/housing-options/housing-problems" target="_blank">Housing problems | Sheffield City Council</a>
+      We will require medical evidence to support your application, and you may be assessed by a health care 
+      professional to determine your eligibility for rehousing on welfare, practical and emotional support grounds.
+    </p>
+    <p>
+      Further details of support available for a variety of issues causing Housing Problems (including overcrowding, 
+      family problems, domestic abuse and relationship breakdown) can be found at 
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/housing-problems" target="_blank" rel="noopener noreferrer">
+      Housing problems | Sheffield City Council</a>
     </p>
 
     <button type="button"
@@ -7132,9 +7144,9 @@ const healthAndHousing = new ContentH(
     </button>
 
     <p>
-      For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenenacy Enforcement (ASB)</strong>. 
-      This is the top result if you enter <strong>ASB</strong> in the Knowledge search above. The page provides general information about ASB, and will also allow you 
-      to send a link to the customer to correctly report ASB as either a council or non-council tenant.
+      For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenancy Enforcement (ASB)</strong>. 
+      This is the top result if you enter <strong>ASB</strong> in the Knowledge search above. The page provides general information about ASB, 
+      and will also allow you to send a link to the customer to correctly report ASB as either a council or non-council tenant.
     </p>
 
     `,
@@ -7162,7 +7174,7 @@ const healthAndHousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/05/2026", name: "Liz Taster" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const homelessPrevention = new ContentH(
@@ -7989,6 +8001,7 @@ const idReferences = new ContentH(
           <li>Letter from Social Worker, Probation Officer or Solicitor</li>
         </ul>
 
+      <br/>
       <h4>Proof of Address</h4>
         <ul>
           <li>Driving licence</li>
@@ -8002,12 +8015,14 @@ const idReferences = new ContentH(
           <li>Evidence of benefit payments</li>
         </ul>
 
+      <br/>
       <h4>Proof of Child Benefit</h4>
         <ul>
           <li>Child benefit award letter</li>
           <li>If no award letter is available, the last three consecutive months of bank statements showing Child Benefit payments</li>
         </ul>
 
+      <br/>
       <h4>Proof of Local Connection (if requested)</h4>
         <p>
           You may be asked to provide evidence of your local connection. This could include:
