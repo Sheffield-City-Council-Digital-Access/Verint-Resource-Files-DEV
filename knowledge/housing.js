@@ -9038,37 +9038,33 @@ const priorityBandingTable = new ContentH(
   "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
   `
     <h3>Priority Banding Table</h3>
+      <p>
+        The table below shows the list of priorities and the bands they fall in. 
+      </p>
   
-      <p>The table below shows the list of priorities and the bands they fall in. </p>
-  
-      <p>Some of the priorities span multiple bands and we cannot give a definitive answer for which band they will be in e.g. demolition and health. 
-      As such, these are marked in the table below as ‘None’. </p>
-  
-      <p>Also marked as ‘None’ are the priorities which no longer exist. These are: </p>
-  
-      <ul>
-        <li>Council Service tenant retiring or leaving employment</li>
-        <li>Council service tenant who is dismissed</li>
-        <li>Special Case</li>
-        <li>If a priority spans the bands, the awarding officer will have already spoken with the customer.</li>
-      </ul>
-  
-      <h3>Effective Dates</h3>
-  
-      <p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
-      three different priorities within the same band would be ordered based on the earliest effective date first.</p>
-  
-      <p>The only exception is band E which has the following hierarchy: </p>
-  
-      <ul>
-        <li>No Local Connection</li>
-        <li>Refused Offers</li>
-        <li>Unacceptable Behaviour </li>
-      </ul>
-  
-      <p>Inside each of the above rungs, applicants are ordered based on effective date.  
-      Therefore, an applicant with unacceptable behaviour in band E will always come below an applicant in band E due to refused offers 
-      regardless of their effective date.</p>
+    <h3>Effective Dates</h3>
+      <p>
+        Applicants are ranked within their band using their effective date. 
+        The applicant with the earliest effective date will usually be ranked highest within that band. 
+        If two applicants have the same effective date, the registration date will be used to decide their position.
+      </p>
+      <p>
+        For properties advertised to priority applicants, bids are ranked in band order from Band 1 to Band 5, 
+        with applicants ranked by effective date within each band. For properties advertised to general needs applicants, 
+        bids are ranked in Band 6 then Band 7, again using effective date within each band.
+      </p>
+      <p>
+        For applicants in Band 7, effective dates may be disregarded in some circumstances. 
+        Band 7 applicants are ranked in the following order:
+      </p>
+        <ul>
+          <li>Refusal of offer</li>
+          <li>Unacceptable behaviour or housing related debt</li>
+        </ul>
+      <p>
+        Applicants within each of these groups are then ranked by effective date, with registration date used to decide any tied positions.
+      </p>
+
   
       <details class="accordion">
         <summary class="accordion-header">
@@ -9080,139 +9076,190 @@ const priorityBandingTable = new ContentH(
             <table border="1" cellpadding="0" cellspacing="0" style="width:100%">
               <tbody>
                 <tr>
-                  <td style="width:300px; height:10px" bgcolor="#002040"><strong><font color="black">Current Approval Reasons</font></strong></td>
+                  <td style="width:300px; height:10px" bgcolor="#002040"><strong><font color="black">Priority Reason</font></strong></td>
                   <td style="width:300px" bgcolor="#002040">
-                    <p><strong><font color="black">New Banding Criteria</font></strong></p>
+                    <p><strong><font color="black">Banding Criteria</font></strong></p>
                   </td>
                   <td style="width:300px" bgcolor="#002040">
-                    <p><strong><font color="black">Bands In Which They Appear</font></strong></p>
+                    <p><strong><font color="black">Band</font></strong></p>
                   </td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Hospital or Care Setting Discharge</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Council Service Tenant Retiring or Leaving Employment</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Terminal Illness or Rapidly Deteriorating Condition</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Council Service Tenant Who is Dismissed</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Emergency Safeguarding and Child Protection</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Demolition/Clearance of Council Owned Properties</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Emergency Transfer (Fire, Flood or High Risk to Life)</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Development Work in Council Owned Property</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
+                  <td style="width:225px"><p>Full Homelessness Duty (Sheffield City Council)</p></td>
+                  <td style="width:189px"><p>Homeless – Statutory Duty</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
                   <td style="width:225px"><p>Domestic Abuse</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs, Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Downsizing for Under Occupiers</p></td>
-                  <td style="width:189px"><p>Under occupation and/or release of an adapted property</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Care Leaver</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Homeless - Immediate Priority</p></td>
-                  <td style="width:189px"><p>Full Homelessness Duty</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Under Occupation (Downsizing)</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Homeless or Threatened with Homelessness - Planned Priority</p></td>
-                  <td style="width:189px"><p>Other Homelessness Duties</p></td>
-                  <td style="width:217px"><p>3rd Priority band C</p></td>
+                  <td style="width:225px"><p>Release of Adapted Property</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Insanitary or Unsatisfactory Housing Conditions</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Sheffield City Council Demolition Programme</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Long-Term Health Condition or Disability</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Mobility Needs and Service Personnel</p></td>
-                  <td style="width:189px"><p>Health</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Racial and Other Harassment of Council Tenants</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Re-Designation of Older Persons Property</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>3rd Priority band C</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Release of Disabled Persons Property</p></td>
-                  <td style="width:189px"><p>Under Occupation and/or Release of an Adapted Property</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Sheffield Overcrowding</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Special Case</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Violence, Harassment or Threats of Violence</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
                   <td style="width:225px"><p>Statutory Overcrowding</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:189px"><p>Insanitary or Overcrowded</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Support and Hardship needs</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Prospective Adopter and Foster Carers</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Supportive Hostels</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Move-On from Drug and Alcohol Recovery Programme</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
+                  <td style="width:225px"><p>Relief Duty (Sheffield City Council)</p></td>
+                  <td style="width:189px"><p>Homeless – Statutory Duty</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Vulnerable Young Person Aged 16 or 17</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Armed Forces Additional Preference</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Young People and Children’s Act 1989</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Significant Health Condition</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
                 </tr>
+                <tr>
+                  <td style="width:225px"><p>Prevention Duty</p></td>
+                  <td style="width:189px"><p>Homeless – Statutory Duty</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Intentional Homelessness Duty (s190)</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Full Homelessness Duty (Other Local Authority)</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Relief Duty (Other Local Authority)</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Homeless with No Formal Homelessness Duty</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Return to Sheffield Following Social Services Placement</p></td>
+                  <td style="width:189px"><p>Locality</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Need to Access Support Networks</p></td>
+                  <td style="width:189px"><p>Locality</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Special School Access</p></td>
+                  <td style="width:189px"><p>Locality</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Priority Due to Housing Related Debt</p></td>
+                  <td style="width:189px"><p>Reduced Priority</p></td>
+                  <td style="width:217px"><p>Band 5 – Reduced Priority</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Priority Due to Unacceptable Behaviour</p></td>
+                  <td style="width:189px"><p>Reduced Priority</p></td>
+                  <td style="width:217px"><p>Band 5 – Reduced Priority</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Deliberately Worsened Circumstances (Priority Applicant)</p></td>
+                  <td style="width:189px"><p>Reduced Priority</p></td>
+                  <td style="width:217px"><p>Band 5 – Reduced Priority</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>No Assessed Housing Need</p></td>
+                  <td style="width:189px"><p>General Needs</p></td>
+                  <td style="width:217px"><p>Band 6 – General Needs</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Preference Due to Housing Related Debt</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Preference Due to Unacceptable Behaviour</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Deliberately Worsened Circumstances (Band 6 Applicant)</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Refusal of Suitable Offers</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Discretionary Decision</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority, Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p> </p></td>
+                </tr>
+                
               </tbody>
             </table>
           </p>
@@ -9244,7 +9291,7 @@ const priorityBandingTable = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const prisonLeaver = new ContentH(
