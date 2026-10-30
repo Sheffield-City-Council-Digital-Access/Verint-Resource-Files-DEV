@@ -7860,9 +7860,9 @@ const housingAssociations = new ContentH(
             </div>
           </details>
     `,
-  { buttonLabel: "Report Housing Enquiry", formName: "hou_rehousing_enquiry", },
-  { typeKey: "rehousing_services_information_provided", },
-  { typeKey: "rehousing_services_information_requested",},
+  { buttonLabel: "Report Housing Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
     keywords: [
