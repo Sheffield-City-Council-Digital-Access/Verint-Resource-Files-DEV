@@ -9534,40 +9534,39 @@ const PropertyOffersAndViewings = new ContentH(
   "Understand how Sheffield City Council allocates properties, including the bidding process, property offers, and viewings based on eligibility and priority.",
   `
       <p>
-        Once the bidding period has closed on a Tuesday night, 
-        bids for each property are sorted automatically based on the eligibility criteria.
+        Properties are advertised on an Any Day Advertising basis. 
+        New properties can be advertised each working day (Monday to Friday) and remain available for bidding for 7 days. 
       </p>
+      <p>
+        There will be 5 cycles per week – and may be some days that there are no properties advertised. 
+        Customers should check My Housing regularly for new properties and adverts.
+      </p>
+      <p>
+        When a property's advertising cycle closes, bids are automatically ranked based on the property's eligibility criteria, 
+        the applicant's band and their effective date. The property will usually be offered to the highest-ranked eligible applicant following final checks.
+      </p>
+      <p>
+        If your bid is successful, the landlord will contact you to arrange a viewing. 
+        Unsuccessful applicants will not normally be contacted but can check their bid position through My Housing.
+      </p>
+
       <h3>How to View Available Properties and Bidding Periods</h3>
-
-    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
-
-    <ol>
-      <li>
-        <strong>Go to:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
-          https://housing.sheffield.gov.uk/
-        </a>
-      </li>
-      <li>
-        <strong>Log in</strong> with your username and password.
-      </li>
-      <li>
-        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
-      </li>
-      <li>
-        At the top right of the page, click the <strong>Actions</strong> button.
-      </li>
-      <li>
-        From the drop-down menu, select <strong>All Available Properties</strong>.
-      </li>
-      <li>
-        A list of properties will appear along with their <strong>bidding periods</strong>.
-       </li>
-    </ol>
-
     <p>
-      The following link provides details of each step regarding bidding/offers/viewings: 
-      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank">Bidding for a Council home | Sheffield City Council</a>
+      Follow these steps to find and view available properties on My Housing:
+    </p>
+      <ol>
+        <li> Go to:<a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+              https://housing.sheffield.gov.uk/</a></li>
+        <li>Log in using your username and password.</li>
+        <li>Select ‘Search and bid for a property’.</li>
+        <li>At the top right of the page, click ‘Actions’./li>
+        <li>From the drop-down menu, select ‘All Available Properties’.</li>
+        <li>A list of available properties and their closing dates will be displayed.</li>
+      </ol>
+    <p>
+      Further information about bidding, offers and viewings can be found on the Council website:  
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank" rel="noopener noreferrer">
+      Bidding for a Council home | Sheffield City Council</a>
     </p>
 
     <button type="button"
@@ -9577,7 +9576,7 @@ const PropertyOffersAndViewings = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Bidding%20for%20a%20Council%20home\`"
->
+    >
             Send link to review further information
     </button>
 
@@ -9588,16 +9587,29 @@ const PropertyOffersAndViewings = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
+            Full details are available in the Allocations Policy. In summary:
           </p>
-          <ul>
-            <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
-            <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
-            <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-            <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
-            <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
-            <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
-          </ul> 
+            <ul>
+              <li><strong>Properties advertised to Priority Bands (Bands 1–5)</strong> are offered first to eligible applicants in the highest band. 
+                  Applicants within each band are ranked by their effective date, with the earliest effective date given preference. 
+                  If applicants have the same effective date, the registration date is used to determine priority.</li>
+              <li><strong>Properties advertised to General Needs (Band 6)</strong> are offered first to eligible applicants in Band 6. 
+                  If there are no suitable applicants in Band 6, applicants in Band 7 will then be considered. 
+                  Applicants are ranked by effective date within each band.</li>
+              <li><strong>First Come First Served properties</strong> are offered to the first eligible applicant who places a bid. 
+                  Applicants must still meet any eligibility criteria shown in the advert.</li>
+              <li>If your bid is successful, you will be contacted and invited to view the property. Unsuccessful applicants are not normally 
+                  contacted but can check their bid position through My Housing.</li>
+              <li>In some circumstances an applicant who is first on the shortlist may not receive the offer. This is known as being bypassed. 
+                  Examples include where the applicant no longer meets the eligibility criteria, has tenancy management issues that affect the 
+                  offer, or the property is more suitable for an applicant with a specific assessed need. We will advise you if you have been 
+                  bypassed and explain the reason.</li>
+              <li>In some cases, we may allow multi-viewings for certain Council properties. We will contact the top five applicants who have 
+                  been shortlisted for that property (subject to checks) and invite them for a viewing at the same time. Applicants will be 
+                  advised of their queue positions before attending a multi-viewing.</li>
+              <li>If your circumstances change during the bidding period and you no longer meet the eligibility criteria for the property, you 
+                  may not be offered the property. It is important to keep your housing application up to date.</li>
+            </ul> 
         </div>
     </details>
 
@@ -9608,11 +9620,21 @@ const PropertyOffersAndViewings = new ContentH(
         </summary>
         <div class="accordion-content">
             <p>
-              If you have placed a bid on a property and we have checked you are eligible for the offer, we will contact you to arrange a viewing. 
+              If you have placed a bid on a property and are the highest-ranked eligible applicant, the landlord will contact you to arrange a viewing. 
             </p>
             <p>
-              If you choose not to view or accept a property offer, it could affect your banding or position on the housing register. 
-              We will explain this to you, dependent on your circumstances. 
+              If you choose not to view or accept an offer, this may affect your priority, banding or position on the Housing Register depending on 
+              your circumstances. For example:
+            </p>
+              <ul>
+                <li>Applicants in Bands 1–5 who refuse two suitable offers of accommodation may lose their priority and be moved to Band 6 or Band 7, 
+                    depending on their circumstances. Applicants who have been awarded priority because they are owed a homelessness duty will normally 
+                    only receive one suitable offer before their priority is removed.</li>
+                <li>Applicants in Band 6 who refuse two reasonable offers within a 12-month period may be moved to Band 7. </li>
+                <li>Applicants in Band 7 who refuse two reasonable offers within a 12-month period may have their housing application cancelled.</li>
+              </ul>
+            <p>
+              We will explain the implications of refusing an offer based on your individual circumstances.
             </p>
         </div>
     </details>
@@ -9642,7 +9664,7 @@ const PropertyOffersAndViewings = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "31/07/2026", name: "Joseph Coupland" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const referencesFAQs = new ContentH(
