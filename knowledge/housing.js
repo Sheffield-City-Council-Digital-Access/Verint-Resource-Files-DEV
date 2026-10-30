@@ -7853,22 +7853,16 @@ const housingAssociations = new ContentH(
 
               <p>
                 Mix of housing types including some sheltered schemes. Points system - based on housing need. 
-                Generally need to be 18+, but in some cases will take 16+. NB: These contact details give a summary only; 
+                Generally need to be 18+, but in some cases will take 16+. 
+                <br>NB: These contact details give a summary only; 
                 if further details are needed, please contact the Housing Association directly.
               </p>
             </div>
           </details>
     `,
-  {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_rehousing_enquiry",
-  },
-  {
-    typeKey: "rehousing_services_information_provided",
-  },
-  {
-    typeKey: "rehousing_services_information_requested",
-  },
+  { buttonLabel: "Report Housing Enquiry", formName: "hou_rehousing_enquiry", },
+  { typeKey: "rehousing_services_information_provided", },
+  { typeKey: "rehousing_services_information_requested",},
   {
     type: "Request",
     keywords: [
@@ -7885,10 +7879,7 @@ const housingAssociations = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  {
-    date: "13/05/2025",
-    name: "Dinah Williams",
-  }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const idFaq = new ContentH(
