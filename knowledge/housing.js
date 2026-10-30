@@ -9674,151 +9674,146 @@ const referencesFAQs = new ContentH(
   `
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Why do I need to Provide a Reference?</h3>
+        <h3>Why do I need to provide a reference?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          Current SCC tenants are not required to submit a reference as the Council is already aware of 
-          their circumstances and tenancy history.<br>
-          References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
-          understand the people who are currently on its Housing Register. <br>
-          SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
+          Most applicants joining the Housing Register must provide a reference. References help the Council verify information 
+          provided in a housing application and assess whether an applicant qualifies for the Housing Register and which band they 
+          should be placed in.  It helps to ensure that any applicants allocated social housing can maintain their tenancy to a 
+          high standard. Current Sheffield City Council tenants do not usually need to provide a reference because the Council already 
+          holds information about their tenancy.
         </p>
       </div>
     </details>
   
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Who can Provide a Reference?</h3>
+        <h3>Who can provide a reference?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
-          The following customers also need to provide a reference when creating a new application:
-      </p>
-      <ul>
-          <li>Housing Association tenants (Landlord needs to provide the reference)</li>
-          <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
-          <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
-          <li>Owner occupiers - no need for a reference as bidding is restricted</li>
-          <li>Living with family/parents (18+ only, character reference is needed)</li>
-          <li>NFA/Living with friends (Character reference is needed)</li>
-      </ul>
-      <p>
-          For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
-          Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
-          Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
-          If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
-          this charge. SCC will not pay landlords to provide a reference.
-      </p>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>How to get a Landlords Reference Form?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
+          If you currently live, or have previously lived, independently, the reference should normally be completed by your 
+          current or most recent landlord. Housing Association tenants, tenants of other local authorities and private rented 
+          tenants should ask their landlord to complete the reference.
+        </p>
         <p>
-          Landlord references should be submitted using the SCC reference form. This can be found online on the 
-          Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>. Customer should select:
-
- <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-    
->
-    Send link to review further information
-  </button>
-   
-      </p>
-      <ul>
-          <li>Information header, select Identification and References</li>
-          <li>Scroll down to SCC Reference Template</li>
-          <li>Landlord reference forms are also available at local housing offices.</li>
-      </ul>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>How Long do I Have to Provide the Reference?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-    <div class="accordion-content">
-      <p>
-        You will have the same 28 days to provide the reference as they have for providing ID currently. This 
-        period starts from the day that the online application was submitted. Do not submit the application until 
-        you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
-        application will be cancelled and you will need to resubmit this online.
-      </p>
-    </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>What Will the Reference be Used For?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-    <div class="accordion-content">
-      <p>
-        The reference will be used along with the information supplied by the customer when completing their 
-        application online to determine which band they should be placed in. The criteria for being placed in 
-        band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
-        band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
-        special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
-        requests are assessed on their merits and the customer will be advised of the decision in writing.
-      </p>
-    </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Is a Reference Required For a Change of Circumstances?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
+          If you have never lived independently or are unable to provide a landlord reference, please contact the Housing Information 
+          and Registration Team[DC1.1]. The Allocations Policy allows for an alternative reference form to be provided where appropriate.
+        </p>
         <p>
-          A reference will only be required if the change being submitted is a change of address, or the Application 
-          is being changed to a Joint Application. If the customer is changing their address, a new reference would 
-          be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
-          we would still not require a reference.
+          Please note that if a landlord charges a fee for completing a reference, this cost must be paid by the applicant.
         </p>
       </div>
     </details>
   
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Is a Reference Required as Part of a Renewal Process?</h3>
+        <h3>How to get a Landlords reference form?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          Customers are not required to submit a reference as part of the renewals process, 
-          <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
+          References should be submitted using the Sheffield City Council reference template.
+        </p>
+        <p>
+          The reference form can be accessed through My Housing:
+        </p>
+          <ol>
+            <li>Log in to My Housing</li>
+            <li>Select Information</li>
+            <li>Select Identification and References</li>
+            <li>Download the SCC Reference Template</li>
+          </ol>
+        <p>
+          Reference forms are also available from local housing offices.
+        </p>       
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How long do I have to provide the reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        You will have the same 28 days to provide the reference as you have for providing ID. 
+        Your housing application will not be processed until a satisfactory reference has been received. 
+        The Allocations Policy states that applicants will be asked to provide a reference after completing their 
+        online application and the application will not normally be activated until all required information has 
+        been received and verified.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>What will the reference be used for?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        The reference will be considered alongside the information provided on your housing application. 
+        Depending on the information received, you may:
+      </p>
+        <ul>
+          <li>Be placed in Band 6 (General Needs) if you qualify for the Housing Register and do not have an 
+              assessed housing need. </li>
+          <li>Be placed in Band 5 (Reduced Priority) if you have been awarded a priority but there are concerns relating 
+              to unacceptable behaviour or housing related debt. </li>
+          <li>Be placed in Band 7 (Reduced Preference) where there is no assessed housing need but there are concerns 
+              relating to unacceptable behaviour or housing related debt. </li>
+          <li>Be found not to qualify for the Housing Register if the information received shows that you do not meet the 
+              qualification criteria.</li>
+        </ul>
+      <p>
+        You will be notified in writing of the outcome and any review rights available to you.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required for a change of circumstances?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          A new reference may be required if you move address or if your circumstances change and further tenancy 
+          information is needed to reassess your application. Current Sheffield City Council tenants are generally 
+          exempt from providing a landlord reference because the Council already has access to their tenancy information.
+        </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required as part of a renewal process?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          The Allocations Policy does not normally require a new reference as part of the annual renewal process. 
+          However, further information may be requested where there has been a change in circumstances or where 
+          additional verification is required.
         </p>
       </div>
     </details>
   
    <details class="accordion">
       <summary class="accordion-header">
-        <h3>Is a reference required as part of a renewal process?</h3>
+        <h3>What if the customer can't visit an Area Office?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <h3>What if the Customer Cannot Visit an Area Office?</h3>
         <p>
-          There are alternatives to visiting the area office yourself, such as asking your friends or family 
-          to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-          <strong>Documents can be uploaded via the housing online website.</strong>
+          There are several ways to provide supporting documents. Documents can be uploaded through My Housing 
+          and customers may also ask a trusted friend, family member or support worker to help provide documentation 
+          where appropriate. The Council can also provide assistance to customers who have difficulty completing 
+          the process themselves.
         </p>
       </div>
     </details>
@@ -9846,7 +9841,7 @@ const referencesFAQs = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "15/05/2025", name: "Dinah Williams" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 
