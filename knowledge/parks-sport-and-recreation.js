@@ -3059,7 +3059,7 @@ const gravesPark = new ContentPSaR(
     ],
     categories: ["Parks and Countryside", "Events and Activities"]
   },
-  { date: "14/08/2026", name: "Liz Taster" }
+  { date: "03/11/2026", name: "Andy Walker" }
 );
 
 const rivelinValleyWaterPlay = new ContentPSaR(
