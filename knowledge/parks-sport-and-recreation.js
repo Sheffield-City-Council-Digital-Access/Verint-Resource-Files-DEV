@@ -2265,7 +2265,7 @@ const donatingToParks = new ContentPSaR(
 
   <p>
     Further information and a link to the online form to donate to parks can be found here:
-    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/cost-of-living/support-your-community/make-donation-park" target="_blank" rel="noopener noreferrer">
     Donate to a park | Sheffield City Council</a>
   </p>
     <button
@@ -2860,7 +2860,7 @@ const gravesPark = new ContentPSaR(
       </p>
       <p>
         Further details about donating to parks, including a link to the online form to make a donation, are available here:
-        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.sheffield.gov.uk/cost-of-living/support-your-community/make-donation-park" target="_blank" rel="noopener noreferrer">
           Donate to a park | Sheffield City Council
         </a>
       </p>
