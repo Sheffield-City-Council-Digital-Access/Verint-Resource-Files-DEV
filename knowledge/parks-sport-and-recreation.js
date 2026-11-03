@@ -2265,7 +2265,7 @@ const donatingToParks = new ContentPSaR(
 
   <p>
     Further information and a link to the online form to donate to parks can be found here:
-    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.sheffield.gov.uk/cost-of-living/support-your-community/make-donation-park" target="_blank" rel="noopener noreferrer">
     Donate to a park | Sheffield City Council</a>
   </p>
     <button
@@ -2859,11 +2859,11 @@ const gravesPark = new ContentPSaR(
         Donations must be agreed by the park manager and delivered to the park; we do not collect donations. Customers should complete the online donation form.
       </p>
       <p>
-        Further details about donating to parks, including a link to the online form to make a donation, is available here:
-        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/parks-gardens/parks-green-spaces">
-        Donate to a park | Sheffield City Council</a>
+        Further details about donating to parks, including a link to the online form to make a donation, are available here:
+        <a href="https://www.sheffield.gov.uk/cost-of-living/support-your-community/make-donation-park" target="_blank" rel="noopener noreferrer">
+          Donate to a park | Sheffield City Council
+        </a>
       </p>
-
     <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
@@ -3059,7 +3059,7 @@ const gravesPark = new ContentPSaR(
     ],
     categories: ["Parks and Countryside", "Events and Activities"]
   },
-  { date: "14/08/2026", name: "Liz Taster" }
+  { date: "03/11/2026", name: "Andy Walker" }
 );
 
 const rivelinValleyWaterPlay = new ContentPSaR(
