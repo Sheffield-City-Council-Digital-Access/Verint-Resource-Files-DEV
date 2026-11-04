@@ -4308,7 +4308,7 @@ const applicationChanges = new ContentH(
           Proof of child benefit may be required where applicable, for example where children are included on your application and you are in receipt of this. 
         </p>
 
-        <h3>Proof of ID documents</h3>
+        <h4>Proof of ID documents</h4>
         <ul>
           <li>Marriage certificate</li>
           <li>Divorce/Annulment papers</li>
@@ -4333,7 +4333,7 @@ const applicationChanges = new ContentH(
           <li>Driving licence</li>
         </ul>
 
-        <h3>Proof of Address</h3>
+        <h4>Proof of Address</h4>
         <ul>
           <li>Recent utility bill paid in that person’s name (last quarter)</li>
           <li>Most recent council tax statement</li>
@@ -4346,7 +4346,7 @@ const applicationChanges = new ContentH(
           <li>Proof of all other benefits</li>
         </ul>
 
-        <h3>Proof of Local Connection (if requested)</h3>
+        <h4>Proof of Local Connection (if requested)</h4>
         <p>
           To qualify for our Housing Register, you will need a continuous three-year local connection to Sheffield through residency, 
           employment, close family connections including a primary carer. You may be asked for evidence of local connection which could include:
@@ -4365,7 +4365,7 @@ const applicationChanges = new ContentH(
           We may also request further information depending on your individual situation to help determine your qualification on our Housing Register.
         </p>
 
-        <h3>Proof of Income and Savings (Financial Resources and household income limit)</h3>
+        <h4>Proof of Income and Savings (financial resources and household income limit)</h4>
         <p>
           To assess your application, we will ask for evidence of your household’s income, savings, and financial circumstances. This could include:
         </p>
@@ -4392,7 +4392,7 @@ const applicationChanges = new ContentH(
           In some cases we may ask for proof of exemptions where they may apply.
         </p>
 
-        <h3>Proof of Child Benefit</h3>
+        <h4>Proof of Child Benefit</h4>
         <ul>
           <li>Child benefit award letter</li>
           <li>
@@ -4433,7 +4433,7 @@ const applicationChanges = new ContentH(
           You may not always need to provide ID for every renewal or change, but we may request updated documents depending on your circumstances.
         </p>
       
-        <h3>How to Renew Your Application</h3>
+        <h4>How to Renew Your Application</h4>
           <ol>
             <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
             <li>Click ‘<strong>Log into my account</strong>’ </li>
@@ -4606,7 +4606,7 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
 
-      <h3>How to Change Your Details</h3>
+      <h4>How to Change Your Details</h4>
         <p>
           Follow these steps to update your contact information on the My Housing Sheffield site.
         </p>
@@ -4649,10 +4649,10 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <h3>Main Applicant</h3>
+        <h4>Main Applicant</h4>
           <p>
             To remove a joint applicant, this must be completed online through your <strong>My Housing account</strong>.
-            Website: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a>
+            <br>Website: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a>
           <br>
 
         <button 
@@ -4669,7 +4669,7 @@ const applicationChanges = new ContentH(
         </button>
 
           <br>
-          <h3>Joint Applicant</h3>
+          <h4>Joint Applicant</h4>
           <p>
             The joint applicant must:
           </p>
@@ -4765,7 +4765,7 @@ const applyForRehousing = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Other Rehousing Options</h3>
+        <h3>Other Rehousing Housing Options</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4807,6 +4807,7 @@ const applyForRehousing = new ContentH(
           service online on the HomeSwapper website: <a href="http://www.homeswapper.co.uk/" target="_blank" rel="noopener noreferrer">
           http://www.homeswapper.co.uk/</a> 
         </p>
+        <p>[Insert Send Link]</p>
 
         <p>
           <strong>Shared Ownership Scheme</strong> - operated by the Council, a number of Private Registered Providers of social housing 
@@ -4814,6 +4815,7 @@ const applyForRehousing = new ContentH(
           <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" 
           target="_blank" rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>
         </p>
+        <p>[Insert Send Link]</p>
 
     </div>
 </details>
@@ -4845,6 +4847,7 @@ const applyForRehousing = new ContentH(
           Some Registered Providers also advertise through <a href="https://www.b-with-us.co.uk/" 
           target="_blank" rel="noopener noreferrer">B-with-us</a>.
         </p>
+        <p>[Insert Send Link]</p>
     </div>
 </details>
 
@@ -5312,7 +5315,7 @@ const bidding = new ContentH(
     </button>
         
 
-    <h3>Bidding Cycles and Available Properties</h3>
+    <h4>Bidding Cycles and Available Properties</h4>
     <p>
       Properties are advertised through the Choice Based Lettings system. 
     </p>
@@ -5492,7 +5495,7 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <h3>Login</h3>
+          <h4>Login</h4>
           <p>
             Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access My Housing.
           </p>
@@ -5549,7 +5552,7 @@ const bidding = new ContentH(
       </summary>
       <div class="accordion-content">
 
-      <h3>How to Change Your Details</h3>
+      <h4>How to Change Your Details</h4>
         <p>
           To update your details:
         </p>
@@ -5591,13 +5594,13 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <h3>Main Applicant</h3>
+          <h4>Main Applicant</h4>
           <p>
             To remove a joint applicant, this must be done through your <strong>My Housing account</strong>. 
-            Online website: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
+            <br>Online website: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
           </p>
           
-          <h3>Joint Applicant</h3>
+          <h4>Joint Applicant</h4>
           <p>
             The joint applicant must:
           </p>
@@ -6545,6 +6548,18 @@ const eligibility = new ContentH(
       <p>
         Once you have registered, you will be given login details so you can access and manage your application online.
       </p>
+      <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
+      >
+            Send link to review further information
+      </button>
     </div>
   </details>
 
@@ -7084,13 +7099,13 @@ const healthAndHousing = new ContentH(
       <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 
           <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 293 0000')">0114 293 0000</a> or 
           <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 205 3333')">0114 205 3333</a> or online at 
-          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
       <li><strong>Suffering domestic abuse</strong> - contact Housing Advice on 
           <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736306')">0114 2736306</a> or online at 
-          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
       <li><strong>Private rented repairs / landlord issues</strong> – please contact 
           <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4680')">0114 273 4680</a> or online at 
-          <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
+          <a href="https://www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
     </ul>  
     <p>
       Medical priority is generally considered where your accommodation is unsuitable for your health or disability-related 
@@ -7102,6 +7117,18 @@ const healthAndHousing = new ContentH(
       <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank" rel="noopener noreferrer">
       https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
     </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20home%20adaptation%20assessment\`"
+    >
+            Send link to review further information
+    </button>
+
     <p>
       If assessment identifies that your housing needs cannot reasonably be met through adaptation or support, you may be advised 
       to submit a Health and Housing application for consideration under the Housing Allocations Policy. 
@@ -7363,6 +7390,7 @@ const housingAssociations = new ContentH(
         Others specialise in helping particular groups of people, e.g. the elderly, disabled or those with other specific needs. 
         Public numbers cannot be used on freephone.
       </p>
+      <br>
 
       <h2>List of Housing Associations and their details</h2>
                 
@@ -8509,8 +8537,9 @@ const mutualExchanges = new ContentH(
         To register for a Mutual Exchange, customers can use HomeSwapper: 
         <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">https://www.homeswapper.co.uk/</a>
       </p>
+      <p>[Insert Send Link]</p>
       <p>
-        Registration is free for Sheffield City Council tenants
+        Registration is free for Sheffield City Council tenants.
       </p>
       <p>
         More information can be found on the Sheffield City Council website: 
@@ -9329,12 +9358,12 @@ const priorityBandingTable = new ContentH(
   "Priority Banding Table",
   "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
   `
-    <h3>Priority Banding Table</h3>
+    <h4>Priority Banding Table</h4>
       <p>
         The table below shows the list of priorities and the bands they fall in. 
       </p>
   
-    <h3>Effective Dates</h3>
+    <h4>Effective Dates</h4>
       <p>
         Applicants are ranked within their band using their effective date. 
         The applicant with the earliest effective date will usually be ranked highest within that band. 
@@ -9547,8 +9576,8 @@ const priorityBandingTable = new ContentH(
                   <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Discretionary Decision</p></td>
-                  <td style="width:189px"><p>Non-Reasonable Preference Priority, Homeless (non-statutory duty)</p></td>
+                  <td style="width:225px"><p><em>Discretionary Decision</em></p></td>
+                  <td style="width:189px"><p><em>Non-Reasonable Preference Priority, Homeless (non-statutory duty)</em></p></td>
                   <td style="width:217px"><p> </p></td>
                 </tr>
                 
@@ -9864,8 +9893,8 @@ const prisonLeaver = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
-const PropertyOffersAndViewings = new ContentH(
-  "PropertyOffersAndViewings",
+const propertyOffersAndViewings = new ContentH(
+  "propertyOffersAndViewings",
   "Property Offers and Viewings",
   "Understand how Sheffield City Council allocates properties, including the bidding process, property offers, and viewings based on eligibility and priority.",
   `
@@ -9899,6 +9928,16 @@ const PropertyOffersAndViewings = new ContentH(
         <li>From the drop-down menu, select ‘All Available Properties’.</li>
         <li>A list of available properties and their closing dates will be displayed.</li>
       </ol>
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    >
+            Send link to review further information
+    </button>
     <p>
       Further information about bidding, offers and viewings can be found on the Council website:  
       <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank" rel="noopener noreferrer">
@@ -12056,7 +12095,7 @@ const rehousing = new MenuH(
     priorities,
     priorityBandingTable,
     prisonLeaver,
-    PropertyOffersAndViewings,
+    propertyOffersAndViewings,
     referencesFAQs,
     relationship,
     rentAndAffordability,
