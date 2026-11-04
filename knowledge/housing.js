@@ -8131,6 +8131,239 @@ const idReferences = new ContentH(
 );
 
 
+const impactLetters = new ContentH(
+  "impactLetters",
+  "Impact Letters Guidance",
+  "Options and suggestions to help customers who have just lost their job.",
+  `
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Why has an applicant received an impact letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The letter explains how the new Housing Allocations Policy is expected to affect an applicants housing application when 
+        it comes into effect on 11 November 2026.
+      </p>
+      <p>
+        All existing households on the Housing Register are being assessed under the new policy. 
+      </p>
+      <p>
+        The outcome in the letter is based on the information we hold on their current housing application when it was reviewed.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What do I do if an applicant has received an impact letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        They need to read the outcome and the actions they need to take in the letter. If the information is correct and the 
+        letter does not ask them respond, they do not need to do anything. 
+      </p>
+      <p>
+        If the information is incorrect or the circumstances have changed, they need log in to their My Housing, update their 
+        application and provide the appropriate supporting documents. 
+      </p>
+      <p>
+        The letter may also state details to request a right of review so they may need to appeal alongside updating their 
+        housing application. 
+      </p>
+      <p>
+        If the letter asks them choose which application should remain active, they must respond by the date shown in the letter. 
+        If they do not it is likely a decision will be made on there behalf after the go live date.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What to do if an applicant does not agree with the proposed outcome?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the letter is a decision to remove the housing application or change the band and they still disagree, they can request 
+        a review within 21 days of receiving the letter or email. The request must be made by letter or email to the contact shown 
+        in the letter they have received. 
+      </p>
+      <p>
+        The review must accompany evidence including explaining why you believe the decision is incorrect. 
+      </p>
+      <p>
+        If the information is incorrect and your circumstances have changed, log in to your My Housing, update the application and 
+        provide the appropriate supporting documents.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What if their circumstances have changed since the letter or email was sent. What should the applicant do?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Log in to their My Housing, update your application and provide the appropriate documents to support the change. 
+        We can then consider the verified information against the new policy. 
+      </p>
+      <p>
+        If the letter contains a review deadline, they must also follow the right of review instructions stated in the letter.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Can you as officers change the proposed outcome in an applicant’s letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        As officers you can explain what is in the letter and the next steps <strong><em>(you as officers should have had 
+        copies of the letters)</em></strong> but you cannot change the outcome during a phone call conversation or if the 
+        applicants attend to speak to one of our officers in person.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Can an applicant request a right of review?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the applicant has received a letter which gives them a right to request a review and they disagree with the decision, 
+        they must request it within 21 days of receiving the letter. 
+      </p>
+      <p>
+        They must send the request by letter or email to the address shown in the letter and include evidence explaining why they 
+        believe the decision is incorrect. 
+      </p>
+      <p>
+        <strong>Further advice</strong>: If the have not done so already, you should also advise them to update there details on 
+        their My Housing account as soon as possible alongside the request for a review if this is stated in the letter or email.
+      </p>
+      <p>
+        <strong>Note: (A right of review can be requested if an applicant does not agree with the outcome of their letter or email. 
+        They cannot just request a review if they just do not agree with changes in the new policy).</strong>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What to I do if an applicant has not received a letter or an email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The team have carefully mapped out which letter an applicant should be sent ranging from 1-13 of the policy changes. 
+        Some applicants on our Housing Register may have stated NFA with no fixed address or may be vulnerable which may mean 
+        it is not clear which policy change they would be impacted by. 
+      </p>
+      <p>
+        In this instance, until the 11th of November please email the details to 
+        <a href="mailto:AllocationsPolicy@sheffield.gov.uk">AllocationsPolicy@sheffield.gov.uk</a> or contact our 
+        <a href="mailto:HousingRegistrations@sheffield.gov.uk">HousingRegistrations@sheffield.gov.uk</a> 
+        where an officer will be able to get back to the applicant and look into this further.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What if an applicant struggled yo use My Housing or need help understanding the letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        As an officer you can explain the letter to the applicant and provide details on next steps but cannot change the 
+        outcome on a phone call.
+      </p>
+      <p>
+        If an applicant cannot use My Housing, you can talk them through or ask them to attend in person to visit our 
+        Housing Advice Services, who can support them to update their housing application and provide documents. 
+      </p>
+      <p>
+        If an applicant is under 18 and wants to discuss their housing need, the letter they have received will direct 
+        them to the Housing Advice Service, Children’s Services or Leaving Care Service.
+      </p>
+      <p>
+        If the applicant is on a priority band and the applicant would like to find out more information, the priority 
+        officer can discuss these circumstances with them. 
+        <strong>Note: Checking on NEC will tell you the name of the priority officer managing the case).</strong>
+      </p>
+      <p>
+        The letters have an overleaf should an applicant require a translated copy in their spoken language as well 
+        as contact details.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What are the alternative rehousing options if an applicant’s wants to be rehoused or access a property through social housing, but does no longer qualify?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>In person at Howden House and your local Area Housing Office. 
+            <a href="https://www.sheffield.gov.uk/council-housing/support-services-council-houses/neighbourhood-offices" 
+            target="_blank" rel="noopener noreferrer">Neighbourhood offices | Sheffield City Council</a></li>
+        <li>Telephone: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930000')">0114 2930000</a></li>
+        <li>Staff and internal/external partner enquires: <a href="mailto:AllocationsPolicy@sheffield.gov.uk">AllocationsPolicy@sheffield.gov.uk</a></li>
+        <li>Residents/ applicants impacted enquiries: <a href="https://www.sheffield.gov.uk/your-city-council/contact-us" 
+            target="_blank" rel="noopener noreferrer">Contact us | Sheffield City Council</a></li>
+        <li>Private Rented accommodation. For more information contact 
+            <a href="mailto:privaterentedsolutions@sheffield.gov.uk">privaterentedsolutions@sheffield.gov.uk</a> or by phone on 
+            <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734567')">0114 2734567</a> 
+            or to find out more information look at <a href="https://www.sheffield.gov.uk/housing/housing-options/help-getting-private-tenancy" 
+            target="_blank" rel="noopener noreferrer">Help with getting a private tenancy | Sheffield City Council</a></li>
+        <li>Shared Ownership - Private Registered Providers of social housing also run Shared Ownership and other low-cost housing schemes within the city. 
+            Please visit the following link: <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" target="_blank" 
+            rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>.</li>
+        <li>You may also wish to apply directly to some Housing Associations. While we work alongside many of these housing providers 
+            and advertise some of their properties, a few of them also advertise a proportion of their own stock directly.</li>
+        <li>You can visit <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">HomeSwapper</a> and register to find a Mutual Exchange. 
+            To explore more of these options please visit <a href="https://www.sheffield.gov.uk/housing/housing-options/" 
+            target="_blank" rel="noopener noreferrer">Other housing options | Sheffield City Council</a>.li>
+      </ul>
+      <p>
+        <strong>Please refer to the FAQ (Frequently asked questions) for any specific questions</strong>
+      </p>
+    </div>
+  </details>
+
+  `,
+  { buttonLabel: "", formName: "",},
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      "impact",
+      "letter",
+      "letters",
+      "email",
+      "outcome",
+      "policy change",
+      "housing",
+      "houzing",
+      "houseing",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "04/11/2026", name: "Liz Taster" }
+);
+
+
 const lostJob = new ContentH(
   "lostJob",
   "Job Lost (Homeless Prevention)",
@@ -11813,6 +12046,7 @@ const rehousing = new MenuH(
     housingAssociations,
     idFaq,
     idReferences,
+    impactLetters,
     lostJob,
     movingIn,
     mutualExchanges,
