@@ -8134,7 +8134,7 @@ const idReferences = new ContentH(
 const impactLetters = new ContentH(
   "impactLetters",
   "Impact Letters Guidance",
-  "Options and suggestions to help customers who have just lost their job.",
+  "Guidance covering the impact letters for the new Allocations Policy.",
   `
 
   <details class="accordion">
@@ -8164,19 +8164,19 @@ const impactLetters = new ContentH(
     <div class="accordion-content">
       <p>
         They need to read the outcome and the actions they need to take in the letter. If the information is correct and the 
-        letter does not ask them respond, they do not need to do anything. 
+        letter does not ask them to respond, they do not need to do anything. 
       </p>
       <p>
-        If the information is incorrect or the circumstances have changed, they need log in to their My Housing, update their 
+        If the information is incorrect or the circumstances have changed, they need to log in to their My Housing, update their 
         application and provide the appropriate supporting documents. 
       </p>
       <p>
-        The letter may also state details to request a right of review so they may need to appeal alongside updating their 
+        The letter may also state details to request a right of review, so they may need to appeal alongside updating their 
         housing application. 
       </p>
       <p>
         If the letter asks them choose which application should remain active, they must respond by the date shown in the letter. 
-        If they do not it is likely a decision will be made on there behalf after the go live date.
+        If they do not, it is likely a decision will be made on there behalf after the go live date.
       </p>
     </div>
   </details>
@@ -8193,11 +8193,11 @@ const impactLetters = new ContentH(
         in the letter they have received. 
       </p>
       <p>
-        The review must accompany evidence including explaining why you believe the decision is incorrect. 
+        The review must accompanied by evidence, including explaining why they believe the decision is incorrect. 
       </p>
       <p>
-        If the information is incorrect and your circumstances have changed, log in to your My Housing, update the application and 
-        provide the appropriate supporting documents.
+        If the information is incorrect and their circumstances have changed, they need to log in to their My Housing, update the application 
+        and provide the appropriate supporting documents.
       </p>
     </div>
   </details>
@@ -8209,7 +8209,7 @@ const impactLetters = new ContentH(
     </summary>
     <div class="accordion-content">
       <p>
-        Log in to their My Housing, update your application and provide the appropriate documents to support the change. 
+        Log in to their My Housing, update their application and provide the appropriate documents to support the change. 
         We can then consider the verified information against the new policy. 
       </p>
       <p>
@@ -8225,7 +8225,8 @@ const impactLetters = new ContentH(
     </summary>
     <div class="accordion-content">
       <p>
-        As officers you can explain what is in the letter and the next steps <strong><em>(you as officers should have had 
+        No.
+        <br>As officers you can explain what is in the letter and the next steps <strong><em>(you as officers should have had 
         copies of the letters)</em></strong> but you cannot change the outcome during a phone call conversation or if the 
         applicants attend to speak to one of our officers in person.
       </p>
@@ -8243,16 +8244,16 @@ const impactLetters = new ContentH(
         they must request it within 21 days of receiving the letter. 
       </p>
       <p>
-        They must send the request by letter or email to the address shown in the letter and include evidence explaining why they 
-        believe the decision is incorrect. 
+        They must send the request by letter or email to the address shown in the letter they have received and include evidence 
+        explaining why they believe the decision is incorrect. 
       </p>
       <p>
-        <strong>Further advice</strong>: If the have not done so already, you should also advise them to update there details on 
+        <strong>Further advice</strong>: If the have not done so already, you should also advise them to update their details on 
         their My Housing account as soon as possible alongside the request for a review if this is stated in the letter or email.
       </p>
       <p>
-        <strong>Note: (A right of review can be requested if an applicant does not agree with the outcome of their letter or email. 
-        They cannot just request a review if they just do not agree with changes in the new policy).</strong>
+        <strong>Note: A right of review can be requested if an applicant does not agree with the outcome of their letter or email. 
+        They cannot just request a review if they just do not agree with changes in the new policy.</strong>
       </p>
     </div>
   </details>
@@ -8279,16 +8280,16 @@ const impactLetters = new ContentH(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>What if an applicant struggled yo use My Housing or need help understanding the letter or email?</h3>
+      <h3>What if an applicant struggled to use My Housing or needs help understanding the letter or email?</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>
-        As an officer you can explain the letter to the applicant and provide details on next steps but cannot change the 
-        outcome on a phone call.
+        As an officer you can explain the letter to the applicant and provide details on next steps, but you cannot change 
+        the outcome on a phone call.
       </p>
       <p>
-        If an applicant cannot use My Housing, you can talk them through or ask them to attend in person to visit our 
+        If an applicant cannot use My Housing, you can talk them through it or ask them to attend in person to visit our 
         Housing Advice Services, who can support them to update their housing application and provide documents. 
       </p>
       <p>
@@ -8298,7 +8299,7 @@ const impactLetters = new ContentH(
       <p>
         If the applicant is on a priority band and the applicant would like to find out more information, the priority 
         officer can discuss these circumstances with them. 
-        <strong>Note: Checking on NEC will tell you the name of the priority officer managing the case).</strong>
+        <br><strong>Note: Checking on NEC will tell you the name of the priority officer managing the case.</strong>
       </p>
       <p>
         The letters have an overleaf should an applicant require a translated copy in their spoken language as well 
@@ -8344,7 +8345,7 @@ const impactLetters = new ContentH(
   `,
   { buttonLabel: "", formName: "",},
   { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
   {
     type: "Information",
     keywords: [
