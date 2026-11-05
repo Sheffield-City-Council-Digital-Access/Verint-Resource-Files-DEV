@@ -4807,16 +4807,7 @@ const applyForRehousing = new ContentH(
           service online on the HomeSwapper website: <a href="http://www.homeswapper.co.uk/" target="_blank" rel="noopener noreferrer">
           http://www.homeswapper.co.uk/</a> 
         </p>
-          <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`"
-          >
-            Send link to review further information
-          </button>
+        <p>[Insert Send Link]</p>
 
         <p>
           <strong>Shared Ownership Scheme</strong> - operated by the Council, a number of Private Registered Providers of social housing 
@@ -4824,17 +4815,8 @@ const applyForRehousing = new ContentH(
           <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" 
           target="_blank" rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>
         </p>
-<!--          <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Shared%20Ownership\`"
-          >
-            Send link to review further information
-          </button>
--->
+        <p>[Insert Send Link]</p>
+
     </div>
 </details>
 
@@ -4865,16 +4847,7 @@ const applyForRehousing = new ContentH(
           Some Registered Providers also advertise through <a href="https://www.b-with-us.co.uk/" 
           target="_blank" rel="noopener noreferrer">B-with-us</a>.
         </p>
-          <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=B%2Dwith%2Dus\`"
-          >
-            Send link to review further information
-          </button>
+        <p>[Insert Send Link]</p>
     </div>
 </details>
 
@@ -7480,17 +7453,8 @@ const housingAssociations = new ContentH(
               <br>Email: <a href="enquiries@alpha-living.co.uk">enquiries@alpha-living.co.uk</a>
               <br><a href="https://www.alpha-living.co.uk/" target="_blank">https://www.alpha-living.co.uk/</a> <br></em>
             </p>
-              <button type="button"
-                class="dform_widget email-btn dform_widget_type_button"
-                aria-label="For further information send link"
-                onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Alpha%20Living%20Housing%20Association\`"
-              >
-                Send link to review further information
-              </button>
-            
+
+            <p>[Insert Send Link]</p>
             <p>
               Specialist Housing Association providing housing for over 55’s. They have apartments to provide 
               independent living with Development Managers and Housekeepers close by if assistance is needed.
@@ -7516,16 +7480,7 @@ const housingAssociations = new ContentH(
               <br><a href="https://www.anchor.org.uk/" target="_blank">https://www.anchor.org.uk/</a> <br></em>
             </p>
 
-              <button type="button"
-                class="dform_widget email-btn dform_widget_type_button"
-                aria-label="For further information send link"
-                onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Anchor%20Trust%20Housing%20Association\`"
-              >
-                Send link to review further information
-              </button>
+            <p>[Insert Send Link]</p>
 
             <p>
               Sheltered housing for the elderly. Applicants need to be 55+. 
@@ -7608,16 +7563,7 @@ const housingAssociations = new ContentH(
               <br><a href="https://www.myclarionhousing.com/" target="_blank">https://www.myclarionhousing.com/</a> <br></em>
             </p>
 
-              <button type="button"
-              class="dform_widget email-btn dform_widget_type_button"
-              aria-label="For further information send link"
-              onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Clarion%20Housing%20Group%20Housing%20Association\`"
-              >
-                Send link to review further information
-              </button>
+            <p>[Insert Send Link]</p>
             
             <p>
               Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
@@ -7681,18 +7627,7 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="contactus@homegroup.org.uk">contactus@homegroup.org.uk</a>
                 <br><a href="https://www.homegroup.org.uk/" target="_blank">https://www.homegroup.org.uk/</a> <br></em>
               </p>
-              
-                <button type="button"
-                  class="dform_widget email-btn dform_widget_type_button"
-                  aria-label="For further information send link"
-                  onclick="
-                  window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                  KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                  }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Group%20Housing%20Association\`"
-                >
-                  Send link to review further information
-                </button>
-
+              <p>[Insert Send Link]</p>
               <p>
                 2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, 
                 and any properties becoming available will be advertised through the Choice Based Lettings system.
@@ -7717,16 +7652,7 @@ const housingAssociations = new ContentH(
               <br>Email: <a href="enquiry@incommunities.co.uk">enquiry@incommunities.co.uk</a>
               <br><a href="https://www.incommunities.co.uk/" target="_blank">https://www.incommunities.co.uk/</a> <br></em>
             </p>
-              <button type="button"
-                class="dform_widget email-btn dform_widget_type_button"
-                aria-label="For further information send link"
-                onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Incommunities%20Ltd%20Housing%20Association\`"
-              >
-                Send link to review further information
-              </button>
+            <p>[Insert Send Link]</p>
             </div>
           </details>
   
@@ -7749,16 +7675,7 @@ const housingAssociations = new ContentH(
                 <br><a href="https://www.placesforpeople.co.uk/" target="_blank">https://www.placesforpeople.co.uk/</a> <br></em>
               </p>
 
-                <button type="button"
-                  class="dform_widget email-btn dform_widget_type_button"
-                  aria-label="For further information send link"
-                  onclick="
-                  window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                  KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                  }interactionid=\${KDF.getParams().interactionid}&sel_service=Places%20for%20People%20Housing%20Association\`"
-                >
-                  Send link to review further information
-                </button>
+              <p>[Insert Send Link]</p>
               
               <p>
                 Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
@@ -7838,17 +7755,7 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="enquiries@syha.co.uk">CSC.enquiries@syha.co.uk</a>
                 <br><a href="https://www.syha.co.uk/" target="_blank">https://www.syha.co.uk/</a> <br></em>
               </p>
-                <button type="button"
-                  class="dform_widget email-btn dform_widget_type_button"
-                  aria-label="For further information send link"
-                  onclick="
-                  window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                  KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                  }interactionid=\${KDF.getParams().interactionid}&sel_service=South%20Yorkshire%20Housing%20Association\`"
-                >
-                  Send link to review further information
-                </button>
-              
+              <p>[Insert Send Link]</p>
               <p>
                 We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
                 People can apply directly to the services if they don’t need care.
@@ -7916,16 +7823,7 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="mailto:enquiries@togetherhousing.co.uk">enquiries@togetherhousing.co.uk</a>
                 <br><a href="https://www.togetherhousing.group/" target="_blank">https://www.togetherhousing.group/</a> <br></em>
               </p> 
-                <button type="button"
-                  class="dform_widget email-btn dform_widget_type_button"
-                  aria-label="For further information send link"
-                  onclick="
-                  window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                  KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                  }interactionid=\${KDF.getParams().interactionid}&sel_service=Together%20Housing%20Association\`"
-                >
-                  Send link to review further information
-                </button>
+              <p>[Insert Send Link]</p>
             </div>
           </details>
 
@@ -7946,16 +7844,7 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="homesearch@vicohomes.co.uk">homesearch@vicohomes.co.uk</a>
                 <br><a href="https://www.vicohomes.co.uk" target="_blank">https://www.vicohomes.co.uk</a> <br></em>
               </p> 
-                <button type="button"
-                  class="dform_widget email-btn dform_widget_type_button"
-                  aria-label="For further information send link"
-                  onclick="
-                  window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                  KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                  }interactionid=\${KDF.getParams().interactionid}&sel_service=Vico%20Homes%20Housing%20Association\`"
-                >
-                  Send link to review further information
-                </button>
+              <p>[Insert Send Link]</p>
             </div>
           </details>
 
@@ -8648,16 +8537,7 @@ const mutualExchanges = new ContentH(
         To register for a Mutual Exchange, customers can use HomeSwapper: 
         <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">https://www.homeswapper.co.uk/</a>
       </p>
-        <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`"
-          >
-            Send link to review further information
-          </button>
+      <p>[Insert Send Link]</p>
       <p>
         Registration is free for Sheffield City Council tenants.
       </p>
