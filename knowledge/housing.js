@@ -5319,7 +5319,7 @@ const bidding = new ContentH(
             Send link to review further information
         </button>
         
-
+      <br>
       <h4>Bidding Cycles and Available Properties</h4>
       <p>
         Properties are advertised through the Choice Based Lettings system. 
@@ -5680,7 +5680,7 @@ const demotedOrDisqualified = new ContentH(
               <li>Be eligible for social housing by law</li>
               <li>Meet our qualification criteria stated in our allocation policy set by the council</li>
           </ul>
-        
+        <br>
         <h4>Immigration Status</h4>
           <p>
             The Housing Act 1996 means that some people cannot join our Housing Register due to their immigration status.
@@ -5689,7 +5689,7 @@ const demotedOrDisqualified = new ContentH(
             We will assess your eligibility after you have submitted an application and will let you know if this applies to you. 
             You may be asked to provide documents to confirm your immigration status.
           </p>
-          
+        <br>  
         <h4>Who Is Not Eligible</h4>
           <p>
             You will not be able to join our Housing Register if you are:
@@ -7752,7 +7752,7 @@ const housingAssociations = new ContentH(
               <p>
                 We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
                 People can apply directly to the services if they don’t need care.
-                The PL for both these schemes is Chris Dearnley:<a href="c.dearnley@syha.co.uk" target="_blank">c.dearnley@syha.co.uk</a>  
+                The PL for both these schemes is Chris Dearnley:<a href="mailto:c.dearnley@syha.co.uk" target="_blank">c.dearnley@syha.co.uk</a>  
                 (<a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 244 4978')">0114 244 4978</a>).
                 If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows 
                 (<a href="mailto:jean.peachey@sheffield.gov.uk">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows 
