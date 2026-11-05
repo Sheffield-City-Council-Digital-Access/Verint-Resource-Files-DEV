@@ -4813,7 +4813,7 @@ const applyForRehousing = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=HomeSwapper\`"
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`"
           >
             Send link to review further information
           </button>
@@ -4824,7 +4824,7 @@ const applyForRehousing = new ContentH(
           <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" 
           target="_blank" rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>
         </p>
-          <button type="button"
+/*          <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
             onclick="
@@ -4834,7 +4834,7 @@ const applyForRehousing = new ContentH(
           >
             Send link to review further information
           </button>
-
+*/
     </div>
 </details>
 
@@ -8654,7 +8654,7 @@ const mutualExchanges = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=HomeSwapper\`"
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`"
           >
             Send link to review further information
           </button>
