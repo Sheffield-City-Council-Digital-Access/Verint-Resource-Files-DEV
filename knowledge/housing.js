@@ -5666,7 +5666,7 @@ const demotedOrDisqualified = new ContentH(
   `
   <details class="accordion">
     <summary class="accordion-header">
-        <h3>Eligibility</h3>
+        <h3>Who Can Join Our Housing Register?</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -5680,30 +5680,6 @@ const demotedOrDisqualified = new ContentH(
               <li>Be eligible for social housing by law</li>
               <li>Meet our qualification criteria stated in our allocation policy set by the council</li>
           </ul>
-        <br>
-        <h4>Immigration Status</h4>
-          <p>
-            The Housing Act 1996 means that some people cannot join our Housing Register due to their immigration status.
-          </p>
-          <p>
-            We will assess your eligibility after you have submitted an application and will let you know if this applies to you. 
-            You may be asked to provide documents to confirm your immigration status.
-          </p>
-        <br>  
-        <h4>Who Is Not Eligible</h4>
-          <p>
-            You will not be able to join our Housing Register if you are:
-          </p>
-            <ul>
-              <li>A person subject to immigration control who is not eligible under the relevant legislation</li>
-              <li>A person from abroad who is not subject to immigration control but is not habitually resident in: </li>
-                <ul>
-                  <li>The UK</li>
-                  <li>The Channel Islands</li>
-                  <li>The Isle of Man</li>
-                  <li>The Republic of Ireland</li>
-                </ul>
-            </ul>
     </div>
   </details>
   
@@ -6494,17 +6470,36 @@ const eligibility = new ContentH(
         Eligibility is mainly determined by your immigration status or whether you meet the Government's rules on who can access social housing. 
       </p>
       <p>
-        Some people are not eligible to join our Housing Register. This includes:
+        Some people are not eligible to join our Housing Register.
       </p>
-        <ul>
-          <li>People who are subject to immigration control and do not meet the required legal criteria.</li>
-          <li>People from abroad who are not subject to immigration control but are not habitually resident in the Common Travel Area, 
-              which includes the UK, Channel Islands, Isle of Man and Republic of Ireland. </li>
-        </ul>
       <p>
         If you are not eligible, we will write to you explaining the decision and your right to request a review. 
         If your immigration status changes in the future, you can make a new application and provide evidence of the change.
       </p>
+
+       <h4>Immigration Status</h4>
+          <p>
+            The Housing Act 1996 means that some people cannot join our Housing Register due to their immigration status.
+          </p>
+          <p>
+            We will assess your eligibility after you have submitted an application and will let you know if this applies to you. 
+            You may be asked to provide documents to confirm your immigration status.
+          </p>
+        <br>  
+        <h4>Who Is Not Eligible</h4>
+          <p>
+            You will not be able to join our Housing Register if you are:
+          </p>
+            <ul>
+              <li>A person subject to immigration control who is not eligible under the relevant legislation</li>
+              <li>A person from abroad who is not subject to immigration control but is not habitually resident in: </li>
+                <ul>
+                  <li>The UK</li>
+                  <li>The Channel Islands</li>
+                  <li>The Isle of Man</li>
+                  <li>The Republic of Ireland</li>
+                </ul>
+            </ul>
     </div>
   </details>
 
@@ -17196,7 +17191,7 @@ const olderPersonsIndependentLiving = new ContentH(
       Further information about OPIL and Extra Care accommodation is included within Appendix B of the Allocations Policy.
     </p>
 
-    <h3>What does OPIL provide</h3>
+    <h3>What does OPIL provide?</h3>
     <p>
       Older Persons Independent Living accommodation provides safe, secure and self-contained housing designed to support independent living.
     </p>
@@ -17246,7 +17241,7 @@ const olderPersonsIndependentLiving = new ContentH(
       In an emergency, staff can help arrange appropriate assistance in line with local procedures.
     </p>
 
-    <h3>Who is eligible for OPIL accommodation</h3>
+    <h3>Who is eligible for OPIL accommodation?</h3>
     <p>
       OPIL schemes are designed for people aged 60 and over. Under the policy, all household members included on the 
       housing registration must be aged over 60 to bid for OPIL schemes.
@@ -17262,7 +17257,7 @@ const olderPersonsIndependentLiving = new ContentH(
       If the checks are not passed, the property will not be offered.
     </p>
 
-    <h3>What are the costs of OPIL Accommodation</h3>
+    <h3>What are the costs of OPIL Accommodation?</h3>
     <p>
       The cost of living in Sheltered Housing is very competitive when compared with other social housing providers.
     </p>
@@ -17281,7 +17276,7 @@ const olderPersonsIndependentLiving = new ContentH(
       You will receive help and advice on claiming Welfare and/or Housing Benefit at the start of your tenancy.
     </p>
 
-    <h3>What are the benefits of OPIL Accommodation</h3>
+    <h3>What are the benefits of OPIL Accommodation?</h3>
     <p>
       OPIL can offer:
     </p>
