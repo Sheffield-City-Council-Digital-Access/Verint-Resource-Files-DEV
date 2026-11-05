@@ -4765,12 +4765,12 @@ const applyForRehousing = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Other Rehousing Housing Options</h3>
+        <h3>Other Housing Options</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>
-          There are other rehousing housing options you can consider when looking for a home in Sheffield. 
+          There are other housing options you can consider when looking for a home in Sheffield. 
           Social housing is an option for many but not the only one available. 
           Where possible, we will discuss with you other rehousing options available to help you.
           <br/>These include: 
@@ -4807,7 +4807,7 @@ const applyForRehousing = new ContentH(
           service online on the HomeSwapper website: <a href="http://www.homeswapper.co.uk/" target="_blank" rel="noopener noreferrer">
           http://www.homeswapper.co.uk/</a> 
         </p>
-        <p>[Insert Send Link]</p>
+        
 
         <p>
           <strong>Shared Ownership Scheme</strong> - operated by the Council, a number of Private Registered Providers of social housing 
@@ -4815,7 +4815,7 @@ const applyForRehousing = new ContentH(
           <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" 
           target="_blank" rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>
         </p>
-        <p>[Insert Send Link]</p>
+        
 
     </div>
 </details>
@@ -4847,7 +4847,7 @@ const applyForRehousing = new ContentH(
           Some Registered Providers also advertise through <a href="https://www.b-with-us.co.uk/" 
           target="_blank" rel="noopener noreferrer">B-with-us</a>.
         </p>
-        <p>[Insert Send Link]</p>
+        
     </div>
 </details>
 
@@ -5272,62 +5272,69 @@ const bidding = new ContentH(
       meet all your aspirations, but your priority officer will support you as best as he/she can and discuss this with you.
     </p>
 
-    <h4>Checking Property Adverts</h4>
-    <p>
-      Before placing a bid, you must carefully check the property advert to make sure it is suitable.
-    </p>
-    <p>
-      Adverts will include important information such as:
-    </p>
-      <ul>
-        <li>Property type and size</li>
-        <li>Location</li>
-        <li>Any age restrictions</li>
-        <li>Adaptations or special requirements</li>
-        <li>Any Local Lettings criteria</li>
-        <li>Information on any repairs or works pending, along with an estimated date of availability</li>
-        <li>Where a property is not immediately available due to repairs or works, this will be clearly stated in the advert</li>
-      </ul>
-    <p>
-      If you are offered a property and refuse it without good reason, this may:
-    </p>
-      <ul>
-        <li>Affect your housing band</li>
-        <li>Reduce your priority</li>
-        <li>Or affect your position on our Housing Register</li>
-      </ul>
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Checking Property Adverts, Bidding Cycles and Available Properties</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Before placing a bid, you must carefully check the property advert to make sure it is suitable.
+      </p>
+      <p>
+        Adverts will include important information such as:
+      </p>
+        <ul>
+          <li>Property type and size</li>
+         <li>Location</li>
+          <li>Any age restrictions</li>
+          <li>Adaptations or special requirements</li>
+          <li>Any Local Lettings criteria</li>
+          <li>Information on any repairs or works pending, along with an estimated date of availability</li>
+          <li>Where a property is not immediately available due to repairs or works, this will be clearly stated in the advert</li>
+        </ul>
+      <p>
+        If you are offered a property and refuse it without good reason, this may:
+      </p>
+        <ul>
+          <li>Affect your housing band</li>
+          <li>Reduce your priority</li>
+          <li>Or affect your position on our Housing Register</li>
+        </ul>
 
-    <p>
-      Further information about joining our Housing Register, bidding for properties and other housing options can be found on the Sheffield City 
-      Council website. Please visit: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" 
-      target="_blank" rel="noopener">Registering for a council home | Sheffield City Council</a>
-    </p>
+      <p>
+        Further information about joining our Housing Register, bidding for properties and other housing options can be found on the Sheffield City 
+        Council website. Please visit: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" 
+        target="_blank" rel="noopener">Registering for a council home | Sheffield City Council</a>
+      </p>
 
-    <button type="button"
+        <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Registering%20for%20a%20council%20home\`"
->
+        >
             Send link to review further information
-    </button>
+        </button>
         
 
-    <h4>Bidding Cycles and Available Properties</h4>
-    <p>
-      Properties are advertised through the Choice Based Lettings system. 
-    </p>
-      <ul>
-        <li>Properties are advertised for <strong>7 days</strong></li>
-        <li>There will be up to <strong>5 cycles</strong> per week – there may be days that there are no properties advertised. 
-        A new cycle will start each working day (Monday to Friday) </li>
-        <li>New properties can be added on any working day, so you should check your account regularly</li>
-      </ul>
-    <p>
-      You can place up to 3 bids per cycle on suitable properties advertised each day. Once the cycle closes, bids cannot be changed or withdrawn.
-    </p>
+      <h4>Bidding Cycles and Available Properties</h4>
+      <p>
+        Properties are advertised through the Choice Based Lettings system. 
+      </p>
+        <ul>
+          <li>Properties are advertised for <strong>7 days</strong></li>
+          <li>There will be up to <strong>5 cycles</strong> per week – there may be days that there are no properties advertised. 
+              A new cycle will start each working day (Monday to Friday) </li>
+          <li>New properties can be added on any working day, so you should check your account regularly</li>
+        </ul>
+      <p>
+        You can place up to 3 bids per cycle on suitable properties advertised each day. Once the cycle closes, bids cannot be changed or withdrawn.
+      </p>
+    </div>
+  </details>
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -5673,47 +5680,33 @@ const demotedOrDisqualified = new ContentH(
               <li>Be eligible for social housing by law</li>
               <li>Meet our qualification criteria stated in our allocation policy set by the council</li>
           </ul>
-        </div>
-    </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Immigration Status</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The Housing Act 1996 means that some people cannot join our Housing Register due to their immigration status.
-      </p>
-      <p>
-        We will assess your eligibility after you have submitted an application and will let you know if this applies to you. 
-        You may be asked to provide documents to confirm your immigration status.
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Who Is Not Eligible</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You will not be able to join our Housing Register if you are:
-      </p>
-        <ul>
-          <li>A person subject to immigration control who is not eligible under the relevant legislation</li>
-          <li>A person from abroad who is not subject to immigration control but is not habitually resident in: </li>
+        
+        <h4>Immigration Status</h4>
+          <p>
+            The Housing Act 1996 means that some people cannot join our Housing Register due to their immigration status.
+          </p>
+          <p>
+            We will assess your eligibility after you have submitted an application and will let you know if this applies to you. 
+            You may be asked to provide documents to confirm your immigration status.
+          </p>
+          
+        <h4>Who Is Not Eligible</h4>
+          <p>
+            You will not be able to join our Housing Register if you are:
+          </p>
             <ul>
-              <li>The UK</li>
-              <li>The Channel Islands</li>
-              <li>The Isle of Man</li>
-              <li>The Republic of Ireland</li>
+              <li>A person subject to immigration control who is not eligible under the relevant legislation</li>
+              <li>A person from abroad who is not subject to immigration control but is not habitually resident in: </li>
+                <ul>
+                  <li>The UK</li>
+                  <li>The Channel Islands</li>
+                  <li>The Isle of Man</li>
+                  <li>The Republic of Ireland</li>
+                </ul>
             </ul>
-        </ul>
     </div>
   </details>
-
+  
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Reduced Preference (Demotion)</h3>
@@ -7454,7 +7447,7 @@ const housingAssociations = new ContentH(
               <br><a href="https://www.alpha-living.co.uk/" target="_blank">https://www.alpha-living.co.uk/</a> <br></em>
             </p>
 
-            <p>[Insert Send Link]</p>
+            
             <p>
               Specialist Housing Association providing housing for over 55’s. They have apartments to provide 
               independent living with Development Managers and Housekeepers close by if assistance is needed.
@@ -7480,7 +7473,7 @@ const housingAssociations = new ContentH(
               <br><a href="https://www.anchor.org.uk/" target="_blank">https://www.anchor.org.uk/</a> <br></em>
             </p>
 
-            <p>[Insert Send Link]</p>
+            
 
             <p>
               Sheltered housing for the elderly. Applicants need to be 55+. 
@@ -7563,7 +7556,7 @@ const housingAssociations = new ContentH(
               <br><a href="https://www.myclarionhousing.com/" target="_blank">https://www.myclarionhousing.com/</a> <br></em>
             </p>
 
-            <p>[Insert Send Link]</p>
+            
             
             <p>
               Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
@@ -7627,7 +7620,7 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="contactus@homegroup.org.uk">contactus@homegroup.org.uk</a>
                 <br><a href="https://www.homegroup.org.uk/" target="_blank">https://www.homegroup.org.uk/</a> <br></em>
               </p>
-              <p>[Insert Send Link]</p>
+              
               <p>
                 2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, 
                 and any properties becoming available will be advertised through the Choice Based Lettings system.
@@ -7652,7 +7645,7 @@ const housingAssociations = new ContentH(
               <br>Email: <a href="enquiry@incommunities.co.uk">enquiry@incommunities.co.uk</a>
               <br><a href="https://www.incommunities.co.uk/" target="_blank">https://www.incommunities.co.uk/</a> <br></em>
             </p>
-            <p>[Insert Send Link]</p>
+            
             </div>
           </details>
   
@@ -7675,7 +7668,7 @@ const housingAssociations = new ContentH(
                 <br><a href="https://www.placesforpeople.co.uk/" target="_blank">https://www.placesforpeople.co.uk/</a> <br></em>
               </p>
 
-              <p>[Insert Send Link]</p>
+              
               
               <p>
                 Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
@@ -7755,11 +7748,11 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="enquiries@syha.co.uk">CSC.enquiries@syha.co.uk</a>
                 <br><a href="https://www.syha.co.uk/" target="_blank">https://www.syha.co.uk/</a> <br></em>
               </p>
-              <p>[Insert Send Link]</p>
+              
               <p>
                 We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
                 People can apply directly to the services if they don’t need care.
-                The PL for both these schemes is Chris Dearnley:<a href="c.dearnely@syha.co.uk" target="_blank">c.dearnely@syha.co.uk</a>  
+                The PL for both these schemes is Chris Dearnley:<a href="c.dearnley@syha.co.uk" target="_blank">c.dearnley@syha.co.uk</a>  
                 (<a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 244 4978')">0114 244 4978</a>).
                 If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows 
                 (<a href="mailto:jean.peachey@sheffield.gov.uk">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows 
@@ -7823,7 +7816,7 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="mailto:enquiries@togetherhousing.co.uk">enquiries@togetherhousing.co.uk</a>
                 <br><a href="https://www.togetherhousing.group/" target="_blank">https://www.togetherhousing.group/</a> <br></em>
               </p> 
-              <p>[Insert Send Link]</p>
+              
             </div>
           </details>
 
@@ -7844,7 +7837,7 @@ const housingAssociations = new ContentH(
                 <br>Email: <a href="homesearch@vicohomes.co.uk">homesearch@vicohomes.co.uk</a>
                 <br><a href="https://www.vicohomes.co.uk" target="_blank">https://www.vicohomes.co.uk</a> <br></em>
               </p> 
-              <p>[Insert Send Link]</p>
+              
             </div>
           </details>
 
@@ -8537,7 +8530,18 @@ const mutualExchanges = new ContentH(
         To register for a Mutual Exchange, customers can use HomeSwapper: 
         <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">https://www.homeswapper.co.uk/</a>
       </p>
-      <p>[Insert Send Link]</p>
+      
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=HomeSwapper\`"
+        >
+            Send link to review further information
+        </button>
+      
       <p>
         Registration is free for Sheffield City Council tenants.
       </p>
