@@ -7263,15 +7263,21 @@ const homelessPrevention = new ContentH(
 
     <ul>
       <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
-      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
-      <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
+      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 5555')">0114 273 5555</a> or online at 
+          <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
       <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
-      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at 
-      <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
+      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 293 0000')">0114 293 0000</a> or 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 205 3333')">0114 205 3333</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Suffering domestic abuse</strong> - contact Housing Advice on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736306')">0114 2736306</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4680')">0114 273 4680</a> or online at 
+          <a href="https://www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
     </ul>
 
     <p>
@@ -7279,6 +7285,17 @@ const homelessPrevention = new ContentH(
       If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. 
       <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
     </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20home%20adaptation%20assessment\`"
+    >
+            Send link to review further information
+    </button>
 
     <p>
       If following assessment, it is determined that your property cannot be adapted the assessing officer will advise you to complete the 
@@ -8350,7 +8367,7 @@ const impactLetters = new ContentH(
             and advertise some of their properties, a few of them also advertise a proportion of their own stock directly.</li>
         <li>You can visit <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">HomeSwapper</a> and register to find a Mutual Exchange. 
             To explore more of these options please visit <a href="https://www.sheffield.gov.uk/housing/housing-options/" 
-            target="_blank" rel="noopener noreferrer">Other housing options | Sheffield City Council</a>.li>
+            target="_blank" rel="noopener noreferrer">Other housing options | Sheffield City Council</a>.</li>
       </ul>
       <p>
         <strong>Please refer to the FAQ (Frequently asked questions) for any specific questions</strong>
