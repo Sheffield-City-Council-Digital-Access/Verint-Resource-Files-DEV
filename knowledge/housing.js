@@ -3672,8 +3672,19 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            If you are in Priority band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-            despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+          If you are in one of our priority bands (Bands 1 to 5), it is likely that the property has been offered to an applicant in a higher 
+          priority band for example band 1- Emergency need. 
+        </p>
+        <p>
+          Applicants on priority can only bid for properties advertised to their band, which means applicants in priority band 1 will be 
+          considered first before any other applicants in priority bands 2,3,4 and 5. 
+        </p>
+        <p>
+          Within each priority band, applicant’s bids are ranked by their effective date. For priority your band effective date starts from 
+          the date your priority was agreed this helps us to decide who will be offered the property first. 
+        </p>
+        <p>
+          If two applicants have the same effective date, the housing registration date will be used to decide who is ranked first.
         </p>
     </div>
 </details>
@@ -3685,8 +3696,19 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            A band is where an applicant is placed based on their needs and/or circumstances. 
-            A band is used to determine the priority of an application. Band 'A' is the highest and band 'E' is the lowest.
+          A band helps us to decide between an applicant’s housing need and where they are placed on our Housing Register. 
+          This is dependent upon there circumstances and if they have an assessed housing need or not.
+        </p>
+        <p>
+          Our Housing Register is divided into <strong>7 bands</strong>:
+        </p>
+          <ul>
+            <li><strong>Bands 1–5:</strong> Priority bands (based on level of assessed housing need)</li>
+            <li><strong>Band 6:</strong> General needs (no assessed housing need)</li>
+            <li><strong>Band 7:</strong> Reduced preference</li>
+          </ul>
+        <p>
+          Band 1 is the highest priority we award and Band 7 is the lowest.
         </p>
     </div>
 </details>
@@ -3698,7 +3720,7 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Advisor Note - Check Housing Registration Application on My Housing – this will show the applicant’s band.
+          Advisor Note – Check the Housing Registration Application on My Housing. This will show the applicant’s band.
         </p>
     </div>
 </details>
@@ -3710,89 +3732,48 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
-            for your needs, based on the information you have provided.
+          Your band is either based on your assessment of your housing need and personal circumstances,
+           or we may use the information provided in your housing application to determine your band.
         </p>
         <p>
-            <strong>If you do not agree</strong> with your banding, or circumstances have changed, we can review your application or we re-assess your housing need.
+          Bands reflect the urgency and type of housing need, with priority bands awarded to applicants with more urgent or severe circumstances.
         </p>
         <p>
-            Current council tenants need to contact their Neighbourhood Officer for assessment. Either at their local housing office or on the freephone in Howden House.
-        </p>
-        <p>
-            <strong>If your banding has been reduced</strong> due to arrears, application can be reviewed by Registration Team and customer will be advised to 
-            contact Income Management if arrears are impacting banding. 
-            <br>
-            The customer may also find the information in the knowledge area <strong>Money Support</strong> helpful.
-            This is the top result if you enter <strong>Money Support</strong> in the Knowledge search above. 
-            The page provides information about support options for managing housing, bills, benefits, and financial hardships in Sheffield.
-            <br>
-            The customer can also visit their local Neighbourhood Office where staff can provide advice and information.
-        </p>
-
-        <p>
-            <strong>If your banding has been reduced</strong> due to 3 or more refusals in 12 months an officer would need to check if this is still the case or if it has expired. 
-        </p>
-        <p>
-            <strong>If your banding has been reduced</strong> due to no local connection, proof of this can be uploaded to the My Housing account and will be reviewed. 
-            <br>
-            The following proof is acceptable:
-        </p>
-
-        <table>
-          <tr>
-            <th>Local Connection Type</th>
-            <th>Evidence Required</th>
-          </tr>
-          <tr>
-            <td>No Local Connection</td>
-            <td>NA</td>
-          </tr>
-          <tr>
-            <td>Family lives in area</td>
-            <td>
-              My Housing check 
-              <br>Phone call to a family member 
-              <br>Signed declaration from family member
-            </td>
-          </tr>
-          <tr>
-            <td>Employed/Study in area</td>
-            <td>
-              Contract of employment (if recently started)
-              <br>Letter from Employer
-              <br>ID card
-              <br>College/University card
-            </td>
-          </tr>
-          <tr>
-            <td>Live in Area</td>
-            <td>Proof of address</td>
-          </tr>
-          <tr>
-            <td>Used to live in Area</td>
-            <td>Ohms/Abritas utility bills from previous address – within 6 months </td>
-          </tr>
-          <tr>
-            <td>To give or receive Care</td>
-            <td>Letter/confirmation from support service and/or GP etc.</td>
-          </tr>
-          <tr>
-            <td>Offered employment in area</td>
-            <td>Job Offer letter</td>
-          </tr>
-        </table>
-
-        <p>
-          Local connection banding rule exceptions:
+          If you think your band is incorrect, your circumstances have changed and feel you may have an assessed housing need, 
+          you can request a review, and we will consider the information you have provided:
         </p>
           <ul>
-            <li><strong>Fleeing Domestic Violence</strong> from outside Sheffield will be classed as having local connection regardless of what their address is;</li>
-            <li><strong>Care leaver customers</strong> customers who are either care leavers for a minimum of one day;</li>
-            <li><strong>People from or were in the regular armed forces</strong> – will be classed as having local connection regardless of what their address is.</li>
+            <li>Council tenants should contact their Neighbourhood Officer for an assessment or advice and support.</li>
+            <li>If your priority has been reduced due housing-related debt including rent arrears, this can be reviewed 
+                by your priority officer, and you may be advised to contact our Income Management Team.</li>
+            <li>If your priority has been reduced due to unacceptable behaviour, this can be reviewed by your priority officer, 
+                your priority officer may contact other teams and support services to see if you have demonstrated a change 
+                in behaviour or engaging with support services.</li>
+            <li>If your priority has been reduced due to a failed pre-tenancy inspection during your priority. You may be advised 
+                to contact your Neighbourhood officer or you current landlord if it is a (Registered Provider property). </li>
+            <li>You may also find support through the council’s Money Support services, which provide advice on managing 
+                housing costs, benefits, financial difficulties, cost of living (managing expenses). </li>
           </ul>
+
         <p>
-        <strong>For more info about support for our armed forces visit <a href="https://www.sheffield.gov.uk/your-city-council/armed-forces" target="_blank">Armed Forces Covenant | Sheffield City Council</a> </strong>
+          For more information visit <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank" rel="noopener noreferrer">
+          Cost of living | Sheffield City Council</a> 
+        </p>
+
+        <button type="button"
+          class="dform_widget email-btn dform_widget_type_button"
+          aria-label="For further information send link"
+          onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20support\`"
+        >
+            Send link to review further information
+        </button>
+
+        <p>
+          For more info about support for our armed forces visit <a href="https://www.sheffield.gov.uk/your-city-council/armed-forces" target="_blank" rel="noopener noreferrer">
+          Armed Forces Covenant | Sheffield City Council</a> 
         </p>
 
         <button type="button"
@@ -3802,69 +3783,68 @@ const allocationsPolicy = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Armed%20Forces%20Covenant\`"
->
+        >
             Send link to review further information
-    </button>
+        </button>
     </div>
 </details>
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Band 'E' FAQs</h3>
+        <h3>Why am I in Band 5 and not Band 7?</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Why am I in band E?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
-                    For example: out of town and no local connection; rent arrears etc.
-                </p>
-            </div>
-        </details>
+        <p>
+          Band 5 is the reduced priority band for applicants who have an assessed housing need. This means they may be in our priority 
+          bands 1-4, but the priority has been reduced to 5 because of factors such as housing-related debt, unacceptable behaviour, 
+          deliberately worsening circumstances, or tenancy-related concerns.
+        </p>
+        <p>
+          Band 7 is used where the applicant has no assessed housing need (no priority) and we may place them in the reduced preference 
+          band for similar reasoning such as; housing related debt, unacceptable behaviour or refusal of 2 offers. Sometimes, once an 
+          applicant qualifies and is eligible to join our Housing Register they maybe placed in band 7 straightaway. 
+        </p>
+    </div>
+</details>
 
-        <details class="details-accordion">
-            <summary>
-                Owner Occupier in band D/E - why can't I bid?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
-                    Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
-                    unless they have been assessed and given a priority. 
-                    In this case proof of sale would need to be produced at a later date.
-                </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                Why am I classed as no local connection but have a Sheffield postcode?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    A local connection means within the Sheffield city boundary. 
-                    Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
-                </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                I'm in band E, but have a longer waiting time than someone who was offered a property?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
-                    This is because band E is classed as having reduced preference. 
-                    Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
-                    For example, if you have arrears, you will be considered after someone living outside of Sheffield.
-                </p>
-            </div>
-        </details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Band '7' (Reduced Preference) – FAQs</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+      <p>
+        <strong><em>Why am I in Band 7?</em></strong>
+        <br/>Band 7 is the <strong>reduced preference band</strong>. This means either:
+      </p>
+        <ul>
+          <li>You do not have an assessed housing need, <strong>and</strong></li>
+          <li>Your preference has been reduced in line with the Allocations Policy. This may be due to factors such as 
+              housing-related debt, unacceptable behaviour, deliberately worsening your circumstances, tenancy-related 
+               issues, or refusing 2 suitable offers.</li>
+        </ul>
+      <br/>
+      <p>
+        <strong><em>Why am I classed as no local connection but have a Sheffield postcode?</em></strong>
+        <br/>A local connection is defined as living within the <strong>Sheffield City boundary</strong>, not just having a Sheffield postcode.
+      </p>
+      <p>
+      Some addresses use a Sheffield postcode but are outside the city boundary and therefore do not meet the local connection criteria.
+      </p>
+      <br/>
+      <p>
+        <strong><em>I am in Band 7, but have been waiting longer than someone who was offered a property</em></strong>
+        <br/>Band 7 is the lowest band and is considered <strong>after all other bands (1–6)</strong>.
+      </p>
+      <p>
+        This means:
+      </p>
+        <ul>
+          <li>Applicants in higher bands will always be prioritised ahead of you, regardless of waiting time that you have.</li>
+          <li>Applicants in Band 7 are not always prioritised solely by waiting time. 
+              The way bids are ranked within Band 7 depends on the reason the applicant has been placed in Band 7. 
+              For further information on how Band 7 applicants on how our band 7 works please refer to section 5 of our Housing Allocations Policy.</li>
+        </ul>
     </div>
 </details>
   `,
@@ -3894,7 +3874,7 @@ const allocationsPolicy = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "06/05/2026", name: "Liz Taster" }
+  { date: "28/10/2026", name: "Liz Taster" }
 );
 
 const asbHomeless = new ContentH(
@@ -4269,37 +4249,66 @@ const applicationChanges = new ContentH(
   "Understand the process for updating your housing application, including submitting changes, providing ID, and renewing your application annually.",
   `
     <p>
-      Change of circumstances is now online. When you are making changes, remember
-      to click 'Submit'. ID/References may also need to be submitted before any
-      changes are accepted.
+      Changes to your housing application must now be made online through your <strong>My Housing account</strong>.
     </p>
     <p>
-      It is very important that you notify us of any changes in your circumstances
-      so that we can amend your application. We will inform you if this results in
-      your application moving to a different band. Depending on the change you have
-      made, you may be required to resubmit your identification/reference before
-      changes are accepted. We will notify you if this is necessary.
+      It is your responsibility to notify us of any changes in your circumstances as soon as possible so that we can update your housing application.  
+      If you are on priority you need to notify your priority officer as well. This is important because your circumstances may affect your banding 
+      or whether you still are eligible or qualify to remain on our Housing Register.
     </p>
     <p>
-      If the customer has made recent changes, the changes are likely to be awaiting
-      approval, and no further changes can be made until they are approved.
+      When making changes, you must click ‘Submit’ to confirm them. Once submitted, your application will be reviewed and, depending on the change, 
+      you may be asked to provide supporting documents before the changes can be approved.
     </p>
+    <p>
+      If you have made recent changes, these are likely to be awaiting approval, and you may not be able to make further changes until they have been 
+      reviewed. You may need to log in regularly to check on the status of your registration.   
+    </p>
+    <p>
+      Once your changes have been assessed, we will notify you if this results in:
+    </p>
+      <ul>
+        <li>A change to your housing band</li>
+        <li>Further information is required</li>
+        <li>No change to your application</li>
+        <li>Or in some cases, you no longer qualifying for the Housing Register</li>
+      </ul>
+
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Accepted ID</h3>
+        <h3>Accepted ID and Supporting Documents</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          You must provide two forms of identification to prove changes to your
-          application. One must be from the Proof of ID documents list, while the
-          second must provide proof of your current UK address. Photo ID is also
-          required to prove your identity. If you do not have photo ID, you must
-          provide a passport-sized photo accompanied by a birth certificate. Proof
-          of child benefit is only required where children under 16 years of age are
-          being rehoused with you.
+          You will need to provide:
         </p>
-        <h3>Proof of ID documents</h3>
+          <ul>
+            <li>Two forms of ID one including a current proof of address (for each named applicant on the housing application, 
+                i.e. for joint applicants each applicant will need to provide this). </li>
+            <li>Two forms of ID for any household member over the age of 16, one of which includes a proof of address.</li>
+            <li>One form of ID for household members under the age of 16.</li>
+          </ul>
+        <p>
+          <strong>Additional documents may also include</strong>: 
+        </p> 
+          <ul>
+            <li>Proof of three-year continuous local connection unless an exemption applies </li>
+            <li>Proof of income and savings (some payments maybe disregarded) </li>
+            <li>Reference</li>
+            <li>Proof of child benefit (where applicable)</li>
+          </ul>
+        <p>
+          Depending on your circumstances or if evidence is insufficient, we may contact you for further documentation or proofs. 
+        </p>
+        <p>
+          If you do not have photo ID, you may provide a passport-sized photograph together with a birth certificate.
+        </p>
+        <p>
+          Proof of child benefit may be required where applicable, for example where children are included on your application and you are in receipt of this. 
+        </p>
+
+        <h4>Proof of ID documents</h4>
         <ul>
           <li>Marriage certificate</li>
           <li>Divorce/Annulment papers</li>
@@ -4323,7 +4332,8 @@ const applicationChanges = new ContentH(
           <li>Letter from Social Worker/Probation Officer/Solicitor</li>
           <li>Driving licence</li>
         </ul>
-        <h3>Proof of Address</h3>
+
+        <h4>Proof of Address</h4>
         <ul>
           <li>Recent utility bill paid in that person’s name (last quarter)</li>
           <li>Most recent council tax statement</li>
@@ -4335,7 +4345,54 @@ const applicationChanges = new ContentH(
           <li>Life assurance/Insurance policies</li>
           <li>Proof of all other benefits</li>
         </ul>
-        <h3>Proof of Child Benefit</h3>
+
+        <h4>Proof of Local Connection (if requested)</h4>
+        <p>
+          To qualify for our Housing Register, you will need a continuous three-year local connection to Sheffield through residency, 
+          employment, close family connections including a primary carer. You may be asked for evidence of local connection which could include:
+        </p>
+          <ul>
+            <li>Proof that you have lived in Sheffield for the required period (e.g. tenancy agreements, utility bills, council tax statements 
+                covering the last three years)</li>
+            <li>Proof of employment in Sheffield (e.g. employment contract, payslips, or a letter from your employer confirming your place of 
+                work and length of employment)</li>
+            <li>Proof of close family living in Sheffield (e.g. confirmation of their address and relationship to you)</li>
+            <li>Primary carer - Proof that the person provides you with significant day-to-day care and support to the applicant) and who lives 
+                in Sheffield and has done so for the last three years. This may include Supporting letters from relevant professionals or agencies 
+                confirming your circumstances (where applicable)</li>
+          </ul>
+        <p>
+          We may also request further information depending on your individual situation to help determine your qualification on our Housing Register.
+        </p>
+
+        <h4>Proof of Income and Savings (financial resources and household income limit)</h4>
+        <p>
+          To assess your application, we will ask for evidence of your household’s income, savings, and financial circumstances. This could include:
+        </p>
+        <ul>
+          <li>Recent payslips from employment</li>
+          <li>Benefit award letters (e.g. Universal Credit, Tax Credits, Pension Credit)</li>
+          <li>Bank statements (usually the last 3 months for all accounts)</li>
+          <li>Evidence of savings or investments (e.g. savings accounts, ISAs, shares)</li>
+          <li>Evidence of any property ownership or financial interest in a property</li>
+          <li>Information about income and expenditure for all adult household members</li>
+        </ul>
+
+        <p>
+          We will use this information to assess whether you meet the financial criteria for joining or remaining on the Housing Register, which are:
+        </p>
+        <ul>
+          <li>Savings, assets or financial resources of £120,000 or more; or </li>
+          <li>A combined gross household income of £60,000 or more </li>
+        </ul>
+        <p>
+          These checks will apply at different points where there is a change of circumstances, annual renewal, matching and when an offer of accommodation is made.
+        </p>
+        <p>
+          In some cases we may ask for proof of exemptions where they may apply.
+        </p>
+
+        <h4>Proof of Child Benefit</h4>
         <ul>
           <li>Child benefit award letter</li>
           <li>
@@ -4348,6 +4405,7 @@ const applicationChanges = new ContentH(
         </ul>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Annual Renewal</h3>
@@ -4355,27 +4413,36 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
         <p>
-          Under the Allocation Policy, customers will be required to update their
-          application on the anniversary of the date they registered.
+          You must renew your housing application annually by updating it online through your <strong>My Housing account</strong>, around the 
+          anniversary date of when you registered.
         </p>
         <p>
-          If applications are not renewed within 42 days when requested, the
-          application may be cancelled.
+          You must complete the renewal even if your circumstances have not changed to confirm that you would still like to remain on our 
+          Housing Register.
         </p>
         <p>
-          Customers won’t need to submit ID for any changes they make, and this will
-          continue for the time being. This will change in the future.
+          If you do not renew your application annually, your application may be removed from our Housing Register. If we are aware of any 
+          vulnerabilities, extra effort will be made to contact and support you to help with this process. You can visit your local area housing 
+          office or Howden House First Point where officers can assist you.
         </p>
-        <details class="details-accordion">
-          <summary>
-            Instructions for completing the renewal of your Housing Application
-            online
-          </summary>
-          <div class="details-accordion-content">
-            <p>
-              Log onto our website at <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> and follow
-              the links from the homepage.<br> 
-              
+        <p>
+          In some cases we may send a letter or an email to make you aware of the renewals, if you fail to update or respond we may decide to 
+          cancel your application. 
+        </p>
+        <p>
+          You may not always need to provide ID for every renewal or change, but we may request updated documents depending on your circumstances.
+        </p>
+      
+        <h4>How to Renew Your Application</h4>
+          <ol>
+            <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
+            <li>Click ‘<strong>Log into my account</strong>’ </li>
+            <li>Enter your details (reference number, memorable date, password) </li>
+            <li>Click ‘<strong>Update my details</strong>’ under ‘Application renewal required’ </li>
+            <li>Check your information carefully </li>
+            <li>Submit the form (even if no changes are needed</li>
+          </ol>
+                       
       <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -4383,136 +4450,155 @@ const applicationChanges = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-  
->
+      >
             Send link to review further information
-    </button>
+      </button>
             
-            </p>
-            <p>Click ‘Log into my account’.</p>
-            <p>
-              Enter your login details: Your unique reference number (found on the
-              enclosed letter), your memorable date, and your password. Contact us
-              if you need these.
-            </p>
-            <p>
-              Once logged in, click ‘Update my details’ under the ‘Application
-              renewal required’ heading. Check your information carefully, confirm
-              that the details are correct, and submit the form. You must submit the
-              form even if there are no changes.
-            </p>
-          </div>
-        </details>
       </div>
     </details>
     <details class="accordion">
+
       <summary class="accordion-header">
-        <h3>Disqualification/Restriction</h3>
+        <h3>Disqualification and Restrictions</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          The Allocations Policy advises of various circumstances where we will
-          reduce the preference given to applicants on the Housing Register or
-          prevent them from joining the register. These include circumstances such
-          as rent arrears or past/current anti-social behaviour.
+          The Allocations Policy explains that in some situations we may:
         </p>
+          <ul>
+            <li>Reduce your priority on our Housing Register, or</li>
+            <li>Decide that you do not qualify to be on our Housing Register</li>
+          </ul>
         <p>
-          In the most serious debt cases, the Allocations Policy allows us to place
-          applicants into band E or disqualify a customer from the Housing Register
-          for an initial period of 12 months.
+          This may happen for reasons such as:
         </p>
-        <p>A customer can apply for a restriction to be removed if:</p>
-        <ul>
-          <li>
-            They are able to evidence that their behaviour has significantly improved
-            (e.g., paying off arrears in full)
-          </li>
-          <li>They appeal the restriction (disqualification) within 21 days</li>
-          <li>They have exceptional circumstances</li>
-          <li>They need a priority</li>
-        </ul>
+          <ul>
+            <li>Housing-related debt including rent arrears</li>
+            <li>Anti-social behaviour</li>
+            <li>Providing false information</li>
+          </ul>
         <p>
-          If an applicant is allowed back on the housing register, they will have to
-          re-register. ID and references will be required unless recently submitted.
-          Usual checks will be carried out and the appropriate band chosen.
-          Applicants will lose their original waiting time.
+          In some cases, where behaviour or housing-related debt is not serious enough to disqualify an applicant, we may reduce your preference or priority:
+        </p>
+          <ul>
+            <li>Band 5 (Reduced Priority) where you have an assessed housing need.</li>
+            <li>Band 7 (Reduced Preference) where there is no assessed priority housing need.</li>
+          </ul>
+        <p>
+          More serious cases may result in disqualification from our Housing Register. Applicants will normally have the right to request 
+          a review within 21 days of the original decision.
         </p>
       </div>
     </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Requesting a Review or Removal of a Restriction</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can ask us to <strong>request a review within 21 days of the original decision</strong> if you are not satisfied with the outcome.
+      </p>
+      <p>
+        The decision letter will advise you of the information which should accompany a request for a review. You can give your consent for 
+        someone to request a review on your behalf, but we will require your permission to discuss your review with them.
+      </p>
+      <p>
+        You may also ask for a restriction to be reconsidered if:
+      </p>
+        <ul>
+          <li>You can provide evidence that your behaviour has improved</li>
+          <li>You have evidenced that you have reduced or cleared any housing-related debt</li>
+          <li>You can demonstrate exceptional circumstances</li>
+        </ul>
+      <p>
+        Each case is considered individually, and you will need to provide supporting evidence to demonstrate your improvement in behaviour.
+      </p>
+
+      <h4>Re-joining our Housing Register</h4>
+      <p>
+        If you are allowed to re-join our Housing Register, you must submit a new application. The application will be assessed using the 
+        criteria set out in the our Housing Allocations Policy and if accepted, you will receive a new registration date and effective date.
+      </p>
+    </div>
+  </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Assistance with Change of Circumstances</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-  <p>
-    Change of circumstances are now online on <strong>My Housing</strong> website and will need to log in to make changes.
-  </p>
-
-  <p>
-      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
-    </p>
-
-  <p>
-    Once logged in to make changes, the customer will need to click on the <strong>“update my housing application”</strong> tile. 
-    On the next page, the customer will need to click the small action tile on the right-hand side of the screen.
-  </p>
-
-  <p>
-    They will then be able to view application addresses or view application people. Customers can then 
-    <strong>“add new address or add new person”</strong> or make edits to existing addresses or household members on their application. 
-    Once you have made your changes, click on the <strong>“back to application summary”</strong> tile.
-  </p>
-
-  <p>
-    You will then need to click on the action tile and scroll down to <strong>“upload documents and files”</strong>.
-  </p>
-
-  <p>
-    Please click the <strong>“list of acceptable ID”</strong> link to ensure your document is suitable, 
-    and then upload your documents separately so we can process your changes.
-  </p>
-
-  <p>
-    If a customer changes their name, adds a household member, or changes their address, they must provide ID 
-    at the time of the change by uploading it onto <strong>My Housing Sheffield</strong>. Their application 
-    will then go under entry <strong>“UE”</strong> in the list entries section of the system.
-  </p>
-
-  <p>
-    It is very important that you notify us of any changes in your circumstances so that we can amend your application. 
-    We will inform you if this results in your application moving to a different band.
-  </p>
-
+        <p>
+          Changes must be made online through your <strong>My Housing account</strong>. 
+        </p>
+        <p>
+          Once logged in:
+        </p>
+          <ol>
+            <li>Select “<strong>Update my housing application</strong>”</li>
+            <li>Use the action tile to: </li>
+              <ul>
+                <li>View or update addresses</li>
+                <li>Add or remove household members</li>
+              </ul>
+            <li>After making changes, select “<strong>Back to application summary</strong>”</li>
+            <li>Use the action tile again to go to “<strong>Upload documents and files</strong>”</li>
+          </ol>
+        <p>
+          You must upload supporting documents where required. 
+          Please click the “<strong>list of acceptable ID</strong>” link to ensure your document is suitable. 
+          These should be uploaded separately so they can be processed.
+        </p>
+        <p>
+          The changes below will usually require supporting documents before they can be approved:
+        </p>
+          <ul>
+            <li>Name changes</li>
+            <li>Adding a household member</li>
+            <li>Changing address</li>
+          </ul>
+        <p>
+          Your application will then be reviewed before the changes are confirmed. Your application will be listed as under entry “<strong>UE</strong>”
+        </p>
+        <p>
+          It is very important that you notify us of any changes in your circumstances so that we can amend your application. 
+          Following a reassessment, you may move to a higher band, move to a lower band, remain in the same band, or no longer qualify 
+          for our Housing Register. We will write to you to explain the outcome and provide details of any review rights you may have.
+        </p>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Exceptions</h3>
+        <h3>Discretionary behaviour or debt application</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          The Allocations Policy advises various circumstances in which we will
-          reduce the preference given to applicants on the Housing Register or
-          prevent them from joining the register. These include circumstances such
-          as rent arrears or past/current anti-social behaviour.
+          In exceptional circumstances, we may decide to:
         </p>
+          <ul>
+            <li>Remove a restriction</li>
+            <li>Allow you to join our Housing Register</li>
+            <li>Or award priority outside of usual rules</li>
+          </ul>
         <p>
-          An Exception Request allows us to make decisions on whether it is
-          appropriate to waive these restrictions in exceptional circumstances, such
-          as awarding a priority or when an applicant wishes to move to more
-          suitable accommodation using their waiting time due to a change in
-          circumstances.
+          You must:
         </p>
+          <ul>
+            <li>Demonstrate exceptional circumstances</li>
+            <li>Provide evidence</li>
+            <li>Show that you have taken steps to address any outstanding issues</li>
+          </ul>
         <p>
-          Applicants must demonstrate exceptional circumstances and prove that they
-          have taken action to rectify issues that led to reduced preference or
-          disqualification.
+          Each decision is made on a case-by-case basis.
         </p>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Name Changes</h3>
@@ -4520,63 +4606,56 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
 
-      <h2>How to Change Your Details</h2>
-
-    <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
-
-    <ol>
-      <li>
-        <strong>Open the website:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">https://housing.sheffield.gov.uk/</a>
-      </li>
-
-      <li>
-        <strong>Log in:</strong>
-        Click the <em>Log in</em> button and enter your username and password.
-       </li>
-
-      <li>
-        <strong>Locate the dashboard tiles:</strong>
-        After logging in you'll see a grid of tiles/cards .
-      </li>
-
-      <li>
-        <strong>Click the correct tile:</strong>
-        Click the tile labelled <em>Change my details</em> .
-      </li>
-
-      <li>
-        <strong>Complete the form:</strong>
-        Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
-      </li>
-
-      
-    </ol>
-
+      <h4>How to Change Your Details</h4>
         <p>
-          Present three proof documents to a housing office or First Point, where ID
-          will be copied and saved. The name will be updated in our system. See above within the "Accepted ID" section
-          for valid options of ID that can be used.
+          Follow these steps to update your contact information on the My Housing Sheffield site.
+        </p>
+          <ol>
+            <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
+            <li>Log in to your <strong>My Housing account</strong> </li>
+            <li>Click ‘<strong>Change my details</strong>’</li>
+            <li>Complete the form and submit</li>
+          </ol>
+        <p>
+          You will need to upload supporting documents through your <strong>My Housing account</strong>.
         </p>
         <p>
-          Alternatively, send the name change in writing along with proof
-          (originals, not photocopies) to <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
+          If you are unable to upload your documents through My Housing or provide them in person within 28 days of the date you completed your 
+          application online.
         </p>
+        <p>
+          See the <strong>Accepted ID and Supporting Documents</strong> section for examples of the identification that may be accepted.
+        </p>
+        <p>
+          Your application or change request cannot normally be fully assessed until the required supporting documents have been received.
+        </p>
+        <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"  
+        >
+            Send link to review further information
+        </button>
       </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Split Applications</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <h3>Main Applicant</h3>
+        <h4>Main Applicant</h4>
           <p>
-            To remove a joint applicant, you must do this online at the Housing Online
-            website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
+            To remove a joint applicant, this must be completed online through your <strong>My Housing account</strong>.
+            <br>Website: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a>
           <br>
 
-     <button 
+        <button 
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -4585,17 +4664,20 @@ const applicationChanges = new ContentH(
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
     
->
+        >
             Send link to review further information
-     </button>
+        </button>
 
           <br>
-          <h3>Joint Applicant</h3>
-          
-            Speak to the Registration team to remove your National Insurance Number.
-            You will need to submit a new application and confirm the removal from the
-            previous application.
+          <h4>Joint Applicant</h4>
+          <p>
+            The joint applicant must:
           </p>
+            <ul>
+              <li>Contact the Registration team to remove their details</li>
+              <li>Submit a new application if required</li>
+              <li>Confirm removal from the previous application</li>
+            </ul>
       </div>
     </details>
   `,
@@ -4620,7 +4702,7 @@ const applicationChanges = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "08/05/2026", name: "Liz Taster" }
+  { date: "28/10/2026", name: "Liz Taster" }
 );
 
 const applyForRehousing = new ContentH(
@@ -4629,10 +4711,10 @@ const applyForRehousing = new ContentH(
   "Learn how to apply for rehousing in Sheffield by registering online and submitting required documents like ID and landlord references.",
   `
     <p>
-      To apply for Social Housing you need to do so via the Housing Online website.
-      There are no paper application forms.
+      To apply join our Housing Register, you must do so online through your <strong>My Housing account</strong>. 
+      Unfortunately, there are no paper application forms.
     </p>
-    <p>Go online and register on <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a><br> 
+    <p>To get started, visit: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a><br> 
     
     <button type="button" class="dform_widget email-btn dform_widget_type_button"
       aria-label="Send link to housing online website"
@@ -4646,18 +4728,39 @@ const applyForRehousing = new ContentH(
 
     </p>
     <p>
-      Before you can complete an application to join the Housing Register you will
-      need to register yourself as a new household on the system.
+      Before you can complete an application to join our Housing Register, 
+      you will need to register yourself as a new household on the system.
     </p>
     <p>
-      Once registered you will be able to complete an application form to join the
-      Housing Register.
+      Once you have registered, you will be able to complete an online housing application form.
+    </p>
+    <h4>Providing Documents</h4>
+    <p>
+      You will need to provide supporting documents so we can assess and validate your application.
     </p>
     <p>
-      You must produce proof of ID (and Child Benefit if appropriate) and a landlord
-      reference (if you are not already a Council tenant) at the same time,
-      documents can be uploaded via the website or at your local housing office or
-      First Point before your application will be validated.
+      This usually includes:
+    </p>
+      <ul>
+        <li>Proof of ID (for all applicants)</li>
+        <li>Proof of current address</li>
+        <li>Proof of 3 year continuous local connection (or proof of exemption, where applicable)</li>
+        <li>Proof of income, savings and financial assets</li>
+        <li>Proof of child benefit (if applicable)</li>
+        <li>Immigration or nationality documents where required</li>
+        <li>A landlord reference (if you are not a current Council tenant)</li>
+      </ul>
+    <p>
+      You should upload your supporting documents through your <strong>My Housing account</strong>.
+    </p>
+    <p>
+      If you are unable to upload your documents through My Housing or provide them in person within 
+      28 days of the date you completed your application online.
+    </p>
+    <p>
+      Your application cannot normally be fully assessed until all required information and supporting 
+      documents have been received, in which case your application may be rejected as incomplete, and 
+      you may need to re-submit.
     </p>
 
 <details class="accordion">
@@ -4667,9 +4770,25 @@ const applyForRehousing = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            There are other housing options customers can consider for finding a home in Sheffield that might work better for your situation. 
-            Details around mutual exchanges (for current council tenants), renting privately and housing associations can be found here:
-            <a href="https://www.sheffield.gov.uk/housing/housing-options/other-housing-options" target="_blank">Other housing options | Sheffield City Council</a>
+          There are other housing options you can consider when looking for a home in Sheffield. 
+          Social housing is an option for many but not the only one available. 
+          Where possible, we will discuss with you other rehousing options available to help you.
+          <br/>These include: 
+        </p>
+          <ul>
+            <li>Mutual exchanges- If you are a secure council tenant or an assured tenant of a registered social 
+                landlord, you may be able to exchange properties with another secure or assured tenant as long as the 
+                landlord(s) agree in writing</li>
+            <li>Renting privately - The Private Rented Solutions team can help with securing private rented accommodation 
+                through Find Your Let</li>
+            <li>Share ownership scheme- Shared ownership is a Help to Buy scheme that allows first time buyers and 
+                those who do not currently own a home to buy a share of a property</li>
+            <li>Housing association properties</li>
+          </ul>
+
+        <p>
+          You can find more information here: <a href="https://www.sheffield.gov.uk/housing/housing-options/other-housing-options" 
+          target="_blank" rel="noopener noreferrer">Other housing options | Sheffield City Council</a>
         </p>
 
         <button type="button"
@@ -4682,6 +4801,22 @@ const applyForRehousing = new ContentH(
         >
             Send link to review further information
         </button>
+
+        <p>
+          <strong>Mutual exchanges</strong> can be arranged locally, regionally or nationally and are done through subscribing to the 
+          service online on the HomeSwapper website: <a href="http://www.homeswapper.co.uk/" target="_blank" rel="noopener noreferrer">
+          http://www.homeswapper.co.uk/</a> 
+        </p>
+        
+
+        <p>
+          <strong>Shared Ownership Scheme</strong> - operated by the Council, a number of Private Registered Providers of social housing 
+          also run Shared Ownership and other low-cost housing schemes within the city. Website: 
+          <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" 
+          target="_blank" rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>
+        </p>
+        
+
     </div>
 </details>
 
@@ -4692,8 +4827,9 @@ const applyForRehousing = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Details of housing associations can be found through the Sheffield Directory. This link is pre-filtered to Housing Associations:
-            <a href="https://www.sheffielddirectory.org.uk/directory/?searchTab=servicesSearchTab&templateId=D770A514-E446-440B-A074-B0C8010100A3&searchText=housing%20associations&sortOption=Rank%3Basc&pageNumber=1&pageSize=15&distance=1609" target="_blank">Directory | Sheffield</a>
+            Details of housing associations in Sheffield can be found through the Sheffield Directory:
+            <a href="https://www.sheffielddirectory.org.uk/directory/?searchTab=servicesSearchTab&templateId=D770A514-E446-440B-A074-B0C8010100A3&searchText=housing%20associations&sortOption=Rank%3Basc&pageNumber=1&pageSize=15&distance=1609" 
+            target="_blank" rel="noopener noreferrer">Directory | Sheffield</a>
         </p>
 
         <button type="button"
@@ -4706,6 +4842,12 @@ const applyForRehousing = new ContentH(
         >
             Send link to review further information
         </button>
+
+        <p>
+          Some Registered Providers also advertise through <a href="https://www.b-with-us.co.uk/" 
+          target="_blank" rel="noopener noreferrer">B-with-us</a>.
+        </p>
+        
     </div>
 </details>
 
@@ -4716,8 +4858,9 @@ const applyForRehousing = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            A large amount of information about getting a council home can be found through the Sheffield Council website here:
-            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home" target="_blank">Getting a council home | Sheffield City Council</a>
+            Further information about how our Housing Register and allocation process works can be found here: 
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home" target="_blank" rel="noopener noreferrer">
+            Getting a council home | Sheffield City Council</a>
         </p>
 
         <button type="button"
@@ -4740,8 +4883,9 @@ const applyForRehousing = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Guidance on becoming and being a council tenant can be found here:
-            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-house/becoming-tenant" target="_blank">Becoming a tenant | Sheffield City Council</a>
+            Guidance on becoming and managing a council tenancy can be found here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-house/becoming-tenant" 
+            target="_blank" rel="noopener noreferrer">Becoming a tenant | Sheffield City Council</a>
         </p>
 
         <button type="button"
@@ -4776,7 +4920,7 @@ const applyForRehousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 
@@ -5067,74 +5211,102 @@ const bidding = new ContentH(
   "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
   `
     <p>
-        After you have registered for housing, you express your interest in renting a
-        property by making a bid. You only have to bid once per property. You make
-        bids online at the Housing Online website
-        <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> <br> 
+      After you have registered for housing, you can express your interest in a property by placing a <strong>bid</strong> or <strong>bids</strong>.
     </p>
-    
     <p>
-      You will only be able to bid on properties once your application is active and only for properties you are eligible for. The properties you 
-      see to bid on is determined by the information you have provided on your application form. You will only be able to bid for the size and type 
-      of property that is suitable to meet your household needs. 
+      In Sheffield, bidding means you are showing an interest in a property – it does not involve any money.
     </p>
+    <p>
+        You can place bids through your <strong>My Housing account</strong> by visiting: 
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> <br> 
+    </p>
+    <p>
+       You will only be able to bid once:
+    </p>
+      <ul>
+        <li>Your application is <strong>active</strong>, and</li>
+        <li>You have been placed in a band</li>
+      </ul>
+    <p>
+      You will only be able to bid for properties:
+    </p>
+      <ul>
+        <li>You are <strong>eligible for</strong>, and</li>
+        <li>That matches your <strong>household size</strong></li>
+        <li>Is advertised to your band</li>
+      </ul>
 
     <p>
-      Please check the additional information on the property advert, before placing a bid to check it is suitable. Refusing a property that has 
-      been offered to you could affect your banding or the position of your application on the housing register.
+      The properties you can see and bid for are based on the information provided in your housing application.
+      <br/>This includes:
     </p>
+      <ul>
+        <li>Your household members</li>
+        <li>Your bedroom entitlement</li>
+        <li>Any specific restrictions including areas</li>
+        <li>Medical/mobility needs</li>
+        <li>Requirement and need of specific adaptions</li>
+      </ul>
 
     <p>
-      Guidance on applying for a council home, becoming a tenant and exploring your housing choices can be found at 
-      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" target="_blank" rel="noopener">
-      Registering for a council home | Sheffield City Council </a>
+      <strong>Priority applicants and bidding:</strong>
+    </p>
+    <p>
+      If you have been awarded priority an officer will support, you with your bidding through assisted bidding. 
+    </p>
+    <p>
+      Before they do this, they will explain the:
+    </p>
+      <ul>
+        <li>terms and conditions of your priority including any restrictions such as locations or property types they have agreed</li>
+        <li>the reasons as to why they are placing assisted bids</li>
+      </ul>
+    <p>
+      Once you have been awarded priority, we expect you to place 3 bids for any suitable properties advertised during that cycle. 
+    </p>
+    <p>
+      Your priority officer will provide you with advice to help you bid for suitable properties to help resolve your housing need as soon as possible.  
+    </p>
+    <p>
+      Sometimes you may need to compromise on your ideal choice of housing to achieve the move you need. It will not always be possible to 
+      meet all your aspirations, but your priority officer will support you as best as he/she can and discuss this with you.
     </p>
 
-    <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Registering%20for%20a%20council%20home\`"
->
-            Send link to review further information
-    </button>
-        
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Checking Property Adverts, Bidding Cycles and Available Properties</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Before placing a bid, you must carefully check the property advert to make sure it is suitable.
+      </p>
+      <p>
+        Adverts will include important information such as:
+      </p>
+        <ul>
+          <li>Property type and size</li>
+         <li>Location</li>
+          <li>Any age restrictions</li>
+          <li>Adaptations or special requirements</li>
+          <li>Any Local Lettings criteria</li>
+          <li>Information on any repairs or works pending, along with an estimated date of availability</li>
+          <li>Where a property is not immediately available due to repairs or works, this will be clearly stated in the advert</li>
+        </ul>
+      <p>
+        If you are offered a property and refuse it without good reason, this may:
+      </p>
+        <ul>
+          <li>Affect your housing band</li>
+          <li>Reduce your priority</li>
+          <li>Or affect your position on our Housing Register</li>
+        </ul>
 
-    <h3>How to View Available Properties and Bidding Periods</h3>
-
-    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
-
-    <ol>
-      <li>
-        <strong>Go to:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
-          https://housing.sheffield.gov.uk/
-        </a>
-      </li>
-
-      <li>
-        <strong>Log in</strong> with your username and password.
-      </li>
-
-      <li>
-        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
-      </li>
-
-      <li>
-        At the top right of the page, click the <strong>Actions</strong> button.
-      </li>
-
-      <li>
-        From the drop-down menu, select <strong>All Available Properties</strong>.
-      </li>
-
-      <li>
-        A list of properties will appear along with their <strong>bidding periods</strong>.
-       </li>
-    </ol>
-
+      <p>
+        Further information about joining our Housing Register, bidding for properties and other housing options can be found on the Sheffield City 
+        Council website. Please visit: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" 
+        target="_blank" rel="noopener">Registering for a council home | Sheffield City Council</a>
+      </p>
 
         <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
@@ -5142,27 +5314,57 @@ const bidding = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
->
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Registering%20for%20a%20council%20home\`"
+        >
             Send link to review further information
-    </button>
-
-        <br>You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
-        to Tuesday).
+        </button>
+        
+      <br>
+      <h4>Bidding Cycles and Available Properties</h4>
+      <p>
+        Properties are advertised through the Choice Based Lettings system. 
       </p>
+        <ul>
+          <li>Properties are advertised for <strong>7 days</strong></li>
+          <li>There will be up to <strong>5 cycles</strong> per week – there may be days that there are no properties advertised. 
+              A new cycle will start each working day (Monday to Friday) </li>
+          <li>New properties can be added on any working day, so you should check your account regularly</li>
+        </ul>
+      <p>
+        You can place up to 3 bids per cycle on suitable properties advertised each day. Once the cycle closes, bids cannot be changed or withdrawn.
+      </p>
+    </div>
+  </details>
 
-      <details class="accordion">
-        <summary class="accordion-header">
-          <h3>Why can't you bid for me?</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-          <p>
-            If you need assistance placing a bid, you can visit Howden House on Union Street, Sheffield, or your nearest
-            neighbourhood housing office.
-          </p>        
-        </div>
-      </details>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to View and Bid for Properties</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <ol>
+          <li><strong>Go to:</strong> <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+          https://housing.sheffield.gov.uk/</a></li>
+          <li> Log in to your My Housing account</li>
+          <li>Click "Search and bid for a property"</li>
+          <li>Click "Actions" and select "All Available Properties"</li>
+          <li>Select a property and place your bid</li>
+        </ol>
+      <p>
+        A list of available properties and their closing dates will be shown.
+      </p>
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+  </details>
 
       <details class="accordion">
         <summary class="accordion-header">
@@ -5171,38 +5373,74 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
-            the links from the homepage.
-            <br>
-
-    <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
-            aria-label="For further information send link"
-            onclick="
-            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-    
->
-            Send link to review further information
-    </button>
-            <br>
-            <br>
-              Click ‘Log into my account’.
-            <br>
-            <br>
-              Enter your login details: Your unique reference number (found on the
-              enclosed letter), your memorable date, and your password. Contact us
-              if you need these.
-            <br>
-            <br>
-              Once logged in, click ‘Update my details’ under the ‘Application
-              renewal required’ heading. Check your information carefully, confirm
-              that the details are correct, and submit the form. You must submit the
-              form even if there are no changes.
+            Some properties may be advertised on a <strong>first come first served basis</strong>.
+            <br/>This means:
+          </p>
+            <ul>
+              <li>The first eligible applicant to place a bid will be considered for the property (subject to checks).</li>
+              <li>Once a bid has been made the property advert will close. </li>
+            </ul>
+          <p>
+            First come First Served properties will be clearly labelled when advertised.
           </p>
         </div>
       </details>
+
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Why can't you bid for me?</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            If you need help placing a bid, support will be available.
+            <br/>
+          </p>
+            <ul>
+              <li>Contact the Housing Service by telephone</li>
+              <li>Visit a local housing office</li>
+              <li>Ask an advocate, family member or support worker to assist you</li>
+              <li>Receive support from Council staff where appropriate</li>
+              <li>Contact your priority officer</li>
+            </ul>
+          <p>
+            Bids can be placed online, by telephone or in person where available.
+          </p>        
+        </div>
+      </details>
+
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Offers and Refusals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are successful, you will be contacted about the property and invited to view it.
+      </p>
+      <p>
+        If you refuse 2 suitable offers, this may affect your application. For example:
+      </p>
+        <ul>
+          <li>You may be moved to a lower band</li>
+          <li>Lose your priority or discharge of the council’s homeless duty owed to you.</li>
+          <li>In some cases, your application may be cancelled</li>
+        </ul>
+      <p>
+        The outcome depends on:
+      </p>
+        <ul>
+          <li>Your current band</li>
+          <li>The number of reasonable offers refused </li>
+          <li>Whether you have a priority housing need</li>
+        </ul>
+      <p>
+        Different refusal rules apply to Bands 1-5, Band 6 and Band 7 applicants.
+      </p>
+    </div>
+  </details>
+
+
 
       <details class="accordion">
         <summary class="accordion-header">
@@ -5211,33 +5449,50 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            The Allocations Policy advises of various circumstances where we will
-            reduce the preference given to applicants on the Housing Register or
-            prevent them from joining the register. These include circumstances such
-            as rent arrears or past/current anti-social behaviour.
-          <br>
-          <br>
-            In the most serious debt cases, the Allocations Policy allows us to place
-            applicants into band E or disqualify a customer from the Housing Register
-            for an initial period of 12 months.
-          <br>
-          <br>
-            A customer can apply for a restriction to be removed if:
-          <br>
-          <br>
-            <ul>
-              <li>They are able to evidence that their behaviour has significantly improved (e.g., paying off arrears in full)</li>
-              <li>They appeal the restriction (disqualification) within 21 days</li>
-              <li>They have exceptional circumstances</li>
-              <li>They need a priority</li>
-            </ul>
-          <br>
-          <br>
-            If an applicant is allowed back on the housing register, they will have to
-            re-register. ID and references will be required unless recently submitted.
-            Usual checks will be carried out and the appropriate band chosen.
-            Applicants will lose their original waiting time.
+            The Allocations Policy explains that in some situations we may:
           </p>
+            <ul>
+              <li>Reduce your priority on our Housing Register</li>
+              <li>Or decide that you do not qualify to remain on our Housing Register</li>
+            </ul>
+          <p>
+            This may happen for reasons such as:
+          </p>
+            <ul>
+              <li>Housing-related debt including rent arrears</li>
+              <li>Anti-social behaviour</li>
+              <li>Unsatisfactory reference</li>
+              <li>Providing false or misleading information</li>
+            </ul>
+        <p>
+          In some circumstances, behaviour or housing-related debt may result in:
+        </p>
+          <ul>
+            <li>Placement into <strong>Band 5 (Reduced Priority)</strong> where an assessed housing need exists</li>
+            <li>Placement into <strong>Band 7 (Reduced Preference)</strong> where there is no assessed housing need</li>
+            <li>Disqualification from our Housing Register, normally for at least 12 months</li>
+          </ul>
+        <p>
+          Each case is considered individually and applicants have the right to request a review within 21 days of the decision.
+        </p>
+
+        <h4>Requesting a Review or Removal of a Restriction</h4>
+        <p>
+          You have the right to <strong>request a review</strong> within <strong>21 days</strong> of a decision. 
+          All requests for a review must be made in writing, either by letter or by email, and must be sent to the officer or 
+          team detailed in your decision letter.
+        </p>
+        <p>
+          You may also ask for a restriction to be reconsidered if:
+        </p>
+          <ul>
+            <li>You can evidence improved behaviour</li>
+            <li>You have reduced or cleared housing-related debt</li>
+            <li>You can demonstrate exceptional circumstances</li>
+          </ul>
+        <p>
+          Each case will be considered on an individual basis and supporting evidence will be required.
+        </p>
         </div>
       </details>
 
@@ -5247,32 +5502,26 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <h3>
-      Login
-    </h3>
-    <p>
-      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
-    </p>
-    <p>
-      Use the following login details to access the system:
-    </p>
-    <p>
-      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
-      Password: <strong>StatusPoppyGlove1*</strong>
-    </p>
-            <br>
-            <br>
+          <h4>Login</h4>
+          <p>
+            Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access My Housing.
+          </p>
+          <p>
+            Use the following login details to access the system:
+          </p>
+          <p>
+            Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
+            Password: <strong>StatusPoppyGlove1*</strong>
+          </p>
+          <p>
             Advisor note: You have logged in using dummy login details. Please do not
             amend anything on screen. Log in if required using the login details above
             and follow the instructions:
             <br>
-            <br>
             Select "My Social Housing" on the left-hand side.
-            <br>
             <br>
             Click "Update your details" and navigate through the form using the "Next
             section" buttons.
-            <br>
             <br>
             Please do not submit the application.
           </p>
@@ -5281,79 +5530,70 @@ const bidding = new ContentH(
 
       <details class="accordion">
         <summary class="accordion-header">
-          <h3>Exceptions</h3>
+          <h3>Discretionary behaviour or debt applications</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
           <p>
-            The Allocations Policy advises various circumstances in which we will
-            reduce the preference given to applicants on the Housing Register or
-            prevent them from joining the register. These include circumstances such
-            as rent arrears or past/current anti-social behaviour.
-            <br>
-            <br>
-            An Exception Request allows us to make decisions on whether it is
-            appropriate to waive these restrictions in exceptional circumstances, such
-            as awarding a priority or when an applicant wishes to move to more
-            suitable accommodation using their waiting time due to a change in
-            circumstances.
-            <br>
-            <br>
-            Applicants must demonstrate exceptional circumstances and prove that they
-            have taken action to rectify issues that led to reduced preference or
-            disqualification.
+            In exceptional circumstances, we may:
           </p>
+            <ul>
+              <li>Waive certain restrictions</li>
+              <li>Allow access to our Housing Register</li>
+              <li>Or award priority outside the normal rules</li>
+            </ul>
+          <p>
+            You must:
+          </p>
+            <ul>
+              <li>Provide evidence of exceptional circumstances</li>
+              <li>Demonstrate that you have taken steps to address any issues</li>
+            </ul>
         </div>
       </details>
 
       <details class="accordion">
-        <summary class="accordion-header">
-          <h3>Name Changes</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <h2>How to Change Your Details</h2>
+      <summary class="accordion-header">
+        <h3>Name Changes</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
 
-    <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
+      <h4>How to Change Your Details</h4>
+        <p>
+          To update your details:
+        </p>
+          <ol>
+            <li>Go to: <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a> </li>
+            <li>Log in to your <strong>My Housing account</strong></li>
+            <li>Click ‘<strong>Change my details</strong>’</li>
+            <li>Complete the form and submit</li>
+          </ol>
+        <p>
+          You will be required to provide supporting documents through your <strong>My Housing account</strong>.
+        </p>
+        <p>
+          If you are unable to upload the documents through My Housing you can provide them in person within 28 days of the date you 
+          completed your application online.
+        </p>
+        <p>
+          Your request cannot normally be fully assessed until the required supporting documents have been received.
+        </p>
+        <br>
 
-    <ol>
-      <li>
-        <strong>Open the website:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">https://housing.sheffield.gov.uk/</a>
-      </li>
-
-      <li>
-        <strong>Log in:</strong>
-        Click the <em>Log in</em> button and enter your username and password.
-       </li>
-
-      <li>
-        <strong>Locate the dashboard tiles:</strong>
-        After logging in you'll see a grid of tiles/cards .
-      </li>
-
-      <li>
-        <strong>Click the correct tile:</strong>
-        Click the tile labelled <em>Change my details</em> .
-      </li>
-
-      <li>
-        <strong>Complete the form:</strong>
-        Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
-      </li>
-
-      
-    </ol>
-          <p>
-            Present three proof documents to a housing office or First Point, where ID
-            will be copied and saved. The name will be updated in our system.
-          <br>
-          <br>
-            Alternatively, send the name change in writing along with proof
-            (originals, not photocopies) to <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
-          </p>
-        </div>
-      </details>
+        <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"  
+        >
+            Send link to review further information
+        </button>
+      </div>
+    </details>
 
       <details class="accordion">
         <summary class="accordion-header">
@@ -5361,14 +5601,24 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <h3>Main Applicant</h3>
+          <h4>Main Applicant</h4>
           <p>
-            To remove a joint applicant, you must do this online at the Housing Online
-            website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
-          <br>
+            To remove a joint applicant, this must be done through your <strong>My Housing account</strong>. 
+            <br>Online website: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
           </p>
+          
+          <h4>Joint Applicant</h4>
+          <p>
+            The joint applicant must:
+          </p>
+            <ul>
+              <li>Contact the Registration team</li>
+              <li>Confirm removal from the existing application</li>
+              <li>Submit a new application if needed></li>
+            </ul>
+          <br>
 
-     <button 
+      <button 
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
@@ -5377,17 +5627,9 @@ const bidding = new ContentH(
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
     
->
+      >
             Send link to review further information
-     </button>
-
-          <br>
-          <h3>Joint Applicant</h3>
-          <p>
-            Speak to the Registration team to remove your National Insurance Number.
-            You will need to submit a new application and confirm the removal from the
-            previous application.
-          </p>
+      </button>
         </div>
       </details>
     `,
@@ -5414,7 +5656,7 @@ const bidding = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const demotedOrDisqualified = new ContentH(
@@ -5424,211 +5666,219 @@ const demotedOrDisqualified = new ContentH(
   `
   <details class="accordion">
     <summary class="accordion-header">
-        <h3>Eligibility</h3>
+        <h3>Who Can Join Our Housing Register?</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-
         <p>
-            Sheffield City Council operates an open housing register. Any person aged 16 or over
-            can apply to join the Housing Register, although offers of accommodation are generally
-            not made until the applicant is at least 18 years old.
+            Sheffield City Council operates a Housing Register for applicants who are eligible for social housing and who meet our 
+            qualification criteria stated in our Housing Allocations policy.
+            <br/>You must:
         </p>
-
-        <p>
-            The Housing Act 1996 prevents some people from being offered accommodation due to
-            immigration status. Applicants will be advised if this applies after registration
-            and provision of the required evidence.
-        </p>
-
-        <p><strong>The following groups may not be eligible:</strong></p>
-
-        <ul>
-            <li>Certain people who are subject to immigration control under asylum and immigration legislation.</li>
-            <li>Certain people from abroad who are not subject to immigration control but are not habitually resident in the UK, Channel Islands, Isle of Man, or Republic of Ireland.</li>
-        </ul>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Reduced Preference (Demotion) Following Refusal of Three Reasonable Offers</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                If a customer in Band D refuses three reasonable offers within a 12-month period,
-                the Allocations Policy allows the application to be demoted.
-            </p>
-
-            <ul>
-                <li>Refusing an offer may result in a lower band or cancellation of the application.</li>
-                <li>Failure to respond to an offer within the required timescales may be treated as a refusal.</li>
-                <li>Failure to attend a viewing without good reason may also be treated as a refusal.</li>
-            </ul>
-
-            <p>
-                Customers will receive written warning 21 days before demotion.
-                If no response is received, the application will be moved to Band E for 12 months.
-            </p>
-
-            <p>
-                After 12 months, the customer can ask for their application to return to Band D.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Disqualification Following Refusal of Three Reasonable Offers</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Customers already in Band E who refuse three reasonable offers may be
-                disqualified from the Housing Register.
-            </p>
-
-            <ul>
-                <li>The customer will be notified in writing.</li>
-                <li>The customer has 21 days to appeal the decision.</li>
-                <li>If no appeal is received, the housing application will be cancelled.</li>
-                <li>The applicant will be disqualified from the Housing Register for 12 months.</li>
-            </ul>
-
-            <p>
-                After 12 months, a new online application can be submitted to rejoin the Housing Register.
-            </p>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Disqualified for Unacceptable Behaviour</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <p>
-        Applications rejected because of unacceptable behaviour will receive a letter
-        explaining the decision, the 12-month restriction period, and available review rights.
-    </p>
-
-    <p>
-        The customer may request a review by a senior officer within 21 days of the decision letter.
-        Any request should include new information that was not considered during the original assessment.
-    </p>
-
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>What Counts as Unacceptable Behaviour?</summary>
-            <div class="details-accordion-content">
-                <p>
-                Some applicants may not be allowed to join the Housing Register because of past behaviour
-                by themselves or members of their household.
-            </p>
-
-            <p><strong>Examples include:</strong></p>
-
-            <ul>
-                <li>Persistent rent arrears without attempts to repay them.</li>
-                <li>Serious damage caused to a property.</li>
-                <li>Anti-social behaviour that resulted in the loss of previous accommodation.</li>
-                <li>Convictions relating to domestic abuse or certain serious offences.</li>
-                <li>Unauthorised subletting of a council property.</li>
-                <li>Providing false or misleading information in a housing application.</li>
-            </ul>
-
-            <p>
-                Behaviour by household members who lived with the applicant at the time of the incident
-                may also be considered.
-            </p>
-            </div>
-        </details>
-        <details class="details-accordion">
-            <summary>If This Applies to You</summary>
-            <div class="details-accordion-content">
-                <p>
-                Customers may be unable to join the register immediately where unacceptable behaviour applies.
-            </p>
-
-            <p>
-                Applications may be considered again in the future if circumstances have changed
-                and behaviour has improved.
-            </p>
-
-            <p><strong>Evidence may include:</strong></p>
-
-            <ul>
-                <li>References from landlords or support agencies.</li>
-                <li>Evidence of rent repayment arrangements.</li>
-                <li>Changes in personal circumstances.</li>
-                <li>Evidence demonstrating improved behaviour.</li>
-            </ul>
-            </div>
-        </details>
+          <ul>
+              <li>Be aged 18 or over to join our Housing Register</li>
+              <li>Be eligible for social housing by law</li>
+              <li>Meet our qualification criteria stated in our allocation policy set by the council</li>
+          </ul>
     </div>
-</details>
+  </details>
+  
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Reduced Preference (Demotion)</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        In some situations, your preference may be reduced.
+      </p>
+      <p>
+        This could result in you being placed in:
+      </p>
+        <ul>
+          <li><strong>Band 5 (Reduced Priority)</strong> if you have an assessed housing need </li>
+          <li><strong>Band 7 (Reduced Preference)</strong> if you do not have an assessed housing need</li>
+        </ul>
+      <p>
+        Examples may include housing-related debt, tenancy breaches, anti-social behaviour, or deliberately 
+        worsening your circumstances. Each case is considered individually.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Refusal of Offers</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <div class="accordion-content">
+        <p>
+          If you refuse 2 suitable offers of accommodation (unless where the council owes a full homeless duty 
+          then it is 1 suitable offer - this could be either a social housing property or a private rented property) 
+          in a 12 month period, this may affect your housing application.
+        </p>
+        <p>
+          This includes where:
+        </p>
+          <ul>
+            <li>You refuse an offer of a suitable property</li>
+            <li>You fail to respond to an offer of a property made to you within 3 working days and do not have a suitable reason</li>
+            <li>You fail to attend a viewing of a property offered to you within 3 working days and do not have a suitable reason.</li>
+          </ul>
+        <p>
+          Depending on your application, you may:
+        </p>
+          <ul>
+            <li>Lose an existing priority award</li>
+            <li>Be moved to a lower band</li>
+            <li>Be placed into Band 7</li>
+            <li>Have your application cancelled</li>
+          </ul>
+        <p>
+          Different refusal rules apply to applicants in Bands 1–5, Band 6 and Band 7.
+        </p>
+      </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Disqualification from our Housing Register</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <p>
+        In more serious cases, you may be <strong>disqualified</strong> from our Housing Register.
+      </p>
+      <p>
+        This may happen if:
+      </p>
+        <ul>
+          <li>You have serious housing-related debt (such as rent arrears)</li>
+          <li>You have demonstrated unacceptable behaviour</li>
+          <li>You no longer meet the qualification criteria</li>
+          <li>You are no longer eligible to join</li>
+        </ul>
+      <p>
+        You may also be disqualified if:
+      </p>
+        <ul>
+          <li>You no longer have a qualifying 3 year continuous local connection to Sheffield</li>
+          <li>Your household income or financial resources exceed the thresholds in our Allocations policy</li>
+          <li>You or a household member have a residential property in the UK or anywhere in the world including having a 
+              partial or shared financial interest in one (this will be assessed on an individual basis)</li>
+          <li>You fail to maintain the qualification criteria after joining our Housing Register</li>
+        </ul>
+      <h4>If You Are Disqualified</h4>
+        <ul>
+          <li>You will be notified in writing with the reasons for the decision</li>
+          <li>You have the right to <strong>request a review within 21 days of the original decision</strong> which must be made 
+              in writing, either by letter or by email, and must be sent to the officer or team detailed in your decision letter</li>
+        </ul>
+      <p>
+        Where disqualification relates to unacceptable behaviour or housing-related debt, applications will not normally be reconsidered 
+        until at least 12 months have passed, unless exceptional circumstances apply.
+        <br/>After this period:
+      </p>
+        <ul>
+          <li>You can submit a new application through your <strong>My Housing account</strong></li>
+          <li>Your application will be reassessed in line with the Allocations Policy</li>
+        </ul>
+    </div>
+  </details>
    
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Exception Requests</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Unacceptable Behaviour</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <div class="accordion-content">
+        <p>
+          You may not qualify to join or remain on our Housing Register if you, or a member of your household, has demonstrated unacceptable behaviour.
+        </p>
+        <p>
+          This may include:
+        </p>
+          <ul>
+            <li>Nonpayment or persistent rent arrears without making reasonable efforts to repay this include rent or mortgage arrears</li>
+            <li>Causing serious damage to a property</li>
+            <li>Anti-social behaviour leading to eviction</li>
+            <li>Convictions for serious criminal offences (including domestic abuse)</li>
+            <li>Unlawfully subletting a council property</li>
+            <li>Providing false or misleading information on a housing application</li>
+          </ul>
+        <p>
+          We will also consider behaviour from household members if they live or lived with you during or at the time.
+        </p>
+        <p>
+          <strong>If this applies to you</strong>
+        </p>
+          <ul>
+            <li>You may not be able to join our Housing Register at this time</li>
+            <li>You can apply again in the future if your circumstances have improved</li>
+          </ul>
+        <p>
+          We may ask for evidence such as:
+        </p>
+          <ul>
+            <li>Proof of repayment of debts</li>
+            <li>References from landlords</li>
+            <li>Evidence of improved behaviour</li>
+          </ul>
+        <p>
+          <strong>Requesting a Review</strong>
+        </p>
+        <p>
+          If you disagree with a decision (for example disqualification or reduced priority):
+        </p>
+          <ul>
+            <li>You have the right to <strong>request a review within 21 days</strong></li>
+            <li>You should provide any additional information or evidence that was not previously considered</li>
+          </ul>
+        <p>
+          A senior officer who was not involved in the original decision will review your case.
+        </p>    
+      </div>
+  </details>
 
-            <p>
-                The Allocations Policy includes circumstances where housing preference may be reduced
-                or applicants may be prevented from joining the Housing Register.
-            </p>
-
-            <p>
-                Common reasons include rent arrears, anti-social behaviour, or previous housing-related issues.
-            </p>
-
-            <p>
-                An Exception Request allows consideration of whether those restrictions should be waived
-                in exceptional circumstances.
-            </p>
-
-            <p><strong>Applicants must demonstrate:</strong></p>
-
-            <ul>
-                <li>Exceptional circumstances.</li>
-                <li>Evidence that issues leading to demotion or disqualification have been addressed.</li>
-                <li>Why the restriction should be reviewed or removed.</li>
-            </ul>
-
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Submitting an Exception Request</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>
-                Customers should contact their Neighbourhood Officer for support in completing
-                an Exception Request.
-            </p>
-
-            <ul>
-                <li>Complete the Exception Request form.</li>
-                <li>Provide supporting evidence.</li>
-                <li>Explain the exceptional circumstances being relied upon.</li>
-            </ul>
-
-            <p>
-                All evidence should be submitted alongside the request to support decision making.
-            </p>
-
-        </div>
-    </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Submitting an Exception Request</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+      <div class="accordion-content">
+        <p>
+          In exceptional circumstances, you may request a discretionary behaviour or debt application if:
+        </p>
+          <ul>
+            <li>You have been disqualified from our Housing Register</li>
+            <li>You have been placed in Band 5 (Reduced Priority)</li>
+            <li>You have been placed in Band 7 (Reduced Preference)</li>
+          </ul>
+        <p>
+          This may result in:
+        </p>
+          <ul>
+            <li>You being allowed to join our Housing Register when you would not normally qualify</li>
+            <li>Your priority not being reduced</li>
+            <li>Your reduced preference or reduced priority being removed</li>
+          </ul>
+        <p>
+          You must:
+        </p>
+          <ul>
+            <li>Demonstrate exceptional circumstances</li>
+            <li>Provide supporting evidence</li>
+            <li>Show that you have taken reasonable steps to address any housing-related debt or unacceptable behaviour</li>
+          </ul>
+        <p>
+          Each request is considered individually and may include assessment of repayment arrangements, affordability, 
+          landlord references, behaviour improvements and other supporting evidence.
+        </p>
+        <p>
+          In some cases the discretionary behaviour or debt application will be considered jointly by appropriately authorised 
+          senior officers including the Income Management and Tenancy enforcement team. 
+        </p>
+      </div>
+  </details>
     `,
   {
     buttonLabel: "",
@@ -5655,7 +5905,7 @@ const demotedOrDisqualified = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "07/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 
@@ -6205,80 +6455,168 @@ const eligibility = new ContentH(
   "Eligibility",
   "Check eligibility for Sheffield's Housing Register, including age, immigration status, and documentation requirements for application.",
   `
-      <p>
-        Sheffield City Council operates an open register and therefore any person over
-        the age of 16 can apply to join the Housing Register. However, generally you
-        will not be made an offer of a property until you are at least 18 years old.
-      </p>
-      <p>
-        The Housing Act 1996 prevents Local Authorities from offering a property to
-        some people because of their immigration status. We will let you know if this
-        applies to you after you register.
-      </p>
-      <p>
-        If you are eligible to register you may do so by completing the online
-        application form. Following this, you will be provided with a login reference
-        number and required to provide a memorable date which will act as your
-        password for logging in to the website in the future.
-      </p>
-      <p>
-        There are some people who are not eligible to be included on the Housing
-        Register. These are:
-      </p>
-      <p>
-        Certain people who are subject to Immigration Control under the 1996 Asylum
-        and Immigration Act.
-        <br />
-        Certain people from abroad who are not subject to immigration control but who
-        are not habitually resident in the UK, the Channel Islands, the Isle of Man or
-        the Republic of Ireland.
-        <br />
-        People (including members of their household) who have been guilty of
-        unacceptable behaviour that makes them unsuitable to be a tenant.
-      </p>
-      <h3>After submitting your application</h3>
-      <p>
-        After submitting your application online you will be asked to provide us with
-        various documentation such as identification and a reference. You may also be
-        asked to provide evidence of your immigration status where relevant. You
-        should make sure that all of this documentation is available to you before
-        completing your online application as you need to submit this
-        documentation immediately. Failure to provide this within the given timescales
-        will mean you will need to restart the process from the beginning by
-        submitting a further online application.
-      </p>
-      <h3>Eligibility Table</h3>
-      <p>
-        A copy of the eligibility table can be found 
-        <a href="https://sccextranet.sharepoint.com/:w:/s/CustomerServiceKnowledgeCouncilHousing/EbdSLAAvW9JGiy9NqU1kK10B4dnbAzvX4hi3YjglwR3TDQ?e=Nicw6D&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">here</a>.
-      </p>
-      <!-- The following section on relaxed eligibility is to be hidden from customers -->
+  <p>
+    Sheffield City Council operates a Housing Register for people who want to apply for social housing.
+  </p>
 
-      <div hidden>
-      <h3>Relaxed eligibility</h3>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
       <p>
-        Relaxed eligibility criteria is uncommon, but has sometimes been applied in
-        the past to properties that receive no bids and/or have a known low demand.
-        The majority of these properties were maisonettes.
+        Before you can join our Housing Register, we must assess whether you are eligible for social housing under the law. 
+        Eligibility is mainly determined by your immigration status or whether you meet the Government's rules on who can access social housing. 
       </p>
       <p>
-        Properties where relaxed eligibility has been applied will have a message in
-        the 'Show full details>>Further information' box of the property advert.
+        Some people are not eligible to join our Housing Register.
       </p>
       <p>
-        For Example: A 3 bed maisonette with relaxed eligibility will have a message
-        similar to this:
+        If you are not eligible, we will write to you explaining the decision and your right to request a review. 
+        If your immigration status changes in the future, you can make a new application and provide evidence of the change.
+      </p>
+
+       <h4>Immigration Status</h4>
+          <p>
+            The Housing Act 1996 means that some people cannot join our Housing Register due to their immigration status.
+          </p>
+          <p>
+            We will assess your eligibility after you have submitted an application and will let you know if this applies to you. 
+            You may be asked to provide documents to confirm your immigration status.
+          </p>
+        <br>  
+        <h4>Who Is Not Eligible</h4>
+          <p>
+            You will not be able to join our Housing Register if you are:
+          </p>
+            <ul>
+              <li>A person subject to immigration control who is not eligible under the relevant legislation</li>
+              <li>A person from abroad who is not subject to immigration control but is not habitually resident in: </li>
+                <ul>
+                  <li>The UK</li>
+                  <li>The Channel Islands</li>
+                  <li>The Isle of Man</li>
+                  <li>The Republic of Ireland</li>
+                </ul>
+            </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Qualification</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are legally eligible, you must also qualify to join our Housing Register.
       </p>
       <p>
-        Households eligible for 2 bed properties can bid and a financial assessment
-        will be carried out to check that the property is affordable.
+        Qualification criteria are set by Sheffield City Council through the Housing Allocations Policy and determine who can join the Housing Register.
       </p>
       <p>
-        If a customer then places a bid for the property and comes first, IMFIT
-        (Rents) will contact the customer prior to any offer to ensure that the
-        customer is able to afford the property.
+        If you do not qualify, we will write to you explaining the reasons and your right to request a review.
       </p>
-      </div>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are eligible and qualify, you can apply by completing an online application through <strong>My Housing</strong>.
+      </p>
+      <p>
+        You should complete the application yourself, but support is available if you need help.
+      </p>
+      <p>
+        Once you have registered, you will be given login details so you can access and manage your application online.
+      </p>
+      <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
+      >
+            Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After submitting your application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        After submitting your application through <strong>My Housing</strong> you will need to provide documents so we can assess your application.
+      </p>
+      <p>
+        You must provide the required documents <strong>within 28 days</strong> of completing your application.
+        <br/>These may include:
+      </p>
+        <ul>
+          <li>Two forms of ID for each applicant, including one showing the current address</li>
+          <li>Two forms of ID for household members over 16, including one showing the current address</li>
+          <li>One form of ID for household members under 16</li>
+          <li>Proof of local connection to Sheffield or proof of exemption</li>
+          <li>Proof of Child Benefit where applicable</li>
+          <li>Evidence of income, savings, assets or property ownership</li>
+          <li>Evidence of British nationality or immigration status</li>
+          <li>A landlord reference (usually from your current or most recent landlord)</li>
+          <li>Details of any unspent convictions</li>
+        </ul>
+      <p>
+        We will not fully assess your application until all required documentation has been received.
+      </p>
+      <p>
+        If you do not provide the documents within the required timescale, <strong>your application may not be progressed or may need to 
+        be completed again</strong>.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Bedroom Eligibility Calculator</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Please note:</strong>
+      </p>
+        <ul>
+          <li>Bedroom eligibility is assessed in line with the bedroom standard Recommended by the Government’s Statutory Guidance, 
+              as set out in the Housing Allocations Policy.</li>
+          <li>A pregnancy can be taken into account within the last 3 months before the expected date of delivery, and the unborn 
+              child may be included in the bedroom calculation at that stage. </li>
+          <li>Bedrooms are allocated based on household composition, including:</li>
+            <ul>
+              <li>Married or cohabiting couple</li>
+              <li>Adult aged 21 years or more</li>
+              <li>Pair of adolescents aged 10-20 years of the same sex</li>
+              <li>Pair of children aged under 10 years regardless of sex</li>
+              <li>Consideration of individual circumstances where appropriate where we may allow additional bedrooms above the bedroom 
+                  standard such as; Gender re-assignment or safeguarding concerns.</li>
+            </ul>
+          <li>Bedroom eligibility will reflect the household’s circumstances/number at the point of assessment and may change if circumstances change.</li>
+        </ul>
+      <p>
+        A link to the bedroom eligibility calculator can be found 
+        <a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServices/IQA_cLRDXphpRq3BvhPLtvT3AXqdzbHttLKVsr5HE-JiN9w?e=4JwOm8" target="_blank">here</a>.
+      </p>
+    </div>
+  </details>
+
     `,
   {
     buttonLabel: "Report Housing Enquiry",
@@ -6300,7 +6638,7 @@ const eligibility = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const endofHomeOffice = new ContentH(
@@ -6602,23 +6940,40 @@ const fosteringAndAdoption = new ContentH(
   "Fostering and Adoption",
   "Details on the processes for amending bedroom eligibility for foster and adoptive applicants, including the need for confirmation from Social Services and the potential benefit implications.",
   `
-   
-  <h3>Adoption</h3>
+  <h4>Adoption</h4>
+    <p>
+      Children's Services will assess your circumstances and provide information about the accommodation requirements needed to support an adoption.
+      <br/>
+      When assessing your bedroom eligibility, we will take account of the Children's Services assessment and any supporting information they provide.
+      <br/>
+      Once the necessary confirmation has been received, your bedroom eligibility will be assessed in line with the Housing Allocations Policy.
+      <br/>
+      Please note that being approved to adopt does not automatically result in additional priority for overcrowding. 
+    </p>
   
-  <p> Social Services will undertake an initial visit to assess the size of the applicant’s current accommodation. 
-  Bedroom eligibility in these situations will only be amended once we have received confirmation to go ahead from Social Services. Upon receipt of confirmation, the bedroom eligibility can be amended. 
-  An e-mail from Social Services will be the normal route to receive confirmation. </p>
-  
-     <h3>Fostering</h3>
-  
-     <p>Fostering has a different process. 
-     Until an applicant is suitably housed an assessment cannot begin. 
-     Confirmation from Social Services in the form of an email stating the applicant has made an application to foster is the requirement 
-     to change bedroom eligibility. Upon receipt of confirmation, the bedroom eligibility can be amended. 
-     An e-mail from Social Services will be the normal route to receive confirmation. 
-     However staff advising potential foster carers must advise the applicant of the benefit implications of moving to a 
-     larger property if the child / children are not placed with them immediately after they move or they do not proceed with the 
-     application to foster after they are rehoused.</p>
+  <h4>Fostering</h4>
+    <p>
+      When assessing bedroom eligibility, we will take account of the Children's Services assessment of the requirements of approved foster carers.
+      <br/>
+      If you are applying to become a foster carer, you will need to provide supporting information from Children's Services confirming your approval 
+      status or accommodation requirements.
+      <br/>
+      Once this information has been received, your bedroom eligibility will be assessed in line with the Housing Allocations Policy.
+      <br/>
+      Please note that approval as a foster carer does not automatically result in additional priority for overcrowding.
+    </p>
+
+  <h4>Financial Implications</h4>
+    <p>
+      If you are considering fostering or adopting and require a larger property, it is important to consider the affordability of any future accommodation.
+      <br/>
+      For example, if a placement is delayed, changes, or does not proceed as expected, you may still be responsible for the rent and other housing 
+      costs associated with the larger property.
+      <br/>
+      Applicants should consider their individual financial circumstances before moving to a larger home.
+      <br/>
+      Any additional bedroom is subject to affordability and all necessary health and safety requirements being satisfied.
+    </p>
   
     `,
   {
@@ -6640,7 +6995,7 @@ const fosteringAndAdoption = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "28/10/2026", name: "Liz Taster" }
 );
 
 
@@ -6653,22 +7008,21 @@ const healthAndHousing = new ContentH(
     <h3>Adaptations</h3>
     
     <p>
-      If you're disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
+      If you are disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
     </p> 
-
     <p>
-      Before you consider adapting your home, we recommend checking whether equipment or technology could meet your needs. 
-      These can often be quicker and more affordable solutions. For example:
+      Before considering major adaptations, we recommend looking at whether <strong>smaller equipment or minor changes</strong> could meet your needs. 
+      These options are often quicker to put in place and more straightforward to arrange.
+      <br/>For example:
     </p>
-
-    <ul>
-      <li>using a commode during the day may help you avoid using the stairs</li>
-      <li>grab rails or a shower seat can help in the bathroom</li>
-    </ul>
-
+      <ul>
+        <li>Using a commode to reduce the need to use the stairs</li>
+        <li>Installing grab rails to support movement around your home</li>
+        <li>Using a shower seat to make washing safer</li>
+      </ul>
     <p>
-      Details of different potential equipment and adaptations can be found at the following link:<br>
-      <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank">Equipment House | Sheffield</a>
+      You can find more information about different types of equipment and adaptations here:
+      <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank" rel="noopener noreferrer">Equipment House | Sheffield</a>
     </p>
 
     <button type="button"
@@ -6684,7 +7038,8 @@ const healthAndHousing = new ContentH(
 
     <p>
       Further information and the online form to request a home adaptation can be found at the following link:
-      <a href="https://www.sheffield.gov.uk/social-care/adults/how-we-can-help/daily-tasks/request-home-adaptation" target="_blank">Request a home adaptation | Sheffield City Council</a>
+      <a href="https://www.sheffield.gov.uk/social-care/adults/how-we-can-help/daily-tasks/request-home-adaptation" 
+      target="_blank" rel="noopener noreferrer">Request a home adaptation | Sheffield City Council</a>
     </p>
 
     <button type="button"
@@ -6699,10 +7054,11 @@ const healthAndHousing = new ContentH(
     </button>
 
     <h3>Financial help for major adaptations</h3>
-
     <p>
-    If your assessment recommends a major adaptation such as a stair lift or ramp you may be eligible for a Disabled Facilities Grant. 
-    Information can be found at <a href="https://www.gov.uk/disabled-facilities-grants" target="_blank">https://www.gov.uk/disabled-facilities-grants</a>
+      If your assessment recommends a major adaptation (for example a stairlift or ramp), you may be eligible for a 
+      <strong>Disabled Facilities Grant</strong>. 
+      <br/>More Information is available here: <a href="https://www.gov.uk/disabled-facilities-grants" 
+      target="_blank" rel="noopener noreferrer">https://www.gov.uk/disabled-facilities-grants</a>
     </p>
 
     <button type="button"
@@ -6717,45 +7073,69 @@ const healthAndHousing = new ContentH(
     </button>
 
     <h3>Rehousing due to medical or mobility needs</h3>
-
     <p>
-      If your primary reason for requesting rehousing is identified as any of the following your referral will not be accepted. 
-      Please contact the relevant team on the details below.
+      If your housing issue relates primarily to one of the circumstances below, there may be a more appropriate service that 
+      can assist you before a Health and Housing assessment is considered.
     </p>
-
     <ul>
       <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
-      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
-      <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
+      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 5555')">0114 273 5555</a> or online at 
+          <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
       <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
-      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at 
-      <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
-    </ul>
-
+      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 293 0000')">0114 293 0000</a> or 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 205 3333')">0114 205 3333</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Suffering domestic abuse</strong> - contact Housing Advice on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736306')">0114 2736306</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4680')">0114 273 4680</a> or online at 
+          <a href="https://www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
+    </ul>  
     <p>
-      You will not be awarded medical priority if your current property can be adapted to meet your needs. 
-      If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. 
-      <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
+      Medical priority is generally considered where your accommodation is unsuitable for your health or disability-related 
+      needs and the difficulties cannot reasonably be resolved through adaptation, equipment, support, or other housing solutions. 
+      Whether adaptation is a suitable solution will be considered as part of the assessment process. 
+    </p>
+    <p>
+      If adaptations may help you remain in your current home, you may be referred to our Occupational Therapy service. Visit:  
+      <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank" rel="noopener noreferrer">
+      https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
     </p>
 
-    <p>
-      If following assessment, it is determined that your property cannot be adapted the assessing officer will advise you to complete the 
-      medical priority rehousing application
-    </p>
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20home%20adaptation%20assessment\`"
+    >
+            Send link to review further information
+    </button>
 
+    <p>
+      If assessment identifies that your housing needs cannot reasonably be met through adaptation or support, you may be advised 
+      to submit a Health and Housing application for consideration under the Housing Allocations Policy. 
+    </p>
     <p>
       If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
-      The quickest way to send your application is to scan and return to <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a>  
+      The quickest way to send your application is to scan and return to 
+      <a href="mailto:healthandhousingneeds@sheffield.gov.uk">healthandhousingneeds@sheffield.gov.uk</a> 
       This will minimise delays in considering your application.
     </p>
-
     <p>
-      Further details of support available for a variety of issues causing Housing Problems (including overcrowding, family problens, 
-      domestic abuse and relationship breakdown) can be found at <a href="https://www.sheffield.gov.uk/housing/housing-options/housing-problems" target="_blank">Housing problems | Sheffield City Council</a>
+      We will require medical evidence to support your application, and you may be assessed by a health care 
+      professional to determine your eligibility for rehousing on welfare, practical and emotional support grounds.
+    </p>
+    <p>
+      Further details of support available for a variety of issues causing Housing Problems (including overcrowding, 
+      family problems, domestic abuse and relationship breakdown) can be found at 
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/housing-problems" target="_blank" rel="noopener noreferrer">
+      Housing problems | Sheffield City Council</a>
     </p>
 
     <button type="button"
@@ -6770,9 +7150,9 @@ const healthAndHousing = new ContentH(
     </button>
 
     <p>
-      For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenenacy Enforcement (ASB)</strong>. 
-      This is the top result if you enter <strong>ASB</strong> in the Knowledge search above. The page provides general information about ASB, and will also allow you 
-      to send a link to the customer to correctly report ASB as either a council or non-council tenant.
+      For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenancy Enforcement (ASB)</strong>. 
+      This is the top result if you enter <strong>ASB</strong> in the Knowledge search above. The page provides general information about ASB, 
+      and will also allow you to send a link to the customer to correctly report ASB as either a council or non-council tenant.
     </p>
 
     `,
@@ -6800,7 +7180,7 @@ const healthAndHousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/05/2026", name: "Liz Taster" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const homelessPrevention = new ContentH(
@@ -6883,15 +7263,21 @@ const homelessPrevention = new ContentH(
 
     <ul>
       <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
-      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
-      <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
+      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 5555')">0114 273 5555</a> or online at 
+          <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank" rel="noopener noreferrer">
+          https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
       <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
-      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at 
-      <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
+      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 293 0000')">0114 293 0000</a> or 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 205 3333')">0114 205 3333</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Suffering domestic abuse</strong> - contact Housing Advice on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736306')">0114 2736306</a> or online at 
+          <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4680')">0114 273 4680</a> or online at 
+          <a href="https://www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
     </ul>
 
     <p>
@@ -6900,6 +7286,17 @@ const homelessPrevention = new ContentH(
       <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
     </p>
 
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20home%20adaptation%20assessment\`"
+    >
+            Send link to review further information
+    </button>
+
     <p>
       If following assessment, it is determined that your property cannot be adapted the assessing officer will advise you to complete the 
       medical priority rehousing application
@@ -6907,7 +7304,7 @@ const homelessPrevention = new ContentH(
 
     <p>
       If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
-      The quickest way to send your application is to scan and return to <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a>  
+      The quickest way to send your application is to scan and return to <a href="mailto:healthandhousingneeds@sheffield.gov.uk">healthandhousingneeds@sheffield.gov.uk</a>  
       This will minimise delays in considering your application.
     </p>
 
@@ -6993,32 +7390,33 @@ const housingAssociations = new ContentH(
   "Explore various housing associations in Sheffield, offering a range of properties and eligibility criteria for different housing needs.",
   `
       <p>
-        Housing Associations and Housing Trusts are non-profit making, independent organisations.
-        They vary widely in the types of people they house.
-        Some cater for all groups giving priority for those with the most urgent housing need.
-        Others specialise in helping particular groups of people, e.g. the elderly, disabled or those with other specific needs.
+        Housing Associations and Housing Trusts are non-profit making, independent organisations. They vary widely in the 
+        types of people they house. Some cater for all groups giving priority for those with the most urgent housing need. 
+        Others specialise in helping particular groups of people, e.g. the elderly, disabled or those with other specific needs. 
         Public numbers cannot be used on freephone.
       </p>
-  
-      <details class="accordion">
-        <summary class="accordion-header">
-          <h3> List of Housing Associations and Their Details</h3>
+      <br>
+
+      <h2>List of Housing Associations and their details</h2>
+                
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Acis Group</h3>
           <div class="accordion-icon"></div>
         </summary>
-        <div class="accordion-content">
-          <details class="details-accordion">
-            <summary>Acis Group Ltd</summary>
-            <div class="details-accordion-content">
-              <address>
-                Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a><br>
-                Acis Group Limited<br>
+            <div class="accordion-content">
+              <p>                
+                <em>Acis Group Limited<br>
                 Acis House<br>
                 Bridge Street<br>
                 Gainsborough<br>
                 Lincolnshire<br>
-                DN21 1GG<br>
-                <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br>
-                
+                DN21 1GG<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 027 2057')">0800 027 2057</a>
+                <br>Email: <a href="mailto:info@acisgroup.co.uk">info@acisgroup.co.uk</a>
+                <br>Web: <a href="http://www.acisgroup.co.uk" target="_blank" rel="noopener noreferrer">http://www.acisgroup.co.uk</a> <br></em>
+                </p>
+
      <button type="button"
         class="dform_widget email-btn dform_widget_type_button"
         aria-label="For further information send link"
@@ -7026,49 +7424,93 @@ const housingAssociations = new ContentH(
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
         }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment\`
-    "
->
+        "
+      >
         Send link to review further information
      </button>
-              </address>
+              
               <p>
-                Variety of properties across Woodthorpe and Lower Manor. Stock transfer from the Council Housing Service.
-                To register, a Council Housing Service rehousing registration form needs to be completed.
-                Properties are advertised through the Choice Based Letting System.
-                The only properties not advertised through the Sheffield Housing Online are those where Acis have agreed a management transfer for current tenants or mutual exchange.
+                Acis Group offers a variety of properties in the Woodthorpe and Lower Manor areas. These homes transferred from 
+                Sheffield City Council's housing stock. Customers who wish to be considered for an Acis property must have an 
+                active housing application with Sheffield City Council through Sheffield My Housing. Available properties are 
+                normally advertised through the Choice Based Lettings system. The main exceptions are management transfers for 
+                existing Acis tenants and mutual exchanges, which are arranged directly by Acis and are not advertised through 
+                Sheffield My Housing.
               </p>
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Anchor Trust</summary>
-            <div class="details-accordion-content">
-              <address>
-                Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a><br>
-                Customer Centre<br>
-                2 Godwin Street,<br>
-                Bradford,<br>
-                BD1 2ST<br>
-                GEN EMAIL: <a href="mailto:contact@anchor.org.uk">contact@anchor.org.uk</a>
-              </address>
-              <p>
-                Sheltered housing for the elderly. Applicants need to be 55+.
-                Waiting list, priority awarded to the following groups: homeless, fleeing harassment, and leaving hospital with nowhere else to go.
-              </p>
+
+        <details class="accordion">
+          <summary class="accordion-header">
+            <h3>Alpha Living</h3>
+            <div class="accordion-icon"></div>
+          </summary>
+          <div class="accordion-content">
+            <p>
+              <em>Alpha (R.S.L.) Limited<br>
+              Greenside House<br>
+              260 St Aidan’s Drive<br>
+              Sheffield<br>
+              S2 2ND<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 460 9870')">0330 460 9870</a>
+              <br>Email: <a href="mailto:enquiries@alpha-living.co.uk">enquiries@alpha-living.co.uk</a>
+              <br>Web: <a href="https://www.alpha-living.co.uk/" target="_blank" rel="noopener noreferrer">https://www.alpha-living.co.uk/</a> <br></em>
+            </p>
+
+            
+            <p>
+              Specialist Housing Association providing housing for over 55’s. They have apartments to provide 
+              independent living with Development Managers and Housekeepers close by if assistance is needed.
+            </p>
+        </div>
+      </details>      
+
+      
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Anchor Trust</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+            <p>
+              <em>Anchor Trust<br>
+              Customer Centre<br>
+              2 Godwin Street<br>
+              Bradford<br>
+              BD1 2ST<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 731 2020')">0800 731 2020</a>
+              <br>Email: <a href="mailto:contact@anchor.org.uk">contact@anchor.org.uk</a>
+              <br>Web: <a href="https://www.anchor.org.uk/" target="_blank" rel="noopener noreferrer">https://www.anchor.org.uk/</a> <br></em>
+            </p>
+
+            
+
+            <p>
+              Sheltered housing for the elderly. Applicants need to be 55+. 
+              Waiting list, priority awarded to the following groups: homeless, 
+              fleeing harassment, and leaving hospital with nowhere else to go.
+            </p>
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Arches Housing Association</summary>
-            <div class="details-accordion-content">
-              <address>
-                Arches Housing Limited, tel <a href="tel:0114 2288100">0114 2288100</a><br>
-                122 Burngreave Road<br>
-                Sheffield<br>
-                S3 9DE<br>
-                Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a><br>
-                Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a>
-                <br>
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Arches Housing Association</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+              <em>Arches Housing Limited<br>
+              122 Burngreave Road<br>
+              Sheffield<br>
+              S3 9DE<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 228 8100')">0114 228 8100</a>
+              <br>Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a>
+              <br>Web: <a href="https://www.archeshousing.org.uk" target="_blank" rel="noopener noreferrer">https://www.archeshousing.org.uk</a> <br></em>
+            </p>
       <button
             type="button"
             class="dform_widget email-btn dform_widget_type_button"
@@ -7083,8 +7525,9 @@ const housingAssociations = new ContentH(
        </button>
               </address>
               <p>
-                Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a> 
-                <br>
+                Mutual exchanges advertised and managed through home swapper: register on 
+                <a href="https://www.homeswapper.co.uk" target="_blank" rel="noopener noreferrer">https://www.homeswapper.co.uk</a> 
+              </p>
                 
        <button type="button"
                 class="dform_widget email-btn dform_widget_type_button"
@@ -7093,70 +7536,62 @@ const housingAssociations = new ContentH(
                 window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
                 }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`
-    "
->
+                "
+      >
                 Send link to review further information
        </button>
 
-                Information on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
-                An affordability and risk assessment will be carried out, and a previous landlord reference requested for all nominees.
-                We do not hold a waiting list for the general public.
-              </p>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Clarion Housing Group</summary>
-            <div class="details-accordion-content">
               <p>
-                Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a><br>
-                Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
+                Information on lettings: Flats and houses available, including some over 60s independent living accommodation 
+                (no warden on site). Must be 18+ and eligible for benefits if not working. An affordability and risk assessment 
+                will be carried out, and a previous landlord reference requested for all nominees. 
+                We do not hold a waiting list for the general public..
               </p>
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Together Group with Pennine</summary>
-            <div class="details-accordion-content">
-              <address>
-                Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a><br>
-                Harrison Street<br>
-                Wakefield<br>
-                WF1 1PS
-              </address>
-              <p>
-                1 & 2 bed flats. Two, three, and four bedroom houses. Points system - based on housing need. Small, scattered developments. Need to be aged 18+, but in some cases will take 16+.
-              </p>
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Clarion Housing Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+            <p>
+              <em>Clarion Housing Group<br>
+              Reed House<br>
+              Peachman Way<br>
+              Broadland Business Park<br>
+              Norwich<br>
+              NR7 0WF<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 500 8000')">0330 500 8000</a>
+              <br>Web: <a href="https://www.myclarionhousing.com/" target="_blank" rel="noopener noreferrer">https://www.myclarionhousing.com/</a> <br></em>
+            </p>
+
+            
+            
+            <p>
+              Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
+            </p>
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>English Churches Housing Group / The Riverside Group</summary>
-            <div class="details-accordion-content">
-              <address>
-                English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1559002">0345 1559002</a><br>
-                2 Estuary Boulevard<br>
-                Estuary Commerce Park<br>
-                Liverpool<br>
-                L24 8RF
-              </address>
-              <p>
-                Since English Churches Housing Group merged with The Riverside Group in March 2007, their waiting list has been closed.
-                Some of their properties are still being offered through the Choice Based Letting System. To register, complete a Council Housing Service rehousing registration form.
-              </p>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Great Places Housing Group</summary>
-            <div class="details-accordion-content">
-              <address>
-                Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a><br>
-                2a Derwent Avenue<br>
-                Manchester<br>
-                M21 7QP<br>
-                <a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a> 
-                <br>
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Great Places Housing Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+            <p>
+              <em>Great Places Housing Group<br>
+              2A Derwent Avenue<br>
+              Manchester<br>
+              M21 7QP<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 123 1966')">0300 123 1966</a>
+              <br>Email: <a href="mailto:customerhub@greatplaces.org.uk">customerhub@greatplaces.org.uk</a>
+              <br>Web: <a href="http://www.greatplaces.org.uk" target="_blank" rel="noopener noreferrer">http://www.greatplaces.org.uk</a> <br></em>
+            </p>
                 
        <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
@@ -7165,32 +7600,196 @@ const housingAssociations = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Great%20Places\`
-    "
->
+        "
+      >
             Send link to review further information
        </button>
 
-              </address>
               <p>
-                Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). To register, a Council Housing Service rehousing registration form needs to be completed.
-                Properties are advertised through the Choice Based Letting System and a local lettings policy.
+                Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). 
+                To register, a Council Housing Service rehousing registration form needs to be completed. 
+                Properties are advertised through the Choice Based Letting System and a local lettings policy. 
                 Some properties are advertised to existing Great Places tenants under their Local Lettings Policy.
               </p>
             </div>
           </details>
   
-          <details class="details-accordion">
-            <summary>Guinness Northern Counties</summary>
-            <div class="details-accordion-content">
-              <address>
-                Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
-                St Helens Court,<br>
-                Stirling Cl,<br>
-                Elsecar,<br>
-                Barnsley<br>
-                S74 8DY<br>
-                <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
-                <br> 
+  
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Home Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+                <em>Home Group<br>
+                Home Group Ltd<br>
+                2nd Floor<br>
+                20 Westfield Terrace<br>
+                Sheffield<br>
+                S1 4GH<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 141 4663')">0345 141 4663</a>
+                <br>Email: <a href="mailto:contactus@homegroup.org.uk">contactus@homegroup.org.uk</a>
+                <br>Web: <a href="https://www.homegroup.org.uk/" target="_blank" rel="noopener noreferrer">https://www.homegroup.org.uk/</a> <br></em>
+              </p>
+              
+              <p>
+                2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, 
+                and any properties becoming available will be advertised through the Choice Based Lettings system.
+              </p>  
+            </div>
+          </details>
+
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Incommunities Ltd</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+              <em>Incommunities Ltd<br>
+              The Quays<br>
+              Victoria Street<br>
+              Shipley<br>
+              BD17 7BN<br><br>
+
+              Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 175 9540')">0330 175 9540</a>
+              <br>Email: <a href="mailto:enquiry@incommunities.co.uk">enquiry@incommunities.co.uk</a>
+              <br>Web: <a href="https://www.incommunities.co.uk/" target="_blank" rel="noopener noreferrer">https://www.incommunities.co.uk/</a> <br></em>
+            </p>
+            
+            </div>
+          </details>
+  
+  
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Places for People</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+                <em>Places for People<br>
+                Stanley House<br>
+                The Boulevard<br>
+                Leeds<br>
+                LS10 1PZ<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('01772 667 002')">01772 667 002</a>
+                <br>Email: <a href="mailto:CSC.General@placesforpeople.co.uk">CSC.General@placesforpeople.co.uk</a>
+                <br>Web: <a href="https://www.placesforpeople.co.uk/" target="_blank" rel="noopener noreferrer">https://www.placesforpeople.co.uk/</a> <br></em>
+              </p>
+
+              
+              
+              <p>
+                Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
+              </p>
+              <ul>
+                <li>Economic – people not receiving Housing Benefit/LHA and paying full rent</li>
+                <li>General waiting list</li>
+                <li>Community – people needing to move to a property in a specific area (e.g., to care for a relative)</li>
+              </ul>
+            </div>
+          </details>
+  
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Sanctuary</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+                In Person:<br>
+                <em>Sanctuary Housing Association<br>
+                36a Beck Road<br>
+                Shiregreen<br>
+                Sheffield<br>
+                S5 0GB</em><br>
+                <br>
+                By mail:<br>
+                <em>Sanctuary Housing Association<br>
+                Marybone House<br>
+                2 Marybone<br>
+                Liverpool<br>
+                Mersey<br>
+                L3 2BY<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 131 3348')">0800 131 3348</a>
+                <br>Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a>
+                <br>Web: <a href="http://www.sanctuary-housing.co.uk" target="_blank" rel="noopener noreferrer">http://www.sanctuary-housing.co.uk</a> <br></em>
+              </p>
+
+        <button
+              type="button"
+              class="dform_widget email-btn dform_widget_type_button"
+              aria-label="For further information send link"
+              onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Sanctuary%20Housing\`
+          "
+        >
+               Send link to review further information
+        </button>
+     
+              <p>
+                Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. 
+                To register, a Council Housing Service rehousing registration form needs to be completed. 
+                Properties are advertised through the Choice Based Letting System and a local lettings policy. 
+                The only properties not advertised through the Sheffield Housing Online are those where Sanctuary has 
+                agreed a management transfer for current tenants or mutual exchange.
+              </p>
+            </div>
+          </details>
+  
+  
+          <details class="accordion">
+            <summary class="accordion-header"><h3>South Yorkshire Housing Association</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+                <em>South Yorkshire Housing Association<br>
+                152 Rockingham Street<br>
+                Sheffield<br>
+                S1 4EB<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 290 0200')">0114 290 0200</a>
+                / <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 138 0380')">0800 138 0380</a>
+                <br>Email: <a href="mailto:enquiries@syha.co.uk">enquiries@syha.co.uk</a>
+                <br>Web: <a href="https://www.syha.co.uk/" target="_blank" rel="noopener noreferrer">https://www.syha.co.uk/</a> <br></em>
+              </p>
+              
+              <p>
+                We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
+                People can apply directly to the services if they don’t need care.
+                The PL for both these schemes is Chris Dearnley:<a href="mailto:c.dearnley@syha.co.uk" target="_blank">c.dearnley@syha.co.uk</a>  
+                (<a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 244 4978')">0114 244 4978</a>).
+                If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows 
+                (<a href="mailto:jean.peachey@sheffield.gov.uk">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows 
+                (<a href="mailto:Jacqueline.bradshaw@sheffield.gov.uk">Jacqueline.bradshaw@sheffield.gov.uk</a>).
+              </p>
+            </div>
+          </details>
+          
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>The Guinness Partnership</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
+              <p>
+                <em>The Guinness Partnership<br>
+                7th Floor<br>
+                350 Euston Road<br>
+                Regents Place<br>
+                London<br>
+                NW1 3AX<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0303 123 1890')">0303 123 1890</a>
+                <br>Web: <a href="http://www.guinnesspartnership.com" target="_blank" rel="noopener noreferrer">http://www.guinnesspartnership.com</a> <br></em>
+              </p>                
 
       <button type="button"
         class="dform_widget email-btn dform_widget_type_button"
@@ -7205,196 +7804,73 @@ const housingAssociations = new ContentH(
      </button>
               </address>
               <p>
-                Available properties are either advertised through the Council’s Housing Online and Housing Online website or are allocated from Guinness Northern Counties’ own waiting list.
-                You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
+                Available properties are either advertised through the Council’s Housing Online and Housing Online website 
+                or are allocated from Guinness Northern Counties’ own waiting list. You need to join Guinness Northern Counties’ 
+                waiting list as well as the Council’s Housing Register in order to bid for properties.
               </p>
             </div>
           </details>
+
   
-          <details class="details-accordion">
-            <summary>Home Group</summary>
-            <div class="details-accordion-content">
-              <address>
-                Home Group, tel <a href="tel:0345 1414663">0345 1414663</a><br>
-                Home Group Ltd<br>
-                2nd Floor, 20 Westfield Terrace<br>
-                Sheffield<br>
-                S1 4GH<br>
-                <a href="mailto:contactus@homegroup.org.uk" target="_blank">contactus@homegroup.org.uk</a> 
-              </address>
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Together Housing Group</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <p>
-                2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, and any properties becoming available will be advertised through the Choice Based Lettings system.
-              </p>
+                <em>Together Housing Association <br>
+                Prospect House<br>
+                Wharf Street<br>
+                Blackburn<br>
+                BB1 1JD<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 555 5560')">0300 555 5560</a>
+                <br>Email: <a href="mailto:enquiries@togetherhousing.co.uk">enquiries@togetherhousing.co.uk</a>
+                <br>Web: <a href="https://www.togetherhousing.group/" target="_blank" rel="noopener noreferrer">https://www.togetherhousing.group/</a> <br></em>
+              </p> 
+              
             </div>
           </details>
-  
-          <details class="details-accordion">
-            <summary>Housing 21</summary>
-            <div class="details-accordion-content">
-              <address>
-                Housing 21, tel <a href="tel:0370 192 4000">0370 192 4000</a><br>
-                Tricorn House<br>
-                51–53 Hagley Road<br>
-                Birmingham<br>
-                B16 8TP<br>
-                <a href="mailto:enquiries@housing21.org.uk" target="_blank">enquiries@housing21.org.uk</a> 
-              </address>
+
+
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Vico Homes</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <p>
-                Flats and bedsits for 60+. If registered disabled, 55+. Allocation system based on waiting time.
-              </p>
+                <em>Vico Homes<br>
+                Merefield House<br>
+                Whistler Drive<br>
+                Castleford<br>
+                WF10 5HX<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 850 7507')">0345 850 7507</a>
+                <br>Email: <a href="mailto:homesearch@vicohomes.co.uk">homesearch@vicohomes.co.uk</a>
+                <br>Web: <a href="https://www.vicohomes.co.uk" target="_blank" rel="noopener noreferrer">https://www.vicohomes.co.uk</a> <br></em>
+              </p> 
+              
             </div>
           </details>
+
+
   
-          <details class="details-accordion">
-            <summary>Johnnie Johnson Housing Trust Ltd</summary>
-            <div class="details-accordion-content">
-              <address>
-                Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a><br>
-                Eden Point,<br>
-                Three Acres Lane,<br>
-                Cheadle Hulme,<br>
-                Cheadle,<br>
-                SK8 6RL<br>
-                <a href="mailto:talktous@jjhousing.co.uk" target="_blank">talktous@jjhousing.co.uk</a>  
-              </address>
+          <details class="accordion">
+            <summary class="accordion-header"><h3>Yorkshire Housing</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+            <div class="accordion-content">
               <p>
-                Bedsits, 1 & 2 bed flats, 2 + 3 bed houses. Need to be aged 18+, but some age-banded schemes. Allocation based on waiting time.
-              </p>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Padley</summary>
-            <div class="details-accordion-content">
-              <address>
-                Padley, tel <a href="tel:0114 2666626">0114 2666626</a><br>
-                208 Crookes<br>
-                S10 1TG<br>
-                <a href="mailto:sheffieldcrookeslettings@hunters.com" target="_blank">sheffieldcrookeslettings@hunters.com</a>
-              </address>
-              <p>
-                Sheltered accommodation and 1-bed flats mainly for the elderly. Point system based on personal circumstances.
-              </p>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Places for People</summary>
-            <div class="details-accordion-content">
-              <p>
-                Places for People, tel <a href="tel:0113 2858923">0113 2858923</a><br>
-                Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
-              </p>
-              <ul>
-                <li>Economic – people not receiving Housing Benefit/LHA and paying full rent.</li>
-                <li>General waiting list</li>
-                <li>Community – people needing to move to a property in a specific area (e.g., to care for a relative)</li>
-              </ul>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Sanctuary</summary>
-            <div class="details-accordion-content">
-              <address>
-                Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a><br>
-                In Person:<br>
-                Sanctuary Housing Association<br>
-                36a Beck Road<br>
-                Shiregreen<br>
-                Sheffield<br>
-                S5 0GB<br>
-                By mail:<br>
-                Sanctuary Housing Association<br>
-                Marybone House<br>
-                2 Marybone<br>
-                Liverpool<br>
-                Mersey<br>
-                L3 2BY<br>
-                Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a><br>
-                <a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a>
-                <br>
-        <button
-              type="button"
-              class="dform_widget email-btn dform_widget_type_button"
-              aria-label="For further information send link"
-              onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Sanctuary%20Housing\`
-    "
->
-               Send link to review further information
-        </button>
-     
-              </address>
-              <p>
-                Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed.
-                Properties are advertised through the Choice Based Letting System and a local lettings policy.
-                The only properties not advertised through the Sheffield Housing Online are those where Sanctuary has agreed a management transfer for current tenants or mutual exchange.
-              </p>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Sheffield Jewish Housing Association</summary>
-            <div class="details-accordion-content">
-              <address>
-                Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a><br>
-                22 Kingfield Road<br>
-                Sheffield<br>
-                S11 9AS
-              </address>
-              <p>
-                Accommodation for over 60’s, Jewish and non-Jewish members of the community. 1-bed flats, waiting list system.
-              </p>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>South Yorkshire Housing Association</summary>
-            <div class="details-accordion-content">
-              <address>
-                South Yorkshire Housing Association<br>
-                tel <a href="tel:0114 2900200">0114 2900200</a> / <a href="tel:0800 1380380">0800 1380380</a><br>
-                152 Rockingham Street,<br>
-                Sheffield<br>
-                S1 4EB
-              </address>
-              <p>
-                We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
-                People can apply directly to the services if they don’t need care.
-                The PL for both these schemes is Chris Dearnley:<a href="c.dearnely@syha.co.uk" target="_blank">c.dearnely@syha.co.uk</a>  (0114 244 4978).
-                If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows (<a href="jean.peachey@sheffield.gov.uk" target="_blank">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows (<a href="Jacqueline.bradshaw@sheffield.gov.uk" target="_blank">Jacqueline.bradshaw@sheffield.gov.uk</a>).
-              </p>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Together Housing Group</summary>
-            <div class="details-accordion-content">
-              <address>
-                Together Housing Group<br>
-                Tel: <a href="tel:0142 2284500">0142 2284500</a><br>
-                Bull Green House<br>
-                Bull Green<br>
-                Halifax<br>
-                HX1 2EB
-              </address>
-            </div>
-          </details>
-  
-          <details class="details-accordion">
-            <summary>Yorkshire Housing</summary>
-            <div class="details-accordion-content">
-              <address>
-                Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a><br>
+                <em>Yorkshire Housing<br>
                 The Place<br>
                 2 Central Place<br>
                 Leeds<br>
-                LS10 1FB<br>
-                <a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a>
-                <br>
+                LS10 1FB<br><br>
+
+                Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 366 4404)">0345 366 4404</a>
+                <br>Email: <a href="mailto:customerservices@yorkshirehousing.co.uk">customerservices@yorkshirehousing.co.uk</a>
+                <br>Web: <a href="http://www.yorkshirehousing.co.uk" target="_blank" rel="noopener noreferrer">http://www.yorkshirehousing.co.uk</a> <br></em>
+              </p>
                 
       <button type="button"
                  class="dform_widget email-btn dform_widget_type_button"
@@ -7408,26 +7884,18 @@ const housingAssociations = new ContentH(
                  Send link to review further information
       </button>
 
-              </address>
               <p>
-                Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+, but in some cases will take 16+.
-                NB: These contact details give a summary only; if further details are needed, please contact the Housing Association directly.
+                Mix of housing types including some sheltered schemes. Points system - based on housing need. 
+                Generally need to be 18+, but in some cases will take 16+. 
+                <br>NB: These contact details give a summary only; 
+                if further details are needed, please contact the Housing Association directly.
               </p>
             </div>
           </details>
-        </div>
-      </details>
     `,
-  {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_rehousing_enquiry",
-  },
-  {
-    typeKey: "rehousing_services_information_provided",
-  },
-  {
-    typeKey: "rehousing_services_information_requested",
-  },
+  { buttonLabel: "Report Housing Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
     keywords: [
@@ -7444,10 +7912,7 @@ const housingAssociations = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  {
-    date: "13/05/2025",
-    name: "Dinah Williams",
-  }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const idFaq = new ContentH(
@@ -7456,31 +7921,64 @@ const idFaq = new ContentH(
   "Review frequently asked questions about ID requirements for rehousing applications, including document submission and validation processes.",
   `
       <p>
-        Customers who have submitted an online application for rehousing, 
-        or have made a change to an existing Application, need to provide ID, 
-        references and proof of Child Benefit (if appropriate) in order for their application to be accepted 
-        and validated.<br><br>
-  
-        ID is required for all Household Members and should be submitted within 28 days of filling-in 
-        the Application.<br><br>
-  
-        Applicants should upload all the required documents for themselves and household members via the My Housing Portal<br><br>
+        Customers who submit a new rehousing application, or update an application where supporting documents are required, 
+        must provide the relevant ID and supporting evidence before their application can be assessed.
       </p>
+      <p>
+        Depending on their circumstances, this may include:
+      </p>
+        <ul>
+          <li>Identification documents</li>
+          <li>Landlord references</li>
+          <li>Proof of Child Benefit (where applicable)</li>
+          <li>Proof of local connection or exemption</li>
+          <li>Evidence of income, savings and financial assets</li>
+          <li>Evidence of nationality or immigration status</li>
+          <li>Details of any unspent convictions. </li>
+        </ul>
+      <p>
+        All required documents should be uploaded through My Housing within 28 days of submitting the application. 
+      </p>
+      <p>
+        Customers must provide the required supporting documents for themselves, and all household members included on the application.
+      </p>
+
+      <br/>
       <h4>Customer advising ID/proofs have been posted to us</h4>
       <p> 
-        Customers should not post original documents to us, but when a customer has posted their documents to us,
-        they should call to advise us of this. Advisor Note: The Registrations Team need to be advised so they
-        can check DMS in the next couple of days and subsequently validate the application. <br>
-        Remember to take a note of the names and dates of birth of all household members and include them 
-        in any email or case that you send to the Registration Team.<br><br>
-  
-        Advise the customer that it can take up to a month for their documents to be returned.
+        Customers should upload documents through <strong>My Housing</strong> wherever possible.
       </p>
+      <p>
+        If a customer is unable to upload documents through My Housing in the first instance, they can provide them in person 
+        within 28 days of the date they completed the application online.
+      </p>
+      <p>
+        If documents have already been posted:
+        <br/>
+        <br/><strong>Advisor Note</strong>
+      </p>
+        <ul>
+          <li>Notify the Housing Information and Registration Teamto check DMS</li>
+          <li>Record the names and dates of birth of all household members</li>
+          <li>Include these details in the email or case sent to the Housing Information and Registration Team</li>
+          <li>Advise the customer that original documents may take up to one month to be returned</li>
+        </ul>
+
+      <br/>
       <h4>Customer submitted application but did not provide ID within 28 days</h4>
       <p> 
-        We will not re-instate your Application and you should 
-        submit a new Application and provide the relevant ID.
+        If the required documents are not provided within 28 days, the application cannot normally be assessed or accepted. 
       </p>
+      <p>
+        Your housing application will not normally be accepted until all required supporting information has been received and 
+        maybe rejected as incomplete.
+      </p>
+      <p>
+        If the application has been closed or cancelled because the required documents were not received, the customer will need 
+        to submit a new application through <strong>My Housing</strong> and provide all required supporting documents for themselves 
+        and any household members.
+      </p>
+
     `,
   {
     buttonLabel: "Report Housing Enquiry",
@@ -7505,7 +8003,7 @@ const idFaq = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "01/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const idReferences = new ContentH(
@@ -7513,61 +8011,131 @@ const idReferences = new ContentH(
   "ID / References",
   "Details on the required identification and references needed for the rehousing process, including verification procedures.",
   `
-      <p>
-        For current SCC tenants, ID is required for new rehousing applications.<br>
-        For non SCC tenants, ID and a Reference are required for new rehousing applications.<br><br>
+    <p>
+      To verify the information provided in your housing application, we will need supporting documents for everyone included on the application.
+    </p>
+    <p>
+      <br/><strong>Current Sheffield City Council tenants</strong>
+    </p>
+      <ul>
+        <li>Current SCC tenants must provide the required ID</li>
+        <li>You do not need to provide a landlord reference because we already have access to your tenancy information</li>
+      </ul>
+    <p>
+      <br/><strong>All other applicants</strong>
+    </p>
+      <ul>
+        <li>You must provide the required ID and a completed landlord or professional reference form</li>
+      </ul>
+    <p>
+      <br/><strong>Identification requirements</strong>
+    </p>
+      <ul>
+        <li>Each applicant must provide two forms of identification, including one showing their current address</li>
+        <li>Household members under the age of 16 must provide one form of identification</li>
+        <li>The same document cannot be used twice to meet different requirements. 
+            For example, if a driving licence is used as proof of identity, another document must be provided as proof of address</li>
+      </ul>
+    <p>
+      Depending on your circumstances, you will also be required to provide some or all of the following:
+    </p>
+      <ul>
+        <li>Proof of your three-year continuous local connection to Sheffield, or evidence that you are exempt from this requirement</li>
+        <li>Proof of Child Benefit where children under 16 are included on your application. This can be a Child Benefit award letter or, 
+            where this is unavailable, the last three months of consecutive bank statements showing the payments</li>
+        <li>Evidence of your nationality or immigration status</li>
+        <li>Details of any financial assets, savings, investments or property ownership, including bank statements where required</li>
+        <li>Details of any unspent criminal convictions</li>
+      </ul>
+    <p>
+      <br/><strong>References</strong>
+    </p>
+      <ul>
+        <li>Most applicants must provide a completed Sheffield City Council reference form from their current or most recent landlord or accommodation provider</li>
+        <li>If you are unable to obtain a landlord reference, please contact the Housing Service so alternative arrangements can be considered</li>
+      </ul>
+    <p>
+      <br/><strong>Submitting your documents</strong>
+    </p>
+      <ul>
+        <li>Documents should be uploaded through your My Housing account in the first instance, you can upload your original ID documents or 
+            provide them in person within 28 days of the date you completed your application online</li>
+        <li>Your housing application cannot be processed until all required information and supporting documents have been received</li>
+        <li>We may contact you to request additional information if further checks are required</li>
+        <li>Your application will not normally be accepted until all required supporting information has been received. 
+            If the required documents are not provided within the requested timescale, your application may be cancelled and you may need to 
+            submit a new application</li>
+      </ul>
   
-        You must provide two forms of identification (do not post original documents to us). <br>
-        One must be from the Proof of ID documents list <br>
-        (see Acceptable ID below) whilst the second must provide proof of your current UK address.<br><br>
-  
-        Photo ID is also required to prove your identity. <br>
-        If you do not have photo ID, you must provide a passport-sized photo.  <br>
-        A <strong> landlord Reference</strong>  is also required. <br><br>
-  
-        The same document cannot be used more than once e.g. <br>
-        driving licence as primary evidence and proof of address. <br>
-        Proof of child benefit receipt is required where children under 16 years of age are 
-        being rehoused with you.<br><br>
-  
-        <strong> You can upload your documents via the website (including reference if appropriate) </strong><br><br>
-  
-        Failure to submit all required ID and references at the same time, 
-        may mean that you will need to restart the application process from the beginning by 
-        submitting a further online application. <br><br>
-      </p>
+  <details class="accordion">
+    <summary class="accordion-header">
       <h3>Acceptable ID</h3>
-  
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+      <h4>Proof of Identity</h4>
         <ul>
-          <li>Proof of ID documents	Proof of address	Proof of Child Benefit</li>
           <li>Marriage certificate</li>
-          <li>Divorce/Annulment papers</li>
-          <li>Divorce/Annulment papers</li>
-          <li>Passport (this can be expired but if the customer is an adult an adult passport must be produced)</li>
-          <li>passport must be produced)</li>
-          <li>Deed poll documentation for change of name (to accompany details of former name if applicable)</li>
-          <li>Current bus passes with photograph</li>
-          <li>UK resident permit</li>
-          <li>ID card issued by EEA/EU countries</li>
-          <li>Home Office standard acceptance letter</li>
+          <li>Divorce orannulment papers</li>
+          <li>Passport (adult applicants must provide an adult passport)</li>
+          <li>Deed poll documentation for a change of name</li>
+          <li>Current bus pass with photograph</li>
+          <li>UK residence permit</li>
+          <li>ID card issued by an EEA/EU country</li>
+          <li>Home Office acceptance letter</li>
           <li>Immigration status document</li>
           <li>NASS 35</li>
-          <li>Citizenship card (with hologram and photo to prove age)</li>
+          <li>Citizenship card (with hologram and photograph)</li>
           <li>Medical card</li>
-          <li>Birth certificate/Adoption certificate</li>
-          <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-          <li>Driving licence</li>
-          <li>Recent utility bill paid in that person’s name (last quarter)</li>
-          <li>Most recent council tax statement</li>
-          <li>Home Office standard acceptance letter</li>
-          <li>Letter from DWP for tax credits</li>
-          <li>Bank statement from within the last 3 months</li>
-          <li>Wage slip from current employer</li>
-          <li>Life assurance/Insurance policies</li>
-          <li>Proof of all other benefits</li>
-          <li>Child benefit award letter</li>
-          <li>The last 3 consecutive months bank statements (Only where award letter is not available).</li>
+          <li>Birth certificate or adoption certificate</li>
+          <li>Letter from Social Worker, Probation Officer or Solicitor</li>
         </ul>
+
+      <br/>
+      <h4>Proof of Address</h4>
+        <ul>
+          <li>Driving licence</li>
+          <li>Utility bill dated within the last three months</li>
+          <li>Most recent Council Tax bill</li>    
+          <li>Home Office acceptance letter</li>
+          <li>Department for Work and Pensions correspondence</li>
+          <li>Bank statement dated within the last three months</li>
+          <li>Current wage slip</li>
+          <li>Life assurance or insurance policy documents</li>
+          <li>Evidence of benefit payments</li>
+        </ul>
+
+      <br/>
+      <h4>Proof of Child Benefit</h4>
+        <ul>
+          <li>Child benefit award letter</li>
+          <li>If no award letter is available, the last three consecutive months of bank statements showing Child Benefit payments</li>
+        </ul>
+
+      <br/>
+      <h4>Proof of Local Connection (if requested)</h4>
+        <p>
+          You may be asked to provide evidence of your local connection. This could include:
+        </p>
+          <ul>
+            <li>Proof that you have lived in Sheffield continuously for the last three years:</li>
+              <ul>
+                <li>Tenancy agreements</li>
+                <li>Council Tax bills</li>
+                <li>Utility bills</li>
+                <li>Other official correspondence</li>
+              </ul>
+            <li>Proof that you have worked in Sheffield continuously for the last three years:</li>
+              <ul>
+                <li>Payslips</li>
+                <li>Employment contracts</li>
+                <li>Letter from your employer</li>
+              </ul>
+            <li>Proof that an immediate family member or primary carer has lived in Sheffield continuously for the last three years, 
+                together with evidence of your relationship to them</li>
+    </div>
+  </details>
     `,
   {
     buttonLabel: "Report Housing Enquiry",
@@ -7592,7 +8160,241 @@ const idReferences = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "01/05/2026", name: "Liz Taster" }
+  { date: "29/10/2026", name: "Liz Taster" }
+);
+
+
+const impactLetters = new ContentH(
+  "impactLetters",
+  "Impact Letters Guidance",
+  "Guidance covering the impact letters for the new Allocations Policy.",
+  `
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Why has an applicant received an impact letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The letter explains how the new Housing Allocations Policy is expected to affect an applicants housing application when 
+        it comes into effect on 11 November 2026.
+      </p>
+      <p>
+        All existing households on the Housing Register are being assessed under the new policy. 
+      </p>
+      <p>
+        The outcome in the letter is based on the information we hold on their current housing application when it was reviewed.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What do I do if an applicant has received an impact letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        They need to read the outcome and the actions they need to take in the letter. If the information is correct and the 
+        letter does not ask them to respond, they do not need to do anything. 
+      </p>
+      <p>
+        If the information is incorrect or the circumstances have changed, they need to log in to their My Housing, update their 
+        application and provide the appropriate supporting documents. 
+      </p>
+      <p>
+        The letter may also state details to request a right of review, so they may need to appeal alongside updating their 
+        housing application. 
+      </p>
+      <p>
+        If the letter asks them choose which application should remain active, they must respond by the date shown in the letter. 
+        If they do not, it is likely a decision will be made on there behalf after the go live date.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What to do if an applicant does not agree with the proposed outcome?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the letter is a decision to remove the housing application or change the band and they still disagree, they can request 
+        a review within 21 days of receiving the letter or email. The request must be made by letter or email to the contact shown 
+        in the letter they have received. 
+      </p>
+      <p>
+        The review must accompanied by evidence, including explaining why they believe the decision is incorrect. 
+      </p>
+      <p>
+        If the information is incorrect and their circumstances have changed, they need to log in to their My Housing, update the application 
+        and provide the appropriate supporting documents.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What if their circumstances have changed since the letter or email was sent. What should the applicant do?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Log in to their My Housing, update their application and provide the appropriate documents to support the change. 
+        We can then consider the verified information against the new policy. 
+      </p>
+      <p>
+        If the letter contains a review deadline, they must also follow the right of review instructions stated in the letter.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Can you as officers change the proposed outcome in an applicant’s letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        No.
+        <br>As officers you can explain what is in the letter and the next steps <strong><em>(you as officers should have had 
+        copies of the letters)</em></strong> but you cannot change the outcome during a phone call conversation or if the 
+        applicants attend to speak to one of our officers in person.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Can an applicant request a right of review?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If the applicant has received a letter which gives them a right to request a review and they disagree with the decision, 
+        they must request it within 21 days of receiving the letter. 
+      </p>
+      <p>
+        They must send the request by letter or email to the address shown in the letter they have received and include evidence 
+        explaining why they believe the decision is incorrect. 
+      </p>
+      <p>
+        <strong>Further advice</strong>: If the have not done so already, you should also advise them to update their details on 
+        their My Housing account as soon as possible alongside the request for a review if this is stated in the letter or email.
+      </p>
+      <p>
+        <strong>Note: A right of review can be requested if an applicant does not agree with the outcome of their letter or email. 
+        They cannot just request a review if they just do not agree with changes in the new policy.</strong>
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What to I do if an applicant has not received a letter or an email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The team have carefully mapped out which letter an applicant should be sent ranging from 1-13 of the policy changes. 
+        Some applicants on our Housing Register may have stated NFA with no fixed address or may be vulnerable which may mean 
+        it is not clear which policy change they would be impacted by. 
+      </p>
+      <p>
+        In this instance, until the 11th of November please email the details to 
+        <a href="mailto:AllocationsPolicy@sheffield.gov.uk">AllocationsPolicy@sheffield.gov.uk</a> or contact our 
+        <a href="mailto:HousingRegistrations@sheffield.gov.uk">HousingRegistrations@sheffield.gov.uk</a> 
+        where an officer will be able to get back to the applicant and look into this further.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What if an applicant struggled to use My Housing or needs help understanding the letter or email?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        As an officer you can explain the letter to the applicant and provide details on next steps, but you cannot change 
+        the outcome on a phone call.
+      </p>
+      <p>
+        If an applicant cannot use My Housing, you can talk them through it or ask them to attend in person to visit our 
+        Housing Advice Services, who can support them to update their housing application and provide documents. 
+      </p>
+      <p>
+        If an applicant is under 18 and wants to discuss their housing need, the letter they have received will direct 
+        them to the Housing Advice Service, Children’s Services or Leaving Care Service.
+      </p>
+      <p>
+        If the applicant is on a priority band and the applicant would like to find out more information, the priority 
+        officer can discuss these circumstances with them. 
+        <br><strong>Note: Checking on NEC will tell you the name of the priority officer managing the case.</strong>
+      </p>
+      <p>
+        The letters have an overleaf should an applicant require a translated copy in their spoken language as well 
+        as contact details.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What are the alternative rehousing options if an applicant’s wants to be rehoused or access a property through social housing, but does no longer qualify?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>In person at Howden House and your local Area Housing Office. 
+            <a href="https://www.sheffield.gov.uk/council-housing/support-services-council-houses/neighbourhood-offices" 
+            target="_blank" rel="noopener noreferrer">Neighbourhood offices | Sheffield City Council</a></li>
+        <li>Telephone: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930000')">0114 2930000</a></li>
+        <li>Staff and internal/external partner enquires: <a href="mailto:AllocationsPolicy@sheffield.gov.uk">AllocationsPolicy@sheffield.gov.uk</a></li>
+        <li>Residents/ applicants impacted enquiries: <a href="https://www.sheffield.gov.uk/your-city-council/contact-us" 
+            target="_blank" rel="noopener noreferrer">Contact us | Sheffield City Council</a></li>
+        <li>Private Rented accommodation. For more information contact 
+            <a href="mailto:privaterentedsolutions@sheffield.gov.uk">privaterentedsolutions@sheffield.gov.uk</a> or by phone on 
+            <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734567')">0114 2734567</a> 
+            or to find out more information look at <a href="https://www.sheffield.gov.uk/housing/housing-options/help-getting-private-tenancy" 
+            target="_blank" rel="noopener noreferrer">Help with getting a private tenancy | Sheffield City Council</a></li>
+        <li>Shared Ownership - Private Registered Providers of social housing also run Shared Ownership and other low-cost housing schemes within the city. 
+            Please visit the following link: <a href="https://www.sheffield.gov.uk/housing/housing-development/shared-ownership" target="_blank" 
+            rel="noopener noreferrer">Shared ownership | Sheffield City Council</a>.</li>
+        <li>You may also wish to apply directly to some Housing Associations. While we work alongside many of these housing providers 
+            and advertise some of their properties, a few of them also advertise a proportion of their own stock directly.</li>
+        <li>You can visit <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">HomeSwapper</a> and register to find a Mutual Exchange. 
+            To explore more of these options please visit <a href="https://www.sheffield.gov.uk/housing/housing-options/" 
+            target="_blank" rel="noopener noreferrer">Other housing options | Sheffield City Council</a>.</li>
+      </ul>
+      <p>
+        <strong>Please refer to the FAQ (Frequently asked questions) for any specific questions</strong>
+      </p>
+    </div>
+  </details>
+
+  `,
+  { buttonLabel: "", formName: "",},
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "impact",
+      "letter",
+      "letters",
+      "email",
+      "outcome",
+      "policy change",
+      "housing",
+      "houzing",
+      "houseing",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "04/11/2026", name: "Liz Taster" }
 );
 
 
@@ -7643,56 +8445,62 @@ const movingIn = new ContentH(
   `
       <h4>When can I move in once offered a property?</h4>
       <p>
-        You can arrange your moving in date as part of the viewing and Sign Up process 
-        with the <strong>Voids</strong> Officer.
+        After you accept an offer, the landlord will arrange a viewing and tenancy sign-up. 
+        Your move-in date will be agreed once the property is ready.
       </p>
   
+      <br/>
       <h4>Standard of property when moving in</h4>
       <p>
-        Before you move into your new home we will check to make sure it is safe and secure. 
-        Where necessary we get qualified and skilled trades people to test electrical, gas, 
-        water and waste services. Our priority is to provide you with a safe living environment. 
-        We will ensure that:<br><br>
-  
-        Sometimes delays may occur due to unforeseen work that is required to bring the property up
-        to a standard that meets our Vacant Charter.  
-        When the property is ready, we will contact you to arrange an appointment to view the property 
-        and then to sign for your new tenancy, should you choose to accept. In some circumstances 
-        we may arrange a ‘work in progress’ viewing.<br><br>
-  
-        Generally, if repairs are left outstanding at the start of a tenancy, these would be minor ones 
-        not seriously affecting the use of the property and would require a small amount of work to rectify 
-        the given problems. To have completed these within the prior repairs programme/work schedule 
-        would have unnecessarily held up the letting, leaving a property standing ‘idle’ whilst there were 
-        people needing re-housing. The ‘on-tenancy’ repairs can be completed once you have moved in 
-        and will cause very little in the way of disruption, mess or upheaval.
+        Before you move into your new home, we will make sure it is safe and secure. 
+        Where required, essential checks will be completed on services such as gas, electricity and water supplies.
+      </p>
+      <p>
+        Some properties may be advertised before all works have been completed. Property adverts may include details of 
+        any known repairs, improvement works or restrictions that are still outstanding at the time of advertising.
+      </p>
+      <p>
+        If additional work is required before the property is ready, there may be a delay to the tenancy start date. 
+        We will keep you informed and arrange a viewing appointment when the property is available. In some cases, 
+        viewings may take place while works are still being completed.
+      </p>
+      <p>
+        Any outstanding works at the point of tenancy sign-up will normally be minor works that do not prevent the 
+        property from being occupied safely.
       </p>
   
+      <br/>
       <h4>Gas / Electricity supplier</h4>
       <p>
-        Any known utilities suppliers information will be provided in the Sign-up pack.
-  
-        The responsibility/contractual agreement for arranging the supply 
-        (and the utility meter installation if necessary) is with the customer and 
-        the utility provider e.g. British Gas, Powergen etc.<br><br>
-  
-        If the supplier is not known, the customer will need to contact one of the numbers below, 
-        and then contact the utility supplier themselves:<br><br>
-  
-        <strong>Gas</strong> - Call the M Number Enquiry Line on <a href="tel:0870 6081524">0870 6081524</a>, provided by xoserve Ltd. 
-        They will tell you the supplier and give you your Meter Point Reference Number (MPRN).<br><br>
-  
+        Where known, utility supplier information will be provided during the tenancy sign-up process.
+      </p>
+      <p>
+        It is the tenant's responsibility to contact the supplier and arrange their gas and electricity accounts from the 
+        tenancy start date.
+      </p>
+      <p>
+        If you do not know who supplies the property, you will need to contact the relevant service to identify the supplier before 
+        setting up your account.
+      </p>
+      <p>  
+        <strong>Gas</strong> - Call the M Number Enquiry Line on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0870 6081524')">0870 6081524</a>, provided by xoserve Ltd. 
+        They will tell you the supplier and give you your Meter Point Reference Number (MPRN).
+      </p>
+      <p>  
         <strong>Electricity</strong> - Call your local electricity distribution company and ask for their Meter 
-        Point Administration Service (MPAS). Alternatively, contact <a href="tel:0845 0707172">0845 0707172</a>.
+        Point Administration Service (MPAS). Alternatively, contact <a href="#" class="telephoneNumber" onclick="copyToClipboard('0845 0707172')">0845 0707172</a>.
       </p>
   
+      <br/>
       <h4>Meter Readings</h4>
       <p>
-        The meter reading before they moved in - you will have been advised of this at sign up 
-        and the information will have been provided in their sign up pack. (We also advise Customers 
-        to take their own meter readings and contact the utility company themselves.)<br><br>
-  
-        The meter reading when they move out - you should contact the utility company themselves.
+        The opening meter readings will be recorded when the tenancy starts and provided as part of your sign-up information.
+      </p>
+      <p>
+        We also recommend that tenants take their own meter readings when they move in and provide these directly to their utility supplier.
+      </p>
+      <p>
+        When moving out of a property, tenants should take final meter readings and contact their utility suppliers to close their accounts.
       </p>
     `,
   {
@@ -7714,7 +8522,7 @@ const movingIn = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/11/2024", name: "George Whitehouse" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 const mutualExchanges = new ContentH(
@@ -7723,13 +8531,37 @@ const mutualExchanges = new ContentH(
   "Details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, including required documentation, restrictions, and steps to complete an exchange.",
   `
       <p>
-        A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
-        their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
-  
-        To apply for a Mutual Exchange you need to fill in an online application form. Go to the HomeSwapper website at: <a href="https://www.homeswapper.co.uk/" target="_blank">https://www.homeswapper.co.uk/</a> <br>
-        You will need to create an account if you do not already have one. It is free to register for Sheffield City Council tenants. <br>
-        More information on Mutual Exchanges and how to apply can be found on the SCC website here: <a href="https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else" target="_blank">https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else</a>.
-        <br>
+        A Mutual Exchange is when a secure council tenant or an assured tenant of a Housing Association exchanges 
+        homes with another secure or assured tenant, with permission from their landlord.
+      </p>
+      <p>
+        Council tenants with an introductory tenancy do not have the legal right to mutually exchange until their 
+        tenancy becomes a secure tenancy.
+      </p>
+      <p> 
+        To register for a Mutual Exchange, customers can use HomeSwapper: 
+        <a href="https://www.homeswapper.co.uk/" target="_blank"rel="noopener noreferrer">https://www.homeswapper.co.uk/</a>
+      </p>
+      
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=HomeSwapper\`"
+        >
+            Send link to review further information
+        </button>
+      
+      <p>
+        Registration is free for Sheffield City Council tenants.
+      </p>
+      <p>
+        More information can be found on the Sheffield City Council website: 
+        <a href="https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else" target="_blank" rel="noopener noreferrer">
+        Exchange your property with someone else | Sheffield City Council</a>.
+      </p>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
           onclick="
@@ -7739,73 +8571,58 @@ const mutualExchanges = new ContentH(
         >
         Send link to register online
         </button>
-        
-        <br>
-        <br>
-  
-        Advisor Note: Check for updates on the progress of a customer's mutual exchange on NECH.
+      <p>
+        Advisor Note: Check NEC for updates on the progress of a customer's mutual exchange..
       </p>
   
+
       <details class="accordion">
         <summary class="accordion-header">
           <h3>FAQs</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <details class="details-accordion">
+        
+        <details class="details-accordion">
             <summary>How long do I have to live in a Council tenancy before I can have an exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                You can Mutually Exchange as soon as you have a <strong>secure</strong> Council Tenancy except if you have one 
-                of the criteria set out below.
+                You can apply for a Mutual Exchange as soon as you have a secure tenancy.
+                <br/>
+                <br/>
+                If you have an introductory tenancy, you must wait until your tenancy becomes secure before you can exchange.
               </p>
-              <p>
-                Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
-              </p>
-              <ul>
-                <li>You have an introductory tenancy or another type of tenancy that is not Secure or Assured.</li>
-                <li>The tenancy is subject to a court order for possession.</li>
-                <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
-                <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
-                <li>The property is substantially larger than you and your family need.</li>
-                <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
-                <li>The property has been let as a service tenancy.</li>
-                <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
-                <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
-                <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
-              </ul>
             </div>
           </details>
+
+        <details class="details-accordion">
+          <summary>How long will it take for my HomeSwapper registration to be approved?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Before you can access all HomeSwapper features, your registration must be approved.
+            </p>
+              <ul>
+                <li>New registrations are usually approved within 1 working day</li>
+                <li>Registrations submitted on a Friday or over a weekend are normally approved on Monday</li>
+                <li>Registrations submitted on a Bank Holiday will be approved on the next working day</li>
+              </ul>
+            <p>
+              Once approved, you will be able to view full property details and start looking for exchange matches.
+            </p>
+          </div>
+        </details>
   
           <details class="details-accordion">
-            <summary>How do I find someone to exchange with? (Homeswapper)</summary>
+            <summary>How do I find someone to exchange with?</summary>
             <div class="details-accordion-content">
               <p>
-                HomeSwapper is an independent nationwide service for social housing tenants who want to exchange their property. 
-                As a Sheffield City Council tenant, you can register for free and this will allow you to search for properties anywhere in the UK.<br><br>
-   
-                HomeSwapper offers a matching service and will send you details of suitable exchanges via email or text. 
-                The HomeSwapper website is <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>.
-                <br>          
-                <button type="button"
-                class="dform_widget email-btn dform_widget_type_button"
-                aria-label="For further information send link"
-                onclick="
-                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-                }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`
-    "
->
-    Send link to review further information
- </button>
-                <br>
-                <br>
-                Before you get full access to the website, your registration will need to be approved. 
-                New submissions are approved daily, so except for weekends, it would be a maximum of 24 hours before you can view full details.<br><br>
-  
-                Any registrations submitted on a Friday or over the weekend will be approved on Monday morning, and for Bank Holidays, 
-                it will be the next working day.
+                HomeSwapper is a free nationwide exchange service for social housing tenants.
+                <br/>
+                <br/>
+                As a Sheffield City Council tenant, you can register free of charge and search for exchange 
+                opportunities across the UK. HomeSwapper also provides match suggestions by email and text.
               </p>
+
             </div>
           </details>
   
@@ -7813,11 +8630,13 @@ const mutualExchanges = new ContentH(
             <summary>What happens when I have someone to exchange with?</summary>
             <div class="details-accordion-content">
               <p>
-                Once you have found a suitable Mutual Exchange, all parties involved will need to complete a Mutual Exchange application form (this includes anyone involved who is not a Council tenant). 
-                Please see the website for further information on how to apply.<br><br>
-  
-                The forms will then be processed by staff within the Mutual Exchange Team, who will contact you directly. 
-                If anyone involved is not a Sheffield City Council tenant, paperwork will also need to be completed and returned to the other housing provider(s).
+                Once a suitable exchange has been identified, all parties involved must complete the Mutual Exchange application process.
+                <br/>
+                <br/>
+                Applications will be assessed by the Mutual Exchange Team. Where another landlord is involved, they will also carry out their own checks and approval process.
+                <br/>
+                <br/>
+                You should not make any arrangements to move until written permission has been granted by all landlords involved.
               </p>
             </div>
           </details>
@@ -7826,7 +8645,13 @@ const mutualExchanges = new ContentH(
             <summary>Do I need permission to do a Mutual Exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                Yes. The landlord of everyone involved in the exchange must agree to it. Before we can agree, we will check that:
+                Yes.
+                <br/>
+                <br/>
+                All landlords involved must give written permission before an exchange can take place.
+                <br/>
+                <br/>
+                Do not move until permission has been granted and a move date has been agreed. Before we can agree, we will check that:
               </p>
               <ul>
                 <li>You have a clear current rent account</li>
@@ -7835,7 +8660,6 @@ const mutualExchanges = new ContentH(
               </ul>
               <p>
                 There are also rules that apply in terms of eligibility for different sizes and types of property. 
-                Remember that you should not move until you have written permission from us and a move date has been agreed.
               </p>
             </div>
           </details>
@@ -7844,18 +8668,19 @@ const mutualExchanges = new ContentH(
             <summary>Can a Mutual Exchange be refused?</summary>
             <div class="details-accordion-content">
               <p>
-                Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
+                Mutual Exchanges are normally allowed, but permission may be refused if:
               </p>
               <ul>
                 <li>The tenancy is subject to a court order for possession.</li>
                 <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
-                <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
-                <li>The property is substantially larger than you and your family need.</li>
-                <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
-                <li>The property has been let as a service tenancy.</li>
-                <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
-                <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
-                <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
+                <li>The tenant or a household member is subject to a court order or proceedings relating to antisocial behaviour.</li>
+                <li>The property is substantially larger than the household requires.</li>
+                <li>The property is too small and would result in overcrowding.</li>
+                <li>The property is a service tenancy.</li>
+                <li>The property has been adapted for a disabled person and the exchange would mean a disabled person no longer occupies the home.</li>
+                <li>The property is part of a group of homes for people with special needs and an eligible person would no longer occupy it. 
+                    This includes OPIL or supported housing schemes and properties normally offered to people with mobility needs.</li>
+                <li>The property is subject to a management agreement with a Housing Association and the tenant is unwilling to become a member where required.</li>
               </ul>
             </div>
           </details>
@@ -7864,10 +8689,17 @@ const mutualExchanges = new ContentH(
             <summary>I have rent arrears, can I move?</summary>
             <div class="details-accordion-content">
               <p>
-                It depends on the type of arrears. Only current arrears are taken into consideration. <br>
-                You must have a completely clear current rent account before full consent will be given (See conditional consent above). <br>
-                You will not be able to move with current arrears, even if you have been sticking to a repayment plan. <br>
-                Any other types of arrears, including former tenancy arrears, recharges, etc., will be disregarded and will not prevent an exchange from taking place.<br>
+                It depends on the type of arrears. 
+              </p>
+                <ul>
+                  <li>Only current rent arrears are taken into consideration.</li>
+                  <li>You must have a clear current rent account before full consent can be given for a Mutual Exchange.</li>
+                  <li>You will not be able to move if you have current rent arrears, even if you are making payments under a repayment agreement.</li>
+                  <li>Former tenancy arrears, recharges and other historic housing debts will not normally prevent a Mutual Exchange from taking place.</li>
+                </ul>
+              <p>
+                If there are current rent arrears on the account, you may be given conditional consent. 
+                This means the exchange cannot proceed until the arrears have been cleared and all other requirements have been met.
               </p>
             </div>
           </details>
@@ -7876,7 +8708,10 @@ const mutualExchanges = new ContentH(
             <summary>If I Mutually Exchange, will I keep my waiting time?</summary>
             <div class="details-accordion-content">
               <p>
-                Yes. A Mutual Exchange is not linked to your rehousing application and will not affect your waiting time.
+                Yes. 
+                <br/>
+                <br/>
+                A Mutual Exchange is separate from a Housing Register application and does not affect any waiting time already accrued.
               </p>
             </div>
           </details>
@@ -7885,39 +8720,50 @@ const mutualExchanges = new ContentH(
             <summary>Is it illegal to pay someone to do a Mutual Exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                It may be illegal in some circumstances. We would advise that you should never offer or receive money to carry out a Mutual Exchange, 
-                including paying off rent arrears. There is no guarantee that the Mutual Exchange will take place and Sheffield City Council will not get involved 
-                in any disputes related to such matters.
+                It may be illegal in some circumstances. You should never offer, accept or exchange money as part of a Mutual Exchange arrangement.
+                <br/>
+                <br/>
+                Sheffield City Council will not become involved in disputes relating to any payments made between tenants.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>What if HomeSwapper site asks me for a fee?</summary>
+            <summary>HomeSwapper is asking me for payment?</summary>
             <div class="details-accordion-content">
               <p>
-                When registering, you need to ensure that you have selected Sheffield City Council as your landlord. <br>
-                This is within Section 3 of the registration. If the site asks for payment, the customer should not go any further. 
-                HomeSwapper is a free site for all SCC tenants.
+                When registering, customers should make sure they select Sheffield City Council as their landlord.
+                <br/>
+                <br/>
+                HomeSwapper is free for Sheffield City Council tenants.
+                <br/>
+                <br/>
+                If the site asks for payment, the customer should stop and check that the correct landlord has been selected.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>Will I be able to monitor my progress online?</summary>
+            <summary>Can I track my progress of my exchange? </summary>
             <div class="details-accordion-content">
               <p>
-                Yes, you can monitor the progress of your exchange online via your HomeSwapper account.
+                Yes.
+                <br/>
+                <br/>
+                Customers can monitor progress through their HomeSwapper account.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>My property has passed the inspection, what happens next?</summary>
+            <summary>My property inspection has been completed. What happens next?</summary>
             <div class="details-accordion-content">
               <p>
-                Once your property has passed an inspection, a report will be sent to the Mutual Exchange Team. <br>
-                Subject to other tenancy checks, once the report is received, you will be contacted with an appointment to sign the paperwork.<br>
+                Once your property has passed inspection, a report will be sent to the Mutual Exchange Team.
+                <br/>
+                <br/>
+                Subject to any outstanding tenancy checks, once the report has been received, you will be contacted to 
+                arrange an appointment to sign the paperwork and complete the exchange.
               </p>
             </div>
           </details>
@@ -7926,7 +8772,7 @@ const mutualExchanges = new ContentH(
             <summary>Who needs to attend the sign up for my Mutual Exchange?</summary>
             <div class="details-accordion-content">
               <p>
-                All tenants involved in the sign-up, including any joint tenants, must attend.
+                All tenants involved in the exchange, including any joint tenants, must attend.
               </p>
             </div>
           </details>
@@ -7935,8 +8781,10 @@ const mutualExchanges = new ContentH(
             <summary>I have signed up but no longer wish to move</summary>
             <div class="details-accordion-content">
               <p>
-                Once you have signed the Deeds of Assignment, the exchange becomes legally binding and you must move by the tenancy commencement date. <br>
-                If you fail to do so, the Council can serve a Notice to Quit and take possession proceedings for unauthorized occupation of the property.<br>
+                Once the Deed of Assignment has been signed, the exchange becomes legally binding.
+                <br/>
+                <br/>
+                Customers are expected to move on the agreed date. Failure to do so may result in legal action regarding occupation of the property.
               </p>
             </div>
           </details>
@@ -7945,20 +8793,28 @@ const mutualExchanges = new ContentH(
             <summary>What is conditional consent?</summary>
             <div class="details-accordion-content">
               <p>
-                Conditional consent is when we are unable to agree to the exchange immediately but, providing the problem is resolved, we may allow the exchange to go ahead. <br>
-                For example, in the case of current rent arrears, we may agree that once the arrears have been cleared in full, the exchange can take place. <br>
-                If we give conditional consent, we will write to you explaining what the delays are and what you need to do before we arrange for the properties to be exchanged.<br>
+                Conditional consent means we cannot approve the exchange straight away, but it may be allowed once certain issues have been resolved.
+                <br/>
+                <br/>
+                For example, if there are current rent arrears, we may agree to the exchange going ahead once the arrears have been cleared in full.
+                <br/>
+                <br/>
+                If conditional consent is given, we will write to you explaining what needs to be resolved before the exchange can proceed.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>There is a problem with the tenancy I want to exchange into and I have been given conditional consent, what can I do?</summary>
+            <summary>There is a problem with the tenancy I want to exchange into and I have been given conditional consent. What can I do?</summary>
             <div class="details-accordion-content">
               <p>
-                As you have been advised in your Conditional Consent letter, under the Data Protection Act we are unable to give you any further information. <br>
-                We will have also written to the other party advising them on what action they need to take to resolve the situation. <br>
-                Once the problem has been resolved, we will be happy to make arrangements for both parties to come and sign the Deed of Assignment document.<br>
+                If you have received a conditional consent letter, we may not be able to provide more information about the other tenancy due to data protection requirements.
+                <br/>
+                <br/>
+                We will contact the other party directly to explain what action they need to take.
+                <br/>
+                <br/>
+                Once the issue has been resolved and all requirements have been met, we will arrange for both parties to sign the Deed of Assignment and complete the exchange.
               </p>
             </div>
           </details>
@@ -7987,7 +8843,7 @@ const mutualExchanges = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "27/03/2026", name: "Shaz Athar" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const overcrowding = new ContentH(
@@ -8449,25 +9305,45 @@ const priorities = new ContentH(
   `
     <h3>Customers who have a priority</h3>  
     <p>
-      After completing security checks with the applicant, check NEC for priority banding and ‘Actions’ for who is managing the case. 
-      The Priorities Team have a public phone number <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736970')">0114 2736970</a>  and email address for enquiries 
-      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a> 
-      or if in person at Howden House the customer can be seen without an appointment.
+      After completing security checks with the applicant, check NEC for the applicant's priority band and review 
+      the Actions section to identify which officer or team is managing the case.
     </p>
-
+    <p>
+      If the customer has questions about their priority assessment, priority review, priority banding, or an active 
+      priority case, they can contact the relevant Casework Officer / Team or email 
+      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a>.
+    </p>
+    <p>
+      If the customer attends Howden House in person, they can request to speak to a Casework Officer without an 
+      appointment, subject to officer availability or a housing advice assistant who may be able to provide some advice 
+      and support relating to your priority.
+    </p>
 
     <h3>General information about housing priorities</h3>  
     <p>
-      Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
-  
-      In some cases we will make you an offer of a property that we feel meets your needs. If we are unable to contact you due to changes not notified to us, your registration may be suspended or cancelled.<br><br>
-  
-      If you may be eligible for a priority you will be asked to provide us with further information. Once you have been assessed, we will write to you and explain whether you have been given priority. If you are given priority the letter will explain what sort of properties you can bid for with the priority and when the priority will be reviewed.<br><br>
-  
-      We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.<br><br>
-  
-      A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.<br>
-     </p> 
+      Priority may be awarded where there is an assessed housing need that requires a move more urgently than would normally be 
+      achieved through Band 6 and 7. If you may be eligible for a priority, we will ask for further information and assess your 
+      circumstances. We will then write to you explaining our decision and your right to request a review if you disagree with it.
+    </p>
+    <p>
+      If a priority is awarded, we will explain the reason for the award, the type of properties you can bid for and when the 
+      priority will be reviewed. If a priority is not awarded, we will explain why and provide details of any review rights. 
+      We may also work with you, your advocates and partner agencies to provide further advice and support where appropriate.
+    </p>
+    <p>
+      Priority applicants are expected to actively bid for suitable properties and priority awards are reviewed regularly. 
+      In some circumstances, we may make a direct offer of accommodation where this is appropriate to meet the applicant's 
+      housing need.
+    </p>
+    <p>
+      Having a priority does not guarantee an immediate offer of housing. Most properties are advertised with preference to 
+      applicants in priority bands, but some properties are advertised to Band 6 applicants based on waiting time. 
+      The advertising criteria will be clearly shown in the property advert.
+    </p>
+    <p>
+      Customers should keep their housing application up to date and tell us immediately about any change in circumstances, 
+      as this may affect their application, banding or priority award.
+    </p> 
     `,
   {
     buttonLabel: "Raise Enquiry ",
@@ -8489,7 +9365,7 @@ const priorities = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "29/10/2026", name: "Liz Taster" }
 );
 
 
@@ -8498,38 +9374,34 @@ const priorityBandingTable = new ContentH(
   "Priority Banding Table",
   "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
   `
-    <h3>Priority Banding Table</h3>
+    <h4>Priority Banding Table</h4>
+      <p>
+        The table below shows the list of priorities and the bands they fall in. 
+      </p>
   
-      <p>The table below shows the list of priorities and the bands they fall in. </p>
-  
-      <p>Some of the priorities span multiple bands and we cannot give a definitive answer for which band they will be in e.g. demolition and health. 
-      As such, these are marked in the table below as ‘None’. </p>
-  
-      <p>Also marked as ‘None’ are the priorities which no longer exist. These are: </p>
-  
-      <ul>
-        <li>Council Service tenant retiring or leaving employment</li>
-        <li>Council service tenant who is dismissed</li>
-        <li>Special Case</li>
-        <li>If a priority spans the bands, the awarding officer will have already spoken with the customer.</li>
-      </ul>
-  
-      <h3>Effective Dates</h3>
-  
-      <p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
-      three different priorities within the same band would be ordered based on the earliest effective date first.</p>
-  
-      <p>The only exception is band E which has the following hierarchy: </p>
-  
-      <ul>
-        <li>No Local Connection</li>
-        <li>Refused Offers</li>
-        <li>Unacceptable Behaviour </li>
-      </ul>
-  
-      <p>Inside each of the above rungs, applicants are ordered based on effective date.  
-      Therefore, an applicant with unacceptable behaviour in band E will always come below an applicant in band E due to refused offers 
-      regardless of their effective date.</p>
+    <h4>Effective Dates</h4>
+      <p>
+        Applicants are ranked within their band using their effective date. 
+        The applicant with the earliest effective date will usually be ranked highest within that band. 
+        If two applicants have the same effective date, the registration date will be used to decide their position.
+      </p>
+      <p>
+        For properties advertised to priority applicants, bids are ranked in band order from Band 1 to Band 5, 
+        with applicants ranked by effective date within each band. For properties advertised to general needs applicants, 
+        bids are ranked in Band 6 then Band 7, again using effective date within each band.
+      </p>
+      <p>
+        For applicants in Band 7, effective dates may be disregarded in some circumstances. 
+        Band 7 applicants are ranked in the following order:
+      </p>
+        <ul>
+          <li>Refusal of offer</li>
+          <li>Unacceptable behaviour or housing related debt</li>
+        </ul>
+      <p>
+        Applicants within each of these groups are then ranked by effective date, with registration date used to decide any tied positions.
+      </p>
+
   
       <details class="accordion">
         <summary class="accordion-header">
@@ -8541,139 +9413,190 @@ const priorityBandingTable = new ContentH(
             <table border="1" cellpadding="0" cellspacing="0" style="width:100%">
               <tbody>
                 <tr>
-                  <td style="width:300px; height:10px" bgcolor="#002040"><strong><font color="black">Current Approval Reasons</font></strong></td>
+                  <td style="width:300px; height:10px" bgcolor="#002040"><strong><font color="black">Priority Reason</font></strong></td>
                   <td style="width:300px" bgcolor="#002040">
-                    <p><strong><font color="black">New Banding Criteria</font></strong></p>
+                    <p><strong><font color="black">Banding Criteria</font></strong></p>
                   </td>
                   <td style="width:300px" bgcolor="#002040">
-                    <p><strong><font color="black">Bands In Which They Appear</font></strong></p>
+                    <p><strong><font color="black">Band</font></strong></p>
                   </td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Hospital or Care Setting Discharge</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Council Service Tenant Retiring or Leaving Employment</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Terminal Illness or Rapidly Deteriorating Condition</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Council Service Tenant Who is Dismissed</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Emergency Safeguarding and Child Protection</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Demolition/Clearance of Council Owned Properties</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Emergency Transfer (Fire, Flood or High Risk to Life)</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 1 – Emergency Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Development Work in Council Owned Property</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
+                  <td style="width:225px"><p>Full Homelessness Duty (Sheffield City Council)</p></td>
+                  <td style="width:189px"><p>Homeless – Statutory Duty</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
                   <td style="width:225px"><p>Domestic Abuse</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs, Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Downsizing for Under Occupiers</p></td>
-                  <td style="width:189px"><p>Under occupation and/or release of an adapted property</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Care Leaver</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Homeless - Immediate Priority</p></td>
-                  <td style="width:189px"><p>Full Homelessness Duty</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Under Occupation (Downsizing)</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Homeless or Threatened with Homelessness - Planned Priority</p></td>
-                  <td style="width:189px"><p>Other Homelessness Duties</p></td>
-                  <td style="width:217px"><p>3rd Priority band C</p></td>
+                  <td style="width:225px"><p>Release of Adapted Property</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Insanitary or Unsatisfactory Housing Conditions</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Sheffield City Council Demolition Programme</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 2 – Critical Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Long-Term Health Condition or Disability</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Mobility Needs and Service Personnel</p></td>
-                  <td style="width:189px"><p>Health</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Racial and Other Harassment of Council Tenants</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Re-Designation of Older Persons Property</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>3rd Priority band C</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Release of Disabled Persons Property</p></td>
-                  <td style="width:189px"><p>Under Occupation and/or Release of an Adapted Property</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Sheffield Overcrowding</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-                </tr>
-                <tr>
-                  <td style="width:225px"><p>Special Case</p></td>
-                  <td style="width:189px"><p>None</p></td>
-                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                  <td style="width:225px"><p>Violence, Harassment or Threats of Violence</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
                   <td style="width:225px"><p>Statutory Overcrowding</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:189px"><p>Insanitary or Overcrowded</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Support and Hardship needs</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Prospective Adopter and Foster Carers</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Supportive Hostels</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Move-On from Drug and Alcohol Recovery Programme</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>Top Priority band A</p></td>
+                  <td style="width:225px"><p>Relief Duty (Sheffield City Council)</p></td>
+                  <td style="width:189px"><p>Homeless – Statutory Duty</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Vulnerable Young Person Aged 16 or 17</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Armed Forces Additional Preference</p></td>
+                  <td style="width:189px"><p>Non-Reasonable Preference Priority</p></td>
+                  <td style="width:217px"><p>Band 3 – Urgent Need</p></td>
                 </tr>
                 <tr>
-                  <td style="width:225px"><p>Young People and Children’s Act 1989</p></td>
-                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                  <td style="width:225px"><p>Significant Health Condition</p></td>
+                  <td style="width:189px"><p>Medical or Welfare Needs</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
                 </tr>
+                <tr>
+                  <td style="width:225px"><p>Prevention Duty</p></td>
+                  <td style="width:189px"><p>Homeless – Statutory Duty</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Intentional Homelessness Duty (s190)</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Full Homelessness Duty (Other Local Authority)</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Relief Duty (Other Local Authority)</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Homeless with No Formal Homelessness Duty</p></td>
+                  <td style="width:189px"><p>Homeless (non-statutory duty)</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Return to Sheffield Following Social Services Placement</p></td>
+                  <td style="width:189px"><p>Locality</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Need to Access Support Networks</p></td>
+                  <td style="width:189px"><p>Locality</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Special School Access</p></td>
+                  <td style="width:189px"><p>Locality</p></td>
+                  <td style="width:217px"><p>Band 4 – Significant Need</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Priority Due to Housing Related Debt</p></td>
+                  <td style="width:189px"><p>Reduced Priority</p></td>
+                  <td style="width:217px"><p>Band 5 – Reduced Priority</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Priority Due to Unacceptable Behaviour</p></td>
+                  <td style="width:189px"><p>Reduced Priority</p></td>
+                  <td style="width:217px"><p>Band 5 – Reduced Priority</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Deliberately Worsened Circumstances (Priority Applicant)</p></td>
+                  <td style="width:189px"><p>Reduced Priority</p></td>
+                  <td style="width:217px"><p>Band 5 – Reduced Priority</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>No Assessed Housing Need</p></td>
+                  <td style="width:189px"><p>General Needs</p></td>
+                  <td style="width:217px"><p>Band 6 – General Needs</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Preference Due to Housing Related Debt</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Reduced Preference Due to Unacceptable Behaviour</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Deliberately Worsened Circumstances (Band 6 Applicant)</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Refusal of Suitable Offers</p></td>
+                  <td style="width:189px"><p>Reduced Preference</p></td>
+                  <td style="width:217px"><p>Band 7 – Reduced Preference</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p><em>Discretionary Decision</em></p></td>
+                  <td style="width:189px"><p><em>Non-Reasonable Preference Priority, Homeless (non-statutory duty)</em></p></td>
+                  <td style="width:217px"><p> </p></td>
+                </tr>
+                
               </tbody>
             </table>
           </p>
@@ -8705,7 +9628,7 @@ const priorityBandingTable = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const prisonLeaver = new ContentH(
@@ -8986,46 +9909,55 @@ const prisonLeaver = new ContentH(
   { date: "31/07/2026", name: "Joseph Coupland" }
 );
 
-const PropertyOffersAndViewings = new ContentH(
-  "PropertyOffersAndViewings",
+const propertyOffersAndViewings = new ContentH(
+  "propertyOffersAndViewings",
   "Property Offers and Viewings",
   "Understand how Sheffield City Council allocates properties, including the bidding process, property offers, and viewings based on eligibility and priority.",
   `
       <p>
-        Once the bidding period has closed on a Tuesday night, 
-        bids for each property are sorted automatically based on the eligibility criteria.
+        Properties are advertised on an Any Day Advertising basis. 
+        New properties can be advertised each working day (Monday to Friday) and remain available for bidding for 7 days. 
       </p>
+      <p>
+        There will be 5 cycles per week – and may be some days that there are no properties advertised. 
+        Customers should check My Housing regularly for new properties and adverts.
+      </p>
+      <p>
+        When a property's advertising cycle closes, bids are automatically ranked based on the property's eligibility criteria, 
+        the applicant's band and their effective date. The property will usually be offered to the highest-ranked eligible applicant following final checks.
+      </p>
+      <p>
+        If your bid is successful, the landlord will contact you to arrange a viewing. 
+        Unsuccessful applicants will not normally be contacted but can check their bid position through My Housing.
+      </p>
+
       <h3>How to View Available Properties and Bidding Periods</h3>
-
-    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
-
-    <ol>
-      <li>
-        <strong>Go to:</strong>
-        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
-          https://housing.sheffield.gov.uk/
-        </a>
-      </li>
-      <li>
-        <strong>Log in</strong> with your username and password.
-      </li>
-      <li>
-        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
-      </li>
-      <li>
-        At the top right of the page, click the <strong>Actions</strong> button.
-      </li>
-      <li>
-        From the drop-down menu, select <strong>All Available Properties</strong>.
-      </li>
-      <li>
-        A list of properties will appear along with their <strong>bidding periods</strong>.
-       </li>
-    </ol>
-
     <p>
-      The following link provides details of each step regarding bidding/offers/viewings: 
-      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank">Bidding for a Council home | Sheffield City Council</a>
+      Follow these steps to find and view available properties on My Housing:
+    </p>
+      <ol>
+        <li> Go to:<a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+              https://housing.sheffield.gov.uk/</a></li>
+        <li>Log in using your username and password.</li>
+        <li>Select ‘Search and bid for a property’.</li>
+        <li>At the top right of the page, click ‘Actions’./li>
+        <li>From the drop-down menu, select ‘All Available Properties’.</li>
+        <li>A list of available properties and their closing dates will be displayed.</li>
+      </ol>
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    >
+            Send link to review further information
+    </button>
+    <p>
+      Further information about bidding, offers and viewings can be found on the Council website:  
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank" rel="noopener noreferrer">
+      Bidding for a Council home | Sheffield City Council</a>
     </p>
 
     <button type="button"
@@ -9035,7 +9967,7 @@ const PropertyOffersAndViewings = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Bidding%20for%20a%20Council%20home\`"
->
+    >
             Send link to review further information
     </button>
 
@@ -9046,16 +9978,29 @@ const PropertyOffersAndViewings = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
+            Full details are available in the Allocations Policy. In summary:
           </p>
-          <ul>
-            <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
-            <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
-            <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-            <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
-            <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
-            <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
-          </ul> 
+            <ul>
+              <li><strong>Properties advertised to Priority Bands (Bands 1–5)</strong> are offered first to eligible applicants in the highest band. 
+                  Applicants within each band are ranked by their effective date, with the earliest effective date given preference. 
+                  If applicants have the same effective date, the registration date is used to determine priority.</li>
+              <li><strong>Properties advertised to General Needs (Band 6)</strong> are offered first to eligible applicants in Band 6. 
+                  If there are no suitable applicants in Band 6, applicants in Band 7 will then be considered. 
+                  Applicants are ranked by effective date within each band.</li>
+              <li><strong>First Come First Served properties</strong> are offered to the first eligible applicant who places a bid. 
+                  Applicants must still meet any eligibility criteria shown in the advert.</li>
+              <li>If your bid is successful, you will be contacted and invited to view the property. Unsuccessful applicants are not normally 
+                  contacted but can check their bid position through My Housing.</li>
+              <li>In some circumstances an applicant who is first on the shortlist may not receive the offer. This is known as being bypassed. 
+                  Examples include where the applicant no longer meets the eligibility criteria, has tenancy management issues that affect the 
+                  offer, or the property is more suitable for an applicant with a specific assessed need. We will advise you if you have been 
+                  bypassed and explain the reason.</li>
+              <li>In some cases, we may allow multi-viewings for certain Council properties. We will contact the top five applicants who have 
+                  been shortlisted for that property (subject to checks) and invite them for a viewing at the same time. Applicants will be 
+                  advised of their queue positions before attending a multi-viewing.</li>
+              <li>If your circumstances change during the bidding period and you no longer meet the eligibility criteria for the property, you 
+                  may not be offered the property. It is important to keep your housing application up to date.</li>
+            </ul> 
         </div>
     </details>
 
@@ -9066,11 +10011,21 @@ const PropertyOffersAndViewings = new ContentH(
         </summary>
         <div class="accordion-content">
             <p>
-              If you have placed a bid on a property and we have checked you are eligible for the offer, we will contact you to arrange a viewing. 
+              If you have placed a bid on a property and are the highest-ranked eligible applicant, the landlord will contact you to arrange a viewing. 
             </p>
             <p>
-              If you choose not to view or accept a property offer, it could affect your banding or position on the housing register. 
-              We will explain this to you, dependent on your circumstances. 
+              If you choose not to view or accept an offer, this may affect your priority, banding or position on the Housing Register depending on 
+              your circumstances. For example:
+            </p>
+              <ul>
+                <li>Applicants in Bands 1–5 who refuse two suitable offers of accommodation may lose their priority and be moved to Band 6 or Band 7, 
+                    depending on their circumstances. Applicants who have been awarded priority because they are owed a homelessness duty will normally 
+                    only receive one suitable offer before their priority is removed.</li>
+                <li>Applicants in Band 6 who refuse two reasonable offers within a 12-month period may be moved to Band 7. </li>
+                <li>Applicants in Band 7 who refuse two reasonable offers within a 12-month period may have their housing application cancelled.</li>
+              </ul>
+            <p>
+              We will explain the implications of refusing an offer based on your individual circumstances.
             </p>
         </div>
     </details>
@@ -9100,7 +10055,7 @@ const PropertyOffersAndViewings = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "31/07/2026", name: "Joseph Coupland" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 const referencesFAQs = new ContentH(
@@ -9110,151 +10065,146 @@ const referencesFAQs = new ContentH(
   `
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Why do I need to Provide a Reference?</h3>
+        <h3>Why do I need to provide a reference?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          Current SCC tenants are not required to submit a reference as the Council is already aware of 
-          their circumstances and tenancy history.<br>
-          References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
-          understand the people who are currently on its Housing Register. <br>
-          SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
+          Most applicants joining the Housing Register must provide a reference. References help the Council verify information 
+          provided in a housing application and assess whether an applicant qualifies for the Housing Register and which band they 
+          should be placed in.  It helps to ensure that any applicants allocated social housing can maintain their tenancy to a 
+          high standard. Current Sheffield City Council tenants do not usually need to provide a reference because the Council already 
+          holds information about their tenancy.
         </p>
       </div>
     </details>
   
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Who can Provide a Reference?</h3>
+        <h3>Who can provide a reference?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
-          The following customers also need to provide a reference when creating a new application:
-      </p>
-      <ul>
-          <li>Housing Association tenants (Landlord needs to provide the reference)</li>
-          <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
-          <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
-          <li>Owner occupiers - no need for a reference as bidding is restricted</li>
-          <li>Living with family/parents (18+ only, character reference is needed)</li>
-          <li>NFA/Living with friends (Character reference is needed)</li>
-      </ul>
-      <p>
-          For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
-          Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
-          Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
-          If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
-          this charge. SCC will not pay landlords to provide a reference.
-      </p>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>How to get a Landlords Reference Form?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
+          If you currently live, or have previously lived, independently, the reference should normally be completed by your 
+          current or most recent landlord. Housing Association tenants, tenants of other local authorities and private rented 
+          tenants should ask their landlord to complete the reference.
+        </p>
         <p>
-          Landlord references should be submitted using the SCC reference form. This can be found online on the 
-          Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>. Customer should select:
-
- <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-    
->
-    Send link to review further information
-  </button>
-   
-      </p>
-      <ul>
-          <li>Information header, select Identification and References</li>
-          <li>Scroll down to SCC Reference Template</li>
-          <li>Landlord reference forms are also available at local housing offices.</li>
-      </ul>
-      </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>How Long do I Have to Provide the Reference?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-    <div class="accordion-content">
-      <p>
-        You will have the same 28 days to provide the reference as they have for providing ID currently. This 
-        period starts from the day that the online application was submitted. Do not submit the application until 
-        you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
-        application will be cancelled and you will need to resubmit this online.
-      </p>
-    </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>What Will the Reference be Used For?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-    <div class="accordion-content">
-      <p>
-        The reference will be used along with the information supplied by the customer when completing their 
-        application online to determine which band they should be placed in. The criteria for being placed in 
-        band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
-        band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
-        special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
-        requests are assessed on their merits and the customer will be advised of the decision in writing.
-      </p>
-    </div>
-    </details>
-  
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Is a Reference Required For a Change of Circumstances?</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
+          If you have never lived independently or are unable to provide a landlord reference, please contact the Housing Information 
+          and Registration Team[DC1.1]. The Allocations Policy allows for an alternative reference form to be provided where appropriate.
+        </p>
         <p>
-          A reference will only be required if the change being submitted is a change of address, or the Application 
-          is being changed to a Joint Application. If the customer is changing their address, a new reference would 
-          be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
-          we would still not require a reference.
+          Please note that if a landlord charges a fee for completing a reference, this cost must be paid by the applicant.
         </p>
       </div>
     </details>
   
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Is a Reference Required as Part of a Renewal Process?</h3>
+        <h3>How to get a Landlords reference form?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          Customers are not required to submit a reference as part of the renewals process, 
-          <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
+          References should be submitted using the Sheffield City Council reference template.
+        </p>
+        <p>
+          The reference form can be accessed through My Housing:
+        </p>
+          <ol>
+            <li>Log in to My Housing</li>
+            <li>Select Information</li>
+            <li>Select Identification and References</li>
+            <li>Download the SCC Reference Template</li>
+          </ol>
+        <p>
+          Reference forms are also available from local housing offices.
+        </p>       
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How long do I have to provide the reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        You will have the same 28 days to provide the reference as you have for providing ID. 
+        Your housing application will not be processed until a satisfactory reference has been received. 
+        The Allocations Policy states that applicants will be asked to provide a reference after completing their 
+        online application and the application will not normally be activated until all required information has 
+        been received and verified.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>What will the reference be used for?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        The reference will be considered alongside the information provided on your housing application. 
+        Depending on the information received, you may:
+      </p>
+        <ul>
+          <li>Be placed in Band 6 (General Needs) if you qualify for the Housing Register and do not have an 
+              assessed housing need. </li>
+          <li>Be placed in Band 5 (Reduced Priority) if you have been awarded a priority but there are concerns relating 
+              to unacceptable behaviour or housing related debt. </li>
+          <li>Be placed in Band 7 (Reduced Preference) where there is no assessed housing need but there are concerns 
+              relating to unacceptable behaviour or housing related debt. </li>
+          <li>Be found not to qualify for the Housing Register if the information received shows that you do not meet the 
+              qualification criteria.</li>
+        </ul>
+      <p>
+        You will be notified in writing of the outcome and any review rights available to you.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required for a change of circumstances?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          A new reference may be required if you move address or if your circumstances change and further tenancy 
+          information is needed to reassess your application. Current Sheffield City Council tenants are generally 
+          exempt from providing a landlord reference because the Council already has access to their tenancy information.
+        </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required as part of a renewal process?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          The Allocations Policy does not normally require a new reference as part of the annual renewal process. 
+          However, further information may be requested where there has been a change in circumstances or where 
+          additional verification is required.
         </p>
       </div>
     </details>
   
    <details class="accordion">
       <summary class="accordion-header">
-        <h3>Is a reference required as part of a renewal process?</h3>
+        <h3>What if the customer can't visit an Area Office?</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <h3>What if the Customer Cannot Visit an Area Office?</h3>
         <p>
-          There are alternatives to visiting the area office yourself, such as asking your friends or family 
-          to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-          <strong>Documents can be uploaded via the housing online website.</strong>
+          There are several ways to provide supporting documents. Documents can be uploaded through My Housing 
+          and customers may also ask a trusted friend, family member or support worker to help provide documentation 
+          where appropriate. The Council can also provide assistance to customers who have difficulty completing 
+          the process themselves.
         </p>
       </div>
     </details>
@@ -9282,9 +10232,8 @@ const referencesFAQs = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "15/05/2025", name: "Dinah Williams" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
-
 
 
 const relationship = new ContentH(
@@ -11153,6 +12102,7 @@ const rehousing = new MenuH(
     housingAssociations,
     idFaq,
     idReferences,
+    impactLetters,
     lostJob,
     movingIn,
     mutualExchanges,
@@ -11161,7 +12111,7 @@ const rehousing = new MenuH(
     priorities,
     priorityBandingTable,
     prisonLeaver,
-    PropertyOffersAndViewings,
+    propertyOffersAndViewings,
     referencesFAQs,
     relationship,
     rentAndAffordability,
@@ -16213,142 +17163,10 @@ const olderPersonsIndependentLiving = new ContentH(
   "Explore Sheltered Housing for older people in Sheffield, offering independent living with support services, security, and communal facilities.",
   `
   <p>
-      A list of our Our sheltered housing schemes can be found at <a href="https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes" target="_blank">https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes</a>
-
-      <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheltered%20Housing%20Schemes\`
-    "
->
-    Send link to review further information
-</button>
-
+    A list of our sheltered housing schemes can be found on the Council website: 
+    <a href="https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes" target="_blank" rel="noopener noreferrer">
+    Our sheltered housing schemes | Sheffield City Council</a>
   </p>
-  <p>
-      Sheltered housing is rented accommodation that is specially designed for older
-      people who are able to live independently.
-    </p>
-    <p>
-      It aims to provide comfortable accommodation with added security, in an
-      environment where customers can come and go as they please.
-    </p>
-    <p>
-      Enquiries that are specifically regarding the information in this form can be
-      sent to OPIL using the links at the bottom of the form. If the enquiry is
-      related to other matters, for instance, Estate Management, Tenancy Management
-      or Anti-social behaviour (ASB), then the appropriate form should be used to process that enquiry.
-    </p>
-    <h3>Where are the properties?</h3>
-    <p>
-      Schemes are scattered all over the city. A comprehensive list of properties
-      can be found on the council website or in the Older Persons Independent Living
-      Service leaflet.
-    </p>
-    <h3>
-      What does the Sheltered Neighbourhood Officer do and New Tenancy Support
-    </h3>
-    <p>
-      The Neighbourhood Officers will complete a support plan with the tenant when
-      they move in. This replaces the standard 'New Tenancy Visit' that
-      non-Sheltered tenants receive.
-    </p>
-    <p>
-      The plan is reviewed every six months or when there is a change in
-      circumstances. We will agree with the customer the type and frequency of
-      contact they require based on the customers needs. The Neighbourhood Officer
-      will manage a Sheltered tenancy in the same way that a Neighbourhood Officer
-      based in an area team would manage a standard tenancy, but will also include
-      any support agreed in the support plan.
-    </p>
-    <p>
-      The Neighbourhood Officers will help and support the customer to access any
-      services they may need to help them live independently. The Neighbourhood
-      Officers wardens will also contact relatives, call a doctor or an ambulance in
-      an emergency.
-    </p>
-    <h3>What does OPIL provide</h3>
-    <p>
-      Convenient and comfortable accommodation with added security, in an
-      environment where residents have their own front door and can come and go as
-      they please. We can usually provide the following accommodation and
-      facilities:
-    </p>
-    <ul>
-      <li>Self contained flats/Studio apartments/Bungalows</li>
-      <li>Communal Facilities such as:
-        <ul>
-          <li>Caretaking service for the communal areas</li>
-          <li>City Wide Care Alarm (24 hour emergency response)</li>
-          <li>Gardens</li>
-          <li>Guest room</li>
-          <li>Kitchen</li>
-          <li>Laundry</li>
-          <li>Lounge for social activities</li>
-          <li>Neighbourhood Officer Warden</li>
-          <li>Security and Safety features</li>
-        </ul>
-      </li>    
-    </ul>
-    <h3>Who is eligible for OPIL accommodation</h3>
-    <p>
-      Anyone aged over 60 and is registered for rehousing. In the case of a couple,
-      at least one person must fit the age requirement.
-    </p>
-    <p>
-      Before offering a property we will check to make sure it meets all your
-      housing needs. You will also be invited to an accompanied viewing of the
-      building without any commitment.
-    </p>
-    <h3>What are the costs of OPIL Accommodation</h3>
-    <p>
-      The cost of living in Sheltered Housing is very competitive when compared with
-      other social housing providers.
-    </p>
-    <p>
-      You pay weekly rent and a service charge (where applicable) for the heating
-      and hot water in your property and/or towards the heating in communal areas of
-      the scheme.
-    </p>
-    <p>
-      There is an added support charge to cover the Neighbourhood Officer service
-      and City Wide Alarm. If you are already in receipt of Housing Benefit you will
-      not have to pay this charge.
-    </p>
-    <p>
-      If you are on a low income you can apply to have an assessment to see if you
-      are entitled to any assistance.
-    </p>
-    <p>
-      You will receive help and advice on claiming Welfare and/or Housing Benefit at
-      the start of your tenancy.
-    </p>
-    <h3>What are the benefits of OPIL Accommodation</h3>
-    <ul>
-      <li>Good quality housing</li>
-      <li>Security</li>
-      <li>Independence</li>
-      <li>Your own front door</li>
-      <li>Peace of mind, with help on hand in emergencies</li>
-      <li>
-        Neighbourhood Officer Warden support service and a 24 hr emergency response
-        system connected to each flat (City Wide Care Alarms)
-      </li>
-      <li>
-        A support plan - agreed with the Neighbourhood Officer - to meet individual
-        needs
-      </li>
-      <li>Being part of the community</li>
-    </ul>
-    <h3>Register for OPIL Accommodation</h3>
-    <p>Applicants should be registered for rehousing.</p>
-    <p>
-      You can access OPIL accommodation through the Sheffield Housing Online at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> or call
-      in at any of the local Area Housing Offices.
 
   <button
     type="button"
@@ -16357,26 +17175,183 @@ const olderPersonsIndependentLiving = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
-    
->
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheltered%20Housing%20Schemes\`
+    "
+  >
     Send link to review further information
- </button>
+  </button>
 
+    <p>
+      Older Persons Independent Living (OPIL) is accommodation designed for older people who are able to live 
+      independently but may benefit from living in specialist, safe, secure and self-contained accommodation.
+    </p>
+    <p>
+      The Allocations Policy explains that OPIL accommodation forms part of a Local Lettings Policy and is intended 
+      to support older people to live independently for longer in accommodation that takes account of their housing, 
+      care and support needs. OPIL schemes generally consist of one and two-bedroom properties for older applicants. 
+    </p>
+    <p>
+      Because OPIL accommodation is let under a Local Lettings Policy, applicants must meet both the Housing Register 
+      requirements and any additional criteria applicable to the individual scheme. Properties subject to a Local 
+      Lettings Policy will be clearly identified when advertised through the Choice Based Lettings scheme.
+    </p>
+
+
+    <h3>Where are the properties?</h3>
+    <p>
+      OPIL schemes are located across Sheffield.
+    </p>
+    <p>
+      Customers can view information about individual schemes on the Council website.
+    </p>
+    <p>
+      Further information about OPIL and Extra Care accommodation is included within Appendix B of the Allocations Policy.
+    </p>
+
+    <h3>What does OPIL provide?</h3>
+    <p>
+      Older Persons Independent Living accommodation provides safe, secure and self-contained housing designed to support independent living.
+    </p>
+    <p>
+      Residents have their own front door and can live independently while benefiting from specialist accommodation designed for older people.
+    </p>
+    <p>
+      Depending on the scheme, accommodation may include:
+    </p>
+      <ul>
+        <li>Self-contained flats</li>
+        <li>Studio apartments</li>
+        <li>Bungalows</li>
+      </ul>
+    <p>
+      Many schemes also offer communal facilities and services such as:
+    </p>
+      <ul>
+        <li>Caretaking services for communal areas</li>
+        <li>City Wide Care Alarm (24-hour emergency response service)</li>
+        <li>Communal gardens</li>
+        <li>Guest rooms</li>
+        <li>Communal kitchens</li>
+        <li>Laundry facilities</li>
+        <li>Lounges and communal areas for social activities</li>
+        <li>Support from a Sheltered Neighbourhood Officer</li>
+        <li>Security and safety features</li>
+        <li>Facilities vary between schemes and customers should check the individual scheme information and property 
+            advert for details of what is available at a specific location. The Allocations Policy explains that OPIL 
+            schemes are intended to provide specialist accommodation for older people and create vibrant communities that 
+            support independent living.</li>
+      </ul>
+
+    <h3>What does the Sheltered Neighbourhood Officer do and New Tenancy Support</h3>
+    <p>
+      A Sheltered Neighbourhood Officer can work with residents to identify any support needs and help them access 
+      services that support independent living.
+    </p>
+    <p>
+      Support arrangements will be based on individual circumstances and may be reviewed when circumstances change.
+    </p>
+    <p>
+      The Sheltered Neighbourhood Officer also manages the tenancy in a similar way to other tenancy management 
+      services and can provide advice and assistance relating to independent living and wellbeing.
+    </p>
+    <p>
+      In an emergency, staff can help arrange appropriate assistance in line with local procedures.
+    </p>
+
+    <h3>Who is eligible for OPIL accommodation?</h3>
+    <p>
+      OPIL schemes are designed for people aged 60 and over. Under the policy, all household members included on the 
+      housing registration must be aged over 60 to bid for OPIL schemes.
+    </p>
+    <p>
+      Applicants must also be accepted onto the Housing Register and meet the eligibility and qualification criteria 
+      in the Allocations Policy. This includes meeting the general Housing Register requirements, any relevant qualification 
+      criteria, and the criteria shown on the individual property advert.
+    </p>
+    <p>
+      Before an offer is confirmed, final checks will be completed. These checks confirm that the applicant is in the correct 
+      band, has the correct effective date, is eligible for the size and type of property, and meets any other specified criteria. 
+      If the checks are not passed, the property will not be offered.
+    </p>
+
+    <h3>What are the costs of OPIL Accommodation?</h3>
+    <p>
+      The cost of living in Sheltered Housing is very competitive when compared with other social housing providers.
+    </p>
+    <p>
+      You pay weekly rent and a service charge (where applicable) for the heating and hot water in your property 
+      and/or towards the heating in communal areas of the scheme.
+    </p>
+    <p>
+      There is an added support charge to cover the Neighbourhood Officer service and City Wide Alarm. 
+      If you are already in receipt of Housing Benefit you will not have to pay this charge.
+    </p>
+    <p>
+      If you are on a low income you can apply to have an assessment to see if you are entitled to any assistance.
+    </p>
+    <p>
+      You will receive help and advice on claiming Welfare and/or Housing Benefit at the start of your tenancy.
+    </p>
+
+    <h3>What are the benefits of OPIL Accommodation?</h3>
+    <p>
+      OPIL can offer:
+    </p>
+    <ul>
+      <li>Good quality housing</li>
+      <li>Security</li>
+      <li>Independence</li>
+      <li>Your own front door</li>
+      <li>Peace of mind, with help on hand in emergencies</li>
+      <li> Neighbourhood Officer Warden support service and a 24 hr emergency response system 
+          connected to each flat (City Wide Care Alarms)</li>
+      <li>A support plan - agreed with the Neighbourhood Officer - to meet individual needs</li>
+      <li>Being part of the community</li>
+    </ul>
+
+    <h3>Register for OPIL Accommodation</h3>
+    <p>
+      To be considered for OPIL accommodation, customers must be registered on the Housing Register through My Housing 
+      and meet the eligibility criteria for OPIL schemes. The My Housing website can be found here: 
+      <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener noreferrer">https://housing.sheffield.gov.uk/</a>
+    </p>
+
+      <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+      >
+            Send link to review further information
+      </button>
+
+    <p>
+      OPIL properties are generally available to applicants aged 60 and over, with all household members on the 
+      application needing to meet the age requirement.
+    </p>
+    <p>
+      Customers can register and manage their housing application through My Housing. Support is available through 
+      local housing offices if required.
     </p>
     <p>You can also be referred through:</p>
-    <ul>
-      <li>Health and Housing</li>
-      <li>Social Services</li>
-      <li>Health Service</li>
-    </ul>
+      <ul>
+        <li>Health and Housing</li>
+        <li>Adult Social Services</li>
+        <li>Health Service</li>
+      </ul>
 
     <h3>Contact Details</h3>
     <p>
-      Sheltered Housing can be contact on <a href="tel:0114 2037030">0114 2037030</a> <a href="mailto:HomesAreaSheltered@sheffield.gov.uk">HomesAreaSheltered@sheffield.gov.uk</a> 
+      Sheltered Housing can be contact on 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2037030')">0114 2037030</a> or by email
+      <a href="mailto:HomesAreaSheltered@sheffield.gov.uk">HomesAreaSheltered@sheffield.gov.uk</a> 
     </p>
     <p>
-      Temporary Accommodation can be contact on <a href="tel:0114 2053171">0114 2053171</a> or <a href="tel:0114 2930832">0114 2930832</a> 
+      Temporary Accommodation can be contact on 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2053171')">0114 2053171</a> or
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
 
   `,
@@ -16394,7 +17369,7 @@ const olderPersonsIndependentLiving = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "15/10/2024", name: "Joe Nixon" }
+  { date: "30/10/2026", name: "Liz Taster" }
 );
 
 //It might be worth updating the below to instead be a function that populates to use less code, this would add some complexity however.
