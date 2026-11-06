@@ -7414,7 +7414,7 @@ const housingAssociations = new ContentH(
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 027 2057')">0800 027 2057</a>
                 <br>Email: <a href="mailto:info@acisgroup.co.uk">info@acisgroup.co.uk</a>
-                <br><a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br></em>
+                <br>Web: <a href="http://www.acisgroup.co.uk" target="_blank" rel="noopener noreferrer">http://www.acisgroup.co.uk</a> <br></em>
                 </p>
 
      <button type="button"
@@ -7455,8 +7455,8 @@ const housingAssociations = new ContentH(
               S2 2ND<br><br>
 
               Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 460 9870')">0330 460 9870</a>
-              <br>Email: <a href="enquiries@alpha-living.co.uk">enquiries@alpha-living.co.uk</a>
-              <br><a href="https://www.alpha-living.co.uk/" target="_blank">https://www.alpha-living.co.uk/</a> <br></em>
+              <br>Email: <a href="mailto:enquiries@alpha-living.co.uk">enquiries@alpha-living.co.uk</a>
+              <br>Web: <a href="https://www.alpha-living.co.uk/" target="_blank" rel="noopener noreferrer">https://www.alpha-living.co.uk/</a> <br></em>
             </p>
 
             
@@ -7481,8 +7481,8 @@ const housingAssociations = new ContentH(
               BD1 2ST<br><br>
 
               Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 731 2020')">0800 731 2020</a>
-              <br>Email: <a href="contact@anchor.org.uk">contact@anchor.org.uk</a>
-              <br><a href="https://www.anchor.org.uk/" target="_blank">https://www.anchor.org.uk/</a> <br></em>
+              <br>Email: <a href="mailto:contact@anchor.org.uk">contact@anchor.org.uk</a>
+              <br>Web: <a href="https://www.anchor.org.uk/" target="_blank" rel="noopener noreferrer">https://www.anchor.org.uk/</a> <br></em>
             </p>
 
             
@@ -7508,8 +7508,8 @@ const housingAssociations = new ContentH(
               S3 9DE<br><br>
 
               Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 228 8100')">0114 228 8100</a>
-              <br>Email: <a href="info@archeshousing.org.uk">info@archeshousing.org.uk</a>
-              <br><a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a> <br></em>
+              <br>Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a>
+              <br>Web: <a href="https://www.archeshousing.org.uk" target="_blank" rel="noopener noreferrer">https://www.archeshousing.org.uk</a> <br></em>
             </p>
       <button
             type="button"
@@ -7565,7 +7565,7 @@ const housingAssociations = new ContentH(
               NR7 0WF<br><br>
 
               Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 500 8000')">0330 500 8000</a>
-              <br><a href="https://www.myclarionhousing.com/" target="_blank">https://www.myclarionhousing.com/</a> <br></em>
+              <br>Web: <a href="https://www.myclarionhousing.com/" target="_blank" rel="noopener noreferrer">https://www.myclarionhousing.com/</a> <br></em>
             </p>
 
             
@@ -7589,8 +7589,8 @@ const housingAssociations = new ContentH(
               M21 7QP<br><br>
 
               Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 123 1966')">0300 123 1966</a>
-              <br>Email: <a href="customerhub@greatplaces.org.uk">customerhub@greatplaces.org.uk</a>
-              <br><a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a> <br></em>
+              <br>Email: <a href="mailto:customerhub@greatplaces.org.uk">customerhub@greatplaces.org.uk</a>
+              <br>Web: <a href="http://www.greatplaces.org.uk" target="_blank" rel="noopener noreferrer">http://www.greatplaces.org.uk</a> <br></em>
             </p>
                 
        <button type="button"
@@ -7629,8 +7629,8 @@ const housingAssociations = new ContentH(
                 S1 4GH<br><br>
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 141 4663')">0345 141 4663</a>
-                <br>Email: <a href="contactus@homegroup.org.uk">contactus@homegroup.org.uk</a>
-                <br><a href="https://www.homegroup.org.uk/" target="_blank">https://www.homegroup.org.uk/</a> <br></em>
+                <br>Email: <a href="mailto:contactus@homegroup.org.uk">contactus@homegroup.org.uk</a>
+                <br>Web: <a href="https://www.homegroup.org.uk/" target="_blank" rel="noopener noreferrer">https://www.homegroup.org.uk/</a> <br></em>
               </p>
               
               <p>
@@ -7654,8 +7654,8 @@ const housingAssociations = new ContentH(
               BD17 7BN<br><br>
 
               Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0330 175 9540')">0330 175 9540</a>
-              <br>Email: <a href="enquiry@incommunities.co.uk">enquiry@incommunities.co.uk</a>
-              <br><a href="https://www.incommunities.co.uk/" target="_blank">https://www.incommunities.co.uk/</a> <br></em>
+              <br>Email: <a href="mailto:enquiry@incommunities.co.uk">enquiry@incommunities.co.uk</a>
+              <br>Web: <a href="https://www.incommunities.co.uk/" target="_blank" rel="noopener noreferrer">https://www.incommunities.co.uk/</a> <br></em>
             </p>
             
             </div>
@@ -7676,8 +7676,8 @@ const housingAssociations = new ContentH(
                 LS10 1PZ<br><br>
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('01772 667 002')">01772 667 002</a>
-                <br>Email: <a href="CSC.General@placesforpeople.co.uk">CSC.General@placesforpeople.co.uk</a>
-                <br><a href="https://www.placesforpeople.co.uk/" target="_blank">https://www.placesforpeople.co.uk/</a> <br></em>
+                <br>Email: <a href="mailto:CSC.General@placesforpeople.co.uk">CSC.General@placesforpeople.co.uk</a>
+                <br>Web: <a href="https://www.placesforpeople.co.uk/" target="_blank" rel="noopener noreferrer">https://www.placesforpeople.co.uk/</a> <br></em>
               </p>
 
               
@@ -7716,8 +7716,8 @@ const housingAssociations = new ContentH(
                 L3 2BY<br><br>
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 131 3348')">0800 131 3348</a>
-                <br>Email: <a href="contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a>
-                <br><a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a> <br></em>
+                <br>Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a>
+                <br>Web: <a href="http://www.sanctuary-housing.co.uk" target="_blank" rel="noopener noreferrer">http://www.sanctuary-housing.co.uk</a> <br></em>
               </p>
 
         <button
@@ -7757,8 +7757,8 @@ const housingAssociations = new ContentH(
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 290 0200')">0114 290 0200</a>
                 / <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 138 0380')">0800 138 0380</a>
-                <br>Email: <a href="enquiries@syha.co.uk">CSC.enquiries@syha.co.uk</a>
-                <br><a href="https://www.syha.co.uk/" target="_blank">https://www.syha.co.uk/</a> <br></em>
+                <br>Email: <a href="mailto:enquiries@syha.co.uk">CSC.enquiries@syha.co.uk</a>
+                <br>Web: <a href="https://www.syha.co.uk/" target="_blank" rel="noopener noreferrer">https://www.syha.co.uk/</a> <br></em>
               </p>
               
               <p>
@@ -7788,7 +7788,7 @@ const housingAssociations = new ContentH(
                 NW1 3AX<br><br>
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0303 123 1890')">0303 123 1890</a>
-                <br><a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a> <br></em>
+                <br>Web: <a href="http://www.guinnesspartnership.com" target="_blank" rel="noopener noreferrer">http://www.guinnesspartnership.com</a> <br></em>
               </p>                
 
       <button type="button"
@@ -7826,7 +7826,7 @@ const housingAssociations = new ContentH(
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 555 5560')">0300 555 5560</a>
                 <br>Email: <a href="mailto:enquiries@togetherhousing.co.uk">enquiries@togetherhousing.co.uk</a>
-                <br><a href="https://www.togetherhousing.group/" target="_blank">https://www.togetherhousing.group/</a> <br></em>
+                <br>Web: <a href="https://www.togetherhousing.group/" target="_blank" rel="noopener noreferrer">https://www.togetherhousing.group/</a> <br></em>
               </p> 
               
             </div>
@@ -7846,8 +7846,8 @@ const housingAssociations = new ContentH(
                 WF10 5HX<br><br>
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 850 7507')">0345 850 7507</a>
-                <br>Email: <a href="homesearch@vicohomes.co.uk">homesearch@vicohomes.co.uk</a>
-                <br><a href="https://www.vicohomes.co.uk" target="_blank">https://www.vicohomes.co.uk</a> <br></em>
+                <br>Email: <a href="mailto:homesearch@vicohomes.co.uk">homesearch@vicohomes.co.uk</a>
+                <br>Web: <a href="https://www.vicohomes.co.uk" target="_blank" rel="noopener noreferrer">https://www.vicohomes.co.uk</a> <br></em>
               </p> 
               
             </div>
@@ -7868,8 +7868,8 @@ const housingAssociations = new ContentH(
                 LS10 1FB<br><br>
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 366 4404)">0345 366 4404</a>
-                <br>Email: <a href="customerservices@yorkshirehousing.co.uk">customerservices@yorkshirehousing.co.uk</a>
-                <br><a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a> <br></em>
+                <br>Email: <a href="mailto:customerservices@yorkshirehousing.co.uk">customerservices@yorkshirehousing.co.uk</a>
+                <br>Web: <a href="http://www.yorkshirehousing.co.uk" target="_blank" rel="noopener noreferrer">http://www.yorkshirehousing.co.uk</a> <br></em>
               </p>
                 
       <button type="button"
