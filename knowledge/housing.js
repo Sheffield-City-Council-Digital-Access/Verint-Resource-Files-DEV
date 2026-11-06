@@ -7757,7 +7757,7 @@ const housingAssociations = new ContentH(
 
                 Tel: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 290 0200')">0114 290 0200</a>
                 / <a href="#" class="telephoneNumber" onclick="copyToClipboard('0800 138 0380')">0800 138 0380</a>
-                <br>Email: <a href="mailto:enquiries@syha.co.uk">CSC.enquiries@syha.co.uk</a>
+                <br>Email: <a href="mailto:enquiries@syha.co.uk">enquiries@syha.co.uk</a>
                 <br>Web: <a href="https://www.syha.co.uk/" target="_blank" rel="noopener noreferrer">https://www.syha.co.uk/</a> <br></em>
               </p>
               
